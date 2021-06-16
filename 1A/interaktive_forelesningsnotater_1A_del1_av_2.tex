@@ -1,0 +1,711 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+%\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tikzsymbols}
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+
+
+
+\newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\pagenobutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = apricot, rounded corners = 5pt]{\color{brown(traditional)}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+
+\newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\stepcounter{pageno}\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
+
+
+
+%\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{Forrige side}}\ \ \ \ \ \curpage \\}
+%\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{Forrige side}}\ \ \ \ \ \dnextpage \\}
+
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{34}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1A\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1A\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese de fulle forelesningsnotatene (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+
+%%%%% intro
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\vspace{1cm}
+%\animategraphics[autoplay,loop,height=5cm]{8}{launch2_test-}{0}{16} \\ GIF-animation here
+
+\column{0.5\textwidth}
+\small Velkommen til del 1A! Store deler av astrofysikken dreier seg om gasser og egenskaper til gasser. Dermed bør et kurs i astrofysikk begynne med en introduksjon til gass/termodynamikk. \textcolor{red}{I del 1A av kurset skal du lære de grunnleggende egenskapene til gasser som du trenger til resten av kurset. Hastighetene til partiklene i en gass er tilfeldige, og mange av gassenes egenskaper kan utledes fra nøyaktig {\bf hvordan} disse er tilfeldige. Derfor skal også lære en del statistikk som også kommer til nytte i flere temaer fremover.} For å lære om gasser skal vi bruke en rakettmotor som et eksempel.\textcolor{blue}{ I løpet av del 1A er målet å lage en forenklet virtuell rakettmotor} som du skal få til å lette og nå unnslippingshastighet.\\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro1b}{\pagebutton{Neste side}}
+
+%\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
+\end{columns}
+\end{frame}
+
+
+
+
+\begin{frame}
+\label{intro1b}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebutton{intro}
+\includegraphics[scale=0.4]{rocket.png}
+\column{0.5\textwidth}
+ Her ser vi vår forenklede rakettmodell. Den grønne boksen nederst antar vi er en boks med en varm gass og med et hull nederst slik at gasspartiklene slippes ut. Det fylles hele tiden på med partikler ovenfra slik at tetthet og temperatur i boksen hele tiden er konstant selv om partikler slipper ut.
+\hyperlink{intro2}{\choicebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{intro2}
+\begin{columns}
+\column{0.5\textwidth}
+%\hyperlink{intro}{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage \\
+\lastpagebutton{intro1b}
+\vspace{0.5cm}
+%\animategraphics[autoplay,loop,height=5cm]{8}{launch2_test-}{0}{16} \\ GIF-ANIMATION HERE
+Oppgave 1A6 som er en av innleveringsoppgavene går ut på akkurat dette. I løpet av dette forelesningsnotatet vil du lære det du trenger for å løse denne oppgaven.
+\column{0.5\textwidth}
+ Utdrag fra oppgave 1A6:\\
+ \vspace{0.5cm}
+\includegraphics[scale=0.4]{1a6_1.png}
+\includegraphics[scale=0.4]{1a6_2.png}\\
+\href{https://nettskjema.no/a/153450}{\begin{minipage}{5cm}Trykk her for å brainstorme litt samt friske opp litt statistikk\end{minipage}}\\
+Har du brainstormet og sendt inn skjemaet?
+\href{https://nettskjema.no/a/153450}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\vspace*{1cm}
+\begin{itemize}[<+->]
+\item[] \hyperlink{gasvel1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+\label{gasvel1}
+\dlastpagebutton{intro2}
+%\hyperlink{intro2}{\pagebutton{Forrige side}}\ \ \ \ \ \dnextpage \\
+Du skal i løpet av del 1A få svar på/finne ut av spørsmålene fra skjemaet. Selv om du kanskje ikke helt har innsett hvordan man lager en rakettmotor enda, så har du kanskje oppdaget at hastigheten som gasspartiklene kommer ut av motoren med er en viktig faktor her?
+\begin{block}{Hva avgjør hastighetene til partiklene i en gass?}
+Hvis rakettens kraft avhenger av hastigheten til gasspartiklene, så er det viktig å forstå hvilke egenskaper ved gassen som bestemmer hvor fort gasspartiklene beveger seg. Noen av de viktigste egenskapene til en gass er listet nedenfor. Disse henger alle sammen med hverandre gjennom tilstandslikningen som vi skal lære om senere, men hvis du skal peke på {\bf \'en} egenskap som du forbinder med hastigheten til gasspartiklene, hvilken kunne det  være? Trykk på den du mener er viktig.
+\end{block}
+\hyperlink{trykktett}{\choicebutton{Gassens tetthet}}\ \ \ \ \hyperlink{tempmass}{\choicebutton{Gassens temperatur}}\\
+\ \ \ \ \ \ \ \ \hyperlink{trykktett}{\choicebutton{Gassens trykk}}\ \ \ \ \hyperlink{tempmass}{\choicebutton{Gasspartiklenes masse}}\\
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{trykktett}
+\lastpagebutton{gasvel1}
+%\hyperlink{gasvel1}{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage \\
+\textcolor{white}{Godt forslag, men hverken tetthet eller trykk er det som direkte har en innvirkning på gasspartiklenes hastighet. Som vi skal komme til senere så vil tettheten og trykket henge sterkt sammen med temperaturen til gassen som er en av de størrelsene som direkte er forbundet med gasspartiklenes hastighet.}
+\textcolor{white}{ Både temperaturen og massen har noe å si for gasspartiklenes hastighet. Høyere temperatur gir mer kinetisk energi til hver gasspartikkel og dermed høyere hastighet. Ved en gitt temperatur så vil tunge gasspartikler i middel bevege seg saktere enn lettere gasspartikler. Den midlere kinetiske energien som partiklene har ved en gitt temperatur er den samme, dermed må tyngre partikler i middel bevege seg saktere (Hvis $\frac{1}{2}mv^2=K$ der $K$ er den samme, så må $v$ bli mindre hvis $m$ blir større).}
+\hyperlink{gasvel2}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{tempmass}
+\clastpagebutton{gasvel1}
+%\hyperlink{gasvel1}{\pagebutton{Forrige side}}\ \ \ \ \ \curpage\\
+\vspace*{2cm}
+HELT RIKTIG! Både temperaturen og massen har noe å si for gasspartiklenes hastighet. Høyere temperatur gir mer kinetisk energi til hver gasspartikkel og dermed høyere hastighet. Ved en gitt temperatur så vil tunge gasspartikler i middel bevege seg saktere enn lettere gasspartikler. Den midlere kinetiske energien som partiklene har ved en gitt temperatur er den samme, dermed må tyngre partikler gjennomsnittlig bevege seg saktere (Hvis $\frac{1}{2}mv^2=K$ der $K$ er den samme, så må $v$ bli mindre hvis $m$ blir større).
+\hyperlink{gasvel2}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+\begin{frame}
+\label{gasvel2}
+\lastpagebutton{gasvel1}
+%\hyperlink{gasvel1}{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage\\
+{\bf Men hvordan kan vi vite hvilken hastighet gasspartiklene har ved en gitt temperatur? Og har alle gasspartiklene samme hastighet?}
+
+Her kommer \textcolor{red}{statistikken} inn, nemlig hva er histogrammet av partikkelhastigheter ved en gitt temperatur?
+Vi skal nå lære om et svært sentralt begrep i dette kurset, som vi kommer til å bruke i mange forskjellige sammenhenger:
+\begin{block}{\bf Partikkelhastigheter i gasser}
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_1.mp4}{denne videoen her} lærer du litt om hvordan hastighetene til partiklene i en gass er fordelt.
+\end{block}
+Se gjerne gjennom videoen et par ganger, så du er sikker på at du har forstått.
+På neste side skal du teste om du forstod riktig:
+\hyperlink{maxbol1}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{maxbol1}
+\lastpagebutton{gasvel2}
+%\hyperlink{gasvel2}{\pagebutton{Forrige side}}\\
+Dette var en liten oppvarming, vi skal straks komme tilbake til Maxwell-Boltzmann i mer detalj, men før det, la oss brainstorme litt mer:
+\href{https://nettskjema.no/a/153884}{\begin{minipage}{5cm}Trykk her for å brainstorme og teste det du lærte i videoen\end{minipage}}\\
+Har du brainstormet og sendt inn skjemaet?
+\href{https://nettskjema.no/a/153884}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone2}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\vspace*{1cm}
+\begin{itemize}[<+->]
+\item[] \hyperlink{maxbol2}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone2}{}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\label{maxbol2}
+\dlastpagebutton{maxbol1}
+%\hyperlink{maxbol1}{\pagebutton{Forrige side}}\\
+Trodde du at du var ferdig med spørsmålene, nå?? Ikke helt enda nei...
+\includegraphics[scale=0.2]{v_more_t_histogram.png}\\
+På histogrammene over ser du Maxwell-Boltzmann-fordelingen for 3 forskjellige temperaturer. Hvilken av disse diagrammene tror du er for gassen med høyest temperatur?
+\hyperlink{riktigkurve}{\choicebutton{Gul kurve}}\ \ \ \ \hyperlink{feilkurve}{\choicebutton{Sort kurve}}\ \ \ \ \ \ \ \ \hyperlink{feilkurve}{\choicebutton{Grønn kurve}}\\
+\end{frame}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feilkurve}
+\lastpagebutton{maxbol2}
+\textcolor{white}{Godt forslag, men det er nok ikke helt riktig. Ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_2.mp4}{denne videoen} for å klare opp litt.}
+\textcolor{white} {Har du sett på videoen? Er det klart nå? Hvis det enda ikke er klart, se videoen en gang til og spør forleser/gruppelærere før du går videre.}\\
+\hyperlink{maxbol3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktigkurve}
+\clastpagebutton{maxbol2}
+\vspace*{2cm}
+HELT RIKTIG!
+Hvis du forstod dette godt og ikke var i tvil om valget, så gå videre til neste side.
+\hyperlink{maxbol3}{\pagebutton{Neste side}}
+Hvis du tvilte og var usikker på at det var denne kurven, ta en titt på forklaringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_2.mp4}{denne videoen} før du går videre:\\
+\end{frame}
+}
+
+
+\begin{frame}
+\label{maxbol3}
+\lastpagebutton{maxbol2}
+\begin{block}{\bf Maxwell-Boltzmanns fordelingsfunksjon}
+Da har tiden kommet for å lære litt mer om Maxwell-Boltzmann.
+Er du klar? Ta en liten pause før du setter igang:
+\href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_3.mp4}{Trykk her for å lære om Maxwell-Boltzmann!}\\
+\end{block}
+Oppsummering av likningene:
+({\bf MERK: Det blir skrevet feil i videoen, der er rottegnet fra den ene byttet med opphøyd i 3/2 fra den andre, dette er korrekt:})
+\[
+P(v) = \left(\frac{m}{2\pi kT}\right)^{3/2}e^{-\frac{1}{2}\frac{mv^2}{kT}}4\pi v^2\ \ P(v_x) = \left(\frac{m}{2\pi kT}\right)^{1/2}e^{-\frac{1}{2}\frac{mv^2_x}{kT}}
+\]\\
+\vspace*{1cm}
+Se gjerne videoen et par ganger så du er sikker på at du forstår før du går videre til neste side.\\
+\vspace*{1cm}
+\hyperlink{exex1}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{exex1}
+\lastpagebutton{maxbol3}
+Her er ut utdrag fra en av ukeoppgavene:
+\includegraphics[scale=0.5]{screenshot_1a4.png}\\
+(merk prosjektstudenter, dere har et liknende spørsmål i utfordring A2 i del 1).
+Tenk gjennom hvordan du vil gå frem for å løse denne oppgaven, diskuter med en medstudent. Du trenger ikke løse oppgaven nå, det aller viktigste er at du har en ide om hvordan den kan løses.
+Hvis du sliter veldig med å se hva som skal gjøres, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_4.mp4}{denne videoen her.}\\
+Hvis det er veldig klart for deg, gå direkte videre til neste side.\\
+\hyperlink{gastat1}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{gastat1}
+\lastpagebutton{exex1}
+\begin{block}{\bf Spørsmål}
+Hvis du har en gass med N partikler og du kjenner alle hastighetskomponentene $v_j$ til alle N partiklene i gassen. Hvordan går du frem for å finne midlere absoluttverdi av hastigheten til partiklene i gassen?
+\end{block}
+I det følgende er $v_j(i)$ hastighetskomponent $j$ (1=x, 2=y, 3=z) til den i-te partikkelen i gassen. Summen over $j$ fra 1 til 3 er dermed en sum over komponentene $x$, $y$ og $z$. Er svaret...
+\begin{enumerate}
+\item $\frac{1}{N}\sum_{i=1}^N\sum_{j=1}^3v_j(i)$
+\item $\frac{1}{N}\sqrt{\sum_{i=1}^N\sum_{j=1}^3v^2_j(i)}$
+\item $\frac{1}{N}\sum_{i=1}^N\sqrt{\sum_{j=1}^3v^2_j(i)}$
+\end{enumerate}
+Trykk det alternativet som du tror:\\
+\hyperlink{feilmean}{\choicebutton{1}}\ \ \ \ \hyperlink{feilmean}{\choicebutton{2}}\ \ \ \ \hyperlink{riktigmean}{\choicebutton{3}}\\
+\end{frame}
+
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feilmean}
+\lastpagebutton{gastat1}
+\textcolor{white}{Det ble nok galt! Ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_5.mp4}{denne videoen} for å klare opp litt.}
+\textcolor{white} {Har du sett på videoen? Er det klart nå? Hvis det enda ikke er klart, se videoen en gang til og spør forleser/gruppelærere før du går videre.}\\
+\hyperlink{gastat2}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktigmean}
+\clastpagebutton{gastat1}
+\vspace*{2cm}
+HELT RIKTIG!
+Hvis du forstod dette godt og ikke var i tvil om valget, så gå videre til neste side.
+\hyperlink{gastat2}{\pagebutton{Neste side}}\\
+Hvis du tvilte og var usikker på at det var denne kurven, ta en titt på forklaringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_5.mp4}{denne videoen} før du går videre:\\
+\end{frame}
+}
+
+\begin{frame}
+\label{gastat2}
+\lastpagebutton{gastat1}
+Er du klar for en litt større utfordring?
+\begin{block}{\bf Grublis}
+Du skal igjen finne midlere hastighet $v$ til partiklene i en gass. Men denne gangen kjenner du ikke hvor mange partikler det er i gassen. Det eneste du kjenner er sannsynlighetsfordelingen $P(v)$ som partiklene følger. Hvordan vil du nå gå frem for å finne midlere absolutthastighet av partiklene i gassen?\\
+{\bf HINT:} Tenk gjerne først på $P(v)$ som et histogram av den typen som vi kikket på tidligere. Tenk for eksempel at du fikk se en figur med $n(v)$ på histogramform. Hvordan ville du da løst problemet?\\
+\end{block}
+\vspace*{1cm}
+Tenk deg nøye om før du går videre!\\
+\vspace*{1cm}
+\hyperlink{gastat3}{\pagebutton{Neste side}}\\
+\end{frame}
+
+\begin{frame}
+\label{gastat3}
+\lastpagebutton{gastat2}
+Har du tenkt ut en mulig måte å løse dette på?\\
+\hyperlink{jepp}{\choicebutton{JEPP!}}\ \ \ \ \hyperlink{hakkepeiling}{\choicebutton{HA'KKE PEILING}}
+\end{frame}
+
+\begin{frame}
+\label{hakkepeiling}
+\lastpagebutton{gastat3}
+Sorry, da har du ikke tenkt nok! Her kommer grublisen en gang til:
+\begin{block}{\bf Grublis}
+Du skal igjen finne midlere hastighet $v$ til partiklene i en gass. Men denne gangen kjenner du ikke hvor mange partikler det er i gassen. Det eneste du kjenner er sannsynlighetsfordelingen $P(v)$ som partiklene følger. Hvordan vil du nå gå frem for å finne midlere absolutthastighet av partiklene i gassen?\\
+{\bf HINT:} Tenk gjerne først på $P(v)$ som et histogram av den typen som vi kikket på tidligere. Tenk for eksempel at du fikk se en figur med $n(v)$ på histogramform. Hvordan ville du da løst problemet?\\
+\end{block}
+Har du diskuter med medstudenter? Har du gått deg en tur rundt Blindern? Har du stått på hodet?\\
+Ikke gå til neste side før du har prøvd alle disse tingene samt tenkt enda litt mer!
+\hyperlink{gastat4}{\pagebutton{Neste side}}\\
+\end{frame}
+
+\begin{frame}
+\label{jepp}
+\clastpagebutton{gastat3}
+Bra jobba!
+Tenk gjerne en gang til for sikkerhetsskyld! 
+Og så kan du få svaret på neste side.
+\hyperlink{gastat4}{\pagebutton{Neste side}}\\
+\end{frame}
+
+\begin{frame}
+\label{gastat4}
+\lastpagebutton{gastat3}
+For å finne svaret på grublisen, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_6.mp4}{denne videoen} som også forteller deg hvordan du kan finne middelverdien til en funksjon $f(v)$ av f.eks. hastigheten til en gass.
+Kort oppsummering:
+\[
+\langle f(v) \rangle = \int_0^\infty f(v)P(v)dv
+\]
+Forstår du nå hvordan du kan finne middelverdien til både hastigheten og andre størrelser i gassen?
+Forstår du nå hvordan man generelt tar en middelverdi i statistikk hvis du kjenner fordelingsfunksjonen?
+Se videoen igjen hvis du er usikker!
+\hyperlink{exex2}{\pagebutton{Neste side}}\\
+\end{frame}
+
+\begin{frame}
+\label{exex2}
+\lastpagebutton{gastat4}
+Vi skal igjen se på et utdrag av en ukeoppgave, fra oppgave 1A5:
+\includegraphics[scale=0.5]{screenshot_1a5.png}\\
+(prosjektstudenter, dere har et liknende spørsmål i utfordring A3, del 1).
+Tenk gjennom og diskuter med medstudenter hvordan du vil gå frem for å løse oppgaven.
+Når du har en ide, gå videre til neste side.
+\hyperlink{gastat5}{\pagebutton{Neste side}}\\
+\end{frame}
+
+\begin{frame}
+\label{gastat5}
+\lastpagebutton{exex2}
+Hvis du er usikker på hvordan du løser oppgaven, så kan du få noen hint i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_7.mp4}{denne videoen.}
+La oss se på en utfordring til:
+\includegraphics[scale=0.2]{mb_vx.png}\\
+I figuren ser du Maxwell-Boltzmannfordelingen for $v_x$. Fra figuren, anslå hva den midlere x-komponenten av hastigheten er i denne gassen? (altså gjennomsnittsvedien av x-komponenten av hastigheten)
+\hyperlink{feilvx}{\choicebutton{$0.5\times10^4$\;m/s}}\ \ \ \ \hyperlink{feilvx}{\choicebutton{$1\times10^4$\;m/s}}\ \ \ \ \hyperlink{riktigvx}{\choicebutton{$0$\;m/s}}\\
+\end{frame}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feilvx}
+\lastpagebutton{gastat4}
+\textcolor{white}{Det ble nok galt! Ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_8.mp4}{denne videoen} for å klare opp litt.}
+\textcolor{white} {Har du sett på videoen? Er det klart nå? Hvis det enda ikke er klart, se videoen en gang til og spør forleser/gruppelærere før du går videre.}\\
+\hyperlink{gastat6}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktigvx}
+\clastpagebutton{gastat4}
+\vspace*{2cm}
+HELT RIKTIG!
+Hvis du forstod dette godt og ikke var i tvil om valget, så gå videre til neste side.
+\hyperlink{gastat6}{\pagebutton{Neste side}}\\
+Hvis du tvilte og var usikker på svaret, ta en titt på forklaringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_8.mp4}{denne videoen} før du går videre:\\
+\end{frame}
+}
+
+\begin{frame}
+\label{gastat6}
+\lastpagebutton{gastat5}
+La oss kikke på den samme figuren en gang til:
+\includegraphics[scale=0.2]{mb_vx.png}\\
+Kan du tenke deg hva bredden til kurven betyr? Hva sier det om gassen hvis denne kurven blir bredere eller smalere?
+Tenk gjennom og diskuter!
+\hyperlink{gastat7}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{gastat7}
+\lastpagebutton{gastat6}
+Vi tar et spørsmål til før du får svar på forrige spørsmål. I statistikk finnes det en størrelse som heter {\it varianse} og er definert som
+\[
+\sigma^2 = \frac{1}{N}\sum_{i=1}^N(v_i - \langle v\rangle)^2,
+\]
+og størrelsen $\sigma$ heter {\it standardavviket} (standard deviation på engelsk) som altså er kvadratroten av variansen. Her er summen $i$ over alle $N$ partikler i gassen. Kan du finne en fysisk tolkning av $\sigma$ ved å se på likningen? Kan en eller flere av disse være en god tolkning?
+\begin{enumerate}
+\item $\sigma$ er et mål på temperaturen til gassen
+\item $\sigma$ er et mål på gjennomsnittlig hastighet til partiklene i gassen
+\item $\sigma$ er et mål på høyden til kurven $P(v)$ og dermed høyeste sannsynlighet
+\item $\sigma$ er et mål på bredden av kurven $P(v)$
+\end{enumerate}
+Tenk deg godt om og si hva du mener passer best til din tolkning:\\
+\hyperlink{rettsigma}{\choicebutton{1}}\ \ \ \ \hyperlink{feilsigma}{\choicebutton{2}}\ \ \ \ \hyperlink{feilsigma}{\choicebutton{3}}\ \ \ \ \hyperlink{rettsigma}{\choicebutton{4}}\\
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feilsigma}
+\lastpagebutton{gastat7}
+\textcolor{white}{Det ble nok galt! Prøv å kikk på likningen en gang til for å se om du forstår hvorfor det er galt. Kanskje gir det nye perspektiver å se likningen hvitt på svart?}
+\textcolor{white} {
+\[
+\sigma^2 = \frac{1}{N}\sum_{i=1}^N(v_i - \langle v\rangle)^2,
+\]
+}
+\hyperlink{gastat8}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{rettsigma}
+\clastpagebutton{gastat7}
+\vspace*{2cm}
+HELT RIKTIG!
+Uttrykket gir deg både bredden til $P(v)$ og temperaturen til gassen, det er en sammenheng mellom disse to størrelsene!
+\hyperlink{gastat8}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+\begin{frame}
+\label{gastat8}
+\lastpagebutton{gastat7}
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_9.mp4}{denne videoen} blir forhåpentligvis alt klart når det gjelder bredden på kurven, hastighet til partiklene, temperaturen til gassen, og standardavviket! Se gjennom videoen et par ganger, dette er veldig sentralt stoff!
+\hyperlink{stat1}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{stat1}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebutton{gastat8}
+%{\small
+Som du har sett så er det statistikk vi bruker for å beskrive gasser. Dermed trenger vi å lære litt grunnleggende statistikk:\\`
+\includegraphics[scale=0.2]{gausskurve.png}\\
+Figuren viser en Gaussisk sannsynlighetsfordeling. På $x$-aksen kan det være mulige utfall for en hvilken som helst tilfeldig størrelse og på $y$-aksen så vises sannsynligheten for dette utfallet.\\
+\column{0.5\textwidth}
+\begin{block}{\bf Spørsmål}
+Ved å se på kurven, og uten å slå opp noe sted, kan du gjette omtrent på hvordan funksjonen som beskriver en Gaussisk kurve må se ut? Funksjonsuttrykket må selvfølgelig inneholde variabelen $x$, samt middelverdien for den tilfeldige størrelsen $x$ gitt ved $\mu$ og standardavviket til fordelingen gitt ved $\sigma$.\\
+\end{block}
+Bare når du har et forslag til hvordan funksjonen kan se ut, så kan du gå til neste side (der står svaret). Det er svært viktig at du har prøvd selv først!
+%}
+\hyperlink{stat2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\label{stat2}
+\lastpagebutton{stat1}
+Gaussisk sannsynlighetsfordeling:\\
+\[
+P(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}}
+\]
+Som Maxwell-Boltzmann så er dette en {\it sannsynlighetstetthet}, noe som betyr at du må gange opp med et lite intervall $\Delta x$ eller integrere over $dx$ for å få sannsynlighet.\\
+Sammenlikn med de to Maxwell-Boltzmann-fordelingsfunksjonene for $v_x$ og for $v$:
+\[
+P(v) = \left(\frac{m}{2\pi kT}\right)^{3/2}e^{-\frac{1}{2}\frac{mv^2}{kT}}4\pi v^2\ \ P(v_x) = \left(\frac{m}{2\pi kT}\right)^{1/2}e^{-\frac{1}{2}\frac{mv^2_x}{kT}}
+\]\\
+Avgjør om noen av disse er Gaussiske fordelingsfunksjoner:\\
+\hyperlink{feilgauss}{\choicebutton{Ingen av dem er Gaussisk}}\ \ \ \ \hyperlink{rettgauss}{\choicebutton{Kun $P(v_x)$ er Gaussisk}}\\
+\hyperlink{feilgauss}{\choicebutton{Kun $P(v)$ er Gaussisk}}\ \ \ \ \hyperlink{feilgauss}{\choicebutton{Begge er Gaussiske}}\\
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feilgauss}
+\lastpagebutton{stat2}
+\textcolor{white}{Nei nå tror jeg egentlig ikke at du tenkte deg så veldig godt om!!!  Trykk på knappen for å gå tilbake til forrige side, se nøye på funksjonene en gang til: kan du skrive om noen av Maxwell-Boltzmannfordelingene på formen til en Gausskurve?}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{rettgauss}
+\clastpagebutton{stat2}
+HELT RIKTIG!
+Det er kun $P(v_x)$ som kan skrives som en Gausskurve. For det første så er en ting klart: husk at funksjonen $P(v)$ ikke er symmetrisk! En Gausskurve er symmetrisk, dermed $P(v)$ ikke være Gaussisk.\\
+Da er vi enige om at Maxwell-Boltzmannfordelingen for hastighetskomponentene,
+\[
+P(v_x) = \left(\frac{m}{2\pi kT}\right)^{1/2}e^{-\frac{1}{2}\frac{mv^2_x}{kT}}
+\]
+kan skrives som en Gausskurve:
+\[
+P(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}}
+\]
+Det øverste uttrykket her er altså $v_x$-fordelingen og nederst er en generell Gausskurve. Ved å sammenlikne, finn en verdi eller et uttrykk for (1) gjennomsnittet $\mu$ og (2) standardavviket $\sigma$ til $P(v_x)$. Ikke gå videre før du har svaret. Begge disse svarene er svært sentrale resultater som du får bruk for mange ganger fremover. Du {\bf må} forstå hvordan du finner $\mu$ og $\sigma$ her.
+\hyperlink{stat3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+
+\begin{frame}
+\label{stat3}
+\lastpagebutton{stat2}
+Tiden har kommet for å se litt nærmere på Gaussfunksjonen og oppdage noen svært viktige egenskaper:
+\begin{block}{\bf Den Gaussiske sannsynlighetsfordelingen}
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_10.mp4}{denne videoen} får du en nærmere forklaring på hvilke viktige egenskaper den Gaussisk sannsynlighetsfordelingen har og hvordan den henger sammen med Maxwell-Boltzmannfordelingen $P(v_x)$.
+\end{block}
+Når du du har sett videoen og forstår hva den prøver å fortelle, så kan du teste forståelsen din på \hyperlink{stat3b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{stat3b}
+\lastpagebutton{stat3}
+Fikk du med deg forskjellen på standardavviket $\sigma$ og FWHM i videoen?
+\includegraphics[scale=0.5]{gausskurve_fwhm.png}\\
+Hvis ikke, gå tilbake og sjekk videoen en gang til!
+Merk deg også den matematiske sammenhengen mellom størrelsene:
+\[
+\sigma=\frac{\mathrm{FWHM}}{\sqrt{8\ln{2}}}
+\]
+\hyperlink{stat4}{\pagebutton{Alt dette fikk jeg med meg, gå til neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{stat4}
+\lastpagebutton{stat3b}
+Du har nå lært om 68-95-99.7-regelen: Hvis du har en Gaussisk sannsynlighetsfordeling $P(x)$ for en tilfeldig størrelse $x$, så er det $68\%$ sannsynlig at den tilfeldige verdien du trekker for $x$ er innenfor et standardavvik foran eller bak gjennomsnittsverdien, $95\%$ sannsynlig at den ligger innenfor 2 standardavvik fra gjennomsnittet og $99.7\%$ sannsynlig at den ligger innenfor 3 standardavvik fra gjennomsnittet. 
+\begin{block}{\bf Spørsmål}
+Men hvordan ville du gå frem for å vise dette? Dvs. hvordan kunne du analytisk gå frem for å utlede disse tallene? Du skal ikke gjøre regningen, men tenke hvordan du ville gått frem. 
+\end{block}
+Svaret står på neste side, så tenk deg godt om før du går videre...\\
+\hyperlink{stat5}{\pagebutton{Neste side}}
+\end{frame}
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+\begin{frame}
+\label{stat5}
+\lastpagebutton{stat4}
+\textcolor{yellow}{ÅJASSÅ DU! DU TRYKTE PÅ KNAPPEN UTEN Å HA TENKT GJENNOM SPØRSMÅLET!!!\\ Eller kanskje du hadde tenkte gjennom det?? Uansett, hvis du ikke hadde det, så får du en ny sjans her. Svaret står først på neste side...}
+\hyperlink{stat6}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{stat6}
+\lastpagebutton{stat5}
+Du kan finne f.eks. $68\%$-tallet ved å integrerer sannsynligheten. Hva er sannsynligheten for å trekke et tall $x$ som ligger mellom tallene $-\sigma$ og $\sigma$? Hvis du ikke har det klart for deg, gå tilbake til \hyperlink{maxbol3}{\pagebutton{denne siden}} for å se videoen om sannsynlighetsfordelinger en gang til, dette er viktig!
+Hvis du fikk det til, her er svaret:
+\[
+\int_{\mu-\sigma}^{\mu+\sigma}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}}dx = 0.6827...
+\]
+Når du har forstått denne så er du klar for neste utfordring, på neste side...
+\hyperlink{stat6b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{stat6b}
+\lastpagebutton{stat6}
+Før du på neste side skal starte med noen real-life-problemer, la oss sjekke om du egentlig har forstått hva vi driver med. Henger du med, så skal svaret på denne komme straks. Hvis du tar Maxwell-Boltzmanns fordelingsfunksjon for hastigheter $P(v)$ (den litt kompliserte funksjonen vi så tidligere). Hvis vi integerer den
+\[
+\int_0^\infty P(v)dv = ?
+\]
+hva får vi da? Ingen  matematikk er nødvendig.\\
+\hyperlink{stat6c}{\choicebutton{\small Det er jo opplagt, denne kan jeg svare på!}}\ \ \ \ \hyperlink{stat6c}{\choicebutton{\small Tja, jeg trodde jeg hang med, men kanskje jeg ikke er helt sikker...}}
+\end{frame}
+
+\begin{frame}
+\label{stat6c}
+\lastpagebutton{stat6b}
+Ok, la oss være litt mer konkret, er
+\[
+\int_0^\infty P(v)dv = ?
+\]\\
+lik\\
+\hyperlink{feil6c}{\choicebutton{0 ?}}\ \ \ \ \hyperlink{feil6c}{\choicebutton{-1 ?}}\ \ \ \ \hyperlink{rett6c}{\choicebutton{1 ?}}\ \ \ \ \hyperlink{feil6c}{\choicebutton{$-\infty$ ?}}\ \ \ \ \hyperlink{feil6c}{\choicebutton{$\infty$ ?}}\ \ \ \ \hyperlink{feil6c}{\choicebutton{$\pi$ ?}}\ \ \ \ \hyperlink{feil6c}{\choicebutton{0.68 ?}}
+\end{frame}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feil6c}
+\lastpagebutton{stat6c}
+\textcolor{white}{Du har nok ikke helt kontrollen på stoffet enda. Anbefaler sterkt at du går gjennom de følgende sidene en gang til, og har dette spørsmålet i hodet mens du går gjennom stoffet. Når du kommer frem hit neste gang så får du en ny sjans til å finne svaret på spørsmålet, hvis ikke spør foreleser eller gruppelærer før du går videre!}\\
+\hyperlink{maxbol3}{\pagebutton{Ta meg til de relevante sidene for å repetere!}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{rett6c}
+\clastpagebutton{stat6c}
+STRÅLENDE!
+Da har du nok innsett at integralet blir slik, fordi man jo integrerer over alle mulige hastigheter som partikkelen kan ha. Og integralet over $P(v)$ gir deg sannsynligheten for dette hastighetsintervallet fra 0 til 1. Sannsynligheten for at partikkelen har en av alle de mulige hastighetene som den kan ha er jo $100\%$ eller da 1.
+\hyperlink{siste}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+\begin{frame}
+\label{siste}
+\hyperlink{stat6c}{\pagebutton{Forrige side}}\\
+Gå videre til del 2 av de interaktive forelesningsnotatene for Del 1A!
+\end{frame}
+\end{document}
+
