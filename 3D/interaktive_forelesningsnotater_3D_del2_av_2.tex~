@@ -1,0 +1,1162 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+
+\input{usercommands}
+
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{\textcolor{black}{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}}
+
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+\newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\pagenobutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = apricot, rounded corners = 5pt]{\color{brown(traditional)}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\padletbutton}{\href{https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small PADLET}}}}
+
+
+
+\newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{32}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3D\\Interaktive forelesningsnotater}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3D\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1-2 minutter på de korte, 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter 5 minutter, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det nå en \padletbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+%%%%% intro
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.6]{NASA-Sun.jpg}
+\column{0.5\textwidth}
+{\small
+\textcolor{yellow}{\bf Velkommen til del 3D! En stjerne har blitt født og har begynt fusjon i sentrum. Stjernen er på hovedserien. Men hva betyr det egentlig at stjernen er på hovedserien? Det skal vi se litt på! Vi skal se på sammenhenger mellom luminositet, masse og temperatur til stjerner. Og så skal vi se hva som skjer i alderdommen.}\\
+\textcolor{yellow}{(Illustrasjon: NASA)}}
+\hyperlink{intro2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}`
+\label{intro2}
+\lastpagebutton{intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/167468}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/167468}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand{\headline}{HR-diagram, IGJEN!}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{hs}
+\hyperlink{hr1}{\pagebutton{La oss se hva atomkjernenes masse har å gjøre med dette?}}
+\end{frame}
+}
+
+
+\fullframe{hr1}{intro2}{hr2}{1}{
+{\bf Vi skal studere HR-diagrammet litt grundigere, se forskjellige formater og prøve å forstå hvorfor det ser ut slik som det gjør.}\\
+\includegraphics[scale=0.4]{fig_11-3.pdf}\\
+Har du lagt merke til at HR-diagrammene vi har vist så langt også har {\it spektralklasse} på x-aksen i tillegg til temperatur? (se x-aksen øverst). Før man forstod fysikken bak, så klassifiserte man stjerner etter hvilke spektrallinjer man fant i spektrene. Det er først senere man forstod at dette henger sammen med stjernenes temperatur.
+}
+
+
+\choiceframe{hr2}{hr1}{0}{
+\includegraphics[scale=0.4]{fig_11-3.pdf}\\
+{\bf Men hvordan kan det være en sammenheng mellom hvilke spetrallinjer man ser og temperaturen til en stjerne??} La oss ta et eksempel: En av de vanligste absorpsjonslinjene i en stjerne er H$\alpha$-linjen som er overgangen mellom nederste og nest-nederste energinivå for elektronet i hydrogenatomet (husk Bohrs atommodell). Hvis man i en stjerne ikke finner  H$\alpha$-linjen, tror du det betyr at stjernen er ... \hyperlink{hr2a}{\choicebutton{kald}} eller \hyperlink{hr2b}{\choicebutton{varm}}
+}
+
+\colfullframe{hr2a}{hr2}{hr3}{0}{black}{
+\Huge
+\textcolor{white}{Det ble galt! Hvis gassen er kald, så har atomene og elektronene lite energi og elektronet vil for det meste være i laveste energitilstand, noe som gjør at det lett absorberer et foton slik at det hopper opp til neste energitilstand.}
+}
+
+\colfullframe{hr2b}{hr2}{hr3}{-1}{yellow}{
+\Large
+Det stemmer! Når temperaturen er høy så har atomet og elektronet mye energi, elektronet vil ofte være eksitert i en høyere energitilstand, dermed kan det ikke hoppe fra det laveste nivået og lage en H$\alpha$-absorpsjonslinje. Hvis temperaturen er veldig høy så er hydrogen ionisert, dvs. at elektronet og atomkjernen er separert, da kan vi ihvertfall ikke få noen absorpsjon mellom laveste og nest-laveste nivå, da vil ikke hydrogenatomet kunne absorbere i det hele tatt.
+}
+
+\fullframe{hr3}{hr2}{hr4}{0}{
+Altså: hvis {\bf temperaturen er lav}, så er atomene i grunn-tilstanden (de har lite energi), og vi få {\bf mange absorpsjonsliner fra grunn-tilstanden og oppover} (slik som H$\alpha$-linjen).  Når {\bf temperaturen er høy} så har atomet og elektronet mye energi, elektronet vil ofte være {\bf eksitert i en høyere energitilstand, dermed kan det ikke hoppe fra det laveste nivået} og lage en H$\alpha$-absorpsjonslinje. Hvis temperaturen er veldig høy så er hydrogen ionisert, dvs. at elektronet og atomkjernen er separert, da kan vi ihvertfall ikke få noen absorpsjon mellom laveste og nest-laveste nivå, da vil ikke hydrogenatomet kunne absorbere i det hele tatt. {\bf Dette gjelder også andre atomer, noen av disse blir eksitert ionisert tidligere enn andre, avhengig av energien som er nødvendig til å få dette til}. \textcolor{red}{Dermed vil kombinasjonen av spektrallinjer fra gassen være sterkt korrelert med temperatur.}
+}
+
+
+\fullframe{hr4}{hr3}{hr5}{0}{
+\includegraphics[scale=0.4]{fig_11-3.pdf}\\
+{\bf De varmeste blå stjernene har spektralklasse ``O'', de er O-stjerner, de kaldeste røde stjernene har spektralklasse M, de er M-stjerner.} På den måten omtaler astronomer stjerner og dermed implisitt sier noe om temperaturen (og dermed også massen som vi skal se senere). Spektralklasseinndelingen er faktisk enda finere enn dette, {\bf hver spektralklasse er delt inn i 10 underklasser nummerert fra 0 til 9. De varmeste F-stjernene kalles F0-stjerner, de kaldeste F9.}
+}
+
+\colfullframe{hr5}{hr4}{hr6}{0}{black}{
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+\textcolor{yellow}{
+Her ser vi et annet HR-diagram (fra Wikipedia).
+}
+\column{0.5\textwidth}
+\textcolor{yellow}{
+Det første du skal legge merke til her er romertallene som står bak de lilla linjene som beskriver stjernetypene inne i diagrammet. Dette er det vi kaller {\it luminositetsklasser}, en grovinndeling av luminositetene til stjernene fra Ia til VII, igjen basert på spektrene. Det viser seg at spektrene selv innenfor samme spektralklasse kan være forskjellige avhengig av luminositetsklasse. Med denne klassifiseringen er solen en G2V-stjerne.
+}
+\end{columns}
+}
+
+
+\colfullframe{hr6}{hr5}{hr7}{0}{black}{
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+\column{0.5\textwidth}
+\textcolor{yellow}{
+Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?
+\pagequestion{hr6b}{\small Ja, det er noe på x-aksen...}{-1}
+Det stemmer! Der står det noe om fargeindeks! Husker du dette med størrelseklasser med filtre? Altså $m_V$ eller $M_V$ for visuell størrelseklasse, $m_B$ eller $M_B$ for blå størrelseklasse, osv. (fra \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}).
+\samepagequestion{hr6c}{\small Ja!}{\small Nei, men nå repeterte jeg det!}{0}
+Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M_V$. Men hvilken av dem?
+}
+\end{columns}
+}
+
+
+\colfullframetwo{hr7}{hr6}{hr8}{1}{black}{
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+}
+{
+\textcolor{yellow}{\small
+La oss tenke litt, $m_B-m_V$ er vel den tilsynelatende størrelseklassen målt i blått lys minus den målt i visuelt (altså midt i det synlige fargespektret). Hvis vi har en glovarm blå stjerne, blir $m_B-m_V$ da et positivt eller negativt tall?
+\samepagequestion{hr7b}{\small Tror jeg vet!}{\small Usikker!}{-2}
+Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks betyr liten størrelseklasse $m_B$ (det {\bf må} du ha kontroll pa nå!). Den lyser dermed mindre sterkt i andre deler av det synlige spektret. Fluksen tatt med V-filter er altså mindre, og dermed er $m_V$ {\bf større} enn $m_B$, noe som gir at $m_B-m_V$ er et negativt tall for blå stjerner. Ser du på HR-diagrammet her og x-aksen, så ser vel det riktig ut?
+}
+}
+
+
+\colfullframetwo{hr8}{hr7}{hr9}{2}{black}{
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+}
+{
+\textcolor{yellow}{\small 
+Vi snakket så langt om $m_B-m_V$. Hvordan blir det med absolutt størrelseklasse? Hvis vi tar $M_B-M_V$ istedenfor $m_B-m_V$ for vår blå stjerne. Vil den da også bli negativ?
+\samepagequestion{hr8b}{\small Ja!}{\small Avhenger vel av avstanden?}{-3}
+Må ikke den faktisk også bli negativ? Det at vi går fra tilsynelatende til absolutt størrelseklasse betyr jo bare at vi måler mottatt fluks i en avstand av 10pc isteden for den faktiske avstanden. Det vil endre på mottat fluks, men vil vel ikke endre det faktum at det blir mottatt mer blått enn f.eks. gult lys? Det må være det samme i alle avstander (med mindre det er noe mellom oss og stjernen som tar opp lys bare i gitte farger).
+}
+}
+
+\colfullframetwo{hr9}{hr8}{hr10}{3}{black}{
+\includegraphics[scale=0.15]{HR_diagram.pdf}\\
+\textcolor{yellow}{\small 
+\small Hvis vi er enige om at det relative forholdet mellom fluks på forskjellige bølgelengder (farger) normalt ikke endrer seg (hvis du ikke er enig, ta en prat med foreleser!), må det ikke da være slik at
+}
+}
+{
+\textcolor{yellow}{\small 
+forskjellen $m_B-m_V$ må være lik forskjellen $M_B-M_V$? Altså
+\[
+m_B-m_V=M_B-M_V
+\]
+??? Kan du utlede dette matematisk? Ta nå og kikk på de forskjellige formlene du har som inneholder størrelseklasser (sammenheng mellom størrelseklasser og fluks samt sammenheng mellom tilsynelatende og absolutt størrelseklasse, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{del 1D} og \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}). Husk at du her kan bytte ut $m$, $M$ og $F$ med de tilsvarende filtrerte størrelsene så lenge du gjør det konsekvent i samme likning. {\bf Klarer du å utlede det? Ikke gå videre før du har gjort et skikkelig forsøk!}
+}
+}
+
+\colfullframe{hr10}{hr9}{hr11}{0}{red}{
+{\textcolor{yellow}{\Large
+Fikk du til utledningen? Hvis ikke, skal du få et hint.\pagequestion{hr10b}{Hint, {\bf pleeeease!}}{-1}
+Hint skal bli. Du har den kjente sammenhengen mellom tilsynelatende og absolutt størrelseklasse
+\[
+m-M=5\log{\frac{r}{10\mathrm{pc}}}
+\]
+Skriv dette ut først som visuelle størrelseklasser, deretter som blå størrelseklasse. Trekk likningene fra hverandre og vips...
+}
+}
+}
+
+
+\colfullframetwo{hr11}{hr10}{hr12}{1}{black}{
+\includegraphics[scale=0.15]{HR_diagram.pdf}\\
+\textcolor{yellow}{\bf Hvis du ikke fikk til utledningen med hintet, spør foreleser! Dette må du ha kontroll på og forstå!}
+}
+{
+\textcolor{yellow}{ 
+ Dermed ser du hva fargeindeksen $B-V$ som er på x-aksen er for noe:
+\[
+B-V=m_b-m_V=M_B-M_V
+\]
+Dette er altså en størrelse som vi kan beregne uten å kjenne avstanden til stjerna, kun tilsynelatende størrelseklasse på forskjellige bølgelengder. Men hvorfor er dette relatert til temperatur? Vi pleier jo å ha temperatur på x-aksen, nå står det B-V isteden! Vi ser at lav B-V tilsvarer høy temperatur og høy B-V tilsvarer lav temperatur. {\bf Hvorfor det???} Diskuter før du går videre!
+}
+}
+
+
+
+\colfullframe{hr12}{hr11}{hr13}{0}{red}{
+\textcolor{yellow}{\Large
+Fant du ut av det??? \pagequestion{hr12b}{Få se svaret da!}{-1}
+Aha, en varm stjerne har toppen i Planck-spektret på lavere bølgelengder (husk \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{Wiens forskyvningslov!}) som tilsvarer blått lys. Og hvis intensiteten og dermed også fluksen er større i blått lys, får vi (som vi fant ut for et par sider siden) en lav og til og med negativ fargeindeks. Helt motsatt, hvis temperaturen er lav, vi har mest Planck-stråling på lange bølgelengder (rødt lys), så har vi mindre fluks i blått enn i visuelt og vi får en større og positiv fargeindeks. {\bf Skjønner? Hvis ikke, spør foreleser!}
+}
+}
+
+
+
+\colfullframetwo{hr13}{hr12}{hr14}{1}{black}{
+\includegraphics[scale=0.12]{HR_diagram.pdf}\\
+\textcolor{yellow}{\small Da har du sett at vi på x-aksen i et HR-diagram kan ha, både temperatur, spektralklasse og fargeindeks. Du har også sett hvorfor disse tre er sterkt relatert. Du har ogsa sett at vi kan ha luminositet, absolutt størrelseklasse eller luminositetsklasse på y-aksen.
+}
+}
+{
+\textcolor{yellow}{ 
+\small Men nå er jeg sikker på at du helt siden del 3A ikke har sovet om natte fordi du har lurt fælt på hvorfor i alle dager stjernene ligger langs denne skrå linjen i HR-diagrammet som vi kaller hovedserien? Fortvil ikke, dette eksistensielle spørsmålet skal nå få et svar, du skal innen dagen er omme få nattesøvnen tilbake. {\bf Men alle disse nettene som du har ligget og grublet, kom du frem til en hypotese om hvorfor det er slik?} Og om ikke nattegrubling var nok, ta nå en diskusjon med andre studenter, kan dere se hvorfor det må være sånn? ({\bf Hint: Fluks, luminositet, sort stråling og sånt.)}
+}
+}
+
+\fullframe{hr14}{hr13}{hr15}{0}{
+Hvis du har et kuleformet sort legeme (la oss kalle det en stjerne), kan du uttrykke luminositeteten $L$ til dette ved hjelp av overflatetemperatur $T$ og radius $R$? vis du trenger å friske opp sort stråling, fluks og luminositet, kikke tilbake på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{del 1D}. \pagequestion{hr14b}{Jeg har skrevet ned uttrykket!}{-1}
+\[
+L=4\pi R^2\sigma T^4
+\]
+Right? {\bf Har du lagt merke til at HR-diagrammene er log-log-plott?} Det at vi har logaritmiske akser betyr egentlig at vi plotter logaritmen til størrelsene. Det vil si at egentlig er det $\log{L}$ som funksjon av $\log{T}$ som er plottet i HR-diagrammet. Hvis vi tar log av denne likningen får vi
+\[
+\log{L}=\log{4\pi R^2\sigma}+4\log{T}
+\]
+Enig?? (produktregel for logaritme). {\Large\bf Har du nå en ide om hva det betyr at stjernene legger seg i en rett linje i HR-diagrammet?}.
+}
+
+
+\fullframe{hr15}{hr14}{hr16}{1}{
+Siden vi i HR-diagrammet plotter  $\log{L}$ som funksjon av $\log{T}$ så kan vi vel sammenlikne
+\[
+\log{L}=4\log{T} + \log{4\pi R^2\sigma}
+\]
+men likningen for en rett linje
+\[
+y=ax+b
+\]
+ikke sant? \pagequestion{hr15b}{OK! Stemmer vel det.}{-2}
+Vi ser at dette er en rett linje med stigningstall 4 (husk at $T$ øker i motsatt retning på x-aksen) og med $\log{4\pi R^2\sigma}$ som konstanten som skifter denne linja opp og ned. Men {\bf hva sier dette oss om hovedseriestjernene????} Ikke bla om før du har et forslag!
+}
+
+\fullframe{hr16}{hr15}{hr16b}{2}{
+Hvis vi igjen ser på likningene:
+\[
+\log{L}=4\log{T} + \log{4\pi R^2\sigma}
+\]
+men likningen for en rett linje
+\[
+y=ax+b
+\]
+Hvis vi antar at alle stjerner har samme radius $R$, {\bf så vil vel alle stjerner ligge langs en rett linje i HR-diagrammet?}. Det må vel bety at det hovedseriestjerner har til felles er at de har omtrent den samme radiusen? VEL, nå er jo hovedserielinja ganske bred, så nøyaktig samme radius svarer det vel ikke til, men kanskje i samme radiusområde? La oss bruke dette uttrykket til å plotte linjene med konstant radius (men flere linjer med litt forskjellige radiuser) inn i HR-diagrammet.
+}
+
+
+\fullframetwo{hr16b}{hr16}{hr17}{0}{
+\includegraphics[scale=0.3]{fig_13-2.pdf}\\
+\href{http://astro.wsu.edu/worthey/astro/html/lec-hr.html}{\tiny (http://astro.wsu.edu/worthey/astro/html/lec-hr.html)}\\
+\small
+I dette HR-diagrammet ser du flere linjer plottet med uttrykket
+\[
+\log{L}=4\log{T} + \log{4\pi R^2\sigma}
+\]
+}
+{\small
+for forskjellige verdier av $R$. {\bf Ser du at det vi kaller hovedserie er stjerner med samme radius, en radius omkring radien til solen?} (ikke overraskende siden også solen ligger i dette båndet). Bredden av båndet er slik at stjerner i hovedserien har radius i intervallet $[0.1R_\odot,10R_\odot]$. Stjerner flest har altså en radius i dette intervallet og derfor ligger også stjerner flest i dette diagonale båndet. Etter at en nyfødt stjerne har har nådd hydrostatisk likevekt, så har stjernen en slik radius (bestemt av den hydrostatiske likevekten!) og ligger dermed i dette båndet. Som vi skal snart skal se så vil stjerner som har brukt opp hydrogenet i sentrum ese ut, få mye større radius og dermed forlate hovedserien.
+}
+
+
+\fullframe{hr17}{hr16b}{hr18}{0}{
+{\bf\Large Radien til en stjerne avgjøres av massen!}\\
+Tygg litt på den påstanden! Kan du se at det gir mening?\pagequestion{hr17b}{Tygd og fordøyd!}{-1}
+En stjernes sammensetning er i stor grad det samme, 75\% hydrogen og 25\% helium samt bittelitt andre grunnstoff. Massen til stjerna er det som gir opphav til tyngdekrafta. Stjernas temperatur og tetthet og dermed mot-trykk som respons på denne gravitasjonen vil derfor være omtrent den samme for alle stjerner der tyngdekrafta (og dermed massen) er den samme. Dermed vil stjerna også nå likevekt mellom gravitasjon og trykk, hydrostatisk likevekt, når stjerna har nådd omtrent samme radius som alle andre stjerner med den massen.\\
+\textcolor{red}{Men finnes det noen grense for hvor stor eller liten masse en stjerna kan ha?}
+}
+
+\colfullframe{hr18}{hr17}{hr19}{1}{red}{
+\centerline{\textcolor{yellow}{\Huge Ja gjør det egentlig det?}}
+Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}\pagequestion{hr18b}{Jeg har tenkt meg godt om og har et forslag!}{-2}
+En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...\pagequestion{hr18c}{fordi at...}{0}
+\textcolor{yellow}{Stjerna når hydrostatisk likevekt før temperaturen er høy nok til å starte fusjonsreaksjoner. Med lav masse og dermed liten tyngdekraft trengs ikke så høy temperatur for å få et stort nok mot-trykk. Skjønner? Slike mislykkede stjerner kaller vi {\it brune dverger}}\\
+En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...\pagequestion{hr18d}{fordi at...}{0}
+\vspace*{-0.5cm}
+\textcolor{yellow}{Ved sammentrekning så er tyngdekrafta så stor, og lager så fort en så høy temperatur, at gasstrykket vinner over tyngdekrafta før vi når hydrostatisk likevekt. Vi får dermed ikke dannet noen stjerne.}
+}
+
+
+\fullframe{hr19}{hr18}{hr20}{2}{
+\begin{itemize}
+\item En stjerne begynner altså som en stor sky av gass som trekker seg sammen under sin egen gravitasjon. 
+\item Hvis massen er i intervallet $[0.08M_\odot,100M_\odot]$, vil vi nå et punkt der temperaturen i sentrum er så høy at vi får fusjonsreaksjoner og vi får dannet et mot-trykk mot gravitasjon. 
+\item Stjernen når hydrostatisk likevekt på en radius i intervallet $[0.1R_\odot,10R_\odot]$ og har blitt en hovedseriestjerne. 
+\end{itemize}
+Dette bør du ha oversikt over, også tallene bør du omtrentlig kunne! 
+\begin{itemize}
+\item Etter noen millioner eller milliarder år så har hydrogenet i kjernen blitt brukt opp i kjernereaksjonene, stjernen eser ut og blir en kjempestjerne. D
+\item en flytter seg da opp til kjempegrenene i HR-diagrammet. 
+\end{itemize}
+Neste tema går ut på å beregne omtrent hvor lenge en stjerne holder seg på hovedserien. Men før det skal du få en grublis!
+}
+
+
+\choiceframe{hr20}{hr19}{0}{
+Før stjerna har blitt en stjerne, altså mens den er en enorm GMC (Giant Molecular Cloud, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3b.pdf}{del 3B}), {\bf hvor finner vi gass-skya på HR-diagrammet??}\\
+\hyperlink{hr20b}{\choicebutton{Laaangt ned og laaangt til venstre}}
+\hyperlink{hr20b}{\choicebutton{Laaangt opp og laaangt til venstre}}
+\hyperlink{hr20c}{\choicebutton{Laaangt opp og laaangt til høyre}}
+\hyperlink{hr20b}{\choicebutton{Laaangt ned og laaangt til høyre}}
+}
+
+
+\colfullframe{hr20b}{hr20}{hr21}{0}{black}{
+\textcolor{white}{\Huge Det ble galt!}
+}
+
+\colfullframe{hr20c}{hr20}{hr21}{-1}{yellow}{
+{\Huge Det ble riktig!}
+}
+
+\fullframe{hr21}{hr20}{nytema2}{0}{
+Husk at en GMC er {\bf enorm}, flere lysår stor! Husker du sammenhengen mellom luminositet, temperatur og radius?
+\[
+L=4\pi R^2\sigma T^4
+\]
+Selv om temperaturen er lav, så er radien enormt stor og opphøyd i andre, dermed får vi en veldig stor luminositet men lav temperatur. Fluksen (energien per $\mathrm{m}^2$) er liten men arealet som denne fluksen strømmer ut ifra er enorm. Dette er oppe og til høyre i HR-diagrammet, langt til høyre for stjernene. Derfra beveger den seg til venstre ettersom temperaturen går opp, og mer eller mindre nedover når radien og dermed også luminositeten går ned (eller holder seg omtrent). Så begynner fusjonsreaksjoner og stjernen stabiliseres på hovedserien.
+}
+
+
+
+\renewcommand{\headline}{Livet på hovedserien}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{nytema2}
+\hyperlink{hr21}{\pagebutton{\small Forrige side}}
+\nytemaside{farvel}
+\hyperlink{ms1}{\pagebutton{La oss starte livet på hovedserien.}}
+\end{frame}
+}
+
+
+\choiceframe{ms1}{hr21}{0}{\label{hs}
+Husker du {\bf tilstandslikningen} for ideel gass? Var ikke det
+\[
+P=\frac{\rho kT}{\mu m_H}
+\]
+Sjekk at du husker hva alle symbolene står for her! Tenk nå at du ser på gass-strykket i sentrum av stjernen. Hva skjer etter millioner av år med fusjonsreaksjoner? Hvordan vil trykket endre seg? Blir det \hyperlink{ms1b}{\choicebutton{større}} eller \hyperlink{ms1c}{\choicebutton{mindre}}???
+}
+
+
+\colfullframe{ms1b}{ms1}{ms1c}{0}{black}{
+\textcolor{white}{\Huge Ikke heeelt. Hva skjer med $\mu$? Hvis du plutselig har masse heliumatomer og færre hydrogenatomer, vil ikke $\mu$ endre seg? Hvordan vil det påvirke trykket?}
+}
+
+\colfullframe{ms1c}{ms1}{ms2}{-1}{yellow}{
+Det er {\bf helt riktig!}.
+\[
+P=\frac{\rho kT}{\mu m_H}
+\]
+Her {\bf øker} jo $\mu$ ettersom vi få mer og mer helium. Husk at $\mu$ er et mål på midlere masse til atomkjernene, hvis vi får mer helium som er tyngre og mindre hydrogen etter kjernereaksjoner så må $\mu$ øke! Fra tilstandslikningen ser vi at {\bf hvis $\mu$ øker, så må trykket minke.} Og hvis trykke blir mindre, {\bf så vinner gravitasjon litt!} Og hvis gravitasjons da klarer å presse stjernen litt mer sammen så vil {\bf radien med tiden bli litt mindre.}. Stjernen krymper litt på hovedserien, men på meget sakte tidsskala. \textcolor{red}{Men hvor lenge holder den på med dette da? Hvor lenge lever stjernen på hovedserien? Det må vel være til den har brukt opp alt hydrogenet i de sentrale delene av stjernen der fusjonsreaksjonene foregår, men {\bf hvor lang tid} tar dette?}
+}
+
+\fullframe{ms2}{ms1c}{ms3}{0}{
+Vi skal på de neste sidene gjør {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.} \pagequestion{ms2b}{\small Den må du lenger ut på landet med!}{-1}
+Vel, mange av dere kommer til å jobbe med {\bf modellering} av komplekse systemer, det kan være veldig forskjellige systemer fra modellering av trafikken på veiene eller modellering av fisk og småkryp i en elv (eksempler på jobber som tidligere masterstudenter i astronomi faktisk gjør). Modellering av komplekse systemer kan være svært vanskelig hvis du ikke først finner noen virkelig kraftige men likevel ikke helt gale antakelser...
+}
+
+\fullframe{ms3}{ms2}{ms4}{1}{
+...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!} \pagequestion{ms3b}{Ok, men hva skal man med en slik forenklet modell da?}{-2} Når du har funnet en slik sterkt forenklet modell, kan du 
+\begin{itemize}
+\item begynne å finne enkle sammenhenger som gjør at du får litt fysisk intuisjon for systemet ditt
+\item bruke denne som grunnlag for en langt mer kompleks og realistisk modell/simulering
+\item bruke denne til å teste den mer kompliserte modellen i enkle tilfeller
+\end{itemize}
+}
+
+\fullframe{ms4}{ms3}{ms5}{2}{
+Med master i fysikk/astrofysikk blir du ofte ansatt nettopp for at du har erfaring med en slik prosess, ikke bare fordi du kan programmere for å løse problemer med datamaskin. Til det siste ansetter de like gjerne en informatiker. {\bf Det en fysiker har å tilby i tillegg er nettopp denne forståelsen av store og komplekse systemer, det å kunne bruke fysisk forståelse til å finne gode forenklinger, antakelser og sammenhenger som gjør at du kan forstå og beskrive systemet på en enkel måte.} \textcolor{red}{{\bf Det er akkurat det vi skal gjøre nå på de neste sidene}, så følg godt med og prøv å tenke deg at du har blitt ansatt avf et firma som har en utmerket ide: å lage en kjempestor gasskule der hydrogenfusjon brukes til å lage energi. Før milliarder av kroner brukes på å konstruere denne gasskula, skal du bruke det du kan om fysikk til å gjøre overslag for å finne ut f.eks. hvor mye energi vi kan få og hvor lang levetid en slik fusjonsreaktor vil kunne ha. Og spesielt hvor stor masse bør en slik kule ha for å optimalisere energien vi utvinner? Hva er sammenhengen mellom massen og energien vi får?}
+}
+
+
+\fullframe{ms5}{ms4}{ms6}{0}{
+La oss begynne med et enkelt spørsmål først. Anta at du kjenner massem $M$ til gasskula (aka stjerna), at fusjonsreaksjoner kun foregår i kjernen som utgjør en andel $p$ av massen til kula. Anta videre at vi kjenner luminositeten $L$. Kan du finne et uttrykk for hvor lenge denne stjerna kommer til å produsere energi ved at hydrogen fusjonener til helium?\pagequestion{ms5b}{Jeg har skrevet ned et forslag}{-1}
+Så total masse som blir fusjonert er $pM$. Masse går over til energi via uttrykket $E=mc^2$ der $c$ er lysfarten, så total energi som blir produsert i løpet av hele stjerna (unnskyld, gasskula) sin levetid må være $E=pMc^2$. Og energien som produseres per tid er $L$. Da må vel levetiden bli
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}
+\]
+Ok, da mangler vi ``bare'' luminositeten $L$ for å finne levetida. Men det er ikke bare-bare...
+}
+
+
+\colfullframe{ms6}{ms5}{ms7}{1}{red}{
+\textcolor{yellow}{\Huge
+For hvordan kan du lage et overslag for luminositeten til en fusjonerende gasskule? Du kan anta at du kjenner massen og radien. Du kjenner ikke levetida. Hvor begynner du? Si at du kan anta de aller villeste forenklinger, kan du da komme på noen forslag?
+}
+}
+
+\colfullframe{ms7}{ms6}{ms7b}{0}{red}{
+\textcolor{yellow}{\Huge
+Har du fått ned noen ideer på papiret? Du kan jo ikke få sparken allerede før du har begynt! {\bf Noe, må du kunne vise frem for at firmaet enda skal ha tiltro til deg.}
+}
+}
+
+
+\colfullframe{ms7b}{ms7}{ms8}{0}{red}{
+\textcolor{yellow}{\Huge
+Ta ihvertall 5-10 minutter, diskuter med medstudenter og skriv ned i det minste noen konsepter eller bruddstykker av ideer og ting som du kanskje kunne bruke på en eller annen måte. {\bf NOE må du få ned på papiret}. Det står om karrieren din!
+}
+}
+
+
+\fullframe{ms8}{ms7b}{ms9}{0}{
+Allright, la oss prøve å dele opp problemet litt, det pleier å være et godt startpunkt. Vi vet at luminositet er definert som
+\[
+L=\frac{\Delta E}{\Delta t}
+\]
+La oss tenke oss at vi kan slå av og på kjernereaksjonene i sola, ok? Vi slår de på et kort lite øyeblikk og får produsert en energi $\Delta E$ i løpet av dette øyeblikket. Og så {\bf venter vi!}. Vi venter til all denne energien har kommet frem til overflaten av sola og blitt strålt ut. Det tar langt tid, husk at radien til sola er 800.000 km!. Anta at vi finner tiden $\Delta t$. Da kan vi putte inn i formelen over her for å finne luminositeten. En energi $\Delta E$ som ble {\bf strålt ut} i løpet tiden $\Delta t$. Og slik holder vel sola egentlig på hele tida? I hvert lite øyeblikk lager den energi $\Delta E$ som trenger tiden $\Delta t$ på å komme ut. Og slik holder den på hele tiden. Hvis vi finner $\Delta E$ og $\Delta t$, så har vi luminositeten!
+}
+
+
+\fullframe{ms9}{ms8}{ms10}{0}{\small
+Før vi kan se noe nærmere på det, må vi nesten se hvordan energien transporteres fra sentrum av en stjerne og opp til overflaten. Det finnes 3 hovedprosesser for energitransport gjennom et medium:
+\begin{itemize}
+\item {\bf Energitransport ved stråling:} Her er det rett og slett fotoner som beveger seg utover og tar med seg energien. Tenk deg en glødende varmeovn, varmestrålingen treffer deg og avgir energien. Energien transporteres gjennom lufta til deg.
+\item {\bf Energitransport ved konveksjon:} Konveksjon er når varm gass/væske beveger seg opp til områder der gassen/væsken er kaldere og avgir energi. Tenk deg en kokeplate: vannet i bunnen av kjelen varmes opp, den flyter opp (kokebobler!) til de kaldere områdene og avgir varme. Energien transporteres oppover i kjelen
+\item {\bf Energitransport ved konduksjon:} Tilbake til kjelen over: anta at du setter den på kokeplata uten vann i. Da transporteres varmen gjennom metallet, gjennom en kjedereaksjon av kollisjoner mellom atomer i metallet. Dermed blir også de øvre delene av kjelen som ikke er i kontakt med plata varm. Energien transporteres gjennom metallet i kjelen.
+\end{itemize}
+}
+
+\fullframe{ms10}{ms9}{ms11}{0}{\small
+I {\bf stjerner} er det hovedsaklig energitransport ved {\bf stråling og/eller ved konveksjon}. Energien kan transporteres fra kjernen via fotoner eller via gassmasser som beveger seg oppover i stjerna akkurat som kokeboblerne. I sola så foregår energitransport ved stråling opp til ca. $0.7R_\odot$ og deretter ved konveksjon opp til overflaten. Her ser du bilde av konveksjonscellene (kokeboblene) på solas overflate:\\
+\centerline{\includegraphics[scale=0.22]{convection.png}}
+Du kan se tilsvarende \href{https://www.nasa.gov/sites/default/files/thumbnails/image/convectivecells.gif}{video} her. (Credits: NASA/JAXA/Hinode)
+}
+
+\colfullframe{ms11}{ms10}{ms12}{0}{red}{\textcolor{yellow}{\Huge
+En av antakelsene våre skal være at all transport skjer med stråling. Det er lettere å ha kontroll på fotoner som beveger seg utover enn store gassmasser. Da er vi klare her til å prøve å finne hvor stor energi $\Delta E$ som trenger tid $\Delta t$ på å komme seg ut av sola. Og derav finne Luminositeten...}
+}
+
+
+
+
+
+\fullframe{ms12}{ms11}{ms13}{0}{
+La oss begynne med energien $\Delta E$. Energien som frigjøres i fusjonsreaksjonene omgjøres til kinetisk energi for partiklene i kjernen av stjerna samt stråling. Det blir en likevekt mellom fotonene (strålingen) og gasspartiklene. {\bf Når gassen har temperatur $T_c$ (temperaturen i kjernen (core) til stjerna) så kan vi se på kjernen som et sort legeme som sender ut termisk stråling,  Planck-stråling!} Ved så høy temperatur som vi har i kjernen av en stjerne så blir denne strålingen intens, det blir så mange fotoner i de sentrale delene av en stjerne at vi snakker om en {\bf fotongass}. Rett og slett massevis av fotoner som svirrer rundt og kolliderer med gasspartikler. Fotonene oppfører seg dermed selv som gasspartikler og vi kan med rette bruke begrepet fotongass. En {\bf stjernes kjerne består dermed av varm hydrogen(++)gass blandet med denne fotongassen.} \textcolor{red}{Vi har altså hele tiden et energireservoar i stjernens kjerne i form av fotoner.} {\bf I termodynamikken kommer du til å lære at energitettheten $\rho_E$ (energi per $\mathrm{m}^3$) i en fotongass er gitt ved $\rho_E=aT^4$} der $a$ er strålingskonstanten (husker du fra del 1E at trykket i en fotongass er $P=\frac{1}{3}aT^4$?). (Og $T^4$ kan du kanskje tippe hvor kommer fra?)
+}
+
+
+\colfullframe{ms13}{ms12}{ms14}{0}{red}{\textcolor{yellow}{\Huge
+Hvis vi antar at kjernen til stjerna har en radius $R_c$, har du nå kommet noe nærmere hvordan du kan gå frem for å finne luminositeten?? Hva kan vi bruke som energi $\Delta E$?
+}
+}
+
+\colfullframe{ms14}{ms13}{ms15}{0}{red}{\textcolor{yellow}{\Huge
+Hvis du ikke nå har kommet {\bf noe} nærmere løsningen. Anta at vi nå skrur av alle kjernereaksjoner i sola. Hvor mye energi $\Delta E$ kommer den til å stråle ut før den slukner?
+}
+}
+
+\fullframe{ms15}{ms14}{ms16}{0}{
+Med energitetther $\rho_E=aT_c^4$ og kjerneradius $R_c$ så får vi vel at den totale energien i en stjernes kjerne i fotoner er gitt ved
+\[
+E=\frac{4}{3}\pi R_c^3\rho_E T_c^4
+\]
+{\bf Her har vi allerede gjort en stor antakelse, kan du se hvilken?}\pagequestion{ms12b}{Tjaaaaa....}{-1} \textcolor{red}{Tror du virkelig temperaturen og dermed energitettheten er den samme gjennom hele kjernen?}\\
+Slår vi av kjernereaksjoner, så er det denne energien $\Delta E$ som er igjen å stråle ut av sola. Det store spørsmålet hvor lang tid $\Delta t$ denne energien, altså alle disse fotonene trenger for å komme frem til solas overflate? Har vi det, har vi luminositeten $L=\Delta E/\Delta t$. {\Large\bf Noen forslag til hvor vi kan starte for å finne ut hvor lang tid fotonene trenger for å komme seg ut?}
+}
+
+\fullframe{ms16}{ms15}{ms16b}{1}{
+{\bf Ikke det??} La oss ta det litt rolig her: Anta at et foton hele tiden kolliderer med gasspartikler og skifter retning. Den midlere veilengden som et foton går mellom hver kollisjon kaller vi $\ell$. Hvor mange kollisjoner $N$ får et foton før det når overflaten av stjerna? Klarer du å vise at det er
+\[
+N=\frac{R^2}{\ell^2}
+\]
+??? Og gitt dette, klarer du å vise at fotonet i gjennomsnitt trenger en tid 
+\[
+\Delta t=\frac{R^2}{\ell c}
+\]
+der $c$ er lyshastigheten til å komme seg opp til overflaten?
+{\bf Her bør du sette av 10 minutter til å se om du klarer å komme i mål selv. Spesielt det siste uttrykket bør du får til, gitt at du kjenner det første. Det første uttrykket er noe mer tricky, men ikke mer enn at du ihvertfall bør kunne sette opp starten av utregningen (og en tegning av fotonets vei fra stjernas sentrum og ut vil hjelpe mye!}.
+}
+
+
+\colfullframe{ms16b}{ms16}{ms16c}{0}{red}{\textcolor{yellow}{\Huge
+Har du gjort et skikkelig forsøk og kommet et stykke på vei? Hvis ikke, gå tilbake og prøv igjen, {\bf noe må du få til} for a betrygge arbeidsgiveren din her om at du jobber med saken!}
+}
+
+
+\fullframe{ms16c}{ms16b}{ms17}{0}{
+Se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_1.mp4}{denne videoen} her for å sette sammen bitene og finne ut hvorfor
+\[
+N=\frac{R^2}{\ell^2}
+\]
+og
+\[
+\Delta t=\frac{R^2}{\ell c}
+\]
+Henger du med? Kan du nå skrive ut uttrykk for luminositeten $L$ ved hjelp av de størrelsene du har nå?
+}
+
+
+\colfullframe{ms17}{ms16c}{ms18}{0}{red}{
+\Large
+\textcolor{yellow}{Nå begynner moroa her! Nå skal du gjøre noe som man alltid må gjøre når man prøver å forstå et komplekst system.} {\bf Med alle tilnærmingene vi gjør og med den fulle kompleksiteten til systemet så har vi ingen sjans til å finne uttrykk med presise tallstørrelser.} \textcolor{yellow}{Det vi kan finne, og som kan være minst like interessant som tallstørrelser er {\bf proporsjonaliteter}.} {\bf Dvs. f.eks. hvordan endrer luminositeten eller stjernas levetid seg som funksjon av totalmassen? Altså hvis vi dobbler massen, hva skjer med luminositeten?} \textcolor{yellow}{Dette vil si oss veldig mye om effektiviteten til gasskula vår selv om vi ikke nødvendigvis får ut eksakte tall for luminositeten!}
+}
+
+
+\fullframe{ms18}{ms17}{ms19}{0}{
+\Large
+Denne typen fysikk-overslagsregning er ikke bare noe man driver med i arbeidslivet, det er også noe en forsker i fysikk driver med hele tiden, og du kommer til å bruke det i masteroppgaven. Dette er kanskje litt uvant da de første semesterne i fysikkstudiet ofte blir brukt til mye eksakt (men urealistisk) regning. {\bf Da var det jaggu på tide at du får prøve deg her!} Fra det vi har gjort så langt, vis at luminositeten til stjerna kan skrives med følgende proporsjonalitet (legg merke til $\propto$ tegnet for proporsjonalitet)
+\[
+L\propto RT_c^4\ell
+\]
+Hvis du tviler, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_2.mp4}{denne videoen}
+}
+
+
+\fullframe{ms19}{ms18}{ms20}{0}{
+Hva med den midlere veilengden $\ell$ for fotonet? Den avhenger at {\bf en} enkelt egenskap ved gassen. {\bf\Large Hvilken? Og hva er proporsjonaliteten??}. Prøv å tegne en boks med gasspartikler, fordel partiklene så jevnt utover i boksen som mulig. Tegn inn et foton et sted i midten. Hvilken egenskap ved gassen avgjør hvor langt fotonet i gjennomsnitt kan bevege seg før det kolliderer? Og hvordan kan du nå skrive proporsjonaliteten med denne egenskapen, altså
+\[
+\ell\propto??
+\]
+Denne bør du få til! Ikke bla om før du har gjort et skikkelig forsøk.
+}
+
+
+\choiceframe{ms20}{ms19}{0}{
+Blir det
+\hyperlink{ms20b}{\choicebutton{$\ell\propto T^2$}}
+\hyperlink{ms20b}{\choicebutton{$\ell\propto P$}}
+\hyperlink{ms20b}{\choicebutton{$\ell\propto \rho^2$}}
+\hyperlink{ms20b}{\choicebutton{$\ell\propto \frac{1}{T}$}}
+\hyperlink{ms20b}{\choicebutton{$\ell\propto \frac{1}{P^2}$}}
+\hyperlink{ms20c}{\choicebutton{$\ell\propto \frac{1}{\rho}$}}
+\hyperlink{ms20b}{\choicebutton{$\ell\propto \frac{1}{\rho^3}$}}
+\hyperlink{ms20b}{\choicebutton{$\ell\propto T^4$}}
+der $P$, $T$ og $\rho$ er henholdsvis trykk, temperatur og massetetthet til gassen (ikke fotongassen men hydrogengassen)
+}
+
+
+\colchoiceframe{ms20b}{ms20}{0}{black}{\Large
+\textcolor{yellow}{
+Det ble nok ikke rett! Har du tegnet opp partiklene? Har du prøvd med en ny tegning når du f.eks. har dobblet størrelsen på den egenskapen ved gassen som du tror er viktig her? Har du sett hvordan $\ell$ da bør endre seg? Hvis du har kommet hit for andre gang, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_3.mp4}{denne videoen}}
+}
+
+
+\colfullframe{ms20c}{ms20}{ms20d}{-1}{yellow}{\Huge
+Det er helt riktig! Hvis du enda er usikker, ta en titt på  \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_3.mp4}{denne videoen}. Kan du nå vise at
+\[
+L\propto\frac{R^4T_c^4}{M}
+\]
+??? Det bør du få til nå, hvis ikke, spør foreleser!
+}
+
+
+\fullframe{ms20d}{ms20c}{ms20e}{0}{
+La du merke til hvilken vannvittig antakelse du brukte her?? Du antok at tettheten til stjerna er den samme gjennom hele stjerna, altså uniform tetthet! Det er ikke veldig realistisk, men tettheten vil jo være tettere enn dette i kjernen og tynnere enn dette mot overflaten, kanskje det blir ok i gjennomsnitt likevel?\\
+Vi har nå altså en proporsjonalitet
+\[
+\ell\propto\frac{R^4T_c^4}{M}
+\]
+for luminositeten som funksjon av massen og radien til stjerna i tillegg til kjernetemperaturen $T_c$.
+}
+
+\fullframe{ms20e}{ms20d}{ms21}{0}{
+\textcolor{red}{Men det er vital informasjon som vi ikke har brukt! \bf Og her kommer et annet viktig punkt når det kommer til fysikk-overslagsregning: du må få med all informasjonen du har om systemet!}\\
+ {\Huge Kan du tenke deg noen sammenhenger som vi kjenner til men enda ikke har benyttet? Det er flere enn en!} Ikke gå videre før du har skrevet ned minst en ting til som du vet om dette systemet og som kan være bruklig for å komme frem til en enda enklere sammenheng for luminositeten!
+}
+
+
+\fullframe{ms21}{ms20e}{ms22}{0}{
+{\Large Hadde du hydrostatisk likevekt på lista di?}
+Kan du vise at likningen for hydrostatisk likevekt kan gi deg en sammenheng alla
+\[
+P\propto\frac{M^2}{R^4}
+\]
+???
+\textcolor{red}{Men nå har vi jo fått inn en ny variabel, trykket, og da blir det jo ikke enklere men vanskeligere!} MEN så finnes det en sammenheng til for gassen som du bør kunne tenke deg. En sammenheng mellom blant annet trykk og temperatur slik at vi blir kvitt trykket i uttryket, får inn temperaturen isteden, og dermed kvitter oss med temperaturen i uttrykket på forrige side. Da snakker vi om forenklinger da! {\bf Kan du vise at vi da får en sammnheng som sier}
+\[
+T_c\propto\frac{M}{R}
+\]
+som altså er veldig fristende å bruke for å kvitte oss med $T_c$ i uttryket for $L$ på forrige side. 
+}
+
+
+\colfullframetxt{ms22}{ms21}{ms23}{0}{red}{Jeg har kommet et stykke på vei ihvertfall}{\textcolor{yellow}{\Large
+Fikk du det til? Det er ikke lov å gå videre uten å ha noe forslag, selv om du ikke kommer helt frem. Nå er vi nesten fremme ved det endelige uttrykket her. Firmaet vi jobber for begynner å blir riktig så fornøyd, dette ser lovende ut, vi har nesten gjort jobben vår som en god fysiker! Du kan ikke skuffe dem nå?}
+}
+
+\fullframe{ms23}{ms22}{ms24}{0}{\Large
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_4.mp4}{denne videoen} ser du hvordan man kan gjøre forenklingen med hydrostatisk likevekt og hva den andre kjente sammenhengen var som gjør at vi kommer frem til at
+\[
+T_c\propto\frac{M}{R}
+\]
+som innsatt i 
+\[
+L\propto\frac{R^4T_c^4}{M}
+\]
+gir oss...ja hva gir det...
+}
+
+
+\fullframe{ms24}{ms23}{ms25}{0}{\huge
+Lo and behold, det gir oss
+\[
+L\propto M^3
+\]
+Så vanvittig enkelt? Et så komplekst system og en så enkel relasjon? Men hva sier de store avanserte datamodellene da? De som kjører på 1000-vis av prosessorer i flere måneder?
+}
+
+
+\fullframe{ms25}{ms24}{ms26}{0}{\Large
+De sier
+\[
+L\propto M^\beta
+\]
+hvor $\beta$ avhenger litt av massen til stjerna. For stjerner med veldig stor masse, titalls solmasser, så passer $\beta=3$ slik vi fant ganske godt! Merk at slike stjerner har energitransport med stråling gjennom hele stjerna, akkurat slik som vi antok. \textcolor{red}{For stjerner med mindre masse slik som sola så er $\beta=4$ en bedre tilnærmelse. Den gjelder for flere stjerner, så vi skal bruke den i dette kurset.} {\Large\bf Men er det ikke helt utrolig at vi kom frem til nesten det samme med en utrolig enkel utledning med store og grove antakelser?}
+}
+
+\fullframe{ms26}{ms25}{ms26b}{0}{\Large
+Hvilke antakelser var det vi gjorde igjen?
+\begin{itemize}
+\item energitransport med stråling gjennom hele stjerna (er sant for veldig massive stjerner)
+\item uniform temperatur i hele stjernens kjerne (der det foregår kjernereaksjoner)
+\item uniform tetthet gjennom hele stjerna
+\item at trykket går som $P(r)\propto r^n$ gjennom hele stjerna
+\item ideel gass
+\end{itemize}
+Pluss en del mer subtile antakelser som vi ikke nevner. Flere av disse antakelsene er ikke spesielt gode, men det at vi ser på et stort system, midler over størrelser som f.eks. både høyere og lavere tetthet enn den uniforme tettheten som vi antar, så kommer vi likevel frem til noe som stemmer godt med virkeligeheten.
+}
+
+\fullframe{ms26b}{ms26}{ms27}{0}{
+Så hva sier denne sammenhengen oss:
+\[
+L\propto M^4
+\]
+(som er den varianten som vi skal bruke siden den passer på langt flere stjerner enn $L\propto M^3$ som vi kom frem til med alle forenklingene våre)\\
+En stjerne som er dobbelt så massiv som sola, hvor stor luminositet har den?\pagequestion{ms26c}{Jeg har det, jeg har det!}{-1}
+Nettopp, ja 16 ganger mer energi per sekund enn sola. Og bare dobbel masse! {\bf Dette er jo vital informasjon} for arbeidsgiveren vår som skal bygge en fusjonsreaktor som er en stor gasskule! Jobben fullført! Ihvertfall den innledende fasen. Hvis behovet for energi er stort, så ha stor mass. {\bf Men det var en problemstilling til som vi begynte med, var det ikke? Hvor lenge lever en slik stjerne?}
+}
+
+\choiceframe{ms27}{ms26b}{1}{
+Vi fant for en god del sider siden at
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}
+\]
+Hvis vi igjen bare er interessert i proporsjonalitet, så tar vi denne videre:
+\[
+t_\mathrm{life}\propto???
+\]
+Ja, hvordan blir det?
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto M$}}
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto M^2$}}
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto M^3$}}
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto M^4$}}
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto 1/M$}}
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto 1/M^2$}}
+\hyperlink{ms27c}{\choicebutton{$t_\mathrm{life}\propto 1/M^3$}}
+\hyperlink{ms27b}{\choicebutton{$t_\mathrm{life}\propto 1/M^4$}}
+}
+
+
+\colchoiceframe{ms27b}{ms27}{0}{black}{\Large
+\textcolor{yellow}{
+Nei, det ble ikke rett! Er du enig i at
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}\propto\frac{M}{L}
+\]
+Og hvis $L\propto M^4$, ja da bør du komme frem til ... gå tilbake og prøv igjen.
+}
+}
+
+
+\colfullframe{ms27c}{ms27}{ms28}{-1}{yellow}{\Large
+Det er helt riktig! Kan du nå vise at
+\[
+t_\mathrm{life}\propto\frac{1}{M^3}
+\]
+Altså en stjerne som er dobbelt så massiv som solen vil leve i ...\pagequestion{ms27d}{Shit! Strek i regningen!}{0}
+Bare 1/8 av solas levetid? Tuller du? Da faller jo ideen i grus her, med stor masse får vi masse energi ut, men så blir fusjonsreaktoren ``brukt opp'' i løpet av en mye kortere tid!
+}
+
+
+\fullframe{ms28}{ms27c}{ms29}{0}{\large
+Når vi først er igang, så la oss gjøre et overslag til. Kan vi si noe om {\bf overflatetemperaturen} på denne gasskula? Jeg mener, hvis vi skal ha denne fusjonsreaktoren i nærheten av oss, da bør den vel ikke være for varm på overflaten! Dette skal du få finne ut av selv, men et hint: kjernetemperaturen som skal til for å starte fusjon er jo en felles faktor her, det er derfor liten variasjon i kjernetemperaturen i hovedseriestjerner. Vi skal anta at kjernetemperaturen $T_c$ er konstant. Og du fant tidligere en proporsjonalitetsrelasjon for denne. Kombiner det med noe du vet om sammenheng mellom luminositet og fluks og sånt. Og vips så fant du...\\
+{\bf En proporsjonalitetsrelasjon mellom overflatetemperaturen $T$ på en stjerne og massen $M$!} Når du har funnet den kan du gå til...
+}
+
+
+
+\fullframe{ms29}{ms28}{ms29c}{0}{\large
+Fikk du det ikke til, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_5.mp4}{denne videoen}.
+\begin{block}{Vi har altså kommet til følgende relasjoner...}
+\[
+L\propto M^4
+\]
+\[
+t_\mathrm{life}\propto \frac{1}{M^3}
+\]
+\[
+T_\mathrm{overflate}\propto\sqrt{M}
+\]
+\end{block}
+Men disse er bare proporsjonaliteter. Vi kan ikke bruke de til å finne tall, {\bf eller?}.\pagequestion{ms29b}{Joda, fordi...}{-1}
+...naturen har allerede laget en prototyp av denne fusjonsreaktoren for oss. Den heter sola (egentlig har den laget en tilnærmet uendelig mengde av slike prototyper). \textcolor{red}{\bf Ser du at ved å bruke de kjente tallene for $M$, $L$, $t_\mathrm{life}$ (10 milliarder år for sola) og $T_\mathrm{overflate}$, så har vi alt vi trenger for å finne proporsjonalitetskonstantene i deiise relasjonene? Og da kan du regne ut tall!}
+}
+
+
+\fullframe{ms29c}{ms29}{nytema3}{1}{\large
+Det viktigste vi lærte her var selve fremgangsmåten! Tro meg, denne tenkemåten kommer du til å få bruk for i masteren og veldig mange av dere i arbeidslivet etterpå. Det er slike ting en fysiker holder på med. Men som astrofysiker med interesse for å forstå universet, så lærte vi også noe annet:
+\begin{itemize}
+\item At luminositeten til stjerner er {\bf sterkt} masseavhenig. Selv små endringer i masse har mye å si for hvor mye lys stjerna sender ut. En stjerne med halvparten så stor masse som sola er svært vanskelig å observere (bare 1/16 av luminositeten)
+\item At levetiden til stjerner er sterkt masseavhengig. Stjerner som er noen ganger mer massiv en sola lever bare noen millioner år i motsetning til sola som er forventet å leve i totalt 10 milliarder år på hovedserien.
+\item {\bf At vi ved å observere en stjernes overflatetemperatur kan finne en stjernes masse. Dette har du implisitt brukt flere ganger i kurset. Kan du huske når?}
+\end{itemize}
+}
+
+
+\renewcommand{\headline}{Farvel hovedserie!}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{nytema3}
+\hyperlink{ms29c}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\hyperlink{se1}{\pagebutton{Alderdommen begynner...}}
+\end{frame}
+}
+
+
+\fullframe{se1}{ms29c}{se2}{0}{\label{farvel}
+Da har vi sett hvor lenge en stjerne lever på hovedserien. {\bf Nå skal vi følge en stjerne inn i alderdommen, bort fra hovedserien og frem til den grufulle død som vi skal omtale nærmere i del 3E.} \textcolor{red}{Omtalen av en stjernes utvikling fra hovedserie til død er basert pa store og kompliserte datasimuleringer.} Vi skal beskrive de fysiske prosessene som skjer og fører til endringer i stjernene. Merk at de fysiske prosessene som brukes som årsaksforklaringer til endringer i stjernen kan i teorien gi opphav til helt andre endringer enn det som beskrives her. Men vi vet utfallet på grunn av datasimuleringer. Dette er likevel en svært interessant øvelse i å bruke fysisk intuisjon, hvordan påvirker forskjellige fysiske størrelser hverandre og hva blir konsekvensene av endringer. Som fysiker trenger man normalt ikke å pugge så mye, det aller viktigste er forståelsen. Men akkurat som med gangetabellen, så er det mye som går lettere hvis man også husker enkelte ting. {\bf En stjernes utvikling og de fysiske prosessene som styrer denne er en slik ting som man bør ha i hodet og som man kan bli testet i til eksamen!} Store deler av astrofysikken baserer seg på stjerners egenskaper. Vi skal se et eksempel her mot slutten.
+}
+
+
+\fullframetxt{se2}{se1}{se3}{0}{Jeg er klar for testen}{
+Er du klar? Tiden har kommet for litt god gammeldags {\bf pugging!}. Men det blir lettere hvis du prøver å forstå de fysiske prosessene, da er det på en måte en logisk oppbyggning. Det som skal pugges er underavsnitt 3 om ``From the main sequence to the giant stage'' i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D}. \textcolor{red}{\Large\bf Les dette underavsnittet nøye nå, helt til du føler at du kan gjenfortelle hovedtrekkene}. Når du er klar så skal du få gå gjennom en test som samtidig skal hjelpe deg å systematisere det som du har lært...
+}
+
+
+\fullframe{se3}{se2}{se4}{0}{\large
+Vi skal i det følgende gå gjennom de forskjellige fasene i en stjernes liv etter hovedserien. For å hjelpe deg å huske skal du nå gjøre dette på stikkordsform. For hver overgang i HR-diagrammet, skal du prøve å finne ut (og deretter huske):
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+Merk deg også i hver overgang om det er noen forskjell mellom de mer eller mindre massive stjernene.
+}
+
+
+\fullframe{se4}{se3}{se5}{0}{\large
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra hovedserien til ``sub giant''}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+}
+
+\fullframe{se5}{se4}{se6}{0}{\large
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra ``sub giant'' til rød kjempestjerne}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+}
+
+\fullframe{se6}{se5}{se7}{0}{\large
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra rød kjempestjerne til horisontalgrenkjempe}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+}
+
+\fullframe{se7}{se6}{se7b}{0}{\large
+\begin{alertblock}{Første overgang:}
+{\Large\bf Horisontalgrenkjempen beveger seg rett venstre i HR-diagram }\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+}
+
+\fullframe{se7b}{se7}{se8}{0}{\large
+\begin{alertblock}{Første overgang:}
+{\Large\bf Horisontalgrenkjempen beveger seg rett høyre i HR-diagram}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+}
+
+\fullframe{se8}{se7b}{se9}{0}{\large
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra horisontalgrenkjempen til asymptotisk kjempe}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+}
+
+\fullframetwo{se9}{se8}{se10}{0}{\Large
+Oversikten du nå har skrevet i stikkordsform skulle være nok til å huske hele prosessen. Hvis du var usikker på noen av disse overgangene, spør foreleser! Så over til et (av mange) tilfeller der vi kan se nytten av å kunne litt stjerneutvikling.
+}
+{\textcolor{red}{\bf Oppg.6, avsl. eksamen 2011:}
+\hspace*{-0.4cm}\includegraphics[scale=0.3]{eksamen_2011_oppg6.png}
+}
+
+\fullframetwo{se10}{se9}{oppsummering}{0}{\Large
+Du trenger å kombinere nesten alt det du har lært i del 3D for å løse denne oppgaven. Når du har tenkt nøye gjennom hvordan denne oppgaven kan løses, og hvis du ikke ser det, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_6.mp4}{denne videoen}.
+}
+{\textcolor{red}{\bf Oppg.6, avsl. eksamen 2011:}
+\hspace*{-0.4cm}\includegraphics[scale=0.3]{eksamen_2011_oppg6.png}
+}
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{se10}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+Gratulerer, del 3D er overstått. Du bør nå:
+\begin{itemize}
+\item  Vite hvilke størrelser og enheter man kan ha på aksene i et HR-diagram
+\item  Vite hvorfor hovedserien er en skrå linje i HR-diagrammet
+\item  Vite hvilke masser og radier stjerner kan ha og hvorfor
+\item  Kunne gjøre overslagsregning med fysiske problemstillinger
+\item  Kunne hovedtrekkene i hvordan vi finner tilnærmede sammenhenger mellom luminositet, levetid og overflatetemperatur på en stjerne og denne stjernens masse.
+\item Kunne bruke proporsjonalitetsrelasjonene for stjerner
+\item Kunne skissere de forskjellige overgangene som aldrende stjerner går gjennom på sin vei fra hovedserie til død, og kunne forstå årsakene til overgangene samt skissere og forklare hvordan de beveger seg i HR-diagrammet.
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\end{frame}
+
+
+
+\end{document}
