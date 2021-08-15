@@ -54,9 +54,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //by asserting the page title, sets bg color thereafter
     let title = document.title
     if(title.includes("feil")){
-        document.body.style.backgroundColor = "black";
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'black'
+        document.body.appendChild(ele)
     }
     if(title.includes("riktig") || title.includes("rett")){
-        document.body.style.backgroundColor = "yellow";
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'yellow'
+        document.body.appendChild(ele)
+    }
+    if(title.includes("tema")){
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'blue'
+        document.body.appendChild(ele)
+
+        const p = document.querySelectorAll('p');
+        p[1].style.fontSize = '50px'
+        p[1].style.textAlign = 'center'
+        p[2].style.fontSize = '1px'
+        p[3].style.fontSize = '35px'
+        p[3].style.textAlign = 'center'
+        console.log(p)
     }
 })
