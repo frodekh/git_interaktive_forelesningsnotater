@@ -12,17 +12,17 @@ function iframeclick() {
     //console.log("historycookies: " + historyCookies)
 
     if(historyCookies < 1){
-        document.cookie = `history${historyCookies.length}=${history};`
+        document.cookie = `history${historyCookies.length}=${history} ? ${datetime()};`
         return
     }
     if(historyCookies.length > 3){
         counter > 3 ? counter = 0 : counter++
         console.log("counter: "+counter)
-        document.cookie = `history${counter+1}=${history};`
+        document.cookie = `history${counter+1}=${history} ? ${datetime()};`
         return
     }
 
-    document.cookie =  `history${historyCookies.length + 1}=${history};`
+    document.cookie =  `history${historyCookies.length + 1}=${history}?${datetime()};`
 }
 
 function getHistory(){
@@ -30,9 +30,14 @@ function getHistory(){
     let html = ''
     for(let i = 0; i < historyCookies.length; i++){
         let split = historyCookies[i].split( '=' );
+        let timestamp = historyCookies[i].split( '?' );
+        let link = split[1].split('?')
         let name = split[1].split('/')
+        let file = name[6].split('?')
+        console.log(timestamp, split, name, link)
+
         //console.log(name)
-        html += `<li><a href="${split[1]}">${name[4]} ${name[5]} (${name[6]}) • ${datetime()}</a></li>`
+        html += `<li class="list-group-item"><a href="${link[0]}">${name[4]} ${name[5]} (${file[0]})<br/><span class="small-font"> ${timestamp[1]} <span></a></li>`
     }
     //console.log(html)
 
@@ -47,7 +52,11 @@ const datetime = () => {
 
     let h = today.getHours()
     let m = today.getMinutes()
+    let s = today.getSeconds()
 
+    if(s < 10){
+        s = '0'+s
+    }
 
-    return dd + '/' + mm + '/' + yyyy + " kl: "+h+":"+m;
+    return dd + '/' + mm + '/' + yyyy + " kl: "+h+":"+m+":"+s;
 }

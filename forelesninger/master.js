@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const p = document.querySelectorAll('p');
         p[1].style.fontSize = '50px'
         p[1].style.textAlign = 'center'
-        p[2].style.fontSize = '1px'
+        p[2].style.fontSize = '20px'
         p[3].style.fontSize = '35px'
         p[3].style.textAlign = 'center'
         console.log(p)
