@@ -57,11 +57,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const ele = document.createElement("bgcolor")
         ele.style.backgroundColor = 'black'
         document.body.appendChild(ele)
+        return
     }
     if(title.includes("riktig") || title.includes("rett")){
         const ele = document.createElement("bgcolor")
         ele.style.backgroundColor = 'yellow'
         document.body.appendChild(ele)
+        return
     }
     if(title.includes("tema")){
         const ele = document.createElement("bgcolor")
@@ -75,5 +77,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         p[3].style.fontSize = '35px'
         p[3].style.textAlign = 'center'
         console.log(p)
+        return
+    }
+    //manual fix for "er du sikker???" pages
+    if(title.includes("sikker")){
+        const p = document.querySelectorAll('strong');
+        p.forEach(element => {
+            element.style.fontSize = '30px'
+        });
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'red'
+        document.body.appendChild(ele)
+        return
     }
 })
