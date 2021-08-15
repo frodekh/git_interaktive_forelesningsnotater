@@ -13,7 +13,7 @@
 .lecture .lecture-container .iframe {
   width: 90%;
   max-width: 1920px;
-  min-height: 1000px;
+  min-height: 90%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
   border: none;
