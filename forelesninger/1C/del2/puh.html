@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puh</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="puh" label="puh"></span> <a href="stat19.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a>     <br />
+Flott! Helt riktig, tar vi ut <span class="math inline"><em>σ</em><sub><em>i</em></sub></span> som en konstant så får vi nøyaktig likningen for minste kvadraters metode som vi hadde tidligere. Vi har altså utledet minste kvadraters metode. Ser du nå også hvilken modifikasjon vi får når standardavviket til støyen endrer seg med observasjonser? <span class="math display">$$\chi^2 = \sum_{i=1}^N\frac{(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i))^2}{\sigma_i^2}$$</span> vi deler altså hvert kvadrat med <span class="math inline"><em>σ</em><sub><em>i</em></sub><sup>2</sup></span>. Hvis støyen for denne målingen er stor, altså <span class="math inline"><em>σ</em><sub><em>i</em></sub></span> er stor, så deler vi på et stort tall. Omvendt, er støyen liten så deler vi på et lite tall. <span style="color: red">Ser du at vi her vekter hvert kvadrat med et stort tall når kvaliteten på målingen er god, og et lite tall når kvaliteten er dårlig?. Dette er <span class="math inline"><em>χ</em><sup>2</sup></span>-metoden for estimering av parametere.</span> <span><strong>Vi antok Gaussisk støy i denne utledningen, hvis støyen ikke er Gaussisk, så er disse metodene ikke optimale for å estimere parametere!</strong></span>. Hvis avviket fra Gaussianitet ikke er veldig stort, så blir disse metodene likevel ofte brukt. <a href="stat20.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+</body>
+</html>

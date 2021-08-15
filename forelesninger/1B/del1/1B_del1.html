@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entire file</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="front" label="front"></span><br />
+</p>
+<div class="alertblock">
+<p>Du må bruke <span><strong>presentasjonsmodus/fullskjermsvisning</strong></span> for å lese denne, men du skal <span><strong>ikke</strong></span> bruke frem/tilbake-knappene, <span><strong>KUN knappene som dukker opp på sliden</strong></span> for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. <span style="color: red">Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!</span></p>
+</div>
+<p><a href="front2.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front2" label="front2"></span><br />
+</p>
+<div class="block">
+<p>Dette er en erstatning for forelesningen i emnet. <span style="color: blue">Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese <span><span style="background-color: sunset"><a href="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1b.pdf">de fulle forelesningsnotatene</a></span></span> (med unntak av oppgavene bak)</span>. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. <span><strong>Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten</strong></span>. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. <span><strong>Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/157828" class="🙂🙁">🙂 🙁</a></span></span> knappen som du finner på alle sider.</strong></span></p>
+</div>
+<p><a href="intro.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="intro" label="intro"></span></p>
+<div class="columns">
+<p><a href="front.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><br />
+<img src="../media/landing.png" alt="image" /><br />
+Velkommen til del 1B! Etter at du har skutt raketten din ut i rommet, så skal vi i denne delen beregne banen til både romfartøyet ditt og planeten som du skal besøke. Vi skal se på både analytiske og numeriske baneberegninger og prøve å forstå hva som avgjør banen til et objekt. Vi skal, kun ved å ta utgangspunkt i Newtons lover, utlede analytisk at planeter går i ellipsebaner, og se at det faktisk også finnes andre baner. Numerisk baneberegning har du kanskje gjort før med Eulers metode. Det blir litt repetisjon før vi tar det videre.<br />
+<span><strong>Er du klar?</strong></span><br />
+<a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="intro2" label="intro2"></span></p>
+<div class="columns">
+<p><a href="intro.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Introduksjon<br />
+<img src="../media/landing.png" alt="image" /><br />
+Oppgave 1B8 som er en av innleveringsoppgavene går ut på å myklande en romsonde på en planet med atmosfære som illustert i figuren. I løpet av dette forelesningsnotatet vil du lære det du trenger for å løse denne oppgaven og mer til. Men før vi setter igang så skal vi varme opp litt med å fort sjekke at vi har kunnskapen fra del 1A på plass, samt se hva du allerede kan om temaene i del 1B. <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/155530" class="trykkher">Trykk her for å varme opp</a></span></span><br />
+Har du varmet opp? Er du svett og klar til å starte kampen? ...og sendt inn skjemaet? <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/155530" class="janei">Nei</a></span></span>    <a href="basicfysikk1a.html" class="janei">Ja</a><br />
+</p>
+</div>
+
+<p><span id="basicfysikk1a" label="basicfysikk1a"></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+La oss begynne med beina godt plantet på jorda. Og med litt <span><strong>veldig</strong></span> grunnleggende videregåendeskole-fysikk (sorry!). <img src="../media/car_move_1.png" alt="image" /><br />
+I figuren ser du en bil som beveger seg med konstant hastighet <span class="math inline"><em>v</em></span>. Hvilken avstand <span class="math inline"><em>Δ</em><em>x</em></span> har denne bilen beveget seg i løpet av tiden <span class="math inline"><em>Δ</em><em>t</em></span>?<br />
+<a href="basicfysikk1b.html" class="trykkher">Trykk her når du har svaret!</a><br />
+</p>
+
+<p><span id="basicfysikk1b" label="basicfysikk1b"></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+La oss begynne med beina godt plantet på jorda. Og med litt <span><strong>veldig</strong></span> grunnleggende videregåendeskole-fysikk (sorry!). <img src="../media/car_move_2.png" alt="image" /><br />
+I figuren ser du en bil som beveger seg med konstant hastighet <span class="math inline"><em>v</em></span>. Hvilken avstand <span class="math inline"><em>Δ</em><em>x</em></span> har denne bilen beveget seg i løpet av tiden <span class="math inline"><em>Δ</em><em>t</em></span>?<br />
+<span style="color: orange">Ganske riktig ja, strekning er hastighet ganger tid, dermed er <span class="math inline"><em>Δ</em><em>x</em> = <em>v</em><em>Δ</em><em>t</em></span>.</span><br />
+<a href="basicfysikk2a.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="basicfysikk2a" label="basicfysikk2a"></span></p>
+<div class="columns">
+<p><a href="basicfysikk1a.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+Nå har vi samme situasjon en gang til, men med vektorer. En romskip har posisjonsvektor <span class="math inline"><em>r⃗</em></span>. Vi skal i resten av dette emnet bruke konseptet <span><em>posisjonsvektor</em></span> ganske mye. <img src="../media/spaceship_move_1.png" alt="image" /><br />
+<br />
+</p><div class="alertblock">
+<p><span><strong>En posisjonsvektor...</strong></span> ... er en vektor som peker fra origo i koordinatsystemet ditt til den posisjonen der objektet du studerer er. Når objektet endrer posisjon så endrer også posisjonsvektoren seg tilsvarende slik at den alltid peker på objektets posisjon.</p>
+</div><p>I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet har hastighetsvektor <span class="math inline"><em>v⃗</em></span>. Hva er forflytningen <span class="math inline"><em>Δ</em><em>r⃗</em></span> som romskipet får i løpet av tid <span class="math inline"><em>Δ</em><em>t</em></span>? <a href="basicfysikk2b.html" class="trykkher">Trykk her når du har svaret!</a><br />
+</p>
+</div>
+
+<p><span id="basicfysikk2b" label="basicfysikk2b"></span></p>
+<div class="columns">
+<p><a href="basicfysikk1a.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+Nå har vi samme situasjon en gang til, men med vektorer. En romskip har posisjonsvektor <span class="math inline"><em>r⃗</em></span>. Vi skal i resten av dette emnet bruke konseptet <span><em>posisjonsvektor</em></span> ganske mye. <img src="../media/spaceship_move_2.png" alt="image" /><br />
+<br />
+</p><div class="alertblock">
+<p><span><strong>En posisjonsvektor...</strong></span> ... er en vektor som peker fra origo i koordinatsystemet ditt til den posisjonen der objektet du studerer er. Når objektet endrer posisjon så endrer også posisjonsvektoren seg tilsvarende slik at den alltid peker på objektets posisjon.</p>
+</div><p>I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet har hastighetsvektor <span class="math inline"><em>v⃗</em></span>. Hva er forflytningen <span class="math inline"><em>Δ</em><em>r⃗</em></span> som romskipet får i løpet av tid <span class="math inline"><em>Δ</em><em>t</em></span>? <span style="color: orange">Ganske riktig ja, strekningsvektor er hastighetsvektor ganger tid, dermed er <span class="math inline"><em>Δ</em><em>r⃗</em> = <em>v⃗</em><em>Δ</em><em>t</em></span>.</span><br />
+<a href="euler1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="euler1" label="euler1"></span></p>
+<div class="columns">
+<p><a href="basicfysikk2a.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+<img src="../media/spaceship_move_2.png" alt="image" /><br />
+Vi fant at forflytningen er <span class="math inline"><em>Δ</em><em>r⃗</em> = <em>v⃗</em><em>Δ</em><em>t</em></span>. Hvis vi kaller opprinnelig posisjon for <span class="math inline"><em>r⃗</em><sub>0</sub></span> og ny poisjon for <span class="math inline"><em>r⃗</em><sub>1</sub></span>, så har vi altså: <span class="math display"><em>r⃗</em><sub>1</sub> = <em>r⃗</em><sub>0</sub> + <em>v⃗</em><em>Δ</em><em>t</em></span> noe du sikkert kjenner som Eulers metode? Du har i tidligere emner brukt Eulers metode numerisk. La oss se på hastighetsendring på samme måte:<br />
+Vi vet at akselerasjon er endring i hastighet per tid, slik at hvis du har en konstant akselerasjon <span class="math inline"><em>a⃗</em></span>, så vil endring i hastighet i løpet av tid <span class="math inline"><em>Δ</em><em>t</em></span> per definisjon være gitt ved <span class="math display"><em>Δ</em><em>v⃗</em> = <em>a⃗</em><em>Δ</em><em>t</em></span> Hvis opprinnelig hastighet var <span class="math inline"><em>v⃗</em><sub>0</sub></span> og ny hastighet er <span class="math inline"><em>v⃗</em><sub>1</sub></span> så har vi <span class="math display"><em>v⃗</em><sub>1</sub> = <em>v⃗</em><sub>0</sub> + <em>a⃗</em><em>Δ</em><em>t</em></span> ... og dermed har vi Eulers metode for å oppdatere hastigheten også! <a href="euler2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="euler2" label="euler2"></span> <a href="euler1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+Dette var repetisjon, men kanskje en mer fysisk måte å utlede det på enn du er vant til? Det er viktig å forstå de fysiske prinsippene bak når vi nå etterhvert skal ta dette videre.</p>
+<div class="block">
+<p><span><strong>Numerisk beregning av forflytning og hastighetsendring...</strong></span> Når du gjør dette numerisk, husk også at det er mer nøyaktig å bruke Euler-Cromers metode, dvs. at du oppdaterer posisjonen med den nye hastigheten, dvs. <span class="math display">$$\begin{aligned}
+\vec{v}_1  &amp;= \vec{v}_0 + \vec{a}\Delta t\\
+\vec{r}_1  &amp;= \vec{r}_0 + \vec{v_1}\Delta t\end{aligned}$$</span></p>
+</div>
+<p><a href="euler3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="euler3" label="euler3"></span> <a href="euler2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Numerisk løsning<br />
+Merk at det du har gjort her matematisk er jo å løse likningssystemene <span class="math display">$$\frac{d\vec{r}}{dt}=\vec{v}\ \ \ \ \ \frac{d\vec{v}}{dt}=\vec{a}$$</span> Du kommer frem til samme resultat hvis vi gjør de infinitsimale størrelsene endelige (men fortsatt små) ved å kalle <span class="math inline"><em>d</em><em>t</em></span> for <span class="math inline"><em>Δ</em><em>t</em></span>, etc: <span class="math display">$$\frac{\Delta\vec{r}}{\Delta t}=\vec{v}\ \ \ \ \ \frac{\Delta\vec{v}}{\Delta t}=\vec{a}$$</span> Hvis du ganger opp med <span class="math inline"><em>Δ</em><em>t</em></span> på begge sider av likningene her, så ender du igjen opp med det samme som på de forrige slidene. Merk deg denne måten å tenkte på da du vil bruke den til å løse andre typer differensiallilkninger senere.<br />
+<span><strong>Da er repetisjonen over, nå begynner moroa her...</strong></span><br />
+<a href="euler4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="euler4" label="euler4"></span> <a href="euler3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+Det vi har gjort så langt er å se hvordan vi kan finne romskipets bevegelse numerisk, steg for steg. Nå skal vi se på hvordan dette kan gjøres analytisk. Det er viktig å gjøre ting analytisk der det kan gjøres analytisk fordi du da kan gjøre ting mye raskere på datamaskin og samtidig få en mye dypere innsikt i fysikken bak. Og ikke minst, det er jo litt kult å faktisk ha utledet at planeter har ellipsebaner helt fra scratch?<br />
+Utledningen av løsningen på dette <span><strong>2-legemeproblemet</strong></span> (og det er kun for 2 legemer at vi kan løse dette analytisk) er en ganske omfattende utledning, men på veien dit kommer vi innom mange temaer som vi skal bruke igjen og igjen i løpet av kurset, så det er viktig å forstå detaljene her.<br />
+Trenger du en pause, så ta den nå! Trekk pusten godt!<br />
+<span><strong>Er du klar?</strong></span> <a href="klar.html"><strong>Ja, kom igjen!</strong></a>    <a href="pyse.html">Tjjjaaaaa....</a> </p>
+
+<p><span id="pyse" label="pyse"></span> <a href="euler4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+<span style="color: red">PYSE!</span><br />
+</p>
+
+<p><span id="klar" label="klar"></span> <a href="euler4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+Se det, det var riktig instilling ja! Moroa begynner på ... <a href="enhetsvektorer1.html">.. neste side</a></p>
+
+<p><span id="enhetsvektorer1" label="enhetsvektorer1"></span></p>
+<div class="columns">
+<p><a href="euler4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span><br />
+Forberede 2-legemeproblem: enhetsvektorer<br />
+Før vi begynner på selve utledningen så må vi innom et par småting som forberedelse til utledningen, la oss begynne med koordinatsystemer og enhetsvektorer.<br />
+<img src="../media/unity_vectors.png" alt="image" /><br />
+Her ser du posisjonsvektoren <span class="math inline"><em>r⃗</em></span> til romskipet samt enhetsvektorene <span class="math inline"><em>e⃗</em><sub><em>x</em></sub></span> og <span class="math inline"><em>e⃗</em><sub><em>y</em></sub></span>. Dette er de samme enhetsvektorene som du kaller for <span class="math inline"><em>i⃗</em></span> og <span class="math inline"><em>j⃗</em></span> i andre fag. (vi bruker andre navn på dem her for å skape litt forvirring)<br />
+Se for øyeblikket bort ifra andre ting på figuren. Vi starter med litt oppvarming igjen. Vi skal skrive posisjonsvektoren <span class="math inline"><em>r⃗</em></span> ved hjelp av enhetsvektorene <span class="math display"><em>r⃗</em> = <em>a</em><em>e⃗</em><sub><em>x</em></sub> + <em>b</em><em>e⃗</em><sub><em>y</em></sub></span> Hva er <span class="math inline"><em>a</em></span> og <span class="math inline"><em>b</em></span> her?<br />
+<a href="feilxy.html"><span class="math inline"><em>a</em> = 1 <em>b</em> = 1</span></a>  <a href="rettxy.html"><span class="math inline"><em>a</em> = 3 <em>b</em> = 2</span></a>  <a href="feilxy.html"><span class="math inline"><em>a</em> = 2 <em>b</em> = 3</span></a>  <a href="feilxy.html"><span class="math inline"><em>a</em> = 0 <em>b</em> = 0</span></a></p>
+</div>
+
+<p><span id="feilxy" label="feilxy"></span> <a href="enhetsvektorer1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+<span style="color: red">Det ble galt! Er du sikker på at du forstår hva det spørres om? Innser du at <span class="math inline"><em>a</em></span> og <span class="math inline"><em>b</em></span> her er x- og y-komponentene til vektoren <span class="math inline"><em>r⃗</em></span>? Det er helt essensielt at du forstår dette før du går videre. Spør gruppelærer eller foreleser hvis du har den minste tvil. Gå tilbake og forsikre deg om at du forstår før du går videre!</span></p>
+
+<p><span id="rettxy" label="rettxy"></span></p>
+<div class="columns">
+<p><a href="enhetsvektorer1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+<span><strong>STEMMER!</strong></span>.Vi ser på figuren igjen: <img src="../media/unity_vectors.png" alt="image" /><br />
+Ser du at det er tegnet inn to andre enhetsvektorer <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> og <span class="math inline"><em>e⃗</em><sub><em>θ</em></sub></span>? Dette er enhetsvektorer som fortsatt har lengde 1, men som peker <span><strong>langs</strong></span> <span class="math inline"><em>r⃗</em></span> og <span><strong>ortogonalt</strong></span> med <span class="math inline"><em>r⃗</em></span>.</p><p><span>Merk at hvis f.eks. romskipet har en positiv hastighetskomponent langs <span class="math inline"><em>e⃗</em><sub><em>θ</em></sub></span> så vil vinkelen <span class="math inline"><em>θ</em></span> øke med tiden.</span><br />
+<br />
+‘ Vi kan altså representere vektoren <span class="math inline"><em>r⃗</em></span> med enten x-y enhetsvektorer eller r-<span class="math inline"><em>θ</em></span> enhetsvektorer (nå ser du kanskje at det nye navnet på <span class="math inline"><em>i⃗</em></span> og <span class="math inline"><em>j⃗</em></span> faktisk <span><strong>ikke</strong></span> var for å forvirre deg, men har en mening!)<br />
+Du kan dermed representere en vektor enten med komponentene langs x-y enhetsvektorene eller med komponentene langs r-<span class="math inline"><em>θ</em></span> enhetsvektorene. Ved første øyesyn kan det kanskje virke som at det er likegyldig hvilket av systemene du velger, men det er en stor grunnleggende forskjell mellom disse to koordinatsystemene. Hvilken? <span style="color: red">Tenk deg godt om før du går til neste side der svaret står!</span> <a href="enhetsvektorer2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="enhetsvektorer2" label="enhetsvektorer2"></span> <a href="rettxy.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+Et lite hint før du får svaret: Hva skjer med enhetsvektorene dersom romskipet beveger seg? Er det en grunnleggende forskjell mellom x-y-enhetsvektorene og r-<span class="math inline"><em>θ</em></span>-enhetsvektorene da? <span style="color: red">Tenk deg om og ...</span> <a href="xyready.html">trykk her</a><br />
+</p>
+<p>Men dette gjør det vel mer komplisert å bruke r-<span class="math inline"><em>θ</em></span>-enhetsvektorene? Hva iallverden skal vi med disse da? Kan du tenkte deg noen fordeler med dem?<br />
+<span style="color: red">Tenk deg godt om før du går til ... </span> <a href="enhetsvektorer3.html">... neste side</a></p>
+
+<p><span id="enhetsvektorer3" label="enhetsvektorer3"></span> <a href="enhetsvektorer2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+Vi skal se på fordelene etterhvert, men la oss prøve å bruke dem: <img src="../media/unity_vectors.png" alt="image" /><br />
+Hvis vi nå skal skrive poisjonsvektoren <span class="math inline"><em>r⃗</em></span> uttrykt ved de nye enhetsvektorne: <span class="math display"><em>r⃗</em> = <em>a</em><em>e⃗</em><sub><em>r</em></sub> + <em>b</em><em>e⃗</em><sub><em>θ</em></sub></span> hva blir da <span class="math inline"><em>a</em></span> og <span class="math inline"><em>b</em></span>? <a href="feilrt.html"><span class="math inline"><em>a</em> = 1 <em>b</em> = 1</span></a>  <a href="feilrt.html"><span class="math inline"><em>a</em> = 3 <em>b</em> = 2</span></a>  <a href="feilrt.html"><span class="math inline">$a=\sqrt{13}\ b=\sqrt{13}$</span></a>  <a href="rettrt.html"><span class="math inline">$a=\sqrt{13}\ b=0$</span></a>  <a href="feilrt.html"><span class="math inline">$a=0\ b=\sqrt{13}$</span></a>  <a href="feilrt.html"><span class="math inline">$a=\sqrt{13}\ b=30$</span></a>  <a href="feilrt.html"><span class="math inline">$a=\sqrt{13}\ b=1$</span></a></p>
+
+<p><span id="feilrt" label="feilrt"></span> <a href="enhetsvektorer3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+<span style="color: red">Det ble galt! Husk at r-<span class="math inline"><em>θ</em></span>-koordinatsystemet funker helt på samme måte som x-y, altså du dekomponerer vektoren i de to enhetsvektorene. Dvs. <span class="math display">$$\begin{aligned}
+a &amp;= \vec{r}\cdot\vec{e}_r\\
+b &amp;= \vec{r}\cdot\vec{e}_\theta\end{aligned}$$</span> Hjelper det deg? Prøv igjen med dette som utgangspunkt! </span></p>
+
+<p><span id="rettrt" label="rettrt"></span> <a href="enhetsvektorer3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: enhetsvektorer<br />
+<span><strong>STEMMER!</strong></span>.Vi ser på figuren igjen:<br />
+<img src="../media/unity_vectors.png" alt="image" /><br />
+Poisjonsvektoren har altså kun en komponent som går langs <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span>, ingen som går ortogonalt. Hvis vi tenker litt på det så er det egentlig opplagt siden <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> er definert fra <span class="math inline"><em>r⃗</em></span>.</p>
+<p><a href="hastighet1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hastighet1" label="hastighet1"></span> <a href="rettrt.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+Det vi fant er altså at posisjonsvektoren kan skrives som <span class="math display"><em>r⃗</em> = <em>r</em><em>e⃗</em><sub><em>r</em></sub></span> der <span class="math inline"><em>r</em> = |<em>r⃗</em>|</span>. Enig?<br />
+Hvis du tar utgangspunkt i dette, hvordan vil du nå gå frem for å finne hastighetsvektoren <span class="math inline"><em>v⃗</em></span> til romskipet, gitt at du kjenner <span class="math inline"><em>r</em>(<em>t</em>)</span> og <span class="math inline"><em>θ</em>(<em>t</em>)</span>?<br />
+<span><strong>MERK:</strong></span> Det er ikke meningen at du skal regne ut hastighetsvektoren riktig enda, kun tenke gjennom hvordan du vil gå frem for å gjøre det!<br />
+Har du tenkt nøye gjennom hvordan du kunne tenke deg å gjøre det? Har du en ide?<br />
+<a href="nohintv.html">Ja, jeg tror det!</a><br />
+<a href="hintv.html">tjaaaaa, et bittelite hint kanskje?</a></p>
+
+<p><span id="hintv" label="hintv"></span> <a href="hastighet1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+Hint skal bli:<br />
+Hva er definisjonen av hastighet? Den med en derivert?</p>
+
+<p><span id="nohintv" label="nohintv"></span> <a href="hastighet1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+Var det noe alla: <span class="math display">$$\vec{v}=\frac{d\vec{r}}{dt}$$</span> du tenkte på?<br />
+Hvordan går du videre her?<br />
+<a href="nohintv2.html">Har du en ide?</a><br />
+</p>
+<p><span class="math display">$$\vec{v}=\frac{d}{dt}(r\vec{e}_r)=\dot r\vec{e}_r+r\frac{d}{dt}\vec{e}_r$$</span> <span style="color: red"> <strong>Merk at vi skriver tidsderivert som en prikk over, dvs <span class="math display">$$\dot r = \frac{dr}{dt}$$</span> Dette skal vi bruke mye i resten av kurset, så lær deg dette med en gang!</strong> </span></p>
+<p><a href="hastighet2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hastighet2" label="hastighet2"></span> <a href="nohintv.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+Vi har altså: <span class="math display">$$\vec{v}=\frac{d}{dt}(r\vec{e}_r)=\dot r\vec{e}_r+r\frac{d}{dt}\vec{e}_r$$</span> Der vi trenger å finne <span><em>den tidsderiverte av enhetsvektoren!</em></span>. Dette er litt uvant, vanligvis er enhetsvektorer faste størrelser.</p>
+<div class="block">
+<p><span>Grublis</span> Hvordan kan du går frem for å finne den tidsderiverte av enhetsvektoren <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span>??? Du kan uttrykke svaret med de tidsderiverte, <span class="math inline"><em>ṙ</em></span> og <span class="math inline"><em>θ̇</em></span> samt enhetsvektorer.</p>
+</div>
+<p><a href="hastighet3.html">Jeg har grublet og er klar til å gå videre</a></p>
+
+<p><span id="hastighet3" label="hastighet3"></span> <a href="hastighet2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+Første steg kan være å uttrykke <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> med faste enhetsvektorer som <span class="math inline"><em>e⃗</em><sub><em>x</em></sub></span> og <span class="math inline"><em>e⃗</em><sub><em>y</em></sub></span>. La oss bruke denne figuren: <img src="../media/unity_vector_decomp.png" alt="image" /><br />
+Hvis vi nå skal skrive <span class="math display"><em>e⃗</em><sub><em>r</em></sub> = <em>a</em><em>e⃗</em><sub><em>x</em></sub> + <em>b</em><em>e⃗</em><sub><em>y</em></sub></span> Hva er <span class="math inline"><em>a</em></span> og <span class="math inline"><em>b</em></span>? Tenk deg litt om, før du ... <a href="eralt.html">... trykker her for noen alternativer</a><br />
+</p>
+<p><a href="erfeil.html"><span class="math inline"><em>a</em> = <em>θ</em> <em>b</em> = 0</span></a>    <a href="erfeil.html"><span class="math inline"><em>a</em> = sin <em>θ</em> <em>b</em> = 0</span></a>    <a href="erfeil.html"><span class="math inline"><em>a</em> = cos <em>θ</em> <em>b</em> = 0</span></a>    <a href="erfeil.html"><span class="math inline"><em>a</em> = sin <em>θ</em> <em>b</em> = cos <em>θ</em></span></a>    <a href="errett.html"><span class="math inline"><em>a</em> = cos <em>θ</em> <em>b</em> = sin <em>θ</em></span></a>    <a href="erfeil.html"><span class="math inline"><em>a</em> = 1 <em>b</em> = sin <em>θ</em></span></a></p>
+
+<p><span id="erfeil" label="erfeil"></span> <a href="hastighet3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+<span style="color: red">Det ble galt! Husk at alt du gjør er å dekomponere <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> ned på x- og y-aksene. Husk også at lengden av <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> er 1. Hvis du har en hvilken som helst vektor med kjent lengde og du skal finne x- og y-komponentene, hva gjør du vanligvis?<br />
+Prøv å ha dette i tankene når du nå går tilbake og gjør et nytt forsøk.<br />
+Hvis du ikke forstår dette, ta kontakt med gruppelærer eller foreleser!</span></p>
+
+<p><span id="errett" label="errett"></span> <a href="hastighet3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+<span><strong>STEMMER!</strong></span>. Når vi dekomponerer <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> ned på x- og y-aksen så er x- og y-komponentene av en vektor med lengde 1 lik cosinus og sinus til vinkelen, akkurat slik vi er vant til, dermed <span class="math display"><em>e⃗</em><sub><em>r</em></sub> = cos <em>θ</em><em>e⃗</em><sub><em>x</em></sub> + sin <em>θ</em><em>e⃗</em><sub><em>y</em></sub></span> Man kan vise helt tilsvarende at <span class="math display"><em>e⃗</em><sub><em>θ</em></sub> =  − sin <em>θ</em><em>e⃗</em><sub><em>x</em></sub> + cos <em>θ</em><em>e⃗</em><sub><em>y</em></sub></span> (hvordan kan du sjekk ‘e om disse er ortogonale?)<br />
+Nå har du fått god hjelp til å derivere <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> med hensyn på tiden. Gjør regningen på papir og se om du finner et av følgende svar:<br />
+<a href="derfeil.html"><span class="math inline">$\dot{\vec{e}}_r = \vec{e}_\theta$</span></a>    <a href="derfeil.html"><span class="math inline">$\dot{\vec{e}}_r=\cos{\theta}\vec{e}_r$</span></a>    <a href="derfeil.html"><span class="math inline">$\dot{\vec{e}}_r=-\sin{\theta}\vec{e}_\theta$</span></a>    <a href="derrett.html"><span class="math inline">$\dot{\vec{e}}_r=\dot\theta\vec{e}_\theta$</span></a>    <a href="derfeil.html"><span class="math inline">$\dot{\vec{e}}_r=\dot\theta\vec{e}_r+\theta\vec{e}_r$</span></a>    <a href="derfeil.html"><span class="math inline">$\dot{\vec{e}}_r=\dot\theta\sin{\theta}\vec{e}_r$</span></a></p>
+
+<p><span id="derfeil" label="derfeil"></span> <a href="errett.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: vektorregning<br />
+<span style="color: red">Det ble galt! Hint: <span class="math display">$$\frac{d}{dt}(\cos{\theta}) = -\dot\theta\sin{\theta}$$</span> Forsikre deg om at du forstår hvordan du kommer frem til dette, spør hvis du trenger! Et hint til: sammenlikn svaret ditt med formen på <span class="math inline"><em>e⃗</em><sub><em>θ</em></sub></span>. Gå tilbake og prøv igjen, hvis du sliter med å forstå, kontakt foreleser/gruppelærer.</span></p>
+
+<p><span id="derrett" label="derrett"></span> <a href="errett.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: <span class="math inline"><em>v</em><sub><em>r</em></sub></span> og <span class="math inline"><em>v</em><sub><em>θ</em></sub></span><br />
+<span><strong>Det er helt riktig</strong></span>. Vi har altså <span class="math display">$$\dot{\vec{e}}_r = \dot\theta\vec{e}_\theta$$</span> Helt samme resonnement gir <span class="math display">$$\dot{\vec{e}}_\theta = -\dot\theta\vec{e}_r$$</span> Denne siste får du bruk for senere. Tilbake til hastigheten. Prøv nå å vise at <span class="math display"><em>v⃗</em> = <em>ṙ</em><em>e⃗</em><sub><em>r</em></sub> + <em>r</em><em>θ̇</em><em>e⃗</em><sub><em>θ</em></sub></span> Hvis du ikke får dette til <span style="color: red">etter å ha prøvd flere ganger</span>, ta en titt på <span><span style="background-color: sunset">denne videoen her. <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_1.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span><br />
+<a href="hastighet4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hastighet4" label="hastighet4"></span> <a href="derrett.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: <span class="math inline"><em>v</em><sub><em>r</em></sub></span> og <span class="math inline"><em>v</em><sub><em>θ</em></sub></span><br />
+La oss prøve å tolke uttrykket for hastighet <span class="math display"><em>v⃗</em> = <em>ṙ</em><em>e⃗</em><sub><em>r</em></sub> + <em>r</em><em>θ̇</em><em>e⃗</em><sub><em>θ</em></sub></span> I <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_2.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> tolker vi de to hastighetskomponentene og du lærer noen svært viktige nye begreper som skal brukes gjennom hele kurset.<br />
+<a href="hastighet5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hastighet5" label="hastighet5"></span> <a href="hastighet4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: <span class="math inline"><em>v</em><sub><em>r</em></sub></span> og <span class="math inline"><em>v</em><sub><em>θ</em></sub></span><br />
+<span>Har du nå klart for deg hva <span><em>radiell</em></span> og <span><em>tangensiell</em></span> hastighet er for noe?<br />
+La oss se om vi kan utlede uttrykket for tangensiell hastighet, altså <span class="math inline"><em>v</em><sub><em>θ</em></sub> = <em>r</em><em>θ̇</em></span> med litt geometri og rent fysiske argumenter. Vi skal bruke denne figuren her</span> <img src="../media/tangential_vel.png" alt="image" /><br />
+<span>som viser en liten forflytning <span class="math inline"><em>Δ</em><em>s</em></span> av romskipet i retning av enhetsvektoren <span class="math inline"><em>e⃗</em><sub><em>θ</em></sub></span>. Det er altså en forflytning ortogonalt på posisjonsvektoren som skjer i løpet av et kort tidsrom <span class="math inline"><em>Δ</em><em>t</em></span>. Hvordan kan du bruke disse to størrelsene til å definere <span class="math inline"><em>v</em><sub><em>θ</em></sub></span>, og hvordan kan du skrive <span class="math inline"><em>Δ</em><em>s</em></span> uttrykt med <span class="math inline"><em>r</em></span> og <span class="math inline"><em>Δ</em><em>θ</em></span>?</span><a href="hastighet6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hastighet6" label="hastighet6"></span> <a href="hastighet5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblem: angulærmoment<br />
+Hvis du har tenkt deg nøye om, se på <span><span style="background-color: sunset">denne videoen her <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_3.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> for en forklaring.<br />
+<span><strong>Bruk nå uttrykket du har funnet for <span class="math inline"><em>v</em><sub><em>θ</em></sub></span> til å vise at spinn (angulærmoment) per masse for romskipet, <span class="math inline"><em>h</em></span>, er gitt ved <span class="math inline"><em>h</em> = <em>r</em><sup>2</sup><em>θ̇</em></span>.</strong></span> Spinn per masse er definert som <span class="math display">$$\vec{h}=\frac{\vec{r}\times\vec{p}}{m}$$</span> der <span class="math inline"><em>p⃗</em> = <em>m</em><em>v⃗</em></span> er bevegelsesmengden til romskipet og <span class="math inline"><em>m</em></span> er massen. Denne størrelsen skal vi bruke mye fremover. Hvis du har forstått alt vi har gått gjennom frem til nå, så bør du få til å vise at <span class="math inline"><em>h</em> = <em>r</em><sup>2</sup><em>θ̇</em></span> (bruk uttrykket vi har funnet for <span class="math inline"><em>v⃗</em></span>). Hvis ikke, så er det <span><strong>svært viktig</strong></span> at du kontakter foreleser eller gruppelærer for hjelp før du går videre! <a href="kepler.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler" label="kepler"></span> <a href="hastighet6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Keplers lover<br />
+Nå begynner vi å nærme oss <span style="color: red">den analytiske utledning av baner</span> her, men før i setter igang, har du hørt om Keplers lover? <a href="keplerja.html">JA!</a>     <a href="keplernei.html">NEI!</a></p>
+<p>Da husker du kanskje også omtrent hva Keplers lover sier? Tenk deg godt om før du går videre!!!<br />
+<a href="keplernei.html">Få se Keplers lover da vel!</a></p>
+<ol>
+<li><p>Planetene går i ellipsebaner med sola i det ene brennpunktet</p></li>
+<li><p>En linje fra sola til planeten sveiper ut like store areler i løpet av like store tidsrom</p></li>
+<li><p>Omløpsperioden (gitt i jordår) i annen potens er lik store halvakse i ellipsebanen (gitt i AU) i tredje potens, <span class="math inline"><em>P</em><sup>2</sup> = <em>a</em><sup>3</sup></span>.</p></li>
+</ol>
+<p>Se gjerne <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_4.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> hvis du er usikker på hva lovene sier. <a href="kepler0b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler0b" label="kepler0b"></span> <a href="kepler.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Keplers lover<br />
+<span> Merket du det forresten en viktig ting på forrige side og i videoen? I astrofysikken bruker vi enheten AU (Astronomial Unit), astronomiske enheter, veldig mye så lær deg med en gang hva denne betyr:</span></p>
+<div class="block">
+<p><span><strong>Astronomisk enhet (AU)</strong></span> <span>Er middelavstanden mellom sola og jorda, ca. 150 millioner km!</span></p>
+</div>
+<p><a href="kepler1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler1" label="kepler1"></span> <a href="kepler0b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Ellipser<br />
+Når vi snakker om ellipsebaner, husker du forresten formelen for en ellipse...? <a href="ellipseformel.html" class="trykkher">Trykk her når du husker, ikke før!</a></p>
+<p><span class="math display">$$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$$</span> der <span class="math inline"><em>a</em></span> er <span style="color: red">store halvakse (semi major axis)</span> og <span class="math inline"><em>b</em></span> er <span style="color: red">lille halvakse (semi minor axis)</span>.</p>
+<p><img src="../media/ellipse.png" alt="image" /><a href="kepler2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler2" label="kepler2"></span> <a href="kepler1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Ellipser<br />
+<img src="../media/ellipse.png" alt="image" /><br />
+I tillegg til halvaksene bør du kjenne til begrepet <span style="color: red">brennpunkt</span>. Denne er markert med massen <span class="math inline"><em>m</em><sub>1</sub></span> på figuren. En ellipse har to brennpunkter, begge ligger i en avstand <span class="math inline"><em>a</em><em>e</em></span> fra sentrum langs store halvakse. Størrelsen <span class="math inline"><em>e</em></span> kaller vi <span style="color: red">eksentrisiteten</span> og sier noe om hvor avlang ellipsen er. <a href="kepler3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler3" label="kepler3"></span> <a href="kepler2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Ellipser<br />
+<img src="../media/ellipse.png" alt="image" /><br />
+<span> Sammenhengen mellom eksentrisiteten og lille og store halvakse er gitt ved <span class="math display">$$e=\sqrt{1-\left(\frac{b}{a}\right)^2}$$</span> Vi ser at hvis vi har en sirkel så må store og lille halvakse være like store, <span class="math inline"><em>a</em> = <em>b</em></span>, og da ser vi fra denne formelen at <span class="math inline"><em>e</em> = 0</span>. Hvis derimot <span class="math inline"><em>a</em></span> er mye større enn <span class="math inline"><em>b</em></span> så har vi en veldig avlang ellipse og da gir formelen oss at eksentrisiteten er veldig stor, <span class="math inline"><em>e</em> → 1</span>. Eksentrisiteten er alltid <span class="math inline"><em>e</em> &lt; 1</span>. </span> <a href="kepler4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler4" label="kepler4"></span> <a href="kepler3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Ellipser<br />
+<img src="../media/ellipse.png" alt="image" /><br />
+Når vi snakker om ellipsebanene i Keplers første lov, enten det gjelder planetenes baner rundt sola eller en satelitts bane rundt en planet, så ligger altså den ene massen <span class="math inline"><em>m</em><sub>1</sub></span> i brennpunktet og den andre massen <span class="math inline"><em>m</em><sub>2</sub></span> går i ellipsebane rundt. Det er noen ord til som du må lære her: <span style="color: red">periapsis</span> er punktet i ellipsebanen der objektene er nærmest hverandre og <span style="color: red">apoapsis</span> er punktet i ellipsebanen der de er lengst fra hverandre. For en planets bane rund sola så brukes ordene <span style="color: red">perihel</span> og <span style="color: red">aphel</span> isteden.</p>
+<p><a href="kepler4b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler4b" label="kepler4b"></span> <a href="kepler4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Ellipser<br />
+<img src="../media/ellipse.png" alt="image" /><br />
+<span> En liten ting til om ellipser. I polarkoordinater kan du skrive ellipseformelen på denne måten (hvis du er interessert i hvordan du går fra uttrykket i xy-koordinater til polarkoordinater, så ta en kikk i de vanlige forelesningsnotatene, det er ikke pensum): <span class="math display">$$r(f)=\frac{a(1-e^2)}{1+e\cos{f}}$$</span> der <span class="math inline"><em>r</em>(<em>f</em>)</span> er lengden av vektoren <span class="math inline"><em>r⃗</em></span> i figuren, altså avstanden fra brennpunktet til objekt <span class="math inline"><em>m</em><sub>2</sub></span> og vinkelen <span class="math inline"><em>f</em></span> er definert som vinkelen mellom <span class="math inline"><em>r⃗</em></span> og vektoren som går fra brennpunktet i <span class="math inline"><em>m</em><sub>1</sub></span> til perihel. Hvis vi setter inn <span class="math inline"><em>f</em> = 0</span> her hva får du da for lengden <span class="math inline"><em>r</em></span>? Stemmer det overens med det du ser geometrisk på figuren? Og hva med <span class="math inline"><em>f</em> = <em>π</em></span>? (<span><strong>hint:</strong></span> avstand fra sentrum til brennpunkt er <span class="math inline"><em>a</em><em>e</em></span>.)<br />
+<a href="pause.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a> </span></p>
+
+<p><span id="pause" label="pause"></span> <a href="kepler4b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p>TID FOR KAFFEPAUSE!!!</p>
+<p><img src="../media/drink-coffee.png" alt="image" /></p>
+<p><br />
+Ut å strekke på bena. Inn med litt koffein...<br />
+Ihvertfall 10 min...</p>
+<p><br />
+<a href="kepler5.html">Jeg lover, jeg har tatt pause og er klart til å fortsette</a></p>
+
+<p><span id="kepler5" label="kepler5"></span> <a href="kepler4b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Forberede 2-legemeproblemet<br />
+Da er vi klare til å begynne utledningen av Keplers første lov! Eller???<br />
+</p>
+<p>En rask sjekk om du har oversikt over det som trengs</p>
+<ul>
+<li><p>Du kjenner til enhetsvektorene <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> og <span class="math inline"><em>e⃗</em><sub><em>θ</em></sub></span> og hvordan disse er definert?</p></li>
+<li><p>Du forstår hvordan du deriverer disse enhetsvektorene?</p></li>
+<li><p>Du forstår hvordan du kan derivere posisjonsvektoren <span class="math inline"><em>r⃗</em></span> og dermed finne hastighetsvektoren <span class="math inline"><em>v⃗</em></span>?</p></li>
+<li><p>Du forstår forskjellen mellom radiell og tangensiell hastighet og kan uttrykke disse ved hjelp av <span class="math inline"><em>r</em></span> og <span class="math inline"><em>θ</em></span> samt disses derivert?</p></li>
+<li><p>Du kan kan uttrykket for spinn per masse (<span class="math inline"><em>h</em></span>) uttrykt ved hjelp av <span class="math inline"><em>r</em></span> og <span class="math inline"><em>θ</em></span> samt disses derivert? Og kan utlede dette?</p></li>
+<li><p>Du vet hva lille/store halvakse, eksentrisitet, brennpunkt, apoapsis/aphel, periapsis/perihel er?</p></li>
+</ul>
+<p><a href="kepler5b.html">ÅJA, dette kan jeg, la oss sette igang med utledningen!</a><br />
+<a href="trengerep.html">Njaaaa...jeg trenger kanskje litt repetisjon</a></p>
+
+<p><span id="kepler5b" label="kepler5b"></span> <a href="kepler5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Vi skal i det følgende løse det som vi kaller <span><strong>2-legeme-problemet</strong></span>:<br />
+<img src="../media/forces.png" alt="image" /><br />
+<span><strong>To legemer med masse <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>m</em><sub>2</sub></span> påvirker hverandre kun med gravitasjonskrefter. Det virker ingen eksterne krefter. Initialposisjonene og initialhastighetene til begge legemene er kjent.</strong></span> For å gjøre utledningen enklere skal vi først sette oss på <span class="math inline"><em>m</em><sub>1</sub></span> og utlede bevegelsen til <span class="math inline"><em>m</em><sub>2</sub></span> sett ifra <span class="math inline"><em>m</em><sub>1</sub></span>. Dermed trenger vi kun å se på bevegelsen til <span><em>et</em></span> legeme. Etter det skal vi se på bevegelsene til begge legemene.<br />
+På figuren ser du at vektoren <span class="math inline"><em>r⃗</em></span> peker fra <span class="math inline"><em>m</em><sub>1</sub></span> til <span class="math inline"><em>m</em><sub>2</sub></span>. <span><strong>Når vi setter oss på <span class="math inline"><em>m</em><sub>1</sub></span> og definerer origo der, så er denne <span class="math inline"><em>r⃗</em></span> altså poisjonsvektoren til <span class="math inline"><em>m</em><sub>2</sub></span>. Når vi har funnet hvordan <span class="math inline"><em>r⃗</em>(<em>t</em>)</span> endrer seg som funksjon av tiden så har vi løst 2-legeme-problemet sett fra objekt <span class="math inline"><em>m</em><sub>1</sub></span>.</strong></span> <a href="kepler6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler6" label="kepler6"></span> <a href="kepler5b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+I <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_5.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> begynner vi utledningen av løsningen på 2-legemeproblemt. Vi diskuterer krefter på objektene og bruker Newtons lover inkludert gravitasjonsloven til å komme frem til <span class="math display">$$\ddot{\vec{r}}+m\frac{\vec{r}}{r^3}=0$$</span> der vi har definert <span class="math inline"><em>m</em> = <em>G</em>(<em>m</em><sub>1</sub>+<em>m</em><sub>2</sub>)</span> og <span class="math inline"><em>r</em> = |<em>r⃗</em>|</span> der <span class="math inline"><em>r⃗</em></span> peker fra masse <span class="math inline"><em>m</em><sub>1</sub></span> til masse <span class="math inline"><em>m</em><sub>2</sub></span>.<br />
+<img src="../media/forces.png" alt="image" /><br />
+Dette <span><strong>bevegelseslikningen</strong></span> for systemet vårt. Det er en differensiallikning i funksjonen <span class="math inline"><em>r⃗</em>(<em>t</em>)</span>. Hvis vi klarer å løse for <span class="math inline"><em>r⃗</em>(<em>t</em>)</span>, har vi funnet bevegelsen til <span class="math inline"><em>m</em><sub>2</sub></span> i forhold til <span class="math inline"><em>m</em><sub>1</sub></span> og dermed løst 2-legemeproblemet sett ifra <span class="math inline"><em>m</em><sub>1</sub></span>. <a href="kepler7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler7" label="kepler7"></span> <a href="kepler6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+<span>For å kunne løse denne likningen, så trenger vi å innføre enhetsvektorer. Det viser seg at det er lettere å jobbe med <span class="math inline"><em>e⃗</em><sub><em>r</em></sub></span> og <span class="math inline"><em>e⃗</em><sub><em>θ</em></sub></span> her! Ta en titt på denne figuren:</span><br />
+</p>
+<div class="columns">
+<p><img src="../media/unityvectors_on_m1m2.png" alt="image" /> <span> <span class="math display">$$\hspace*{-4cm}\ddot{\vec{r}}+m\frac{\vec{r}}{r^3}=0$$</span> </span></p>
+</div>
+<p><span>Vi har nå definert origo i sentrum av <span class="math inline"><em>m</em><sub>1</sub></span> slik at <span class="math inline"><em>r⃗</em></span> er en posisjonsvektor som peker på <span class="math inline"><em>m</em><sub>2</sub></span>. Sett inn enhetsvektorer, deriver og dobbeltderiver <span class="math inline"><em>r⃗</em></span> og se om du klarer å komme frem til: <span><strong>(hint: gå baklengs fra dette svaret for å sammenlikne!)</strong></span> <span class="math display">$$(\ddot{r}-r\dot{\theta}^2)\vec{e}_r+\frac{1}{r}\frac{d}{dt}(r^2\dot{\theta})\vec{e}_\theta=-\frac{m}{r^2}\vec{e}_r.$$</span> Flere hint: start fra uttryket for <span class="math inline">$\dot{\vec{r}}$</span> og husk at <span class="math inline">$\dot{\vec{e}}_r = \dot\theta\vec{e}_\theta$</span> og <span class="math inline">$\dot{\vec{e}}_\theta = -\dot\theta\vec{e}_r$</span>. Hvis du ikke får det til, ta en titt på <span><span style="background-color: sunset">denne videoen her <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_6.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> , men <span style="color: red"><strong>kun når du har gjort et skikkelig forsøk selv!</strong></span>.</span> <a href="kepler8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a> (<span><strong>Feil i videoen: det står <span class="math inline"><em>r</em><sup>3</sup></span> under brøkstreken på høyre side, det skal være <span class="math inline"><em>r</em><sup>2</sup></span> som i likningen rett over)</strong></span></p>
+
+<p><span id="kepler8" label="kepler8"></span> <a href="kepler7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+<span class="math display">$$(\ddot{r}-r\dot{\theta}^2)\vec{e}_r+\frac{1}{r}\frac{d}{dt}(r^2\dot{\theta})\vec{e}_\theta=-\frac{m}{r^2}\vec{e}_r.$$</span> Se nøye på denne likningen! Se om du kan bruke den til å trekke følgende konklusjoner:</p>
+<div class="block">
+<p><span>Vi har gjort om vektorlikningen til to skalare likninger som sier:</span></p>
+<ul>
+<li><p>Vi har utledet at spinn per masse (<span class="math inline"><em>h</em></span>) er en bevart størrelse.</p></li>
+<li><p>Vi har kommet til at <span class="math display">$$\ddot{r}-r\dot{\theta}^2=-\frac{m}{r^2}$$</span></p></li>
+</ul>
+</div>
+<p>Hvis du ikke ser hvordan vi kommer frem til dette, så <span><span style="background-color: sunset">kikk på denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_7.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. <a href="kepler9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler9" label="kepler9"></span> <a href="kepler8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Nå nærmer vi oss slutten her!<br />
+Vi skal nå gjøre to steg:</p>
+<ol>
+<li><p>vi skal bruke <span class="math inline"><em>θ</em></span> som variabel isteden for tiden <span class="math inline"><em>t</em></span>. Hvis vi kun er interessert i formen på banen og ikke hvor objektet er til en gitt tid, så holder det å få ut svaret <span class="math inline"><em>r</em>(<em>θ</em>)</span>, dvs. hva er lengden av <span class="math inline"><em>r⃗</em></span> når vinkelen som vektoren danner med x-aksen er <span class="math inline"><em>θ</em></span>? Vi skal altså ha deriverte i forhold til <span class="math inline"><em>θ</em></span> isteden for tiden.</p></li>
+<li><p>For å gjøre det enklere å løse likningen, så viser det seg at det er bedre å definere <span class="math inline">$u(\theta)=\frac{1}{r(\theta)}$</span> og substituerer <span class="math inline"><em>u</em></span> overalt der det er <span class="math inline"><em>r</em></span>. Vi løser for <span class="math inline"><em>u</em>(<em>θ</em>)</span> og til slutt setter vi inn for <span class="math inline"><em>r</em></span> igjen.</p></li>
+</ol>
+<p>Du skal nå få prøve deg litt selv, før du får svaret... <a href="kepler10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler10" label="kepler10"></span> <a href="kepler9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Deriver <span class="math inline"><em>u</em></span> med hensyn på <span class="math inline"><em>θ</em></span>, bruk kjerneregel til å forbinde denne med <span class="math inline"><em>ṙ</em></span> og se om du klarer å få: <span class="math display">$$\frac{du(\theta)}{d\theta}=-\frac{\dot r}{h}$$</span> der <span class="math inline"><em>h</em></span> er spinn per masse. Og deriverer du en gang til skal du få: <span class="math display">$$\frac{d^2u(\theta)}{d\theta^2}=-\frac{\ddot r}{h\dot\theta}$$</span> Hvis du nå setter inn <span class="math inline">$\ddot r$</span> fra likningen vi fant over (<span class="math inline">$\ddot{r}-r\dot{\theta}^2=-\frac{m}{r^2}$</span>), klarer du å få <span class="math display">$$\frac{d^2u(\theta)}{d\theta^2}+u=\frac{m}{h^2}$$</span> Var disse stegene litt vanskelige? Det var meningen! Ikke bruk mye tid på dette, her er det mer matematisk triksing enn det er fysikk. <span><span style="background-color: sunset">HER <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_8.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> finner du en video som forklarer det. <a href="kepler11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler11" label="kepler11"></span></p>
+<div class="columns">
+<p><a href="kepler10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span><br />
+Løse 2-legemeproblemet<br />
+Før vi går videre, la oss snakke om noe helt annet. Har du hørt om <span><em>harmonisk oscillator?</em></span>. Se på denne situasjonen:<br />
+<img src="../media/harmosc.png" alt="image" /> Hvis vi antar at vi har en x-akse som går nedover her, er du enig i at følgende likning beskriver x-posisjonen til loddet: <span class="math display">$$F=ma=m\ddot x=-kx+mg$$</span> der <span class="math inline"><em>m</em></span> er massen til loddet, <span class="math inline"><em>k</em><em>x</em></span> er fjærkraften som virker oppover, <span class="math inline"><em>k</em></span> er fjærkonstanten, jo større <span class="math inline"><em>x</em></span> er jo større er kraften, og <span class="math inline"><em>m</em><em>g</em></span> er vanlig tyngdekraft (vi antar <span class="math inline"><em>g</em></span> konstant her). Hvis vi deler med <span class="math inline"><em>m</em></span> her og flytter over får vi:</p><p><span class="math display">$$\frac{d^2x}{dt^2}+\frac{k}{m}x=g$$</span> som er likningen for en harmonisk oscillator. Hvis vi setter <span class="math inline"><em>k</em>/<em>m</em> = 1</span> så ser vi at vi har nøyaktig samme type differensiallikning: <span class="math display">$$\frac{d^2u(\theta)}{d\theta^2}+u=\frac{m}{h^2}$$</span> Dette er også en harmonisk oscillator. <a href="kepler12.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="kepler12" label="kepler12"></span> <a href="kepler11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Vi forstår at løsningen er oscillerende: loddet kommer til å svinge opp og ned ettersom tyngden drar det nedover og fjæren oppover så få vi en svingene bevegelse. Det samme må altså skje med <span class="math inline"><em>u</em>(<em>θ</em></span>), ettersom <span class="math inline"><em>θ</em></span> endrer seg så må <span class="math inline"><em>u</em></span> (og dermed <span class="math inline"><em>r</em></span>) bli større og mindre. Dette stemmer jo med en ellipse: planeten går fra perihel til aphel og dermed svinger <span class="math inline"><em>r</em></span> (avstanden til brenpunktet) mellom minste og største verdi, akkurat som loddet. Men kan du se en analytisk løsning av denne likningen?<br />
+Hvis du først setter konstanten lik 0 og flytter over på høyre side så står det: <span class="math display">$$\frac{d^2u(\theta)}{d\theta^2}=-u$$</span> Ser du en løsning av denne likningen? Her har vi jo en funksjon <span class="math inline"><em>u</em></span> som er slik at hvis du deriverer den to ganger så får vi <span class="math inline"> − <em>u</em></span> tilbake, hva må det være?<br />
+<a href="kepler13.html">Tenk deg godt om! Ikke trykk her før du har svaret!</a></p>
+
+<p><span id="kepler13" label="kepler13"></span> <a href="kepler12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Ganske riktig ja! En cosinus eller sinus er jo akkurat slik at hvis du deriverer den to ganger så få du tilbake minus funksjonen selv. Hva hvis vi nå tar med konstantleddet da. Hva blir løsningen av denne likningen?</p>
+<div class="block">
+<p><span><strong>Likningen for harmonisk oscillator for tolegemeproblemet</strong></span> <span class="math display">$$\frac{d^2u(\theta)}{d\theta^2}+u=\frac{m}{h^2}$$</span></p>
+</div>
+<p>Prøv deg litt frem på papir til du finner en løsning! <a href="kepler14.html">Nå har jeg prøvd meg frem helt til jeg fant en løsning!</a></p>
+
+<p><span id="kepler14" label="kepler14"></span> <a href="kepler13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Er du <span><strong>helt</strong></span> sikker på at du har funnet riktig løsning?. Før du går videre nå, ta din løsning <span class="math inline"><em>u</em>(<em>θ</em>)</span> og dobbeltderiver den! Er svaret du får lik: <span class="math display">$$\frac{m}{h^2}-u$$</span> ???<br />
+Helt sikker? <a href="kepler15.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler15" label="kepler15"></span> <a href="kepler14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Da skulle du ha fått følgende svar: <span class="math display">$$u(\theta)=\frac{m}{h^2}+A\cos{(\theta-\omega)}$$</span> hvor <span class="math inline"><em>A</em></span> og <span class="math inline"><em>ω</em></span> er integrasjonskonstanter. Ble det riktig?<br />
+Hvis vi nå omdøper integrasjonskontantene og gjør om til <span class="math inline"><em>r</em>(<em>θ</em>)</span> ved <span class="math inline"><em>r</em> = 1/<em>u</em></span> så få vi da: <span class="math display">$$r(f)=\frac{p}{1-e\cos{f}}$$</span> hvor vi har definert <span class="math inline"><em>f</em> = <em>θ</em> − <em>ω</em></span>, <span class="math inline"><em>p</em> = <em>h</em><sup>2</sup>/<em>m</em></span> og <span class="math inline"><em>e</em> = <em>A</em><em>p</em></span>. MERK at <span class="math inline"><em>p</em></span> her ikke har noe med bevegelesmengde å gjøre! Ser du noe kjent med dette uttrykket? Kan du skrive det litt om for å få noe kjent?<br />
+<span style="color: red">(MERK deg også definisjonen <span class="math inline"><em>p</em> = <em>h</em><sup>2</sup>/<em>m</em></span> her, den kommer du til å bruke i neste forelesning!)</span><br />
+<a href="kepler16.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler16" label="kepler16"></span> <a href="kepler15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Løse 2-legemeproblemet<br />
+Ganske riktig ja! Hvis vi definerer en størrelse <span class="math inline"><em>a</em></span> slik at <span class="math inline"><em>p</em> = <em>a</em>(1−<em>e</em><sup>2</sup>)</span> så har vi jammen</p>
+<div class="block">
+<p><span><strong>Keplers første lov utledet fra Newtons lover</strong></span> Planetene går i ellipsebaner <span class="math display">$$r(f)=\frac{a(1-e^2)}{1-e\cos{f}}$$</span> Der solen er i det ene brennpunktet</p>
+</div>
+<p>Dette er jo en generell løsning av 2-legemeproblemet og gjelder da for enhver banebevegelse. MEN, for ellipser så må <span class="math inline"><em>e</em> = [0, 1)</span> men <span class="math inline"><em>e</em></span> kan aldri bli 1. I denne løsningen så kan <span class="math inline"><em>e</em></span> være en hvilken som helst positiv størrelse og enda være en løsning av likningen vår. Men hvis <span class="math inline"><em>e</em> ≥ 1</span> så har vi ikke en ellipse lenger! <span style="color: red">Betyr det at det finnes løsninger av tolegemeproblemet som <span><strong>ikke</strong></span> er ellipsebaner men andre typer baner? Som Kepler ikke visste noe om??</span><br />
+<span><strong>Fortsettelse følger...</strong></span> <a href="kepler17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="kepler17" label="kepler17"></span> <a href="kepler16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span> <span> <span style="color: orange">... i den neste og meget spennende forelesningen i emnet</span><br />
+<span style="color: orange">AST2000...</span><br />
+<span style="color: orange">Følg med!</span><br />
+</span> <a href="oppsummering.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="oppsummering" label="oppsummering"></span> <a href="kepler17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span> Da er vi ved veis enda av den første forelesningen i del 1B. Du bør nå ha god oversikt over dette:</p>
+<ul>
+<li><p>posisjonsvektorer, hastighetsvektorer, enhetsvektorer i polarkoordinater</p></li>
+<li><p>hvordan derivere vektorer i polarkoordinater</p></li>
+<li><p>størrelser og egenskaper til en ellipse</p></li>
+<li><p>vite hva en harmonisk oscillator er</p></li>
+<li><p>kjenne hovedtrekkene i hvordan man løser 2-legemeproblemet</p></li>
+</ul>
+<p><span style="color: red">Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk for å vite om alt arbeidet med å lage disse interaktive slidene er verd det, om jeg bør fortsette med det og om det er noe jeg bør endre.</span></p>
+
+</body>
+</html>

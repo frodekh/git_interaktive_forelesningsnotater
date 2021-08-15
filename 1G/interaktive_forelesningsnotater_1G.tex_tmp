@@ -1,0 +1,829 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+\newcommand{\pagebutton}[1]{#1}
+
+\newcommand{\choicebutton}[1]{#1}
+
+\newcommand{\pagenobutton}[1]{#1}
+
+\newcommand{\headlinebutton}[1]{#1}
+
+
+\newcommand{\curpage}{}
+\newcommand{\nextpage}{}
+\newcommand{\dnextpage}{}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\nextpage\headlinebutton{\headline}\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\curpage\headlinebutton{\headline}\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\dnextpage\headlinebutton{\headline}\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\nextpage\\\headlinebutton{\headline}\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\curpage\\\headlinebutton{\headline}\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}\dnextpage\\\headlinebutton{\headline}\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{39}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1G\\Interaktive forelesningsnotater}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1G\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/162264}{🙂 🙁}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+
+%%%%% intro
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.7]{neutron_star.jpg}\\
+\column{0.5\textwidth}
+\textcolor{white}{\bf Velkommen til del 1G! Her skal vi en tur innom kvanteverdenen. Når vi senere skal lære om døende stjerner så trenger vi å forstå litt om gasser som har ekstremt høy tetthet. Disse gassene oppfører seg ikke lenger som ideele gasser. Faktisk ikke i det hele tatt. Det skal vi se på her. Men for å forstå det, trenger vi bittelitt kvantefysikk. Deltajene om dette får du i senere semester.}\textcolor{blue}{\bf\small (illustrasjon: En nøytronstjerne består av degenerert kvantegass (NASA/Dana Berry)}\hyperlink{intro2}{\pagebutton{Neste side}}
+ \\\vspace*{3cm}\hyperlink{intro2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+\label{intro2}
+\lastpagebutton{intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/162265}{Trykk her for å varme opp}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/162265}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+\end{frame}
+
+\renewcommand{\headline}{\small $\vec{p}$-rommet}
+{
+
+\begin{frame}
+\label{nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{trykket}
+\hyperlink{prom1}{\pagebutton{$\vec{p}$-rommet, hæ? Nå ble jeg nysjerrig her...}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{prom1}
+\dlastpagebutton{intro2}
+I dette kapitlet skal vi se på gasser med \textcolor{red}{svært høye tettheter} og de spesielle egenskapene slike gasser har. Det som er spesielt ved disse gassene, som ved disse tetthetene ikke lenger oppfører seg som ideele gasser, er at kvanteeffekter mellom partiklene i gassen slår inn. Vi skal ta en liten forhåndskikk ned i kvanteverdenen, selv om det er først neste semester at du virkelig kommer til å lære dette. I denne delen av kurset må du altså godta en del ting som du kommer til å få bevist/forklart neste semester. {\bf Grunnen til at vi ser på slike gasser her er at vi senere kommer til å bruke resultatene fra denne delen av kurset. Når vi skal se på hva som skjer med døende stjerner så kommer vi til å få tettheter som er så høye at gassen får de egenskapene vi nå skal snakke om.}
+\hyperlink{prom1b}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom1b}
+\lastpagebutton{prom1}
+{\Large
+Merk at de \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{vanlige forelesningsnotatene} her går ganske mye lenger enn det som du trenger i AST2000. Fra i år så er dette å regne som tilleggsstoff for de som er ekstra interessert. Det som er pensum i 1G er det som kommer i dette interaktive forelesningsnotatet. Også ukeoppgavene i 1G bortfaller. Isteden vil du få brukt stoffet i oppgavene for del 3E som kommer senere.
+}
+\hyperlink{prom2}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{prom2}
+\lastpagebutton{prom1b}
+I moderne fysikk er det vanlig å gi en gasspartikkel en posisjon i et 6-dimensjonalt rom, det såkalte {\bf faserommet}. De 3 første dimensjonene er de vanglige romlige dimensjonene, de 3 siste er komponentene $p_x$, $p_y$, $p_z$ til bevegelsemengden. Hvis partikkelen din er i posisjon $\vec{r}$ i rommet og har bevegelsesmengde $\vec{p}$, ja da har du en 6D-posisjon til partikkelen din:
+{\Huge 
+\[
+(\vec{r}, \vec{p})
+\]
+}
+Partikkelen har altså en posisjon $\vec{r}$ i det virklelige rommet og en posisjon $\vec{p}$ i bevegelsesmengderommet eller $\vec{p}$-rommet. I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1g/videoer/video1g_1.mp4}{denne videoen} får du vite mer om dette 6-dimensjonale rommet og hvordan vi plasserer partikler der,
+\hyperlink{prom3}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom3}
+\lastpagebutton{prom2}
+Vi har altså sett oss ut en kubikkmeter av gassen vår og plassert alle gasspartiklene både i vårt vanlige 3D-rom, på $(x,y,z)$ aksene og i $\vec{p}$-rommet langs $(p_x,p_y,p_z)$-aksene. Vi antar at vi har ideel gass. I det vanlige rommet så er partiklene helt jevnt fordelt i rommet inne i kubikkmeteren. Tenk deg at du fysisk har tegnet de 3 $(p_x,p_y,p_z)$-aksene og plottet inn alle partikle fra kubikkmetern med gass. Hvordan ser nå tegningen din ut?\\
+\hyperlink{promf}{\choicebutton{\small Partiklene er jevnt fordelt utover}}\\
+\hyperlink{promr}{\choicebutton{\small Partiklene er konsentrert i origo og det blir færre utvoer fra origo }}\\
+\hyperlink{promf}{\choicebutton{\small Det er nesten tomt i origo og så blir det flere og flere utover}}\\
+\hyperlink{promf}{\choicebutton{\small Partiklene er konsentrert i et skall rundt origo med færre innover og utover}}\\
+\end{frame}
+
+{
+
+\begin{frame}
+\label{promf}
+\lastpagebutton{prom3}
+\textcolor{yellow}{\Large Godt forsøk, men det ble ikke helt riktig. {\bf HINT:} Husker du Maxwell-Boltzmanns fordelingsfunksjon for hastighetskomponenter? Bevegelsesmengde er jo bare massen ganger denne hastighetskomponenten, så fordelingen bør vel være ganske like? Tegn opp sannsynlighetsfordelingen av $p_x$ med alle mulige verdier for $p_x$ på x-aksen og sannsynlighet på y-aksen. Gjør tilsvarende for $p_y$ og $p_z$. Hjelper det? Gå tilbake og prøv på nytt.}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{promr}
+\clastpagebutton{prom3}
+{\Large Flott! Det er helt riktig. Men hvorfor blir det slik?? Du lærte noe om dette i den første delen av kurset!}
+\hyperlink{prom4}{\pagebutton{Når du har et forslag, trykk her!}}
+\end{frame}
+}
+
+\begin{frame}
+\label{prom4}
+\lastpagebutton{promr}
+Husker du denne figuren fra del 1A??\\
+\vspace*{-1cm}
+\includegraphics[scale=0.3]{vx_histogram.pdf}\\
+\vspace*{-1cm}
+Den viser histogrammet av partikler med forskjellige hastigheter i x-retning, Maxwell-Boltzmannfordelingen for hastighetskomponenter! Bevegelsesmengde er jo bare $p_x=mv_x$ slik at dette i praksis også er fordelingen av bevegelsesmengder. \textcolor{red}{Dermed har vi flest beveglesesmengder nær 0 og færre og færre utover.} Helt tilsvarende for $p_y$ og $p_z$. \textcolor{red}{I en ideel gass bør derfor partiklene være konsentrert nær origo i $(p_x,p_y,p_z)$-rommet siden det er der de har størst sannsynlighet for å være.} Var det klart? Hvis ikke, spør foreleser!
+\hyperlink{prom4b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{prom4b}
+\lastpagebutton{prom4}
+{\small
+{\bf Men stopp en hal!}. I del 1A hadde vi vel også et {\bf slikt} histogram:\\
+\vspace*{-1cm}
+\includegraphics[scale=0.3]{v_histogram.pdf}\\
+\vspace*{-1cm}
+Her ser vi sannsynligheten for at en partikkel har absoluttverdi $p$ ($p=mv$) av bevegelsesmengden. \textcolor{red}{Her ser vi helt tydelig at vi har en topp som er et stykke vekk fra 0. Men får vi ikke da et helt annet resultat?} Hvis vi har størst sannsynlighet for å ha en absoluttverdi $p$ som er større enn 0 (toppen i histogrammet her), \textcolor{red}{hvorfor blir det da ikke sånn at svaret på foregående grublis blir at partiklene blir liggende i et kuleskall med færre partikler innenfor og utenfor skallet?} Et det ikke det som denne figuren sier oss? Mens histogrammet for $p_x$, $p_y$ og $p_z$ sier oss at det bør være flest i origo? Motsier histogrammene hverandre?
+}
+\hyperlink{prom4b2}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{prom4b2}
+\lastpagebutton{prom4b}
+\begin{columns}
+\column{0.5\textwidth}
+\hspace*{-0.5cm}
+\includegraphics[scale=0.3]{scatterplot.png}\\
+{\small 
+I figuren ser du Maxwell Boltzmann fordelingen i 2 dimensjoner. Gaussisk i begge komponenter med topp i origo! Du ser også to skall. Det innerste skallet er i en radius $p_1$ fra sentrum, for en bevegelsesmengde $p_1$ som er liten. Siden den er liten er det høy sannsynlighet for å ha denne bevegelsesmengden} 
+\column{0.5\textwidth}
+{\small
+ifølge Maxwell Boltzmann, og vi ser at det er veldig tett med partikler der. Det ytterste skallet viser partikler med bevegelsesmengde $p_2$. Her er det ikke så mange partikler siden vi er langt vekk fra origo. Men innser du at det kanskje kan være minst like mange og kanskje {\bf flere} partikler innenfor dette skallet? Rett og slett fordi området som skallet omfatter er større og får da med flere partikler selv om det er mindre tetthet av partikler her?\\
+{\bf Nettopp derfor har $n(p)$ en topp som er et stykke ut fra origo, mens fordelingen i hver av de 3 dimensjonene har topp i origo.} Hang du med? I de neste par sidene går vi litt utenfor pensum for de som er litt ekstra interessert.
+}
+\hyperlink{prom4c}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+
+
+{
+
+\begin{frame}
+\label{prom4c}
+\lastpagebutton{prom4b2}
+{\small 
+\textcolor{yellow}{\it\footnotesize
+(Det som kommer på denne og de kommende {\bf brune sidene} er litt på siden av pensum, mest for deg som vil forstå litt mer. Det kan også hende at disse sidene gir mer mening etter at du har kommet gjennom hele 1G, så kom gjerne tilbake igjen hit når du er ferdig med 1G. \textcolor{red}{Du kan altså hvis du vil, hoppe over de brune sidene uten å miste noe viktig)}}\\
+\textcolor{yellow}{
+{\bf For å løse motsigelsene her, la oss gå et øyeblikk tilbake til sannsynlighet- og antalltetthetene fra 1A:}}
+\begin{itemize}
+\item \textcolor{yellow}{$P(p_x)$ gir oss sannsynlighetstettheten for at en partikkel har bevegelsesmengde $p_x$. For å få sannsynlighet må vi gange med $dp_x$. Helt tilsvarende med antalltettheten $n(p_x)=nP(p_x)$ der $n$ er antall partikler per volum. \textcolor{red}{For å få et faktisk antall per volum må vi da gange opp: $n(p_x)dp_x$.}}
+\item \textcolor{yellow}{Antalltettheten av partikler med bevegelsesmengde $\vec{p}$ er $n(\vec{p})=n(p_x)n(p_y)n(p_z)$. \textcolor{red}{Men for å få et faktisk antall per volum må vi igjen gange opp med intervallet  $dp_xdp_ydp_z$: $n(\vec{p})dp_xdp_ydp_z=n(p_x)n(p_y)n(p_z)dp_xdp_ydp_z$}.}
+\end{itemize}
+\textcolor{yellow}{Legg merke til at $dp_xdp_ydp_z$ er volumet av en boks i $\vec{p}$-rommet! Vi må gange opp sannsynlighetstettheten $P(\vec{p})$ eller den tilsvarende antalltettheten $n(\vec{p})$ med et 3D-intervall i $\vec{p}$-rommet slik som $dp_xdp_ydp_z$ for å få sannsynlighet eller antall partikler (per fysisk volum) for partikler i dette bevegelsesmengdeintervallet.}
+}
+\hyperlink{prom4c2}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{prom4c2}
+\lastpagebutton{prom4c}
+\textcolor{yellow}{
+Vi kan altså tolke $n(\vec{p})=n(p_x)n(p_y)n(p_z)$ som en 6-dimensjonalt tetthet: antall partikler per fysisk volum per volum i $\vec{p}$-rommet. Hvis vi vil ha antall partikler per volum innenfor et bevegelsesmengdeintervall med $\Delta p_x\Delta p_y\Delta p_z$ så må vi gange opp med dette $p$-volumet for å få antall partikler per (vanlig) volum.\\
+La oss skrive det slik:
+\[
+n(\vec{p})=\frac{N}{VV_p}
+\]
+der $N$ er antall partikler i gassen per fysisk volum $V$ (f.eks. $1\mathrm{m}^3$) som har en bevegelsemengde innenfor et intervall i $\vec{p}$-rommet angitt av volumet $V_p$ i $\vec{p}$-rommet. Var det forståelig?
+}
+\hyperlink{prom4d}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{prom4d}
+\lastpagebutton{prom4c2}
+\textcolor{yellow}{
+{\bf Hva hvis vi vil ha antalltettheten av partikler med absoluttverdi mellom $p$ of $p+dp$ av bevegelsesmengden?} Altså alle partikler med absoluttverdi $p$ av bevegelsesmengden. \textcolor{red}{Disse befinner seg vel på et skall i avstand $p$ fra origo i $\vec{p}$-rommet med tykkelse $dp$?} Volumet $V_p$ av et slikt kuleskall er vel $4\pi p^2dp$? Hvis vi {\bf ganger opp antalltettheten $n(\vec{p})$ med dette volumet $V_p$, så får vi antall partikler per fyisk volum $V$} med absoluttverdi av bevegelsesmengde mellom $p$ og $p+dp$? Altså $n(\vec{p})4\pi p^2 dp$.} \\
+\vspace*{0.5cm}
+\textcolor{yellow}{
+La oss gå tilbake til del 1A: Husker du definisjonen av $n(p)$? Var ikke den også slik at hvis vi ganger den med $dp$, altså $n(p)dp$ er dette også antall partikler per (fysisk) volum med absoluttverdi av bevegelsesmengde mellom $p$ og $p+dp$? Begge uttrykkene gir det samme:
+\[
+n(p_x)n(p_y)n(p_z)4\pi p^2 dp = n(p) dp
+\]
+Som vel betyr at
+\[
+n(p)=n(p_x)n(p_y)n(p_z)4\pi p^2
+\]
+}
+\hyperlink{prom4e}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{prom4e}
+\lastpagebutton{prom4d}
+\textcolor{yellow}{
+Denne er tatt rett fra del 1A (men merk at dette er sannsynlighetstettheter for hastighet, mens vi har antalltettheter for bevegelsesmengde, men du skulle nå vite hva forskjellen er):
+\[
+P(v) = \left(\frac{m}{2\pi kT}\right)^{3/2}e^{-\frac{1}{2}\frac{mv^2}{kT}}4\pi v^2\ \ P(v_x) = \left(\frac{m}{2\pi kT}\right)^{1/2}e^{-\frac{1}{2}\frac{mv^2_x}{kT}}
+\]
+Ser du at vi har utledet $P(v)$ fra $P(v_x)$, eller $n(p)$ fra $n(p_x)$ om du vil? Ser du nå hvor faktoren $4\pi v^2$ kommer fra? Er du usikker, spør gjerne foreleser.
+}
+\hyperlink{prom4f}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+{
+
+\begin{frame}
+\label{prom4f}
+\lastpagebutton{prom4e}
+{\small
+\textcolor{yellow}{
+Men hva i alle dager hadde dette å gjøre med motsigelsen vår?? {\bf Er det flest partikler konsentrert i origo i $\vec{p}$-rommet slik $n(p_x)$ indikerer eller er tettheten av partikler i  $\vec{p}$-rommet størst i et kuleskall slik som $n(p)$ indikerer? Ser du løsningen nå?} \hyperlink{prom4f2}{\pagebutton{Kanskje...}}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom4f2}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+\textcolor{yellow}{
+Ser du at antalltettheten $n(p)$ avhenger av fordelingen $n(p_x)$, $n(p_y)$ og $n(p_z)$ av komponentene samt volumet av et kuleskall $4\pi p^2 dp$? {\bf Fordelingen i $\vec{p}$-rommet må være gitt av $n(p_x)$, $n(p_y)$ og $n(p_z)$, altså de Gaussiske fordelingene med topp i origo!} \textcolor{red}{Men hvorfor har da $n(p)$ en topp på en $p$ som er større enn 0? $n(p)$ sier jo at det er flere partikler med $p$ nær toppen i $n(p)$ enn det er partikler veldig nær origo?}{\bf JA, det er helt riktig, FORDI volumet av kuleskallet er større for større $p$!}. Du vil altså se en opphoping av partikler rundt {\bf origo} i $\vec{p}$-rommet, MEN det vil likevel være flere partikler totalt som har en $p$ som ligger et stykk lenger ut fra origo, fordi volumet av kuleskallet som rommer disse $p$-verdiene er større selv om tettheten av partikler i dette området av $\vec{p}$-rommet er lavere.}\\
+\textcolor{yellow}{
+{\bf Skjønner??} Hvis ikke så er det ikke så farlig, dette var som sagt en liten digresjon for deg som ønsker å forstå litt mer i dybden. Nå skal vi fortsette med pensum her. {\bf Og hvis du ikke hang helt med men har lyst til å forstå, les resten av 1G og kom så tilbake til de brune sidene, da blir det kanskje klarere...}
+}
+}
+\hyperlink{prom5}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\begin{frame}
+\label{prom5}
+\dlastpagebutton{prom4f}
+Når en partikkel endrer hastighet/bevegelsesmengde så vil den dermed også endre posisjon i dette $\vec{p}$-rommet, {\bf enig?}. Den ``beveger seg'' i $\vec{p}$-rommet til en ny $(p_x,p_y,p_z)$-posisjon. {\bf Merk} at dette ikke har noe med en fysisk bevegelse å gjøre men er et uttrykk for endring i bevegelsesmengde. Skjønner?\\
+Hvis vi nå senker temperaturen til den ideele gassen vår, hvordan ``beveger'' da partiklene seg i dette $\vec{p}$-rommet?\\
+\hyperlink{promf2}{\choicebutton{\small I en tilfeldig (Gaussisk fordelt) retning}}\\
+\hyperlink{promf2}{\choicebutton{\small I en tilfeldig (uniformt fordelt) retning}}\\
+\hyperlink{promr2}{\choicebutton{\small Innover mot origo}}\\
+\hyperlink{promf2}{\choicebutton{\small Utover, vekk fra origo}}\\
+\hyperlink{promf2}{\choicebutton{\small Mot et skall i $\vec{p}$-rommet som tilsvarer den nye temperaturen}}\\
+\end{frame}
+
+
+{
+
+\begin{frame}
+\label{promf2}
+\lastpagebutton{prom5}
+\textcolor{yellow}{\Large Det ble galt! Tenk deg denne Maxwell-Boltzmann-fordelingen for en høy temperatur og deretter for en lav temperatur. Tegn begge to for $p_x$. Hva er forskjellen? Hvordan må partiklene bevege seg for å få til denne forskjellen?}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{promr2}
+\clastpagebutton{prom5}
+{\Large Flott! Det er helt riktig. Siden {\bf lavere temperatur betyr at hastighetene og dermed bevegelsesmengdene generelt er lavere}, så får partiklene altså {\bf mindre verdier for $p$-komponentene} og vil dermed bevege seg {\bf mot origo i $\vec{p}$-rommet} som betyr at det nå har en tilstand med lavere bevegelsesmengde. En annen måte å se det på er jo å innse at Maxwell-Boltzmann-fordelingen for lavere temperatur er smalere omkring 0 (fordi partiklene har lavere hastighet). Hvis partiklene skal gå fra en bredere fordeling til en smalere, så må de ``bevege'' seg inn mot origo.}
+\hyperlink{prom6}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+\begin{frame}
+\label{prom6}
+\lastpagebutton{promr2}
+Så hva skjer så med gasspartiklene i $\vec{p}$-rommet når temperaturen går mot 0??
+\hyperlink{prom7}{\pagebutton{Jeg tror jeg vet det!!!}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom7}
+\lastpagebutton{prom6}
+Nettopp ja, de samler seg alle sammen i origo, som betyr bevegelsemengde på 0, ikke sant? Når temperaturen går mot 0 så stopper partiklenes bevegelse opp og bevegelsesmengde til alle partiklene går mot 0. Og hvis $\vec{p}=\vec{0}$ da er partiklene i origo i $\vec{p}$-rommet.\hyperlink{prom7b}{\pagebutton{Ja, og så da...}}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom7b}{}
+\end{itemize}
+\vspace{-0.5cm}
+{\bf Men kvantefysikk hindrer partiklene i å samle seg i origo i $\vec{p}$-rommet! Ifølge kvantefysikken, kan ikke partiklene ha 0 hastighet eller bevegelsesmengde! Og ikke bare det! Er du klar for et lite dypdykk inn i kvanteverdenen? I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1g/videoer/video1g_2.mp4}{denne videoen} får du vite det rare som skjer i $\vec{p}$-rommet og de store konsekvensene dette har for oppførselen til en gass ved lave temperaturer.}\textcolor{red}{ (Lave temperaturer sier du? Skal ikke vi se på varme stjerner? Følg med, følg med, så får du svar...)}
+\hyperlink{prom8}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom8}
+\dlastpagebutton{prom7}
+{\small
+La oss oppsummere det vi gikk gjennom i videoen: Bevegelsesmengden er kvantisert, dvs. at et elektron (eller et annet fermion) i en gass kun kan ha bevegelsesmengde i f.eks. x-retning som
+\[
+p_x=N_xp_0
+\]
+hvor $N_x\geq1$ er et heltall og $p_0$ er en minste mulige bevegelsesmengde (hva denne er skal vi ikke komme nærmere inn på). Helt tilsvarende for $p_y$og $p_z$ slik at bevegelsesmengden til elektronet kan angies som
+\[
+\vec{p}=(N_x,N_y,N_z)p_0
+\]
+Kun 2 elektroner som har hvert sitt kvantespinn kan ha en tilstand $(N_x,N_y,N_z)$. Hvis to elektroner har denne tilstanden, må et annet elektron fint finne seg i å finne andre heltall $(N_x, N_y, N_z)$ som ikker allerede er opptatt. Når temperaturen går mot 0, vil alle partiklene i kubikkmeteren vår hope seg opp i boksene rundt origo helt ut til Fermi-bevegelsesmengden $p_\mathrm{\,Fermi}$. Når gassen er helt degenerert så ligger alle elektronene stappet sammen innenfor en kule med radius $p_\mathrm{\,Fermi}$ i $\vec{p}$-rommet. Da kan elektronene ikke ha lavere bevegelsesmengde, siden det ikke finnes ledige bokser innenfor kula med radius $p_\mathrm{\,Fermi}$. En gass hvor de fleste boksene innenfor denne kula (men ikke alle) er opptatt kalles en delvis degenerert gass (eller bare degenerert).
+}
+\hyperlink{pause}{\pagebutton{Neste side}}
+\end{frame}
+
+{
+
+\begin{frame}
+\label{pause}
+\hyperlink{prom8}{\pagebutton{\small Forrige side}}
+{\Large
+\centerline{Brennsterk kaffe takk!}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+Hjernen trenger et spark bak nå! Dette stoffet må fordøyes litt før vi går videre.
+Ut å gå en lengre tur mens du prøver å se for deg hvordan du beveger deg i $\vec{p}$-rommet mens du går!
+\vspace*{0.5cm}
+Ihvertfall 20 min...
+}\\
+\vspace*{0.5cm}
+\hyperlink{nytema2}{\pagebutton{Har klarnet tankene nå!}}
+\end{frame}
+}
+
+\renewcommand{\headline}{\small Trykket i degenerert gass}
+{
+
+\begin{frame}
+\label{nytema2}
+\hyperlink{prom8}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\hyperlink{prom9}{\pagebutton{Sett igang}}
+\end{frame}
+}
+
+\begin{frame}
+\label{prom9}
+\lastpagebutton{prom8}\label{trykket}
+Vi skal i de følgende sidene prøve å finne {\bf tilstandslikningen} for en degenerert gass. Husker du tilstandslikningen for ideel gass? Den var $P=nkT$. Tilstandslikningen sier altså noe om sammenheng mellom trykk, tetthet og temperatur. Når vi senere skal regne på døende stjerner som kollapser så trenger vi å finne et uttrykk for trykket i denne gassen som er det som prøver å motstå de enorme gravitasjonskreftene i en kollaps. Men for å finne trykket, trenger vi å regne litt på et par ting først:\\
+\textcolor{red}{For en helt degenerert gass, prøv få finne et uttrykk for Fermi-bevegelsesmengden $p_\mathrm{\,Fermi}$ uttryket ved antall-tettheten $n_e$ av elektroner i gassen (dette er antall elektroner per kubikkmeter) samt naturkonstanter. HINT: anta at sidelengdene på de kvantiserte boksene i $\vec{p}$-rommet er $h$ der $h$ er Plancks konstant.}
+\hyperlink{prom10}{\pagebutton{Jeg har tenkt litt og kommet frem til et svar!}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom10}
+\lastpagebutton{prom9}
+Fikk du:\\
+\hyperlink{promf3}{\choicebutton{\small $p_\mathrm{\,Fermi}=\left(\frac{3hn_e}{8\pi}\right)^{1/3}$}}\\
+\hyperlink{promr3}{\choicebutton{\small $p_\mathrm{\,Fermi}=\left(\frac{3n_e}{8\pi}\right)^{1/3}h$}}\\
+\hyperlink{promf3}{\choicebutton{\small $p_\mathrm{\,Fermi}=\left(\frac{3n_e}{4\pi}\right)^{1/3}h$}}\\
+\hyperlink{promf3}{\choicebutton{\small $p_\mathrm{\,Fermi}=\left(\frac{3n_e}{4\pi}\right)^{1/3}h^2$}}\\
+\hyperlink{promf3}{\choicebutton{\small $p_\mathrm{\,Fermi}=\left(\frac{3n_eh^3}{8\pi}\right)^{1/2}$}}\\
+\end{frame}
+
+
+
+{
+
+\begin{frame}
+\label{promf3}
+\lastpagebutton{prom10}
+\textcolor{yellow}{\Large Det var nok ikke helt riktig! Hva er volumet av en kule med radius $p_\mathrm{\,Fermi}$? Og hvis denne kula er fylt med kvadratiske bokser med sidelengder $h$, hvor mange bokser er det plass til i en slik kule? Og husk at det går 2 elektroner i hver boks... Hvor mange elektroner får vi da totalt innenfor kula? Og husk at dette er {\bf alle} elektronene per kubikkmeter siden ingen har bevegelsemengde større enn $p_\mathrm{\,Fermi}$ når gassen er helt degenerert?}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{promr3}
+\clastpagebutton{prom10}
+{\Large Det var helt riktig. Volumet av kula er $\frac{4}{3}\pi p_\mathrm{\,Fermi}^3$ mens volumet av en boks er $h^3$, og så er det 2 elektroner i hver boks. Løsningen av det blir helt riktig:
+\[
+p_\mathrm{\,Fermi}=\left(\frac{3n_e}{8\pi}\right)^{1/3}h
+\]
+Hvis du forstod dette kan du gå videre. Hvis ikke, {\bf må} du kontakte foreleser og spørre. Det har ingen mening å gå videre hvis du ikke forstod så langt.
+}
+\hyperlink{prom11}{\pagebutton{Jeg henger med og er klar for neste side}}
+\end{frame}
+}
+
+\begin{frame}
+\label{prom11}
+\lastpagebutton{promr3}
+Er du enig i at vi nå ikke lenger har en ideel gass? Det bør ihvertfall være helt klart at vi ikke lenger har en Gaussisk Maxwell-Boltzmann-fordeling, er du enig? \hyperlink{prom11c}{\pagebutton{Ja, jo, det er tydelig det!}}\hyperlink{prom11b}{\pagebutton{Njaaaaaaa...}}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom11b}{}
+\end{itemize}
+\vspace{-0.5cm}
+Hvis du nå plotter fordelingen av partikler i f.eks. $p_x$ retning er du enig i at fordelingen plutselig går helt til 0 for $p>p_\mathrm{\,Fermi}$? Ingen partikler har vel $p_x$ større enn $p>p_\mathrm{\,Fermi}$ når den er helt degenerert? Er dette forenlig med en Gaussisk fordeling i $p_x$ slik vi hadde for ideel gass? Hvis du ikke forstår dette, kontakt forelser nå før du går videre. Dette {\bf må} du ha klart for deg for å kunne forstå resten.\hyperlink{prom11c}{\pagebutton{Nå ser jeg det!}}
+\pause
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom11c}{}
+\end{itemize}
+\vspace{-0.5cm}
+Hvis du nå er enig i at vi ikke lenger har ideel gass, så er du vel litt nysjerrig på hva gasstrykket er i en slik gass? For ideel gass var den jo $P=nkT$. For å finne trykket, trenger vi trykkintegralet som vi utledet for noen uker siden, hvordan var nå det igjen... var det ikke
+\[
+P=\frac{1}{3}\int_0^\infty pvn(p)dp
+\]
+???
+\hyperlink{prom12}{\pagebutton{Jeg henger med og er klar for neste side}}
+\end{frame}
+
+\begin{frame}
+\label{prom12}
+\dlastpagebutton{prom11}
+\addtocounter{pageno}{-2}
+Jasså, vi skal altså bruke trykkintegralet
+\[
+P=\frac{1}{3}\int_0^\infty pvn(p)dp
+\]
+til å finne trykket i den degenererte gassen. Hvordan blir nå det her...\hyperlink{prom12b}{\pagebutton{Neimen om jeg veit...}}
+\pause
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom12b}{}
+\end{itemize}
+\vspace{-0.5cm}
+{\bf Ikke det??} La oss tenke litt: Vi trenger å finne fordelingsfunksjonen $n(p)$, altså \textcolor{red}{antalltettheten av gasspartikkel med bevegelsesmengden $p$.} For en ideel gass var jo dette Maxwell-Boltzmann-fordelingen. Nå har vi allerede innsett at dette ikke er  Maxwell-Boltzmann. {\bf Men hva i *\#!\$\%**!\# er det da?} \hyperlink{prom12c}{\pagebutton{Neimen om jeg veit, sa jeg jo?}}
+\pause
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom12c}{}
+\end{itemize}
+\vspace{-0.5cm}
+Neivel, men kanskje vi kan finne det ut? Alle partiklene som har en bevegelsesmengde mellom $p$ og $p+dp$ ligger vel på et infinitisemalt tynt kuleskalll med tykkelse $dp$ i avstand $p$ fra origo. Kan du være med på det? Smak på den setningen en gang til. Og en gang til. Begynner det å demre?
+\hyperlink{prom13a}{\pagebutton{Det gjør det}}\hyperlink{prom13b}{\pagebutton{Denne var litt hard å tygge på...}}
+\end{frame}
+
+
+{
+
+\begin{frame}
+\label{prom13b}
+\addtocounter{pageno}{1}
+\dlastpagebutton{prom12}
+\textcolor{red}{\Large Et elektron med bevegelsesmengde $\vec{p}$ (med størrelse $p$) ligger vel et eller annet sted på kulen med radius $p$ omkring origo i $\vec{p}$-rommet? Og helt tilsvarende: }\textcolor{yellow}{Et elektron med bevegelsesmengde $p+dp$ ligger vel et eller annet sted på kulen med radius $p+dp$ omkring origo i $\vec{p}$-rommet? Dermed vil alle elektroner med en absoluttverdi av bevegelsesmengde mellom $p$ og $p+dp$ ligge et sted i det infinitesimalt tynne skallet med tykkelse $dp$ i avstand $p$ fra origo? Hvis du ikke forstår, kontakt foreleser før du går videre?}
+\hyperlink{prom13a}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+\begin{frame}
+\label{prom13a}
+\lastpagebutton{prom12}
+Greit. Men da kan du vel fint finne ut hvor mange elektroner som har bevegelsesmengde mellom $p$ og $dp$? {\bf Hint:} Hvis du kjenner volumet av kuleskallet og kjenner volumet av en boks...
+Nå vil jeg at du skal skrive opp et forslag til $n(p)$ for elektronene i den helt degenererte elektrongassen. Dette blir en funksjon med delt forskrift. Ikke trykk før du har et forslag. Hvis du har forstått dette så er det rett frem...
+\hyperlink{prom14}{\pagebutton{Nå har jeg skrevet ned et forslag.}}
+\end{frame}
+
+\begin{frame}
+\label{prom14}
+\lastpagebutton{prom13a}
+Fikk du:
+\[
+n(p)=
+\begin{cases}
+0 & p>p_\mathrm{\,Fermi}\\
+\frac{8\pi p^2}{h^3} & p\leq p_\mathrm{\,Fermi}
+\end{cases}
+\]
+Kan du da regne ut trykket i en helt degenerert gass? Trykkintegralet var 
+\[
+P=\frac{1}{3}\int_0^\infty pvn(p)dp
+\]
+og sammenhengen mellom bevegelsesmengde og hastighet er den samme som alltid.
+\hyperlink{prom15}{\pagebutton{Nå har jeg integrert og funnet et svar.}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{prom15}
+\lastpagebutton{prom14}
+Fikk du:\\
+\hyperlink{promr4}{\choicebutton{\small $P=\frac{8\pi p_\mathrm{\,Fermi}^5}{15m_eh^3}$}}\\
+\hyperlink{promf4}{\choicebutton{\small $P=\frac{8\pi p_\mathrm{\,Fermi}^4}{5m_eh^3}$}}\\
+\hyperlink{promf4}{\choicebutton{\small $P=\frac{8\pi p_\mathrm{\,Fermi}^5}{3m_eh^3}$}}\\
+\hyperlink{promf4}{\choicebutton{\small $P=\frac{8\pi p_\mathrm{\,Fermi}^3}{5m_eh^3}$}}\\
+\hyperlink{promf4}{\choicebutton{\small $P=\frac{4\pi p_\mathrm{\,Fermi}^5}{3m_eh^3}$}}\\
+der $m_e$ er elektronmassen.
+\end{frame}
+
+
+{
+
+\begin{frame}
+\label{promf4}
+\lastpagebutton{prom15}
+\textcolor{yellow}{\Large Det ble ikke helt rett. Dette skulle være et standard integral, prøv igjen!}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{promr4}
+\clastpagebutton{prom15}
+{\Large Fantastisk!}
+Du har kommet frem til et uttrykk for trykket i en degenerert gass. Hvis vi nå setter inn for uttrykket for $p_\mathrm{\,Fermi}$ som vi kom frem til for noen sider siden, så blir det
+\[
+P=\frac{8\pi}{15m_eh^3}\left(\frac{3n_e}{8\pi}\right)^{5/3}h^5=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_e^{5/3}
+\]
+Hvis nå temperaturen skulle være veldig høy slik at elektronene har relativistiske hastigheter og vi må bruke den relativistiske sammenhengen mellom hastighet og bevegelsesmengde, da får vi (trenger du {\bf ikke} å utlede!):
+\[
+P=\frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3}n_e^{4/3}
+\]
+{\bf Merk at for ikke-relativistisk gass, går trykket som tettheten i 5/3 mens den for relativistisk gass går som tettheten i 4/3.} \textcolor{red}{ Denne tilsynelatende uskyldige forskjellen kommer til å ha svært dramatiske konsekvenser for en døende stjerne.} Dette kommer vi tilbake til i del 3 av kurset...
+\hyperlink{pause2}{\pagebutton{Men har du sett noe veeeeldig rart i disse uttrykkene???}}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{pause2}
+\hyperlink{promr4}{\pagebutton{\small Forrige side}}
+{\Large
+\centerline{Litt å drikke? Kanskje noe å bite i?}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+En strekk på bena nå! Gå litt rundt og prøv å se etter konsekvenser av denne nye tilstandslikningen.
+\vspace*{0.5cm}
+Ihvertfall 10 min...
+}\\
+\vspace*{0.5cm}
+\hyperlink{prom16}{\pagebutton{Tror jeg er klart til innspurten nå!}}
+\end{frame}
+}
+
+\begin{frame}
+\label{prom16}
+\lastpagebutton{promr4}
+{\Large
+{\bf I alle dager,}\textcolor{red}{ trykket avhenger ikke av temperaturen????}
+Altså hvis jeg kjøler ned eller varmer opp en degenerert gass så vil trykket ikke endres?
+Velkommen til kvanteverdenen!
+}
+\hyperlink{prom17}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{prom17}
+\lastpagebutton{prom16}
+Men nå er jeg mildt sagt forvirret her! Hva er dette med varm gass og relativistiske temperaturer? Var det ikke slik at en gass blir degenerert når den blir \textcolor{red}{nedkjølt} slik at bevegelsesmengde til partiklene begynner å nærme seg 0? For at elektronene skal samles rundt origo så må de jo miste hastighet/bevegelsesmengde, ikke sant? Og det skjer når temperaturen går ned! Men i en stjerne som dør går vel ikke temperaturen ned, tvert imot! Likevel blir gassen degenerert?
+\hyperlink{prom18}{\pagebutton{Arrrgggg, jeg blir gal!}}
+\end{frame}
+
+\begin{frame}
+\label{prom18}
+\lastpagebutton{prom17}
+Før du blir gal, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1g/videoer/video1g_3.mp4}{denne videoen her.} Det kan redde deg!
+Ble ting klarere?
+\hyperlink{prom19}{\pagebutton{Det gjorde det!}}
+\end{frame}
+
+\begin{frame}
+\label{prom19}
+\lastpagebutton{prom18}
+Aha, så når tettheten øker kraftig, så får vi plutselig mange flere partikler innenfor kubikkmeteren vår. Det vil si at vi plutselig har \textcolor{blue}{langt flere partikler som skal ha plass i boksene i $\vec{p}$-rommet}. Selv om temperaturen er høy så blir det bare så utrolig mange partikler som skal presses inn slik at \textcolor{blue}{boksene rundt origo likevel blir helt fylt opp} slik som i en degenerert gass. \textcolor{blue}{Dermed kan en gass bli degenerert selv om den er varm, hvis bare tettheten er høy nok.} Da skal vi se om vi kan forstå hvordan gasstrykket i en degenerert gass oppstår. Det er nemlig en litt annen prosess enn i en ideel gass.
+{\bf Tenk deg nå at du skal presse enda flere partikler inn i denne kubikkmeteren som allerede har boksene rundt origo fylt opp. Hva må du gjøre med disse elektronene for at du i det hele tatt skal klare å presse disse inn?} \textcolor{red}{Hva er problemet med å presse partikler inn hvis boksene rundt origo er fylt opp?}
+\hyperlink{prom20}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom20}
+\lastpagebutton{prom19}
+Ser du det? Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1g/videoer/video1g_4.mp4}{denne korte videoen} for å forstå hva degenerasjonstrykket er for noe. Dette får vi bruk for når vi skal snakke om døende stjerner.\\
+Til slutt skal vi se på kriteriet for når en gass er degenerert. Hvor stor må nå egentlig tettheten være, eller hvor lav må temperaturen være for at gassen skal begynne å bli degenerert og vi må ta hensyn til kvanteeffekter? 
+\hyperlink{prom21}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom21}
+\lastpagebutton{prom20}
+Hvis de fleste partikler befinner seg innenfor kula med radius $p_\mathrm{\,Fermi}$ i $\vec{p}$-rommet, ja da begynne vi å nærme oss tilstanden hvor alle boksene er fylt opp innenfor denne kula. Det betyr altså at hvis den midlere kinetiske energien til elektronene i en gass nærmer seg Fermi-Energien 
+\[
+E_\mathrm{\,Fermi}=\frac{p_\mathrm{\,Fermi}^2}{2m_e}
+\]
+(som er den kinetiske energien $\frac{1}{2}mv^2=\frac{p^2}{2m}$ for partikler med $p=p_\mathrm{\,Fermi}$) så begynner vi å få en degenerert gass. {\bf Hvorfor det?} \textcolor{red}{Jo, hvis den midlere energien er lik Fermi-energien, så har omtrent halvparten av partiklene energi mindre enn Fermi-energien} (og dermed har de bevegelsesmengde mindre enn $p_\mathrm{\,Fermi}$) mens den andre halvparten har større. \textcolor{red}{Men hvis halvparten av elektronene har bevegelsesmengde mindre enn $p_\mathrm{\,Fermi}$ så begynner det å bli trangt i boksene rundt origo. Dette høres ut som en god definisjon av begynnende degenerasjon!} Og det er akkurat den definisjonen man bruker.
+\hyperlink{prom21b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{prom21b}
+\lastpagebutton{prom21}
+For en ideel gass vet vi at denne kinetiske energien er gitt ved $\frac{3}{2}kT$. Dermed må vel betingelsen for degenerasjon være
+\[
+\frac{3}{2}kT<\frac{p_\mathrm{\,Fermi}^2}{2m_e}
+\]
+Innsatt for 
+\[
+p_\mathrm{\,Fermi}=\left(\frac{3n_e}{8\pi}\right)^{1/3}h
+\]
+gir oss (sjekk!):
+\[
+\frac{T}{n_e^{2/3}}<\frac{h^2}{12m_ek}\left(\frac{3}{\pi}\right)^{2/3}
+\]
+
+\hyperlink{prom22}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom22}
+\lastpagebutton{prom21b}
+Vi kan altså sjekke om vi har degenerert gass ved hjelp av betingelsen
+\[
+\frac{T}{n_e^{2/3}}<\frac{h^2}{12m_ek}\left(\frac{3}{\pi}\right)^{2/3}
+\]
+\textcolor{red}{Her kommer det tydelig frem det som vi allerede har snakket om: denne betingelsen er oppfylt hvis temperaturen er lav {\bf eller} hvis tettheten er høy!} En typisk situasjon for en aldrende stjerne er at kjernen i stjerna er degenerert (siden den har veldig høy tetthet) mens skallende rundt kjernen ikke er degenerert. I skallene foregår fusjonsreaksjoner. Varme ferdig-fusjonerte grunnstoffer fra lagene over kan falle ned på kjernen og varme den opp. Kjernen blir dermed varmere og varmere. Vi det at dette ikke har noe å si for trykket, men {\bf hva vil skje til slutt når temperaturen til kjernen stiger nok?}
+\hyperlink{prom23}{\pagebutton{Tjaaa.....}}
+\end{frame}
+
+
+\begin{frame}
+\label{prom23}
+\lastpagebutton{prom22}
+{\bf Nettopp: Gasspartiklene får så høy energi og dermed bevegelsemengde (pga. av varmen) at de flytter seg vekk fra origo i $\vec{p}$-rommet!} \textcolor{red}{ Dermed begynner det å bli flere og flere ledige bokser der inne. Med det resultat at gassen ikke lenger er degenerert} (venstre side av ulikheten har plutselig blitt stor). Da begynner gassen igjen å oppføre seg som ideel gass, og da vil trykket øke med temperaturen.
+\hyperlink{prom24}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{prom24}
+\lastpagebutton{prom23}
+En liten utfordring til slutt: La oss se på degenerasjonstrykket en gang til:
+\[
+P=\frac{8\pi}{15m_eh^3}\left(\frac{3n_e}{8\pi}\right)^{5/3}h^5=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_e^{5/3}
+\]
+Vi ser at trykket øker når tettheten øker. {\bf Hvis du tenker på hvordan degenerasjonstrykket oppstår (som vi snakket om for et par sider siden), kan du forklare hvorfor en høyere tetthet vil føre til større degenerasjonstrykk?}
+\hyperlink{prom23b}{\pagebutton{Jeg har tenkt meg litt om...}}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{prom23b}{}
+\end{itemize}
+\vspace{-0.5cm}
+Du får ikke hele svaret her, men la meg gi noen hint. Er du enda usikker, spør foreleser! Når tettheten øker, hva skjer med Fermi-bevegelsesmengden? Hva skjer med størrelsen på kula rundt origo i $\vec{p}$-rommet når tettheten øker? Når du nå skal tilføre flere partikler (presse gassen sammen for å øke tettheten enda mer), er det lettere eller vanskeligere med høyere tetthet? Hvorfor? Hva har det med trykket å gjøre?
+\hyperlink{oppsummering}{\pagebutton{Til oppsummeringen...}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{prom24}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/162264}{🙂 🙁}
+Gratulerer, del 1G er overstått. Du bør nå:
+\begin{itemize}
+\item vite hva en degenerert gass er
+\item kunne forklare til naboen hva som skjer når en gass blir degenerert
+\item vite hva Fermi-bevegelsesmengde og Fermi-energi er
+\item kunne utlede trykket for degenerert gass fra trykkintegralet
+\item forstå fysisk hvordan degenerasjonstrykket oppstår
+\item kunne definere når en gass er degenerert eller ikke
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\end{frame}
+
+
+
+\end{document}

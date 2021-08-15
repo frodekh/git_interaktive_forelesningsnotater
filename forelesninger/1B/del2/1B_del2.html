@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entire file</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="front" label="front"></span><br />
+</p>
+<div class="alertblock">
+<p>Du må bruke <span><strong>presentasjonsmodus/fullskjermsvisning</strong></span> for å lese denne, men du skal <span><strong>ikke</strong></span> bruke frem/tilbake-knappene, <span><strong>KUN knappene som dukker opp på sliden</strong></span> for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. <span style="color: red">Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!</span></p>
+</div>
+<p><a href="front2.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front2" label="front2"></span><br />
+</p>
+<div class="block">
+<p>Dette er en erstatning for forelesningen i emnet. <span style="color: blue">Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese <span><span style="background-color: sunset"><a href="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1b.pdf">de fulle forelesningsnotatene</a></span></span> (med unntak av oppgavene bak)</span>. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. <span><strong>Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten</strong></span>. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. <span><strong>Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/157828" class="🙂🙁">🙂 🙁</a></span></span> knappen som du finner på alle sider.</strong></span></p>
+</div>
+<p><a href="intro.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="intro" label="intro"></span></p>
+<div class="columns">
+<p><a href="front.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><br />
+<img src="../media/landing.png" alt="image" /><br />
+<span> Velkommen til andre forelesning i del 1B! Til høyre er det noen punkter til repetisjon. Kun når du har <span style="color: red"><strong>full kontroll</strong></span> på alt dette kan du gå videre. Hvis ikke, gå tilbake til forrige forelesning for å repetere litt eller spør foreleser og/eller gruppelærer hvis det er ting som er uklare.<br />
+<span><strong>Er du klar?</strong></span>     <a href="conic1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a> </span></p><ol>
+<li><p>Kan du prøve å tenke gjennom hvordan du ville utledet tolegemeproblemet hvis du skal gjøre det igjen uten hjelp av forelesningsnotater? Du trenger ikke å gjøre alle stegene i detalj, men tenke gjennom, steg for steg, hva vi gjorde. Hvis du er usikker på noen av stegene kikk tilbake.</p></li>
+<li><p>Klarer du å bruke Newtons lover på vektorform, inkludert derivasjoner og bruk av enhetsvektorer i polarkoordinater?</p></li>
+<li><p>Kjenner du til alle begrepene og egenskapene til ellipser som du skal kjenne i kurset?</p></li>
+</ol>
+</div>
+
+<p><span id="conic1" label="conic1"></span> <a href="intro.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Repetisjon<br />
+Vi utledet at løsningen av tolegemeproblemet kan skrives som: <span class="math display">$$r(f)=\frac{p}{1-e\cos{f}}$$</span> der <span class="math inline"><em>p</em></span> og <span class="math inline"><em>e</em></span> er positive integrasjonskontstanter. Hvis <span class="math inline"><em>e</em> &lt; 1</span> så er dette formelen for en ellipse: <span class="math display">$$r(f)=\frac{a(1-e^2)}{1-e\cos{f}}$$</span> der det ene objektet er i brennpunktet: <img src="../media/ellipse.png" alt="image" /><a href="conic1b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="conic1b" label="conic1b"></span> <a href="conic1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Repetisjon<br />
+<span> <span style="color: orange">Men det store spørsmålet i forrige forelesning var:</span><br />
+<span style="color: orange">Hva hvis <span class="math inline"><em>e</em> ≥ 1</span>????</span><br />
+<span style="color: orange">Da har vi ikke lenger en ellipsebane...</span><br />
+<span style="color: orange">Men hva har vi da...???</span> </span> <a href="conic2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="conic2" label="conic2"></span> <a href="conic1b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Kjeglesnitt<br />
+Likningen vi har kommet frem til er tilfeldigvis likningen for <em>kjeglesnitt (conic sections)</em> i polarkoordinater. Vet du hvilke 3 typer kurver som inngår i kjeglesnittene? Den ene er ellipser ja, men de andre to?<br />
+<a href="conicsections.html" class="trykkher">Trykk her når du har funnet ut av det</a></p>
+<div class="columns">
+<p><img src="../media/conicsections0.png" alt="image" /> De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne er hyperbler. Den sorte prikkete ellipsen har <span class="math inline"><em>e</em> = 0</span> og er dermed en sirkel. Den heltrukne sorte linja er en ellipse med eksentrisitet <span class="math inline"><em>e</em> = 0.7</span>. Den sorte prikken er brennpunktet i sirkelen (og dermed sentrum siden det er sirkel), den oransje prikken er brennpunktet i ellipsen. <a href="conic3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="conic3" label="conic3"></span> <a href="conic2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Kjeglesnitt<br />
+</p>
+<div class="columns">
+<p><img src="../media/conicsections0.png" alt="image" /> Hyperbler og parabler har også formel <span class="math display">$$r(f)=\frac{p}{1-e\cos{f}}$$</span> men for</p><ul>
+<li><p>parabler er <span class="math inline"><em>e</em> = 1</span> og <span class="math inline"><em>p</em> = 2<em>a</em></span></p></li>
+<li><p>hyperbler er <span class="math inline"><em>e</em> &gt; 1</span> og <span class="math inline"><em>p</em> =  − <em>a</em>(1−<em>e</em><sup>2</sup>)</span></p></li>
+<li><p>mens vi husker at ellipser hadde <span class="math inline"><em>e</em> &lt; 1</span> og <span class="math inline"><em>p</em> = <em>a</em>(1−<em>e</em><sup>2</sup>)</span></p></li>
+</ul><p>Merk at for ellipser og hyperbler så er det kun et minustegn som skiller uttrykket for <span class="math inline"><em>p</em></span>. Årsaken til minustegnet er for å holde <span class="math inline"><em>p</em></span> positiv (<span class="math inline"><em>r</em></span> må jo være en positiv størrelse) når <span class="math inline"><em>e</em></span> plutselig har blitt større enn 1. I figuren til venstre så har alle kurvene <span class="math inline"><em>a</em> = 5</span> mens de to hyperblene har <span class="math inline"><em>e</em> = 2</span> (rød) og <span class="math inline"><em>e</em> = 2.8</span> (grønn). <a href="conic4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="conic4" label="conic4"></span> <a href="conic3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Kjeglesnitt<br />
+<span> <span style="color: orange">Så ja, Kepler fant faktisk ikke hele sannheten! Hvorfor ikke?<br />
+Fordi, som du ser fra figuren, objekter som går i parabelbaner og hyperbelbaner ikke er bundet til sola, de kommer bare innom men aldri tilbake igjen!<br />
+Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra det interstellar rom. </span></span> <a href="conic5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="conic5" label="conic5"></span> <a href="conic4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Kjeglesnitt<br />
+<span> <span style="color: orange">Det er først nå i det siste at man har oppdaget slike objekter. Det aller første ble oppdaget i 2017 og ble kalt <span><em>Oumuamua</em></span>. Her er en kunstrisk fremstilling av hvordan objektet kan se ut (credit: ESO/M. Kornmesser)<br />
+<img src="../media/oumuamua.png" alt="image" /> </span></span> <a href="conic6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="conic6" label="conic6"></span> <a href="conic5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Kjeglesnitt<br />
+Vi skal snart se litt på hva betingelsene er for at et objekt får en elliptisk, parabel eller hyperbelbane. Dette er jo spesielt viktig for satelitter. Hvis vi ønsker å ha en satelitt i bane rundt jorda så bør vi helst sørge for at den går i en ellipsebane. Ellers vil vi jo miste satelitten! Men før vi gjør det la oss kikke litt på ukeoppgavene.<br />
+Vi har her utledet Keplers 1.lov. Men hva med Keplers 2. og 3. lov? De skal du få lov til å utlede selv i oppgave 1B.1 og 1B.2.<br />
+<a href="oppgaver1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="oppgaver1" label="oppgaver1"></span></p>
+<div class="columns">
+<p><a href="conic6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Keplers 2. og 3.lov<br />
+Keplers 2. og 3.lov<br />
+Tenk gjennom hvordan du kan gå frem for å løse oppgave 1B.1 på høyre side her (prosjektstudenter har en liknende oppgave i utfording B1, del 2): Etter at du har tenkte nøye, ta gjerne en titt på <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_9.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> for noen tips. <span style="color: red">Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.</span> <img src="../media/1b1.png" alt="image" /> <a href="oppgaver2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="oppgaver2" label="oppgaver2"></span></p>
+<div class="columns">
+<p><a href="oppgaver1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Keplers 2. og 3.lov<br />
+Keplers 2. og 3.lov<br />
+Tenk gjennom hvordan du kan gå frem for å løse deloppgave 1 og 3 fra oppgave 1B.2 på høyre side her (prosjektstudenter har en liknende oppgave i utfording B1, del 2): Etter at du har tenkte nøye, ta gjerne en titt på <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_10.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> for noen tips.<span style="color: red"> Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.</span> <img src="../media/1b2.png" alt="image" /> <a href="oppgaver3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="oppgaver3" label="oppgaver3"></span> <a href="oppgaver2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Keplers 2. og 3.lov<br />
+Spesielt den siste oppgaven her er <span><strong>svært</strong></span> viktig!</p>
+<div class="alertblock">
+<p><span><strong>Keplers 3.lov</strong></span> Du utledet i oppgaven at Keplers versjon av sin 3.lov er noe gal. Det er svært viktig å bruke den riktige formelen i alt som vi gjør i dette kurset her. Den riktige formelen (som også er i SI-enheter) er gitt ved <span class="math display">$$P^2=\frac{4\pi^2}{G(m_1+m_2)}a^3$$</span> Vi ser at begge massene er med på å bestemme forholdet mellom omløpsperiode og store halvakse i en ellipsebane!</p>
+</div>
+<p><a href="oppgaver4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="oppgaver4" label="oppgaver4"></span> <a href="oppgaver3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Keplers 2. og 3.lov<br />
+Før vi går videre, ta en nøye titt på første deloppgave av oppgave 1B.3:<br />
+<img src="../media/1b3.png" alt="image" /> <a href="cm1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="cm1" label="cm1"></span> <a href="oppgaver4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblemet igjen<br />
+Men stopp en hal! Har vi egentlig løst 2-legemeproblemet? Vi har løst problemet i tilfellet hvor vi setter oss på <span class="math inline"><em>m</em><sub>1</sub></span> og ser på bevegelsen til <span class="math inline"><em>m</em><sub>2</sub></span> som da blir en ellipsebane med <span class="math inline"><em>m</em><sub>1</sub></span> i det ene brennpunktet. Men hva hvis vi setter oss på <span class="math inline"><em>m</em><sub>2</sub></span>? Likningene vi får blir jo de samme, så løsningen blir den samme med massene byttet om, <span class="math inline"><em>m</em><sub>2</sub></span> står i et brennpunkt til ellipsebanen som <span class="math inline"><em>m</em><sub>1</sub></span> følger. Men hva hvis vi nå befinner oss et punkt langt vekk og ser legemene på avstand mens vi ikke befinner oss i referansesystemet til noen av dem? Hvordan vil da <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>m</em><sub>2</sub></span> bevege seg?<br />
+Tenk deg godt om før du går til neste side... <a href="cm2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="cm2" label="cm2"></span> <a href="cm1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Massesenter<br />
+<span>For å finne svaret, må vi repetere et uttrykk som du allerede kjenner: <span><em>massesenter.</em></span></span><br />
+<img src="../media/cm1.png" alt="image" /><br />
+Hvis vi kjenner posisjonene <span class="math inline">$\vec{r_1}$</span> og <span class="math inline">$\vec{r_2}$</span> på figuren, hvordan kan vi da finne posisjonen <span class="math inline"><em>R⃗</em></span> til massesenteret? Du kan bruke massene <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>m</em><sub>2</sub></span>. Hva er formelen?<br />
+<a href="cm3.html" class="trykkher">Trykk her når du har frisket opp massesenterdefinisjonen!</a></p>
+
+<p><span id="cm3" label="cm3"></span> <a href="cm2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Massesenter<br />
+Stemmer! Vi må rett og slett ta midlet mellom de to posisjonene, vektet med massene: <span class="math display">$$\vec{R}=\frac{m_1\vec{r_1}+m_2\vec{r_2}}{m_1+m_2}$$</span> Men hva hvis vi nå skal finne massesenteret <span class="math inline"><em>R⃗</em></span> til en galakse og vi kjenner posisjonene <span class="math inline">$\vec{r_i}$</span> til alle <span class="math inline"><em>N</em></span> stjernene med masse <span class="math inline"><em>m</em><sub><em>i</em></sub></span> i galaksen? (anta at det ikke finnes annen masse i galaksen). Hvordan kan vi generalisere uttrykket vårt??<br />
+<a href="cm3a.html">Diskuter og trykk her når du har funnet ut av det</a></p>
+<p><span class="math display">$$\vec{R}=\frac{1}{M}\sum_{i=1}^Nm_i\vec{r_i}$$</span> Her er <span class="math inline"><em>M</em></span> summen over alle massene. Pass på at du har denne friskt i minne videre... <a href="cm4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="cm4" label="cm4"></span> <a href="cm3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Massesenter<br />
+For å kunne finne bevegelsen til både <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>m</em><sub>2</sub></span> skal vi nå utlede en utvidelse av Newtons 2.lov som gjelder for et mangelegemesystem. Anta igjen at vi har galaksen vår med N stjerner og at det mellom disse kun virker gravitasjonskrefter <span class="math inline">$\vec{f_{ij}}$</span> (krafta på legeme <span class="math inline"><em>i</em></span> fra legeme <span class="math inline"><em>j</em></span>). I tillegg kan det virke en ekstern kraft <span class="math inline"><em>F⃗</em><sub>ext</sub></span> som virker likt på hele systemet, dvs. på alle objektene, f.eks. en annen galakse som trekker på galaksen. I <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_11.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> blir du satt igang med utledningen av Newtons 2.lov på mangelegemesystemer.<br />
+Etter å ha sett videoen skal du nå se om du kan komme frem til et uttrykk av typen: <span class="math display"><em>F⃗</em> = <em>Σ</em><em>Σ</em><em>f⃗</em> + <em>F⃗</em><sub>ext</sub> = <em>Σ</em><em>m</em><em>r⃗</em></span> og sett inn riktige indekser på krefter, masser, posisjonsvektorer og tidsderiverte. Pass spesielt på at summegrensene blir riktige! <a href="cm5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="cm5" label="cm5"></span> <a href="cm4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Massesenter<br />
+<span><strong>Vi skal nå forenkle dette uttrykket:</strong></span> Ved å bruke</p>
+<ul>
+<li><p>en av Newtons lover som sier noe om krefter som er lik hverandre, dette skal gi deg at et av leddene er 0</p></li>
+<li><p>massesenterdefinisjonen <span class="math inline">$\vec{R}=\frac{1}{M}\sum_{i=1}^Nm_i\vec{r_i}$</span></p></li>
+</ul>
+<p>skal du vise at <span class="math display">$$\vec{F}_\mathrm{ext}=M\ddot{\vec{R}}$$</span> som er Newtons 2.lov for mangelegemesystemer. Fikk du det til?<br />
+Hvis du er usikker, se på <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_12.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>.<br />
+Før du går til neste side, prøv å si til hverandre med ord hva denne likningen sier. Ser du hva essensen er? <a href="cm6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="cm6" label="cm6"></span> <a href="cm5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+Hva hvis de eksterne kreftene på systemet er null?<br />
+Da er <span class="math inline">$\ddot{\vec{R}}=0$</span> og massesenteret har ingen akselerasjon! Massesenteret vil da kun bevege seg med konstant hastighet. Vi kan da dele bevegelsen til en stjerne i galaksen opp i</p>
+<ul>
+<li><p>bevegelsen til stjerna i forhold til massesenteret PLUSS</p></li>
+<li><p>bevegelsen til massesenteret</p></li>
+</ul>
+<p>Hvis det ikke er noen ytre krefter så vil massesenterbevegelsen være enkel, konstant hastighet. Da trenger vi kun å finne bevegelsen til stjerna om massesenteret.<br />
+<span style="color: red">Dette hjelper oss med tolegemeproblemet vårt: vi trenger dermed kun å finne bevegelsen til de to legemene omkring deres felles massesenter.</span> <a href="pause.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pause" label="pause"></span> <a href="cm6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p>TID FOR KAFFEPAUSE!!!</p>
+<p><img src="../media/drink-coffee.png" alt="image" /></p>
+<p><br />
+Ut å strekke på bena. Inn med litt koffein...<br />
+Ihvertfall 10 min...</p>
+<p><br />
+<a href="cm7.html">Jeg lover, jeg har tatt pause og er klart til å fortsette</a></p>
+
+<p><span id="cm7" label="cm7"></span></p>
+<div class="columns">
+<p><a href="cm6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+Her har vi situasjonen:<br />
+<img src="../media/cm3.png" alt="image" /><br />
+Fra et gitt origo O utenfor systemet så har vi poisjonsvektorene <span class="math inline">$\vec{r_1}$</span> og <span class="math inline">$\vec{r_2}$</span> som peker på de to legemene, samt <span class="math inline"><em>R⃗</em></span> som peker på massesenteret (CM, Center of Mass) til de to legemene. Vi er interessert i disse legemenes bevegelse i forhold til massesenteret (se forrige side hvis du er usikker på hvorfor!). Da velger vi å flytte origo til massesenteret. Dette nye koordinatsystemet kaller vi massesentersystemet. Posisjonsvektorene <span class="math inline">$\vec{r_1}^{CM}$</span> og <span class="math inline">$\vec{r_2}^{CM}$</span> fra det nye origo er tegnet inn i figuren. Men hva med <span class="math inline"><em>R⃗</em><sup><em>C</em><em>M</em></sup></span>. Hva er posisjonsvektoren til massesemnteret fra dette nye origo?<br />
+Diskuter og tenk deg nøye om før du ser på svaret på neste side. Svaret er kanskje enklere enn du tror... <a href="cm8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="cm8" label="cm8"></span> <a href="cm7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+Siden poisjonen til massesenteret i massesenteret er i origo selv: <span class="math inline"><em>R⃗</em><sup><em>C</em><em>M</em></sup> = 0</span>!<br />
+Nå til litt regning. Finn frem papir og blyant og forbered deg på å leke litt med likninger (ikke mye, gjør du det riktig så er dette fort gjort).</p>
+<div class="block">
+<p><span><strong>Legemenes bevegelse om massesenteret</strong></span> <span> Bruk nå massesentersystemet (sjekk forrige side hvis du har glemt ...), og <span><strong>sett inn i definisjonen av massesenteret for <span class="math inline"><em>R⃗</em></span></strong></span>. Gjør følgende substitusjoner: <span class="math display">$$\vec{r} = \vec{r_2} - \vec{r_1}\ \ \ \mathrm{og}\ \ \ \hat\mu = \frac{m_1m_2}{m_1+m_2}$$</span> MERK at vi har fjernet CM fra symbolene, i fortsettelsen så betyr <span class="math inline"><em>r⃗</em><sub>1</sub></span> og <span class="math inline"><em>r⃗</em><sub>2</sub></span> egentlig alltid <span class="math inline"><em>r⃗</em><sub>1</sub><sup><em>C</em><em>M</em></sup></span> og <span class="math inline"><em>r⃗</em><sub>2</sub><sup><em>C</em><em>M</em></sup></span>! Den første liknigen her har vi brukt helt fra starten av: <span class="math inline"><em>r⃗</em></span> var vektoren som pekte fra <span class="math inline"><em>m</em><sub>1</sub></span> til <span class="math inline"><em>m</em><sub>2</sub></span>. Den andre er definisjonen av <span><em>redusert masse</em></span>. Den er mest for å gjøre likningene pene, men vi skal snart se at det også har en tolkning. Fra dette skal du komme frem til et uttrykk for <span class="math inline">$\vec{r_1}$</span>.Altså: (1) du skal ta utgangspunkt i definisjon av massesenteret som nå er i origo, og (2) deretter bli kvitt <span class="math inline">$\vec{r_2}$</span> ved hjelp av uttrykket over og få inn <span class="math inline"><em>μ</em></span>. Hva får du? </span></p>
+</div>
+<p><a href="feilr1.html"><span class="math inline">$\vec{r_1}=\hat\mu\vec{r}$</span></a>     <a href="feilr1.html"><span class="math inline">$\vec{r_1}=\frac{m_1}{\hat\mu}\vec{r}$</span></a>     <a href="feilr1.html"><span class="math inline">$\vec{r_1}=\frac{m_1}{\hat\mu}$</span></a>     <a href="feilr1.html"><span class="math inline">$\vec{r_1}=-\frac{m_2}{\hat\mu}\vec{r}$</span></a>     <a href="rettr1.html"><span class="math inline">$\vec{r_1}=-\frac{\hat\mu}{m_1}\vec{r}$</span></a>     <a href="feilr1.html"><span class="math inline">$\vec{r_1}=-\frac{\hat\mu}{m_2}\vec{r}$</span></a>     <a href="feilr1.html"><span class="math inline">$\vec{r_1}=\frac{m_1}{m_2}\hat\mu\vec{r}$</span></a></p>
+
+<p><span id="feilr1" label="feilr1"></span> <a href="cm8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+<span style="color: red">Det ble galt! Prøv igjen. Husk at <span class="math inline"><em>R⃗</em> = 0</span> i massesentersystemet. Og du kan bli kvitt <span class="math inline">$\vec{r_2}$</span> med uttrykket for <span class="math inline"><em>r⃗</em></span>. Da står du igjen med en likning med kun <span class="math inline">$\vec{r_1}$</span> og <span class="math inline"><em>r⃗</em></span> som du løser for <span class="math inline">$\vec{r_1}$</span>. Og til slutt erstatter du <span class="math inline"><em>m</em><sub>1</sub></span> eller <span class="math inline"><em>m</em><sub>2</sub></span> med <span class="math inline"><em>μ̂</em></span>, du vil nå ganske greit se hvordan <span class="math inline"><em>μ̂</em></span> kommer inn her.<br />
+Hjelper det deg? Prøv igjen med dette som utgangspunkt!<br />
+(HUSK at vi nå har fjernet CM fra alle symbolene for å gjøre skrivingen lettere, alle vektorer har nå origo i massesenteret.) </span></p>
+
+<p><span id="rettr1" label="rettr1"></span> <a href="cm8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+<span><strong>STEMMER!</strong></span> Nå som du har funnet <span class="math inline">$\vec{r_1}$</span>, så kan du se om du klarer å vise at <span class="math display">$$\vec{r_2}=\frac{\hat\mu}{m_2}\vec{r}$$</span> Vi har dermed banene til de to legemene om massesenteret: <span class="math display">$$\begin{aligned}
+\vec{r_1}&amp;=-\frac{\hat\mu}{m_1}\vec{r}\\
+\vec{r_2}&amp;=\frac{\hat\mu}{m_2}\vec{r}\end{aligned}$$</span> Men vi ser enda ikke hva slags form banen har. La oss ta absoluttverdiene til disse likningene. Bruk deretter det du vet om <span class="math inline"><em>r</em> = |<em>r⃗</em>|</span> (Jepp, dette er den samme som vi utledet i forrige forelesning, det er jo avstanden mellom de to objektene). Ser du nå hva slags baner de to legemene får om massesenteret (anta at det er bundet)? <a href="ja.html">JA, kult, nå ser jeg det!</a>     <a href="nei.html">Kanskje det, men jeg er litt usikker</a></p>
+
+<p><span id="nei" label="nei"></span> <a href="rettr1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+<span style="color: red">La oss først se hvordan likningene blir hvis vi tar absoluttverdi: <span class="math display">$$\begin{aligned}
+|\vec{r_1}|&amp;=r_1=\frac{\hat\mu}{m_1}|\vec{r}|=\frac{\hat\mu}{m_1}r\\
+|\vec{r_2}|&amp;=r_2=\frac{\hat\mu}{m_2}|\vec{r}|=\frac{\hat\mu}{m_2}r\end{aligned}$$</span> Her er <span class="math inline"><em>r</em><sub>1</sub></span> og <span class="math inline"><em>r</em><sub>2</sub></span> avstanden til de to legemene fra massesenteret, ser du det? Disse avhenger jo av en vinkel <span class="math inline"><em>f</em></span> ettersom de går i bane rundt massesenteret. I tillegg så fant vi jo i forrige forelesning et uttrykk for <span class="math inline"><em>r</em></span> som inneholder en vinkel <span class="math inline"><em>f</em></span>. Da skulle du få uttrykk for <span class="math inline"><em>r</em><sub>1</sub></span> og <span class="math inline"><em>r</em><sub>2</sub></span> som inneholder vinklen <span class="math inline"><em>f</em></span>. Hjelper det deg? <a href="ja.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a> </span></p>
+
+<p><span id="ja" label="ja"></span> <a href="rettr1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+<span>Fant du det? Innser du at begge legemene går i ellipser omkring massesenteret?</span><br />
+</p>
+<div class="columns">
+<p><img src="../media/cm3.png" alt="image" /> <span class="math display">$$\begin{aligned}
+\vec{r_1}&amp;=-\frac{\hat\mu}{m_1}\vec{r}\\
+\vec{r_2}&amp;=\frac{\hat\mu}{m_2}\vec{r}\end{aligned}$$</span></p>
+</div>
+<p><span><strong>(MINNER IGJEN OM at vi nå har fjernet CM fra alle symbolene for å gjøre skrivingen lettere, alle vektorer har nå origo i massesenteret slik at <span class="math inline">$\vec{r_1}$</span> og <span class="math inline">$\vec{r_2}$</span> tilsvarer <span class="math inline">$\vec{r_1}^{CM}$</span> og <span class="math inline">$\vec{r_2}^{CM}$</span> på figuren.)</strong></span> <span>Ser du at ved å ta absoluttverdien på begge sider her, så har du likningene for <span class="math inline"><em>r</em><sub>1</sub>(<em>f</em>)</span> og <span class="math inline"><em>r</em><sub>2</sub>(<em>f</em>)</span> som altså er lengdene av vektorene <span class="math inline">$\vec{r_1}$</span> og <span class="math inline">$\vec{r_2}$</span>. Disse viser altså banene til <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>m</em><sub>2</sub></span> som funksjon av en gitt vinkel <span class="math inline"><em>f</em></span>. Mens <span class="math inline"><em>r</em></span> (eller egentlig <span class="math inline"><em>r</em>(<em>f</em>)</span>) som står på høyre side i likningen er lengden <span class="math inline"><em>r⃗</em></span> som vi utledet i forrige forelesning, altså banen til <span class="math inline"><em>m</em><sub>2</sub></span> omkring <span class="math inline"><em>m</em><sub>1</sub></span>. Hvis denne er en ellipsebane ser du da at også <span class="math inline"><em>r</em><sub>1</sub>(<em>f</em>)</span> og <span class="math inline"><em>r</em><sub>2</sub>(<em>f</em>)</span> blir likninger for ellipser med massesenteret som brennpunkt?<br />
+</span> <a href="ja2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ja2" label="ja2"></span> <a href="ja.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+Hva er de store halvaksene <span class="math inline"><em>a</em><sub>1</sub></span> og <span class="math inline"><em>a</em><sub>2</sub></span> til disse to ellipsene? Og hva er eksentrisiteten <span class="math inline"><em>e</em></span>?? Uttrykk svaret ved hjelp av massene og egenskapene til ellipsen som vi så på tidligere: nemlig ellipsebanen som det ene objektet har rundt det andre. Ved å sammenlikne uttrykkene for <span class="math inline"><em>r</em><sub>1</sub></span> og <span class="math inline"><em>r</em><sub>2</sub></span> som funksjon av <span class="math inline"><em>f</em></span> som du nå har funnet, og sammenlikner med formelen for ellipse, så bør dette falle rett ut.<br />
+<img src="../media/cm2.png" alt="image" /><br />
+<a href="cm9.html">Jeg har tenkt og tror jeg har svaret</a><br />
+Hvis du ikke har svaret, må du spørre foreleser/gruppelærer før du går videre. Det er veldig viktig at du har dette klart for deg nå!</p>
+
+<p><span id="cm9" label="cm9"></span> <a href="ja2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+La oss først klare opp i begreper her, viktig at du har oversikt:</p>
+<ul>
+<li><p>Vektoren <span class="math inline"><em>r⃗</em></span> peker fra det ene legemet til det andre. Lengden <span class="math inline"><em>r</em>(<em>f</em>)</span> av denne vektoren som avhenger av vinkelen <span class="math inline"><em>f</em></span> som definert tidligere utgjør ellipsebanen til det ene legemet omkring det andre. Denne ellipsebanen har store halvakse lik <span class="math inline"><em>a</em></span> og eksentrisitet <span class="math inline"><em>e</em></span>. <span><strong>Merk at sett fra referansesystemet til et av legemene (systemet der det ene legemet står i ro), vil man se at det andre legemet går i ellipsebane rundt det første. Mens sett fra massesentersystemet vil man se at begge legemene går i ellipsebaner omkring massesenteret som vist på figur på forrige side. Klarer du å se dette for deg?</strong></span></p></li>
+<li><p>Vektoren <span class="math inline">$\vec{r_1}$</span> peker fra massesenteret ut til legeme <span class="math inline"><em>m</em><sub>1</sub></span>. Lengden <span class="math inline"><em>r</em><sub>1</sub>(<em>f</em>)</span> av denne gir oss ellipsebanen omkring massesenteret med store halvakse <span class="math inline"><em>a</em><sub>1</sub></span> og samme eksentrisitet <span class="math inline"><em>e</em></span> som banen til et legeme om det andre.</p></li>
+<li><p>Vektoren <span class="math inline">$\vec{r_2}$</span> peker fra massesenteret ut til legeme <span class="math inline"><em>m</em><sub>2</sub></span>. Lengden <span class="math inline"><em>r</em><sub>2</sub>(<em>f</em>)</span> av denne gir oss ellipsebanen omkring massesenteret med store halvakse <span class="math inline"><em>a</em><sub>2</sub></span> og samme eksentrisitet <span class="math inline"><em>e</em></span> som banen til et legeme om det andre.</p></li>
+</ul>
+<p><a href="cm10.html">Jeg har tenkt og tror jeg har svaret</a></p>
+
+<p><span id="cm10" label="cm10"></span> <a href="cm9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+Når vi setter inn for <span class="math inline"><em>r</em></span> i uttrykket for <span class="math inline"><em>r</em><sub>1</sub></span> fikk vi <span class="math display">$$r_1=\frac{\hat\mu}{m_1}\frac{a(1-e^2)}{1+e\cos{f}}=\frac{\frac{\hat\mu a}{m_1}(1-e^2)}{1+e\cos{f}}$$</span> Hvis vi kaller <span class="math inline">$a_1=\frac{\hat\mu a}{m_1}$</span> så får vi <span class="math display">$$r_1=\frac{a_1(1-e^2)}{1+e\cos{f}}$$</span> som er en ellipse med store halvakse <span class="math inline"><em>a</em><sub>1</sub></span> og eksentrisitet <span class="math inline"><em>e</em></span> (som var samme eksentrisitet som vi hadde i uttrykket for <span class="math inline"><em>r</em></span>). Det blir helt tilsvarende for <span class="math inline"><em>r</em><sub>2</sub></span>: <span class="math display">$$r_2=\frac{a_2(1-e^2)}{1+e\cos{f}}$$</span> med <span class="math inline">$a_2=\frac{\hat\mu a}{m_2}$</span> <a href="cm11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="cm11" label="cm11"></span> <a href="cm10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>2-legemeproblem sett fra massesenter<br />
+En siste lite utfordring før vi går over til siste tema på del 1B. Klarer du å vise at <span class="math display"><em>a</em><sub>1</sub> + <em>a</em><sub>2</sub> = <em>a</em>?</span> Her kommer du til å trenge definisjonen av <span class="math inline"><em>μ̂</em></span> Før du går over til siste tema, ta en liten pause, jogg en tur rundt Blindern, stup kråke 10 ganger på gressplenen ved Frederikke. Ikke gå videre før du har gjort alt det! <a href="energi1.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="energi1" label="energi1"></span> <a href="cm11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Så var vi kommet til siste tema her. Vi hintet allerede om det tidligere:<br />
+<span style="color: blue">Hva avgjør om et objekt følger en ellipsebane, parabelbane eller hyperbelbane? Og hva avgjør parameterene <span class="math inline"><em>a</em></span> og <span class="math inline"><em>e</em></span> til denne banen?</span><br />
+Vi har allerede innsett at ellipsebaner betyr at objektet er gravitasjonelt bundet siden det holder seg i bane rundt det andre objektet, mens for parabel- og hyperbelbaner så er det ikke lenger gravitasjonelt bundet, objektet bare ’sneier forbi’. Det må vel bety at totalenergien er viktig her: er den potensielle gravitasjonsenergien større eller mindre enn den kinetiske energien? La oss sette opp energien til systemet vårt. Vi tar igjen perspektivet fra <span class="math inline"><em>m</em><sub>1</sub></span> og ser på banen som <span class="math inline"><em>m</em><sub>2</sub></span> lager rundt <span class="math inline"><em>m</em><sub>1</sub></span>: <span class="math display">$$E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}$$</span> der <span class="math inline">$\vec{v}=\dot{\vec{r}}$</span>, altså den relative hastigheten til <span class="math inline"><em>m</em><sub>2</sub></span> i forhold til <span class="math inline"><em>m</em><sub>1</sub></span> siden <span class="math inline"><em>v⃗</em></span> er den deriverte av posisjonsvektoren <span class="math inline"><em>r⃗</em></span> som peker fra <span class="math inline"><em>m</em><sub>1</sub></span> til <span class="math inline"><em>m</em><sub>2</sub></span>. Er du enig i at dette er uttrykket for energien til systemet? <a href="fenergi.html">YES, absolutt, sånn må det være!</a>     <a href="renergi.html">Njaaa, jeg er litt usikker</a></p>
+
+<p><span id="fenergi" label="fenergi"></span> <a href="energi1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+<span><span style="color: yellow">Er du <span><strong>HELT</strong></span> sikker på at dette er riktig uttrykk for energien?<br />
+<span class="math display">$$E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}$$</span> </span></span> <a href="ffenergi.html">JA, jeg sa jo det jo!</a>     <a href="renergi.html">Njaaa, nå ble jeg litt i tvil her likevel</a></p>
+
+<p><span id="ffenergi" label="ffenergi"></span> <a href="energi1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+<span><span style="color: yellow">Det er <span><strong>FEIL</strong></span><br />
+<span class="math display">$$\xcancel{E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}}$$</span> Tenk deg godt om her...kan du se hva som er feil?<br />
+( du trenger ikke finne hva som er riktig, bare innse hva som er feil)<br />
+</span></span> <a href="energi2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a><br />
+</p>
+
+<p><span id="renergi" label="renergi"></span> <a href="energi1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+<span>Du hadde god grunn til å tvile, det er nemlig <span><strong>FEIL</strong></span><br />
+<span class="math display">$$\xcancel{E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}}$$</span> Tenk deg godt om her...kan du se hva som er feil?<br />
+( du trenger ikke finne hva som er riktig, bare innse hva som er feil)<br />
+</span> <a href="energi2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a><br />
+</p>
+
+<p><span id="energi2" label="energi2"></span> <a href="energi1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?   <a href="energi2a.html" class="janei">Ja</a>    <a href="energi2a.html">Tja</a></p>
+<p>Vi kunne dermed (ganske riktig) anta at <span class="math inline"><em>m</em><sub>1</sub></span> står i ro og kun se på hastigheten til <span class="math inline"><em>m</em><sub>2</sub></span> i forhold til <span class="math inline"><em>m</em><sub>1</sub></span>.<span><strong>MEN</strong></span> legeme <span class="math inline"><em>m</em><sub>1</sub></span> er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra <span class="math inline"><em>m</em><sub>2</sub></span>). Vi vet jo at <span class="math inline"><em>m</em><sub>1</sub></span> går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. <span><strong>Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)</strong></span><br />
+<a href="energi2b.html" class="trykkher">Trykk her når du har funnet svaret!</a></p>
+<p>Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eksterne krefter, så er massesenteret ikke akseleret, det er et intertialsystem. <a href="energi3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="energi3" label="energi3"></span> <a href="energi2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Skriv opp uttrykket for total energi i massesentersystemet.<br />
+<a href="energi3a.html">Sånn, da var det gjort!</a><br />
+</p>
+<p><span class="math display">$$E=\frac{1}{2}m_1(\vec{v_1}^\mathrm{CM})^2+\frac{1}{2}m_2(\vec{v_2}^\mathrm{CM})^2-G\frac{m_1m_2}{r}$$</span> Isåfall var det riktig! <a href="energi4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="energi4" label="energi4"></span></p>
+<div class="columns">
+<p><a href="energi3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Da har du allerede fått god hjelp til første deloppgave av oppgave 1B4:<br />
+<img src="../media/1b4.png" alt="image" /><br />
+Ser du hvordan den kan løses? Hvis ikke kan du få hjelp på gruppene. Du trenger ikke gjøre det nå, men ta en titt på de neste to deloppgavene <img src="../media/1b4_2.png" alt="image" /><br />
+<img src="../media/1b4_3.png" alt="image" /><br />
+Hvis du sliter med å se hva som er svaret på tredje deloppgave, ta en titt på <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_13.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. <a href="energi5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="energi5" label="energi5"></span> <a href="energi4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren <span class="math inline"><em>v⃗</em></span>? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren <span class="math inline"><em>v⃗</em></span> er den deriverte av posisjonsvektoren <span class="math inline"><em>r⃗</em></span> som peker fra det ene legemet til det andre. Hastighetsvektoren <span class="math inline"><em>v⃗</em></span> er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? <a href="energi5a.html">Jeg husker/har repetert hvordan det var</a></p>
+<p><span class="math display">$$\vec{v}=\frac{d}{dt}\left(r\vec{e}_r\right)=\dot r\vec{e}_r+r\dot\theta\vec{e}_\theta$$</span> Husker du hvorfor <span class="math inline"><em>v</em><sub><em>θ</em></sub></span> ser slik ut rent geometrisk? (<span><span style="background-color: sunset">frisk opp! <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_3.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>). Og så trenger vi en ting til, nemlig posisjonen <span class="math inline"><em>r</em>(<em>f</em>)</span> som funksjon av vinkel <span class="math inline"><em>f</em></span> (hvordan var nå vinkelen <span class="math inline"><em>f</em></span> definert?, det bør du repetere nå!). <span class="math display">$$r=\frac{p}{1+e\cos{f}}$$</span> hvor formen på <span class="math inline"><em>p</em></span> og verdien på <span class="math inline"><em>e</em></span> avgjør formen på banen. <a href="energi6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="energi6" label="energi6"></span> <a href="energi5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Kjapp repetisjon før vi setter igang med utledningen som gir oss sammenheng mellom energi og baneformen:<br />
+Vi har <span class="math display">$$r(f)=\frac{p}{1-e\cos{f}}$$</span> der</p>
+<ul>
+<li><p>parabler har <span class="math inline"><em>e</em> = 1</span> og <span class="math inline"><em>p</em> = 2<em>a</em></span></p></li>
+<li><p>hyperbler har <span class="math inline"><em>e</em> &gt; 1</span> og <span class="math inline"><em>p</em> =  − <em>a</em>(1−<em>e</em><sup>2</sup>)</span></p></li>
+<li><p>ellipser har <span class="math inline"><em>e</em> &lt; 1</span> og <span class="math inline"><em>p</em> = <em>a</em>(1−<em>e</em><sup>2</sup>)</span></p></li>
+</ul>
+<p><a href="energi7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="energi7" label="energi7"></span> <a href="energi6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Da har du alt du trenger for neste utledning som du finner <span><span style="background-color: sunset">i denne videoen her <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_14.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. I videoen så kommer vi frem til følgende sammenheng mellom energi og <span class="math inline"><em>p</em></span>-en i uttrykket for <span class="math inline"><em>r</em></span>: <span class="math display">$$E=\frac{\hat\mu m}{2p}(e^2-1)$$</span> og husk igjen at <span class="math inline"><em>m</em> = <em>G</em>(<em>m</em><sub>1</sub>+<em>m</em><sub>2</sub>)</span>. Her ser vi at hvis totalenergien er <span class="math inline"><em>E</em> = 0</span>, dvs. at den potensielle og kinetiske er like store med motsatt rettet fortegn, så <span><strong>må</strong></span> <span class="math inline"><em>e</em> = 1</span> på høyresiden. Dette tilsvarer en parabelbane (se forrige side). Hvis vi nå skriver om så har vi at:<br />
+<span class="math display">$$p=\frac{\hat\mu m}{2E}(e^2-1)$$</span> Vi vet at <span class="math inline"><em>p</em></span> må være en positiv størrelse (slik at <span class="math inline"><em>r</em></span> er en positiv størrelse, se uttrykket for <span class="math inline"><em>r</em>(<em>f</em>)</span>). Hvis energien <span class="math inline"><em>E</em></span> her er positiv (kinetisk energi større enn potensiell), hva slags verdier kan <span class="math inline"><em>e</em></span> ta for at <span class="math inline"><em>p</em></span> blir positiv? Og hvis energien <span class="math inline"><em>E</em></span> er negativ? (mer potensiell enn kinetisk) Hva slags verdier må <span class="math inline"><em>e</em></span> da ta?<br />
+Tenk deg nøye om før du... <a href="energi8.html">... går videre til neste side</a></p>
+
+<p><span id="energi8" label="energi8"></span> <a href="energi7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+Vi hadde <span class="math display">$$p=\frac{\hat\mu m}{2E}(e^2-1)$$</span> <span><strong>slik at hvis <span class="math inline"><em>E</em> &gt; 0</span> så må <span class="math inline"><em>e</em> &gt; 1</span> for at <span class="math inline"><em>p</em></span> skal være positiv. Da får vi en hyperbelbane. Og hvis <span class="math inline"><em>E</em> &lt; 0</span> så få vi helt tilsvarende <span class="math inline"><em>e</em> &lt; 1</span> og vi har en ellipsebane.</strong></span> Det gir mening siden ellipsebanen er bundet, og negativ energi betyr at potensiell gravitasjonsenergi ’vinner’ over kinetisk energi. Og omvend for hyperbelbane, der ’vinner’ den kinetiske energien og objektene er dermed ikke bundet som i hyperbelbanen. Vi ser også at parabelbanen er akkurat grensetilfellet mellom disse to.<span style="color: red"> Hvordan finner vi så <span class="math inline"><em>a</em></span> og <span class="math inline"><em>e</em></span> til banen? Anta her en ellipsebane,</span> da har vi <span class="math inline"><em>p</em> = <em>a</em>(1−<em>e</em><sup>2</sup>)</span>. Insatt i likningen gir det oss <span class="math display">$$a=-\frac{\hat\mu m}{2E}$$</span> At energien bestemmer hvor stor ellipsen er, har mening. <span style="color: blue">Men hva med <span class="math inline"><em>e</em></span>? Det må vel ha noe med hastighetskomponentene å gjøre? Hvor mye hastighetene er rettet radielt eller tangensielt? Kan spinnet ha en rolle her?</span> <a href="energi9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="energi9" label="energi9"></span> <a href="energi8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Energi og type kjeglesnitt<br />
+I videoen på forrige side utledet vi et viktig mellomresultat: <span class="math display">$$h=\sqrt{mp}$$</span> en sammenheng mellom spinnet og <span class="math inline"><em>p</em></span>. Men her avhenger <span class="math inline"><em>p</em></span> av <span class="math inline"><em>a</em></span> som vi finner fra energien, samt eksentrisiteten <span class="math inline"><em>e</em></span>. Her overlates du til deg selv for å finne uttrykket for <span class="math inline"><em>e</em></span> gitt at du kjenner spinnet til objektet.<br />
+Da har vi kommet til veis enda i dette kapittelet. Hvis du nå har en satelitt sin posisjon og hastighetskomponenter samt massen til satelitten og planeten så kan du øyeblikkelig beregne både formen på banen samt baneparameterene og fullstendig bestemme hvordan banen blir seende ut. Dette kommer du til å få bruk for i en del oppgaver, spesielt dere som tar prosjekt! <a href="skjema.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="skjema" label="skjema"></span> <a href="energi9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span><br />
+<span> Før vi avslutter med litt tips og hjelp til koding av innleveringsoppgaven, må du teste/repetere at du har forstått stoffet vi har gått gjennom. Det gjør du på <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/155531">dette skjemaet her</a></span></span>. <a href="koding.html">Ikke trykk her før skjemaet har blitt sendt inn</a> </span></p>
+
+<p><span id="koding" label="koding"></span></p>
+<div class="columns">
+<p><span> <a href="skjema.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span><br />
+Energi og type kjeglesnitt<br />
+Men det blir også mye <span style="color: red">numerisk baneberegning</span> som vi snakket om helt i starten av forrige forelesning mens <span style="color: blue">de analytiske uttrykkene vi har utledet skal hjelpe oss med det numeriske.</span> Vi går tilbake til utgangspunktet vårt: <img src="../media/landing.png" alt="image" /> Vi skal lande satelitten trygt. Her er det klart at du i den numeriske baneberegningen</span> <span>også trenger å ta med friksjonskreftene når du kommer inn i atmosfæren. Dette er forklart nærmere i oppgave 1B8. Men når du å skal velge hvilken hastighet og retning du vil sende ut landersonden din ut fra modersonden med, gitt posisjonen din i banen, så har du nå fått god hjelp: ved å beregne energien og spinnet du får ved en gitt utgangshastighet så vet du nøyaktig hva slags bane du får. Kanskje strategien din er å lage en veldig avlang (eksentrisk) ellipsebane som sneier atmosfæren din ved hver nærpassering? Isåfall vet du nå hva du må gjøre med spinnet for å få en store <span class="math inline"><em>e</em></span>. Eller hvis du har en helt annen strategi: nå kan du forutsi hva slags bane du får frem til du begynner å treffe atmosfæren.</span> <a href="koding2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="koding2" label="koding2"></span> <a href="koding.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Tips til koding<br />
+<img src="../media/debugging1.png" alt="image" /> <span>La oss helt til slutt snakke litt om debugging. Det kommer helt sikkert til å gå galt når du programmerer banen første gang. Her ser du et veldig typisk resultat.<br />
+<span><strong>Spørsmålet er, hva gjør du nå???</strong></span><br />
+</span> <a href="fdebug.html">Stirrer på koden til du finner feilen</a>     <a href="fdebug.html">Får noen andre til å stirre på koden</a>     <a href="rdebug.html">Bruker fysikk til å finne i hvilken del av koden feilen befinner seg.</a> <a href="cm7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="fdebug" label="fdebug"></span> <a href="koding2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Tips til koding<br />
+<span style="color: red">Det er en veldig god ide hvis du har masse fritid og liker å bruke laaaaaaaaang tid til å løse oppgaver.<br />
+Rådene på neste side er nok da ikke for deg, men <a href="rdebug.html">Trykk her</a> hvis du likevel har lyst til å få noen tips til hvordan du kan spare masse tid, så kan du jo bruke all tiden du har til overs på andre oppgaver?</span></p>
+
+<p><span id="rdebug" label="rdebug"></span></p>
+<div class="columns">
+<p><a href="koding2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span><br />
+Tips til koding<br />
+<span>Det er en utmerket ide å bruke litt fysikk når man gjør debugging, husk dette også for de kommende delene i kurset. Du kan spare <span><strong>masse</strong></span> tid på debugging hvis du bare finner ut hvor feilen ligger. La oss se på noen mulige strategier i dette tilfellet her.<br />
+</span> <img src="../media/debugging2.png" alt="image" /><br />
+</p><ol>
+<li><p>Hva er energien din i initialposisjonen? Er <span class="math inline"><em>E</em> &gt; 0</span>? Da er det enten noe feil med initialhastigheten din, eller du skal ha en hyperbelbane.</p></li>
+<li><p>Lag en liste med energien i hvert tidssteg. Endrer energien seg? (det skal den ikke hvis du kun har gravitasjonskraft)</p></li>
+<li><p>Hvis energien endrer seg må kraften være gal. Sjekk komponentene <span class="math inline"><em>F</em><sub><em>x</em></sub></span> og <span class="math inline"><em>F</em><sub><em>y</em></sub></span>. Peker de riktig, dvs. har de riktig fortegn? (se figur)</p></li>
+<li><p>Sjekk kraft-komponentene både i initialposisjonen og noen tidssteg senere (se figur)</p></li>
+</ol><p><a href="koding3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="koding3" label="koding3"></span></p>
+<div class="columns">
+<p><a href="rdebug.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span>Tips til koding<br />
+<img src="../media/debugging2.png" alt="image" /> <span> <span><strong>Og sist, men ikke minst:</strong></span> Sjekk størrelsen på kraftvektoren. <span><strong>Bruk kalkulator (dette er viktig slik at du bruker noe helt annet en koden din)</strong></span> til å beregne totalkrafta i initialposisjonen. Beregn først lengden av initialposisjonsvektoren <span class="math inline"><em>r⃗</em></span> <span><strong>(også med kalkulator)</strong></span> og så størrelsen på krafta.</span><br />
+<span>Sammenlikn krafta med det du finner i koden (absoluttverdi av kraftvektoren). Er den feil, sjekk også om du har beregnet lengden av posisjonsvektoren riktig. Hvis alt er riktig, gjenta dette en del tidssteg senere, er krafta enda riktig? Her vil du veldig ofte finne at du beregner krafta feil i koden. Iblant kan det være vanskelig å ovrersette formler riktig til python, derfor er denne uavhengige kontrollen på papir/kalkulator veldig viktig.</span><br />
+<span><strong>Følger du prosedyren på denne og foregående side så er det nesten helt sikkert at du klarer å finne feilen selv!<br />
+</strong></span> <a href="oppsummering.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="oppsummering" label="oppsummering"></span> <a href="koding3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/158672" class="🙂🙁">🙂 🙁</a></span></span> Gratulerer, da er del 1B overstått! Du bør nå kunne:</p>
+<ul>
+<li><p>beskrive de forskjellige banene som er løsninger av to-legeme-problemet</p></li>
+<li><p>kunne beregne slike baner både analytisk og numerisk</p></li>
+<li><p>vite hvilke parametere som beskriver slike baner og vite hvordan finne slike parametere</p></li>
+<li><p>kunne regne med Newtons lover på vektorform</p></li>
+<li><p>og dermed kunne regne med posisjosvektorer, hastighetsvektorer og kraftvektorer dekomponert både i kartesiske enhetsvektorer men også i radielle og tangensielle enhetsvektorer</p></li>
+<li><p>kunne beskrive og beregne på baner i et tolegemesystem sett fra massesentersystemet</p></li>
+<li><p>kunne beregne anguklærmoment og energi i et slikt to-legemesystem</p></li>
+</ul>
+<p><span style="color: red">Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk for å vite om alt arbeidet med å lage disse interaktive slidene er verd det, om jeg bør fortsette med det og om det er noe jeg bør endre.</span></p>
+
+</body>
+</html>

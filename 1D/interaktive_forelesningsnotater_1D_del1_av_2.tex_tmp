@@ -1,0 +1,813 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+\newcommand{\pagebutton}[1]{#1}
+
+\newcommand{\choicebutton}[1]{#1}
+
+\newcommand{\pagenobutton}[1]{#1}
+
+\newcommand{\headlinebutton}[1]{#1}
+
+
+\newcommand{\curpage}{}
+\newcommand{\nextpage}{}
+\newcommand{\dnextpage}{}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\nextpage\headlinebutton{\headline}\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\curpage\headlinebutton{\headline}\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\dnextpage\headlinebutton{\headline}\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\nextpage\\\headlinebutton{\headline}\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\curpage\\\headlinebutton{\headline}\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}\dnextpage\\\headlinebutton{\headline}\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{36}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1D\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1D\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{🙂 🙁}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+
+%%%%% intro
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\vspace{1cm}
+\includegraphics[scale=0.25]{radiotelescopes.png}\\
+\column{0.5\textwidth}
+\small Velkommen til del 1D! Nesten all informasjon vi har om verdensrommet har vi fra stråling som kommer fra objektene. I denne forelesningen skal vi se nærmere på denne strålingen, hvilke prosesser som genererer den og hvordan vi kan få informasjon fra den. Noe har du kanskje vært borti allerede på videregående, som f.eks. sorte legemer, Wiens forskyvningslov og spektrallinjer? Her skal vi fordype oss videre i disse temaene og se både på litt teori men i stor grad på hvordan vi kan anvende det til å få informasjon om universet. \\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
+%\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+\label{intro2}
+\lastpagebutton{intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming og repetisjon. Som det er {\bf svært viktig} at du gjør før du går videre. Du får allerede litt hjelp her til det som kommer på de neste sidene.
+\end{alertblock}
+\href{https://nettskjema.no/a/155782}{Trykk her for å varme opp}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/155782}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+\end{frame}
+
+\renewcommand{\headline}{\small Fluks og luminositet}
+{
+
+\begin{frame}
+\label{nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{sortleg}
+\hyperlink{1d3}{\pagebutton{Sett igang med å lære de to uttrykkene!}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{1d3}
+\dlastpagebutton{intro2}
+{\bf Vi skal fortsette der vi slapp i skjemaet.} 
+\begin{block}{Fluks $F$ er...}
+... den lille energimengden $\Delta E$ som passerer gjennom en lite areal $\Delta A$ i løpet av et kort tidsrom $\Delta t$. Det kan f.eks. være energimengden som vi mottar på et lite areal $\Delta A$ av jordoverflaten fra sola, dette ville vært {\it mottatt} fluks. Det kunne også være energien som blir strålt ut per areal $\Delta A$ av soloverflaten, dette ville vært {\it utsendt} fluks.
+\end{block}
+\begin{block}{Luminositet $L$ er definert som...}
+den totale energimengde $\Delta E$ som stråles ut av et legeme per lite tidsintervall $\Delta t$. Luminositet måles i W som er Joule per sekund. En lyspære med luminositet på 40W, sender totalt ut 40 Joule per sekund, spredt utover i alle retninger. 
+\end{block} 
+Hvis vi gjør disse intervallene uendelig små, kan de skrives som deriverte:
+\[
+F=\frac{\Delta E}{\Delta A\Delta t}=\frac{d^2E}{dAdt}\ \ \ \ \ L=\frac{\Delta E}{\Delta t}=\frac{dE}{dt}
+\]
+\hyperlink{1d3b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{1d3b}
+\lastpagebuttoncr{1d3}
+La oss se på oppgaveteksten til oppgave 1D.3 (prosjektstudenter har et liknende problem i utfordring B i del 3). Vi begynner rett på 4. deloppgave, anta at du ser på sola og fluksen $F$ som sola stråler ut er kjent fra Stefan-Boltzmanns lov, $F=\sigma T^4$, denne har du kanskje sett før, men vi skal komme nærmere inn på denne senere. Det viktigste nå er at $F$ er et kjent tall, det samme er {\bf radiusen} til sola.
+\includegraphics[scale=0.4]{1d3_1.png}\\
+{\bf Du skal altså ikke bruke tall nå, kun diskutere \textcolor{red}{hvordan} du vil løse oppgaven}.
+\hyperlink{1d3-2}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{1d3-2}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebutton{1d3b}
+Hvis du får til denne oppgaven, så har du funnet luminositeten $L$ til sola. Da kan vi gå videre til neste deloppgave:\\
+\includegraphics[scale=0.4]{1d3_2.png}\\
+\column{0.5\textwidth}
+{\bf Igjen skal du kun diskutere hvordan oppgaven kan løses.} Ser du her at fluks kan ha to betydninger, vi kan snakke om \textcolor{red}{utstrålt fluks} og \textcolor{red}{mottatt fluks}. I begge tilfeller er det energien som passerer gjennom et areal per tidsenhet, enten den ene eller andre veien. Ser du hvordan du kan finne fluksen fra sola som mottas ved f.eks. Saturn? Ideen er veldig lik den du brukte til å finne luminositeten til sola. Tenk deg godt om før du går videre til neste side.
+\hyperlink{1d3-3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{1d3-3}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebutton{1d3-2}
+Hvis du får til denne oppgaven, så har du funnet fluksen $F_\mathrm{Saturn}$ fra sola på Saturn (du skal altså ikke finne tall, men vite hvordan du kunne funnet dette tallet). Hvis du ikke fikk det til, bare anta at du har fått denne størrelsen. Da kan vi gå videre til neste deloppgave:\\
+\includegraphics[scale=0.4]{1d3_3.png}\\
+\column{0.5\textwidth}
+{\bf Igjen skal du kun diskutere hvordan oppgaven kan løses.}
+Ikke gå videre før du har et forslag til løsning og repeter hele prosessen for hvordan du nå kan finne hvor stort solpanel du trenger for at en satelitt ved saturn skal få nok solenergi til å drive instrumentene ombord. 
+\hyperlink{1d4-1}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{1d4-1}
+\lastpagebutton{1d3-3}
+\begin{columns}
+\column{0.5\textwidth}
+Hvis du slet med å få til oppgave 1D3, så kan du \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_1.mp4}{se på denne videoen for å få noen tips}. Hvis du er usikker på fremgangsmåte eller svaret, {\bf spør gruppelærer}. 
+Når du har forstått godt hvordan du løser 1D3, så er du klar til å ta fatt på å {\bf diskutere} 1D.4 (også i prosjektet må en liknende utfordring løses):
+\includegraphics[scale=0.4]{1d4_1.png}
+\column{0.5\textwidth}
+\includegraphics[scale=0.32]{1d4_2.png}\\
+\textcolor{red}{Legg merke til hintet om å anta at planeten er en skive!} \hyperlink{1d4-2}{\pagebutton{\small Neste side}}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{1d4-2}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebuttoncr{1d4-1}
+Siste deloppgave av 1D.4:
+\includegraphics[scale=0.42]{1d4_3.png}\\
+\column{0.5\textwidth}
+Du skal igjen kun diskutere fremgangsmåten, ikke nødvendigvis løse oppgaven med tall nå. 
+\begin{itemize}
+\item Husk at for en planet å være i likevekt med stabil temperatur så må den motta like mye energi som den sender ut. 
+\item Du kommer du igjen til å trenge Stefan-Boltzmanns low, $F=\sigma T^4$ der $\sigma$ er et tall og $T$ er temperaturen til legemet. Stefan-Boltzmanns lov gjelder kun for sorte legemer (forklaring senere), vi skal her anta at Saturn er et sort legeme.
+\end{itemize}
+\textcolor{red}{Ikke gå videre før du har tenkt godt gjennom hva du kan gjøre.}
+{\bf Hvis du ikke får det til, få hjelp av en gruppelærer!}
+\hyperlink{sblaw}{\pagebutton{\small Neste side}}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\label{sblaw}
+\lastpagebutton{1d4-2}
+Uttrykket $F$ for fluks som du har møtt så langt er den samlede fluksen over alle bølgelengder. Vi kan også definere en bølgelengdeavhengig fluks som altså er energien $\Delta E$ som passerer gjennom et areal $\Delta A$ hvert tidssteg $\Delta t$ med et lite bølgelengde intervall $\Delta\lambda$ for bølgelgende i intervallet mellom $\lambda$ og $\lambda+\Delta\lambda$:
+\[
+F(\lambda)=\frac{\Delta E}{\Delta A\Delta t\Delta\lambda}=\frac{d^3E}{dAdtd\lambda},
+\]
+den siste overgangen gjelder når vi gjør $\Delta$-ene uendelig små. 
+\begin{block}{\bf Stefan-Boltzmanns lov}
+For {\bf sorte legemer} (kommer vi straks til!), så er fluksen (den totale fluksen over alle bølgelengder) som sendes ut fra legemet gitt ved temperaturen $T$ til legemet som:
+\[
+F=\sigma T^4
+\]
+Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
+\end{block}
+\hyperlink{sblaw2}{\pagebutton{\small Neste side}}
+\end{frame}
+
+\renewcommand{\headline}{\small Sorte legemer}
+{
+
+\begin{frame}
+\label{nytema2}
+\hyperlink{sblaw}{\pagebutton{\small Forrige side}}
+\nytemaside{romvink}
+\hyperlink{sblaw2}{\pagebutton{Neste side!}}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{sblaw2}
+\lastpagebutton{sblaw}\label{sortleg}
+\textcolor{yellow}{\huge Men så var det dette sorte legemet da?\\
+Kan du huske hvordan et sort legeme er definert??\hyperlink{sblaw2b}{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
+}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[]  \hypertarget<.>{sblaw2b}{}
+\end{itemize}
+\vspace*{-0.5cm}
+\textcolor{yellow}{Husket du det omtrent? Et sort legeme er et legeme som absorberer all stråling som faller på det. Ingen stråling går gjennom legemet og ingen stråling reflekteres. {\bf MERK:} Det betyr {\bf ikke} at objektet ikke stråler!! Sorte legemer sender ut sort stråling som kommer fra bevegelsen til atomene og molekylene i legemet. En stjerne er en ok tilnærmelse til et sort legeme.}
+\hyperlink{sblaw3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\begin{frame}
+\label{sblaw3}
+\dlastpagebutton{sblaw2}
+For sorte legemer kan man utlede {\it Plancks strålingslov}. Denne utledningen kommer du til å gjøre i senere kurs, her bare aksepterer vi at for fluks $F(\lambda)$ så er den gitt ved''
+\[
+F(\lambda) = \frac{2\pi hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
+\]
+\textcolor{red}{\bf Hvordan kan du bruke dette til å utlede Stefan-Boltzmanns lov?} \\
+(og derav også utlede tallet $\sigma$,. merk at dette ikke har noe med standardavvik å gjøre selv om vi bruker samme symbol). \\
+{\bf Merk at du ikke skal gjøre utledningen, men tenke detaljert gjennom hvordan du ville gått frem!}. Hvis du er usikker, gå gjerne tilbake og se på definisjonen av Stefan-Boltzmanns lov.
+\hyperlink{wien}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{wien}
+\lastpagebutton{sblaw3}
+{\bf Hadde du et forslag til hvordan utlede Stefan-Boltzmanns lov?} I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_2.mp4}{denne videoen} går vi gjennom det i detalj.\\
+\vspace*{0.5cm}
+Hva så med Wiens forskyvningslov:
+\[
+\lambda_\mathrm{max}T=\mathrm{konstant}
+\]
+Her er $\lambda_\mathrm{max}$ \textcolor{red}{den bølgelengden som objektet stråler mest på, dvs. den bølgelengden med størst fluks $F(\lambda)$}, og $T$ er temperaturen til legemet. Med Wiens forskyvningslov kan du altså finne temperaturen til et sort legeme ved å finne hvilken bølgelengde det stråler mest på!\\
+\vspace*{0.5cm}
+Kan du se hvordan du kan gå frem for å utlede Wiens forskyvningslov?\\
+\vspace*{0.5cm}
+{\bf Tenk før du blar om!}
+\hyperlink{wien2}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{wien2}
+\lastpagebutton{wien}
+\Huge\textcolor{red}{Tenkte du deg virkelig godt om før du bladde om nå eller????????}
+Hvis ikke så får du en ny sjanse nå, tenk før du blar om!
+\hyperlink{wien3}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{wien3}
+\lastpagebutton{wien2}
+Jepp, å finne bølgelengden med den største fluksen er jo ekvivalent med å finne toppen av kurven $F(\lambda)$. Å finne topp-punktet av en kurve gjør som kjent vi ved å sette den deriverte lik null
+\[
+\frac{dF(\lambda)}{d\lambda}=0
+\]
+Javel, ta et papir og gjør det da vel!\\
+{\bf Og så da...?? Hva gjør du videre???} Det var kanskje ikke helt rett frem? Her trenger du hjelp av litt numeriske beregninger for å komme i mål og finne verdien til konstanten i Wiens forskyvningslov:
+\[
+\lambda_\mathrm{max}T=\mathrm{konstant}
+\]
+Før du går videre, lag nå en liten skisse for hvordan du vil gjøre dette numerisk.
+\hyperlink{wien4}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\label{wien4}
+\lastpagebutton{wien3}
+I oppgave 1D.2 får du hjelp til å løse dette (hvis du skulle ønske å gjøre den nå, erstatt $B(\lambda)$ med $F(\lambda)$ overalt i oppgaveteksten, du får samme svar.)\\
+La oss gå tilbake til 
+\begin{block}{\bf oppgave 1D.3, første deloppgave:}
+Ved hvilken bølgelengde $\lambda$ stråler solen mest energi? Anta at solen er et sort legeme. Anta også at temperaturen på solens overflate er 5778K, og konstanten i Wiens forskyvningslov er
+\[
+\lambda_\mathrm{max}T=2.898\times10^{-3}\mathrm{m}\cdot\mathrm{K}
+\] 
+hvor enhetene her er meter ganger Kelvin.
+\end{block}
+Bruk \href{https://en.wikipedia.org/wiki/Color}{bølgelengdeoversikten her} for å finne hvilken farge det tilsvarer.{\bf Overrasket?} Kan du finne en forklaring hvis svaret ikke stemmer overens med dine forventninger?
+\hyperlink{nytema3}{\pagebutton{Neste side}}
+\end{frame}
+
+\renewcommand{\headline}{\small Romvinkler}
+{
+
+\begin{frame}
+\label{nytema3}
+\hyperlink{wien3}{\pagebutton{\small Forrige side}}
+\nytemaside{intens}
+\hyperlink{solidangle}{\pagebutton{Et nytt uttrykk å lære og så en pause !}}
+\textcolor{yellow}{og ved neste tema tror jeg du trenger litt kaffe!}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{solidangle}
+\lastpagebutton{wien4}\label{romvink}
+Vi har så langt snakket om fluks og luminositet. Vi skal nå se på et relatert begrep som heter {\it intensitet}. Dette er et noe mer abstrakt begrep som vi skal bruke lite i dette kurset, men som du bør kunne og som du kommer til å se igjen i senere kurs. Før vi begynner med intensitetsbegrepet trenger vi først å diskutere et annen nytt begrep.
+\begin{block}{\bf Utvidelse av vinkelbegrepet}
+Hvis du skulle generalisere vinkelbegrepet fra 2 til 3 dimensjoner, hvordan ville du gå frem? Husker du hvordan vinkelbekgrepet er definert? Hva er definisjonen av en radian?
+\end{block}
+Når du har gravd litt i gamle minner, så kan du.. \hyperlink{solidangle2}{\pagebutton{... gå til neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{solidangle2}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebuttoncr{solidangle}
+{\small
+Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:
+\includegraphics[scale=0.42]{angle.png}\\
+Buelengden $\Delta s$ er størrelsen på vinkelen i radianer! Hvis det ikke er en enhetssrikel, så må du dele buelengden på $r$ for å reskalere til enhetssirkelen:
+\[
+\theta=\frac{\Delta s}{r}
+\]
+{\bf Kan du nå tenke deg hvordan generalisering til 3 dimensjoner blir?}
+}
+\hyperlink{solidangle2b}{\pagebutton{Trykk her når du har tenkt}}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[]  \hypertarget<.>{solidangle2b}{}
+\end{itemize}
+\column{0.5\textwidth}
+{\small 
+Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:
+\includegraphics[scale=0.42]{solidangle.png}\\
+En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$ på overflaten av enhetskula som romvinkelen utspenner. Tenk deg f.eks. en bunt av lysstråler som strømmer ut fra sentrum og inn i romvinkelen $\Omega$. Et typisk bruksområde for romvinkler er å se på lysbunter som stråler ut i en gitt retning. Igjen, hvis vi ikke har enhetskula må vi reskalere:
+\[
+\Omega = \frac{\Delta A}{r^2}
+\]
+}
+\hyperlink{pause}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+
+{
+
+\begin{frame}
+\label{pause}
+\hyperlink{solidangle2}{\pagebutton{\small Forrige side}}
+{\Huge
+\centerline{Litt tidlig med kaffepause sier du???}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+
+ÅNEI, ta deg pausen du, for neste tema kommer du virkelig til å trenge det, lover!\\
+\vspace*{0.5cm}
+Ihvertfall 10 min...
+}\\
+\vspace*{0.5cm}
+\hyperlink{nytema4}{\pagebutton{Jeg trekker pusten nå og er klar til ...}}
+\end{frame}
+}
+
+
+\renewcommand{\headline}{\small Intensitet}
+{
+
+\begin{frame}
+\label{nytema4}
+\hyperlink{solidangle2}{\pagebutton{\small Forrige side}}
+\nytemaside{info}
+\hyperlink{intensity1}{\pagebutton{Jeg er så klar som det er mulig å være!}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{intensity1}
+\dlastpagebutton{solidangle2}\label{intens}
+Vi skal nå gå over til intensitetsbegrepet. {\it Intensiteten er energien per arealenhet, per tid, per bølgelgende og {\bf per romvinkel}} som går gjennom et areal og inn i en gitt retning $\theta$:
+\[
+I(\lambda)=\frac{\Delta E}{\cos{\theta}\Delta A\Delta t\Delta \lambda\Delta \Omega}
+\]
+\centerline{\includegraphics[scale=0.7]{intensity.png}}
+Nærmere forklaring finner du \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_3.mp4}{i denne videoen}
+\hyperlink{intensity2}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{intensity2}
+\lastpagebutton{intensity1}
+Intensiteten til sort stråling kan uttrykkes ved {\it Plancks strålingslov:}
+\[
+B(\lambda) = \frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
+\]
+Som du ser likner dette uttrykket veldig mye på fluksen $F(\lambda)$ for sort stråling.  I oppgave 1D.5 skal du utlede nettopp $F(\lambda)$ fra $B(\lambda)$. Kan du tenke deg hvordan du skal gå frem? Lag gjerne en tegning og tenk litt...
+\hyperlink{inja}{\choicebutton{Jeg tror jammen jeg ser hvordan}}\ \ \ \ \hyperlink{innei}{\choicebutton{Nja, kunne jeg få et hint?}}\
+\end{frame}
+
+
+\begin{frame}
+\label{innei}
+\lastpagebutton{intensity2}
+Kikk først \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_3.mp4}{en gang til på videoen} for å se definisjonen av intensitet,. Fluksen er {\bf all} strålingen som går gjennom dette arealet, dvs over alle retninger som går ut ifra arealet. Vi har allerede definert en vinkel $\theta$, vi trenger også en vinkel $\phi$ for å få med oss alle retningene. Kan du se hva slags romintegral du skal gjøre? Tenk deg at z-aksen går ut gjennom arealet. Hvordan hadde du normalt gjort en slikt integrasjons?
+Tenk deg om på nytt før du går videre...
+\hyperlink{inja}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{inja}
+\lastpagebutton{intensity2}
+Innså du at du må integrere over halvkulen med sentrum i arealet som strålingen går gjennom? Du må integrere over vinkelen $\theta$ som gå fra 0 (rett frem) til $\pi/2$ (helt til siden), mens vinkelen $\phi$ går rundt z-aksen og derfor må integreres fra 0 til $2\pi$. Kan du se det? Får du til faktoren $\pi$ når du gjør integralet? Hvis du sliter med dette, spør foreleser!
+Se gjerne også \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_4.mp4}{denne videoen} for en kjapp illustrasjon av integrasjonen.
+\hyperlink{intensity3}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{intensity3}
+\lastpagebutton{inja}
+Vi har sett at intensiteten $I(\lambda)$ av Planckstråling er gitt ved funksjonen $B(\lambda)$:
+\[
+B(\lambda) = \frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
+\]
+Ta et papir og gjør om slik at du uttrykker denne ved frekvens $B(\nu)$ isteden for ved bølgelengde $B(\lambda)$. Husk at sammenhengen mellom frekvens og bølgelengde for elektromagnetisk stråling er gitt ved $\lambda=c/\nu$.\\
+\textcolor{red}{Hvis dette høres kjedelig ut, så gjør det likevel, {\bf du kommer til å lære noe av det!}}.
+\hyperlink{intensity3b}{\pagebutton{Jeg har nå uttrykket for $B(\nu)$}}
+\end{frame}
+
+
+\begin{frame}
+\label{intensity3b}
+\lastpagebutton{intensity3}
+{\bf\Large Fikk du:}\\
+\[
+B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
+\]
+{\bf\Large ??}\\
+\hyperlink{bnuja}{\choicebutton{JA!}}\ \ \ \ \hyperlink{bnunei}{\choicebutton{NEI!}}\
+\end{frame}
+
+{
+
+\begin{frame}
+\label{bnuja}
+\lastpagebutton{intensity3b}
+\textcolor{white}{Det var synd for det ble FEIL:
+\[
+\xcancel{B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}}
+\]
+}
+\hyperlink{intensity4}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+
+\begin{frame}
+\label{bnunei}
+\clastpagebutton{intensity3b}
+Det høres bra ut, for det uttrykket er nemlig feil...
+ \hyperlink{intensity4}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{intensity4}
+\lastpagebutton{intensity3b}
+Vi må passe på at energien $\Delta E$ er den samme i begge tilfeller. Vi skriver om slik at:
+\[
+\Delta E = B(\lambda)\cos{\theta}\Delta A\Delta t\Delta\Omega\Delta\lambda=-B(\nu)\cos{\theta}\Delta A\Delta t\Delta\Omega\Delta\nu,
+\]
+der minustegnet kommer fordi $\Delta\nu = -\Delta\lambda$, frekvens minker når bølgelengde øker, derfor minustegn. Vi kan forkorte det som er felles:
+\[
+B(\lambda)\Delta\lambda=-B(\nu)\Delta\nu
+\]
+Hvis vi ganger opp nå så ser vi at vi får en Jacobi-determinant:
+\[
+B(\nu)=-B(\lambda)\frac{d\lambda}{d\nu},
+\]
+der vi har latt $\Delta$-ene bli uendelig små. Du kan altså sette inn $\nu = c/\lambda$ slik du gjorde før, men du må også ha med faktoren $-d\lambda/d\nu$. Hva blir denne faktoren? Hvis du gjør det riktig, skulle du nå få
+\[
+B(\nu) = \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{kT}}-1}
+\]
+\hyperlink{intensity5}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{intensity5}
+\lastpagebutton{intensity4}
+Her ser du $B(\lambda)$:\\
+\includegraphics[scale=0.5]{blambda.png}\\
+Kan du forklare Stefan-Boltzmanns lov og Wiens forskyvningslov {\bf kun} ved å bruke denne figuren?
+Prøv å bruke figuren til å forklare de to lovene til hverandre (eller til deg selv)
+\hyperlink{intensity6}{\pagebutton{Jeg har gjort det, ihvertfall forsøkt}}
+\end{frame}
+
+\begin{frame}
+\label{intensity6}
+\begin{columns}
+\column{0.4\textwidth}
+\lastpagebuttoncr{intensity5}
+Hvis du hadde problemer med forklaringen, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_5.mp4}{denne videoen}.
+Da er du klar til å løse oppgave 1D.1. Diskuter hvordan du vil gå frem for å løse denne oppgaven. Hvis du sliter, kontakt gruppelærer.
+\column{0.6\textwidth}
+\includegraphics[scale=0.45]{1d1.png}
+\end{columns}
+\hyperlink{pause2}{\pagebutton{Neste side}}
+\end{frame}
+
+{
+
+\begin{frame}
+\label{pause2}
+\hyperlink{intensity6}{\pagebutton{\small Forrige side}}
+{\Huge
+\centerline{Mer kaffe sier du???}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+
+Det har du fortjent nå.{\small Og så kan du jo se om du finner en kakebit som du kan fordøye sammen med intensitetbegrepet?}\\
+\vspace*{0.5cm}
+Ihvertfall 10 min...
+}\\
+\vspace*{0.5cm}
+\hyperlink{nytema5}{\pagebutton{Gå videre...}}
+\end{frame}
+}
+
+\renewcommand{\headline}{\small Hvordan får vi informasjon om universet?}
+{
+
+\begin{frame}
+\label{nytema5}
+\hyperlink{intensity6}{\pagebutton{\small Forrige side}}
+\nytemaside{elmag}
+\hyperlink{straling}{\pagebutton{Resten av denne forelesningen er Planckekjøring, sett igang}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{straling}
+\lastpagebutton{intensity6}\label{info}
+Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?
+\hyperlink{straling1b}{\pagebutton{Trykk her når du har tenkt}}
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{straling1b}{}
+\end{itemize}
+\vspace{-0.5cm}
+\begin{itemize}
+\item kosmisk stråling
+\item nøytrinoer
+\item gravitasjonsbølger
+La oss se på hver av disse...
+\end{itemize}
+\hyperlink{straling2}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{straling2}
+\dlastpagebutton{straling}
+\begin{block}{Kosmisk stråling}
+Kosmisk stråling er høyenergetiske partikler fra verdensrommet, som regel protoner eller atomkjerner med svært høye hastigheter som kommer inn i jordens atomsfære der de blir omgjort til forskjellige typer elementrærpartikler. Disse har ofte oppstått i supernovaeksplosjoner eller i kraftige magnetfelt nær sorte hull og kan ha beveget seg over tusenvis at lysår. Et problem med kosmisk stråling er at når de detekteres på jorda så har de allerede blitt omgjort til andre partikler i jordas atmosfære. I tillegg vil interstellare/planetariske magnetfelt bøye av partiklenes bane slik at det er vanskelig å bestemme opprinnelseretningen. Disse faktorene gjør at det er begrenset med informasjon vi kan få om universet fra kosmisk stråling.
+\end{block}
+\hyperlink{straling3}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{straling3}
+\lastpagebutton{straling2}
+\begin{block}{Nøytrinoer}
+Vi skal senere i kurset snakke om de forskjellige typene elementærpartikler. Nøytrinoer er en klasse av slike elementærparikler. De kalles ofte spøkelsespartikler da de nesten ikke reagerer med andre partikler og dermed er svært vanskelig å måle på. Selv om milliarder av nøytrinoer som genereres i solas kjerne passerer gjennom hver kvadratmeter på jorda hvert sekund, klarer vi likevel bare å detekere noen få om dagen. Intil vi får bedre teknologi som kan detektere langt flere nøytrinoer, så er informasjonen vi kan få om universet fra nøytrinoer begrenset. Men nøytrinostråling kan potensielt gi svært viktig informasjon om prosesser i universet. For eksempel så går nøytrinoene stort sett uhindret fra kjernereaksjonene i solas kjerne og til jorda, de er derfor et potensielt vindu til direkte observasjoner av hva som foregår i sentrum av sola.
+\end{block}
+\hyperlink{straling4}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{straling4}
+\lastpagebutton{straling3}
+\begin{block}{Gravitasjonsbølger}
+Eksistensen av gravitasjonsbølger har vært forutsagt fra Einsteins relativitetsteori i over 100 år, men det er først i 2015 at man for første gang klarte å måle slike. Gravitasjonsbølger er små endringer av tidromsstrukturen som brer seg utover i rommet som bølger. De endrer på rom og tidstrukturen når de passerer forbi. De detekteres ved å se på bittesmå endringer i lengden av en lysstråle. Gravitasjonsbølger oppstår i prosesser der store tunge objekter er involvert, typisk kollisjoner mellom sorte hull og/eller nøytronstjerner. Ettersom detektorteknologien nå stadig bedres er gravitasjonsbølger en svært lovende kilde til informasjon om de mest ekstreme prosessene i universet.
+\end{block}
+\hyperlink{straling5}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{straling5}
+\lastpagebutton{straling4}
+\begin{block}{Elektromagnetisk stråling}
+Ingen over, ingen ved siden! Elektromagnetisk stråling er den klare vinneren. Nesten alt vi vet om universet har vi fra observasjoner av elektromagnetisk stråling fra objekter. Elektromagnetisk stråling kan ha svært forsjellig bølgelengde fra radiobølger på flere meter til gammastråling med bølgelengder på billiontedels meter. \href{https://en.wikipedia.org/wiki/Electromagnetic\_spectrum}{Tabellen i denne Wikipedia-artikkelen} gir en god oversikt over de forskjellige typene stråling i det elektromagentiske spektret. Siden elektromagnetisk stråling er så viktig skal vi se på de viktigste prosessene som genererer elektromagnetisk stråling i universet:
+\begin{itemize}
+\item Synkrotronstråling
+\item Bremsstralhung
+\item Planck-stråling
+\item 21-cm-stråling fra nøytralt hydrogen
+\end{itemize}
+
+\end{block}
+\hyperlink{nytema6}{\pagebutton{Neste side}}
+\end{frame}
+
+\renewcommand{\headline}{\small Kilder til elektromagnetisk stråling}
+{
+
+\begin{frame}
+\label{nytema6}
+\hyperlink{straling5}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\hyperlink{straling6}{\pagebutton{Vi fortsetter med litt 'light' stoff, gå igang}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{straling6}
+\lastpagebutton{straling5}\label{elmag}
+Du kommer til å lære og utlede i senere fysikkemner at når en ladd partikkel akselereres så sender den ut elektromagnetisk stråling. Husk at akselrasjon er både endring i fart men også endring i retning. Dette fenomenet ligger bak flere av prosessene som genererer stråling.
+\begin{alertblock}{Synkrotronstråling}
+Synkrotronstråling oppstår typisk når elektroner blir akselerert i magnetiske felt. Et elektron i et homogent magnetisk felt vil begynne å gå i sirkel/spiralbevegelse pga. den magnetiske kraften. Da endrer elektronet retning og sender ut synkrotronstråling. Tilsvarende gjelder for ladde partikler som er i ferd med å bli oppslukt av et sort hull og sirkler rundt med ekstremt høye hastigheter. Bølgelengden til strålingen avhenger av energiene involvert i prosessen. F.eks. sender vår egen galakse ut synkrotronstråling som radiobølger på grunn av kosmisk stråling som blir akselerert i det galaktiske magnetiske feltet.
+\end{alertblock}
+\hyperlink{straling7}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{straling7}
+\lastpagebutton{straling6}
+\includegraphics[scale=0.15]{bremss.png}{\tiny (Figur: Wikipedia)}
+\begin{alertblock}{Bremsstrahlung}
+\small
+Strålingen med det tyske navnet ``Bremsstrahlung'' oppstår når raske elektroner blir bremset i det elektriske feltet fra en atomkjerne. Oppbremsingen medfører en akselrasjon som dermed gjør at det avgies stråling på alle bølgelengder. Det intergalaktiske mediet (IGM) er en meget varm gass av elektroner og atomkjerner som befinner seg mellom galaksene i en galaksenhop. Den høye temperaturen gir elektronene høy hastighet, men stadige hastighetsendringer når de nærmer seg atmokjernene gir opphav til Bremsstralhung i form av røntgenstråler. Slike røntgenstråler er en viktig kilde til informasjon om fjerne galaksehoper.
+\end{alertblock}
+\hyperlink{straling8}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{straling8}
+\lastpagebutton{straling7}
+\begin{alertblock}{Termisk stråling}
+Denne typen stråling har vi allerede vært borti: termisk stråling fra et sort legeme er det vi kaller Planck-stråling som altså følger Plancks strålingslov. Tilfeldige bevegelser og kollisjoner mellom partikler gir opphav til stråling fra alle legemer/væsker/gasser og blir sterkere med temperaturen som jo gir høyere hastighet på partiklene.
+\end{alertblock}
+\hyperlink{straling9}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{straling9}
+\lastpagebutton{straling8}
+\begin{alertblock}{21cm-stråling fra nøytralt hydrogen}
+I kvantemekanikken har elementærpartikler det vi kaller kvantespinn, det kan sammenliknes med egenrotasjon til partiklene. Elektroner og protoner kan ha spinnretning opp eller ned (kun 2 mulige tilstander). I et hydrogenatom med et proton og et elektron så kan enten begge partiklene har spinn opp, begge ha spinn ned eller et spinn opp og det andre spinn ned. Den siste tilstanden er den som har lavest energi. Et system prøver alltid å oppnå lavest mulig energi, så når atomet er i den tilstanden at både elektron og proton har spinn i samme retning så vil det etter en viss tid skje en ``spin-flip'', at de faller ned til den laveste tilstanden der de har spinn i hver sin retning. Energiforskjellen blir da sendt ut som stråling. Energien mellom de to tilstandene tilsvarer elektromagnetisk stråling med bølgelengde 21.2cm (mikrobølger).
+\end{alertblock}
+\hyperlink{straling10}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{straling10}
+\lastpagebutton{straling9}
+Illustrasjon av spin-flip i hydrogenatomet:
+\includegraphics[scale=0.3]{21cm.png}{\tiny (Figur: Wikipedia)}
+\hyperlink{oppsummering}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{straling10}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{🙂 🙁}
+Da er vi ferdige med første forelesning i del 1D. Du bør nå:
+\begin{itemize}
+\item både kunne forklare fysisk og definere matematisk de grunnleggende uttrykkene luminositet, fluks og intensitet
+\item vite hva et sort legeme er og kjenne noen grunnleggende egenskaper til strålingen fra sorte legemer
+\item kunne beregne hvor stort solcellepanel en romsonde trenger
+\item kunne forklare og beregne en forenklet klimamodell for en planet
+\item vite hva en romvinkel er
+\item kjenne til hvilke kilder vi har til informasjon fra verdensrommet, de forskjellige delene av det elektromagnetiske spektret samt hvilke fysiske prosesser som produserer elektromagnetisk stråling og hvordan.
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\end{frame}
+
+
+\end{document}
