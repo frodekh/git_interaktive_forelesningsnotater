@@ -42,7 +42,7 @@ window.MathJax = {
 window.addEventListener('DOMContentLoaded', (event) => {
     //fix for image size
     const nmbimgtags = document.querySelectorAll('img').length
-    console.log(nmbimgtags)
+    
     if (nmbimgtags > 1) {
         let image_tags = document.querySelectorAll('img')
         for (let i = 0; i < nmbimgtags; i++) {
