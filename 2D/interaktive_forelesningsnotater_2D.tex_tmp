@@ -1,0 +1,1299 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+
+\input{usercommands}
+
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
+\definecolor{denim}{rgb}{0.06, 0.29, 0.55}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{\textcolor{black}{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}}
+
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+\newcommand{\pagebutton}[1]{#1}
+
+\newcommand{\choicebutton}[1]{#1}
+
+\newcommand{\pagenobutton}[1]{#1}
+
+\newcommand{\headlinebutton}[1]{#1}
+
+\newcommand{\padletbutton}{\href{https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t}{PADLET}}
+
+
+
+\newcommand{\curpage}{}
+\newcommand{\nextpage}{}
+\newcommand{\dnextpage}{}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\nextpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\curpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\dnextpage\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\nextpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\curpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}\dnextpage\\\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{81}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2D og 2E\\Interaktive forelesningsnotater}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2D og 2E\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese de fulle forelesningsnotatene i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2d.pdf}{del 2d} og \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2e.pdf}{del 2e} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/173961}{🙂 🙁}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1-2 minutter på de korte, 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter 5 minutter, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det nå en \padletbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+%%%%% intro
+{
+
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.25]{spacetimebending.pdf}
+\column{0.5\textwidth}
+{\small
+\textcolor{yellow}{\bf Velkommen til forelesningen i del 2D og 2E! Denne forelesningen er dedikert til den fritt fallende observatøren. Denne kan være et romskip i motortrøbbel eller rett og slett en hel planet som jo faller fritt i tyngdefeltet til sola. Eller faktisk også en lysstråle! Vi skal se hvordan Einsteins tyngdelov endrer planetbaner og da spesielt Merkurs bane som er så nær solen at effekten av \ss-geometrien er viktig. Og da må nok dessverre Kepler melde pass, ikke mer rene elliptiske baner!}\\
+\textcolor{red}{Fremstillingen av generell relativitetsteori i AST2000 er basert på den fantastiske boken ``Exploring black holes'' av E. Taylor, J. Wheeler og E. Bertschinger, gratis tilgjengelig \href{http://www.eftaylor.com/exploringblackholes/}{her}. Anbefales på det sterkeste for den som er interessert.}
+{(\tiny Illustrasjon fra pngegg.com)}}
+\hyperlink{intro2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}`
+\label{intro2}
+\lastpagebutton{intro}
+\textcolor{red}{\bf Normalt kommer jeg frem til side 56 i en fysisk dobbelttime og tar resten på neste forelesning. Det bør du også gjøre!}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/173963}{Trykk her for å varme opp}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/173963}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand{\headline}{Relativistisk Euler}
+{
+
+\begin{frame}
+\label{nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{skraplan}
+%\textcolor{yellow}{\Large Og vi skal ta en pause før vi kommer helt frem til neste tema!}
+\hyperlink{eu1}{\pagebutton{Euler igjen?}}
+\end{frame}
+}
+
+
+\fullframe{eu1}{intro2}{eu2}{1}{\footnotesize
+La oss begynne med å oppsummere noen av de viktigste sammenhengene vi har kommet frem til så langt:
+\begin{itemize}
+\item {\bf Tidromsavstand i Schwarzschild-geometri:}
+\[
+\Delta\tau^2=\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+\item  {\bf Energi i et tyngdefelt:}
+\[
+\frac{E}{m}=\left(1-\frac{2M}{r}\right)\frac{\Delta t}{\Delta\tau}=\sqrt{1-\frac{2M}{r}}\frac{1}{\sqrt{1-v_\mathrm{sh}^2}}
+\]
+\item {\bf Spinn i tyngdefelt:}
+\[
+\frac{L}{m}=r^2 \frac{\Delta\phi}{\Delta\tau}
+\]
+\item {\bf Sammenheng mellom avstand/tidsintervall målt av langt-vekkobservatør og avstand/tidsintervall målt av skallobservatør:}
+\[
+\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}\ \ \ \ \ \ \ \ \ \Delta t_\mathrm{sh}=\Delta t\sqrt{\sst}
+\]
+\end{itemize}
+}
+
+
+\fullframe{eu2}{eu1}{eu3}{0}{\large
+\centerline{\includegraphics[scale=0.5]{rocket.png}}
+Romskipet ditt for motortrøbbel nær et sort hull og begynner å falle fritt.  Du kjenner verdien for energien din per masse $E/m$ og spinn per masse $L/m$ og lurer på hva som nå kommer til å skje med romskipet ditt. Kan du simulere den videre banen til romskipet? Blir det slukt av det sorte hullet eller ikke? Hvordan kan vi simulere noe sånt? Euler sier du? Ja, kanskje det, men hvordan?
+}
+
+\fullframe{eu3}{eu2}{eu4}{0}{\Large
+Tenk deg at vi lurer på hva ny $r$ og $\theta$-posisjon etter et tikk (tidsintervall) på romskipklokka (egentidsklokka) $\Delta\tau$. Altså hva er forflytningen $\Delta r$ og $\Delta\phi$ etter en tid $\Delta\tau$ målt på romskipsklokka? Og hvor mye har langt-vekkklokka tikket i løpet av dette egentidsintervallet $\Delta\tau$? Altså hvor langt tidsintervall $\Delta t$ har det gått når det har gått et tidsintervall $\Delta\tau$ på egentidsklokka? Tenk deg litt om før du går videre for å få noen hint! Kan du tenke deg hvor du kunne starte?
+}
+
+
+\choiceframe{eu4}{eu3}{0}{\Large
+\centerline{\includegraphics[scale=0.5]{rocket.png}}
+Vi skal altså finne endringene $\Delta t$, $\Delta\phi$ og $\Delta r$ etter et egettidsintervall $\Delta\tau$. La oss begynne med $\Delta t$, har du noe forslag?\hyperlink{eu4b}{\choicebutton{Tror det!}}\hyperlink{eu4a}{\choicebutton{Næææææææ...}}
+}
+
+\colfullframe{eu4a}{eu4}{eu5}{0}{black}{\Huge
+\textcolor{yellow}{
+La meg gi deg et hint: kan du bruke en av formlene på første side her???
+}
+}
+
+\colfullframe{eu4b}{eu4}{eu5}{-1}{yellow}{\Huge
+Innebærer forslaget ditt et av formlene på første siden her?
+}
+
+
+\fullframe{eu5}{eu4}{eu6}{0}{\Large
+Fikk du
+\[
+\Delta t=\frac{E/m}{1-\frac{2M}{r}}\Delta\tau
+\]
+?????
+Hvor fikk du det fra?\pagequestion{gps3b}{Jo, det var jo...}{-1}
+{\bf Uttrykket for energi på førstesiden!}
+}
+
+
+\fullframetxt{eu6}{eu5}{eu7}{1}{AHH, ok har det!}{\Large
+Hva med endringen i vinkel, $\Delta\phi$?? Kan du se hvordan den må oppdateres for et gitt egentidsintervall $\Delta\tau$...?
+\hyperlink{eu7}{\choicebutton{Jepp, jeg har uttrykket klart!}}   \pagequestion{eu6b}{Et hint kanskje?}{-2}
+Ta en kikk på den førstesiden med formler igjen!
+}
+
+\fullframe{eu7}{eu6}{eu8}{2}{\Large
+Fikk du:
+\[
+\Delta\phi=\frac{L/m}{r^2}\Delta\tau
+\]
+fra likningen for spinn?
+Husker du fra celestmekanikken? Fikk vi ikke der at
+\[
+h=r^2\dot\phi
+\]
+Vi husker at $h$ var {\bf spinn per masse}, altsa $L/M$ og $\dot\phi$ var jo $d\phi/dt$ eller $\Delta\phi/\Delta t$. Som forventet ser vi altså at $\phi$-delen av bevegelseslikningen er lik som i klassisk mekanikk.
+}
+
+
+\fullframetxt{eu8}{eu7}{eu9}{0}{ikke trykk her før du har forsøkt!}{\Large
+Hva så med $\Delta r$? Igjen trenger du noen av formlene på første siden, kanskje kombinert med noen av de vi har funnet nå. {\bf Klarer du å finne et uttrykk for $\Delta r$??}
+}
+
+\fullframe{eu9}{eu8}{eu10}{0}{\Large
+Fikk du
+\[
+\Delta r=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}\Delta\tau.
+\]
+Hvis ikke, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_1.mp4}{denne videoen}.
+{\bf Merk at du her må angi om legemet er på vei innover eller utover, altså om endringen i $\Delta r$ er positiv eller negativ.}
+}
+
+
+\fullframe{eu10}{eu9}{eu11}{0}{\small
+Oppsummert har vi:
+\[
+\Delta t=\frac{E/m}{1-\frac{2M}{r}}\Delta\tau
+\]
+\[
+\Delta\phi=\frac{L/m}{r^2}\Delta\tau
+\]
+\[
+\Delta r=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}\Delta\tau.
+\]
+Dette er kun Euler for posisjon, men virker også for akselrasjoner som vi jo har under hele bevegelsen her. Men disse likningene tar ikke hensyn til retningsendringer, du må altså manuelt sjekke om den radielle hastigheten når 0 og dermed skifte fortegn på $\Delta r$ i dette tilfellet (tenk f.eks i en ellipsebane så vil den radielle hastigheten endre fortegn i perihel og aphel når den radielle hastigheten blir null). Men disse likningene kan du simulere bevegelse i \ss-tidrom numerisk, men nå skal vi se på noen analytiske fremgangsmåter for å kvalitativt forstå hvordan baner i sterke tyngdefelt kan se ut. {\bf Og dette leder oss til Nobelprisen i fysikk i 2020...}
+}
+
+\fullframe{eu11}{eu10}{eu12}{0}{\Large
+Men først skal vi se litt på lys i tyngdefeltet! For hva med lys??? Hvordan beveger lys seg i tyngdefeltet? En stor forskjell mellom Newtons og Einsteins tyngdelov er at i Einsteins generelle relativitetsteori er det {\bf energien} som påvirker gravitasjon, ikke bare massen. Fotoner har energi selv om de ikke har masse og vil derfor både {\bf påvirke} og {\bf bli påvirket} av tidrommets krumning. \textcolor{red}{Også lysets vei gjennom tidrommet blir påvirket av tidromskrumning i \ss-tidrommet}
+}
+
+
+\fullframe{eu12}{eu11}{eu13}{0}{\huge
+Lys går med lyshastighet $v=\Delta x/\Delta t=1$. Denne likningen gir oss $\Delta x=\Delta t$. Det gir oss videre
+\[
+\Delta\tau^2=\Delta s^2=\Delta t^2-\Delta x^2=0
+\]
+Hvis $\Delta\tau=0$, kan vi vel ikke bruke uttrykkene våre for hvordan legemer beveger seg i tyngdefeltet?
+}
+
+\fullframetxt{eu13}{eu12}{eu14}{0}{Jeg har tenkt!}{\small
+Oppsummert har vi:
+\[
+\Delta t=\frac{E/m}{1-\frac{2M}{r}}\Delta\tau
+\]
+\[
+\Delta\phi=\frac{L/m}{r^2}\Delta\tau
+\]
+\[
+\Delta r=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}\Delta\tau.
+\]
+{\bf Vi kan altså ikke bruke disse uttrykkene for å se hvordan et foton vil bevege ser fremover i tid og rom og oppdatere sin $\Delta r$ og $\Delta\phi$-posisjon siden $\Delta\tau$ alltid er 0 for fotoner!} \textcolor{red}{Kan du finne et alternativ? Hva ville du gjort hvis du vil finne liknende uttrykk for hvordan et foton (og dermed) lys beveger seg gjennom tid og rom?}
+}
+
+
+
+\fullframe{eu14}{eu13}{eu15}{0}{\Huge
+Hvis vi ikke kan bruke egentid $\Delta\tau$, kunne vi bruke langt-vekktid $\Delta t$?
+}
+
+
+\fullframetxt{eu15}{eu14}{eu16}{0}{Jeg har et forslag}{\small
+Oppsummert har vi:
+\[
+\Delta t=\frac{E/m}{1-\frac{2M}{r}}\Delta\tau
+\]
+\[
+\Delta\phi=\frac{L/m}{r^2}\Delta\tau
+\]
+\[
+\Delta r=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}\Delta\tau.
+\]
+Ta en kikk på disse likningen! Kan du se hvordan du kan finne Euler-likningene for lys? Altså hvordan oppdatering $\Delta r$ og $\Delta\phi$ blir for en gitt $\Delta t$? Ikke gå videre før du har et forslag! Og husk at fotoner er masseløse, $m=0$!
+}
+
+\fullframe{eu16}{eu15}{eu17}{0}{
+Fikk du
+\[
+\Delta r=\nonumber\pm \sst\sqrt{1-\sst\frac{(L/E)^2}{r^2}}\Delta t
+\]
+\[
+r\Delta\phi=\pm\frac{L/E}{r}\sst\Delta t.
+\]
+{\Huge ???}
+\hyperlink{eu17}{\choicebutton{Dette fikk jeg til, gå videre!}}\\  \pagequestion{eu16b}{Kom ikke helt imål, hint?}{-1}
+Den øverste likningen på forrige side, den som gir $\Delta t$ som funksjon av $\Delta\tau$, kan du skrive om den til et uttrykk for $\Delta\tau$? Og sette inn dette i de andre to likningene? Prøv igjen, og hvis du ikke får det til, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_2.mp4}{denne videoen}
+}
+
+\fullframe{eu17}{eu16}{eu17b}{1}{
+\[
+\Delta r=\nonumber\pm \sst\sqrt{1-\sst\frac{(L/E)^2}{r^2}}\Delta t
+\]
+\[
+r\Delta\phi=\pm\frac{L/E}{r}\sst\Delta t.
+\]
+Ser du at størrelsen spinn delt på energi for lyset går igjen her? Denne har en helt spesiell betydning som vi skal se nærmere på nå. Ser du at det er denne egenskapen og kun denne egenskapen ved lyset som avgjør lysets bevegelse i tyngdefeltet? Det er altså hverken lysets spinn alene eller lysets energi alene som avgjør bevegelsen, {\bf men forholdet mellom de to.}.
+}
+
+\colfullframe{eu17b}{eu17}{eu17c}{0}{denim}{\textcolor{yellow}{\small
+\centerline{\includegraphics[scale=0.2]{radvel.png}}
+{\bf La oss ta et eksempel, vi har:}
+\[
+\Delta r=\pm \sst\sqrt{1-\sst\frac{(L/E)^2}{r^2}}\Delta t
+\]
+\[
+r\Delta\phi=\pm\frac{L/E}{r}\sst\Delta t.
+\]
+Anta at langt-vekkobservatøren har sendt en lyssignal radielt rett innover mot det sorte hullet. Kan du bruke disse likningene til å se hvilken hastighet langt-vekkobservatøren måler for lyset i det øyeblikk lyset er på en avstand $r$ fra det sorte hullet?
+}
+}
+
+\colfullframetxt{eu17c}{eu17b}{eu17d}{0}{denim}{\footnotesize NEI, VIL IKKE!}{\textcolor{yellow}{\footnotesize
+{\large
+\[
+\Delta r=\pm \sst\sqrt{1-\sst\frac{(L/E)^2}{r^2}}\Delta t
+\]
+}
+{\bf Fikk du det til?} {\bf Eller kanskje du ikke tror på svaret ditt?}\pagequestion{eu17x}{\footnotesize Et lite hint for sikkerhetsskyld?}{-1}
+Ok da! Lyset går kun radielt, så her er det kun radiellhastighet $v_r$ vi er interessert i! Og hva er radiell hastighet uttrykt ved $\Delta r$ og $\Delta t$??
+\pagequestion{eu17y}{\footnotesize Jo det er jo...}{0}
+Nettopp!$v_r=\frac{\Delta r}{\Delta t}$ og den får du rett fra disse likningen. Men hva er spinnet $L$ for denne lysstrålen?\pagequestion{eu17z}{\footnotesize Jammen det er jo...}{0}
+Ikke sant| Lysstrålen går jo radielt innover, så den har jo ikke noe spinn. Men hva blir lysfarta da?\pagequestion{eu17w}{\footnotesize NEI, IKKE TALE OM!}{0}
+Det blir jo
+\[
+v_r=-\sst
+\]
+(merk minustegn siden lyset faller {\bf innover})\pagequestion{eu17q}{{\footnotesize\bf Ikke tale om sa jeg! Du lurer ikke meg!}}{0}
+Ikke noe lureri her, lover!
+}
+}
+
+\colfullframe{eu17d}{eu17c}{eu17h}{1}{denim}{\textcolor{yellow}{
+\centerline{\includegraphics[scale=0.2]{radvel.png}}
+{\large
+\[
+v_r=\sst
+\]
+}
+Jo, faktisk! Lureriet var i del 2A og 2B da vi sa at lysets hastighet er den samme for alle observatører. Her ser vi at lengt-vekkobservatøren {\bf ikke} måler en lyshastighet på $1$. Men hvilken lysfart får vi når $r$ nærmer seg eventhorisonten?\pagequestion{eu170}{{\footnotesize\bf SLUTT! Nå går du over streken!}}{-2} Nettopp, ja, lysfarta går mot null ved eventhorisonten {\bf den også!}. {\bf Vel og merke målt fra en langt-vekkobservatør!}.
+}
+}
+
+
+\colfullframe{eu17h}{eu17d}{eu17e}{2}{denim}{\textcolor{yellow}{\footnotesize
+\centerline{\includegraphics[scale=0.1]{radvel.png}}
+{\large
+\[
+v_r=-\sst
+\]
+}
+Vi må gjøre en liten endring i Einsteins antakelse for å få ting til å stemme i generell relativitetsteori:
+\begin{block}{Lysfarta...}
+{...er den samme i alle referansesystemer, {\bf så lenge den blir målt lokalt, dvs. at observatøren som måler hastigheten er nær lysstrålen når hastigheten måles}. Altså: Lyshastigheten er den samme for alle {\bf lokale observatører}.}
+\end{block}
+Langt-vekkobservatøren er per def {\bf ikke en lokal observatør} og vil dermed {\bf ikke} måle at lys i gravitasjonsfeltet har lysfart. Vi ser at han måler at lyset hele tiden bremses i gravitasjonsfeltet. Men når lyset farer forbi en skall-observatør eller fritt fallende observatør og disse måler hastigheten til lyset i det det farer forbi, så vil de finne at $v_r=1$ {\bf fordi de måler lokalt, antar lokalt intertialsystem og bruker Lorentzgeometri}. I Lorentzgeometri (uten tyngdefelt) har vi sett at lysfarta {\bf faktisk} er den samme i alle referansesystemer!
+}
+}
+
+
+\colfullframe{eu17e}{eu17h}{pause}{0}{denim}{\textcolor{yellow}{
+\[
+\Delta r=\pm \sst\sqrt{1-\sst\frac{(L/E)^2}{r^2}}\Delta t
+\]
+\[
+r\Delta\phi=\pm\frac{L/E}{r}\sst\Delta t.
+\]
+I oppgave 2E.3 skal du se på tangensiell lysfart, altså lysfarta $v_\phi$ målt av langt-vekkobservatøren for lys som skallobservatøren sender ut parallellt med skallet sitt. Ved å se på formelene kan du kanskje allerede ane svaret? (hvis lyset går tangensielt så er vel $\Delta r=0$, det gir deg kanskje $L/E$? Og utledet ikke vi tangensiell fart til å være $v_\phi=r\dot{\phi}$ i celestmekanikken? (dette var en utledning du bør kunne!)
+}
+}
+
+{
+
+\begin{frame}
+\label{pause}
+\hyperlink{eu17e}{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{Kaffe!}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+}
+\textcolor{yellow}{\large Litt kaffe før vi skal bruke uttrykket for lys videre! En tur ut i høststormene, få klarnet hjernen. Har du nå kommet deg over sjokket av at lysfarta faktisk ikke er den samme for alle observatører likevel?}
+\\
+\vspace*{0.5cm}
+\hyperlink{eu18}{\pagebutton{Jeg har kommet meg, hodet er klart, sett igang!}}
+\end{frame}
+}
+
+
+
+
+\colfullframe{eu18}{eu17e}{eu19}{0}{denim}{\textcolor{yellow}{\small
+\centerline{\includegraphics[scale=0.1]{impact1.png}}
+Forholdet $L/E$ er knyttet til et begrep som du kommer til å møte mange ganger i fysikken i årene som kommer: {\bf impaktparameter}. Denne brukes i interaksjoner mellom legemer, partikler eller, her, lys med massivt legeme. Over ser du et eksempel med et sort hull med masse $M$ og et foton som kommer inn fra venstre side med bevegelsersmengde $\vec{p}$. I denne figuren er fotonet og det sorte hullet {\bf veldig langt fra hverandre} selv om det ikke ser slik ut i figuren. Når de er langt fra hverandre {\bf (dvs. de har enda ikke begynt å påvirke hverandres bevegelse)} så skal du 
+\begin{enumerate}
+\item \textcolor{yellow}{tegne en rett lang linje som følger $\vec{p}$ og}
+\item \textcolor{yellow}{tegne en annen linje parallell til den første som går gjennom sentrum av det sorte hullet,}
+\item \textcolor{yellow}{avstanden mellom disse to paralelle linjene er impaktparameteren $b$.}
+\end{enumerate}
+}
+}
+
+
+\colfullframe{eu19}{eu18}{eu20}{0}{denim}{\textcolor{yellow}{\small
+\centerline{\includegraphics[scale=0.2]{impact1.png}}
+Hang du med på beskrivelsen av hvordan du finner impaktparameteren? Vi tar det en gang til for sikkerhetsskyld: Når lyset er {\bf langt borte fra det sorte hullet, så skal du...}
+\begin{enumerate}
+\item \textcolor{yellow}{tegne en rett lang linje som følger $\vec{p}$ og}
+\item \textcolor{yellow}{tegne en annen linje parallell til den første som går gjennom sentrum av det sorte hullet,}
+\item \textcolor{yellow}{avstanden mellom disse to paralelle linjene er impaktparameteren $b$.}
+\end{enumerate}
+{\bf Er det klinkende klart?}
+}
+}
+
+
+\colfullframe{eu20}{eu19}{eu21}{0}{denim}{\textcolor{yellow}{\small
+\centerline{\includegraphics[scale=0.2]{impact2.png}}
+Posisjonsvektoren til fotonet er $\vec{r}$ og $\theta$ er vinkelen mellom linja som ligger i forlengelsen av $\vec{r}$ og linja som ligger i forlengelsen av $\vec{p}$. Kan du uttrykke absoluttverdien av spinnet $L$ først med $\vec{r}$ og $\vec{p}$ og deretter skrive dette ut ved hjelp av $p$ (absoluttverdi av bevegelsemengde) og $b$ (impaktparameter)? Kan du så få inn energien $E$ her til fotonet ved å bruke på en sammenheng mellom energi og bevegelsemengde (husk at fotoner har masse 0) som vi utledet i del 2B? Kommer du frem til en sammenheng mellom $L/E$ og impaktparameteren?
+}
+}
+
+
+\colfullframe{eu21}{eu20}{eu22}{0}{denim}{\textcolor{yellow}{\small
+\centerline{\includegraphics[scale=0.2]{impact2.png}}
+{\Huge Fikk du det til???}
+}
+}
+
+\colfullframe{eu22}{eu21}{eu23}{0}{denim}{\textcolor{yellow}{\small
+\centerline{\includegraphics[scale=0.2]{impact2.png}}
+Fikk du
+\[
+b=\frac{L}{E}
+\]
+Altså at faktoren $\frac{L}{E}$ som vi har i bevegelsesligningende for et foton er nettopp impaktparameteren! Merk at vi har sett bort fra fortegnet på spinnet her siden det uansett justeres med en $\pm$ i uttryket for $\Delta\phi$ avhengig av bevegelsesretningen. {\bf Hvis du ikke kom frem, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_3.mp4}{denne videoen}.}
+}
+}
+
+\fullframe{eu23}{eu22}{eu24}{0}{
+Setter vi inn får vi
+\begin{align*}
+\frac{dr}{dt}&=\pm\sst\sqrt{1-\sst\frac{b^2}{r^2}}\\
+r\frac{d\phi}{dt}&=\pm\frac{b}{r}\sst.
+\end{align*}
+Merk at vi nå har gjort $\Delta$-ene infinitesimalt små slik at de har blitt til $d$-er. Merk også at vi har $rd\phi/dt$ på venstre side isteden for bare $d\phi/dt$, kan du se hvorfor? \pagequestion{eu23b}{Njaaaa, kanskje.}{-1} Husker du at vi i celestmekanikken fant at tangensialhastighet er $v_\phi=r\dot{\phi}$? Ja, det er nettopp den du har på venstre side nederst! Og øverst har du radiell hastighet til lyset. {\bf Alt sett fra langt-vekkobservatøren selvfølgelig!}
+}
+
+\fullframe{eu24}{eu23}{nytema2}{1}{
+{\large Oppsummert så har vi altså på differensialform (som fysiker, bytt gjerne ut $d$-ene med $\Delta$-er for å få differensform):}\\
+\vspace*{0.5cm}
+
+\begin{columns}
+\column{0.5\textwidth}
+{\bf For legemer med masse:}
+{\footnotesize
+\[
+\frac{dt}{d\tau}=\frac{E/m}{1-\frac{2M}{r}}
+\]\\
+\[
+\frac{d\phi}{d\tau}=\frac{L/m}{r^2}
+\]\\
+\[
+\frac{dr}{d\tau}=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+}
+\column{0.5\textwidth}
+{\bf For lys:}
+{\footnotesize
+\begin{align*}
+\frac{dr}{dt}&=\pm\sst\sqrt{1-\sst\frac{b^2}{r^2}}\\
+r\frac{d\phi}{dt}&=\pm\frac{b}{r}\sst.
+\end{align*}\\
+\vspace*{1.8cm}
+}
+\end{columns}
+}
+
+
+
+\renewcommand{\headline}{Kloss på skråplan}
+{
+
+\begin{frame}
+\label{nytema2}
+\hyperlink{eu24}{\pagebutton{\small Forrige side}}
+\nytemaside{effpot}
+%\textcolor{yellow}{\Large Og vi skal ta en pause før vi kommer helt frem til neste tema!}
+\hyperlink{skra1}{\pagebutton{En tur tilbake til videregående...}}
+\end{frame}
+}
+
+\fullframe{skra1}{eu24}{skra2}{0}{\label{skraplan}
+\centerline{\includegraphics[scale=0.2]{skraplan1.png}}
+Vi ser en kloss på et friksjonsfritt skråplan, eller nærmere sagt, {\bf to} klosser. Den røde har null hastighet og står akkurat slik at det begynner å vippe nedover. Den gule står allerede nede i dalen, også med null hastighet. {\bf Hva kommer til å skje videre med disse to klossene, og hvordan kom du frem til det?}
+}
+
+\fullframe{skra2}{skra1}{skra3}{0}{\huge
+\centerline{\includegraphics[scale=0.15]{skraplan1.png}}
+Så hvor langt opp på den andre siden kommer hver av klossene? Og hva skjer når de kommer tilbake?
+}
+
+
+\fullframe{skra3}{skra2}{skra4}{0}{
+Det er vel {\bf energibetrakninger} vi bruker her? Energien avgjør, ikke sant?
+\[
+E=\frac{1}{2}mv^2+mgh(x)
+\]
+der $v$ er farten til klossen, $m$ er massen til klossen, $g$ er tyngdeakselrasjonen og $h(x)$ er høyden som funksjon av posisjon. {\bf MERK} at høyden er definert til å være 0 der den røde klossen begynner. Vi definerer $g$ til å være absoluttverdien av tyngdeakselrasjonen, altså {\bf positiv}! Merk at vi kan definere 0-punktet for potensiell energi der hvor vi ønsker. Det normale er å definere den til å være 0 i det uendelige slik at den alltid er negativ men det er ikke nødvendig, fysikken vil bli den samme uansett hvor 0-punktet defineres. Her ser vi at vi har en høyde som kan være positiv eller negativ og dette avgjør om den potensielle energien er positiv eller negativ. 0-punktert for høyden definerer 0-punktet for potensiell energi.
+}
+
+
+
+\fullframe{skra4}{skra3}{skra5}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan1.png}}
+\[
+E=\frac{1}{2}mv^2+mgh(x)
+\]
+For den røde klossen kan vi finne energien i startpunktet: siden $v=0$ og $h(x)=0$ der så er $E=0$. Klossen kommer til å skli ned i dalen, opp igjen på andre siden og vil til slutt nå $v=0$ på andre siden. Men siden $E=0$, så gir det oss fra likningen at den stopper ved $h=0$ også på den andre siden, {\bf ENIG?}
+}
+
+
+\fullframe{skra5}{skra4}{skra6}{0}{
+\[
+E=\frac{1}{2}mv^2+mgh(x)
+\]
+Hva med den gule klossen? Siden $v=0$ når $h=h_0$ har den energi:
+\[
+E=mgh_0
+\]
+der $h_0$ er høyden som den begynner på og som er {\bf negativ}. Dermed er totalenergien i dette tilfellet {\bf negativ}. Igjen så sklir klossen ned mot bunnen av dalen og opp på den andre siden, men hvis $E=mgh_0$ så vil den ved $v=0$ igjen nå høyden $h_0$ for at energi skal være bevart. Men tenk deg nå at den røde klossen kommer inn med $v>0$. Den klossen vil komme høyere opp enn $h=0$ på den andre siden, og vil komme tilbake igjen og forsvinne ut til høyre med $v>0$. {\bf Ser du hvorfor det må bli slik fra energibetraktninger??} \textcolor{red}{Ikke gå videre før du her helt overbevist om at det er slik! Prøv deg frem med litt eksempler om du ønsker.}
+}
+
+
+\fullframe{skra6}{skra5}{skra7}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan2.png}}
+\[
+E=\frac{1}{2}mv^2+mgh(x)
+\]
+{\bf Ser du dermed også at $E=0$ er en grense for en slags unnslippingshastighet her?} Hvis $E<0$ så blir klossen fanget i dalen og svinger frem og tilbake mellom to ytterpunkter. Hvis derimot $E>0$ så kommer klossen over $h>0$ på den andre siden, og forsvinner deretter ut til høyre uten å komme tilbake.
+}
+
+\fullframe{skra7}{skra6}{skra8}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan4.png}}
+{\bf La oss nå skrive om uttrykket ved å dele på $m$ på begge sider:}
+\[
+\frac{E}{m}=\frac{1}{2}v^2+V(x)
+\]
+der $V(x)=gh(x)$ er {\bf tyngdepotensialet}. \textcolor{red}{Figuren viser nå det som før var bakken som {\bf potensialet $V(x)$}.} Vi har altså et system som beveger seg i et potensial. Potensialet avgjør bevegelsen til legemet.
+}
+
+
+\fullframe{skra8}{skra7}{skra9}{0}{
+La oss nå ta dette {\bf enda} litt videre og bare se {\bf rent matematisk på det}. Ser du at vi kan skrive om
+\[
+\frac{E}{m}=\frac{1}{2}v^2+V(x)
+\]
+til
+\[
+A=Bv^2+V(x)
+\]
+der $A$ og $B$ er konstanter? ($A$ er jo energi per masse som er konstant, og $B$ er bare $1/2$). 
+}
+
+\fullframe{skra9}{skra8}{nytema3}{0}{
+\[
+A=Bv^2+V(x)
+\]
+\textcolor{red}{\bf Er du enig i at hvis vi har et hvilket som helst annet fysisk system der vi kan omforme bevegelseslikningene til denne formen med et potensial $V(x)$ som likner litt på potensialet vi hadde}, så er konklusjonene våre akkurat like gyldige for dette nye systemet? {\bf Fordi} matematikken er nøyaktig den samme, og alle konklusjonene våre kom vi til ved å bruke det matematiske uttrykket. {\bf Det betyr at for et hvilket som helst fysisk system der $A$ og $B$ er konstanter (som kan være helt forskjellig fra de vi snakket om $A$ trenger ikke engang å være energi)} så kan dette problemet {\bf omformes} til et tilsvarende kloss-på-skråplan-problem? Med konklusjonen:
+\begin{itemize}
+\item Hvis konstanten $A<0$ så vil legemet det er snakk om være bundet i et potensial og svinge frem og tilbake mellom to posisjoner
+\item Hvis konstanten $A>0$ så vil legemet det er snakk om {\bf ikke} være bundet og kunne bevege seg uendelig langt bort.
+\item Grensetilfellet mellom det to er $A=0$
+\end{itemize}
+}
+
+\renewcommand{\headline}{Effektivt potensial}
+{
+
+\begin{frame}
+\label{nytema3}
+\hyperlink{skra9}{\pagebutton{\small Forrige side}}
+\nytemaside{lys}
+\textcolor{yellow}{\Large En skikkelig strekk på bena nå! Legg deg gjerne på sofaen, sett vekkeklokka på 20 min, lukk øynene! {\bf På en normal fysisk dobbelttime kommer jeg omtrent til side 56. Anbefaler at du også stopper når du nå start kommer til side 56 og da venter til imorgen med resten av denne forelesningen.}}
+\hyperlink{skra10}{\pagebutton{Gå på!}}
+\end{frame}
+}
+
+
+\fullframetxt{skra10}{skra9}{skra11}{0}{Tjaaaa......ikke helt rett frem det der nei...}{\label{effpot}\small
+Høres dette litt kjent ut? La oss se om vi kan finne et system som likner. {\bf Hva med to-legeme-problemet}? La oss anta et lite legeme med masse $m$ i gravitasjonsfeltet fra en planet eller stjerne med masse $M$. Da kan vi i det Newtonske tilfellet hvor vi antar at $m$ ikke påvirker $M$ skrive at...\pagequestion{skra10b}{Ja, hvordan blir uttrykket for energi her?}{-1} Fikk du
+\[
+E=\frac{1}{2}mv^2-G\frac{mM}{r}
+\]
+Hvis vi skriver om dette til
+\[
+\frac{E}{m}=\frac{1}{2}v^2+V(r)
+\]
+så ser vi at potensialet $V(r)=-GM/r$ {\bf ikke} har en form som likner på skråplanet vi diskuterte tidligere. Men ellers så har vi samme form som likningen:
+\[
+A=Bv^2+V(x)
+\]
+Kan vi skrive om dette uttrykket så vi får et potensial som likner og dermed kan bruke skråplananalogien?
+}
+
+\fullframetxt{skra11}{skra10}{skra12}{1}{Klart det, skal bare sjekke del 1B en gang til}{
+\[
+\frac{E}{m}=\frac{1}{2}v^2+V(r)
+\]
+Vi vet at $v$ er totalfarta. Men farta kan deles opp i en radiell og en tangensiell fart, husker du hvordan? Altså vi kan skrive
+\[
+\vec{v}=v_r\vec{e}_r+v_\theta\vec{e}_\theta
+\]
+men hva er $v_r$ og $v_\theta$ her? Uttrykk svaret med størrelsene $r$ og $\theta$ og deres tidsderiverte.\pagequestion{skra11b}{Dette bare {\bf må} jeg få til, la meg tenke litt...}{-2} Fikk du...\pagequestion{skra11c}{ja, jeg fikk...}{0}
+\[
+\vec{v}=\dot{r}\vec{e}_r+r\dot{\theta}\vec{e}_\theta
+\]
+og vet nøyaktig hvordan jeg kommer frem til dette. {\bf Hvis ikke så kikker jeg på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1b.pdf}{Del 1B} for å se hvordan man kom frem til det}. Men kan du skrive $v_\theta$ her ut med $h$ som er spinn per masse?
+}
+
+
+\fullframe{skra12}{skra11}{skra13}{2}{
+Det var jo slik at $h$ som er spinn per masse jo kan skrives (fra definisjonen av spinn) som
+\[
+h=|\vec{r}\times\vec{v}|=rv_\theta
+\]
+Altså får vi at $v_\theta=h/r$! Kan du nå sette inn for $v_r$ og $v_\theta$ i 
+\[
+\frac{E}{m}=\frac{1}{2}v^2-G\frac{M}{r}
+\]
+og komme frem til
+\[
+A=Bv_r^2+V(r)
+\]
+der
+\[
+V(r)=\left[\frac{1}{2}\frac{(L/m)^2}{r^2}-G\frac{M}{r}\right]
+\]
+og $v_r$ er den radielle hastighetskomponenten $\dot{r}$. Prøv selv, dette skulle være rett frem nå!
+}
+
+
+\fullframe{skra13}{skra12}{skra14}{0}{\small
+ Vi kom altså til at
+\[
+A=Bv_r^2+V_\mathrm{eff}(r)\ \ \ \ \ \ \ V_\mathrm{eff}(r)=\left[\frac{1}{2}\frac{(L/m)^2}{r^2}-G\frac{M}{r}\right]
+\]
+{\bf Hvis du ikke fikk det til, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_4.mp4}{denne videoen}.} Dette potensialet ser nøyaktig ut som skråplanet vårt fra tidligere. Ser du at når $r\rightarrow\infty$ så går $V(r)\rightarrow0$ akkurat som før. {\bf Vi ser at vi her kun ser på r-komponenten av bevegelsen, alt som har med $\phi$-bevegelsen å gjøre har blitt borte!}. Men kan du nå tolke dette? For en planet som er bundet har vi $E<0$. Det tilsvarer klossen som svinger frem og tilbake. {\bf Hva betyr klossen som svinger frem og tilbake mellom to ytterpunkter her?} Merk at potensialet $V(r)$ her {\bf ikke er det virkelige tyngdepotensialet}, det er potensialet vi ville hatt, dersom dette var likningen for en kloss på skråplan. Vi kaller dette for det {\bf effektive potensialet} for klossen på skråplan, altså potensialet i det analoge fysiske systemet! Det er ikke det reelle potensialet for det faktiske systemet vi ser på. Vi kommer iblant til å markere potensialet med ``eff'' for å klargjøre dette, men ikke alltid da det som regel vil være klart fra konteksten at det er snakk om effektivt potensial.
+}
+
+\fullframe{skra14}{skra13}{skra14b}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan5.png}}
+Planeten følger liningen for kloss på et skråplan,
+\[
+A=Bv^2+V(x)
+\]
+der skråplanet er gitt ved
+\[
+V_\mathrm{eff}(r)=\left[\frac{1}{2}\frac{(L/m)^2}{r^2}-G\frac{M}{r}\right]
+\]
+og tilsvarer figuren over. 
+}
+
+\fullframe{skra14b}{skra14}{skra15}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan6.png}}
+En bundet planet med $E<0$ svinger altså frem og tilbake nede i dalen. {\bf Hva svinger?} Jo det vi ser på i likningen er jo $r$-posisjonen til planeten. Det er jo den som $V(r)$ avhenger av (på samme måte som det var x-posisjonen for klossen). Planeten svinger frem og tilbake mellom to $r$-posisjoner, en som er nærmere $r=0$ og en som er lenger vekk fra $r=0$. {\bf Er ikke de to ytterpunktene aphel og perihel?}.
+}
+
+
+\fullframe{skra15}{skra14b}{skra16}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan6.png}}
+\[
+A=Bv_r^2+V_\mathrm{eff}(r)\ \ \ \ \ \ \ V_\mathrm{eff}(r)=\left[\frac{1}{2}\frac{(L/m)^2}{r^2}-G\frac{M}{r}\right]
+\]
+Vi ser altså hvordan planetens $r$-posisjon, altså avstand fra sentrum $r=0$, forandrer seg med tida uten å se på $\phi$-bevegelsen. {\bf Vi ser på $r$-komponenten av ellipsebanen!}. Ellipsebanen er jo akkurat en slik svingning mellom aphel og perihel, frem og tilbake, på samme måte som klossen!
+}
+
+\fullframe{skra16}{skra15}{skra17}{0}{
+\[
+A=Bv_r^2+V(r)\ \ \ \ \ \ \ V_\mathrm{eff}(r)=\left[\frac{1}{2}\frac{(L/m)^2}{r^2}-G\frac{M}{r}\right]
+\]
+Og når $E>0$, ja da vet vi at vi har {\bf hyperbelbane}, planeten kommer inn til et perihel og forsvinner så ut og kommer aldri tilbake. {\bf Nøyaktig som klossen, den kommer inn, ned i dalen, opp på andre siden til den nærmeste $r$-verdien bestemt av energien, og forsvinner så ut til høyre!}. \textcolor{red}{Vi har altså sett hvordan vi kan omforme uttrykket for energi til likningen for kloss på et skråplan for $r$-bevegelsen og fra dette tolke hvordan banene ser ut. Fordelen med dette er at regningen er enkel, vi kan få mye informasjon om banen selv om vi ikke får den nøyaktige $\phi$-bevegelsen. Vi skal derfor bruke nøyaktig denne fremgangsmåten for å se på baner i et sterkt tyngdefelt rundt et sort hull.}
+}
+
+
+\fullframe{skra17}{skra16}{skra18}{0}{
+La oss se igjen på bevegelseslikningene for et legeme i et sterkt tyngdefelt:
+\[
+\frac{dt}{d\tau}=\frac{E/m}{1-\frac{2M}{r}}
+\]
+\[
+\frac{d\phi}{d\tau}=\frac{L/m}{r^2}
+\]
+\[
+\frac{dr}{d\tau}=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+Kan du på noen måte se hvordan du kunne omforme dette til en kloss på et skråplan:
+\[
+A=Bv^2+V(x)
+\]
+eller kanskje heller noe alla det vi fikk i det Newtonske tilfeller:
+\[
+A=Bv_r^2+V_\mathrm{eff}(r)
+\]
+der $v_r$ kan være $dr/d\tau$.
+}
+
+\colfullframe{skra18}{skra17}{skra19}{0}{red}{
+\textcolor{yellow}{{\Huge
+Fikk du det til? Hvis ikke gi det et par forsøk til!\pagequestion{skra18b}{Et lite hint kan du få!}{-1}}
+Du trenger kun
+\[
+\frac{dr}{d\tau}=\pm\sqrt{\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+}
+}
+
+\fullframe{skra19}{skra18}{skra20}{1}{\small
+Hvis vi opphøyer i annen potens
+\[
+\left(\frac{dr}{d\tau}\right)^2=\left(\frac{E}{m}\right)^2-\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst
+\]
+og flytter litt rundt på leddene
+\[
+\left(\frac{E}{m}\right)^2=\left(\frac{dr}{d\tau}\right)^2+\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst
+\]
+har formen
+\[
+A=Bv_r^2+V(r)
+\]
+der $v_r=dr/d\tau$ og $A$ er $(E/m)^2$ (merk i annen potens her, men det er helt ok, så lenge $A$ er en konstant størrelse, kan det være hva som helst! {\bf Men da definerer vi potensialet med rottegn slik at potensial beholder enheter $E/m$}) og $B=1$ mens farta her er $r$-farta med hensyn på egentiden. Og potensialet er
+\[
+V_\mathrm{eff}(r)=\sqrt{\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+}
+
+
+\fullframetxt{skra20}{skra19}{skra21}{0}{Ikke trykk her før du har funnet minst en forskjell, helst to!}{
+\centerline{\includegraphics[scale=0.15]{skraplan7.png}}
+{\bf Her ser du det relativistiske potensialet:}
+\[
+V_\mathrm{eff}(r)=\sqrt{\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+\textcolor{red}{Ser du minst to radikale forskjeller med Newtons potensial?}
+}
+
+
+\fullframetxt{skra21}{skra20}{skra22}{0}{Jeg har tenkt meg godt om!}{\footnotesize
+\centerline{\includegraphics[scale=0.13]{skraplan7.png}}
+Forskjellene er...\pagequestion{skra21b}{\footnotesize ...jeg har det...}{-1}
+{\bf For det første} at det nye skråplanet vårt ikke fortsetter uendelig høyt opp når $r\rightarrow 0$. Det har en topp og forsvinner så {\bf NEDOVER}.\pagequestion{skra21c}{\footnotesize Den var tydelig ja, men den andre forskjellen...}{0} Er at potensialet flater ut når $V(r)=1$ og ikke når $V(r)=0$ slik som før! Det betyr at det er $E/m=1$ som er grenseverdien som avgjør om legemet blir bundet eller ikke, og ikke $E/m=0$ som før. {\bf Men kan du tolke dette siste??? Hva betyr det fysisk at grensen nå går ved $E/m=1$?? Dette vet du, du må bare tenke deg om et øyeblikk!}
+}
+
+
+
+\fullframe{skra22}{skra21}{skra23}{1}{
+Når $E=0$ i klassisk fysikk så betyr det at
+\[
+E=\frac{1}{2}mv^2-G\frac{mM}{r}=0
+\]
+Men hvis dette er oppfylt, hva blir da $E/m$ i relativitetsteorien?? Der har vi jo et annet uttrykk for $E/m$!\pagequestion{skra22b}{Aha, tror jeg ser det!}{-2}
+For svake tyngdefelt og lave hastigheter fant vi jo i del 2C at
+\[
+E\approx\frac{1}{2}mv^2-G\frac{mM}{r}\mathbf{+mc^2}
+\]
+(bruker nå SI-enheter!). At klassisk $E/m=0$ betyr jo at de første to leddene er 0, og da er $E=mc^2$ for relativistisk energi. Men med relativistiske enheter så betyr det at $E/m=1$! Altså {\bf hvileenergi!}. Det at $E/m=1$ er grensen i det relativistiske tilfellet betyr altså at grensen mellom om legemet er bundet eller ikke går ved energien som tilsvarer at legemet har kun hvileenergi. Når den klassiske Netwonske totalenergien er 0, så har legemet enda hvileenergi i relativistisk fysikk!
+}
+
+\fullframe{skra23}{skra22}{skra24}{2}{\small
+\centerline{\includegraphics[scale=0.13]{skraplan7.png}}
+\[
+V_\mathrm{eff}(r)=\sqrt{\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+Men hva betyr så denne toppen??? Husk at likningen har blitt omformet til en kloss på et skråplan, disse to fysiske problemstillingene {\bf har nøyaktig samme løsninger siden de matematiske likningene er identiske!} \textcolor{red}{Vi kan altså se på hva som skjer med klossen for å vite hva som skjer med en planet eller annet objekt i et sterkt tyngdefelt.}
+}
+
+
+\fullframe{skra24}{skra23}{skra24b}{0}{
+{\bf Hvis vi bruker klossen så kan vi altså konkludere at:}
+\begin{itemize}
+\item Hvis konstanten $E/m<1$ så vil legemet det er snakk om være bundet i et potensial og svinge frem og tilbake mellom to posisjoner
+\item Hvis konstanten $E/m>V(r_\mathrm{crit})$, altså potensialet i den $r$-verdien der potensialet har en topp (kritisk radius), så vil klossen komme seg over toppen og falle ned mot $r=0$.
+\item Hvis konstanten $E/m>1$ men samtidig $E/m$ {\bf mindre enn} den kritiske energien $E_\mathrm{crit}/m=V(r_\mathrm{crit})$ så vil legemet det er snakk om {\bf ikke} være bundet men heller ikke gå over bakketoppen, det vil oppføre seg som når $E/m>0$ i det klassiske tilfellet, det kommer inn, går et stykke opp bakken, og går så tilbake igjen for å forsvinne ut i det uendelige.
+\item For $E/m=V(r_\mathrm{crit})$ så ser vi at klossen blir liggende stille på $r=r_\mathrm{crit}$, som tilsvarer en sirkelbane, men en {\bf veldig ustabil en}, det skal lite til for at klossen faller ned på en av sidene! Samme gjelder for legemet i tyngdefeltet, noen støvpartikler eller til og med lysstråler er nok til å dytte det ut av den ustabile banen.
+\end{itemize}
+}
+
+
+\fullframe{skra24b}{skra24}{pause2}{0}{\footnotesize
+\textcolor{red}{\bf\large Det som sto på forrige side er så essensielt at vi repeterer det en gang til her:}
+\begin{itemize}
+\item Hvis konstanten $E/m<1$ så vil legemet det er snakk om være bundet i et potensial og svinge frem og tilbake mellom to posisjoner
+\item Hvis konstanten $E/m>V(r_\mathrm{crit})$, altså potensialet i den $r$-verdien der potensialet har en topp (kritisk radius), så vil klossen komme seg over toppen og falle ned mot $r=0$.
+\item Hvis konstanten $E/m>1$ men samtidig $E/m$ {\bf mindre enn} den kritiske energien $E_\mathrm{crit}/m=V(r_\mathrm{crit})$ så vil legemet det er snakk om {\bf ikke} være bundet men heller ikke gå over bakketoppen, det vil oppføre seg som når $E/m>0$ i det klassiske tilfellet, det kommer inn, går et stykke opp bakken, og går så tilbake igjen for å forsvinne ut i det uendelige.
+\item For $E/m=V(r_\mathrm{crit})$ så ser vi at klossen blir liggende stille på $r=r_\mathrm{crit}$, som tilsvarer en sirkelbane, men en {\bf veldig ustabil en}, det skal lite til for at klossen faller ned på en av sidene! Samme gjelder for legemet i tyngdefeltet, noen støvpartikler eller til og med lysstråler er nok til å dytte det ut av den ustabile banen.
+\end{itemize}
+\textcolor{red}{\bf\large Det som er viktig her er at du forstår hva hvert punkt her har å si for selve banebevegelsen, kan du tolke klossens bevegelse som banebevegelse? Hvis ikke, så må du spørre!}
+}
+
+
+{
+
+\begin{frame}
+\label{pause2}
+\hyperlink{skra24b}{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{Kaffe!}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+}
+\textcolor{yellow}{Her bør du egentlig stoppe for idag! Skulle du være ekstra opplagt, så sleng innpå en kaffe så du blir enda mer opplagt og kan fortsette, men anbefaler i alle tilfelle å vente til imorgen med resten! (og så kan du jo ta kaffen likevel da, er lov det)}
+\\
+\vspace*{0.5cm}
+\hyperlink{skra25}{\pagebutton{På'n igjen!}}
+\end{frame}
+}
+
+\fullframe{skra25}{skra24b}{skra26}{0}{
+\centerline{\includegraphics[scale=0.13]{skraplan7.png}}
+Synes du det er overraskende at legemet må ha {\bf stor nok energi} altså energi større enn $E_\mathrm{crit}$ for å kunne bli slukt av det sort hullet?\pagequestion{skra25b}{Joa, litt rart er det vel!}{-1} Årsaken kan enkelt sies av hvis energien er lav så vil spinnet dra legemet rundt det sorte hullet og sende det ut igjen (hvis $E/m>1$) men hvis energien er høy nok til å overvinne effekten av spinnet, så kan det komme innenfor $r_\mathrm{crit}$.
+}
+
+
+
+
+
+\fullframe{skra26}{skra25}{skra27}{1}{
+\centerline{\includegraphics[scale=0.13]{skraplan7.png}}
+Vi ser altså at hvis energien er {\bf for stor}, så blir objektet slukt av det sorte hullet. Og hvis den er stor men hverken for stor eller mindre enn 1 så får vi noe som likner på hyperbelbane i klassisk fysikk. Og hvis $E/m<1$, ja da har vi en bundet bane som kan likne på ellipsebane da vi ser at legemet jo i $r$-retning vil svinge frem og tilbake mellom et aphel og et perihel, {\bf men vi skal snart se at det ikke er nøyaktig en ellipsebane!}.
+}
+
+
+\choiceframe{skra27}{skra26}{0}{\small
+\centerline{\includegraphics[scale=0.1]{skraplan7.png}}
+Men la oss først gjøre oss litt kjent med uttrykket.
+\[
+V_\mathrm{eff}(r)=\sqrt{\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst}
+\]
+{\bf Uten å gjøre noe regning, har du noen formening om hva $r$-verdien for toppen av potensialet er???} Altså ved hvilken verdi for $r_\mathrm{crit}$ er toppen i potensialet $V(r)$ slik at hvis klossen/legemet kommer over denne toppen vil legemet falle ned ``bakken'' og inn i det sorte hullet?\\
+\hyperlink{skra29}{\choicebutton{$r_\mathrm{crit}=M$}}\hyperlink{skra28}{\choicebutton{$r_\mathrm{crit}=2M$}}\hyperlink{skra29}{\choicebutton{$r_\mathrm{crit}=3M$}}\hyperlink{skra30}{\choicebutton{Ingen aning!}}\\
+}
+
+
+\colfullframe{skra28}{skra27}{skra30}{0}{black}{\Huge
+\textcolor{yellow}{
+HAH! Lurte deg! Svaret er NEI, $r>2M$!!! Kan du tenke deg hvorfor?}
+}
+
+\colfullframe{skra29}{skra27}{skra30}{-1}{black}{\Huge
+\textcolor{yellow}{
+Hvordan kom du frem til det? Det er galt...}
+}
+
+\colfullframe{skra30}{skra27}{skra31}{-1}{yellow}{\Large
+``Ingen aning'' var det aller riktigste svaret her! {\bf Men hvorfor i allverden er det ikke $r=2M$??? Er det ikke det som er eventhorisonten? Der man ikke lenger kan komme ut når man har kommet på innsiden???} Du skal i ukeoppgavene utlede verdien for $r_\mathrm{crit}$, men som du kanskje ser av uttrykket for $V(r)$, så må svaret avhenge av $L/m$!! Men uansett hva $L/m$ er, så er  $r_\mathrm{crit}>2M$, men hvorfor er det ikke $r=2M$ som vi har lært er hendelsehorisonten? {\bf Det snakkes nemlig her om noe litt annet!} Det er helt riktig at $r=2M$ er hendelsehorisonten, kommer du innenfor der kommer du {\bf aldri} ut igjen. Men $r_\mathrm{crit}$ betyr noe annet, hva???
+}
+
+\fullframe{skra31}{skra30}{skra32}{0}{\Large
+Husk at vi nå ser på et legeme i {\bf fritt fall}! Da er du fortapt hvis du kommer på innsiden av $r_\mathrm{crit}$! Men hvis du nå etter å ha kommet på innsiden av $r_\mathrm{crit}$ plutselig få startet motorene i romfartøyet ditt igjen, og du enda er utenfor $r=2M$, ja da kan du redde deg siden du da ikke lenger er fritt fallende og uttrykkene vi har utledet ikke lenger er gyldige! Men hvis du hadde kommet innenfor $r=2M$, da hadde du ikke kunnet komme deg ut, selv med motorkraft!
+}
+
+\fullframe{skra32}{skra31}{skra33}{0}{\footnotesize
+La oss gå tilbake til eksemplet i 2C med legemet som faller fritt og radielt mot et sort hull. Det startet uendelig langt borte med $v=0$, altså $E/m=1$ og så begynte det sakte men sikkert å akselerere radielt innover. For langt-vekkobservatøren akselererte det først og så begynte det å bremse ettersom det nærmet seg hendelsehorisonten og ble til slutt stående helt stille på $r=2M$. For lokale skallobservatører derimot så akslererte legemet hele tiden og den lokalt observerte farta, målt av skallobservatører ettersom legemet farte forbi, gikk mot lysfarta ettersom legemet nærmet seg hendelsehorisonten. {\bf MEN så}, 
+\begin{itemize}
+\item etter at legemet passerer $r=2M$ (noe det aldri gjør for en langt-vekkobservatør) så har det ikke lenger mening å bruke langt-vekkobservatøren, da han ikke vil kunne se hva som skjer på innsiden og også fordi legemet da aldri passerer $r=2M$ for denne observatøren. Hastighetmålet $dr/dt$ som måles med skallobservatørens lengde- og tidsmål kan dermed ikke brukes.
+\item vi så også at det ikke kan eksistere skallobservatører innenfor hendelsehorisonten ettersom det er umulig å holde konstant $r$ der, alt driver inn mot $r=0$ på samme måte som man driver fremover i tiden. Vi kan altså ikke måle legemets fart med skallobservatører.
+\item Men hvis vi ikke har et meningsfullt mål på legemets fart for $r<2M$, finnes det likevel noen måte vi kan finne ut hvor lang tid legemet bruker på å falle fra $r=2M$ til det blir slukt i $r=0$, målt på legemets egen klokke, egentiden? {\bf Dvs, hvis du faller inn, fra du passerer $r=2M$ til du er borte, hvor lang tid har du på deg, målt på din egen klokke?}
+\end{itemize}
+}
+
+
+
+\fullframe{skra33}{skra32}{skra34}{0}{
+Kan vi bruke bevegelselikningen vår til å finne ut det?
+\[
+\left(\frac{E}{m}\right)^2=\left(\frac{dr}{d\tau}\right)^2+\left[1+\left(\frac{L/m}{r}\right)^2\right]\sst
+\]
+\begin{itemize}
+\item Her har vi forflytning $dr$, og vi vet at vi skal forflytte oss fra $r=2M$ til $r=0$
+\item Vi har også et tidsintervall $\Delta\tau$ som måler egentiden
+\item Hva er $L/m$ for dette legemet som faller radielt innover?
+\item Kan du skrive om dette uttrykket her til et integral som kan integreres fra $r=2M$ til $r=0$ og dermed finne total egentid $\tau$?
+\item La oss bruke det sorte hullet i sentrum av Melkeveien. Massen er ca. 4 millioner solmasser. Hvor langt fra sentrum er hendelsehorisonten? Skriv svaret i km.
+\end{itemize}
+Se om du kan finne tiden det tar på din klokke å falle inn!
+}
+
+
+\fullframe{skra34}{skra33}{skra35}{0}{\Huge
+Fikk du ca. 26 sekunder? Hvis ikke, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_5.mp4}{denne videoen}.
+}
+
+
+\fullframe{skra35}{skra34}{skra35b}{0}{\large
+\centerline{\includegraphics[scale=0.13]{skraplan8.png}}
+Lurer du på hvordan planetbanene blir i relativitetsteorien? Spesielt Merkur har et tydelig avvik fra Keplers lover siden den er så nær sola at den blir påvirket av et tyngdefelt så sterkt at avvikene fra Newtons lov blir merkbare. I figuren over har jeg tegnet i grønt det Newtonske potensialet i tillegg til det relativistiske. Merkur er langt unna toppen, men forskjellen i potensialet her vil likevel endre ting, kan du gjette hva det kan være?}
+
+
+
+\fullframe{skra35b}{skra35}{skra36}{0}{\Huge
+\centerline{\includegraphics[scale=0.13]{skraplan8.png}}
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_6.mp4}{denne videoen} diskutere jeg hvordan Merkurs bane blir seende ut basert på det vi vet om potensialet $V(r)$.
+}
+
+
+\fullframe{skra36}{skra35b}{nytema4}{0}{
+Effekten som såvidt er synlig i Merkurs bane vil være veldig synlig for stjerner i bane nær hendelsehorisonten i et sort hull. I sentrum av Melkeveien er det et sort hull med masse nær 4 millioner solmasser. Flere stjerner går i bane rundt dette hullet på omkring 1000 \ss-radiers avstand. Nobelprisen 2020 gikk blant annet til arbeid med studiet av disse stjernebanene. En kort artikkel med video av 20 års observasjoner av stjerner nær Melkeveiens gigantiske sorte hull kan du finne \href{https://www.nature.com/articles/d41586-020-02764-w}{hos Nature}.
+}
+
+\renewcommand{\headline}{Lys}
+{
+
+\begin{frame}
+\label{nytema4}
+\hyperlink{skra36}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+%\textcolor{yellow}{\Large Og vi skal ta en pause før vi kommer helt frem til neste tema!}
+\hyperlink{skra37}{\pagebutton{La oss se hvordan lys oppfører seg rundt et tyngdefelt...}}
+\end{frame}
+}
+
+
+\fullframe{skra37}{skra36}{skra38}{0}{\label{lys}\Huge
+Hva så med lys? Kan de også følge baner nå som de også blir påvirket av gravitasjon?
+}
+
+\fullframe{skra38}{skra37}{skra39}{0}{\Huge
+Kan vi skrive bevegelseslikningen for lys på samme måte:
+\[
+A=Bv^2+V(x)
+\]
+???
+}
+
+
+\fullframetxt{skra39}{skra38}{skra40}{0}{Ja hvordan gjør vi det?}{\huge
+La oss gjøre et forsøk da! Vi hadde for lys at
+\[
+\frac{dr}{dt}=\pm\sst\sqrt{1-\sst\frac{b^2}{r^2}}
+\]
+Hva med å gjøre om til skallkoordinater? Det viser seg at det blir lettere slik, så her setter vi igang...
+}
+
+
+\fullframetxt{skra40}{skra39}{skra41}{0}{AHA}{\large
+Vi vil altså finne den {\bf radielle komponenten} $dr_\mathrm{sh}/dt_\mathrm{sh}$ av lyshastigheten observert lokalt av en skallobservatør på en gitt skall r mens lyset farer forbi. {\bf MERK} at for en skallobservatør som bruker lokalt inertialsystem så er lysfarta alltid $v=1$, men det er kun den {\bf radielle komponenten vi ser på her!}.  Så hvordan kan vi gå fra $dt/dr$ til $dr_\mathrm{sh}/dt_\mathrm{sh}$? (HINT: et godt gammelt triks som du lærte i 2C)
+}
+
+
+\fullframetxt{skra41}{skra40}{skra42}{0}{gir oss...}{\large
+Husker du sammenhengen (det bør du!) mellom langt-vekk og skall-koordinater?\pagequestion{skra41b}{Jaaaaaa....joda.....vel...}{-1}
+På diffensialform (altså med $d$-er istedenfor $\Delta$):
+\[
+dr_\mathrm{sh}=\frac{dr}{\sqrt{\sst}}
+\]
+\[
+dt_\mathrm{sh}=\sqrt{\sst}dt
+\]
+Insatt i 
+\[
+\frac{dr}{dt}=\pm\sst\sqrt{1-\sst\frac{b^2}{r^2}}
+\]
+}
+
+\fullframe{skra42}{skra41}{skra43}{1}{\large
+\[
+A=Bv_\mathrm{r,sh}^2+V_\mathrm{eff}(r)^2,
+\]
+hvor $A=B=1/b^2$ og $v_\mathrm{r,sh}$ er hastighet målt av skallobservatøren, $v_\mathrm{r,sh}dr_\mathrm{sh}/dt_\mathrm{sh}$. Fikk du det til?
+Det er en ukeoppgave å vise dette samt at vi da får:
+\[
+V_\mathrm{eff}(r)=\frac{1}{r}\sqrt{\sst}.
+\]
+Men hvordan blir formen på dette ``skråplanet?''
+}
+
+\fullframe{skra43}{skra42}{skra43b}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan9.png}}
+Her ser du formen på
+\[
+V_\mathrm{eff}(r)=\frac{1}{r}\sqrt{\sst}.
+\]
+}
+
+\fullframe{skra43b}{skra43}{skra44}{0}{\footnotesize
+\centerline{\includegraphics[scale=0.1]{skraplan9.png}}
+Fra likningen
+\[
+\frac{1}{b^2}=\frac{1}{b^2}v_\mathrm{r,sh}^2+V_\mathrm{eff}(r)^2,
+\]
+ser vi nå at det er $1/b^2$ som er konstanten på venstre side, og {\bf ikke energi}. Dermed blir også enhetene på det effektive potensialet det samme som $1/b^2$, {\bf men vi tar igjen roten slik at potensialet har enheter som $1/b$}. Det er dermed ikke lenger energi som avgjør lysets bane men verdien til $1/b$. Vi ser at vi har en topp på samme måte som for massive legemer som avgjør om lyset blir ``slukt'' av det sorte hullet eller ikke. Men det er nå ikke om det har en kritisk energi $E>E_\mathrm{crit}$ som avgjør om det blir slukt men heller om det har en impaktparameter slik at
+\[
+\frac{1}{b}>\frac{1}{b_\mathrm{crit}}
+\]
+}
+
+
+\choiceframe{skra44}{skra43b}{0}{
+\centerline{\includegraphics[scale=0.15]{skraplan9.png}}
+Bruk plottet av potensialet til å avgjøre om lys kan gå i stabile baner rundt en stjerne eller et sort hull!
+\hyperlink{skra45}{\choicebutton{Jeg ser tydelig fra figuren at lys kan ha stabile baner!}}\\
+\hyperlink{skra46}{\choicebutton{TULL, det går ikke an for lys å ha stabile baner!}}
+}
+
+
+\colfullframe{skra45}{skra44}{skra46}{0}{black}{\large
+\textcolor{yellow}{Hmmmm....hvis du går tilbake til figuren for potensialet for massive legemer, hvordan var en banebevegelse i det potensialet? Hva betydde banebevegelse der? {\bf Dette må du forstå, spør hvis du ikke gjør det!}}
+}
+
+\colfullframe{skra46}{skra44}{skra47}{-1}{yellow}{\large
+Det er helt riktig. Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2d_og_2e/videoer/video2d_7.mp4}{denne videoen} hvis du har tvil om hvorfor vi ikke kan få stabile baner. Merk også at vi kan få en ustabil bane, akkurat som vi snakket om for massive legemer: Hvis impaktparameteren akkurat svarer til topp-punktet. I en av ukeoppgavene skal du finne også dette topp-punktet og finne at det skjer ved $r_\mathrm{crit}=3M$. Dette punktet gir også opphav til et rart fenomen som kalles {\bf lyssfæren}.
+}
+
+
+\fullframe{skra47}{skra46}{skra48}{0}{\large
+\centerline{\includegraphics[scale=0.1]{skraplan9.png}}
+Et sort hull mottar jo lysstråler fra alle mulige retninger i hele universet, fra alle stjerner, galakser, gass-skyer som ligger rundt, nær og fjern. En god del av disse vil nødvendigvis ha lys som kommer inn med en vinkel som akkurat tilsvarer en impaktparameter $b_\mathrm{crit}$. Dermed vil et sort hull hele tiden ha lys som går noen runder i sirkelbane ved $r_\mathrm{crit}=3M$ før det går ut av banen, enten innover eller utover (blir vippet av bakketoppen på skråplanet). Dvs. at på kuleskallet som utgjøres av $r_\mathrm{crit}=3M$, den såkalte {\bf lyssfæren} er det hele tiden lys i bane i forskjellige retninger. Hvis det skulle være en planet som går i bane rundt det sorte hullet på nøyaktig $r_\mathrm{crit}=3M$, hva ville du se når du ser opp på nattehimmelen?
+}
+
+\fullframe{skra48}{skra47}{skra49}{0}{\huge
+Ville du ikke se en stor ring på himmelen som går fra nordpolen til sydpolen? Tenk deg området der lyssfæren krysser planetens overflate. Det blir en ring rundt planeten. Akkurat noe slikt ville du sett på himmelen rett over der du tegner inn ringen på planeten. Lyspartikler som går i bane på lyssfæren vil bli stoppet på planeten.
+}
+
+
+\colfullframe{skra49}{skra48}{oppsummering}{0}{black}{\textcolor{yellow}{\footnotesize
+Det at lys blir avbøyd i tyngdefelt gir også opphav til {\bf gravitasjonslinsing.} Ønsker du å vite mer om det kan du lese om det i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2e.pdf}{forelesningsnotatene for del 2E}, den delen som ikke er pensum. 
+\centerline{\includegraphics[scale=0.3]{gravlens.png}}
+{\tiny (Bilde: NASA, ESA, HST)}
+Her ser du et bilde tatt av Hubble-teleskopet. Buene er lys fra fjerne objekter bak galaksene som du ser foran. Lyset fra de fjerne objektene har blitt avbøyd og gir opphav til disse buene. Formen på disse kan brukes til å kartlegge massefordelingen rundt galaksene ettersom massen til denne avgjør hvor mye lyset blir avbøyd. På den måten har man kartlagt mørk materie i galaksehoper.
+}
+}
+
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{skra49}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/173961}{🙂 🙁}
+{\bf Du er ferdig med forelesningen i del 2D og 2E.}. Du bør nå:
+\begin{itemize}
+\item Du bør kunne kombinere det generell-relativistiske uttryket for energi og spinn med uttrykket for $\Delta s$ i \ss-geometri til å finne steg-for-steg-bevegelseslikningene for legemer og for lys rundt et sterkt tyngdefelt
+\item Du bør forstå dynamikken til en kloss på et skråplan og kunne omgjøre problemstillingen med et lys eller legeme i et sterkt gravitasjonsfelt til en analog kloss-på-skråplan-problemstilling.
+\item Du bør kunne bruke det effektive potensialet for lys eller legeme i et sterkt gravitasjonsfelt til å kunne tolke disses baner i tyngdefeltet.
+\item Du bør kjenne til hovedforskjellen mellom baner i klassisk fysikk og generell relativitetsteori.
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\end{frame}
+
+
+
+\end{document}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entire file</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="front" label="front"></span><br />
+</p>
+<div class="alertblock">
+<p>Du må bruke <span><strong>presentasjonsmodus/fullskjermsvisning</strong></span> for å lese denne, men du skal <span><strong>ikke</strong></span> bruke frem/tilbake-knappene, <span><strong>KUN knappene som dukker opp på sliden</strong></span> for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. <span style="color: red">Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!</span></p>
+</div>
+<p><a href="front2.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front2" label="front2"></span><br />
+</p>
+<div class="block">
+<p>Dette er en erstatning for forelesningen i emnet. <span style="color: blue">Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese <span><span style="background-color: sunset"><a href="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf">de fulle forelesningsnotatene</a></span></span> (med unntak av oppgavene bak)</span>. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. <span><strong>Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten</strong></span>. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. <span><strong>Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/157828" class="🙂🙁">🙂 🙁</a></span></span> knappen som du finner på alle sider.</strong></span></p>
+</div>
+<p><a href="intro.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="intro" label="intro"></span></p>
+<div class="columns">
+<p><a href="front.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><br />
+<img src="../media/radiotelescopes.png" alt="image" /><br />
+Velkommen til andre forelesning av del 1D! Vi skal Vi skal gå rett over på spektrallinjer og undersøke hvordan disse oppstår, hvilken informasjon de bærer, hvordan vi kan modellere dem og analysere dem. Vi skal igjen innom minste kvadraters metode og <span class="math inline"><em>χ</em><sup>2</sup></span> i innleveringsoppgavene.<br />
+<span><strong>Er du klar?</strong></span><br />
+<a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="intro2" label="intro2"></span> <a href="intro.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Introduksjon<br />
+La oss begynne med noen <span><span style="background-color: sunset"><a href="https://nettskjema.no/a/155786">spørsmål til ettertanke</a></span></span>. Vi skal jobbe videre med disse spørsmålene på neste side, så <span><strong>du trenger å ha tenkt gjennom og svart på spørsmålene før du går videre!</strong></span><br />
+<span><span style="background-color: sunset"><a href="https://nettskjema.no/a/155786">La meg kikke på spørsmålene en gang til slik at jeg er klar</a></span></span><br />
+<a href="nytema1.html">Nå har jeg tenkt nøye gjennom spørsmålene og er klar til å fortsette</a></p>
+
+<p><span id="nytema1" label="nytema1"></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Spektrallinjer</span></strong></p>
+<p><a href="linjeintro1.html">Sett igang med nytt og spennende tema!</a></p>
+
+<p><span id="linjeintro1" label="linjeintro1"></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Spektrallinjer<br />
+Husker du Bohr atommodell? Den er illustert i <span><span style="background-color: sunset"><a href="https://no.wikipedia.org/wiki/Bohrs_atommodell#/media/Fil:Bohr_atom_animation_2.gif">denne animasjonen på Wikipedia</a></span></span>.</p>
+<ul>
+<li><p>Elektronene i atomene har kvantiserte energinivåer (representert som baner i animasjonen). Hvis en lyspartikkel (foton) med energi som tilsvarer nøyaktig forskjellen i to energinivåer passerer atomet, så kan elektronet absorpere dette fotonet, og hoppe et energinivå opp.</p></li>
+<li><p>Elektronene prøver å ha et lavest mulig energinivå slik at de etter kort tid faller ned igjen og sender dermed ut et foton som tilsvarer forskjellen i energi mellom energinivåene.</p></li>
+</ul>
+<p>Du husker kanskje at energien til et foton er gitt ved <span class="math display">$$E=h\nu=\frac{hc}{\lambda}$$</span> ???<br />
+Denne er så viktig at bør du huske den. Lys som har en bølgelengde <span class="math inline"><em>λ</em></span> slik at energien <span class="math inline"><em>E</em></span> tilsvarer overgangen mellom to energinivåer i et atom blir absorbert. Tilsvarende, når elektronet faller ned igjen, så sender det ut lys med bølgelengde <span class="math inline"><em>λ</em></span> som da tilsvarer denne energien <span class="math inline"><em>E</em></span>. <a href="linjeintro2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro2" label="linjeintro2"></span></p>
+<div class="columns">
+<p><a href="linjeintro1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span><br />
+Spektrallinjer<br />
+Her ser vi dannelsen av en absorpsjonsline i atmosfæren til en stjerne (atmosfæren til stjerna, merket som ’Absorbing gas’ er her skjematisk tegnet separat fra stjerna): <img src="../media/absline.png" alt="image" /> Gassen i atmosfæren inneholder atomer eller molekyler med energinivå som tilsvarer bølgelengden som vi ser blir absorbert. Dermed ser vi at disse bølgelengdene ikke kommer frem til observatøren med spektroskop på høyre side. Dermed blir det en mørk linje i spektret. <span style="color: red"><strong>Men vi lærte på forrige side at elektronene faller ned igjen og dermed sender ut fotonet med akkurat denne bølgelengden på nytt. Hvorfor blir det likevel en mørk linje i spektret?</strong></span></p>
+</div>
+<p><a href="linjeintro3a.html">Jeg tror jeg vet hvorfor!</a>    <a href="linjeintro3b.html">Hæææ! Det var jo rart, hvordan kan det ha seg?</a></p>
+
+<p><span id="linjeintro3b" label="linjeintro3b"></span> <a href="linjeintro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Spektrallinjer<br />
+<span style="color: red"><span><strong>Et lite hint:</strong></span> Når elektronet sender ut fotonet igjen, blir det da alltid sendt mot observatøren? Hvor blir det sendt?</span> <a href="linjeintro3a.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro3a" label="linjeintro3a"></span> <a href="linjeintro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Spektrallinjer<br />
+Årsaken er at elektronet ikke aner noe om hvor fotonet kom fra, det aner ikke engang at det ble løftet opp i et nytt energinivå pga. av et foton (et elektron aner strengt tatt ingenting, all forskning så langt peker på at elektroner ikke er bevisst...). Dermed blir dette fotonet sendt ut i en helt tilfeldig retning. Noen slike fotoner vil tilfeldigvis faktisk gå i retning av observatøren men langt mindre lys på denne bølgelengden vil komme frem, siden de aller fleste blir spredd i alle andre retninger. <a href="linjeintro4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro4" label="linjeintro4"></span> <a href="linjeintro3a.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Spektrallinjer<br />
+</p>
+<div class="columns">
+<p>Hva så med denne emisjonslinja da? Her ser vi det illustrert: <img src="../media/emline.png" alt="image" /> Hvilken prosess gjør at vi får ekstra mange fotoner på en gitt bølgelengde? <a href="emja.html">Jeg har en aning om hvorfor</a>    <a href="emnei.html">Det vakke lett å se...</a> </p><p><span><strong>Et hint:</strong></span> Kan du tenke deg en annen prosess som gjør at elektronet hopper opp?<br />
+<a href="emja.html">Tjaaaa, kanskje det?</a></p><p>Hvis gassen har høy temperatur, vil partiklene skumpe borti hverandre og overføre energi slik at elektronet kan hoppe opp. Men som før vil det falle ned igjen, og sende ut ekstra mange fotoner på akkurat bølgelgenden som tilsvarer denne energiforskjellen. <a href="nytema2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="nytema2" label="nytema2"></span> <a href="linjeintro4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Bredden til spektrallinjer</span></strong></p>
+<p><a href="linjeintro5.html">Kom igjen, la oss se hva som gir linjene bredde!</a></p>
+
+<p><span id="linjeintro5" label="linjeintro5"></span></p>
+<div class="columns">
+<p><a href="linjeintro4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Bredden til spektrallinjer<br />
+<span id="bredde" label="bredde"></span> Tilbake til spørsmålet fra skjemaet: vi bruker illustrasjonen av absorpsjonsline. <span><strong>Anta at atmosfæren (den absorberende gassen) er i ro i forhold til stjerna og observatøren</strong></span> (spektrografen til høyre): <img src="../media/absline.png" alt="image" /> <span><strong>Vi antar at gasspartiklene kun absorberer på bølgelengde <span class="math inline"><em>λ</em><sub>0</sub></span>.</strong></span> Vi vet at gasspartiklene har tilfeldige hastigheter i tilfeldige retninger fra Maxwell-Boltzmann-fordelingen. Et atom i den absorberende gassen som har hastighet mot stjerna absorberer et foton. Hvordan vil en obsevatør på dette atomet oppleve stjerna? <a href="linjeintro5a.html">Stjerna står i ro</a>    <a href="linjeintro6.html">Stjerna beveger seg mot atomet</a>    <a href="linjeintro5a.html">Stjerna beveger seg fra atomet</a></p><p>Et lite hint for å hjelpe til: hvis du kjører bil mot en bygning, i ditt referansesystem, beveger bygningen seg mot deg, fra deg, eller er den i ro? <a href="linjeintro6.html">Ahhh, nå ser jeg det!</a></p>
+</div>
+
+<p><span id="linjeintro6" label="linjeintro6"></span></p>
+<div class="columns">
+<p><a href="linjeintro5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Bredden til spektrallinjer<br />
+<img src="../media/absline.png" alt="image" /> Korrekt, for atomet som går i retning mot stjerna vil det virke som at stjerna beveger seg mot atomet. Vil det ha en innvirkning på bølgelengden som elektronet i atomet absorberer?<br />
+<a href="linjeintro6a.html">Nei, det absorberer enda på <span class="math inline"><em>λ</em><sub>0</sub></span></a>    <a href="linjeintro6a.html">Ja, det vil vel nå absorbere på en lengre bølgelengde</a>    <a href="linjeintro7.html">Ja, det vil vel nå absorbere på en kortere bølgelengde</a></p><p><span style="color: red">Det ble feil!</span> Husker du Doppler-effekten? Hva skjer hvis en lyskilde beveger seg <span><strong>mot</strong></span> deg? <a href="linjeintro7.html">Ahhh, nå ser jeg det!</a></p>
+</div>
+
+<p><span id="linjeintro7" label="linjeintro7"></span></p>
+<div class="columns">
+<p><a href="linjeintro6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span><br />
+Bredden til spektrallinjer<br />
+<img src="../media/absline.png" alt="image" /> Korrekt: Når atomet beveger seg mot stjerna, så vil, i atomets referansesystem, stjerna bevege seg mot atomet. Husk <span><strong>Doppler effekten</strong></span>: Hvis en lyskilde beveger seg mot deg, vil du observere en <span><strong>kortere</strong></span> bølgelengde! Lysbølgene som atomet observerer til å ha en bølgelengde <span class="math inline"><em>λ</em><sub>0</sub></span> har dermed egentlig en <span><strong>lengre</strong></span> bølgelengde sett fra stjerna (observatørens) referansesystem. Atomet absorberer dermed en bølgelengde som er <span><strong>lengre</strong></span> enn <span class="math inline"><em>λ</em><sub>0</sub></span> sett fra observatøren! Ser du dermed også at de atomene som beveger seg med hastighet bort fra stjerna vil absorbere en bølgelengde som er kortere enn <span class="math inline"><em>λ</em><sub>0</sub></span>? Og de atomene som står omtrent i ro i forhold til stjerna vil absorbere omtrent på bølgelengden <span class="math inline"><em>λ</em><sub>0</sub></span>? På grunn av gasspartiklenes tilfeldig bevegelse inne i gassen, så vil vi, selv om gassen som helhelt står i ro i forhold til stjerna,<span><strong>få absorpsjon både på <span class="math inline"><em>λ</em><sub>0</sub></span>, men også på andre bølgelengder i nærheten av <span class="math inline"><em>λ</em><sub>0</sub></span>.</strong></span>. Dette som et resultat av Dopplereffekten fra atomenes tilfeldige bevegelser inne i gassen. <a href="linjeintro8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="linjeintro8" label="linjeintro8"></span> <a href="linjeintro7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Bredden til spektrallinjer<br />
+Vi får dermed en bredde på linja, og <span><strong>ikke</strong></span> en syltynn spektrallinje på nøyaktig bølgelengden <span class="math inline"><em>λ</em><sub>0</sub></span>: <img src="../media/linewidth.png" alt="image" /><br />
+<span style="color: red">Men hvor bred blir linja og hva avgjør det? Og hva blir formen på linja?</span> <span><strong>Kan du allerede tenke deg hvilken egenskap ved gassen som avgjør hvor bred linja blir??</strong></span> <a href="nytema3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="nytema3" label="nytema3"></span> <a href="linjeintro8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Formen til spektrallinjer</span></strong></p>
+<p><a href="linjeintro9.html">La oss modellere formen til spektrallinjene!</a> <span style="color: yellow">og ved neste tema tror jeg du trenger en skikkelig pause!</span></p>
+
+<p><span id="linjeintro9" label="linjeintro9"></span> <a href="linjeintro8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+<span id="form" label="form"></span> Før vi svarer på spørsmålet, la oss undersøke litt. Hvis vi setter <span style="color: red">en x-akse som går fra observatøren, gjennom gassen og mot stjerna</span>, er du da enig i at hastighetskomponenten i gassen som avgjør Doppler-effekten er x-komponenten av partikkelhastigheten? <span><strong>Altså <span class="math inline"><em>v</em><sub><em>x</em></sub></span> til partiklene avgjør hvilken bølgelengde <span class="math inline"><em>λ</em></span> som blir absorbert?</strong></span> <a href="linjeintro9a.html">Ja,helt enig!</a>    <a href="linjeintro9a.html">Nja, tror det...</a></p>
+<p><span><strong>Hvis du er usikker, kontakt foreleser nå før du går videre!</strong></span><br />
+Hastighetskomponenten <span class="math inline"><em>v</em><sub><em>x</em></sub></span> avgjør i hvilken retning og hvor fort stjerna beveger seg i forhold til gasspartikkelen, og dermed hvilken Dopplereffekt vi får på den innkomne bølgelengden og dermed hvilken bølgelengde som blir absorbert. Tenk deg <span><strong>at en gasspartikkel har negativ hastighet <span class="math inline"> − <em>v</em><sub><em>x</em></sub></span> i forhold til stjerna.</strong></span> Hvilken bølgelengde <span class="math inline"><em>λ</em></span> blir absorbert av denne gasspartikkelen? <span><strong>Pass på retningen på aksen og fortegn her!</strong></span> <a href="flambda.html"><span class="math inline"><em>λ</em><sub>0</sub></span></a>    <a href="flambda.html"><span class="math inline"><em>λ</em><sub>0</sub><em>v</em><sub><em>x</em></sub></span></a>    <a href="flambda.html"><span class="math inline">$\frac{\lambda_0}{v_x}$</span></a>    <a href="flambda.html"><span class="math inline">$\lambda_0\frac{v_x}{c}$</span></a>    <a href="flambda.html"><span class="math inline">$\lambda_0+\lambda_0\frac{v_x}{c}$</span></a>    <a href="rlambda.html"><span class="math inline">$\lambda_0-\lambda_0\frac{v_x}{c}$</span></a>    <a href="flambda.html"><span class="math inline">$\lambda_0+\frac{\lambda_0}{c}$</span></a>    <a href="flambda.html"><span class="math inline">$\lambda_0-\frac{\lambda_0}{c}$</span></a>    <a href="flambda.html"><span class="math inline">$+\frac{\lambda_0}{c}$</span></a>    <a href="flambda.html"><span class="math inline">$-\frac{\lambda_0}{c}$</span></a>    <a href="flambda.html"><span class="math inline">$-\frac{v_x}{c}$</span></a></p>
+
+<p><span id="flambda" label="flambda"></span> <a href="linjeintro9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+<span style="color: red">Det ble galt! Husker du Dopplerformelen? Den <span><strong>må</strong></span> du kunne i dette kurset. Gå tilbake til del 1C og forsikre deg om at du virkelig kan dette med Doppler effekten! Du må også ha helt klart for deg når bølgelgenden blir kortere og når den blir lengre! Du fikk oppgitt at hastigheten er negativ, hvilken retning går den da i forhold til stjerna? Blir bølgelengden lengre eller kortere? Gå tilbake og prøv igjen! Hvis du ikke får det til, <span><strong>kontakt foreleser nå!!!!</strong></span></span></p>
+
+<p><span id="rlambda" label="rlambda"></span> <a href="linjeintro9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+Flott! Du har forstått det!Hvis du likevel er usikker, <span><strong>kontakt foreleser nå!!!!</strong></span> Spørsmålet nå blir da hvor mange gasspartikler har en gitt hastighet <span class="math inline"><em>v</em><sub><em>x</em></sub></span> og som dermed gir en gitt Dopplereffekt <span class="math inline">$\frac{v_x}{c}$</span>?? Vel, vi vet vel allerede svaret: <span><strong>Maxwell-Boltzmannfordelingen for hastighetskomponenter!</strong></span> Husker du hvordan den ser ut?</p>
+<p><a href="rlambda2.html">Hvordan kunne jeg glemme det??</a>    <a href="rlambda2.html">Ikke med en gang, men nå gikk jeg tilbake til 1A og repeterte!</a></p>
+<p>Stemmer, det er en Gaussisk fordeling med gjennomsnitt 0 og standardavvik på... husker du hvor stort standardavviket <span class="math inline"><em>σ</em></span> var? <a href="rlambda3.html">Of course! Jeg har fotografisk minne!</a>    <a href="rlambda3.html">Ikke med en gang, men nå gikk jeg tilbake til 1A og repeterte!</a></p>
+<p>Stemmer, jammen var det <span class="math display">$$\sigma=\sqrt{\frac{kT}{m}}$$</span> <a href="linjeintro10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro10" label="linjeintro10"></span> <a href="rlambda.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+Hvilken bølgelgende tror du da som det blir absorbert mest av? Hvor får vi sterkest absorpsjon i spektret?<br />
+<a href="rrlambda.html"><span class="math inline"><em>λ</em><sub>0</sub></span></a>    <a href="flambda2.html"><span class="math inline"><em>λ</em><sub>0</sub><em>v</em><sub><em>x</em></sub></span></a>    <a href="flambda2.html"><span class="math inline">$\frac{\lambda_0}{v_x}$</span></a>    <a href="flambda2.html"><span class="math inline">$\frac{v_x}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$\lambda_0+\frac{v_x}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$\lambda_0-\frac{v_x}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$\lambda_0+\frac{\lambda_0}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$\lambda_0-\frac{\lambda_0}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$+\frac{\lambda_0}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$-\frac{\lambda_0}{c}$</span></a>    <a href="flambda2.html"><span class="math inline">$-\frac{v_x}{c}$</span></a></p>
+
+<p><span id="flambda2" label="flambda2"></span> <a href="linjeintro10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+<span style="color: red">Det ble ikke helt riktig! Kan du tegne Maxwell-Boltzmann-fordelingen for <span class="math inline"><em>v</em><sub><em>x</em></sub></span>? Hvilken hastighet <span class="math inline"><em>v</em><sub><em>x</em></sub></span> har de fleste partiklene i gassen? Hvilken Dopplereffekt gir denne bølgelengden? Hva blir dermed bølgelengden som får sterkest absorpsjon? Gå tilbake og prøv igjen!</span></p>
+
+<p><span id="rrlambda" label="rrlambda"></span> <a href="linjeintro10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+Det er helt riktig! Maxwell-Boltzmann-fordelingen for <span class="math inline"><em>v</em><sub><em>x</em></sub></span> så slik ut:</p>
+<p><embed src="vx_histogram.pdf" /></p>
+<p>Ser du at de aller fleste partiklene har omkring 0 hastighet i x-retning? Dermed får du ingen Dopplereffekt fra de fleste partiklene. Dermed forblir absorpsjonen på bølgelgenden omkring <span class="math inline"><em>λ</em><sub>0</sub></span> for det meste av strålingen. <a href="linjeintro11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro11" label="linjeintro11"></span> <a href="rrlambda.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+<span>Her ser vi hvordan partiklene med forskjellige hastigheter bidrar til absorpsjonslina:</span></p>
+<p><img src="../media/linegen.png" alt="image" /></p>
+<p><span> Øverst har vi hastighetsfordelingen for <span class="math inline"><em>v</em><sub><em>x</em></sub></span>, nederst har vi fluksen <span class="math inline"><em>F</em>(<em>λ</em>)</span> som funksjon av bølgelengden. Vi har altså flest partikler med <span class="math inline"><em>v</em><sub><em>x</em></sub></span> omkring 0 som gir bidrag til absorpsjonen ved <span class="math inline"><em>λ</em><sub>0</sub></span>. Siden det er flest partikler som absorberer på denne bølgelengden blir det også størst absorpsjon der. For hastigheter <span class="math inline">|<em>v</em><sub><em>x</em></sub>| &gt; 0</span> ser vi at vi har færre partikler, dermed også svakere absorpsjon. Helt på enden av fordelingen hvor det er nesten 0 partikler får vi da heller nesten ingen absorpsjon. </span> <a href="linjeintro12.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro12" label="linjeintro12"></span> <a href="linjeintro11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+</p>
+<p><img src="../media/linegen.png" alt="image" /></p>
+<p><span> Ser du at hvor sterk absorpsjon du får er proporsjonalt med antall partikler som har den gitte hastigheten? Hvis dobbelt så mange partikler har en gitt hastighet så vil også dobbelt så mange fotoner bli absorbert på den tilsvarende bølgelengden. Kan du dermed se hvordan formen på spektrallinja vil være? Hva slags form vil <span class="math inline"><em>F</em>(<em>λ</em>)</span> ha nær spektrallinja? Tenk deg om to ganger før du går videre. </span> <a href="linjeintro13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro13" label="linjeintro13"></span> <a href="linjeintro12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+</p>
+<p><img src="../media/linegen.png" alt="image" /></p>
+<p><span> Fordelingen av hastigheter er Gaussisk, altså er fordelingen av antall partikler som absorberer som funksjon av hastighet og dermed bølgelengde, Gaussisk. Dermed må også antall fotoner som blir absorbert og dermed fallet i fluksen også være Gaussisk. Toppen i Maxwell-Boltzmann er på 0 hastighet, dermed blir toppen eller bunnen i fluksen også på <span class="math inline"><em>λ</em><sub>0</sub></span>, dvs. ingen Doppler-effekt, slik som vi utledet for et par sider tilbake. Men hva med standardavviket <span class="math inline"><em>σ</em></span>? Tenk deg godt om og se om du kan se hva det må bli! </span> <a href="linjeintro13b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro13b" label="linjeintro13b"></span> <a href="linjeintro13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+</p>
+<p><img src="../media/linegen.png" alt="image" /></p>
+<p>Standardavvik for hastighet er <span class="math inline">$\sigma_v=\sqrt{\frac{kT}{m}}$</span>. De partiklene som har <span class="math inline"><em>v</em><sub><em>x</em></sub></span> lik dette standardavviket vil gi opphav til en Dopplereffekt <span class="math inline">$\Delta\lambda=\lambda_0\frac{v_x}{c}$</span> som insatt for <span class="math inline"><em>v</em><sub><em>x</em></sub></span> gir <span class="math inline">$\Delta\lambda=\frac{\lambda_0}{c}\sqrt{\frac{kT}{m}}$</span> og som dermed tilsvarer standardavviket for spektrallinja og dermed også er et mål på bredden til linja. Dermed ser vi at vi fra bredden av spektrallinja har et direkte mål på temperaturen til gassen, gitt at du kjenner massen <span class="math inline"><em>m</em></span> til atomene/molekylene. <a href="linjeintro14.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro14" label="linjeintro14"></span> <a href="linjeintro13b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+</p>
+<p><img src="../media/linegen.png" alt="image" /></p>
+<p><span> Fluksen <span class="math inline"><em>F</em>(<em>λ</em>)</span> utenfor selve spektrallinja kaller vi kontinumsfluksen. Totalfluks i selve spektrallinja er altså kontimumsfluksen pluss formen på spektrallinja. Vi skal i det følgende anta at vi normaliserer fluksen <span class="math inline"><em>F</em>(<em>λ</em>)</span> slik at kontnumsfluksen er 1. Dermed blir <span class="math inline"><em>F</em>(<em>λ</em>) = 1</span> utenfor spektrallinja, på begge sider. Minimumsfluksen (hvis vi antar absorpsjonslinje), kaller vi <span class="math inline"><em>F</em><sub>min</sub></span>. Bølgelengden i sentrum kaller vi <span class="math inline"><em>λ</em><sub>0</sub></span> og standardavviket <span class="math inline"><em>σ</em></span>. Kan du skrive et uttrykk for <span class="math inline"><em>F</em>(<em>λ</em>)</span> uttrykt kun ved <span class="math inline"><em>F</em><sub>min</sub></span>, <span class="math inline"><em>λ</em><sub>0</sub></span>, <span class="math inline"><em>σ</em></span> og selvfølgelig også <span class="math inline"><em>λ</em></span>? Tenk deg godt om og skriv ned et forslag før du blar om. </span> <a href="linjeintro15.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro15" label="linjeintro15"></span> <a href="linjeintro14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Formen til spektrallinjer<br />
+</p>
+<p><img src="../media/linegen.png" alt="image" /></p>
+<p>Fikk du noe slikt? <span class="math display">$$F(\lambda) = 1+(F_\mathrm{min}-1)e^{-\frac{(\lambda-\lambda_0)^2}{2\sigma^2}}$$</span> Her ser vi at hvis eksponenten er 1 (altså <span class="math inline"><em>λ</em> = <em>λ</em><sub>0</sub></span>) så er <span class="math inline"><em>F</em>(<em>λ</em>) = <em>F</em><sub>min</sub></span>, mens når vi er langt fra sentrum av linja og eksponenten dermed går mot 0 så får vi 1 (kontinumsfluksen). Og formen er Gaussisk med standardavvik <span class="math inline"><em>σ</em></span>. <span><strong>Hvis du ikke får dette til å stemme, kontakt foreleser/gruppelærer!</strong></span>. <a href="pause.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pause" label="pause"></span> <a href="linjeintro15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p>Kaffe??? Er vel på tide...</p>
+<p><img src="../media/drink-coffee.png" alt="image" /></p>
+<p><br />
+Kanskje en gåtur for å klarne tankene? Ihvertfall 10 min...</p>
+<p><br />
+<a href="nytema4.html">Har klarnet tankene nå!</a></p>
+
+<p><span id="nytema4" label="nytema4"></span> <a href="linjeintro15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Observasjoner av spektrallinjer</span></strong></p>
+<p><a href="linjeintro16.html">La oss nå se litt på observasjoner av disse linjene da!</a></p>
+
+<p><span id="linjeintro16" label="linjeintro16"></span></p>
+<div class="columns">
+<p><a href="linjeintro15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Observasjoner av spektrallinjer<br />
+<span id="obs" label="obs"></span> <span>Og dermed er vi fremme ved den ene innleveringoppgaven 1D.6. Da får du et observert spektrum med støy:</span></p><p><img src="../media/noisyspectrum.png" alt="image" /></p><p><span> Her skal du bruke minste kvadraters metode for å finne et estimat av den glatte underliggende kurven og dermed av temperaturen til gassen. </span> <span>Du kjenner nå modellen for <span class="math inline"><em>F</em>(<em>λ</em>)</span> og skal dermed tilpasse de ukjente parameterene <span class="math inline"><em>λ</em><sub>0</sub></span>, <span class="math inline"><em>σ</em></span> og <span class="math inline"><em>F</em><sub>min</sub></span> på akkurat samme måte som i 1C. Egentlig kjenner du jo <span class="math inline"><em>λ</em><sub>0</sub></span> som er senteret i spektrallinjen, men hvis stjerna har en hastighet i forhold til observatøren så får vi også en Dopplereffekt pga. egenhastigheten (peculiar velocity, se del 1C) og dermed endres senterlinja <span class="math inline"><em>λ</em><sub>0</sub></span>. Denne endringen i bølgelengde kan du bruke til å finne egenhastigheten til stjerna. </span> <a href="linjeintro17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="linjeintro17" label="linjeintro17"></span> <a href="linjeintro16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Observasjoner av spektrallinjer<br />
+<span><strong>Et lite tips på veien:</strong></span> Når du skal finne intervaller for <span class="math inline"><em>σ</em></span> ved avlesning så er det litt vanskelig da <span class="math inline"><em>σ</em></span> ikke er en veldig intuitiv størrelse. Da er det mye lettere om du går veien via FWHM. Kikk tilbake på del 1A hvis du ikke husker hva FWHM var. Spesielt viktig her er sammenhengen mellom <span class="math inline"><em>σ</em></span> og FWHM: <span class="math display">$$\mathrm{FWHM}=2\sigma\sqrt{2\ln{2}}$$</span></p>
+<p>Bortsett fra det så er dette veldig likt det som du gjorde i 1C. Bruk tipsene der for å finne bugs i koden.<br />
+<span style="color: red">Merk forbindelsen til del 1C i denne oppgaven: når du finner den forflyttede <span class="math inline"><em>λ</em><sub>0</sub></span> så finner du hastigheten til stjerna på det gitte tidspunktet. Nå du så gjentar dette for observasjoner tatt på flere forskjellige tidspunkt så får du til slutt hastighetskurven til stjerna som du brukte i 1C til å finne ut om den har planeter og hvilke egenskaper disse planetene har.</span> <a href="linjeintro18.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro18" label="linjeintro18"></span> <a href="linjeintro17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Observasjoner av spektrallinjer<br />
+<span>I oppgave 1D7 som også er en innleveringsoppgave og som er spesielt viktig for prosjektstudentene, skal dere lete etter spektrallinjer i spektret til atomsfæren på planeten deres. Et spekter kan f.eks. se slik ut:</span></p>
+<p><img src="../media/noisy_chi2.png" alt="image" /></p>
+<p><span> I denne oppgaven vil standardavviket til støyen variere som funksjon av bølgelengde. Du skal dermed gjøre <span class="math inline"><em>χ</em><sup>2</sup></span> tilpasning istedenfor minste kvadrat (se igjen 1C for repetisjon!). I figuren ser du et eksempel på en tilpasset spektrallinje. <span><strong>Spørsmålet her blir hvordan du kan være sikker på om det faktisk er en spektrallinje her i det hele tatt?</strong></span> </span> <a href="linjeintro19.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro19" label="linjeintro19"></span> <a href="linjeintro18.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Observasjoner av spektrallinjer<br />
+</p>
+<p><img src="../media/noisy_chi2.png" alt="image" /></p>
+<p><span> Ser du at støyen har utslag som er like kraftige som spektrallinja som har blitt funnet. <span style="color: red">Det er viktig å merke seg at minste kvadraters metode og <span class="math inline"><em>χ</em><sup>2</sup></span> metoden gjør en best mulig tilpasning selv om det i dette tilfellet godt kan være at det overhodet ikke er noen spektrallinje her! Da kan det være at den har prøvd å finne en Gaussisk grop inne i støy-fluktuasjonene!</span> Tenk gjennom hva du kan gjøre for å luke ut slike tilfeller (du vil aldri kunne luke disse ut med 100% sikkerhet!). Hvilken strategi vil du bruke for å avgjøre om dette er en linje eller ikke? </span> <a href="linjeintro20.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="linjeintro20" label="linjeintro20"></span> <a href="linjeintro19.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Observasjoner av spektrallinjer<br />
+</p>
+<p><img src="../media/noisy_chi2.png" alt="image" /></p>
+<p><span><strong>Fler tips til dette vil du få i selve oppgaven og på gruppene hvis du er usikker.</strong></span> <a href="nytema5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="nytema5" label="nytema5"></span> <a href="linjeintro20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Størrelseklasser</span></strong></p>
+<p><a href="magnitudes1.html">Litt astronomi står på programmet...</a></p>
+
+<p><span id="magnitudes1" label="magnitudes1"></span> <a href="linjeintro20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+<span id="storrelseklasser" label="storrelseklasser"></span> Da har vi kommet til siste tema i del 1D. Dette dreier seg om en ny måleenhet for <span style="color: red">fluks</span> og <span style="color: red">luminositet</span> som brukes hyppig i astrofysikken og da spesielt blant de som gjør observasjoner med teleskop. <span><strong>Hvis du ikke har full kontroll på disse to begrepene, gå tilbake og repeter, evt. spør foreleser/gruppelærer</strong></span> før du går videre! <a href="magnitudes2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes2" label="magnitudes2"></span> <a href="magnitudes1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+</p>
+<p><img src="../media/sky.png" alt="image" /></p>
+<p><span style="color: red"> <span>(bilde fra NASA/JPL)</span><br />
+I bildet ser du massevis av objekter med forskjellig fluks. Noen objekter er veldig lysende med stor fluks, noen er svake og såvidt synlige og dermed med lav <span><strong>mottatt</strong></span> fluks. Merk at vi her snakker om <span style="color: red">mottatt</span> fluks, fluksen tatt ved observatøren. Fluksen rett ved objektet, den <span style="color: red">utsendte</span> fluksen, er en helt annen. Dobbeltsjekk at du forstår dette og at du vet hvordan du kan regne fra utsendt fluks til motsatt fluks og tilbake igjen. </span> <a href="magnitudes3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes3" label="magnitudes3"></span> <a href="magnitudes2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+</p>
+<p><img src="../media/sky.png" alt="image" /></p>
+<p><span style="color: red"> <span>(bilde fra NASA/JPL)</span><br />
+Den greske astronomen Hipparkhos (omkring 150 år før vår tidsregning) klassifiserte stjerner på nattehimmelen i 6 såkalte størrelseklasser (magnitudes). De aller sterkeste stjernene på himmelen var i størrelseklasse 1, mens de man såvidt kunne skimte med øyet var i størrelseklasse 6. Kan du tenke deg hva man idag bruker til å klassifisere stjernenes ’styrke’ på himmelen? </span> <a href="magnitudes4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes4" label="magnitudes4"></span> <a href="magnitudes3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+</p>
+<p><img src="../media/sky.png" alt="image" /></p>
+<p><span style="color: red"> <span>(bilde fra NASA/JPL)</span><br />
+Jepp, man bruker faktisk enda Hipparkhos sin skala, men man har gjort det litt mer vitenskapelig/matematisk. Hvor sterk vi ser en stjerne på himmelen er jo bare et mål på den mottatte fluksen. Hvis fluksen (lysenergi vi mottar per areal og tid) er stor, så ser stjerna sterk ut og motsatt. Øyet registrerer lysstyrke logaritmisk i fluks. Dermed har man definert det slik at et objekt som har 100 ganger større fluks en et annet objekt har en forskjell i størrelseklasse på 5. Dette stemmer ganske godt med Hipparkhos’ opprinnelige klassifisering. </span></p>
+<p><a href="magnitudes5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes5" label="magnitudes5"></span> <a href="magnitudes4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+</p>
+<p><img src="../media/sky.png" alt="image" /></p>
+<p><span style="color: red"> <span>(bilde fra NASA/JPL)</span><br />
+Så, da har vi det vi trenger. Anta at vi har to objekter, objekt 1 har fluks <span class="math inline"><em>F</em><sub>1</sub></span> og størrelseklasser <span class="math inline"><em>m</em><sub>1</sub></span>. Tilsvarende har objekt 2 fluks <span class="math inline"><em>F</em><sub>2</sub></span> og størrelseklasse <span class="math inline"><em>m</em><sub>2</sub></span>. Vi vet at hvis <span class="math inline"><em>F</em><sub>2</sub> = <em>F</em><sub>2</sub></span> så er <span class="math inline"><em>m</em><sub>1</sub> = <em>m</em><sub>2</sub></span>. Vi har også definert at hvis <span class="math inline"><em>F</em><sub>1</sub> = 100<em>F</em><sub>2</sub></span> så er <span class="math inline"><em>m</em><sub>2</sub> − <em>m</em><sub>1</sub> = 5</span> (<strong>MERK: Størrelseklassen blir mindre når fluksen blir større, lav størrelseklasse betydde jo at stjerna var sterk!</strong>.) Kan du finne en generell sammenheng mellom <span class="math inline"><em>F</em><sub>1</sub></span>, <span class="math inline"><em>F</em><sub>2</sub></span>, <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>m</em><sub>2</sub></span>? Hint: her må det vel noe logaritmisk til (10-logaritme). Ikke gå videre før du har et forslag. </span></p>
+<p><a href="magnitudes6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes6" label="magnitudes6"></span> <a href="magnitudes5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+</p>
+<p><img src="../media/sky.png" alt="image" /></p>
+<p><span> <span style="color: red"> <span>(bilde fra NASA/JPL)</span><br />
+Hvis begge betingelser skal være oppfylt, hvilke av de følgende uttrykk kan det være? (det kan være flere enn et som er riktig). Merk at log=10-log!<br />
+<a href="fmag.html"><span class="math inline"><em>F</em><sub>1</sub> = 5log <em>F</em><sub>2</sub></span></a>    <a href="fmag.html"><span class="math inline"><em>F</em><sub>1</sub> = 10<sup>(log<em>F</em><sub>2</sub>)/5</sup></span></a>    <a href="fmag.html"><span class="math inline"><em>F</em><sub>1</sub> − <em>F</em><sub>2</sub> = 5log (<em>m</em><sub>1</sub>−<em>m</em><sub>2</sub>)</span></a>    <a href="rmag.html"><span class="math inline"><em>F</em><sub>1</sub> = <em>F</em><sub>2100</sub><sup>(<em>m</em><sub>2</sub>−<em>m</em><sub>1</sub>)/5</sup></span></a>    <a href="fmag.html"><span class="math inline"><em>F</em><sub>1</sub> − <em>F</em><sub>2</sub> = 10log </span></a>    <a href="rmag.html"><span class="math inline"><em>m</em><sub>1</sub> − <em>m</em><sub>2</sub> = 2.5log (<em>F</em><sub>1</sub>/<em>F</em><sub>2</sub>)</span></a>    <a href="fmag.html"><span class="math inline"><em>m</em><sub>1</sub> = <em>m</em><sub>2</sub>log </span></a>    <a href="fmag.html"><span class="math inline"><em>m</em><sub>1</sub> = <em>m</em><sub>210</sub><sup>5(<em>F</em><sub>1</sub>−<em>F</em><sub>2</sub>)</sup></span></a>    <a href="fmag.html"><span class="math inline"><em>m</em><sub>1</sub> = <em>m</em><sub>25</sub>log (<em>F</em><sub>1</sub>−<em>F</em><sub>2</sub>)</span></a>    <a href="fmag.html"><span class="math inline"><em>m</em><sub>1</sub>/<em>m</em><sub>2</sub> = 100<sup>(5<em>F</em><sub>1</sub>/<em>F</em><sub>2</sub>)</sup></span></a>    <a href="fmag.html"><span class="math inline">$F_1/F_2=100^{(5m_1/m`_2)}$</span></a> </span> </span></p>
+
+<p><span id="fmag" label="fmag"></span> <a href="magnitudes6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+<span style="color: red">Har du sjekket skikkelig? Er det virkelig slik at når <span class="math inline"><em>m</em><sub>1</sub> = <em>m</em><sub>2</sub></span> så blir <span class="math inline"><em>F</em><sub>1</sub> = <em>F</em><sub>2</sub></span> for dette uttrykket? Er det også slik at når <span class="math inline"><em>F</em><sub>1</sub> = 100<em>F</em><sub>2</sub></span> så er <span class="math inline"><em>m</em><sub>2</sub> − <em>m</em><sub>1</sub> = 5</span>? Nei, begge er ikke oppfylt i dette uttrykket. Gå tilbake og sjekk igjen!</span></p>
+
+<p><span id="rmag" label="rmag"></span> <a href="magnitudes6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Det er helt riktig! Ved å bruke at størrelseklassen er 5 ganger mindre hvis fluksen er 100 ganger større kan vi skrive at <span class="math display"><em>F</em><sub>1</sub> = <em>F</em><sub>2100</sub><sup>(<em>m</em><sub>2</sub>−<em>m</em><sub>1</sub>)/5</sup></span> Dette gir oss dermed</p>
+<div class="block">
+<p><span><strong>Sammenhengen mellom fluks og størrelseklasse (magnitude)</strong></span> <span class="math display"><em>m</em><sub>1</sub> − <em>m</em><sub>2</sub> =  − 2.5log (<em>F</em><sub>1</sub>/<em>F</em><sub>2</sub>)</span> der <span class="math inline"><em>m</em><sub>1</sub></span> og <span class="math inline"><em>F</em><sub>1</sub></span> er størrelseklassen og fluksen for objekt 1 mens <span class="math inline"><em>m</em><sub>2</sub></span> og <span class="math inline"><em>F</em><sub>2</sub></span> er størrelseklassen og fluksen for objekt 2.</p>
+</div>
+<p>Kan du se hvilke egenskaper ved objektet som avgjør hvilken størrelseklasse/fluks det har? Det er to egenskaper... <a href="magnitudes6b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes6b" label="magnitudes6b"></span> <a href="rmag.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+<span style="color: yellow"> <span> Fant du virkelig to egenskaper???<br />
+Ikke gå videre før du har tenkt deg godt om!<br />
+</span> </span> <a href="magnitudes7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes7" label="magnitudes7"></span> <a href="magnitudes6b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Nettopp ja! Fluksen avhenger jo av luminositeten og arealet som energien spres ut i! Men dette arealet avhenger jo av avstanden til objektet. Så luminositet og avstand alene avgjør fluksen og dermed størrelseklassen så lange vi antar at stråling ikke blir absorbert av f.eks. gass på veien til oss. Dermed ser vi at to stjerner med samme størrelseklasse kan ha veldig forskjellig luminositet hvis den ene er mye nærmere enn den andre. Størrelseklassen (og dermed hvor sterk stjerna/objektet ser ut til å være) sier oss altså ingenting om hvor sterkt dette objektet virkelig lyser (luminositeten). <a href="magnitudes8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes8" label="magnitudes8"></span> <a href="magnitudes7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Hvor sterkt objektet virkelig lyser måles jo med luminositet, men vi har et størrelseklassemål for dette også.</p>
+<div class="block">
+<p><span>Tilsynelatende og absolutt størrelseklasse (appaerent and absolute magnitude)</span> Den størrelseklassen vi har snakket om så langt er et mål på fluksen vi mottar fra objektet, og avhenger dermed av luminositeten og avstanden til objektet. Dette kaller vi <span><strong>tilsynelatende størrelseklasse</strong></span> og vi bruker den matematiske betegnelsen <span class="math inline"><em>m</em></span>. Vi kan også definere <span><strong>absolutt størrelseklasse</strong></span> som kun avhenger av luminositeten til objektet og betegnes matematisk med <span class="math inline"><em>M</em></span>. <span><em>Absolutt størrelseklasse er den tilsynelatende størrelseklassen objektet ville hatt dersom vi hadde flyttet objektet til en avstand av 10pc</em></span></p>
+</div>
+<p><a href="magnitudes9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes9" label="magnitudes9"></span> <a href="magnitudes8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Dersom vi flytter alle objekter i universet til en avstand av 10pc, så vil den tilsynelatende lysstyrken vi ser på himmelen være et mål på hvor sterkt objektet faktisk lyser, siden avstanden nå er den samme for alle objekter. <span style="color: red">Dermed er absolutt magnitude et annet mål på luminositeten.</span> La oss prøve å finne en sammenheng mellom den tilsynelatende størrelseklassen <span class="math inline"><em>m</em></span> og den absolutte størrelseklassen <span class="math inline"><em>M</em></span> til et objekt. <span><strong>Kan du tenkte deg hvilken egenskap ved objektet denne sammenhengen må avhenge av?</strong></span> <a href="magnitudes10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes10" label="magnitudes10"></span> <a href="magnitudes9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Ganske riktig, på samme måte som at <span><strong>sammenhengen mellom mottatt fluks og luminositet avhenger av avstanden</strong></span>, så må det <span><strong>samme gjelde for tilsynelatende og absolutt størrelseklasse.</strong></span> Du skal nå prøve å selv komme frem til sammenhengen mellom <span class="math inline"><em>m</em></span> og <span class="math inline"><em>M</em></span>:</p>
+<ul>
+<li><p>Anta at du har et objekt, vi kaller det objekt 1, med tilsynelatende størrelseklasse <span class="math inline"><em>m</em><sub>1</sub></span>, i avstand <span class="math inline"><em>r</em></span>.</p></li>
+<li><p>Så har du et helt identisk objekt i en avstand av 10 pc, som du observerer med tilsynelatende størrelseklasse <span class="math inline"><em>m</em><sub>2</sub></span>. Denne tilsynelatende størrelseklassen tilsvarer jo da også den absolutte størrelseklassen <span class="math inline"><em>M</em></span> for begge objekter siden objektene er identiske og det siste objektet befinner seg i en avstand av 10 pc.</p></li>
+<li><p>Før du blar om, bruk sammenhenger du kjenner mellom fluks og luminositet samt definisjonen av tilsynelatende størrelseklasse til å finne sammenhengen mellom <span class="math inline"><em>m</em></span> og <span class="math inline"><em>M</em></span>.</p></li>
+</ul>
+<p><a href="magnitudes11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes11" label="magnitudes11"></span> <a href="magnitudes10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Kom du frem til at</p>
+<div class="block">
+<p><span>sammenhengen mellom tilsynelatende og absolutt størrelseklasse er</span> <span class="math display">$$m-M=5\log(\frac{r}{10pc})$$</span></p>
+</div>
+<p>???<br />
+Hvis ikke, ta en kikk på <span><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_6.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span><br />
+<a href="magnitudes11b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes11b" label="magnitudes11b"></span> <a href="magnitudes11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Hvis vi tar en kikk på uttrykket for tilsynelatende størrelseklasse en gang til: <span class="math display"><em>m</em><sub>1</sub> − <em>m</em><sub>2</sub> =  − 2.5log (<em>F</em><sub>1</sub>/<em>F</em><sub>2</sub>)</span> så ser vi at du trenger en annet objekt 2 med kjent fluks og størrelseklasse for å kunne finne størrelseklassen til objekt 1! Vi trenger å <span><em>kalibrere</em></span> størrelseklasseskalaen. I mange år har stjerna Vega blitt brukt til dette, denne definerte man til å ha tilsynelatende størrelseklasse 0 (i dag brukes en noe annen definisjon, men det skal vi ikke snakke nærmere om her). Merk at Hipparkhos sin skala gikk fra 1 til 6 der 1 var de sterkeste stjernene på himmelen. Med den matematiske definisjonen så kan vi altså gå under 1 og over 6. En stjerne med størrelseklasse 6 også med den matematiske definisjonen en stjerne som såvidt er synlig med øyet, men med teleskop kan vi i dag se svake objekter med størrelseklasse langt større enn 6. <a href="magnitudes12.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="magnitudes12" label="magnitudes12"></span> <a href="magnitudes11b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span>Størrelseklasser<br />
+Himmelens sterkeste stjerne, Sirius, har negativ tilsynelatende størrelseklasse på -1.46. Sola har tilsynelatende størrelseklasse på -26.74. I andre enden av skalaen så kan romteleskopet Hubble observere objekter så svake at de har tilsynelatende størrelseklasse større enn 30. For størrelseklassen til flere objekter, se <span><span style="background-color: sunset"><a href="https://en.wikipedia.org/wiki/Apparent_magnitude"> tabellen i bunnen av denne Wikipedia-artikkelen</a></span></span>. <a href="oppsummering.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="oppsummering" label="oppsummering"></span> <a href="magnitudes12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160193" class="🙂🙁">🙂 🙁</a></span></span> Gratulerer, del 1D er overstått. Du bør nå:</p>
+<ul>
+<li><p>kjenne til hvilke kilder til informasjon vi har om universet,</p></li>
+<li><p>kunne de viktigste prosessene som genererer elektromagnetisk stråling i verdensrommet,</p></li>
+<li><p>vite hva en romvinkel er,</p></li>
+<li><p>kunne forstå, definere og regne med uttrykkene fluks, luminositet, intensitet samt fluks og luminositet per bølgelengde,</p></li>
+<li><p>vite hva et sort legeme er og egenskapene til strålingen det sender ut,</p></li>
+<li><p>forstå hvordan en spektrallinje (emisjon og absorpsjon) dannes, hvilken form den har, hva som avgjør dens form og dens bredde,</p></li>
+<li><p>estimere en tilpasning til en spektrallinje fra data med støy,</p></li>
+<li><p>kunne definere og regne med visuelle og absolutte størrelseklasser.</p></li>
+</ul>
+<p><span style="color: red">Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!</span></p>
+
+</body>
+</html>

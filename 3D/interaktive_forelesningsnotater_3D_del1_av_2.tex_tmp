@@ -1,0 +1,695 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+
+\input{usercommands}
+
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{\textcolor{black}{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}}
+
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+\newcommand{\pagebutton}[1]{#1}
+
+\newcommand{\choicebutton}[1]{#1}
+
+\newcommand{\pagenobutton}[1]{#1}
+
+\newcommand{\headlinebutton}[1]{#1}
+
+\newcommand{\padletbutton}{\href{https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t}{PADLET}}
+
+
+
+\newcommand{\curpage}{}
+\newcommand{\nextpage}{}
+\newcommand{\dnextpage}{}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\nextpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\curpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\dnextpage\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\nextpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\curpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}\dnextpage\\\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{27}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3D forlesning 1 av 2\\Interaktive forelesningsnotater}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3D forlesning 1 av 2\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/167471}{🙂 🙁}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1-2 minutter på de korte, 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter 5 minutter, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det nå en \padletbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+%%%%% intro
+{
+
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.15]{main_sequence_stars.jpg}
+\column{0.5\textwidth}
+{\small
+\textcolor{yellow}{\bf Velkommen til forelesning 1 av 2 i del 3D! En stjerne har blitt født og har begynt fusjon i sentrum. Stjernen er på hovedserien. Men hva betyr det egentlig at stjernen er på hovedserien? Det skal vi se litt på! Vi skal se på sammenhenger mellom luminositet, masse og temperatur til stjerner. Og så skal vi se hva som skjer i alderdommen. \textcolor{red}{{\large Den første forelesningen i del 3D tar normalt ca. 1 time i den fysiske forelesningen, dvs. halvparten av en dobbelttime. Den andre forelesningen i del 3D er lenger og tar normalt en hel dobbeltime.}}}\\
+\textcolor{yellow}{(Illustrasjon: Solen observert med Solar Dynamics Observatory (Image: NASA/SDO))}}
+\hyperlink{intro2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}`
+\label{intro2}
+\lastpagebutton{intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/167468}{Trykk her for å varme opp}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/167468}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand{\headline}{Spektralklasser}
+{
+
+\begin{frame}
+\label{nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{fargeindeks}
+\hyperlink{hr1}{\pagebutton{Tilbake til HR-diagrammet ja...}}
+\end{frame}
+}
+
+
+\fullframe{hr1}{intro2}{hr2}{1}{
+{\bf Vi skal studere HR-diagrammet litt grundigere, se forskjellige formater og prøve å forstå hvorfor det ser ut slik som det gjør.}\\
+\includegraphics[scale=0.4]{fig_11-3.pdf}\\
+Har du lagt merke til at HR-diagrammene vi har vist så langt også har {\it spektralklasse} på x-aksen i tillegg til temperatur? (se x-aksen øverst). Før man forstod fysikken bak, så klassifiserte man stjerner etter hvilke spektrallinjer man fant i spektrene. Det er først senere man forstod at dette henger sammen med stjernenes temperatur.
+}
+
+
+\choiceframe{hr2}{hr1}{0}{
+\includegraphics[scale=0.4]{fig_11-3.pdf}\\
+{\bf Men hvordan kan det være en sammenheng mellom hvilke spetrallinjer man ser og temperaturen til en stjerne??} La oss ta et eksempel: En av de vanligste absorpsjonslinjene i en stjerne er H$\alpha$-linjen som er overgangen mellom nederste og nest-nederste energinivå for elektronet i hydrogenatomet (husk Bohrs atommodell). Hvis man i en stjerne ikke finner  H$\alpha$-linjen, tror du det betyr at stjernen er ... \hyperlink{hr2a}{\choicebutton{kald}} eller \hyperlink{hr2b}{\choicebutton{varm}}
+}
+
+\colfullframe{hr2a}{hr2}{hr3}{0}{black}{
+\Huge
+\textcolor{white}{Det ble galt! Hvis gassen er kald, så har atomene og elektronene lite energi og elektronet vil for det meste være i laveste energitilstand, noe som gjør at det lett absorberer et foton slik at det hopper opp til neste energitilstand.}
+}
+
+\colfullframe{hr2b}{hr2}{hr3}{-1}{yellow}{
+\Large
+Det stemmer! Når temperaturen er høy så har atomet og elektronet mye energi, elektronet vil ofte være eksitert i en høyere energitilstand, dermed kan det ikke hoppe fra det laveste nivået og lage en H$\alpha$-absorpsjonslinje. Hvis temperaturen er veldig høy så er hydrogen ionisert, dvs. at elektronet og atomkjernen er separert, da kan vi ihvertfall ikke få noen absorpsjon mellom laveste og nest-laveste nivå, da vil ikke hydrogenatomet kunne absorbere i det hele tatt.
+}
+
+\fullframe{hr3}{hr2}{hr4}{0}{
+Altså: hvis {\bf temperaturen er lav}, så er atomene i grunn-tilstanden (de har lite energi), og vi få {\bf mange absorpsjonsliner fra grunn-tilstanden og oppover} (slik som H$\alpha$-linjen).  Når {\bf temperaturen er høy} så har atomet og elektronet mye energi, elektronet vil ofte være {\bf eksitert i en høyere energitilstand, dermed kan det ikke hoppe fra det laveste nivået} og lage en H$\alpha$-absorpsjonslinje. Hvis temperaturen er veldig høy så er hydrogen ionisert, dvs. at elektronet og atomkjernen er separert, da kan vi ihvertfall ikke få noen absorpsjon mellom laveste og nest-laveste nivå, da vil ikke hydrogenatomet kunne absorbere i det hele tatt. {\bf Dette gjelder også andre atomer, noen av disse blir eksitert ionisert tidligere enn andre, avhengig av energien som er nødvendig til å få dette til}. \textcolor{red}{Dermed vil kombinasjonen av spektrallinjer fra gassen være sterkt korrelert med temperatur.}
+}
+
+
+\fullframe{hr4}{hr3}{hr5}{0}{
+\includegraphics[scale=0.4]{fig_11-3.pdf}\\
+{\bf De varmeste blå stjernene har spektralklasse ``O'', de er O-stjerner, de kaldeste røde stjernene har spektralklasse M, de er M-stjerner.} På den måten omtaler astronomer stjerner og dermed implisitt sier noe om temperaturen (og dermed også massen som vi skal se senere). Spektralklasseinndelingen er faktisk enda finere enn dette, {\bf hver spektralklasse er delt inn i 10 underklasser nummerert fra 0 til 9. De varmeste F-stjernene kalles F0-stjerner, de kaldeste F9.}
+}
+
+\colfullframe{hr5}{hr4}{nytema2}{0}{black}{
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+\textcolor{yellow}{
+Her ser vi et annet HR-diagram (fra Wikipedia).
+}
+\column{0.5\textwidth}
+\textcolor{yellow}{
+Det første du skal legge merke til her er romertallene som står bak de lilla linjene som beskriver stjernetypene inne i diagrammet. Dette er det vi kaller {\it luminositetsklasser}, en grovinndeling av luminositetene til stjernene fra Ia til VII, igjen basert på spektrene. Det viser seg at spektrene selv innenfor samme spektralklasse kan være forskjellige avhengig av luminositetsklasse. Med denne klassifiseringen er solen en G2V-stjerne.
+}
+\end{columns}
+}
+
+
+
+\renewcommand{\headline}{Fargeindekser}
+{
+
+\begin{frame}
+\label{nytema2}
+\hyperlink{hr5}{\pagebutton{\small Forrige side}}
+\nytemaside{hslinje}
+{\bf 20 spensthopp før du går videre...}\\
+{\bf ...og stå på hodet i et minutt}
+\hyperlink{hr6}{\pagebutton{Jeg har strekt bena og er klar...}}
+\end{frame}
+}
+
+\colfullframe{hr6}{hr5}{hr7}{0}{black}{\label{fargeindeks}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+\column{0.5\textwidth}
+\textcolor{yellow}{
+Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?
+\pagequestion{hr6b}{\small Ja, det er noe på x-aksen...}{-1}
+Det stemmer! Der står det noe om fargeindeks! Husker du dette med størrelseklasser med filtre? Altså $m_V$ eller $M_V$ for visuell størrelseklasse, $m_B$ eller $M_B$ for blå størrelseklasse, osv. (fra \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}).
+\samepagequestion{hr6c}{\small Ja!}{\small Nei, men nå repeterte jeg det!}{0}
+Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M_V$. Men hvilken av dem?
+}
+\end{columns}
+}
+
+
+\colfullframetwo{hr7}{hr6}{hr8}{1}{black}{
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+}
+{
+\textcolor{yellow}{\small
+La oss tenke litt, $m_B-m_V$ er vel den tilsynelatende størrelseklassen målt i blått lys minus den målt i visuelt (altså midt i det synlige fargespektret). Hvis vi har en glovarm blå stjerne, blir $m_B-m_V$ da et positivt eller negativt tall?
+\samepagequestion{hr7b}{\small Tror jeg vet!}{\small Usikker!}{-2}
+Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks betyr liten størrelseklasse $m_B$ (det {\bf må} du ha kontroll pa nå!). Den lyser dermed mindre sterkt i andre deler av det synlige spektret. Fluksen tatt med V-filter er altså mindre, og dermed er $m_V$ {\bf større} enn $m_B$, noe som gir at $m_B-m_V$ er et negativt tall for blå stjerner. Ser du på HR-diagrammet her og x-aksen, så ser vel det riktig ut?
+}
+}
+
+
+\colfullframetwo{hr8}{hr7}{hr9}{2}{black}{
+\includegraphics[scale=0.17]{HR_diagram.pdf}\\
+}
+{
+\textcolor{yellow}{\small 
+Vi snakket så langt om $m_B-m_V$. Hvordan blir det med absolutt størrelseklasse? Hvis vi tar $M_B-M_V$ istedenfor $m_B-m_V$ for vår blå stjerne. Vil den da også bli negativ?
+\samepagequestion{hr8b}{\small Ja!}{\small Avhenger vel av avstanden?}{-3}
+Må ikke den faktisk også bli negativ? Det at vi går fra tilsynelatende til absolutt størrelseklasse betyr jo bare at vi måler mottatt fluks i en avstand av 10pc isteden for den faktiske avstanden. Det vil endre på mottat fluks, men vil vel ikke endre det faktum at det blir mottatt mer blått enn f.eks. gult lys? Det må være det samme i alle avstander (med mindre det er noe mellom oss og stjernen som tar opp lys bare i gitte farger).
+}
+}
+
+\colfullframetwo{hr9}{hr8}{hr10}{3}{black}{
+\includegraphics[scale=0.15]{HR_diagram.pdf}\\
+\textcolor{yellow}{\small 
+\small Hvis vi er enige om at det relative forholdet mellom fluks på forskjellige bølgelengder (farger) normalt ikke endrer seg (hvis du ikke er enig, ta en prat med foreleser!), må det ikke da være slik at
+}
+}
+{
+\textcolor{yellow}{\small 
+forskjellen $m_B-m_V$ må være lik forskjellen $M_B-M_V$? Altså
+\[
+m_B-m_V=M_B-M_V
+\]
+??? Kan du utlede dette matematisk? Ta nå og kikk på de forskjellige formlene du har som inneholder størrelseklasser (sammenheng mellom størrelseklasser og fluks samt sammenheng mellom tilsynelatende og absolutt størrelseklasse, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{del 1D} og \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}). Husk at du her kan bytte ut $m$, $M$ og $F$ med de tilsvarende filtrerte størrelsene så lenge du gjør det konsekvent i samme likning. {\bf Klarer du å utlede det? Ikke gå videre før du har gjort et skikkelig forsøk!}
+}
+}
+
+\colfullframe{hr10}{hr9}{hr11}{0}{red}{
+{\textcolor{yellow}{\Large
+Fikk du til utledningen? Hvis ikke, skal du få et hint.\pagequestion{hr10b}{Hint, {\bf pleeeease!}}{-1}
+Hint skal bli. Du har den kjente sammenhengen mellom tilsynelatende og absolutt størrelseklasse
+\[
+m-M=5\log{\frac{r}{10\mathrm{pc}}}
+\]
+Skriv dette ut først som visuelle størrelseklasser, deretter som blå størrelseklasse. Trekk likningene fra hverandre og vips...
+}
+}
+}
+
+
+\colfullframetwo{hr11}{hr10}{hr12}{1}{black}{
+\includegraphics[scale=0.15]{HR_diagram.pdf}\\
+\textcolor{yellow}{\bf Hvis du ikke fikk til utledningen med hintet, spør foreleser! Dette må du ha kontroll på og forstå!}
+}
+{
+\textcolor{yellow}{ 
+ Dermed ser du hva fargeindeksen $B-V$ som er på x-aksen er for noe:
+\[
+B-V=m_b-m_V=M_B-M_V
+\]
+Dette er altså en størrelse som vi kan beregne uten å kjenne avstanden til stjerna, kun tilsynelatende størrelseklasse på forskjellige bølgelengder. Men hvorfor er dette relatert til temperatur? Vi pleier jo å ha temperatur på x-aksen, nå står det B-V isteden! Vi ser at lav B-V tilsvarer høy temperatur og høy B-V tilsvarer lav temperatur. {\bf Hvorfor det???} Diskuter før du går videre!
+}
+}
+
+
+
+\colfullframe{hr12}{hr11}{nytema3}{0}{red}{
+\textcolor{yellow}{\Large
+Fant du ut av det??? \pagequestion{hr12b}{Få se svaret da!}{-1}
+Aha, en varm stjerne har toppen i Planck-spektret på lavere bølgelengder (husk \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{Wiens forskyvningslov!}) som tilsvarer blått lys. Og hvis intensiteten og dermed også fluksen er større i blått lys, får vi (som vi fant ut for et par sider siden) en lav og til og med negativ fargeindeks. Helt motsatt, hvis temperaturen er lav, vi har mest Planck-stråling på lange bølgelengder (rødt lys), så har vi mindre fluks i blått enn i visuelt og vi får en større og positiv fargeindeks. {\bf Skjønner? Hvis ikke, spør foreleser!}
+}
+}
+
+
+\renewcommand{\headline}{Hovedserien}
+{
+
+\begin{frame}
+\label{nytema3}
+\hyperlink{hr12}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+{\bf 20 situps før du går videre...}\\
+{\bf ...psssst! en liten tår kaffe er lov...}
+\hyperlink{hr13}{\pagebutton{Jeg har strekt bena og er klar...}}
+\end{frame}
+}
+
+\colfullframetwo{hr13}{hr12}{hr14}{1}{black}{\label{hslinje}
+\includegraphics[scale=0.12]{HR_diagram.pdf}\\
+\textcolor{yellow}{\small Da har du sett at vi på x-aksen i et HR-diagram kan ha, både temperatur, spektralklasse og fargeindeks. Du har også sett hvorfor disse tre er sterkt relatert. Du har ogsa sett at vi kan ha luminositet, absolutt størrelseklasse eller luminositetsklasse på y-aksen.
+}
+}
+{
+\textcolor{yellow}{ 
+\small Men nå er jeg sikker på at du helt siden del 3A ikke har sovet om natte fordi du har lurt fælt på hvorfor i alle dager stjernene ligger langs denne skrå linjen i HR-diagrammet som vi kaller hovedserien? Fortvil ikke, dette eksistensielle spørsmålet skal nå få et svar, du skal innen dagen er omme få nattesøvnen tilbake. {\bf Men alle disse nettene som du har ligget og grublet, kom du frem til en hypotese om hvorfor det er slik?} Og om ikke nattegrubling var nok, ta nå en diskusjon med andre studenter, kan dere se hvorfor det må være sånn? ({\bf Hint: Fluks, luminositet, sort stråling og sånt.)}
+}
+}
+
+\fullframe{hr14}{hr13}{hr15}{0}{
+Hvis du har et kuleformet sort legeme (la oss kalle det en stjerne), kan du uttrykke luminositeteten $L$ til dette ved hjelp av overflatetemperatur $T$ og radius $R$? Hvis du trenger å friske opp sort stråling, fluks og luminositet, kikke tilbake på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{del 1D}. \pagequestion{hr14b}{Jeg har skrevet ned uttrykket!}{-1}
+\[
+L=4\pi R^2\sigma T^4
+\]
+Right? {\bf Har du lagt merke til at HR-diagrammene er log-log-plott?} Det at vi har logaritmiske akser betyr egentlig at vi plotter logaritmen til størrelsene. Det vil si at egentlig er det $\log{L}$ som funksjon av $\log{T}$ som er plottet i HR-diagrammet. Hvis vi tar log av denne likningen får vi
+\[
+\log{L}=\log{4\pi R^2\sigma}+4\log{T}
+\]
+Enig?? (produktregel for logaritme). {\Large\bf Har du nå en ide om hva det betyr at stjernene legger seg i en rett linje i HR-diagrammet?}.
+}
+
+
+\fullframe{hr15}{hr14}{hr16}{1}{
+Siden vi i HR-diagrammet plotter  $\log{L}$ som funksjon av $\log{T}$ så kan vi vel sammenlikne
+\[
+\log{L}=4\log{T} + \log{4\pi R^2\sigma}
+\]
+med likningen for en rett linje
+\[
+y=ax+b
+\]
+ikke sant? \pagequestion{hr15b}{OK! Stemmer vel det.}{-2}
+Vi ser at dette er en rett linje med stigningstall 4 (husk at $T$ øker i motsatt retning på x-aksen) og med $\log{4\pi R^2\sigma}$ som konstanten som skifter denne linja opp og ned. Men {\bf hva sier dette oss om hovedseriestjernene????} Ikke bla om før du har et forslag!
+}
+
+\fullframe{hr16}{hr15}{hr16b}{2}{
+Hvis vi igjen ser på likningene:
+\[
+\log{L}=4\log{T} + \log{4\pi R^2\sigma}
+\]
+men likningen for en rett linje
+\[
+y=ax+b
+\]
+Hvis vi antar at alle stjerner har samme radius $R$, {\bf så vil vel alle stjerner ligge langs en rett linje i HR-diagrammet?}. Det må vel bety at det hovedseriestjerner har til felles er at de har omtrent den samme radiusen? VEL, nå er jo hovedserielinja ganske bred, så nøyaktig samme radius svarer det vel ikke til, men kanskje i samme radiusområde? La oss bruke dette uttrykket til å plotte linjene med konstant radius (men flere linjer med litt forskjellige radiuser) inn i HR-diagrammet.
+}
+
+
+\fullframetwo{hr16b}{hr16}{hr17}{0}{
+\includegraphics[scale=0.3]{fig_13-2.pdf}\\
+\href{http://astro.wsu.edu/worthey/astro/html/lec-hr.html}{\tiny (http://astro.wsu.edu/worthey/astro/html/lec-hr.html)}\\
+\small
+I dette HR-diagrammet ser du flere linjer plottet med uttrykket
+\[
+\log{L}=4\log{T} + \log{4\pi R^2\sigma}
+\]
+}
+{\small
+for forskjellige verdier av $R$. {\bf Ser du at det vi kaller hovedserie er stjerner med samme radius, en radius omkring radien til solen?} (ikke overraskende siden også solen ligger i dette båndet). Bredden av båndet er slik at stjerner i hovedserien har radius i intervallet $[0.1R_\odot,10R_\odot]$. Stjerner flest har altså en radius i dette intervallet og derfor ligger også stjerner flest i dette diagonale båndet. Etter at en nyfødt stjerne har har nådd hydrostatisk likevekt, så har stjernen en slik radius (bestemt av den hydrostatiske likevekten!) og ligger dermed i dette båndet. Som vi skal snart skal se så vil stjerner som har brukt opp hydrogenet i sentrum ese ut, få mye større radius og dermed forlate hovedserien.
+}
+
+
+\fullframetwo{hr17}{hr16b}{hr18}{0}{
+\includegraphics[scale=0.3]{fig_13-2.pdf}\\
+{\bf Det hovedseriestjerner har til felles er at de alle fusjonerer hydrogen til helium i kjernen.}
+}
+{
+{De har kjernetemperaturer omtrent i samme temperaturområde som gjør at den hydrostatiske likevekten gir en radius i omtrent samme område for hovedseriestjerner. Men det er likevel en viss avhengighet av massen til stjerna. Vi skal snart lære at overflatetemperatur og masse henger sammen, jo høyere temperatur, jo høyere masse. Stjernene til venstre i diagrammet har større masse, og vi ser at hovedserien der gjør en oppsving til større radier. Vi ser også at det er omvendt for lave temperaturer/masser.
+\textcolor{red}{\bf Men finnes det noen grense for hvor stor eller liten masse en stjerna kan ha?}}
+}
+
+\colfullframe{hr18}{hr17}{hr19}{0}{red}{
+\centerline{\textcolor{yellow}{\Huge Ja gjør det egentlig det?}}
+Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}\pagequestion{hr18b}{Jeg har tenkt meg godt om og har et forslag!}{-1}
+En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...\pagequestion{hr18c}{fordi at...}{0}
+\textcolor{yellow}{Stjerna når hydrostatisk likevekt før temperaturen er høy nok til å starte fusjonsreaksjoner. Med lav masse og dermed liten tyngdekraft trengs ikke så høy temperatur for å få et stort nok mot-trykk. Skjønner? Slike mislykkede stjerner kaller vi {\it brune dverger}}\\
+En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...\pagequestion{hr18d}{fordi at...}{0}
+\vspace*{-0.5cm}
+\textcolor{yellow}{Ved sammentrekning så er tyngdekrafta så stor, og lager så fort en så høy temperatur, at gasstrykket vinner over tyngdekrafta før vi når hydrostatisk likevekt. Vi får dermed ikke dannet noen stjerne.}
+}
+
+
+\fullframe{hr19}{hr18}{hr20}{1}{
+\begin{itemize}
+\item En stjerne begynner altså som en stor sky av gass som trekker seg sammen under sin egen gravitasjon. 
+\item Hvis massen er i intervallet $[0.08M_\odot,100M_\odot]$, vil vi nå et punkt der temperaturen i sentrum er så høy at vi får fusjonsreaksjoner og vi får dannet et mot-trykk mot gravitasjon. 
+\item Stjernen når hydrostatisk likevekt på en radius i intervallet $[0.1R_\odot,10R_\odot]$ og har blitt en hovedseriestjerne. 
+\end{itemize}
+Dette bør du ha oversikt over, også tallene bør du omtrentlig kunne! 
+\begin{itemize}
+\item Etter noen millioner eller milliarder år så har hydrogenet i kjernen blitt brukt opp i kjernereaksjonene, stjernen eser ut og blir en kjempestjerne.
+\item Den flytter seg da opp til kjempegrenene i HR-diagrammet. 
+\end{itemize}
+Neste tema går ut på å beregne omtrent hvor lenge en stjerne holder seg på hovedserien. Men før det skal du få en grublis!
+}
+
+
+\choiceframe{hr20}{hr19}{0}{
+Før stjerna har blitt en stjerne, altså mens den er en enorm GMC (Giant Molecular Cloud, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3b.pdf}{del 3B}), {\bf hvor finner vi gass-skya på HR-diagrammet??}\\
+\hyperlink{hr20b}{\choicebutton{Laaangt ned og laaangt til venstre}}
+\hyperlink{hr20b}{\choicebutton{Laaangt opp og laaangt til venstre}}
+\hyperlink{hr20c}{\choicebutton{Laaangt opp og laaangt til høyre}}
+\hyperlink{hr20b}{\choicebutton{Laaangt ned og laaangt til høyre}}
+}
+
+
+\colfullframe{hr20b}{hr20}{hr21}{0}{black}{
+\textcolor{white}{\Huge Det ble galt!}
+}
+
+\colfullframe{hr20c}{hr20}{hr21}{-1}{yellow}{
+{\Huge Det ble riktig!}
+}
+
+\fullframe{hr21}{hr20}{ms1}{0}{
+Husk at en GMC er {\bf enorm}, flere lysår stor! Husker du sammenhengen mellom luminositet, temperatur og radius?
+\[
+L=4\pi R^2\sigma T^4
+\]
+Selv om temperaturen er lav, så er radien enormt stor og opphøyd i andre, dermed får vi en veldig stor luminositet men lav temperatur. Fluksen (energien per $\mathrm{m}^2$) er liten men arealet som denne fluksen strømmer ut ifra er enorm. Dette er oppe og til høyre i HR-diagrammet, langt til høyre for stjernene. Derfra beveger den seg til venstre ettersom temperaturen går opp, og mer eller mindre nedover når radien og dermed også luminositeten går ned (eller holder seg omtrent). Så begynner fusjonsreaksjoner og stjernen stabiliseres på hovedserien.
+}
+
+\choiceframe{ms1}{hr21}{0}{\label{hs}
+Husker du {\bf tilstandslikningen} for ideel gass? Var ikke det
+\[
+P=\frac{\rho kT}{\mu m_H}
+\]
+Sjekk at du husker hva alle symbolene står for her! Tenk nå at du ser på gass-strykket i sentrum av stjernen. Hva skjer etter millioner av år med fusjonsreaksjoner? Hvordan vil trykket endre seg? Blir det \hyperlink{ms1b}{\choicebutton{større}} eller \hyperlink{ms1c}{\choicebutton{mindre}}???
+}
+
+
+\colfullframe{ms1b}{ms1}{ms1c}{0}{black}{
+\textcolor{white}{\Huge Ikke heeelt. Hva skjer med $\mu$? Hvis du plutselig har masse heliumatomer og færre hydrogenatomer, vil ikke $\mu$ endre seg? Hvordan vil det påvirke trykket?}
+}
+
+\colfullframe{ms1c}{ms1}{oppsummering}{-1}{yellow}{
+Det er {\bf helt riktig!}.
+\[
+P=\frac{\rho kT}{\mu m_H}
+\]
+Her {\bf øker} jo $\mu$ ettersom vi få mer og mer helium. Husk at $\mu$ er et mål på midlere masse til atomkjernene, hvis vi får mer helium som er tyngre og mindre hydrogen etter kjernereaksjoner så må $\mu$ øke! Fra tilstandslikningen ser vi at {\bf hvis $\mu$ øker, så må trykket minke.} Og hvis trykke blir mindre, {\bf så vinner gravitasjon litt!} Og hvis gravitasjons da klarer å presse stjernen litt mer sammen så vil {\bf radien med tiden bli litt mindre.}. Stjernen krymper litt på hovedserien, men på meget sakte tidsskala. \textcolor{red}{Men hvor lenge holder den på med dette da? Hvor lenge lever stjernen på hovedserien? Det må vel være til den har brukt opp alt hydrogenet i de sentrale delene av stjernen der fusjonsreaksjonene foregår, men {\bf hvor lang tid} tar dette?}
+}
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{ms1c}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{🙂 🙁}
+{\bf Akkurat det skal vi se på i neste forelesning! Du er ferdig med forelesning 1 av 2 i del 3D.} \textcolor{red}{\bf Neste forelesning i del 3D krever forberedelse. Du må lese og lære så godt du kan underavsnitt 3 om ``From the main sequence to the giant stage'' i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D}}.\\
+ Du bør nå:
+\begin{itemize}
+\item  Vite hvilke størrelser og enheter man kan ha på aksene i et HR-diagram
+\item  Vite hvorfor hovedserien er en skrå linje i HR-diagrammet
+\item  Vite hvilke masser og radier stjerner kan ha og hvorfor
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\end{frame}
+
+
+
+\end{document}

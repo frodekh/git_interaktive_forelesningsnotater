@@ -1,0 +1,1154 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+
+\input{usercommands}
+
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
+\definecolor{denim}{rgb}{0.06, 0.29, 0.55}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{\textcolor{black}{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}}
+
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+\newcommand{\pagebutton}[1]{#1}
+
+\newcommand{\choicebutton}[1]{#1}
+
+\newcommand{\pagenobutton}[1]{#1}
+
+\newcommand{\headlinebutton}[1]{#1}
+
+\newcommand{\padletbutton}{\href{https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t}{PADLET}}
+
+
+
+\newcommand{\curpage}{}
+\newcommand{\nextpage}{}
+\newcommand{\dnextpage}{}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\nextpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\curpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\dnextpage\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\nextpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\curpage\\\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}\dnextpage\\\headlinebutton{\headline}\padletbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+
+
+%  \node[
+%  inner xsep=10pt,
+%  draw=structure!80,
+%  fill=structure!50,
+%  rounded corners=4pt]  {\Large\insertbuttontext};}
+% structure!90
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{70}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+
+%%%%% front
+\begin{frame}
+\label{front}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2C forlesning 1 av 2\\Interaktive forelesningsnotater}}\\
+\vspace*{1cm}
+\begin{alertblock}{\center{\bf VIKTIG}}
+Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
+\end{alertblock}
+\vspace*{0.5cm}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
+
+\end{frame}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2C forlesning 1 av 2\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2c.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/171674}{🙂 🙁}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1-2 minutter på de korte, 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter 5 minutter, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det nå en \padletbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+%%%%% intro
+{
+
+\begin{frame}
+\label{intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.25]{spacetimebending.pdf}
+\column{0.5\textwidth}
+{\small
+\textcolor{yellow}{\bf Velkommen til forelesning 1 av 2 i del 2C! Vi skal nå se hvordan geometrien til tidrommet, og dermed uttrykket for tidromsavstander $\Delta s$ endrer seg i et gravitasjonsfelt. Vi får en krumning av det 4-dimensjonale tidrommet, vanskelig å se for seg, men med dramatiske konsekvenser for oss! Vi skal så se på hvordan vi kan regne med en slik krum geometri og hvilke observatører som observerer hva.}\\
+\textcolor{red}{Fremstillingen av generell relativitetsteori i AST2000 er basert på den fantastiske boken ``Exploring black holes'' av E. Taylor, J. Wheeler og E. Bertschinger, gratis tilgjengelig \href{http://www.eftaylor.com/exploringblackholes/}{her}. Anbefales på det sterkeste for den som er interessert.}
+{(\tiny Illustrasjon fra pngegg.com)}}
+\hyperlink{intro2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}`
+\label{intro2}
+\lastpagebutton{intro}
+\textcolor{red}{\bf Mange sider sier du? Neida, det er mye figurer og mange sider med stor og veldig lite skrift. Jeg kommer normalt gjennom dette på en dobbelttime fysisk forelesning}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/171672}{Trykk her for å varme opp}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/171672}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{nytema1}{\choicebutton{Ja}}\\
+\pause
+\addtocounter{pageno}{-1}
+\begin{itemize}[<+->]
+\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand{\headline}{Schwarzschildgeometri}
+{
+
+\begin{frame}
+\label{nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{inert}
+%\textcolor{yellow}{\Large Og vi skal ta en pause før vi kommer helt frem til neste tema!}
+\hyperlink{ss1}{\pagebutton{La oss krumme tid og rom...}}
+\end{frame}
+}
+
+
+\fullframe{ss1}{intro2}{ss2}{1}{{\Huge
+Vi begynner utradisjonelt med en likning som {\bf ikke er pensum}. Dette er Einsteinlikningen:
+\[
+G_{\mu\nu}=8\pi T_{\mu\nu}
+\]
+}
+\small
+Til venstre her har vi Einsteintensoren $G_{\mu\nu}$ og til høyre har vi stressenergitensoren $T_{\mu\nu}$. Vi lærte kort (utenfor pensum) på slutten av del 2B hva en tensor er, altså en matrise med spesielle betingelser på samme måte som en 4-vektor er en vektor med spesielle betingelser. I elementene av $T_{\mu\nu}$ setter man inn energiinnholdet (deriblant også masseinnholdet) i systemet man ser på som funksjon av posisjon i rommet. Og ut på venstre siden faller tidrommets geometri ut. Med tidrommets geometri menes rett og slett et uttrykk for $\Delta s$, altså for hvordan avstander skal måles i tidrommet.
+}
+
+\colfullframe{ss2}{ss1}{ss4}{0}{black}{
+{\Huge
+\begin{align*}
+a&b\\
+c&d\\
+e&f
+\end{align*}
+}
+\textcolor{yellow}{
+La oss ta et eksempel: anta at du har helt tomt tidrom, bare vakum som over. Putter vi det inn i $T_{\mu\nu}$ på høyre side i Einsteinlikningen så faller det ut av venstresiden at
+\[
+\Delta s^2=\Delta t^2-\Delta x^2
+\]
+Altså at rommet har Lorentzgeometri! Det vil si at Lorentzgeometri er gyldig når det ikke finnes noen legemer i nærheten som kan sette opp tyngdefelt.
+}
+}
+
+\colfullframe{ss4}{ss2}{ss5}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+Hvis vi isteden har en {\bf kulesymmetrisk massefordeling} og putter det inn i $T_{\mu\nu}$ på høyre side i Einsteinlikningen så faller det ut av venstresiden at
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Dette er tidromsavstanden i \ss-geometri. Kort tid etter at Einstein hadde formulert sin generelle relativitetsteori, så fant Karl Schwarzschild en av de svært få analytiske løsningene som finnes: løsningen for en kulesymmetrisk massefordeling.
+}
+}
+
+
+\colfullframe{ss5}{ss4}{ss6}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Massen til den kulesymmetriske massefordelingen er $M$. Tidromsavstanden er her uttrykt i {\bf polarkoordinater}, $r$ er et koordinat som går fra sentrum av den kulesymmetriske massefordelingen og $\phi$ er en vinkel som går rundt slik som du er vant til i polarkoordinater. MEEEEN, er vi ikke i tre dimensjoner da? Skulle vi ikke ha en vinkel til?
+}
+}
+
+\colfullframe{ss6}{ss5}{ss7}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+{\Huge
+Nope, det trenger vi ikke!} Kan du se hvorfor? Tenk deg litt om før du blar om!
+}
+}
+
+
+\colfullframetxt{ss7}{ss6}{ss8}{0}{black}{\small ikke gå videre før du har et forslag}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+La oss først tenke, $\Delta s$, det er da en avstand eller da en linje mellom 2 eventer i tidrommet og dermed også to punkter i rommet. Men for å bruke polarkoordinator $(r,\phi)$ med kun en vinkel $\phi$, trenger vi jo faktisk {\bf et plan} som trenger {\bf tre} punkter for å defineres. Vi trenger derfor {\bf et punkt til} for å definere et plan. Men hvilket punkt kan vi bruke? Vi har jo bare 2 eventer når vi definerer $\Delta s$?}
+}
+
+
+\colfullframe{ss8}{ss7}{ss9}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Tenkte vi på det samme? Sentret av den kulesymmetriske massefordelingen, selvfølgelig! Med senteret pluss de to eventene så har vi et plan, og dermed trenger vi ikke noe mer? Begge eventene og sentrum av massefordelingen er et og samme plan, dermed holder det å ha med dette planet i likningen. Polarkoordinatene er dermed definert på dette planet!
+}
+}
+
+\colfullframetxt{ss9}{ss8}{ss10}{0}{black}{\small Neste side}{
+{\Huge
+\begin{align*}
+a&b\\
+e&f
+\end{align*}
+}
+\textcolor{yellow}{\footnotesize
+La oss gå tilbake et øyeblikk til tomt rom. Hvis vi i romt rom definerer oss et ``sentrum'', så kan også Lorentzavstanden skrives i polarkoordinater. Da ser det slik ut:
+\[
+\Delta s^2=\Delta t^2-(\Delta x^2+\Delta y^2)=\Delta t^2-\Delta r^2-r^2\Delta\phi^2
+\]
+Sammenlikn med \ss:
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+\textcolor{red}{\bf Ser du at forskjellen kun er i $\Delta r$ og $\Delta t$-leddet? Leddet med $\Delta\phi$ er likt. Dermed er det i $\phi-retningen$ ingen forskjell mellom \ss og Lorentz. Merk deg det nå, vi kommer til å se eksempler etterhvert.}
+}
+}
+
+
+
+\colfullframetxt{ss10}{ss9}{ss11}{0}{black}{\small ikke gå videre før du har et forslag}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Tilbake til \ss. {\bf Kan du se noe rart i dette uttrykket for tidromsavstanden? Minst to rare ting!}
+}
+}
+
+\colchoiceframe{ss11}{ss10}{0}{black}{\textcolor{yellow}{
+{\Large
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Ser du noe rart eller ikke??}
+\hyperlink{ss12}{\choicebutton{JA}}\hyperlink{ss11a}{\choicebutton{NEI}}
+}
+}
+
+\colfullframetxt{ss11a}{ss11}{ss12}{0}{black}{Nå ser jeg noe...}{
+\textcolor{yellow}
+{\Large
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+}
+\textcolor{yellow}{\Huge Hva med enhetene? Hva med ting under brøkstreken?}
+}
+
+\colfullframe{ss12}{ss11}{ss13}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\small
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Ser du at masse $M$ blir delt på avstand $r$? Og at dette skal bli et enhetsløst tall siden vi tar et et-tall minus $2M/r$? Husker du hvordan vi i spesiell relativitetsteori måler tid og avstander i samme enheter? I generell relativitetsteori måler vi begge disse i meter, men ikke bare det, vi måler likesågodt også masse i meter! Dette er det ingen opplagt fysisk årsak til. Men det gjør at i tillegg til $c=1$ så er også $G=1$. Dermed blir det enklere å regne.
+}
+}
+
+
+\colfullframe{ss13}{ss12}{ss14}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\footnotesize
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+I kvantefysikk vil du se at vi også kan sette Plancks konstant $h=1$. Når vi regner i enheter slik at både $c=1$, $G=1$ og $\hbar=1$ så kaller vi det {\bf naturlige enheter}, som er et vanlig enhetssystem å bruke i moderne fysikk. Omregningen fra kg til meter går via $G/c^2$. Merk at
+\[
+\frac{G}{c^2}=7.42\times10^{-28}\mathrm{m}/\mathrm{kg}
+\]
+altså {\bf 1\,kg\;=\;$7.42\times10^{-28}$ meter.}
+}
+}
+
+\colfullframe{ss14}{ss13}{ss15}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\footnotesize
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+I kvantefysikk vil du se at vi også kan sette Plancks konstant $h=1$. Når vi regner i enheter slik at både $c=1$, $G=1$ og $\hbar=1$ så kaller vi det {\bf naturlige enheter}, som er et vanlig enhetssystem å bruke i moderne fysikk. Omregningen fra kg til meter går via $G/c^2$. Merk at
+\[
+\frac{G}{c^2}=7.42\times10^{-28}\mathrm{m}/\mathrm{kg}
+\]
+altså {\bf 1\,kg\;=\;$7.42\times10^{-28}$ meter.}
+}
+}
+
+\colfullframe{ss15}{ss14}{ss16}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.1]{earth.png}}
+{\Huge
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{\footnotesize
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+{\bf Hva blir så massen til sola i meter? Og til jorda? Og hvor mye veier du i meter? Prøv å regn litt, dette må du venne deg til, så gjør det med en gang!}
+}
+}
+
+\colfullframe{ss16}{ss15}{ss17}{0}{black}{
+{\large
+\begin{align*}
+a&b
+\end{align*}
+}
+\centerline{\includegraphics[scale=0.08]{bh.jpg}}
+{\Large
+\begin{align*}
+a&b
+\end{align*}
+}
+\textcolor{yellow}{
+{\tiny Bilde: Event Horizon Telescope Collaboration}\\
+\footnotesize
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Fikk du at massen til jorda er 4.45mm? Og at solas masse er 1.484 km? {\bf Så over til det andre rare her: hva skjer når $r=2M$? Skjer det noe rart i formelen?} Når hele massen $M$ er samlet innenfor radius $r=2M$, så har vi et {\bf sort hull}. Dvs. hvis vi presser hele jordas masse innenfor en radius på $2M=2\times4.45\mathrm{mm}$ så får vi et sort hull. Grensen $r=2M$ kalles {\bf hendelsehorisonten} (event horizon). Innenfor der er unnslippingshastigheten større enn lyshastigheten.
+}
+}
+
+
+\colfullframe{ss17}{ss16}{ss18}{0}{black}{
+\textcolor{yellow}{
+\footnotesize
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Merk at \ss-tidromsavstanden $\Delta s$ {\bf kun er gyldig i den delen av rommet som er utenfor massen $M$}. Dvs. at hele massen $M$ må være innenfor avstanden $r$ fra sentrum for at dette skal kunne brukes. {\bf Derfor} er det slik at hvis du har et event ved $r=2M$ eller innenfor, så kan du kun bruke dette uttrykket hvis hele $M$ også er innenfor $r=2M$. Og det betyr at vi har et sort hull og at $r=2M$ er hendelsehorisonten. Det er også greit å vite at uendeligheten eller {\bf singulariteten} vi får i likningen ved $r=2M$ er det vi kaller en {\bf koordinatsingularitet}, dvs. at hvis vi bytter til et annet koordinatsystem så forsvinner denne singulariteten og vi kan fint bruke $r=2M$ for å beregne $\Delta s$, dette skal vi se et eksempel på i en ukeoppgave. Dette er på samme måte som hvis du bruker kulekoordinater: $\theta=0$ på nordpolen. Hvis du har en funksjon som går som $1/\theta$ så blir den uendelig på nordpolen. Men hvis du roterer aksene dine slik at $\theta=0$ et annet sted, så får du ikke lenger en uendelighet på nordpolen. {\bf Det som dermed er en ekte singularitet her, altså en ekte uendelighet, er ved $r=0$, altså i sentrum av et sort hull. Der bryter fysikken sammen!}
+}
+}
+
+\colfullframe{ss18}{ss17}{nytema2}{0}{black}{
+\textcolor{yellow}{\Huge
+Men før vi skal begynne å bruke dette uttrykket for $\Delta s$, må vi innom en del nye konsepter og definisjoner! Hvis du hang med på de siste sidene kan du gå videre, hvis du ønsker en oppsummering først, kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_1.mp4}{denne videoen}}
+}
+
+
+\renewcommand{\headline}{Inertialsystemer}
+{
+
+\begin{frame}
+\label{nytema2}
+\hyperlink{ss18}{\pagebutton{\small Forrige side}}
+\nytemaside{observatorer}
+\textcolor{yellow}{\Large Nå trenger du en strekk på bena! Men spar gjerne kaffen til neste tema, der trenger du den mer.}
+\hyperlink{inert1}{\pagebutton{La oss se litt nærmere på intertialsystem-begrepet...}}
+\end{frame}
+}
+
+
+\fullframetxt{inert1}{ss18}{inert2}{0}{næææ, gjenstanden akselererte i retning jordas sentrum...}{\label{inert}
+Hva var et intertialsystem igjen?? Hvordan kan {\bf du} teste om du er i et inertialsystem akkurat nå? Kan du lage en punkt-for-punkt oppskrift som enhver kan bruke for å sjekke om de er i et inertialsystem?\pagequestion{inert1b}{Jepp, har skrevet ned en punktliste nå}{-1}
+Fikk du noe slikt?
+\begin{enumerate}
+\item Ta en gjenstand, en hvilket som helst.
+\item Hold den med begge hender til du får den til å stå helt i ro i forhold til deg selv.
+\item Gjenstanden skal så slippes helt
+\item Forblir gjenstanden da på nøyaktig det samme sted som du slapp den? Selv etter at du venter lenge? Ja da er du i et intertialsystem!
+\end{enumerate}
+{\bf Sååååååå, er {\bf DU} i et intertialsystem nå?}
+}
+
+
+\fullframe{inert2}{inert1}{inert3}{1}{\Huge
+Og så må jeg kjøpe meg ny kaffekopp 🙁.
+}
+
+
+
+\fullframe{inert3}{inert2}{inert4}{0}{\Huge
+Men trenger du å reise ut i rommet for å komme deg til et inertialsystem? Kan du tenke deg en måte å lage et intertialsystem her på jorda på??
+}
+
+\colfullframe{inert4}{inert3}{inert5}{0}{red}{\Huge
+\textcolor{yellow}{Det var meningen at du skulle tenke deg godt om! Så, hvordan vil du gå frem for å lage et intertialsystem? Hvordan kan du slippe å ødelegge kaffekoppen neste gang du tar testen?}
+}
+
+
+\fullframe{inert5}{inert4}{inert7}{0}{\huge
+\centerline{\includegraphics[scale=0.25]{skyscraper1.png}}
+Hvis du er i en heis i en skyskraper. Og heiskablene plutselig ryker. Hva skjer da?
+}
+
+\fullframe{inert7}{inert5}{inert8}{0}{
+\centerline{\includegraphics[scale=0.25]{skyscraper2.png}}
+Hvis du følger oppskriften og nå tar en ball og slipper den i ro, hva skjer? Forblir den ikke i ro i forhold til deg? Både du og ballen blir vektløs inne i heisen (helt til den kræsjer da...). {\bf Du er da faktisk i et inertialsystem!} Men nøyaktig hva gjør at ballen forblir i ro i forhold til deg når du slipper den?
+}
+
+\fullframe{inert8}{inert7}{inert9}{0}{
+\centerline{\includegraphics[scale=0.25]{skyscraper2.png}}
+{\bf Nøyaktig hva gjør at ballen forblir i ro når du slipper den?} Tegn krefter og se om du ser det! \textcolor{red}{Ikke bla om før du har svaret!}
+}
+
+\fullframetxt{inert9}{inert8}{inert10}{0}{\small Neste side}{\small
+\centerline{\includegraphics[scale=0.25]{skyscraper2.png}}
+Er det ikke slik at tyngdeakselrasjonen er like for alle? Siden
+\[
+G\frac{\cancel{m}M}{r^2}=\cancel{m}a
+\]
+Massen til legemet forkortes bort og alle objekter får samme tyngdeakselrasjon, både heisen, ballen og du! Dere får dermed hele tiden samme hastighet. {\bf MERK:} vi ser her bort fra luftmotstand på heisen og antar den er i fritt fall!
+}
+
+
+\choiceframe{inert10}{inert9}{0}{\footnotesize
+\centerline{\includegraphics[scale=0.25]{skyscraper3.png}}
+Men hva hvis vi har {\bf to baller} En øverst i heisen og en nederst. Vil disse også forbli i ro {\bf i forhold til heissystemet???}
+\hyperlink{inert10a}{\choicebutton{\footnotesize JA! Vi er jo i et inertialsystem}}\hyperlink{inert10a}{\choicebutton{\footnotesize NEI! De vil begynne å falle nedover}}\\
+\hyperlink{inert10a}{\choicebutton{\footnotesize NEI! De vil begynne å falle oppover}}\hyperlink{inert10a}{\choicebutton{\footnotesize NEI! De vil begynne å falle mot hverandre}}\\
+\hyperlink{inert10b}{\choicebutton{\footnotesize NEI! De vil begynne å gå fra hverandre}}\hyperlink{inert10a}{\choicebutton{\footnotesize NEI! De vil gå i tilfeldige retninger}}
+}
+
+
+\colchoiceframe{inert10a}{inert10}{0}{black}{
+\textcolor{yellow}{Ikke helt! Tenk igjen: tegn krefter på begge ballene og på heisen. Krafta på heisen virker på massesenteret til heisen som er i midten av heisen. {\bf Hvordan vil ballene akselerere i forhold til heissystemet?}}
+}
+
+\colfullframe{inert10b}{inert10}{inert11}{-1}{yellow}{\footnotesize
+\centerline{\includegraphics[scale=0.25]{skyscraper4.png}}
+Det er helt riktig. Ballen nederst er nærmest jordas sentrum og får størst tyngdeakselrasjon. Heisen som har massesenter i midten får litt mindre tyngdeakselrasjon enn ballen nederst. Og ballen øverst er lengst vekk fra jordas sentrum og får minst tyngdeakselrasjon. Dermed akselereres den nederste ballen litt mer nedover enn heisen. Og ballen øverst akselereres litt mindre enn heisen. Dermed vil ballen øverst ``henge igjen'' og ballen nederst falle litt nedover i forhold til heisen.
+}
+
+
+\fullframetxt{inert11}{inert10b}{inert12}{0}{\footnotesize Neste side}{\footnotesize
+\centerline{\includegraphics[scale=0.25]{skyscraper4.png}}
+{\bf MEN MERK: Denne effekten er SVÆRT liten!!!} Forskjellen i tyngdeakselrasjon for ballen øverst og nederst er veldig liten. Sannsynligvis vil ikke denne effekten være målbar. {\bf Vi har derfor det som vi kaller for et \textcolor{red}{lokalt inertialsystem}}. Hvis du ikke kan måle at du har avvik fra et inertialsystem så er du for alle praktiske formål {\bf i et inertialsystem} selv om dette inertialsystemet er begrenset i rom og i tid. Og i et inertialsystem vet vi at vi har Lorentzgeometri! Der er spesiell relativitetsteori gyldig og vi slipper å bruke det kompliserte \ss uttrykket for $\Delta s$!!
+}
+
+\fullframetxt{inert12}{inert11}{inert13}{0}{\footnotesize Neste side}{
+{\bf La oss se på et eksempel til. Vi har et fly i fritt fall uten luftmotstand:}
+\centerline{\includegraphics[scale=0.25]{airplane1.png}}
+Vi har også en ball i hver ende av flyet. Vil {\bf disse} ballene forbli i ro i forhold til flyets referansesystem??
+\hyperlink{inert12a}{\choicebutton{\footnotesize JA! Vi er jo i et inertialsystem}}\hyperlink{inert12a}{\choicebutton{\footnotesize NEI! De vil begynne å falle nedover}}\\
+\hyperlink{inert12a}{\choicebutton{\footnotesize NEI! De vil begynne å falle oppover}}\hyperlink{inert12b}{\choicebutton{\footnotesize NEI! De vil begynne å falle mot hverandre}}\\
+\hyperlink{inert12a}{\choicebutton{\footnotesize NEI! De vil begynne å gå fra hverandre}}\hyperlink{inert12a}{\choicebutton{\footnotesize NEI! De vil gå i tilfeldige retninger}}
+}
+
+\colchoiceframe{inert12a}{inert12}{0}{black}{
+\textcolor{yellow}{Ikke helt! Tenk igjen: tegn krefter på begge ballene og på flyet. Tegn gjerne inn hele jorda med flyet langt vekk fra jorda. Pass på at kraftvektorene virker inn mot sentrum av jorda. {\bf Hvordan vil ballene akselerere i forhold til flysystemet?}}
+}
+
+\colfullframetwo{inert12b}{inert12}{inert13}{-1}{yellow}{
+\centerline{\includegraphics[scale=0.45]{airplane2.png}}
+}
+{
+Det er helt riktig. Her ser vi det hele på avstand. Kraftvektorene er slik at de også får en bitteliten komponent langs flyet slik at ballene akselereres mot hverandre.
+}
+
+\fullframe{inert13}{inert12b}{inert14}{0}{\footnotesize
+\centerline{\includegraphics[scale=0.25]{airplane3.png}}
+Ballenes bevegelse mot hverandre vil være ekstremt liten og sannsynligvis ikke målbar! Igjen så har vi et {\bf lokalt inertialsystem} som har Lorentzgeometri, eller en geometri som er så nær Lorentzgeometrien at avvik ikke kan måles.
+}
+
+\fullframe{inert14}{inert13}{inert15}{0}{
+Vi har sett to eksempler på {\bf lokale intertialsystem}. Slike systemer er viktige for å gjøre det lett å regne når vi jobber med generell relativitetsteori. Det er mye lettere å regne i Lorentzgeometri når alle resultater fra spesiell relativitetsteori er gyldig enn å regne med \ss-geometri. {\bf Når du har en problemstilling i et tyngdefelt er det derfor viktig å først prøve å identifisere slike lokale inertialsystemer.}
+}
+
+\fullframetxt{inert15}{inert14}{inert16}{0}{Neste side}{\small
+\begin{block}{Et lokalt inertialsystem...}
+er et referansesystem som er {\bf avgrenset i tid og rom} slik at man innenfor disse områdene i tid og rom kan regne med Lorentzgeometri. Grensene for dette lokale intertialsystemet begrenses av hvor nøyaktige svar du ønsker eller hvor nøyaktige måleinstrumenter du har. Sett deg en grense for nøyaktigheten for tallene og dette gir deg grensen for hvor stort området for det lokale intertialsystemet er i tid og i rom. I tillegg finnes det en betingelse til for at vi skal kunne bruke antakelsen om lokalt inertialsystem: {\bf observatøren må også gjøre målingene lokalt nær eventet: observatøren må også være nær eventet!}.
+\end{block}
+Heisen er liten nok til at den er et lokalt inertialsystem, men hvis heisen var {\bf mye} større og ballene fortsatt i hver sin ende, ville effekten av forskjellen i gravitasjon til slutt blitt målbar og kanskje for store for kravene vi ønsker å sette til nøyaktighet. Da blir heisen ikke lenger et lokalt inertialsystem. Det er altså en {\bf rombegrensning}. Det lokale intertialsystemet er kun gyldig innenfor en utstrekning $\Delta y$. Tilsvarende: hadde heisen falt lenge nok, for eksempel flere år, da ville vi til slutt kunne måle ballenes bevegelse. Dermed er det også en {\bf tidsbegrensing}, det lokale intertialsystemet er kun gylding innenfor et gitt tidsintervall $\Delta t$ bestemt av hvor nøyaktig vi ønsker å regne.
+}
+
+
+\fullframe{inert16}{inert15}{inert17}{0}{
+La oss se på en {\bf analogi}. Vi vet at jorda er rund. Det vil si at man på jorda må bruke sfærisk geometri når man beregner lengder, vinkler og arealer langs overflaten av jorda. {\bf På en kuleflate er ikke Euclidsk geometri gyldig}. Langs en kuleflate kan du ikke bruke pytagoras setning og $\Delta s^2\ne \Delta x^2+\Delta y^2$. {\bf Men for en bitteliten del av jordoverflaten så er overflaten tilnærmet helt flat og vi kan bruke Euclidsk geometri tilnærmet for denne delen av jordoverflaten:}
+\centerline{\includegraphics[scale=0.45]{spherical_geometry.pdf}}
+{\large} På et {\bf lite avgrensen område} av jordoverfalten kan vi med god tilnærmelse bruke Euclidsk geometri, og det er jo det vi stort sett gjør når vi f.eks. beregner arealet av landområder.
+}
+
+\fullframe{inert17}{inert16}{pause}{0}{
+\centerline{\includegraphics[scale=0.45]{spherical_geometry.pdf}}
+\ss-geometri er geometrien for et krummet tidrom, altså at tidrommet er krummet litt som jordoverflaten er krummet. Mens Lorentzgeometri kalles {\bf flat tidromgeometri} fordi denne er veldig lik flat Euclidsk geometri, kun med unntak av det berømte minustegnet i uttrykket for $\Delta s$. {\bf Helt på samme måte som man kan bruke flat Euclidsk geometri på et lite avgrensen område av jordoverflaten, kan man bruke Lorentzgeometri for flatt tidrom på et lite avgrensen område av tidrommet selv om geometrien rundt er en annen.} Men merk at i det siste tilfellet er denne avgrensning er en avgrensing samtidig i både tid og i rom. \textcolor{red}{Og dette området kalles et lokalt inertialsystem!}
+}
+
+{
+
+\begin{frame}
+\label{pause}
+\hyperlink{inert17}{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{Kaffe!}
+\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\textcolor{yellow}{En tur ut i minst 15 minutter. Trenger frisk luft nå! Og kanskje en tur i heisen? Eller flere turer i heisen? Helt til kablene ryker! Hadde jo vært kult å prøve ut Lorentzgeometri, \ss-geometri er litt ut nå altså.}
+}\\
+\vspace*{0.5cm}
+\hyperlink{nytema3}{\pagebutton{Jeg er klar til å fortsette...}}
+\end{frame}
+}
+
+\renewcommand{\headline}{3 observatører}
+{
+
+\begin{frame}
+\label{nytema3}
+\hyperlink{inert17}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+%\textcolor{yellow}{\Large Og vi skal ta en pause før vi kommer helt frem til neste tema!}
+\hyperlink{obs1}{\pagebutton{Jeg er klar...}}
+\end{frame}
+}
+
+\fullframetxt{obs1}{inert17}{obs2}{0}{Tjaaaa, jeg har kanskje et forslag}{\label{observatorer}
+Når vi snakker om generell relativitetsteori skal vi ofte bruke sorte hull som eksempler. Dette er de enkleste makroskopiske objektene med stor masse som vi kan tenke oss. I et sort hull er all masse samlet i et uendelig lite punkt i rommet ved $r=0$. Om massen {\bf faktisk} er samlet i et uendelig lite punkt er tvilsomt, det er nok et uttrykk for at vi ikke kjenner de fysiske lovene i et slikt system, men massen er nok konsentrert veldig kompakt i et veldig lite område rundt $r=0$. {\bf Men vet du hva definisjonen av et sort hull er? Hvordan kunne du gjøre et fysisk eksperiment for å sjekke om du er i et sort hull?}
+}
+
+\fullframe{obs2}{obs1}{obs3}{0}{\Large
+{\bf Et sort hull er et område der unnslippingshastigheten er større en lyshastigheten.} Derav navnet ``sort'', hvis ikke en gang lys slipper ut, så er det en god betegnelse. Lys som sendes ut vil {\bf falle ned igjen}.
+}
+
+\fullframe{obs3}{obs2}{obs4}{0}{
+Vi husker fra Newtons mekanikk at unnslippingshastighet viser seg å være:
+\[
+v=\sqrt{\frac{2GM}{r}}
+\]
+Hvis unnslippingshastigheten skal være lyshastigheten $v=c$ og vi skriver dette med relativistiske enheter, får vi:
+\[
+1=\sqrt{\frac{2M}{r}}
+\]
+Vi ser at dette er oppfylt ved $r=2M$ som er nøyaktig den $r$-koordinaten som gir oss uendelig i $\Delta s$ for \ss-geometri:
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+{\bf Hvis vi klarer å presse materie sammen slik at den totale massen $M$ er presset sammen innenfor en radius $r=2M$ så vil unnslippingshastigheten være større en lyshastigheten og vi har et sort hull}
+}
+
+
+\fullframe{obs4}{obs3}{obs5}{0}{
+Avstanden $r=2M$ fra sentrum av det sorte hullet ($r=0$ der alle masse er konsentrert) kalles for \textcolor{red}{\bf hendeleshorisonten (event horizon)} og \textcolor{red}{\bf \ss-radien.} Vi skal bruke begge navn her så merk deg disse! Hvis du altså kommer innenfor radien $r=2M$ fra sentrum av et sort hull, så er unnslippingshastigheten større enn lyshastigheten og du har ingen mulighet til å komme ut igjen. Du kan heller ikke sende lyssignaler til de som er på utsiden. Vi skal også senere se at hvis du kommer på innsiden av $r=2M$, så er det umulig å stå stille, du vil automatisk bevege deg innover mot $r=0$ uansett hva du gjør.
+}
+
+\fullframe{obs5}{obs4}{obs6}{0}{
+Et sort hull er et veldig enkelt objekt å jobbe med da de eneste egenskapene det har er {\bf masse}, {\bf ladning} og {\bf angulærmoment} men {\bf ingen (kjent) utstrekning}. Merk at et sort hull ikke er helt sort. Kvantemekaniske effekter ved hendelsehorisonten gir opphav til {\it Hawkingstråling}. Dermed stråler det sorte hullet Planck-stråling og på denne måten sakte men sikkert mister masse. Det skal vi ikke snakke mer om i dette kurset. Men et sort hull skal vi altså bruke som eksempel fremover.
+}
+
+\fullframe{obs6}{obs5}{obs7}{0}{\footnotesize
+Som i spesiell relativitetsteori så skjer eventer på forskjellige steder og forskjellige tider avhengig av observatøren. I spesiell relativitetsteori var det relativ fart mellom observatører som avgjorde når og hvor eventer skjer. I generell relativitetsteori har vi 3 grupper av observatører. \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_2.mp4}{Her} kan du se en video om de 3 observatørene, og her er oppsummeringen av videoen:
+\begin{itemize}
+\item {\bf Langt-vekkobservatøren} befinner seg så langt bort fra den sfærisk symmetriske massen at han ikke kan måle tyngdefeltet og dermed har Lorentzgeometri. Langt-vekkobservatøren ser eventer rundt det sorte hullet med en kikkert da han ikke selv er til stede i nærheten av eventene som skjer.
+\item {\bf Skallobservatører} befinner seg på kuleformede skall som er satt opp på faste avstander $r$ fra sentrum av den kulesymmetriske massen. Skallobservatørene måler posisjoner/avstander kun lokalt rundt sin egen posisjon. Normalt vil man sette opp en tenkt skallobservatør rett ved et event for å regne på hva som skjer ved eventet og hva lokale observatører som står i fast $r$-posisjon vil se. En skallobservatør kan f.eks. være oss her på jorda. Eller en satelitt i sirkulær bane rundt jorda.
+\item {\bf Fritt fallende observatører} er inne i et rom (f.eks. en heis) i fritt fall. Også disse måler posisjoner og avstander kun lokalt rundt sin egen posisjon. På samme måte som for skallobservatørene vil vi sette inn fiktive fritt fallende observatører i nærheten av eventer for å kunne regne på hva en lokal observatør som {\bf ikke} står fast på et skall vil observere. Vi bruker den fritt fallende observatøren for eksempel når vi skal se på hva en observatør som faller inn i et sort hull vi oppleve
+\end{itemize}
+}
+
+\colfullframetxt{obs7}{obs6}{obs8}{0}{denim}{\small Tjaaa, ikke så bra kanskje?}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell1.png}}
+\textcolor{yellow}{Før vi skal se nærmere på de 3 observatørene trenger vi å se nærmere på posisjonskoordinatet $r$ i uttrykket for $\Delta s$. Hvordan vil f.eks. skallobservatøren måle hvilken avstand $r$ hun har fra sentrum? I figuren ser vi en skallobservatør på et skall omkring et sort hull (lenger vekk enn $r=2M$ vel og merke!). Hun prøver å heise en meterstav (grønn-sort) ned i det sorte hullet for å måle avstanden til sentrum. {\bf Hvordan tror du det går?}}
+}
+
+\colfullframe{obs8}{obs7}{obs9}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell1.png}}
+Nettopp ja! {\bf Ikke så bra!}. Målestaven vil jo bare forsvinne inn i sentrum av det sorte hullet. Skallobservatøren kan jo bare fire ned målestaven mer og mer, men den kommer aldri frem. Målt på den måten er det {\bf uendelig langt} frem til sentrum av det sorte hullet. {\bf Vi må finne en annen måte å definere og måle avstanden/koordinatet $r$ på!!}.
+}
+
+\colfullframe{obs9}{obs8}{obs10}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell2.png}}
+\textcolor{yellow}{La oss se det hele fra langt-vekkobservatørens perspektiv. Langt-vekkobservatøren har Lorentzgeometri og kan dermed bruke Euclidsk geometri på flate plan når han kun ser på rommet og ikke på tiden. For langt-vekkobservatøren vil den vanlige regelen om at omkretsen av en sirkel er $2\pi r$ være gyldig. For denne observatøren vil dermed avstanden $r$ fra sentrum til skallet som han kan måle i teleskopet sitt være like stor som omkretsen som han også kan måle i teleskopet delt på $2\pi$. Når uttrykket for $\Delta s$ faller ut av Einsteinlikningen så har koordinatet $r$ nettopp blitt definert på denne måten: det er avstanden $r$ som en langt-vekkobservatør måler fra sentrum av det sorte hullet.}
+}
+
+\colfullframe{obs10}{obs9}{obs11}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell2.png}}
+\textcolor{yellow}{
+Minner igjen om uttrykket for $\Delta s$:
+\[
+\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+der $r$ altså er avstanden fra sentrum og ut til der eventet skjer {\bf målt fra en observatør langt unna tyngdefeltet!}. Vi nevnte tidligere også det siste leddet som inneholder $\phi$. Dette leddet så vi var helt likt med Lorentzgeometri. Det betyr at avstand målt rundt i $\phi$-retning, slik som omkretsen av et skall, kommer til å være den samme for langt-vekkobservatøren som for skallobservatøren siden denne delen av geometrien er Lorentz/Euclid for begge.}
+}
+
+\colfullframe{obs11}{obs10}{obs12}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell1.png}}
+\textcolor{yellow}{
+Hvis vi benytter oss av dette så kan vi konkludere med at vår venn Skallobservatøren i figuren over ikke trenger en målestokk, men {\bf et målebånd} som hun trenger å trekke i en sirkel rundt hele skallet for å måle omkretsen. Og når hun har målt omkretsen kan hun finne hvilket $r$-koordinat hun er på ved å ta
+\[
+r=\frac{\mathrm{omkrets}}{2\pi}
+\]
+}
+}
+
+
+\colfullframe{obs12}{obs11}{obs13}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.2]{shell3.png}}
+\textcolor{yellow}{
+Når vi har klart for oss hvordan koordinaten $r$ måles, er vi klare til å bli bedre kjent med alle våre 3 observatører. Vi begynner med {\bf langt vekk-observatøren} som får informasjon om {\bf tidspunkter $t$ for eventer} fra klokker som han har plassert rundt det sorte hullet og som er synkronisert med hans egen klokke. Det er alltid en slik klokke plassert ut der det skjer et event. Klokka sender beskjed til langt-vekkobservatøren om tidspunktet som eventet skjedde på denne klokka som altså er fikset til å gå med samme hastighet og er synkronisert med langt-vekkobservatørens klokke. Lokale klokker vil nemlig gå med en annen hastighet som vi snart skal se. {\bf Posisjoner for eventer} har vi allerede sett hvordan langt-vekkobservatøren måler gjennom \ss-koordinatet $r$.}
+}
+
+\colfullframe{obs13}{obs12}{obs14}{0}{denim}{\small
+\centerline{\includegraphics[scale=0.28]{shell5.png}}
+\textcolor{yellow}{
+La oss nå se på {\bf skallobservatøren}. Skallobservatøren har sin egen klokke til å måle {\bf skalltid} $t_\mathrm{sh}$. MERK at skalltiden avhenger av hvilket skall (altså hvilken $r$) som skallobservatøren står på. Skallobservatører på forskjellige skall vil ikke være enige om tiden $t_\mathrm{sh}$. Vi har sett at skallobservatøren må måle omkretsen av skallet for å finne koordinaten $r$. Denne koordinaten er {\bf ikke} det målet som skallobservatøren bruker til å måle avstander med, dette er kun langt vekk-observatørens lengdemål. Vi skal snart se forskjellen på disse to, men la oss først begynne med å se på forskjellen mellom tiden $t$ for et event målt av langt-vekkobservatøren og tiden $t_\mathrm{sh}$ målt av skallobservatøren på et skall $r$.}
+}
+
+
+\colfullframetxt{obs14}{obs13}{obs15}{0}{denim}{Hvis jeg ikke husket det så sjekket jeg nå...}{\small
+\centerline{\includegraphics[scale=0.4]{shell5.png}}
+\textcolor{yellow}{
+For å finne forskjellen i tid mellom  tidsintervallet $\Delta t$ mellom to eventer målt av langt-vekkobservatøren og tidsintervallet $\Delta t_\mathrm{sh}$ målt av skallobservatøren på et skall $r$, skal vi gjøre slik som vi gjorde i spesiell relativitetsteori. Kan du huske hvordan vi brukte togobservatør og bakkeobservatør til å finne en sammenheng mellom et tidsintervall $\Delta t$ på bakken og et tidsintervall $\Delta t'$ på toget?}
+}
+
+\colfullframe{obs15}{obs14}{obs16}{0}{denim}{\small
+\centerline{\includegraphics[scale=0.28]{shell4.png}}
+\textcolor{yellow}{
+Nettopp ja, vi lagde oss to eventer som var to tikk på klokka i togsystemet og så fant vi tiden mellom de to eventene på klokkene til hver av observatørene. Vi gjør det samme nå: Vi definerer oss {\bf to eventer som er to tikk på klokka til skallobservatøren}. Hvis det er svært kort tidsintervall mellom disse tikkene, så kort at effektene av tyngdefeltet ikke merkes, så kan vi si at skallobservatøren befinner seg i et lokalt inertialsystem. {\bf MERK at det skal vi alltid gjøre med skallobservatøren! Vi skal alltid lage eventer som skjer så nær hverandre i tid at de er innenfor grensen til et lokalt inertialsystem.} Dette betyr i praksis at $\Delta$-ene våre egentlig skal være infinitesimale $d$-er, men for å gi mer fysisk forståelse så skal vi skrive endelige $\Delta$-er.} 
+}
+
+
+\colfullframe{obs16}{obs15}{obs17}{0}{denim}{\small
+\centerline{\includegraphics[scale=0.28]{shell4.png}}
+\textcolor{yellow}{
+Siden vi for skallobservatøren alltid ser på eventer som skjer så nær hverandre i tid og rom så bruker dermed skallobservatøren {\bf alltid Lorentzgeometri.} {\bf Langt-vekkobservatøren} derimot kan {\bf aldri anta lokalt inertialsystem}: husk at en viktig betingelse for lokalt intertialsystem var at observatøren også måtte være til stede lokalt der eventet skjedde for å gjøre målinger. Det får aldri langt-vekkobservatøren til per def! {\bf Han må dermed bruke \ss-geometri.}}
+}
+
+\colfullframe{obs17}{obs16}{obs18}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.27]{shell4.png}}
+\textcolor{yellow}{
+Vi skal nå finne en sammenheng mellom tidsintervallet mellom de to tikkene på klokka til skallobservatøren. For skallobservatøren var tidsintervallet $\Delta t_\mathrm{sh}$ mens langt-vekkobservatøren målte et tidsintervall $\Delta t$ mellom de samme to tikkene på klokka til skallobservatøren. Akkurat som i spesiell relativitetsteori skal vi bruke at tidromsintervallet $\Delta s$ er det samme for begge observatører. Dette er et universalt resultat. Vi har:
+\[
+\Delta s_\mathrm{sh}^2=\Delta t_\mathrm{sh}^2-\Delta r_\mathrm{sh}^2-r^2\Delta\phi_\mathrm{sh}^2\ \ \ \ \ \ \ \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Merk at ``sh'' står for ``shell'' altså skallobservatør. Merk også som vi akkurat har diskutert at skallobservatøren her bruker $\Delta s$ for Lorentzgeometri mens lang-vekkobservatøren bruker \ss-geometri.}
+}
+
+\colfullframe{obs18}{obs17}{obs19}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.27]{shell4.png}}
+\textcolor{yellow}{
+Vi vet at $\Delta s=\Delta s_\mathrm{sh}$ eller
+\[
+\Delta t_\mathrm{sh}^2-\Delta r_\mathrm{sh}^2-r^2\Delta\phi_\mathrm{sh}^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+Men siden tikkene skjer på samme sted så er $\Delta r = \Delta r_\mathrm{sh}=0$ og $\Delta\phi=\Delta\phi_\mathrm{sh}=0$. Og vi står igjen med
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+der $\sqrt{\sst}$ er den ``gravitasjonelle Lorentfaktoren'' som spiller samme rolle som $\gamma$ i spesiell relativitetsteori.}
+}
+
+\colfullframe{obs19}{obs18}{obs20x}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.27]{shell4.png}}
+\textcolor{yellow}{
+{\bf Men la du merke til en ting her:}
+\[
+\Delta t_\mathrm{sh}^2-\Delta r_\mathrm{sh}^2-r^2\Delta\phi_\mathrm{sh}^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
+\]
+{\bf Vi trenger strengt tatt ikke at de to tikkene er på samme $\phi$-posisjon!}. Som vi allerede har snakket om så er $\phi$-delen av geometrien ($\phi$-leddet i $\Delta s$) helt lik i Lorentz og \ss-geometri som vi ser av uttrykket her. Dermed er også $\phi=\phi_\mathrm{sh}$. Dermed trenger vi ikke kreve at $\Delta\phi=0$. Siden $\Delta\phi=\Delta\phi_\mathrm{sh}$ så forkortes dette leddet bort på begge sider. Dermed er resultatet gyldig for alle tidsintervaller mellom eventer som foregår på det samme skallet.}
+}
+
+
+
+
+\colfullframe{obs20x}{obs19}{obs20}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell4.png}}
+\textcolor{yellow}{
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+{\bf Men hvilke konklusjoner kan du trekke fra dette uttrykket?} Hvor går tiden fortere, langt inne i et tyngdefelt eller langt vekk fra tyngdefeltet? Hva skjer med tiden når $r$ nærmer seg hendelsehorisonten på $r=2M$? Og hva hvis to eventer er samtidige på skallet, er de samtidige for langt-vekkobservatøren også? Tenk deg godt om og lek litt med uttrykket før du går videre!
+}
+}
+
+\colchoiceframe{obs20}{obs20x}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell4.png}}
+\textcolor{yellow}{
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+Ja hvor går tiden fortere? Anta at klokka til skallobservatøren tikker en gang i sekundet. Vil langt-vekkobservatøren med kikkert måle på sin klokke at det tar kortere eller lengere tid enn 1 sekund mellom hvert tikk på skallobservatørens klokke?
+\hyperlink{obs20a}{\choicebutton{\footnotesize Kortere!}}\hyperlink{obs20b}{\choicebutton{\footnotesize Lengere!}}\\
+\hyperlink{obs20a}{\choicebutton{\footnotesize Du lurer ikke meg, det blir selvfølgelig like lenge!}}
+}
+}
+
+\colchoiceframe{obs20a}{obs20}{0}{black}{
+\textcolor{yellow}{Det ble ikke helt riktig
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+Er $r$ her større eller mindre enn $2M$? Blir da $\Delta t$ større eller mindre enn $\Delta t_\mathrm{sh}$? Prøv f.eks. med å sette inn en verdi for $r$ angitt i $M$ (og pass på om $r$ skal være større eller mindre enn $2M$ da!). Da får du ut tall.
+}
+}
+
+\colfullframetxt{obs20b}{obs20}{obs21}{-1}{yellow}{WOW, utrolig, jeg ser det!}{
+Flott!
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+Siden $r>2M$ (altså skallobservatøren er utenfor hendelsehorisonten, det bør hun helst være!) så blir $\Delta t$ større enn $\Delta t_\mathrm{sh}$. Det tar altså {\bf mer} enn et sekund mellom de to tikkene for langt-vekkobservatøren. Han ser altså at alt som foregår på skallet går i saktefilm. Hva da med en skallobservatør som står rett på hendelsehorisonten. Hvor lang tid vil langt-vekkobservatøren se at det tar mellom to tikk på klokka til denne skallobservatøren?
+}
+
+\colchoiceframe{obs21}{obs20b}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.33]{shell4.png}}
+\textcolor{yellow}{
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+Vi ser altså at langt-vekkobservatøren vil se at tiden går saktere nedover i tyngdefeltet og stopper helt opp på $r=2M$! Men hva med to hendelser som er samtidige på et gitt skall? Vi lærte i spesiell relativitetsteori at for observatører med forskjellig hastighet, er samtidighet relativt. Hvordan blir det her?
+\hyperlink{obs22}{\choicebutton{\footnotesize Samtidige hendelser på skallet er {\bf ikke} samtidige for langt-vekkonbservatøren}}\\
+\hyperlink{obs22}{\choicebutton{\footnotesize Samtidige hendelser på skallet {\bf er} også samtidige for langt-vekkonbservatøren}}\\
+}
+}
+
+\colfullframe{obs22}{obs21}{obs23}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell4.png}}
+\textcolor{yellow}{
+\[
+\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
+\]
+Enig at hvis $\Delta t_\mathrm{sh}=0$ (samtidige hendelser på skallet) her så må også $\Delta t=0$??? Det betyr at de også blir samtidige observert av lang-vekkobservatøren! Stikk motsatt at spesiell relativitet! Men merk at i det øyeblikk en av observatørene begynne å bevege seg og få en fart så trer også spesiell relativitet inn og samtidighet blir relativt igjen.
+}
+}
+
+
+\fullframe{obs23}{obs22}{obs24}{0}{\huge
+Vi har nå sett hvordan tiden går forskjellig mellom en langt-vekkobservatør og en skallobservatør. Hva så med lengder/avstander? Vi har allerede sett at avstander rundt langs $\phi$-retning er like mellom langt-vekkobservatør og skallobservatør siden $\phi$-delen av geometrien er lik. {\bf Men hva med lengder i $r$-retning?}
+}
+
+\fullframe{obs24}{obs23}{obs25}{0}{\Large
+  Hvordan fant vi sammenhengen mellom lengder målt av forskjellige observatører i spesiell relativitetsteori? {\bf Brukte vi ikke to eventer på hver side av objektet som vi skulle måle lengden til? Og at disse eventene var samtidige i det ene referansesystemet?} \textcolor{red}{Vi prøver oss på samme fremgangsmåte her, en meterstav der det skjer to samtidige eventer på hver ende av staven. Og samtidig for både skallobservatør og langt-vekkobservatør!}
+}
+
+
+\colfullframetxt{obs25}{obs24}{obs26}{0}{denim}{Jeg har et forslag til svar!}{\footnotesize
+\centerline{\includegraphics[scale=0.3]{shell6.png}}
+\textcolor{yellow}{
+Her ser vi situasjonen med to sprengladninger som går av samtidig (dermed to eventer) i begge ender av staven. Kan du nå finne en sammenheng mellom lengden $\Delta r$ målt av langt-vekkobservatøren for staven som har lengden $\Delta r_\mathrm{sh}$ målt av skallobservatøren? {\bf Merk} at vi antar svært små avstander her, $\Delta r$ er egentlig en infinitesimal liten $dr$.
+}
+}
+
+\colfullframe{obs26}{obs25}{obs26b}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.27]{shell6.png}}
+\textcolor{yellow}{
+{\bf Fikk du:}
+\[
+\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}
+\]
+Hvis ikke, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_3.mp4}{denne videoen}.
+}
+}
+
+\colfullframe{obs26b}{obs26}{obs26c}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.27]{shell6.png}}
+\textcolor{yellow}{
+\[
+\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}
+\]
+Ser du at igjen så er det faktoren $\sqrt{\sst}$ som kommer inn, akkurat som $\gamma$ i spesiell relativitetsteori?
+Hvor lang vil langt-vekkobservatøren observere at staven er ettersom skallet kommer nærmere og nærmere hendelsehorisonten?
+}
+}
+
+\colfullframe{obs26c}{obs26b}{obs27}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.2]{shell6.png}}
+\textcolor{yellow}{
+\[
+\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}
+\]
+For langt-vekkobservatøren blir stavene kortere og kortere ettersom $r\rightarrow 2M$. Men hva med skallobservatøren? Gitt at vi har to skallobservatører veldig nær hendelsehorisonten, en på $r=r_1$ og en annen på $r=r_2$. Koordinatavstanden $\Delta r=r_2-r_1$ er avstanden målt av langt-vekkobservatøren og den samme som skallobservatørene får hvis de bruker omkretsen. {\bf Men hva skjer med den direkte avstanden $\Delta r_\mathrm{sh}$ mellom skallene målt med målestav av skallobservatørene?} Tenk deg at skallobservatøren over senker en målestav ned til skallet under.
+}
+}
+
+
+\colfullframe{obs27}{obs26c}{obs28}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.35]{shell1.png}}
+\textcolor{yellow}{
+\[
+\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}
+\]
+Ser du at denne fysiske avstanden $\Delta r_\mathrm{sh}$ mellom skallene med avstand $\Delta r$ blir uendelig lang ettersom $r$ nærmer seg hendelsehorisonten? Fra et gitt skall er det altså uendelig langt ned til hendelsehorisonten målt med meterstaver! Husker du figuren over når vi prøvde å senke en stav ned for å finne $r$? Ser du nå hvorfor koordinatet $r$ ikke er en normal ``avstand'' for en skallobservatør?
+}
+}
+
+\colfullframe{obs28}{obs27}{obs29}{0}{denim}{\footnotesize
+\centerline{\includegraphics[scale=0.25]{shell7.png}}
+Vi har ikke sagt så mye enda om {\bf den fritt fallende observatøren}. Hun kommer vi nærmere tilbake til i eksempler. Men hun måler lokale tidsintervaller $\Delta t_\mathrm{ff}$ på sin egen klokke og bruker generelt lokale intertialsystem på samme måte som skallobservatøren. Den fritt fallende observatøren pleier vi å plassere ut mellom eventer slik at vi alltid kan bruke lokalt intertialsystem. {\bf Det er dermed kun langt-vekkobservatøren som trenger å bruke \ss-geometri.} \textcolor{yellow}{For alle andre observatører må du passe på å finne eventer med avstander i tid og rom slik at antakelsen om lokalt inertialsystem er riktig og du kan bruke Lorentzgeometri!}. 
+}
+
+\fullframe{obs29}{obs28}{oppsummering}{0}{\Huge
+Forvirret over alle observatørene??? Isåfall, ta gjerne en titt på oppsummeringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_4.mp4}{denne videoen}. Føler du derimot at dette var ganske klart så kommer det ikke noe nytt i videoen.
+}
+
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{obs29}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{🙂 🙁}
+{\bf Du er ferdig med forelesning 1 av 2 i del 2C.}. Du bør nå:
+\begin{itemize}
+\item kjenne til hvordan et sort hull defineres og hvilke egenskaper det har
+\item kjenne til \ss-geometrien, forstå uttrykket for $\Delta s$, spesielt vite hva $r$-koordinatet er og hvordan det måles.
+\item du bør også vite hva som skjer når $r=2M$ og hva hendelsehorisonten er.
+\item du bør forstå og kunne bruke begrepet {\it lokalt inertialsystem}
+\item du bør kjenne til de 3 observatørene og hvordan disse måler tider og avstander og hvilken geometri hver av dem bruker
+\item kunne utlede og bruke transformasjonen av tidsintervaller og avstander mellom skallobservatøren og langt-vekkobservatøren
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\end{frame}
+
+
+
+\end{document}
