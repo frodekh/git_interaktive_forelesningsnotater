@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  18 AUG 2021 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  19 AUG 2021 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1092,19 +1092,14 @@ Dictionary: translator-theorem-dictionary, Language: English
 [2
 
 ]
-<launch2_0.png, id=51, 602.25pt x 602.25pt>
-File: launch2_0.png Graphic file (type png)
-<use launch2_0.png>
-Package pdftex.def Info: launch2_0.png  used on input line 308.
-(pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
-
-Overfull \hbox (9.52875pt too wide) in paragraph at lines 308--308
-[][]  
- []
-
+<media/rocket.png, id=52, 393.47pt x 600.2425pt>
+File: media/rocket.png Graphic file (type png)
+<use media/rocket.png>
+Package pdftex.def Info: media/rocket.png  used on input line 308.
+(pdftex.def)             Requested size: 118.0419pt x 180.07413pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 308
 .
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 308
@@ -1121,36 +1116,35 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [3
 
- <./launch2_0.png>]
+ <./media/rocket.png>]
 Overfull \hbox (98.42868pt too wide) in paragraph at lines 322--322
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<rocket.png, id=64, 393.47pt x 600.2425pt>
-File: rocket.png Graphic file (type png)
-<use rocket.png>
-Package pdftex.def Info: rocket.png  used on input line 322.
+File: media/rocket.png Graphic file (type png)
+<use media/rocket.png>
+Package pdftex.def Info: media/rocket.png  used on input line 322.
 (pdftex.def)             Requested size: 157.38521pt x 240.09274pt.
 [4
 
- <./rocket.png>]
+]
 Overfull \hbox (98.42868pt too wide) in paragraph at lines 354--354
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: rocket.png Graphic file (type png)
-<use rocket.png>
-Package pdftex.def Info: rocket.png  used on input line 354.
+File: media/rocket.png Graphic file (type png)
+<use media/rocket.png>
+Package pdftex.def Info: media/rocket.png  used on input line 354.
 (pdftex.def)             Requested size: 118.0419pt x 180.07413pt.
-<1a6_1.png, id=77, 450.68375pt x 78.2925pt>
-File: 1a6_1.png Graphic file (type png)
-<use 1a6_1.png>
-Package pdftex.def Info: 1a6_1.png  used on input line 354.
+<media/1a6_1.png, id=75, 450.68375pt x 78.2925pt>
+File: media/1a6_1.png Graphic file (type png)
+<use media/1a6_1.png>
+Package pdftex.def Info: media/1a6_1.png  used on input line 354.
 (pdftex.def)             Requested size: 180.2703pt x 31.31644pt.
-<1a6_2.png, id=78, 462.72874pt x 225.84375pt>
-File: 1a6_2.png Graphic file (type png)
-<use 1a6_2.png>
-Package pdftex.def Info: 1a6_2.png  used on input line 354.
+<media/1a6_2.png, id=76, 462.72874pt x 225.84375pt>
+File: media/1a6_2.png Graphic file (type png)
+<use media/1a6_2.png>
+Package pdftex.def Info: media/1a6_2.png  used on input line 354.
 (pdftex.def)             Requested size: 185.08821pt x 90.33589pt.
 
 Overfull \hbox (9.12265pt too wide) in paragraph at lines 354--354
@@ -1164,22 +1158,22 @@ Overfull \hbox (13.94057pt too wide) in paragraph at lines 354--354
 
 [5
 
- <./1a6_1.png> <./1a6_2.png>]
+ <./media/1a6_1.png> <./media/1a6_2.png>]
 Overfull \hbox (98.42868pt too wide) in paragraph at lines 354--354
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: rocket.png Graphic file (type png)
-<use rocket.png>
-Package pdftex.def Info: rocket.png  used on input line 354.
+File: media/rocket.png Graphic file (type png)
+<use media/rocket.png>
+Package pdftex.def Info: media/rocket.png  used on input line 354.
 (pdftex.def)             Requested size: 118.0419pt x 180.07413pt.
-File: 1a6_1.png Graphic file (type png)
-<use 1a6_1.png>
-Package pdftex.def Info: 1a6_1.png  used on input line 354.
+File: media/1a6_1.png Graphic file (type png)
+<use media/1a6_1.png>
+Package pdftex.def Info: media/1a6_1.png  used on input line 354.
 (pdftex.def)             Requested size: 180.2703pt x 31.31644pt.
-File: 1a6_2.png Graphic file (type png)
-<use 1a6_2.png>
-Package pdftex.def Info: 1a6_2.png  used on input line 354.
+File: media/1a6_2.png Graphic file (type png)
+<use media/1a6_2.png>
+Package pdftex.def Info: media/1a6_2.png  used on input line 354.
 (pdftex.def)             Requested size: 185.08821pt x 90.33589pt.
 
 Overfull \hbox (9.12265pt too wide) in paragraph at lines 354--354
@@ -1208,25 +1202,25 @@ Overfull \hbox (13.94057pt too wide) in paragraph at lines 354--354
 ] [13
 
 ]
-<v_more_t_histogram.png, id=218, 1297.84875pt x 760.8425pt>
-File: v_more_t_histogram.png Graphic file (type png)
-<use v_more_t_histogram.png>
-Package pdftex.def Info: v_more_t_histogram.png  used on input line 426.
-(pdftex.def)             Requested size: 259.56516pt x 152.1658pt.
+<media/v_more_t_histogram.png, id=216, 794.97pt x 614.295pt>
+File: media/v_more_t_histogram.png Graphic file (type png)
+<use media/v_more_t_histogram.png>
+Package pdftex.def Info: media/v_more_t_histogram.png  used on input line 426.
+(pdftex.def)             Requested size: 158.99118pt x 122.85681pt.
  [14
 
- <./v_more_t_histogram.png>] [15
+ <./media/v_more_t_histogram.png>]
+[15
 
-]
-[16
+] [16
 
 ] [17
 
 ]
-<screenshot_1a4.png, id=283, 460.72125pt x 245.91875pt>
-File: screenshot_1a4.png Graphic file (type png)
-<use screenshot_1a4.png>
-Package pdftex.def Info: screenshot_1a4.png  used on input line 463.
+<media/screenshot_1a4.png, id=281, 460.72125pt x 245.91875pt>
+File: media/screenshot_1a4.png Graphic file (type png)
+<use media/screenshot_1a4.png>
+Package pdftex.def Info: media/screenshot_1a4.png  used on input line 463.
 (pdftex.def)             Requested size: 230.36006pt x 122.95906pt.
 
 Overfull \vbox (2.57826pt too high) detected at line 463
@@ -1234,7 +1228,7 @@ Overfull \vbox (2.57826pt too high) detected at line 463
 
 [18
 
- <./screenshot_1a4.png>] [19
+ <./media/screenshot_1a4.png>] [19
 
 ] [20
 
@@ -1250,42 +1244,41 @@ Overfull \vbox (2.57826pt too high) detected at line 463
 
 ] [26
 
-] [27
+]
+[27
 
 ]
-<drink-coffee.png, id=429, 16.8383pt x 11.61842pt>
-File: drink-coffee.png Graphic file (type png)
-<use drink-coffee.png>
-Package pdftex.def Info: drink-coffee.png  used on input line 568.
+<media/drink-coffee.png, id=427, 16.8383pt x 11.61842pt>
+File: media/drink-coffee.png Graphic file (type png)
+<use media/drink-coffee.png>
+Package pdftex.def Info: media/drink-coffee.png  used on input line 568.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
+ [28
 
-[28
-
- <./drink-coffee.png>]
-<screenshot_1a5.png, id=441, 425.59pt x 248.93pt>
-File: screenshot_1a5.png Graphic file (type png)
-<use screenshot_1a5.png>
-Package pdftex.def Info: screenshot_1a5.png  used on input line 577.
+ <./media/drink-coffee.png>]
+<media/screenshot_1a5.png, id=439, 425.59pt x 248.93pt>
+File: media/screenshot_1a5.png Graphic file (type png)
+<use media/screenshot_1a5.png>
+Package pdftex.def Info: media/screenshot_1a5.png  used on input line 577.
 (pdftex.def)             Requested size: 212.79446pt x 124.46469pt.
  [29
 
- <./screenshot_1a5.png>]
-<mb_vx.png, id=454, 1035.87pt x 610.28pt>
-File: mb_vx.png Graphic file (type png)
-<use mb_vx.png>
-Package pdftex.def Info: mb_vx.png  used on input line 585.
+ <./media/screenshot_1a5.png>]
+<media/mb_vx.png, id=452, 1035.87pt x 610.28pt>
+File: media/mb_vx.png Graphic file (type png)
+<use media/mb_vx.png>
+Package pdftex.def Info: media/mb_vx.png  used on input line 585.
 (pdftex.def)             Requested size: 207.17032pt x 122.05383pt.
  [30
 
- <./mb_vx.png>]
-[31
+ <./media/mb_vx.png>] [31
 
 ] [32
 
 ]
-File: mb_vx.png Graphic file (type png)
-<use mb_vx.png>
-Package pdftex.def Info: mb_vx.png  used on input line 604.
+File: media/mb_vx.png Graphic file (type png)
+<use media/mb_vx.png>
+Package pdftex.def Info: media/mb_vx.png  used on input line 604.
 (pdftex.def)             Requested size: 207.17032pt x 122.05383pt.
  [33
 
@@ -1300,35 +1293,35 @@ Package pdftex.def Info: mb_vx.png  used on input line 604.
 ] [38
 
 ]
-<gausskurve.png, id=557, 628.3475pt x 504.88625pt>
-File: gausskurve.png Graphic file (type png)
-<use gausskurve.png>
-Package pdftex.def Info: gausskurve.png  used on input line 669.
+<media/gausskurve.png, id=555, 628.3475pt x 504.88625pt>
+File: media/gausskurve.png Graphic file (type png)
+<use media/gausskurve.png>
+Package pdftex.def Info: media/gausskurve.png  used on input line 669.
 (pdftex.def)             Requested size: 125.66727pt x 100.97545pt.
  [39
 
- <./gausskurve.png>] [40
+ <./media/gausskurve.png>] [40
 
 ] [41
 
-]
-[42
+] [42
 
 ] [43
 
 ]
-<gausskurve_fwhm.png, id=640, 453.695pt x 306.14375pt>
-File: gausskurve_fwhm.png Graphic file (type png)
-<use gausskurve_fwhm.png>
-Package pdftex.def Info: gausskurve_fwhm.png  used on input line 722.
+<media/gausskurve_fwhm.png, id=638, 453.695pt x 306.14375pt>
+File: media/gausskurve_fwhm.png Graphic file (type png)
+<use media/gausskurve_fwhm.png>
+Package pdftex.def Info: media/gausskurve_fwhm.png  used on input line 722.
 (pdftex.def)             Requested size: 226.84694pt x 153.07149pt.
  [44
 
- <./gausskurve_fwhm.png>] [45
+ <./media/gausskurve_fwhm.png>] [45
 
 ] [46
 
-] [47
+]
+[47
 
 ] [48
 
@@ -1338,8 +1331,7 @@ Package pdftex.def Info: gausskurve_fwhm.png  used on input line 722.
 
 ] [51
 
-]
-[52
+] [52
 
 ]
 \tf@nav=\write6
@@ -1351,45 +1343,43 @@ Package pdftex.def Info: gausskurve_fwhm.png  used on input line 722.
 \tf@snm=\write8
 \openout8 = `interaktive_forelesningsnotater_1A_del1_av_2.snm'.
 
- (./interaktive_forelesningsnotater_1A_del1_av_2.aux)
+
+(./interaktive_forelesningsnotater_1A_del1_av_2.aux)
 Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1A_del1_av_2
 .out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25882 strings out of 478994
- 509805 string characters out of 5858185
- 846676 words of memory out of 5000000
- 42632 multiletter control sequences out of 15000+600000
+ 25876 strings out of 478994
+ 510009 string characters out of 5858185
+ 846627 words of memory out of 5000000
+ 42627 multiletter control sequences out of 15000+600000
  421227 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,12n,132p,899b,1328s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{front} has been referenced but does not exist, re
-placed by a fixed one
-
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on interaktive_forelesningsnotater_1A_del1_av_2.pdf (52 pages, 8
-67045 bytes).
+ 131i,12n,132p,982b,1328s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on interaktive_forelesningsnotater_1A_del1_av_2.pdf (52 pages, 7
+59424 bytes).
 PDF statistics:
- 844 PDF objects out of 1000 (max. 8388607)
+ 842 PDF objects out of 1000 (max. 8388607)
  676 compressed objects within 7 object streams
- 160 named destinations out of 1000 (max. 500000)
- 464 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
 

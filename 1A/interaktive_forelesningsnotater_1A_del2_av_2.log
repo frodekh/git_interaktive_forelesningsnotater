@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  18 AUG 2021 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  19 AUG 2021 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1116,10 +1116,10 @@ Overfull \hbox (98.42868pt too wide) in paragraph at lines 322--322
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<screenshot_1a1.png, id=63, 434.62375pt x 506.89375pt>
-File: screenshot_1a1.png Graphic file (type png)
-<use screenshot_1a1.png>
-Package pdftex.def Info: screenshot_1a1.png  used on input line 322.
+<media/screenshot_1a1.png, id=64, 434.62375pt x 506.89375pt>
+File: media/screenshot_1a1.png Graphic file (type png)
+<use media/screenshot_1a1.png>
+Package pdftex.def Info: media/screenshot_1a1.png  used on input line 322.
 (pdftex.def)             Requested size: 173.8464pt x 202.7539pt.
 
 Overfull \hbox (2.69876pt too wide) in paragraph at lines 322--322
@@ -1128,24 +1128,24 @@ Overfull \hbox (2.69876pt too wide) in paragraph at lines 322--322
 
 [4
 
- <./screenshot_1a1.png>]
+ <./media/screenshot_1a1.png>]
 Overfull \hbox (98.42868pt too wide) in paragraph at lines 336--336
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<screenshot_1a2_1.png, id=77, 422.57875pt x 358.33875pt>
-File: screenshot_1a2_1.png Graphic file (type png)
-<use screenshot_1a2_1.png>
-Package pdftex.def Info: screenshot_1a2_1.png  used on input line 336.
+<media/screenshot_1a2_1.png, id=78, 422.57875pt x 358.33875pt>
+File: media/screenshot_1a2_1.png Graphic file (type png)
+<use media/screenshot_1a2_1.png>
+Package pdftex.def Info: media/screenshot_1a2_1.png  used on input line 336.
 (pdftex.def)             Requested size: 169.0285pt x 143.33296pt.
-<screenshot_1a2_2.png, id=78, 428.60126pt x 199.74625pt>
-File: screenshot_1a2_2.png Graphic file (type png)
-<use screenshot_1a2_2.png>
-Package pdftex.def Info: screenshot_1a2_2.png  used on input line 336.
+<media/screenshot_1a2_2.png, id=79, 428.60126pt x 199.74625pt>
+File: media/screenshot_1a2_2.png Graphic file (type png)
+<use media/screenshot_1a2_2.png>
+Package pdftex.def Info: media/screenshot_1a2_2.png  used on input line 336.
 (pdftex.def)             Requested size: 171.43745pt x 79.89708pt.
 [5
 
- <./screenshot_1a2_1.png> <./screenshot_1a2_2.png>]
+ <./media/screenshot_1a2_1.png> <./media/screenshot_1a2_2.png>]
 Overfull \vbox (0.15967pt too high) detected at line 348
  []
 
@@ -1164,58 +1164,57 @@ Overfull \hbox (98.42868pt too wide) in paragraph at lines 415--415
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<screenshot_1a1_4.png, id=195, 425.59pt x 214.8025pt>
-File: screenshot_1a1_4.png Graphic file (type png)
-<use screenshot_1a1_4.png>
-Package pdftex.def Info: screenshot_1a1_4.png  used on input line 415.
+<media/screenshot_1a1_4.png, id=196, 425.59pt x 214.8025pt>
+File: media/screenshot_1a1_4.png Graphic file (type png)
+<use media/screenshot_1a1_4.png>
+Package pdftex.def Info: media/screenshot_1a1_4.png  used on input line 415.
 (pdftex.def)             Requested size: 170.23297pt x 85.91946pt.
-<screenshot_1a1_3.png, id=196, 410.53375pt x 231.86626pt>
-File: screenshot_1a1_3.png Graphic file (type png)
-<use screenshot_1a1_3.png>
-Package pdftex.def Info: screenshot_1a1_3.png  used on input line 415.
+<media/screenshot_1a1_3.png, id=197, 410.53375pt x 231.86626pt>
+File: media/screenshot_1a1_3.png Graphic file (type png)
+<use media/screenshot_1a1_3.png>
+Package pdftex.def Info: media/screenshot_1a1_3.png  used on input line 415.
 (pdftex.def)             Requested size: 164.21059pt x 92.74484pt.
 [11
 
- <./screenshot_1a1_4.png> <./screenshot_1a1_3.png>]
-<screenshot_1a4_all.png, id=210, 436.63126pt x 349.305pt>
-File: screenshot_1a4_all.png Graphic file (type png)
-<use screenshot_1a4_all.png>
-Package pdftex.def Info: screenshot_1a4_all.png  used on input line 425.
+ <./media/screenshot_1a1_4.png> <./media/screenshot_1a1_3.png>]
+<media/screenshot_1a4_all.png, id=211, 436.63126pt x 349.305pt>
+File: media/screenshot_1a4_all.png Graphic file (type png)
+<use media/screenshot_1a4_all.png>
+Package pdftex.def Info: media/screenshot_1a4_all.png  used on input line 425.
 (pdftex.def)             Requested size: 174.6494pt x 139.71951pt.
  [12
 
- <./screenshot_1a4_all.png>]
+ <./media/screenshot_1a4_all.png>]
 Overfull \hbox (98.42868pt too wide) in paragraph at lines 445--445
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<1a6_1.png, id=222, 450.68375pt x 78.2925pt>
-File: 1a6_1.png Graphic file (type png)
-<use 1a6_1.png>
-Package pdftex.def Info: 1a6_1.png  used on input line 445.
+<media/1a6_1.png, id=223, 450.68375pt x 78.2925pt>
+File: media/1a6_1.png Graphic file (type png)
+<use media/1a6_1.png>
+Package pdftex.def Info: media/1a6_1.png  used on input line 445.
 (pdftex.def)             Requested size: 157.74167pt x 27.40277pt.
-<1a6_2.png, id=223, 462.72874pt x 225.84375pt>
-File: 1a6_2.png Graphic file (type png)
-<use 1a6_2.png>
-Package pdftex.def Info: 1a6_2.png  used on input line 445.
+<media/1a6_2.png, id=224, 462.72874pt x 225.84375pt>
+File: media/1a6_2.png Graphic file (type png)
+<use media/1a6_2.png>
+Package pdftex.def Info: media/1a6_2.png  used on input line 445.
 (pdftex.def)             Requested size: 161.95749pt x 79.04648pt.
-<1a6_3.png, id=224, 411.5375pt x 195.73125pt>
-File: 1a6_3.png Graphic file (type png)
-<use 1a6_3.png>
-Package pdftex.def Info: 1a6_3.png  used on input line 445.
+<media/1a6_3.png, id=225, 411.5375pt x 195.73125pt>
+File: media/1a6_3.png Graphic file (type png)
+<use media/1a6_3.png>
+Package pdftex.def Info: media/1a6_3.png  used on input line 445.
 (pdftex.def)             Requested size: 144.04028pt x 68.50696pt.
 [13
 
- <./1a6_1.png> <./1a6_2.png> <./1a6_3.png>]
-<drink-coffee.png, id=243, 16.8383pt x 11.61842pt>
-File: drink-coffee.png Graphic file (type png)
-<use drink-coffee.png>
-Package pdftex.def Info: drink-coffee.png  used on input line 459.
+ <./media/1a6_1.png> <./media/1a6_2.png> <./media/1a6_3.png>]
+<media/drink-coffee.png, id=244, 16.8383pt x 11.61842pt>
+File: media/drink-coffee.png Graphic file (type png)
+<use media/drink-coffee.png>
+Package pdftex.def Info: media/drink-coffee.png  used on input line 459.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [14
 
- <./drink-coffee.png>]
-[15
+ <./media/drink-coffee.png>] [15
 
 ] [16
 
@@ -1298,14 +1297,14 @@ LaTeX Warning: Command \o invalid in math mode on input line 536.
 [27
 
 ]
-<elcol.png, id=432, 351.3125pt x 310.15875pt>
-File: elcol.png Graphic file (type png)
-<use elcol.png>
-Package pdftex.def Info: elcol.png  used on input line 546.
+<media/elcol.png, id=433, 351.3125pt x 310.15875pt>
+File: media/elcol.png Graphic file (type png)
+<use media/elcol.png>
+Package pdftex.def Info: media/elcol.png  used on input line 546.
 (pdftex.def)             Requested size: 210.78911pt x 186.09668pt.
  [28
 
- <./elcol.png>] [29
+ <./media/elcol.png>] [29
 
 ] [30
 
@@ -1328,14 +1327,14 @@ LaTeX Warning: Command \o invalid in math mode on input line 620.
 [35
 
 ]
-<cylinder.png, id=571, 384.43625pt x 153.57375pt>
-File: cylinder.png Graphic file (type png)
-<use cylinder.png>
-Package pdftex.def Info: cylinder.png  used on input line 632.
+<media/cylinder.png, id=572, 384.43625pt x 153.57375pt>
+File: media/cylinder.png Graphic file (type png)
+<use media/cylinder.png>
+Package pdftex.def Info: media/cylinder.png  used on input line 632.
 (pdftex.def)             Requested size: 192.21765pt x 76.78668pt.
  [36
 
- <./cylinder.png>] [37
+ <./media/cylinder.png>] [37
 
 ] [38
 
@@ -1351,10 +1350,10 @@ Package pdftex.def Info: cylinder.png  used on input line 632.
 
 ] [44
 
-] [45
-
 ]
-[46
+[45
+
+] [46
 
 ] [47
 
@@ -1381,21 +1380,18 @@ Overfull \vbox (1.49185pt too high) detected at line 797
 \openout8 = `interaktive_forelesningsnotater_1A_del2_av_2.snm'.
 
  (./interaktive_forelesningsnotater_1A_del2_av_2.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1A_del2_av_2
 .out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25836 strings out of 478994
- 509464 string characters out of 5858185
- 854482 words of memory out of 5000000
+ 25837 strings out of 478994
+ 509830 string characters out of 5858185
+ 854507 words of memory out of 5000000
  42596 multiletter control sequences out of 15000+600000
  421367 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,12n,132p,1022b,1207s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,12n,132p,1136b,1207s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -1414,10 +1410,10 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on interaktive_forelesningsnotater_1A_del2_av_2.pdf (51 pages, 1
-000084 bytes).
+000182 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
- 687 compressed objects within 7 object streams
+ 849 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
  149 named destinations out of 1000 (max. 500000)
  427 words of extra memory for PDF output out of 10000 (max. 10000000)
 
