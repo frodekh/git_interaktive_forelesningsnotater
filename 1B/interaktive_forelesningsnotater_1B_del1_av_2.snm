@@ -1,5 +1,5 @@
-\beamer@slide {front}{1}
-\beamer@slide {front2}{2}
+\beamer@slide {front2}{1}
+\beamer@slide {front3}{2}
 \beamer@slide {intro}{3}
 \beamer@slide {intro2}{4}
 \beamer@slide {basicfysikk1a}{6}
@@ -51,6 +51,7 @@
 \beamer@slide {kepler13}{60}
 \beamer@slide {kepler14}{61}
 \beamer@slide {kepler15}{62}
-\beamer@slide {kepler16}{63}
-\beamer@slide {kepler17}{64}
-\beamer@slide {oppsummering}{65}
+\beamer@slide {kepler15_2}{63}
+\beamer@slide {kepler16}{64}
+\beamer@slide {kepler17}{65}
+\beamer@slide {oppsummering}{66}

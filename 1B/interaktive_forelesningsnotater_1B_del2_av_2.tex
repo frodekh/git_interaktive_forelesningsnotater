@@ -1,13 +1,27 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
+
+\input{usercommands}
+
 \usetheme{Boadilla}
 %\usepackage{multimedia}
-\usepackage{animate}
+%\usepackage{animate}
 \usepackage{hyperref}
 \usepackage{tikz}
-\usepackage{tikzsymbols}
-
 \usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
 
 %gets rid of bottom navigation bars
 \setbeamertemplate{footline}[frame number]{}
@@ -37,6 +51,7 @@
 \definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
 \definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
 \definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
 
 \hypersetup{
     colorlinks=true,
@@ -70,55 +85,208 @@
 
 \newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
 
-\newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
-\newcommand{\nextpage}{\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
-\newcommand{\dnextpage}{\stepcounter{pageno}\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\\}
+\newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
 \newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
 \newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
 
-%  \node[
-%  inner xsep=10pt,
-%  draw=structure!80,
-%  fill=structure!50,
-%  rounded corners=4pt]  {\Large\insertbuttontext};}
-% structure!90
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
 
 \newcounter{pageno}
 \newcounter{nopages}
-\setcounter{nopages}{39}
+\setcounter{nopages}{42}
 
-\newcommand{\headline}{\small Repetisjon}
+\newcommand{\headline}{\small Introduksjon}
 
 \begin{document}
 
 
 %%%%% front
-\begin{frame}
-\label{front}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1B\\Interaktive forelesningsnotater: forelesning 2 av 2}}\\
-\vspace*{1cm}
-\begin{alertblock}{\center{\bf VIKTIG}}
-Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
-\end{alertblock}
-\vspace*{0.5cm}
-%\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
-
-\end{frame}
 
 \begin{frame}
 \label{front2}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1B\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1B\\Interaktive forelesningsnotater: forelesning 2 av 2}}\\
 \begin{block}{\center{\bf VIKTIG}}
-Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1b.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+Dette er et alternativ til forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1b.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
 \end{block}
 %\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
 \hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
@@ -128,7 +296,7 @@ Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått 
 \begin{columns}
 \column{0.5\textwidth}
 \hyperlink{front}{\pagebutton{Forrige side}}\\
-\includegraphics[scale=0.4]{landing.png}\\
+\includegraphics[scale=0.4]{media/landing.png}\\
 {
 \small 
 Velkommen til andre forelesning i del 1B! Under er det noen punkter til repetisjon.
@@ -162,7 +330,7 @@ der $p$ og $e$ er positive integrasjonskontstanter. Hvis $e<1$ så er dette form
 r(f)=\frac{a(1-e^2)}{1-e\cos{f}}
 \]
 der det ene objektet er i brennpunktet:
-\includegraphics[scale=0.3]{ellipse.png}\hyperlink{conic1b}{\pagebutton{Neste side}}
+\includegraphics[scale=0.3]{media/ellipse.png}\hyperlink{conic1b}{\pagebutton{Neste side}}
 \end{frame}
 
 
@@ -196,8 +364,10 @@ Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesni
 \item[] Ganske riktig, {\it parabler} og {\it hyperbler}: \hypertarget<.>{conicsections}{}
 \end{itemize}
 \begin{columns}
-\column{0.5\textwidth}
-\includegraphics[scale=0.3]{conicsections0.png}
+  \column{0.5\textwidth}
+\centerline{
+  \includegraphics[height = 0.5\textheight, width = 0.75\textwidth]{media/conicsections0.png}
+}
 \column{0.5\textwidth}
 De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne er hyperbler. Den sorte prikkete ellipsen har $e=0$ og er dermed en sirkel. Den heltrukne sorte linja er en ellipse med eksentrisitet $e=0.7$. Den sorte prikken er brennpunktet i sirkelen  (og dermed sentrum siden det er sirkel), den oransje prikken er brennpunktet i ellipsen.
 \hyperlink{conic3}{\pagebutton{Neste side}}
@@ -208,8 +378,10 @@ De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne e
 \label{conic3}
 \dlastpagebutton{conic2}
 \begin{columns}
-\column{0.5\textwidth}
-\includegraphics[scale=0.3]{conicsections0.png}
+  \column{0.5\textwidth}
+  \centerline{
+  \includegraphics[height = 0.5\textheight, width = 0.75\textwidth]{media/conicsections0.png}
+}
 Hyperbler og parabler har også formel
 \[
 r(f)=\frac{p}{1-e\cos{f}}
@@ -251,7 +423,7 @@ Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra de
 \lastpagebutton{conic4}
 {\large
 \textcolor{orange}{Det er først nå i det siste at man har oppdaget slike objekter. Det aller første ble oppdaget i 2017 og ble kalt {\it Oumuamua}. Her er en kunstrisk fremstilling av hvordan objektet kan se ut (credit: ESO/M. Kornmesser)\\
-\includegraphics[scale=0.3]{oumuamua.png}
+\includegraphics[scale=0.3]{media/oumuamua.png}
 }}
 \hyperlink{conic6}{\pagebutton{Neste side}}
 \end{frame}
@@ -275,10 +447,11 @@ Vi har her utledet Keplers 1.lov. Men hva med Keplers 2. og 3. lov? De skal du f
 \column{0.4\textwidth}
 \lastpagebutton{conic6}
 \headlinebutton{\headline}\\
-Tenk gjennom hvordan du kan gå frem for å løse oppgave 1B.1 under her (prosjektstudenter har en liknende oppgave i utfording B1, del 2):
-Etter at du har tenkte nøye, ta gjerne en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_9.mp4}{denne videoen} for noen tips. \textcolor{red}{Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.}
+{\scriptsize
+Tenk {\bf fort} gjennom hvordan du kan gå frem for å løse oppgave 1B.1 under her (prosjektstudenter har en liknende oppgave i utfording B1, del 2):
+{\bf Deretter}, velg om du enten vil gå videre til neste side og heller se mer på oppgaven etter forelesningen {\bf eller} om du vil bruke litt tid på oppgaven nå. Hvis du vil se litt mer på oppgaven nå: tenk litt til og hvis du sitter helt fast, ta gjerne en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_9.mp4}{denne videoen} for noen tips. \textcolor{red}{Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.}}
 \column{0.5\textwidth}
-\hspace*{-0.5cm}\includegraphics[scale=0.43]{1b1.png}
+\hspace*{-0.5cm}\includegraphics[scale=0.43]{media/1b1.png}
 \hyperlink{oppgaver2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -290,10 +463,9 @@ Etter at du har tenkte nøye, ta gjerne en titt på \href{https://www.uio.no/stu
 \column{0.4\textwidth}
 \lastpagebutton{oppgaver1}
 \headlinebutton{\headline}\\
-Tenk gjennom hvordan du kan gå frem for å løse deloppgave 1 og 3 fra oppgave 1B.2 under her (prosjektstudenter har en liknende oppgave i utfording B1, del 2):
-Etter at du har tenkte nøye, ta gjerne en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_10.mp4}{denne videoen} for noen tips.\textcolor{red}{ Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.}
+Tenk  {\bf fort} gjennom hvordan du kan gå frem for å løse deloppgave 1 og 3 fra oppgave 1B.2 under her (prosjektstudenter har en liknende oppgave i utfording B1, del 2): Etter at du har tenkt, ta gjerne en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_10.mp4}{denne videoen} for noen tips.\textcolor{red}{ Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.}
 \column{0.45\textwidth}
-\hspace*{-0.5cm}\includegraphics[scale=0.43]{1b2.png}
+\hspace*{-0.5cm}\includegraphics[scale=0.43]{media/1b2.png}
 \hyperlink{oppgaver3}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -317,7 +489,8 @@ Vi ser at begge massene er med på å bestemme forholdet mellom omløpsperiode o
 \label{oppgaver4}
 \lastpagebutton{oppgaver3}
 Før vi går videre, ta en nøye titt på første deloppgave av oppgave 1B.3:\\
-\includegraphics[scale=0.4]{1b3.png}
+\includegraphics[scale=0.4]{media/1b3.png}\\
+Tenk i maks 2-3 minutter om du ser en måte å løse den på? Hvis ikke, ta det etter forelesningen.
 \hyperlink{cm1}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -338,7 +511,7 @@ Tenk deg godt om før du går til neste side...
 \label{cm2}
 \lastpagebutton{cm1}
 {\small For å finne svaret, må vi repetere et uttrykk som du allerede kjenner: {\it massesenter.}}\\
-\includegraphics[scale=0.35]{cm1.png}\\
+\includegraphics[scale=0.35]{media/cm1.png}\\
 Hvis vi kjenner posisjonene $\vec{r_1}$ og $\vec{r_2}$ på figuren, hvordan kan vi da finne posisjonen $\vec{R}$ til massesenteret? Du kan bruke massene $m_1$ og $m_2$. Hva er formelen?\\
 \hyperlink{cm3}{\pagebutton{Trykk her når du har frisket opp massesenterdefinisjonen!}}
 \end{frame}
@@ -373,7 +546,7 @@ Etter å ha sett videoen skal du nå se om du kan komme frem til et uttrykk av t
 \[
 \vec{F}=\Sigma\Sigma \vec{f}+\vec{F}_\mathrm{ext}=\Sigma m\vec{r}
 \]
-og sett inn riktige indekser på krefter, masser, posisjonsvektorer og tidsderiverte. Pass spesielt på at summegrensene blir riktige!
+og sett inn riktige indekser på krefter, masser, posisjonsvektorer og tidsderiverte. Pass spesielt på at summegrensene blir riktige! Bruk maks 5 minutter.
 \hyperlink{cm5}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -420,7 +593,7 @@ Hvis det ikke er noen ytre krefter så vil massesenterbevegelsen være enkel, ko
 \hyperlink{cm6}{\pagebutton{\small Forrige side}}
 {\Huge
 \centerline{TID FOR KAFFEPAUSE!!!}
-\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 Ut å strekke på bena. Inn med litt koffein...\\
 \vspace*{0.5cm}
@@ -437,10 +610,10 @@ Ihvertfall 10 min...
 \column{0.5\textwidth}
 \lastpagebutton{cm6}
 Her har vi situasjonen:\\
-\includegraphics[scale=0.17]{cm3.png}\\
+\includegraphics[scale=0.17]{media/cm3.png}\\
 Fra et gitt origo O utenfor systemet så har vi poisjonsvektorene $\vec{r_1}$ og $\vec{r_2}$ som peker på de to legemene, samt $\vec{R}$ som peker på massesenteret (CM, Center of Mass) til de to legemene. Vi er interessert i disse legemenes bevegelse i forhold til massesenteret (se forrige side hvis du er usikker på hvorfor!). 
 \column{0.5\textwidth}
-Da velger vi å flytte origo til massesenteret. Dette nye koordinatsystemet kaller vi massesentersystemet. Posisjonsvektorene $\vec{r_1}^{CM}$ og $\vec{r_2}^{CM}$ fra det nye origo er tegnet inn i figuren. Men hva med $\vec{R}^{CM}$. Hva er posisjonsvektoren til massesemnteret fra dette nye origo?\\
+Da velger vi å flytte origo til massesenteret. Dette nye koordinatsystemet kaller vi massesentersystemet. Posisjonsvektorene $\vec{r_1}^{CM}$ og $\vec{r_2}^{CM}$ fra det nye origo er tegnet inn i figuren. Men hva med $\vec{R}^{CM}$. Hva er posisjonsvektoren til massesenteret fra dette nye origo?\\
 Diskuter og tenk deg nøye om før du ser på svaret på neste side. Svaret er kanskje enklere enn du tror...
 \hyperlink{cm8}{\pagebutton{Neste side}}
 \end{columns}
@@ -520,7 +693,7 @@ Her er $r_1$ og $r_2$ avstanden til de to legemene fra massesenteret, ser du det
 {\small Fant du det? Innser du at begge legemene går i ellipser omkring massesenteret?}\\
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.17]{cm3.png}
+\includegraphics[scale=0.17]{media/cm3.png}
 \column{0.5\textwidth}
 \begin{align}
 \vec{r_1}&=-\frac{\hat\mu}{m_1}\vec{r}\\
@@ -539,7 +712,7 @@ Her er $r_1$ og $r_2$ avstanden til de to legemene fra massesenteret, ser du det
 \label{ja2}
 \lastpagebutton{ja}
 Hva er de store halvaksene $a_1$ og $a_2$ til disse to ellipsene? Og hva er eksentrisiteten $e$?? Uttrykk svaret ved hjelp av massene og egenskapene til ellipsen som vi så på tidligere: nemlig ellipsebanen som det ene objektet har rundt det andre. Ved å sammenlikne uttrykkene for $r_1$ og $r_2$ som funksjon av $f$ som du nå har funnet, og sammenlikner med formelen for ellipse, så bør dette falle rett ut.\\
-\includegraphics[scale=0.4]{cm2.png}\\
+\includegraphics[scale=0.4]{media/cm2.png}\\
 \hyperlink{cm9}{\pagebutton{Jeg har tenkt og tror jeg har svaret}}\\
 Hvis du ikke har svaret, må du spørre foreleser/gruppelærer før du går videre. Det er veldig viktig at du har dette klart for deg nå!
 \end{frame}
@@ -549,12 +722,14 @@ Hvis du ikke har svaret, må du spørre foreleser/gruppelærer før du går vide
 \begin{frame}
 \label{cm9}
 \lastpagebutton{ja2}
+{\small
 La oss først klare opp i begreper her, viktig at du har oversikt:
 \begin{itemize}
 \item Vektoren $\vec{r}$ peker fra det ene legemet til det andre. Lengden $r(f)$ av denne vektoren som avhenger av vinkelen $f$ som definert tidligere utgjør ellipsebanen til det ene legemet omkring det andre. Denne ellipsebanen har store halvakse lik $a$ og eksentrisitet $e$. {\bf Merk at sett fra referansesystemet til et av legemene (systemet der det ene legemet står i ro), vil man se at det andre legemet går i ellipsebane rundt det første. Mens sett fra massesentersystemet vil man se at begge legemene går i ellipsebaner omkring massesenteret som vist på figur på forrige side. Klarer du å se dette for deg?}
 \item Vektoren $\vec{r_1}$ peker fra massesenteret ut til legeme $m_1$. Lengden $r_1(f)$ av denne gir oss ellipsebanen omkring massesenteret med store halvakse $a_1$ og samme eksentrisitet $e$ som banen til et legeme om det andre.
 \item Vektoren $\vec{r_2}$ peker fra massesenteret ut til legeme $m_2$. Lengden $r_2(f)$ av denne gir oss ellipsebanen omkring massesenteret med store halvakse $a_2$ og samme eksentrisitet $e$ som banen til et legeme om det andre.
 \end{itemize}
+}
 \hyperlink{cm10}{\pagebutton{Jeg har tenkt og tror jeg har svaret}}
 \end{frame}
 
@@ -698,13 +873,13 @@ Isåfall var det riktig!
 \addtocounter{pageno}{1}
 \dlastpagebutton{energi3}
 Da har du allerede fått god hjelp til første deloppgave av oppgave 1B4:\\
-\includegraphics[scale=0.4]{1b4.png}\\
+\includegraphics[scale=0.4]{media/1b4.png}\\
 Ser du hvordan den kan løses?
 Hvis ikke kan du få hjelp på gruppene.
 Du trenger ikke gjøre det nå, men ta en titt på de neste to deloppgavene
 \column{0.5\textwidth}
-\includegraphics[scale=0.4]{1b4_2.png}\\
-\includegraphics[scale=0.4]{1b4_3.png}\\
+\includegraphics[scale=0.4]{media/1b4_2.png}\\
+\includegraphics[scale=0.4]{media/1b4_3.png}\\
 Hvis du sliter med å se hva som er svaret på tredje deloppgave, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_13.mp4}{denne videoen}.
 \hyperlink{energi5}{\pagebutton{Neste side}}
 \end{columns}
@@ -812,7 +987,7 @@ Før vi avslutter med litt tips og hjelp til koding av innleveringsoppgaven, må
 \lastpagebuttonx{skjema}
 \headlinebutton{\headline}\\
 Men det blir også mye \textcolor{red}{numerisk baneberegning} som vi snakket om helt i starten av forrige forelesning mens \textcolor{blue}{de analytiske uttrykkene vi har utledet skal hjelpe oss med det numeriske.} Vi går tilbake til utgangspunktet vårt:
-\includegraphics[scale=0.35]{landing.png}
+\includegraphics[scale=0.35]{media/landing.png}
 Vi skal lande satelitten trygt. Her er det klart at du i den numeriske baneberegningen}
 \column{0.5\textwidth}
 {\small  også trenger å ta med friksjonskreftene når du kommer inn i atmosfæren. Dette er forklart nærmere i oppgave 1B8. Men når du å skal velge hvilken hastighet og retning du vil sende ut landersonden din ut fra modersonden med, gitt posisjonen din i banen, så har du nå fått god hjelp: ved å beregne energien og spinnet du får ved en gitt utgangshastighet så vet du nøyaktig hva slags bane du får. Kanskje strategien din er å lage en veldig avlang (eksentrisk) ellipsebane som sneier atmosfæren din ved hver nærpassering? Isåfall vet du nå hva du må gjøre med spinnet for å få en store $e$. Eller hvis du har en helt annen strategi: nå kan du forutsi hva slags bane du får frem til du begynner å treffe atmosfæren.}
@@ -826,8 +1001,8 @@ Vi skal lande satelitten trygt. Her er det klart at du i den numeriske banebereg
 \begin{frame}
 \label{koding2}
 \lastpagebutton{koding}
-\includegraphics[scale=0.3]{debugging1.png}
-{\small La oss helt til slutt snakke litt om debugging. Det kommer helt sikkert til å gå galt når du programmerer banen første gang. Her ser du et veldig typisk resultat. \\{\bf Spørsmålet er, hva gjør du nå???}\\}
+\includegraphics[scale=0.3]{media/debugging1.png}
+{\small La oss helt til slutt snakke litt om debugging. Det kommer helt sikkert til å gå galt når du programmerer banen første gang. Her ser du et veldig typisk resultat (jordkloden indikerer startposisjon). \\{\bf Spørsmålet er, hva gjør du nå???}\\}
 \hyperlink{fdebug}{\choicebutton{{\small Stirrer på koden til du finner feilen}}}\ \ \ \ \ \hyperlink{fdebug}{\choicebutton{{\small Får noen andre til å stirre på koden}}}\ \ \ \ \ \hyperlink{rdebug}{\choicebutton{{\small Bruker fysikk til å finne i hvilken del av koden feilen befinner seg.}}}
 \hyperlink{cm7}{\pagebutton{Neste side}}
 \end{frame}
@@ -851,7 +1026,7 @@ Rådene på neste side er nok da ikke for deg, men \hyperlink{rdebug}{\pagebutto
 \clastpagebuttonx{koding2}
 \headlinebutton{\headline}\\
 {\small Det er en utmerket ide å bruke litt fysikk når man gjør debugging, husk dette også for de kommende delene i kurset. Du kan spare {\bf masse} tid på debugging hvis du bare finner ut hvor feilen ligger. La oss se på noen mulige strategier i dette tilfellet her.\\}
-\includegraphics[scale=0.3]{debugging2.png}\\
+\includegraphics[scale=0.3]{media/debugging2.png}\\
 \column{0.5\textwidth}
 \begin{enumerate}
 \item Hva er energien din i initialposisjonen? Er $E>0$? Da er det enten noe feil med initialhastigheten din, eller du skal ha en hyperbelbane.
@@ -869,7 +1044,7 @@ Rådene på neste side er nok da ikke for deg, men \hyperlink{rdebug}{\pagebutto
 \begin{columns}
 \column{0.5\textwidth}
 \lastpagebutton{rdebug}
-\includegraphics[scale=0.25]{debugging2.png}
+\includegraphics[scale=0.25]{media/debugging2.png}
 {\small
 {\bf Og sist, men ikke minst:} Sjekk størrelsen på kraftvektoren. {\bf Bruk kalkulator (dette er viktig slik at du bruker noe helt annet en koden din)} til å beregne totalkrafta i initialposisjonen. Beregn først lengden av initialposisjonsvektoren $\vec{r}$ {\bf (også med kalkulator)} og så størrelsen på krafta.} 
 \column{0.5\textwidth}
@@ -894,7 +1069,8 @@ Gratulerer, da er del 1B overstått! Du bør nå kunne:
 \item kunne beskrive og beregne på baner i et tolegemesystem sett fra massesentersystemet
 \item kunne beregne anguklærmoment og energi i et slikt to-legemesystem
 \end{itemize}
-\textcolor{red}{Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk for å vite om alt arbeidet med å lage disse interaktive slidene er verd det, om jeg bør fortsette med det og om det er noe jeg bør endre.}
+    {\bf\footnotesize Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1b.pdf}{kortsvarsoppgavene} til del 1B for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+\textcolor{red}{\footnotesize Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk.}
 \end{frame}
 
 \end{document}

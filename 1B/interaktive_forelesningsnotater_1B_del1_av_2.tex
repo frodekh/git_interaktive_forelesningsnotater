@@ -1,12 +1,27 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
+
+\input{usercommands}
+
 \usetheme{Boadilla}
 %\usepackage{multimedia}
-\usepackage{animate}
+%\usepackage{animate}
 \usepackage{hyperref}
-\usepackage{breakurl}
 \usepackage{tikz}
+\usepackage{cancel}
 \usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
 
 %gets rid of bottom navigation bars
 \setbeamertemplate{footline}[frame number]{}
@@ -36,6 +51,7 @@
 \definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
 \definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
 \definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
 
 \hypersetup{
     colorlinks=true,
@@ -46,7 +62,7 @@
 
 \let\hrefori\href
 \renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
-\newcommand{\longref}[9]{\href{#1}{#2} \href{#1}{#3} \href{#1}{#4} \href{#1}{#5} \href{#1}{#6} \href{#1}{#7} \href{#1}{#8} \href{#1}{#9}}
+
 
 %title
 \setbeamercolor{block title alerted}{fg=white,bg=cyan}
@@ -69,27 +85,177 @@
 
 \newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
 
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
 
 \newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
-\newcommand{\nextpage}{\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
-\newcommand{\dnextpage}{\stepcounter{pageno}\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\\}
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
 \newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
 \newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
 
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
 
 
-%  \node[
-%  inner xsep=10pt,
-%  draw=structure!80,
-%  fill=structure!50,
-%  rounded corners=4pt]  {\Large\insertbuttontext};}
-% structure!90
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
 
 \newcounter{pageno}
 \newcounter{nopages}
@@ -100,29 +266,29 @@
 \begin{document}
 
 
-\begin{frame}
-\label{front}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1B\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
-\vspace*{1cm}
-\begin{alertblock}{\center{\bf VIKTIG}}
-Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
-\end{alertblock}
-\vspace*{0.5cm}
-%\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
-
-\end{frame}
+%%%%% front
 
 \begin{frame}
 \label{front2}
 \center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1B\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
 \begin{block}{\center{\bf VIKTIG}}
-Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1b.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+Dette er et alternativ til forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1b.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
 \end{block}
 %\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
 
 %%%%% intro
 \begin{frame}
@@ -131,7 +297,7 @@ Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått 
 \column{0.5\textwidth}
 \hyperlink{front}{\pagebutton{Forrige side}}\\
 \vspace{1cm}
-\includegraphics[scale=0.4]{landing.png}\\
+\includegraphics[scale=0.4]{media/landing.png}\\
 \column{0.5\textwidth}
 \small Velkommen til del 1B! Etter at du har skutt raketten din ut i rommet, så skal vi i denne delen beregne banen til både romfartøyet ditt og planeten som du skal besøke. Vi skal se på både analytiske og numeriske baneberegninger og prøve å forstå hva som avgjør banen til et objekt. Vi skal, kun ved å ta utgangspunkt i Newtons lover, utlede analytisk at planeter går i ellipsebaner, og se at det faktisk også finnes andre baner. Numerisk baneberegning har du kanskje gjort før med Eulers metode. Det blir litt repetisjon før vi tar det videre. \\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
 
@@ -146,7 +312,7 @@ Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått 
 %\hyperlink{intro}{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage \\
 \lastpagebutton{intro}
 \vspace{0.5cm}
-\includegraphics[scale=0.4]{landing.png}\\
+\includegraphics[scale=0.4]{media/landing.png}\\
 Oppgave 1B8 som er en av innleveringsoppgavene går ut på å myklande en romsonde på en planet med atmosfære som illustert i figuren. I løpet av dette forelesningsnotatet vil du lære det du trenger for å løse denne oppgaven og mer til.
 \column{0.5\textwidth}
 Men før vi setter igang så skal vi varme opp litt med å fort sjekke at vi har kunnskapen fra del 1A på plass, samt se hva du allerede kan om temaene i del 1B.
@@ -171,7 +337,7 @@ Har du varmet opp? Er du svett og klar til å starte kampen? ...og sendt inn skj
 \label{basicfysikk1a}
 \dlastpagebutton{intro2}
 La oss begynne med beina godt plantet på jorda. Og med litt {\bf veldig} grunnleggende videregåendeskole-fysikk (sorry!).
-\includegraphics[scale=0.2]{car_move_1.png}\\
+\includegraphics[scale=0.2]{media/car_move_1.png}\\
 I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avstand $\Delta x$ har denne bilen beveget seg i løpet av tiden $\Delta t$?\\
 \hyperlink{basicfysikk1b}{\choicebutton{Trykk her når du har svaret!}}\\
 \end{frame}
@@ -181,7 +347,7 @@ I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avst
 \label{basicfysikk1b}
 \clastpagebutton{intro2}
 La oss begynne med beina godt plantet på jorda. Og med litt {\bf veldig} grunnleggende videregåendeskole-fysikk (sorry!).
-\includegraphics[scale=0.2]{car_move_2.png}\\
+\includegraphics[scale=0.2]{media/car_move_2.png}\\
 I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avstand $\Delta x$ har denne bilen beveget seg i løpet av tiden $\Delta t$?\\
 \textcolor{orange}{Ganske riktig ja, strekning er hastighet ganger tid, dermed er $\Delta x = v \Delta t$.}\\
 \hyperlink{basicfysikk2a}{\pagebutton{Neste side}}
@@ -194,13 +360,13 @@ I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avst
 \column{0.5\textwidth}
 \lastpagebutton{basicfysikk1a}
 Nå har vi samme situasjon en gang til, men med vektorer. En romskip har posisjonsvektor $\vec{r}$. Vi skal i resten av dette emnet bruke konseptet {\it posisjonsvektor} ganske mye.
-\includegraphics[scale=0.3]{spaceship_move_1.png}\\
+\includegraphics[scale=0.3]{media/spaceship_move_1.png}\\
 \column{0.5\textwidth}
 \vspace*{0.5cm}\\
 \begin{alertblock}{\bf En posisjonsvektor...}
 ... er en vektor som peker fra origo i koordinatsystemet ditt til den posisjonen der objektet du studerer er. Når objektet endrer posisjon så endrer også posisjonsvektoren seg tilsvarende slik at den alltid peker på objektets posisjon.
 \end{alertblock}
-I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet har hastighetsvektor $\vec{v}$.  Hva er forflytningen $\Delta\vec{r}$ som romskipet får i løpet av tid $\Delta t$?
+I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet har hastighetsvektor $\vec{v}$.  Hva er forflytningen $\Delta\vec{r}$ (altså endringsvektoren til posisjonsvektoren) som romskipet får i løpet av tid $\Delta t$?
 \hyperlink{basicfysikk2b}{\choicebutton{Trykk her når du har svaret!}}\\
 \end{columns}
 \end{frame}
@@ -211,7 +377,7 @@ I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet ha
 \column{0.5\textwidth}
 \clastpagebutton{basicfysikk1a}
 Nå har vi samme situasjon en gang til, men med vektorer. En romskip har posisjonsvektor $\vec{r}$. Vi skal i resten av dette emnet bruke konseptet {\it posisjonsvektor} ganske mye.
-\includegraphics[scale=0.3]{spaceship_move_2.png}\\
+\includegraphics[scale=0.3]{media/spaceship_move_2.png}\\
 \column{0.5\textwidth}
 \vspace*{0.5cm}\\
 \begin{alertblock}{\bf En posisjonsvektor...}
@@ -229,7 +395,7 @@ I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet ha
 \begin{columns}
 \column{0.5\textwidth}
 \lastpagebutton{basicfysikk2a}
-\includegraphics[scale=0.2]{spaceship_move_2.png}\\
+\includegraphics[scale=0.2]{media/spaceship_move_2.png}\\
 Vi fant at forflytningen er $\Delta\vec{r}=\vec{v}\Delta t$. Hvis vi kaller opprinnelig posisjon for $\vec{r}_0$ og ny poisjon for $\vec{r}_1$, så har vi altså:
 \[
 \vec{r}_1  = \vec{r}_0 + \vec{v}\Delta t
@@ -267,10 +433,11 @@ Når du gjør dette numerisk, husk også at det er mer nøyaktig å bruke Euler-
 \begin{frame}
 \label{euler3}
 \lastpagebutton{euler2}
-Merk at det du har gjort her matematisk er jo å løse likningssystemene
+Merk at det du har gjort her matematisk er jo å løse likningssystemene 
 \[
 \frac{d\vec{r}}{dt}=\vec{v}\ \ \ \ \ \frac{d\vec{v}}{dt}=\vec{a}
 \]
+{\bf (disse likningssystemene er jo bare definisjonene av hastighet og akselrasjon, ser du det?)}
 Du kommer frem til samme resultat hvis vi gjør de infinitsimale størrelsene endelige (men fortsatt små) ved å kalle $dt$ for $\Delta t$, etc:
 \[
 \frac{\Delta\vec{r}}{\Delta t}=\vec{v}\ \ \ \ \ \frac{\Delta\vec{v}}{\Delta t}=\vec{a}
@@ -323,7 +490,7 @@ Moroa begynner på ...
 \lastpagebuttonx{euler4}
 \hspace*{-0.5cm}\headlinebutton{\headline}\\
 Før vi begynner på selve utledningen så må vi innom et par småting som forberedelse til utledningen, la oss begynne med koordinatsystemer og enhetsvektorer.\\
-\includegraphics[scale=0.3]{unity_vectors.png}\\
+\includegraphics[scale=0.3]{media/unity_vectors.png}\\
 \column{0.5\textwidth}
 Her ser du posisjonsvektoren $\vec{r}$ til romskipet samt enhetsvektorene $\vec{e}_x$ og $\vec{e}_y$. Dette er de samme enhetsvektorene som du kaller for $\vec{i}$ og $\vec{j}$ i andre fag. (vi bruker andre navn på dem her for å skape litt forvirring)\\
 
@@ -353,7 +520,7 @@ Hva er $a$ og $b$ her?\\
 \column{0.5\textwidth}
 \clastpagebutton{enhetsvektorer1}
 {\bf STEMMER!}.Vi ser på figuren igjen:
-\includegraphics[scale=0.26]{unity_vectors.png}\\
+\includegraphics[scale=0.26]{media/unity_vectors.png}\\
 
 Ser du at det er tegnet inn to andre enhetsvektorer $\vec{e}_r$ og $\vec{e}_\theta$? Dette er enhetsvektorer som fortsatt har lengde 1, men som peker {\bf langs} $\vec{r}$ og {\bf ortogonalt} med $\vec{r}$. 
 
@@ -388,7 +555,7 @@ Men dette gjør det vel mer komplisert å bruke r-$\theta$-enhetsvektorene? Hva 
 \label{enhetsvektorer3}
 \dlastpagebutton{enhetsvektorer2}
 Vi skal se på fordelene etterhvert, men la oss prøve å bruke dem:
-\includegraphics[scale=0.28]{unity_vectors.png}\\
+\includegraphics[scale=0.28]{media/unity_vectors.png}\\
 Hvis vi nå skal skrive poisjonsvektoren $\vec{r}$ uttrykt ved de nye enhetsvektorne:
 \[
 \vec{r} = a\vec{e}_r+b\vec{e}_\theta
@@ -419,7 +586,7 @@ Hjelper det deg? Prøv igjen med dette som utgangspunkt!
 \label{rettrt}
 \clastpagebutton{enhetsvektorer3}
 {\bf STEMMER!}.Vi ser på figuren igjen:\\
-\includegraphics[scale=0.26]{unity_vectors.png}\\
+\includegraphics[scale=0.26]{media/unity_vectors.png}\\
 Poisjonsvektoren har altså kun en komponent som går langs $\vec{e}_r$, ingen som går ortogonalt. Hvis vi tenker litt på det så er det egentlig opplagt siden $\vec{e}_r$ er definert fra $\vec{r}$.
 
 \hyperlink{hastighet1}{\pagebutton{Neste side}}
@@ -438,7 +605,7 @@ Det vi fant er altså at posisjonsvektoren kan skrives som
 der $r=|\vec{r}|$. Enig?\\
 Hvis du tar utgangspunkt i dette, hvordan vil du nå gå frem for å finne hastighetsvektoren $\vec{v}$ til romskipet, gitt at du kjenner $r(t)$ og $\theta(t)$?\\
 {\bf MERK:} Det er ikke meningen at du skal regne ut hastighetsvektoren riktig enda, kun tenke gjennom hvordan du vil gå frem for å gjøre det!\\
-Har du tenkt nøye gjennom hvordan du kunne tenke deg å gjøre det? Har du en ide?\\
+Har du tenkt nøye gjennom hvordan du kunne tenke deg å gjøre det? Har du en ide? {\bf (tenk i maks 2-3 minutter)}\\
 \hyperlink{nohintv}{\choicebutton{{Ja, jeg tror det!}}}\\
 \hyperlink{hintv}{\choicebutton{tjaaaaa, et bittelite hint kanskje?}}
 \end{frame}
@@ -464,7 +631,7 @@ Var det noe alla:
 \vec{v}=\frac{d\vec{r}}{dt}
 \]
 du tenkte på?\\
- Hvordan går du videre her?\\
+ Hvordan går du videre her? (vi lærte vel akkurat hvordan uttrykke $\vec{r}$ med enhetsvektorer...)\\
 \hyperlink{nohintv2}{\choicebutton{Har du en ide?}}\\
 \pause
 \begin{itemize}[<+->]
@@ -496,14 +663,14 @@ Der vi trenger å finne {\it den tidsderiverte av enhetsvektoren!}. Dette er lit
 \begin{block}{Grublis}
 Hvordan kan du går frem for å finne den tidsderiverte av enhetsvektoren $\vec{e}_r$??? Du kan uttrykke svaret med de tidsderiverte, $\dot r$ og $\dot\theta$ samt enhetsvektorer.
 \end{block}
-\hyperlink{hastighet3}{\pagebutton{Jeg har grublet og er klar til å gå videre}}
+\hyperlink{hastighet3}{\pagebutton{Jeg har grublet maks 2 min. og er klar til å gå videre}}
 \end{frame}
 
 \begin{frame}
 \label{hastighet3}
 \lastpagebutton{hastighet2}
 Første steg kan være å uttrykke $\vec{e}_r$ med faste enhetsvektorer som $\vec{e}_x$ og $\vec{e}_y$. La oss bruke denne figuren:
-\includegraphics[scale=0.5]{unity_vector_decomp.png}\\
+\includegraphics[scale=0.5]{media/unity_vector_decomp.png}\\
 Hvis vi nå skal skrive
 \[
 \vec{e}_r=a\vec{e}_x+b\vec{e}_y
@@ -544,9 +711,8 @@ Man kan vise helt tilsvarende at
 \[
 \vec{e}_\theta = -\sin{\theta}\vec{e}_x+\cos{\theta}\vec{e}_y
 \]
-(hvordan kan du sjekk
-`e om disse er ortogonale?)\\
-Nå har du fått god hjelp til å derivere $\vec{e}_r$ med hensyn på tiden. Gjør regningen på papir og se om du finner et av følgende svar:\\
+(hvordan kan du sjekke om disse er ortogonale?)\\
+Nå har du fått god hjelp til å derivere $\vec{e}_r$ med hensyn på tiden. Gjør regningen på papir (eller i hodet) og se om du finner et av følgende svar:\\
 \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r = \vec{e}_\theta$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=\cos{\theta}\vec{e}_r$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=-\sin{\theta}\vec{e}_\theta$}}\ \ \ \ \hyperlink{derrett}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\vec{e}_\theta$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\vec{e}_r+\theta\vec{e}_r$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\sin{\theta}\vec{e}_r$}}
 \end{frame}
 }
@@ -589,7 +755,7 @@ Tilbake til hastigheten. Prøv nå å vise at
 \[
 \vec{v} = \dot{r}\vec{e}_r + r\dot\theta\vec{e}_\theta
 \]
-Hvis du ikke får dette til \textcolor{red}{etter å ha prøvd flere ganger}, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_1.mp4}{denne videoen her.}\\
+Hvis du ikke får dette til \textcolor{red}{etter å ha prøvd flere ganger}, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_1.mp4}{denne videoen her.} {\bf (fikk du det til, ikke kast bort tiden på videoen!)}\\
 \hyperlink{hastighet4}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -609,8 +775,8 @@ I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsr
 \label{hastighet5}
 \lastpagebutton{hastighet4}
 {\small Har du nå klart for deg hva {\it radiell} og {\it tangensiell} hastighet er for noe?\\
-La oss se om vi kan utlede uttrykket for tangensiell hastighet, altså $v_\theta = r\dot\theta$ med litt geometri og rent fysiske argumenter. Vi skal bruke denne figuren her}
-\includegraphics[scale=0.5]{tangential_vel.png}\\
+La oss se om vi kan utlede uttrykket for tangensiell hastighet, altså $v_\theta = r\dot\theta$, en gang til, men nå med litt geometri og rent fysiske argumenter isteden. Vi skal bruke denne figuren her}
+\includegraphics[scale=0.5]{media/tangential_vel.png}\\
 {\small som viser en liten forflytning $\Delta s$ av romskipet i retning av enhetsvektoren $\vec{e}_\theta$. Det er altså en forflytning ortogonalt på posisjonsvektoren som skjer i løpet av et kort tidsrom $\Delta t$. Hvordan kan du bruke disse to størrelsene til å definere $v_\theta$, og hvordan kan du skrive $\Delta s$ uttrykt med $r$ og $\Delta\theta$?}\hyperlink{hastighet6}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -651,7 +817,7 @@ Da husker du kanskje også omtrent hva Keplers lover sier? Tenk deg godt om før
 \item En linje fra sola til planeten sveiper ut like store areler i løpet av like store tidsrom
 \item Omløpsperioden (gitt i jordår) i annen potens  er lik store halvakse i ellipsebanen (gitt i AU) i tredje potens, $P^2=a^3$.
 \end{enumerate}
-Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_4.mp4}{denne videoen} hvis du er usikker på hva lovene sier.
+Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_4.mp4}{denne videoen} hvis du er usikker på hva lovene sier. {\bf Hvis du allerede vet, ikke kast bort tid på videoen.}
 \hyperlink{kepler0b}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -659,7 +825,7 @@ Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/underv
 \label{kepler0b}
 \dlastpagebutton{kepler}
 {\Large
-Merket du det forresten en viktig ting på forrige side og i videoen? I astrofysikken bruker vi enheten AU (Astronomial Unit), astronomiske enheter, veldig mye så lær deg med en gang hva denne betyr:}
+Merket du deg forresten en viktig ting på forrige side og i videoen? I astrofysikken bruker vi enheten AU (Astronomial Unit), astronomiske enheter, veldig mye så lær deg med en gang hva denne betyr:}
 \begin{block}{\bf Astronomisk enhet (AU)}
 {\large Er middelavstanden mellom sola og jorda, ca. 150 millioner km!}
 \end{block}
@@ -672,7 +838,7 @@ Merket du det forresten en viktig ting på forrige side og i videoen? I astrofys
 \label{kepler1}
 \lastpagebutton{kepler0b}
 Når vi snakker om ellipsebaner, husker du forresten formelen for en ellipse...?
-\hyperlink{ellipseformel}{\pagebutton{Trykk her når du husker, ikke før!}}
+\hyperlink{ellipseformel}{\pagebutton{Trykk her når du har tenkt deg om...}}
 \pause
 \addtocounter{pageno}{-1}
 {
@@ -685,14 +851,14 @@ Når vi snakker om ellipsebaner, husker du forresten formelen for en ellipse...?
 \]
 der $a$ er \textcolor{red}{store halvakse (semi major axis)} og $b$ er \textcolor{red}{lille halvakse (semi minor axis)}.
 }
-\includegraphics[scale=0.4]{ellipse.png}\hspace*{-2cm}\hyperlink{kepler2}{\pagebutton{Neste side}}
+\includegraphics[scale=0.4]{media/ellipse.png}\hspace*{-2cm}\hyperlink{kepler2}{\pagebutton{Neste side}}
 \end{frame}
 
 
 \begin{frame}
 \label{kepler2}
 \dlastpagebutton{kepler1}
-\includegraphics[scale=0.4]{ellipse.png}\\
+\includegraphics[scale=0.4]{media/ellipse.png}\\
 I tillegg til halvaksene bør du kjenne til begrepet \textcolor{red}{brennpunkt}. Denne er markert med massen $m_1$ på figuren. En ellipse har to brennpunkter, begge ligger i en avstand $ae$ fra sentrum langs store halvakse. Størrelsen $e$ kaller vi \textcolor{red}{eksentrisiteten} og sier noe om hvor avlang ellipsen er.
 \hyperlink{kepler3}{\pagebutton{Neste side}}
 \end{frame}
@@ -701,7 +867,7 @@ I tillegg til halvaksene bør du kjenne til begrepet \textcolor{red}{brennpunkt}
 \begin{frame}
 \label{kepler3}
 \lastpagebutton{kepler2}
-\includegraphics[scale=0.4]{ellipse.png}\\
+\includegraphics[scale=0.4]{media/ellipse.png}\\
 {
 \small
 Sammenhengen mellom eksentrisiteten og lille og store halvakse er gitt ved
@@ -716,7 +882,7 @@ Vi ser at hvis vi har en sirkel så må store og lille halvakse være like store
 \begin{frame}
 \label{kepler4}
 \lastpagebutton{kepler3}
-\includegraphics[scale=0.4]{ellipse.png}\\
+\includegraphics[scale=0.4]{media/ellipse.png}\\
 Når vi snakker om ellipsebanene i Keplers første lov, enten det gjelder planetenes baner rundt sola eller en satelitts bane rundt en planet, så ligger altså den ene massen $m_1$ i brennpunktet og den andre massen $m_2$ går i ellipsebane rundt. Det er noen ord til som du må lære her: \textcolor{red}{periapsis} er punktet i ellipsebanen der objektene er nærmest hverandre og \textcolor{red}{apoapsis} er punktet i ellipsebanen der de er lengst fra hverandre. For en planets bane rund sola så brukes ordene \textcolor{red}{perihel} og \textcolor{red}{aphel} isteden.
 
 \hyperlink{kepler4b}{\pagebutton{Neste side}}
@@ -725,7 +891,7 @@ Når vi snakker om ellipsebanene i Keplers første lov, enten det gjelder planet
 \begin{frame}
 \label{kepler4b}
 \lastpagebutton{kepler4}
-\includegraphics[scale=0.3]{ellipse.png}\\
+\includegraphics[scale=0.3]{media/ellipse.png}\\
 {
 \small
 En liten ting til om ellipser. I polarkoordinater kan du skrive ellipseformelen på denne måten (hvis du er interessert i hvordan du går fra uttrykket i xy-koordinater til polarkoordinater, så ta en kikk i de vanlige forelesningsnotatene, det er ikke pensum):
@@ -744,7 +910,7 @@ der $r(f)$ er lengden av vektoren $\vec{r}$ i figuren, altså avstanden fra bren
 \hyperlink{kepler4b}{\pagebutton{\small Forrige side}}
 {\Huge
 \centerline{TID FOR KAFFEPAUSE!!!}
-\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 Ut å strekke på bena. Inn med litt koffein...\\
 \vspace*{0.5cm}
@@ -798,7 +964,7 @@ En rask sjekk om du har oversikt over det som trengs
 \label{kepler5b}
 \dlastpagebutton{kepler5}
 Vi skal i det følgende løse det som vi kaller {\bf 2-legeme-problemet}:\\
-\includegraphics[scale=0.4]{forces.png}\\
+\includegraphics[scale=0.4]{media/forces.png}\\
 {\bf To legemer med masse $m_1$ og $m_2$ påvirker hverandre kun med gravitasjonskrefter. Det virker ingen eksterne krefter. Initialposisjonene og initialhastighetene til begge legemene er kjent.} For å gjøre utledningen enklere skal vi først sette oss på $m_1$ og utlede bevegelsen til $m_2$ sett ifra $m_1$. Dermed trenger vi kun å se på bevegelsen til {\it et} legeme. Etter det skal vi se på bevegelsene til begge legemene.\\
 På figuren ser du at vektoren $\vec{r}$ peker fra $m_1$ til $m_2$. {\bf Når vi setter oss på $m_1$ og definerer origo der, så er denne $\vec{r}$ altså poisjonsvektoren til $m_2$. Når vi har funnet hvordan $\vec{r}(t)$ endrer seg som funksjon av tiden så har vi løst 2-legeme-problemet sett fra objekt $m_1$.}
 \hyperlink{kepler6}{\pagebutton{Neste side}}
@@ -814,7 +980,7 @@ I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsr
 \ddot{\vec{r}}+m\frac{\vec{r}}{r^3}=0
 \]
 der vi har definert $m=G(m_1+m_2)$ og $r=|\vec{r}|$ der $\vec{r}$ peker fra masse $m_1$ til masse $m_2$.\\
-\includegraphics[scale=0.4]{forces.png}\\
+\includegraphics[scale=0.4]{media/forces.png}\\
 Dette {\bf bevegelseslikningen} for systemet vårt. Det er en differensiallikning i funksjonen $\vec{r}(t)$. Hvis vi klarer å løse for $\vec{r}(t)$, har vi funnet bevegelsen til $m_2$ i forhold til $m_1$ og dermed løst 2-legemeproblemet sett ifra $m_1$.
 \hyperlink{kepler7}{\pagebutton{Neste side}}
 \end{frame}
@@ -825,7 +991,7 @@ Dette {\bf bevegelseslikningen} for systemet vårt. Det er en differensialliknin
 {\small For å kunne løse denne likningen, så trenger vi å innføre enhetsvektorer. Det viser seg at det er lettere å jobbe med $\vec{e}_r$ og $\vec{e}_\theta$ her! Ta en titt på denne figuren:}\\
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.37]{unityvectors_on_m1m2.png}
+\includegraphics[scale=0.37]{media/unityvectors_on_m1m2.png}
 \column{0.5\textwidth}
 {\Large 
 \[
@@ -877,6 +1043,7 @@ Du skal nå få prøve deg litt selv, før du får svaret...
 \begin{frame}
 \label{kepler10}
 \lastpagebutton{kepler9}
+{\bf Den delen av utledningen som står på denne siden er ikke superviktig, du kommer ikke til å bli spurt om dette i oppgavene eller på eksamen. Men det er kult å ha sett det en gang. Gå gjerne fort gjennom hvis du ikke er interessert.}
 Deriver $u$ med hensyn på $\theta$, bruk kjerneregel til å forbinde denne med $\dot r$ og se om du klarer å få:
 \[
 \frac{du(\theta)}{d\theta}=-\frac{\dot r}{h}
@@ -900,7 +1067,7 @@ Var disse stegene litt vanskelige? Det var meningen! Ikke bruk mye tid på dette
 \lastpagebuttonx{kepler10}
 \headlinebutton{\headline}\\
 Før vi går videre, la oss snakke om noe helt annet. Har du hørt om {\it harmonisk oscillator?}. Se på denne situasjonen:\\
-\includegraphics[scale=0.4]{harmosc.png}
+\includegraphics[scale=0.4]{media/harmosc.png}
 Hvis vi antar at vi har en x-akse som går nedover her, er du enig i at følgende likning beskriver x-posisjonen til loddet:
 \[
 F=ma=m\ddot x=-kx+mg
@@ -942,8 +1109,8 @@ Ganske riktig ja! En cosinus eller sinus er jo akkurat slik at hvis du deriverer
 \frac{d^2u(\theta)}{d\theta^2}+u=\frac{m}{h^2}
 \]
 \end{block}
-Prøv deg litt frem på papir til du finner en løsning!
-\hyperlink{kepler14}{\pagebutton{Nå har jeg prøvd meg frem helt til jeg fant en løsning!}}
+Prøv deg litt frem på papir, maks 2-3 minutter, se hvor langt du kommer...
+\hyperlink{kepler14}{\pagebutton{Nå har jeg prøvd meg litt!}}
 \end{frame}
 
 
@@ -952,7 +1119,7 @@ Prøv deg litt frem på papir til du finner en løsning!
 \begin{frame}
 \label{kepler14}
 \lastpagebutton{kepler13}
-Er du {\bf helt} sikker på at du har funnet riktig løsning?. Før du går videre nå, ta din løsning $u(\theta)$ og dobbeltderiver den!
+Hvis du har funnet en løsning, er du {\bf helt} sikker på at du har funnet riktig løsning?. Før du går videre nå, ta din løsning $u(\theta)$ og dobbeltderiver den!
 Er svaret du får lik:
 \[
 \frac{m}{h^2}-u
@@ -966,6 +1133,26 @@ Helt sikker?
 \begin{frame}
 \label{kepler15}
 \lastpagebutton{kepler14}
+\addtocounter{pageno}{-1}
+Da skulle du ha fått følgende svar:
+\[
+u(\theta)=\frac{m}{h^2}+A\cos{(\theta-\omega)}
+\]
+hvor $A$ og $\omega$ er integrasjonskonstanter. Ble det riktig?\\
+Hvis vi nå omdøper integrasjonskontantene og gjør om til $r(\theta)$ ved $r=1/u$ så få vi da:
+\[
+r(f)=\frac{p}{1-e\cos{f}}
+\]
+hvor vi har definert $f=\theta-\omega$, $p=h^2/m$ og $e=Ap$. MERK at $p$ her ikke har noe med bevegelesmengde å gjøre!
+Ser du noe kjent med dette uttrykket? Kan du skrive det litt om for å få noe kjent?\\
+\textcolor{red}{(MERK deg også definisjonen $p=h^2/m$ her, den kommer du til å bruke i neste forelesning!)}\\
+\hyperlink{kepler15_2}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{kepler15_2}
+\lastpagebutton{kepler15}
+\textcolor{red}{{\bf HØØØØ!!DU!! Nå duppet du av litt, vi tar denne sliden EN gang til:} her var det mange konstanter og greier, og lett å gå surr. Du trenger ikke huske alle disse konstantene, men du bør forstå hva som foregår her. {\bf Så les gjennom EN gang til og smak litt på ordene...}}\\
 Da skulle du ha fått følgende svar:
 \[
 u(\theta)=\frac{m}{h^2}+A\cos{(\theta-\omega)}
@@ -984,7 +1171,7 @@ Ser du noe kjent med dette uttrykket? Kan du skrive det litt om for å få noe k
 
 \begin{frame}
 \label{kepler16}
-\lastpagebutton{kepler15}
+\lastpagebutton{kepler15_2}
 Ganske riktig ja! Hvis vi definerer en størrelse $a$ slik at $p=a(1-e^2)$ så har vi jammen
 \begin{block}{\bf Keplers første lov utledet fra Newtons lover}
 Planetene går i ellipsebaner
