@@ -5,7 +5,7 @@
 \beamer@slide {stat8}{5}
 \beamer@slide {stat9}{6}
 \beamer@slide {feilprob}{7}
-\beamer@slide {rettprob}{8}
+\beamer@slide {riktigprob}{8}
 \beamer@slide {centlimit}{9}
 \beamer@slide {stat10}{10}
 \beamer@slide {stat11}{11}
@@ -29,8 +29,8 @@
 \beamer@slide {rakettmotor1}{43}
 \beamer@slide {rakettmotor1b0}{44}
 \beamer@slide {rakettmotor1b}{46}
-\beamer@slide {fdebug}{47}
-\beamer@slide {rdebug}{48}
+\beamer@slide {feildebug}{47}
+\beamer@slide {riktigdebug}{48}
 \beamer@slide {rakettmotor2}{49}
 \beamer@slide {rakettmotor2b}{50}
 \beamer@slide {sammendrag}{51}

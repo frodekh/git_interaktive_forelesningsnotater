@@ -343,7 +343,7 @@ Vi gir oss ikke med utfordringer her. Nå skal du prøve å oppdage en svært vi
 Anta at $P(h$) er sannsynlighetsfordelingen for kroppshøyden $h$ til en person, anta også at $P(IQ)$ er sannsynlighetsfordelingen for IQ til en person. Anta at disse er Gaussike fordelinger (noe som stemmer rimelig godt). Ved å bruke disse fordelingene, hvordan kunne du regne ut sannsynligheten for at en tilfeldig valgt person har både høyde og IQ over gjennomsnittet? (anta at det ikke er noen sammenheng mellom å være høy og å være intelligent). Hvis du kjenner en spesiell statistisk regel for å gjøre dette, glem den regelen nå og bruk kun logisk resonnement for å finne svaret.\\
 \end{block}
 På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men først, tror du svaret er:\\
-\hyperlink{feilprob}{\choicebutton{0\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{20\%}}\ \ \ \ \hyperlink{rettprob}{\choicebutton{25\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{50\%}}\\
+\hyperlink{feilprob}{\choicebutton{0\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{20\%}}\ \ \ \ \hyperlink{riktigprob}{\choicebutton{25\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{50\%}}\\
 \hyperlink{feilprob}{\choicebutton{60\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{75\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{90\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{100\%}}\\
 \end{frame}
 
@@ -362,7 +362,7 @@ På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men 
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rettprob}
+\label{riktigprob}
 \clastpagebutton{stat9}
 HELT RIKTIG!
 Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_12.mp4}{denne videoen} nå for å lære en svært viktig regel for sannsynligheter og for å se hvordan du kan tenke for å komme frem til svaret på utfordringen. Ikke gå videre før du har forstått hva videoen prøver å forklare.
@@ -739,23 +739,23 @@ der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og
 \lastpagebutton{rakettmotor1}
 {\bf\large Men hva gjør du hvis koden ikke funker som den skal?\\
 Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du da?}
-\hyperlink{fdebug}{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ \hyperlink{rdebug}{\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
+\hyperlink{feildebug}{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ \hyperlink{riktigdebug}{\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{fdebug}
+\label{feildebug}
 \lastpagebutton{rakettmotor1b}
 \textcolor{white}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!\\}
-\hyperlink{rdebug}{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
+\hyperlink{riktigdebug}{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rdebug}
+\label{riktigdebug}
 \clastpagebutton{rakettmotor1b}
 Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til å debugge en kode. Her er noen tips hvis gassboksen og/eller rakettmotoren ikke gir de resultater som du forventer. Vi begynner med gassboks {\bf uten hull}.
 {\small
@@ -772,7 +772,7 @@ Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til �
 
 \begin{frame}
 \label{rakettmotor2}
-\lastpagebutton{rdebug}
+\lastpagebutton{riktigdebug}
 Og det bringer oss tilbake til spørsmålet vi hadde helt i starten!
 \begin{enumerate}
 \item Hvor mye bevegelsesmengde slipper ut av hullet for hver partikkel som slipper ut?

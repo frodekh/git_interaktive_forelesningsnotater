@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  19 AUG 2021 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 AUG 2021 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1386,8 +1386,8 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1A_del2_av_2
  ) 
 Here is how much of TeX's memory you used:
  25837 strings out of 478994
- 509830 string characters out of 5858185
- 854507 words of memory out of 5000000
+ 509850 string characters out of 5858185
+ 854505 words of memory out of 5000000
  42596 multiletter control sequences out of 15000+600000
  421367 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1410,7 +1410,7 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on interaktive_forelesningsnotater_1A_del2_av_2.pdf (51 pages, 1
-000182 bytes).
+000191 bytes).
 PDF statistics:
  849 PDF objects out of 1000 (max. 8388607)
  688 compressed objects within 7 object streams
