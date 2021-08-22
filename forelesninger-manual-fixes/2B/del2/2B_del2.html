@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entire file</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="front" label="front"></span><br />
+</p>
+<div class="alertblock">
+<p>Du må bruke <span><strong>presentasjonsmodus/fullskjermsvisning</strong></span> for å lese denne, men du skal <span><strong>ikke</strong></span> bruke frem/tilbake-knappene, <span><strong>KUN knappene som dukker opp på sliden</strong></span> for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. <span style="color: red">Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!</span></p>
+</div>
+<p><a href="front2.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front2" label="front2"></span><br />
+</p>
+<div class="block">
+<p>Dette er en erstatning for forelesningen i emnet. <span style="color: blue">Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese <span style="color: black"><span style="background-color: sunset"><a href="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2b.pdf">de fulle forelesningsnotatene</a></span></span> (med unntak av oppgavene bak)</span>. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. <span><strong>Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten</strong></span>. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. <span><strong>Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på <span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span> knappen som du finner på alle sider.</strong></span></p>
+</div>
+<p><a href="front3.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front3" label="front3"></span></p>
+<ul>
+<li><p>HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.</p></li>
+<li><p>Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1-2 minutter på de korte, 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter 5 minutter, gå videre, se svaret og lær!</p></li>
+<li><p>Er du i det minste tvil om noe, så finnes det nå en <span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span>knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!</p></li>
+</ul>
+<p><a href="intro.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="intro" label="intro"></span></p>
+<div class="columns">
+<p><a href="front.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><br />
+<img src="../media/clock.png" alt="image" /> <span> <span><strong>Velkommen til forelesning 2 av 2 i del 2B! I denne forelesningen skal vi gå gjennom eksempler der vi bruker tidromsintervallets invarians til å løse forskjellige problemstillinger. Disse problemstillingene likner mye på de som du trenger å løse for prosjektet eller for eksamen, så følg nøye med.</strong> </span><br />
+<span style="color: red">Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken “Spacetime Physics” av E. Taylor og J. Wheeler, gratis tilgjengelig <span style="color: black"><span style="background-color: sunset"><a href="http://www.eftaylor.com/spacetimephysics/">her</a></span></span>. Anbefales på det sterkeste for den som er interessert.</span> <span>(Illustrasjon fra pngegg.com)</span></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p>‘ <span id="intro2" label="intro2"></span> <a href="intro.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Introduksjon<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<div class="alertblock">
+<p><span>Vi begynner som vanlig...</span> ...med litt brainstorming. Som det er <span><strong>svært viktig</strong></span> at du gjør før du går videre.</p>
+</div>
+<p><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171389" class="trykkher">Trykk her for å varme opp</a></span></span><br />
+Er du klar og har sendt inn skjemaet? <span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171389" class="janei">Nei</a></span></span>    <a href="nytema1.html" class="janei">Ja</a><br />
+</p>
+
+<p><span id="nytema1" label="nytema1"></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Regneregler for 4-vektorer</span></strong></p>
+<p><a href="vv1.html">Sett igang!</a></p>
+
+<p><span id="vv1" label="vv1"></span></p>
+<p><a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi begynner med en oppsummering av det vi vet om 4-vektorer i <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_13.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span></p>
+<p><a href="vv2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv2" label="vv2"></span></p>
+<p><a href="vv1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi skal utlede litt regneregler for 4-vektorer. <span><strong>Det som er spesielt viktig for å vite om en regneoperasjon på en 4-vektor er lov, er om resultatet av regneoperasjonen også er en 4-vektor.</strong></span> <span style="color: red">La oss si at du har en 4-vektor <span class="math inline"><em>A</em><sub><em>μ</em></sub></span>. Og så har du et tidromsintervall <span class="math inline"><em>Δ</em><em>s</em></span> mellom to eventer.</span> Si at du av en eller annen grunn skal <span style="color: red">gange dette tidromsintervallet med 4-vektoren <span class="math inline"><em>A</em><sub><em>μ</em></sub></span>.</span><span>Kan du gjøre det????</span> <span><strong>Eller rettere sagt: blir resultatet av denne gangeoperasjonen en 4-vektor?</strong></span> Sagt matematisk: <span class="math display"><em>B</em><sub><em>μ</em></sub> = <em>Δ</em><em>s</em><em>A</em><sub><em>μ</em></sub></span> Er <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> en 4-vektor? Hvordan kan vi sjekke det?</p>
+<p><a href="vv3.html" class="trykkher">Trykk her etter at du har tenkt gjennom hva en 4-vektor er</a></p>
+
+<p><span id="vv3" label="vv3"></span></p>
+<p><a href="vv2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Så? <span><strong>Er</strong></span> <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> virkelig en 4-vektor eller ikke? Hva var kravet til en 4-vektor? Er du usikker, gå tilbake til repetisjonen i starten her.</span></p>
+<p><a href="vv4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv4" label="vv4"></span></p>
+<p><a href="vv3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Er ikke kravet at en 4-vektor skal kunne transformeres fra et referansesystem til et annet med Lorentz-transformasjonen? Vi vet at <span class="math inline"><em>A</em><sub><em>μ</em></sub></span> er en 4-vektor, så for denne vet vi at <span class="math display"><em>A</em><sub><em>μ</em></sub>′ = <em>C</em><sub><em>μ</em><em>ν</em></sub><em>A</em><sub><em>ν</em></sub></span> er oppfylt (merk, <span class="math inline"><em>C</em><sub><em>μ</em><em>ν</em></sub></span> er Lorentzmatrisa og Einsteins summekonvensjon har blitt brukt). Dermed vet vi hva komponentene av <span class="math inline"><em>A</em><sub><em>μ</em></sub></span> er i det merkede systemet, hvis vi kjenner dem i det umerkede. <span>Men oppfyller <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> denne betingelsen?</span></p>
+<p><a href="vv5.html">Jeg har tenkt godt gjennom problemstillingen</a></p>
+
+<p><span id="vv5" label="vv5"></span></p>
+<p><a href="vv4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Det holder ikke bare å ha tenkte godt gjennom problemstillingen her, denne bør du nå ha nok informasjon til å kunne vise matematisk. Men la gå da, noen tips til: Du vet at <span class="math inline"><em>B</em><sub><em>μ</em></sub> = <em>Δ</em><em>s</em><em>A</em><sub><em>μ</em></sub></span>. Prøv å finne ut hvordan <span class="math inline"><em>B</em><sub><em>μ</em></sub>′</span> ser ut. Du vet hvordan både <span class="math inline"><em>A</em><sub><em>μ</em></sub></span> og <span class="math inline"><em>Δ</em><em>s</em></span> (ja det vet du!) transformerer til merket system. Anta at <span class="math inline"><em>B</em><sub><em>μ</em></sub>′ = <em>Δ</em><em>s</em>′<em>A</em><sub><em>μ</em></sub>′</span>. Følger <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> Lorentztransformasjonen og er dermed en 4-vektor eller ikke??</span></p>
+<p><a href="vv6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv6" label="vv6"></span></p>
+<p><a href="vv5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Klarte du å vise at <span class="math display"><em>B</em><sub><em>μ</em></sub>′ = <em>C</em><sub><em>μ</em><em>ν</em></sub><em>B</em><sub><em>ν</em></sub></span> og at <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> dermed er en 4-vektor?? Hvis ikke, ta en titt på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_14.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> <span style="color: red">Vi har vist at vi kan gange en 4-vektor med et tidromsintervall <span class="math inline"><em>Δ</em><em>s</em></span>!</span></p>
+<p><a href="vv6b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv6b" label="vv6b"></span></p>
+<p><a href="vv6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss ta en til: Hvis vi nå isteden for å gange <span class="math inline"><em>A</em><sub><em>μ</em></sub></span> med <span class="math inline"><em>Δ</em><em>s</em></span>, ganger <span class="math inline"><em>A</em><sub><em>μ</em></sub></span> med et tidspunkt <span class="math inline"><em>t</em></span> for et event. Altså si at du prøver å lage en 4-vektor <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> på denne måten: <span class="math display"><em>B</em><sub><em>μ</em></sub> = <em>t</em><em>A</em><sub><em>μ</em></sub></span> der <span class="math inline"><em>t</em></span> er tidspunktet til et event målt i umerket system. <span>Er <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> en 4-vektor?</span> Gjenta utledningen du akkurat gjorde på nytt...</p>
+<p><a href="vv6c.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv6c" label="vv6c"></span></p>
+<p><a href="vv6b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Fant du at <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> <span><strong>IKKE</strong></span> er en 4-vektor i dette tilfellet? At vi derfor <span><strong>ikke</strong></span> kan gange 4-vektorer med tidspunkter? Fordi vi da ikke lenger får en 4-vektor tilbake? Er du usikker, ta en titt på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_15.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>.</p>
+<p><a href="vv7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv7" label="vv7"></span></p>
+<p><a href="vv6c.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi har altså vist at vi fint kan gange en 4-vektor med en <span><strong>invariant</strong></span> størrelse, eller en <span><strong>skalar</strong></span>. I relativitetsteorien kaller vi invariante størrelser for skalarer. Tidromsintervallet <span class="math inline"><em>Δ</em><em>s</em></span> er et eksempel på en slik skalar. Vi så at <span class="math inline"><em>B</em><sub><em>μ</em></sub></span> ble en 4-vektor nettopp fordi <span class="math inline"><em>Δ</em><em>s</em></span> er invariant. I det vi prøvde å gange <span class="math inline"><em>A</em><sub><em>μ</em></sub></span> med en størrelse som ikke er invariant, slik som et tidspunkt <span class="math inline"><em>t</em></span> (som jo har forskjellig verdi i forskjellige referansesystemer) så fikk vi ikke en 4-vektor tilbake. <a href="vv8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="vv8" label="vv8"></span></p>
+<p><a href="vv7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Regneregler for 4-vektorer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi har altså lært at vi kan gange 4-vektorer med skalarer, men <span><strong>ikke med en hvilken som helst størrelse</strong></span>. Det samme gjelder deling, du kan gjøre akkurat de samme bevisene og vise at vi kan dele 4-vektorer med skalarer men ikke med tall som ikke er invariante! I ukeoppgavene skal du vise at vi kan plusse og trekke 4-vektorer fra hverandre akkurat som med vanlige vektorer <a href="nytema2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="nytema2" label="nytema2"></span> <a href="vv8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">4-hastighet</span></strong></p>
+<p><a href="hast1.html">Hvor fort går jeg i tidrommet?</a></p>
+
+<p><span id="hast1" label="hast1"></span></p>
+<p><a href="vv8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span id="hast" label="hast"></span> Hvis vi har en posisjonsvektor <span class="math inline"><em>x⃗</em></span> for et objekt, så vet vi at hastigheten til dette objektet er gitt ved <span class="math display">$$\vec{v}=\frac{d\vec{x}}{dt}.$$</span> Kan vi definere en tilsvarende 4-dimensjonal hastighet? Altså med hvilken hastighet beveger du deg gjennom tidrommet? Posisjonen din i rom og tid kan vi angi med en posisjons-4-vektor <span class="math inline"><em>x</em><sub><em>μ</em></sub></span>.<span>Men hva blir 4-hastigheten din, <span class="math inline"><em>V</em><sub><em>μ</em></sub></span>?</span> Noen forslag til hvordan denne kan defineres?</p>
+<p><a href="hast2.html">jeg har et forslag</a></p>
+
+<p><span id="hast2" label="hast2"></span></p>
+<p><a href="hast1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Fikk du: <span class="math display">$$V_\mu=\frac{dx_\mu}{dt}$$</span> <a href="hast2b.html">det høres ut som en fornuftig generalisering...</a> <a href="hast2a.html">Næææææææ.....</a></p>
+
+<p><span id="hast2a" label="hast2a"></span></p>
+<p><a href="hast2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Du har god grunn til å tvile ja, men <span><strong>hvilken grunn?</strong></span> Ikke gå videre før du vet hvorfor du tviler! Se på uttrykket en gang til: <span class="math display">$$V_\mu=\frac{dx_\mu}{dt}$$</span> Hva er galt her? (hva lært vi nettopp?) </span></p>
+<p><a href="hast3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast2b" label="hast2b"></span></p>
+<p><a href="hast2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Fornuftig sier du? Se på uttrykket en gang til: <span class="math display">$$V_\mu=\frac{dx_\mu}{dt}$$</span> Hva er galt her? (hva lærte vi nettopp?)</span></p>
+<p><a href="hast3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast3" label="hast3"></span></p>
+<p><a href="hast2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow"> <span class="math display">$$V_\mu=\frac{dx_\mu}{dt}$$</span> Vi ser her at <span class="math inline"><em>d</em><em>x</em><sub><em>μ</em></sub></span> er en 4-vektor (en differanse <span class="math inline"><em>Δ</em><em>x</em><sub><em>μ</em></sub></span> mellom to eventer eller to punkter langs verdenslinja) men <span class="math inline"><em>d</em><em>t</em></span> er <span><strong>ikke en skalar!</strong></span>. Vi utledet over at vi ikke kan gange/dele en 4-vektor med et tall som ikke er en skalar! <span class="math inline"><em>d</em><em>t</em></span> er et tidsintervall målt i et gitt referansesystem. Dette tallet er forskjellig i et annet referansesystem. Dermed blir <span><strong>ikke</strong></span> <span class="math inline"><em>V</em><sub><em>μ</em></sub></span> en 4-vektor. Og hvis vi vil ha en hastighetsvektor i det 4-dimensjonale rom, bør det være en 4-vektor! <span style="color: red">Har du et bedre forslag?</span></span></p>
+<p><a href="hast4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast4" label="hast4"></span></p>
+<p><a href="hast3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Et hint: kan vi derivere med hensyn på <span><strong>en annen tid</strong></span> enn <span class="math inline"><em>t</em></span>? Ikke bla videre før du har et forslag! <a href="hast5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast5" label="hast5"></span></p>
+<p><a href="hast4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Hva med <span><strong>egentid <span class="math inline"><em>τ</em></span>? Husker du hva det var?</strong></span> <a href="hast5b.html">javisst ja (evt. jeg repeterte nå)</a></p>
+<p>Var ikke det armbåndsurtid? <a href="hast5c.html">jovisst!</a></p>
+<p>Altså tiden målt på en klokke som står fast på objektet som vi ser på, altså det objektet vi måler hastigheten til. Men er det en invariant størrelse da? (<span><strong>det må del vel være for at vi skal dele det med en 4-vektor!?)</strong></span> <a href="hast5d.html">det var det og jeg husker hvorfor (evt. jeg repeterte nå)</a></p>
+<p>Viste ikke vi i forrige forelesning at <span class="math inline"><em>Δ</em><em>s</em> = <em>Δ</em><em>τ</em></span>? Og hvis <span class="math inline"><em>Δ</em><em>s</em></span> er invariant så må også <span class="math inline"><em>Δ</em><em>τ</em></span> altså egentidsintervaller, være det. Men kan du se intuitivt hvorfor et egentidsintervall er invariant? Hvor bare <span><strong>må</strong></span> det per def være en invariant størrelse?</p>
+<p><a href="hast6.html">Dette bør du kunne svare på</a></p>
+
+<p><span id="hast6" label="hast6"></span></p>
+<p><a href="hast5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Et hint: hva betyr invariant? Dette <span><strong>må</strong></span> du ha kontroll på nå, hvis ikke spør! <a href="hast7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast7" label="hast7"></span></p>
+<p><a href="hast6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Egentid er jo per def tiden målt på klokka til objektet som vi ser på <span><strong>og på ingen annen klokke</strong></span>. Det betyr at egentiden <span class="math inline"><em>τ</em></span> er den tiden som alle observatører i alle referansesystemer leser av (kanskje med kikkert) på klokka som står fast på objektet. <span><strong>Dermed må alle observatører være enige i denne tiden siden alle leser den av på den samme klokka!</strong></span></p>
+<p><a href="hast8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast8" label="hast8"></span></p>
+<p><a href="hast7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Da må vi altså ha følgende definisjon av 4-hastighet: <span class="math display">$$V_\mu=\frac{dx_\mu}{d\tau}$$</span> 4-hastighet er endring i tidromsposisjon <span class="math inline"><em>x</em><sub><em>μ</em></sub></span> målt av en gitt observatør (denne størrelsen vil avhenge av observatøren som måler) delt på egentiden <span class="math inline"><em>Δ</em><em>τ</em></span> det tar for denne endringen å finne sted (målt på klokka på objektet!).</p>
+<p><a href="hast9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast9" label="hast9"></span></p>
+<p><a href="hast8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+OK, la oss se om vi kan skrive ut 4-hastigheten litt mer her. En posisjonsvektor <span class="math inline"><em>x</em><sub><em>μ</em></sub></span> i tidrommet kan vi skrive ut på komponentform som <span class="math display"><em>x</em><sub><em>μ</em></sub> = (<em>t</em>,<em>x</em>,<em>y</em>,<em>z</em>)</span> Enig? Og siden <span class="math inline">$V_\mu=\frac{dx_\mu}{d\tau}$</span> så skal vi derivere hver og en komponent av <span class="math inline"><em>x</em><sub><em>μ</em></sub></span> med hensyn på egentid <span class="math inline"><em>τ</em></span>. Kan du vise at du etter bittelitt regning kan skrive dette som: <span class="math display">$$V_\mu=\frac{dt}{d\tau}(1,v_x,v_y,v_z)$$</span> der <span class="math inline"><em>t</em></span> er tiden målt i det samme referansesystemet som måler posisjonsvektoren <span class="math inline"><em>x</em><sub><em>μ</em></sub></span>, og hastighetskomponentene er hastighet også målt i dette referansesystemet?</p>
+<p><a href="hast10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast10" label="hast10"></span></p>
+<p><a href="hast9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Hvis du ikke fikk det til, se på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_16.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. Kan du videre vise at <span class="math display"><em>V</em><sub><em>μ</em></sub> = <em>γ</em>(1,<em>v⃗</em>)</span> der <span class="math display">$$\gamma=\frac{1}{\sqrt{1-v^2}}$$</span> der <span class="math inline"><em>v</em></span> er fart målt i det samme referansesystemet som måler posisjonsvektoren <span class="math inline"><em>x</em><sub><em>μ</em></sub></span>? Og <span class="math inline"><em>v⃗</em></span> er rett og slett den 3-dimensjonale hastighetsvektoren også målt i dette referansesystemet.</p>
+<p><a href="hast11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast11" label="hast11"></span></p>
+<p><a href="hast10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Hvis du ikke fikk det til, se på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_17.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>.</p>
+<p><a href="pause.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pause" label="pause"></span> <a href="hast11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p>Kaffe!</p>
+<p><img src="../media/drink-coffee.png" alt="image" /></p>
+<p><br />
+Kanskje skulle du legge deg ned på sofaen og lukke øynene i 10 min? Så alt ikke helt går i surr! Og så en strekk på bena, ok ikke minst <span><strong>kaffe!</strong></span>.</p>
+<p><br />
+<a href="hast12.html">Jeg er klar til å fortsette...</a></p>
+
+<p><span id="hast12" label="hast12"></span></p>
+<p><a href="hast11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi kan altså skrive 4-hastighet som: <span class="math display"><em>V</em><sub><em>μ</em></sub> = <em>γ</em>(1,<em>v⃗</em>) = (<em>γ</em>,<em>γ</em><em>v⃗</em>)</span> Vi ser at <span><strong>tidsdelen</strong></span> av 4-vektoren, altså den første komponenten i 4-vektoren (som for posisjons-4-vektorer er tiden), her er kun Lorentzfaktoren <span class="math inline"><em>γ</em></span>. Mens <span><strong>den romlige delen</strong></span> av 4-vektoren (som for posisjons-4-vektorer er posisjonen) er hastighet ganger Lorentzfaktoren. Som for vanlige 3D-vektorer så kan vi finne lengden av en vektor ved å ta skalarproduktet av vektoren med seg selv. Vi kan altså finne 4-farten ved å gjøre nettopp dette med 4-hastighetsvektor: <span class="math display">$$V=\sqrt{V_\mu V^\mu}$$</span> Merk deg en <span class="math inline"><em>μ</em></span>-indeks er nede og en er oppe for å indikere <span><strong>skalarprodukt.</strong></span> <span style="color: red">Husker du hvordan man beregner skalarproduktet?</span> Gjør et forsøk nå på å finne en verdi for <span class="math inline"><em>V</em></span>!</p>
+<p><a href="hast13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast13" label="hast13"></span></p>
+<p><a href="hast12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Fikk du... <span class="math display">$$V=\sqrt{V_\mu V^\mu}=1$$</span> ???? Hvis ikke, ta en titt på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_18.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>.</p>
+<p><a href="hast14.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast14" label="hast14"></span></p>
+<p><a href="hast13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>4-hastighet<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Hvordan kan vi tolke dette??? En fart på 1 betyr lysfarta? Beveger vi oss alle med lysfarta gjennom tidrommet? I <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_19.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> får du en tolkning.</p>
+<p><a href="nytema2b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="nytema2b" label="nytema2b"></span> <a href="hast14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Hastighetstransformasjoner</span></strong></p>
+<p><a href="hast15.html">Vi skal finne Lorentztransformasjoner for hastigheter...</a></p>
+
+<p><span id="hast15" label="hast15"></span></p>
+<p><a href="hast14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span id="htrans" label="htrans"></span> Nå skal vi se <span><strong>hvorfor</strong></span> vi var så interessert i at 4-hastigheten skal være en 4-vektor. Husker du Lorentztransformasjonene? De som transformere posisjon og tidspunkt for et event fra et umerket til et merket referansesystem? Hvis vi går tilbake til togene våre i forrige forelesning så har vi en observatør på bakken og en i toget. <span style="color: red">Begge observatører observerer et event, f.eks. et av lynnedslagene. Bakkeobservatøren måler at lynnedslaget finner sted i posisjon og tid <span class="math inline">(<em>x</em>,<em>t</em>)</span> og togobservatøren måler at det finner sted i posisjon og tid <span class="math inline">(<em>x</em>′,<em>t</em>′)</span>. Vi kan da bruke Lorentztransformasjonene til å finne det ene fra det andre hvis vi kjenner relativ hastighet <span class="math inline"><em>v</em><sub>rel</sub></span> mellom observatørene.</span> <a href="hast12a.html">Ok, det har jeg kontroll på!</a></p>
+<p>Men hva nå hvis begge observatører ser et fly i lufta. Observatøren på bakken vil da måle flyet til å ha fart <span class="math inline"><em>v</em><sub><em>x</em></sub></span> i x-retning. Observatøren på toget derimot vil måle av flyet har fart <span class="math inline"><em>v</em>′<sub><em>x</em></sub></span>. Hvordan kan vi nå transformere mellom disse to? Kan vi bruke 4-hastigheten til det?</p>
+<p><a href="hast16.html">Jeg har et forslag</a></p>
+
+<p><span id="hast16" label="hast16"></span></p>
+<p><a href="hast15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Et hint: hva var definisjonen av 4-vektor igjen? Var det ikke en egenskap som alle 4-vektorer må ha? Kan du bruke denne, gitt at du nå vet at <span class="math inline"><em>V</em><sub><em>μ</em></sub></span> er en 4-vektor? Hjalp det deg til å forstå hvordan vi kan gå frem for å finne <span class="math inline"><em>v</em>′<sub><em>x</em></sub></span> fra <span class="math inline"><em>v</em><sub><em>x</em></sub></span>?</span></p>
+<p><a href="hast17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast17" label="hast17"></span></p>
+<p><a href="hast16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+I <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_20.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> går vi gjennom utledningen av hastighetstransformasjonen mellom forskjellige referansesystem. Der finner vi til slutt at Lorentztransformasjonen for hastighet er <span class="math display">$$v'_x=\frac{v_x-v_\mathrm{rel}}{1-v_\mathrm{rel}v_x}$$</span> <span style="color: red">Merk at det viktigste her er å forstå og kunne gjenta selve utledningen og ideen bak utledningen slik at du kan gjøre dette selv på en helt annen type 4-vektor!</span> Svaret i seg selv er ikke så viktig, selv om det er svært interessant...</p>
+<p><a href="hast18.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast18" label="hast18"></span></p>
+<p><a href="hast17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss gå tilbake til eksemplet i del 2A:</p>
+<p><img src="../media/klassrel11.png" alt="image" /></p>
+<p>Hvis vi nå bruker sammenhengen <span class="math display">$$v'_x=\frac{v_x-v_\mathrm{rel}}{1-v_\mathrm{rel}v_x}$$</span> hva finner vi? Fra bakken måler vi lyset til å ha lyshastighet <span class="math inline"><em>v</em><sub><em>x</em></sub> = 1</span>. Hvilken hastighet <span class="math inline"><em>v</em><sub><em>x</em></sub>′</span> vil observatøren i bilen måle at lysstrålen har? Hvordan avhenger det av <span class="math inline"><em>v</em><sub>rel</sub></span>? <a href="hast18b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast18b" label="hast18b"></span></p>
+<p><a href="hast18.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss gå tilbake til eksemplet i del 2A:</p>
+<p><img src="../media/klassrel11.png" alt="image" /></p>
+<p>Fikk du ved å sette inn <span class="math inline"><em>v</em><sub><em>x</em></sub> = 1</span> her <span class="math display">$$v'_x=\frac{v_x-v_\mathrm{rel}}{1-v_\mathrm{rel}v_x}$$</span> at <span class="math inline"><em>v</em><sub><em>x</em></sub>′ = 1</span> uansett hva <span class="math inline"><em>v</em><sub>rel</sub></span> er? Det skulle du få!</p>
+<p><a href="hast19.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast19" label="hast19"></span></p>
+<p><a href="hast18b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p><span><strong>La oss gå tilbake til eksempler med små hastigheter (se figur):</strong></span> Hvis vi nå bruker sammenhengen <span class="math display">$$v'_x=\frac{v_x-v_\mathrm{rel}}{1-v_\mathrm{rel}v_x}$$</span> hva finner vi? Her er den relative hastigheten mellom observatørene veldig mye mindre enn lyshastigheten, enig? Vi har at <span class="math inline"><em>v</em><sub>rel</sub> ≪ 1</span>. Det samme gjelder <span class="math inline"><em>v</em><sub><em>x</em></sub></span>, hastigheten målt fra bakken. Hva skjer med denne likningen da??? Ikke bla om før du har uttrykket!</p>
+<p><a href="hast20.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="hast20" label="hast20"></span></p>
+<p><a href="hast19.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Hastighetstransformasjoner<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Får du at <span class="math display">$$v'_x=\frac{v_x-v_\mathrm{rel}}{1-v_\mathrm{rel}v_x}$$</span> blir til <span class="math display"><em>v</em>′<sub><em>x</em></sub> = <em>v</em><sub><em>x</em></sub> − <em>v</em><sub>rel</sub></span> når både <span class="math inline"><em>v</em><sub><em>x</em></sub></span> og <span class="math inline"><em>v</em><sub>rel</sub></span> er mye mindre enn lyshastigheten? <span><strong>Er ikke dette uttrykket for hastighetstransformasjon i den klassiske relativitetsteorien som vi snakket om i 2A?</strong></span> (hvis du lurer på hvorfor <span class="math inline"><em>v</em><sub>rel</sub><em>v</em><sub><em>x</em></sub></span> forsvinner her og ikke <span class="math inline"><em>v</em><sub>rel</sub></span> så tenk på hvilke av disse uttrykkene som er minst her? Ta et eksempel med begge hastigheter av størrelseorden f.eks. <span class="math inline">10<sup>−6</sup></span>)</p>
+<p><a href="nytema3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="nytema3" label="nytema3"></span> <a href="hast20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Relativistisk bevegelsesmengde</span></strong></p>
+<p><span style="color: yellow">Er du sikker på at du er opplagt til resten av denne forelesningen idag? Kunne du kanskje ta resten imorgen og få klarnet tankene litt?</span><br />
+<span><strong>Det blir en pause underveis...</strong></span> <a href="pe1.html">Jeg er klar...</a></p>
+
+<p><span id="pe1" label="pe1"></span></p>
+<p><a href="hast20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span><strong>La oss holde oss til dette eksemplet litt til:</strong></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Vi er enige om at bakkeobservatøren og observatøren i den blå bilen måler forskjellige hastigheter for den oransje bilen. Men hvis de måler forskjellige hastigheter, så er de vel heller ikke enige om bevegelsesmengden til oransje bil? Den avhenger jo av hastigheten? Kan vi lage oss en 4-dimensjonal bevegelsesmengde-4-vektor også? <span><strong>Isåfall hvordan?</strong></span> Hvordan ville du definert denne? <a href="pe2.html"><span id="pm" label="pm"></span>Neste side</a></p>
+
+<p><span id="pe2" label="pe2"></span></p>
+<p><a href="pe1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Vi vet at 3-dimensjonal bevegelsesmengde er gitt ved <span class="math display"><em>p⃗</em> = <em>m</em><em>v⃗</em></span> der <span class="math inline"><em>m</em></span> er massen til objektet. Kan vi generalisere dette til 4-dimensjonalt tidrom? Vi har jo allerede 4-dimensjonal hastighet <span class="math inline"><em>V</em><sub><em>μ</em></sub></span>? Hvordan vil du gjøre dette? Og hva må vi passe på? (lærepengen fra da vi skulle lage oss <span class="math inline"><em>V</em><sub><em>μ</em></sub></span>)</p>
+<p><a href="pe3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe3" label="pe3"></span></p>
+<p><a href="pe2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Det er fristende å prøve oss med <span class="math display"><em>P</em><sub><em>μ</em></sub> = <em>m</em><em>V</em><sub><em>μ</em></sub></span> ikke sant? Kan du se noe problem med dette?</p>
+<p><a href="pe4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe4" label="pe4"></span></p>
+<p><a href="pe3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span class="math display"><em>P</em><sub><em>μ</em></sub> = <em>m</em><em>V</em><sub><em>μ</em></sub></span> Vi må forsikre oss om at massen <span class="math inline"><em>m</em></span> er <span><strong>invariant</strong></span>, ikke sant? <span style="color: red">Hvis ikke, så får vi ikke lov til å gange den med en 4-vektor! Men <span><strong>er</strong></span> masse en invariant størrelse da?</span> Vil alle observatører måle den samme massen <span class="math inline"><em>m</em></span> for alle objekter? I dette kurset skal vi si <span style="color: red"><strong>JA</strong></span>. Men hvorfor akkurat i dette kurset? Det er en lang historie som vi ikke skal bruke tid på her, men for å gjøre en lang historie kort: du kan formulere konsistente versjoner av relativitetsteorien der enten</p>
+<ul>
+<li><p><span><strong>massen er en invariant størrelse</strong></span> som kun avhenger av partikkelen/legemet/systemet vi ser på, men ikke av hvilket referansesystem denne partikkelen/legemet/systemet er i. <span><strong>Mens energi <span class="math inline"><em>E</em></span> ikke er en invariant størrelse</strong></span>, <span><strong>ELLER</strong></span></p></li>
+<li><p><span><strong>energien er en invariant størrelse men massen ikke er det</strong></span> (i det siste tilfellet har det mening å snakke om “hvilemasse” siden massen da vil avhenge av referansesystem og hvilemasse referer til massen man måler i hvilesystemet) Denne formalismen skal vi <span><strong>ikke</strong></span> bruke i dette kurset, og har i stor grad blitt forlatt i moderne fysikk (mens den dessverre henger igjen i mange skolebøker)</p></li>
+</ul>
+<p>Vi har altså <span><strong>definert</strong></span> masse til å være en invariant størrelse. <span><strong>På denne måten får man en mer konsistent matematisk formalisme for relativitetsteorien.</strong></span> (relativitetsteorien åpner altså for å definere enten masse eller energi som invariant, dette er kun et definisjonsspørsmål). <span><strong>Og når masse da er en invariant størrelse, så gir vår definisjon av 4-bevegelsesmengde over mening!</strong></span></p>
+<p><a href="pe5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe5" label="pe5"></span></p>
+<p><a href="pe4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Vi kan altså skrive 4-bevegelsesmengden til den oransje bilen som <span class="math display"><em>P</em><sub><em>μ</em></sub> = <em>m</em><em>V</em><sub><em>μ</em></sub> = <em>γ</em>(<em>m</em>,<em>p⃗</em>)</span> der <span class="math inline"><em>p⃗</em></span> er den vanlige 3D-begelsesmengden målt fra f.eks. bakken. Får du til den siste overgangen her selv? (bruk et uttrykk for <span class="math inline"><em>V</em><sub><em>μ</em></sub></span> som vi fant over!).</p>
+<p><a href="pe6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe6" label="pe6"></span></p>
+<p><a href="pe5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss først se på den <span><strong>romlige</strong></span> delen av 4-vektoren, altså de 3 siste komponentene av vektoren, den delen av 4-vektoren som tilsvarer posisjon for en posisjons-4-vektor. <span class="math display"><em>P</em><sub><em>μ</em></sub> = <em>m</em><em>V</em><sub><em>μ</em></sub> = <em>γ</em>(<em>m</em>,<em>p⃗</em>)</span> Den romlige delen er her <span class="math inline"><em>γ</em><em>p⃗</em></span>. Har du sett dette uttrykket før? Det er uttrykket for relativistisk bevegelsesmengde: <span class="math display"><em>p⃗</em><sub>relativistisk</sub> = <em>γ</em><em>p⃗</em> = <em>γ</em><em>m</em><em>v⃗</em></span> <span><strong>Det viser seg i eksperimenter at det er denne relativistiske bevegelsesmengden som er den størrelsen som er bevart!</strong></span> Den klassiske bevegelsesmengden <span class="math inline"><em>p⃗</em> = <em>m</em><em>v⃗</em></span> er <span><strong>ikke</strong></span> en bevart størrelse slik som du har lært. Men når hastighetene er små, altså <span class="math inline"><em>v</em> ≪ 1</span>, altså hastigheter mye mindre enn lyshastigheten, så er <span class="math inline"><em>γ</em> → 1</span> og de to uttrykkene blir like. Men for store hastigheter så <span><strong>må</strong></span> man bruke relativistisk bevegelsesmengde. Den klassiske er <span><strong>ikke</strong></span> en bevart størrelse.</p>
+<p><a href="pe7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe7" label="pe7"></span></p>
+<p><a href="pe6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Det ser virkelig ut til at 4-vektorformalismen har noe for seg! Når vi konstruerer en bevegelsesmengde-4-vektor, så faller det ut at den romlige delen av denne er en svært viktig fysisk størrelse. Det er dette som er det riktige og generelle uttrykket for bevegelsesmengde mens det viser seg at det klassiske uttrykket <span class="math inline"><em>p⃗</em> = <em>m</em><em>v⃗</em></span> bare er en tilnærmelse for lave hastigheter. 4-vektor-formalismen og det å jobbe med matematiske størrelser i det 4-dimensjonale tidrom ser dermed ut til å kanskje være nærmere slik naturen faktisk funker. Det virker som om vi får resultater som stemmer bedre med virkeligeheten når vi jobber i dette rommet. <a href="pe8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe8" label="pe8"></span></p>
+<p><a href="pe7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss se en gang til på 4-bevegelsesmengden: <span class="math display"><em>P</em><sub><em>μ</em></sub> = <em>m</em><em>V</em><sub><em>μ</em></sub> = <em>γ</em>(<em>m</em>,<em>p⃗</em>)</span> Kan vi finne en tolkning av <span><strong>tidsdelen</strong></span> av denne 4-vektoren? <span style="color: red">Altså den første komponenten som tilsvarer tid når vi snakker om posisjons-4-vektorer?</span> Vi ser at den er <span class="math inline"><em>γ</em><em>m</em></span>. I <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_21.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> skal vi ser på hvordan denne størrelsen ser ut i den klassiske grensen, dvs. ved lave hastigheter. Og vi skal gjøre en <span><strong>stor</strong></span> og viktig oppdagelse!</p>
+<p><a href="pause2.html">Jeg har sett videoen og har enda ikke kommet meg over sjokket!</a></p>
+
+<p><span id="pause2" label="pause2"></span> <a href="pe8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span>Kaffe!</span> Kaffe! <span>Kaffe</span> <span>Kaffe!</span> <span><strong>Kaffe!</strong></span></p>
+<p><img src="../media/drink-coffee.png" alt="image" /></p>
+<p>Jada, jada, helt klart velfortjent nå! Det verste er overstått, nå er det bare småplukk igjen (viktig småplukk vel og merke!), og så litt spennende saker som er utenfor pensum for de interesserte på de siste sidene...</p>
+<p><br />
+<a href="pe9.html">Jeg er klar til å fortsette...</a></p>
+
+<p><span id="pe9" label="pe9"></span></p>
+<p><a href="pe8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi har altså sett at 4-bevegelsesmengdevektoren kan skrives som <span class="math display"><em>P</em><sub><em>μ</em></sub> = (<em>E</em><sub>relativistisk</sub>,<em>p⃗</em><sub>relativistisk</sub>)</span> der <span class="math display"><em>E</em><sub>relativistisk</sub> = <em>m</em><em>γ</em></span> og er en <span><strong>bevart størrelse</strong></span> som inneholder både hvileenergien til legemet og den kinetiske i en og samme størrelse. Disse to størrelsene smelter her sammen til en energi. Det er kun ved lave hastigheter at vi ser at dette separeres ut i to forskjellige typer energier. <span><strong>MERK altså igjen, den klassiske kinetiske energien er ikke en bevart størrelse, men er tilnærmet bevart ved lave hastigheter. Det er kun den relativistiske energien som er en et mer generelt uttrykk for energi og som viser seg å være bevart i eksperimenter!</strong></span>. <span style="color: red">Det viser seg altså fra eksperimenter at bevegelsesmengde-4-vektoren <span class="math inline"><em>P</em><sub><em>μ</em></sub></span>er en bevart størrelse!</span></p>
+<p><a href="pe10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe10" label="pe10"></span></p>
+<p><a href="pe9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Men hva er <span><strong>lengden</strong></span> av <span class="math inline"><em>P</em><sub><em>μ</em></sub></span> da? Når vi tar lengden av 4-hastigheten <span class="math inline"><em>V</em><sub><em>μ</em></sub></span> så fant vi at vi alle har fart lik lyshastigheten. Hva nå med lengden av bevegelsesmengde-4-vektoren? Husker du hvordan vi regnet ut lengde av <span class="math inline"><em>V</em><sub><em>μ</em></sub></span>? Prøv deg selv nå, se om du kan finne at <span class="math display">$$P=\sqrt{P_\mu P^\mu}=m$$</span> Skalarproduktet gir oss igjen en skalar, nemlig massen til et objekt. Det er den som er lengden av vektoren, og den er konstant. For at lengden av vektoren skal bevares (altså massen bevares) når hastigheten endres (som betyr at bevegelsesmengde og energi endres, disse avhenger begge av hastighet!), må det finnes en relasjon mellom masse, energi og bevegelsesmengde.</p>
+<p><a href="pe11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe11" label="pe11"></span></p>
+<p><a href="pe10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Den skal vi finne nå. Ta utgangspunkt i <span class="math display"><em>P</em><sub><em>μ</em></sub> = (<em>E</em><sub>relativistisk</sub>,<em>p⃗</em><sub>relativistisk</sub>)</span> Skriv skalaproduktet ut en gang til, nå uttrykkt ved relativistisk energi og bevegelsesmengde. Sette denne lik det du fant på forrige side. Klarer du å komme frem til...</p>
+<div class="block">
+<p><span>...en svært viktig relasjon mellom relativistiske størrelser...</span> <span class="math display"><em>E</em><sub>relativistisk</sub><sup>2</sup> − <em>p</em><sub>relativistisk</sub><sup>2</sup> = <em>m</em><sup>2</sup></span> som gjør at du f.eks. hvis du kjenner to av disse størrelsene, kan finne den 3.</p>
+</div>
+<p><span><strong>Merk deg denne relasjonen da den ofte er løsningen på problemer der det virker som om informasjon mangler!!!</strong></span></p>
+<p><a href="pe12x.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe12x" label="pe12x"></span></p>
+<p><a href="pe11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Denne relasjonen, <span class="math display"><em>E</em><sub>relativistisk</sub><sup>2</sup> − <em>p</em><sub>relativistisk</sub><sup>2</sup> = <em>m</em><sup>2</sup></span> gjør også at masseløsepartikler som fotoner faktisk har en bevegelsesmengde. Sett inn <span class="math inline"><em>m</em> = 0</span> og du får <span class="math display"><em>E</em><sub>relativistisk</sub><sup>2</sup> = <em>p</em><sub>relativistisk</sub><sup>2</sup></span> for fotoner. Vi husker at <span class="math inline"><em>E</em> = <em>h</em><em>ν</em></span> for fotoner. Dette blir ifølge denne formelen da også størrelsen på fotones bevevegelsesmengde, men <span><strong>merk</strong></span> at bevegelsesmengde har en retning og et fortegn mens energi bare er en størrelse. Bevegelsesmengde-4-vektoren for et foton som beveger seg i negativ retning langs x-aksen vil da kunne skrives som: <span class="math display"><em>P</em><sub><em>μ</em></sub> = (<em>E</em><sub>relativistisk</sub>,<em>p⃗</em><sub>relativistisk</sub>) = (<em>h</em><em>ν</em>,−<em>h</em><em>ν</em>,0,0)</span></p>
+<p><a href="pe12.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe12" label="pe12"></span></p>
+<p><a href="pe12x.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La du merke til noe rart i dette uttrykket? <span class="math display"><em>E</em><sub>relativistisk</sub><sup>2</sup> − <em>p</em><sub>relativistisk</sub><sup>2</sup> = <em>m</em><sup>2</sup></span></p>
+<p><a href="pe12b.html">Tjaaaaaaa...</a></p>
+<p>Hva med enhetene i denne likningen da?</p>
+<p><a href="pe12c.html">Dæggern... her varre no’rart...</a></p>
+<p>Sa jo det jo! Men egentlig ikke så rart. Vi bruker jo nå konsekvent at vi har samme enheter for tidsintervaller som for romlige avstander. Dette endrer også andre enheter. Det gjør at vi nå <span><strong>måler både masse, bevegelsesmengde og energi i kg!</strong></span>. Dette faller automatisk ut av at vi bruker like enheter på tid og rom. For å gjøre om til vanlige SI enheter trenger du da å gjøre <span class="math display">$$\begin{aligned}
+E(\mathrm{Joule})&amp;=E(\mathrm{kg})c^2\\
+p(\mathrm{kg\,m/s})&amp;=p(\mathrm{kg})c\end{aligned}$$</span> Det er naturligvis lyshastigheten som kommer inn i omregningen siden det var den vi brukte for å regne om meter til sekunder og omvendt.</p>
+<p><a href="pe13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe13" label="pe13"></span></p>
+<p><a href="pe12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss igjen gå tilbake til eksemplet i del 2A:</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Den oransje bilen har bevegelsesmengde og energi (fra bakkesystemet) <span class="math display"><em>p</em><sub><em>x</em></sub>(relativistisk) = <em>γ</em><em>m</em><em>v</em><sub><em>x</em></sub>     <em>E</em><sub>relativistisk</sub> = <em>γ</em><em>m</em></span> der <span class="math inline"><em>p</em><sub><em>x</em></sub></span> og <span class="math inline"><em>v</em><sub><em>x</em></sub></span> er bevegelsesmengde og hastighet på den oransje bilen målt fra bakken og <span class="math inline"><em>m</em></span> er bilens masse. Målt fra den blå bilen derimot, har den oransje bilen bevegelsesmengde og energi <span class="math display"><em>p</em><sub><em>x</em></sub>′(relativistisk) = <em>γ</em>′<em>m</em><em>v</em><sub><em>x</em></sub>′     <em>E</em><sub>relativistisk</sub> = <em>γ</em>′<em>m</em></span> der <span class="math display">$$\gamma'=\frac{1}{1-(v_x')^2}$$</span></p>
+<p><a href="pe14.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe14" label="pe14"></span></p>
+<p><a href="pe13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p><span><strong>Men sett at du kun kjenner bevegelsesmengden og energien i det umerkede systemet og ønsker å finne de i det merkede systemet? Du måler <span class="math inline"><em>p⃗</em><sub>relativistisk</sub></span> og <span class="math inline"><em>E</em><sub>relativistisk</sub></span> for den oransje bilen fra bakken, men ønsker å vite hva observatøren i den blå bilen måler for disse størrelsene?</strong></span> Og du kjenner den relative hastigheten <span class="math inline"><em>v</em><sub>rel</sub></span> mellom de to observaørene! Hvordan kan du nå gå frem?</p>
+<p><a href="pe15.html">Dette har jeg gjort før, så det kan jeg!</a></p>
+
+<p><span id="pe15" label="pe15"></span></p>
+<p><a href="pe14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Ja, nå bør du begynne å lukte lunta når du blir spurt om å transformere en størrelse fra et referansesystem til et annet! Da bør du prøve å finne en passende 4-vektor, og bruke de kjente transformasjonsegenskapene til en 4-vektor. Hva er disse?</span></p>
+<p><a href="pe16.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe16" label="pe16"></span></p>
+<p><a href="pe15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/klassrel2.png" alt="image" /></p>
+<p>Prøv nå å gjøre transformasjonen og se om du kommer frem til: <span class="math display">$$\begin{aligned}
+E'&amp;=\gamma_\mathrm{rel}E-v_\mathrm{rel}\gamma_\mathrm{rel}p_x\\
+p_x'&amp;=-v_\mathrm{rel}\gamma_\mathrm{rel}E+\gamma_\mathrm{rel}p_x\end{aligned}$$</span> der <span class="math inline"><em>E</em></span> og <span class="math inline"><em>p</em><sub><em>x</em></sub></span> er <span><strong>relativistiske</strong></span> bevegelsesmengder og energier og <span class="math display">$$\gamma_\mathrm{rel}=\frac{1}{\sqrt{1-v_\mathrm{rel}^2}}$$</span></p>
+<p><a href="pe17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe17" label="pe17"></span></p>
+<p><a href="pe16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Fikk du det til? Hvis ikke, se på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_22.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. Merk at denne typen transformasjoner bør du kunne gjøre!</p>
+<p><a href="pe17b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe17b" label="pe17b"></span></p>
+<p><a href="pe17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<div class="columns">
+<p>Til slutt skal vi tilbake til forelesningene om kjernereaksjoner. Vi sa der at den totale massen til en atomkjerne ikke tilsvarer summen av massene. Det var dette som gjør at masse per nukleon avhenger av atomkjernen. Vi skal ikke gjøre noen nøyaktige beregninger her, men illustrere prinsippet med et forenklet eksempel. Anta at du har en atomkjerne med to like (uspesifiserte) kjernepartikler med masse <span class="math inline"><em>m</em></span>:</p><p><img src="../media/nucleus1.png" alt="image" /></p><p><br />
+Den blå ringen illustrerer atomkjernens størrelse. Kjernepartiklene oppfører seg altså omtrent som gasspartikler med tilfeldige hastigheter som endrer seg hele tiden med holdes innenfor den blå sirkelen av den sterke kjernekrafta.</p><p>Her skal vi se på et øyeblikksbilde som gjør det lett å regne:</p><p><img src="../media/nucleus2.png" alt="image" /></p><p><br />
+Partiklene går her i nøyaktig motsatt regning med samme hastighet <span class="math inline"><em>v</em></span>. Etter litt tid vil de selvfølgelig bli dradd tilbake igjen av den sterke kjernekrafta. Sett opp 4-bev.mengdevektoren <span class="math inline"><em>P</em><sub><em>μ</em></sub>(1)</span> og <span class="math inline"><em>P</em><sub><em>μ</em></sub>(2)</span> for begge partiklene hver for seg og sum så disse sammen til <span class="math inline"><em>P</em><sub><em>μ</em></sub>(<em>M</em>)</span> for hele atomkjernen. <a href="pe17x.html">Ok, har gjort det!</a></p><p>Fikk du <span class="math inline"><em>P</em><sub><em>μ</em></sub>(1) = (<em>γ</em><em>m</em>,<em>γ</em><em>m</em><em>v</em>)</span> og <span class="math inline"><em>P</em><sub><em>μ</em></sub>(2) = (<em>γ</em><em>m</em>,−<em>γ</em><em>m</em><em>v</em>)</span>??? Og for kjernen <span class="math inline"><em>P</em>(<em>M</em>) = (2<em>m</em><em>γ</em>,0)</span>??</p><p><a href="pe17c.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="pe17c" label="pe17c"></span></p>
+<p><a href="pe17b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<div class="columns">
+<p><img src="../media/nucleus2.png" alt="image" /></p><p>Hvordan finner man massen av en partikkel med 4-bev.mengdevektor <span class="math inline"><em>P</em><sub><em>μ</em></sub></span>?? <a href="pe17xx.html">Det har vi jo akkurat lært...</a></p><p>Javisst ja, man tar skalarprodukt, <span class="math inline">$M=\sqrt{P_\mu(M)P^\mu(M)}$</span>. Så hva blir totalmassen til atomkjernen? <a href="pe17xxx.html">Regne, regne, regne, det blir...</a></p><p><span class="math display">$$M=\sqrt{(2m\gamma)^2-0^2}=2m\gamma$$</span></p><p><span><strong>som ikke er <span class="math inline">2<em>m</em></span> som vi hadde regnet med hvis masser hadde vært en additiv størrelse!</strong></span> Merk at atomkjernens totalmasse <span class="math inline">2<em>m</em><em>γ</em></span> er en <span><strong>invariant</strong></span> størrelse! Alle observatører vil være enige om denne massen siden lengden av <span class="math inline"><em>P</em><sub><em>μ</em></sub></span> er en skalar. Vi ser at hastigheten/energien til partiklene inne i atomkjernen bidrar til total masse. Merk også at dette aldri kan skje for en enkelt partikkel, da viste vi for noen sider siden at lengden av <span class="math inline"><em>P</em><sub><em>μ</em></sub></span> er partikkelens masse uansett hva dens hastighet er.</p><p><a href="pe18.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="pe18" label="pe18"></span></p>
+<p><a href="pe17c.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: red">Vi skal avslutte med en tur <span><strong>utenfor pensum</strong></span></span>. For det første, la meg nevne <span><strong>tensorbegrepet</strong></span>: Går man videre med 4-vektorformalismen, så innfører man også noe som heter <span><strong>tensorer</strong></span>. Dette er en utvidelse av matrisebegrepet til 4-dimensjonalt tidrom, på samme måte som 4-vektorer er en utvidelse av vektorbegrepet til 4-dimensjonalt tidrom.</p>
+<p><a href="pe19.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe19" label="pe19"></span></p>
+<p><a href="pe18.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span><strong>Vi avslutter med Maxwells likninger på 4-vektor-formalisme: (<span style="color: red">Også utenfor pensum!</span>)</strong></span><br />
+<span> <span class="math display">▫<em>A</em><sup><em>μ</em></sup> = <em>μ</em><sub>0</sub><em>J</em><sup><em>μ</em></sup></span> </span> <span><strong>Dette er alle Maxwells likninger, som i 4-vektorformalismen kun blir denne lille likningen!</strong></span> Her er <span class="math display"><em>A</em><sup><em>μ</em></sup> = (<em>ϕ</em>,<em>A⃗</em>)</span> <span><strong>4-potensial</strong></span> der tidskomponenten av 4-vektoren er elektromagnetisk potensial <span class="math inline"><em>ϕ</em></span> og romkomponenten er magnetisk potensial <span class="math inline"><em>A⃗</em></span>. Vi ser også at vi har <span class="math display"><em>J</em><sup><em>μ</em></sup> = (<em>ρ</em>,<em>j⃗</em>)</span> som er <span><strong>4-strøm</strong></span> der tidsdelen er ladning og romdelen er elektrisk strøm. Firkanten <span class="math inline">▫</span> er d’Alembert-operatoren som tilsvarer nabla <span class="math inline">∇</span> i 4-dimensjonalt tidrom. <span><strong>Denne ene og korte likningen er ekvivalent med alle 4 Maxwell-likningene</strong></span>. Vi ser igjen at likninger blir mye mer elegante i 4-dimensjonalt tidrom.</p>
+<p><a href="pe20.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pe20" label="pe20"></span></p>
+<p><a href="pe19.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span>Relativistisk bevegelsesmengde<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span><strong>Har du lyst til å sove dårlig om natta!</strong></span> Da kan du ta en kikk på dette “paradokset” (det er faktisk <span><strong>ikke</strong></span> et paradoks, bare ser slik ut) som <span style="color: red"><strong>også er utenfor pensum:</strong></span></p>
+<p><img src="../media/detonator.png" alt="image" /></p>
+<p>Her ser du to innretninger, en blå og en rød. Øverst ser du de sammen og nederst så står den røde stille og den blå har høy hastighet rett mot den røde. Den gule boksen på den røde innretningen er en utløser for en bombe. Hvis den blå innretningen trykker på denne utløseren eksploderer bomben. Merk at i figuren øverst så er de ikke nærme nok til at bomba eksploderer. Tuppen av den blå må komme enda lenger inn. <span><strong>Husk lengdekontraksjon: når vi ser et legeme har en gitt hastighet så blir lengden av dette legemet mindre!</strong></span>. <span style="color: blue">Hvordan ser dette ut fra blått sitt referansesystem? Blir ikke rød da kortere og blå kan komme inn og utløse bomben?</span> <span style="color: red">Og fra rødt sitt referansesystem? Blir ikke da den blåe enda kortere og kan ikke klare å utløse bomben?</span> <span><strong>Blir bomben utløst eller blir den ikke?</strong></span> Sorry, du får ikke svaret her...</p>
+<p><a href="oppsummering.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="oppsummering" label="oppsummering"></span> <a href="pe20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171403" class="🙂🙁">🙂 🙁</a></span></span></p>
+<p><span><strong>Du er ferdig med forelesning 2 av 2 i del 2B.</strong></span> Du bør nå:</p>
+<ul>
+<li><p>vite hva verdenslinjer er og kunne tegne en verdenslinje for et legeme gitt hastigheten som funksjon av tiden</p></li>
+<li><p>kunne utlede Newtons 1.lov fra prinsippet om maksimal aldring</p></li>
+<li><p>vite hva en 4-vektor er og hvordan den transformerer mellom systemer</p></li>
+<li><p>kunne utlede regneregler for 4-vektorer</p></li>
+<li><p>kjenne Einsteins summekonvensjon, skalarprodukt og hvordan finne lengden av en 4-vektor.</p></li>
+<li><p>kjenne uttrykket for 4-hastighet og kunne bruke dette til å transformere hastigheter fra et referansesystem til et annet</p></li>
+<li><p>kjenne uttrykket for 4-bevegelsemengde og kunne tolke komponentene av denne, også for fotoner.</p></li>
+<li><p>kunne utlede transformasjonen av energi og bevegelsemengde fra et referansesystem til et annet.</p></li>
+<li><p>kunne utlede og bruke sammenhengen mellom relativistisk energi, bevegelsemengde og masse</p></li>
+<li><p>kunne regne om energi og bevegelsesmengde mellom relativistiske enheter og SI-enheter</p></li>
+</ul>
+<p><span style="color: red">Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!</span></p>
+
+</body>
+</html>

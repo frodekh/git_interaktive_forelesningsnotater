@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debug2</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="debug2" label="debug2"></span> <a href="debug1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span><span style="background-color: sunset"><a href="https://nettskjema.no/a/160191" class="🙂🙁">🙂 🙁</a></span></span>Tips til parameterestimering<br />
+Du skal altså prøve deg frem med kombinasjoner av verdier for <span class="math inline"><em>v</em><sub>*</sub></span>, <span class="math inline"><em>P</em></span> og <span class="math inline"><em>t</em><sub>0</sub></span>. Hver kombinasjon gir en modell <span class="math inline"><em>v</em><sub><em>r</em></sub><sup>mod</sup>(<em>t</em><sub><em>i</em></sub>)</span> som du så skal beregne kvadratet av forskjellen til de observerte dataene for. Sånn skal du holde på helt til du finner den kombinasjonen som gir minst mulig forskjell. Hvordan går vi frem? En mulighet er å finne et intervall av mulige parametere for hver av de 3 parameterene. Du kan f.eks. finne den verdien av <span class="math inline"><em>t</em><sub>0</sub></span> som passer best ved å se i hvilket intervall denne verdien må ligge. På figuren<br />
+</p>
+<p><img src="../media/vr_t0_int.png" alt="image" /></p>
+<p>ser vi et mulig sånt intervall. Er du enig i at <span class="math inline"><em>t</em><sub>0</sub></span> helt sikkert må ligge innenfor dette intervallet? Den kan vel ikke ligge utenfor? (hvis du har glemt hva <span class="math inline"><em>t</em><sub>0</sub></span> står for, gå noen sider tilbake, det er viktig at du har dette helt klart for deg!). Del så dette intervallet opp i 20 like steg, og vips du har 20 mulige verdier å prøve for <span class="math inline"><em>t</em><sub>0</sub></span>. <a href="debug3.html">Trykk her!</a></p>
+
+</body>
+</html>

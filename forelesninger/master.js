@@ -53,6 +53,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //check if page title should be a right or wrong answer 
     //by asserting the page title, sets bg color thereafter
     let title = document.title
+    console.log(title)
     if(title.includes("feil")){
         const ele = document.createElement("bgcolor")
         ele.style.backgroundColor = 'black'
@@ -62,6 +63,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if(title.includes("riktig") || title.includes("rett")){
         const ele = document.createElement("bgcolor")
         ele.style.backgroundColor = 'yellow'
+        document.body.appendChild(ele)
+        return
+    }
+    if(title.includes("pause")){
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'cyan'
+        document.body.appendChild(ele)
+        return
+    }
+    if(title.includes("red")){
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'red'
+        document.body.appendChild(ele)
+        return
+    }
+    if(title.includes("blue")){
+        const ele = document.createElement("bgcolor")
+        ele.style.backgroundColor = 'blue'
         document.body.appendChild(ele)
         return
     }

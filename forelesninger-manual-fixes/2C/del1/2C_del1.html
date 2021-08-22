@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entire file</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../master.js"></script>
+</head>
+<body>
+
+<p><span id="front" label="front"></span><br />
+</p>
+<div class="alertblock">
+<p>Du må bruke <span><strong>presentasjonsmodus/fullskjermsvisning</strong></span> for å lese denne, men du skal <span><strong>ikke</strong></span> bruke frem/tilbake-knappene, <span><strong>KUN knappene som dukker opp på sliden</strong></span> for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. <span style="color: red">Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!</span></p>
+</div>
+<p><a href="front2.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front2" label="front2"></span><br />
+</p>
+<div class="block">
+<p>Dette er en erstatning for forelesningen i emnet. <span style="color: blue">Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese <span style="color: black"><span style="background-color: sunset"><a href="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2c.pdf">de fulle forelesningsnotatene</a></span></span> (med unntak av oppgavene bak)</span>. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. <span><strong>Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten</strong></span>. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. <span><strong>Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på <span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span> knappen som du finner på alle sider.</strong></span></p>
+</div>
+<p><a href="front3.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="front3" label="front3"></span></p>
+<ul>
+<li><p>HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.</p></li>
+<li><p>Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1-2 minutter på de korte, 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter 5 minutter, gå videre, se svaret og lær!</p></li>
+<li><p>Er du i det minste tvil om noe, så finnes det nå en <span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span>knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!</p></li>
+</ul>
+<p><a href="intro.html">Trykk denne knappen for å begynne</a></p>
+
+<p><span id="intro" label="intro"></span></p>
+<div class="columns">
+<p><a href="front.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><br />
+<embed src="spacetimebending.pdf" /> <span> <span style="color: yellow"><strong>Velkommen til forelesning 1 av 2 i del 2C! Vi skal nå se hvordan geometrien til tidrommet, og dermed uttrykket for tidromsavstander <span class="math inline"><em>Δ</em><em>s</em></span> endrer seg i et gravitasjonsfelt. Vi får en krumning av det 4-dimensjonale tidrommet, vanskelig å se for seg, men med dramatiske konsekvenser for oss! Vi skal så se på hvordan vi kan regne med en slik krum geometri og hvilke observatører som observerer hva.</strong></span><br />
+<span style="color: red">Fremstillingen av generell relativitetsteori i AST2000 er basert på den fantastiske boken “Exploring black holes” av E. Taylor, J. Wheeler og E. Bertschinger, gratis tilgjengelig <span style="color: black"><span style="background-color: sunset"><a href="http://www.eftaylor.com/exploringblackholes/">her</a></span></span>. Anbefales på det sterkeste for den som er interessert.</span> <span>(Illustrasjon fra pngegg.com)</span></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p>‘ <span id="intro2" label="intro2"></span> <a href="intro.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Introduksjon<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: red"><strong>Mange sider sier du? Neida, det er mye figurer og mange sider med stor og veldig lite skrift. Jeg kommer normalt gjennom dette på en dobbelttime fysisk forelesning</strong></span></p>
+<div class="alertblock">
+<p><span>Vi begynner som vanlig...</span> ...med litt brainstorming. Som det er <span><strong>svært viktig</strong></span> at du gjør før du går videre.</p>
+</div>
+<p><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171672" class="trykkher">Trykk her for å varme opp</a></span></span><br />
+Er du klar og har sendt inn skjemaet? <span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171672" class="janei">Nei</a></span></span>    <a href="nytema1.html" class="janei">Ja</a><br />
+</p>
+
+<p><span id="nytema1" label="nytema1"></span> <a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Schwarzschildgeometri</span></strong></p>
+<p><a href="ss1.html">La oss krumme tid og rom...</a></p>
+
+<p><span id="ss1" label="ss1"></span></p>
+<p><a href="intro2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> Vi begynner utradisjonelt med en likning som <span><strong>ikke er pensum</strong></span>. Dette er Einsteinlikningen: <span class="math display"><em>G</em><sub><em>μ</em><em>ν</em></sub> = 8<em>π</em><em>T</em><sub><em>μ</em><em>ν</em></sub></span> </span> Til venstre her har vi Einsteintensoren <span class="math inline"><em>G</em><sub><em>μ</em><em>ν</em></sub></span> og til høyre har vi stressenergitensoren <span class="math inline"><em>T</em><sub><em>μ</em><em>ν</em></sub></span>. Vi lærte kort (utenfor pensum) på slutten av del 2B hva en tensor er, altså en matrise med spesielle betingelser på samme måte som en 4-vektor er en vektor med spesielle betingelser. I elementene av <span class="math inline"><em>T</em><sub><em>μ</em><em>ν</em></sub></span> setter man inn energiinnholdet (deriblant også masseinnholdet) i systemet man ser på som funksjon av posisjon i rommet. Og ut på venstre siden faller tidrommets geometri ut. Med tidrommets geometri menes rett og slett et uttrykk for <span class="math inline"><em>Δ</em><em>s</em></span>, altså for hvordan avstander skal måles i tidrommet.</p>
+<p><a href="ss2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss2" label="ss2"></span></p>
+<p><a href="ss1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\\
+c&amp;d\\
+e&amp;f\end{aligned}$$</span> </span> <span style="color: yellow"> La oss ta et eksempel: anta at du har helt tomt tidrom, bare vakum som over. Putter vi det inn i <span class="math inline"><em>T</em><sub><em>μ</em><em>ν</em></sub></span> på høyre side i Einsteinlikningen så faller det ut av venstresiden at <span class="math display"><em>Δ</em><em>s</em><sup>2</sup> = <em>Δ</em><em>t</em><sup>2</sup> − <em>Δ</em><em>x</em><sup>2</sup></span> Altså at rommet har Lorentzgeometri! Det vil si at Lorentzgeometri er gyldig når det ikke finnes noen legemer i nærheten som kan sette opp tyngdefelt. </span></p>
+<p><a href="ss4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss4" label="ss4"></span></p>
+<p><a href="ss2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> Hvis vi isteden har en <span><strong>kulesymmetrisk massefordeling</strong></span> og putter det inn i <span class="math inline"><em>T</em><sub><em>μ</em><em>ν</em></sub></span> på høyre side i Einsteinlikningen så faller det ut av venstresiden at <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Dette er tidromsavstanden i ß-geometri. Kort tid etter at Einstein hadde formulert sin generelle relativitetsteori, så fant Karl Schwarzschild en av de svært få analytiske løsningene som finnes: løsningen for en kulesymmetrisk massefordeling. </span></p>
+<p><a href="ss5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss5" label="ss5"></span></p>
+<p><a href="ss4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Massen til den kulesymmetriske massefordelingen er <span class="math inline"><em>M</em></span>. Tidromsavstanden er her uttrykt i <span><strong>polarkoordinater</strong></span>, <span class="math inline"><em>r</em></span> er et koordinat som går fra sentrum av den kulesymmetriske massefordelingen og <span class="math inline"><em>ϕ</em></span> er en vinkel som går rundt slik som du er vant til i polarkoordinater. MEEEEN, er vi ikke i tre dimensjoner da? Skulle vi ikke ha en vinkel til? </span></p>
+<p><a href="ss6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss6" label="ss6"></span></p>
+<p><a href="ss5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> <span> Nope, det trenger vi ikke!</span> Kan du se hvorfor? Tenk deg litt om før du blar om! </span></p>
+<p><a href="ss7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss7" label="ss7"></span></p>
+<p><a href="ss6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> La oss først tenke, <span class="math inline"><em>Δ</em><em>s</em></span>, det er da en avstand eller da en linje mellom 2 eventer i tidrommet og dermed også to punkter i rommet. Men for å bruke polarkoordinator <span class="math inline">(<em>r</em>,<em>ϕ</em>)</span> med kun en vinkel <span class="math inline"><em>ϕ</em></span>, trenger vi jo faktisk <span><strong>et plan</strong></span> som trenger <span><strong>tre</strong></span> punkter for å defineres. Vi trenger derfor <span><strong>et punkt til</strong></span> for å definere et plan. Men hvilket punkt kan vi bruke? Vi har jo bare 2 eventer når vi definerer <span class="math inline"><em>Δ</em><em>s</em></span>?</span></p>
+<p><a href="ss8.html">ikke gå videre før du har et forslag</a></p>
+
+<p><span id="ss8" label="ss8"></span></p>
+<p><a href="ss7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Tenkte vi på det samme? Sentret av den kulesymmetriske massefordelingen, selvfølgelig! Med senteret pluss de to eventene så har vi et plan, og dermed trenger vi ikke noe mer? Begge eventene og sentrum av massefordelingen er et og samme plan, dermed holder det å ha med dette planet i likningen. Polarkoordinatene er dermed definert på dette planet! </span></p>
+<p><a href="ss9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss9" label="ss9"></span></p>
+<p><a href="ss8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\\
+e&amp;f\end{aligned}$$</span> </span> <span style="color: yellow"> La oss gå tilbake et øyeblikk til tomt rom. Hvis vi i romt rom definerer oss et “sentrum”, så kan også Lorentzavstanden skrives i polarkoordinater. Da ser det slik ut: <span class="math display"><em>Δ</em><em>s</em><sup>2</sup> = <em>Δ</em><em>t</em><sup>2</sup> − (<em>Δ</em><em>x</em><sup>2</sup>+<em>Δ</em><em>y</em><sup>2</sup>) = <em>Δ</em><em>t</em><sup>2</sup> − <em>Δ</em><em>r</em><sup>2</sup> − <em>r</em><sup>2</sup><em>Δ</em><em>ϕ</em><sup>2</sup></span> Sammenlikn med ß: <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> <span style="color: red"><strong>Ser du at forskjellen kun er i <span class="math inline"><em>Δ</em><em>r</em></span> og <span class="math inline"><em>Δ</em><em>t</em></span>-leddet? Leddet med <span class="math inline"><em>Δ</em><em>ϕ</em></span> er likt. Dermed er det i <span class="math inline"><em>ϕ</em> − <em>r</em><em>e</em><em>t</em><em>n</em><em>i</em><em>n</em><em>g</em><em>e</em><em>n</em></span> ingen forskjell mellom ßog Lorentz. Merk deg det nå, vi kommer til å se eksempler etterhvert.</strong></span> </span></p>
+<p><a href="ss10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss10" label="ss10"></span></p>
+<p><a href="ss9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Tilbake til ß. <span><strong>Kan du se noe rart i dette uttrykket for tidromsavstanden? Minst to rare ting!</strong></span> </span></p>
+<p><a href="ss11.html">ikke gå videre før du har et forslag</a></p>
+
+<p><span id="ss11" label="ss11"></span></p>
+<p><a href="ss10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow"> <span> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Ser du noe rart eller ikke??</span> <a href="ss12.html">JA</a><a href="ss11a.html">NEI</a> </span></p>
+
+<p><span id="ss11a" label="ss11a"></span></p>
+<p><a href="ss11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> </span> <span style="color: yellow">Hva med enhetene? Hva med ting under brøkstreken?</span></p>
+<p><a href="ss12.html">Nå ser jeg noe...</a></p>
+
+<p><span id="ss12" label="ss12"></span></p>
+<p><a href="ss11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Ser du at masse <span class="math inline"><em>M</em></span> blir delt på avstand <span class="math inline"><em>r</em></span>? Og at dette skal bli et enhetsløst tall siden vi tar et et-tall minus <span class="math inline">2<em>M</em>/<em>r</em></span>? Husker du hvordan vi i spesiell relativitetsteori måler tid og avstander i samme enheter? I generell relativitetsteori måler vi begge disse i meter, men ikke bare det, vi måler likesågodt også masse i meter! Dette er det ingen opplagt fysisk årsak til. Men det gjør at i tillegg til <span class="math inline"><em>c</em> = 1</span> så er også <span class="math inline"><em>G</em> = 1</span>. Dermed blir det enklere å regne. </span></p>
+<p><a href="ss13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss13" label="ss13"></span></p>
+<p><a href="ss12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> I kvantefysikk vil du se at vi også kan sette Plancks konstant <span class="math inline"><em>h</em> = 1</span>. Når vi regner i enheter slik at både <span class="math inline"><em>c</em> = 1</span>, <span class="math inline"><em>G</em> = 1</span> og <span class="math inline">ℏ = 1</span> så kaller vi det <span><strong>naturlige enheter</strong></span>, som er et vanlig enhetssystem å bruke i moderne fysikk. Omregningen fra kg til meter går via <span class="math inline"><em>G</em>/<em>c</em><sup>2</sup></span>. Merk at <span class="math display">$$\frac{G}{c^2}=7.42\times 10^{-28}\mathrm{m}/\mathrm{kg}$$</span> altså <span><strong>1 kg=<span class="math inline">7.42 × 10<sup>−28</sup></span> meter.</strong></span> </span></p>
+<p><a href="ss14.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss14" label="ss14"></span></p>
+<p><a href="ss13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> I kvantefysikk vil du se at vi også kan sette Plancks konstant <span class="math inline"><em>h</em> = 1</span>. Når vi regner i enheter slik at både <span class="math inline"><em>c</em> = 1</span>, <span class="math inline"><em>G</em> = 1</span> og <span class="math inline">ℏ = 1</span> så kaller vi det <span><strong>naturlige enheter</strong></span>, som er et vanlig enhetssystem å bruke i moderne fysikk. Omregningen fra kg til meter går via <span class="math inline"><em>G</em>/<em>c</em><sup>2</sup></span>. Merk at <span class="math display">$$\frac{G}{c^2}=7.42\times 10^{-28}\mathrm{m}/\mathrm{kg}$$</span> altså <span><strong>1 kg=<span class="math inline">7.42 × 10<sup>−28</sup></span> meter.</strong></span> </span></p>
+<p><a href="ss15.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss15" label="ss15"></span></p>
+<p><a href="ss14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/earth.png" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> <span><strong>Hva blir så massen til sola i meter? Og til jorda? Og hvor mye veier du i meter? Prøv å regn litt, dette må du venne deg til, så gjør det med en gang!</strong></span> </span></p>
+<p><a href="ss16.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss16" label="ss16"></span></p>
+<p><a href="ss15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span></p>
+<p><img src="../media/bh.jpg" alt="image" /></p>
+<p><span> <span class="math display">$$\begin{aligned}
+a&amp;b\end{aligned}$$</span> </span> <span style="color: yellow"> <span>Bilde: Event Horizon Telescope Collaboration</span><br />
+<span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Fikk du at massen til jorda er 4.45mm? Og at solas masse er 1.484 km? <span><strong>Så over til det andre rare her: hva skjer når <span class="math inline"><em>r</em> = 2<em>M</em></span>? Skjer det noe rart i formelen?</strong></span> Når hele massen <span class="math inline"><em>M</em></span> er samlet innenfor radius <span class="math inline"><em>r</em> = 2<em>M</em></span>, så har vi et <span><strong>sort hull</strong></span>. Dvs. hvis vi presser hele jordas masse innenfor en radius på <span class="math inline">2<em>M</em> = 2 × 4.45mm</span> så får vi et sort hull. Grensen <span class="math inline"><em>r</em> = 2<em>M</em></span> kalles <span><strong>hendelsehorisonten</strong></span> (event horizon). Innenfor der er unnslippingshastigheten større enn lyshastigheten. </span></p>
+<p><a href="ss17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss17" label="ss17"></span></p>
+<p><a href="ss16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow"> <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Merk at ß-tidromsavstanden <span class="math inline"><em>Δ</em><em>s</em></span> <span><strong>kun er gyldig i den delen av rommet som er utenfor massen <span class="math inline"><em>M</em></span></strong></span>. Dvs. at hele massen <span class="math inline"><em>M</em></span> må være innenfor avstanden <span class="math inline"><em>r</em></span> fra sentrum for at dette skal kunne brukes. <span><strong>Derfor</strong></span> er det slik at hvis du har et event ved <span class="math inline"><em>r</em> = 2<em>M</em></span> eller innenfor, så kan du kun bruke dette uttrykket hvis hele <span class="math inline"><em>M</em></span> også er innenfor <span class="math inline"><em>r</em> = 2<em>M</em></span>. Og det betyr at vi har et sort hull og at <span class="math inline"><em>r</em> = 2<em>M</em></span> er hendelsehorisonten. Det er også greit å vite at uendeligheten eller <span><strong>singulariteten</strong></span> vi får i likningen ved <span class="math inline"><em>r</em> = 2<em>M</em></span> er det vi kaller en <span><strong>koordinatsingularitet</strong></span>, dvs. at hvis vi bytter til et annet koordinatsystem så forsvinner denne singulariteten og vi kan fint bruke <span class="math inline"><em>r</em> = 2<em>M</em></span> for å beregne <span class="math inline"><em>Δ</em><em>s</em></span>, dette skal vi se et eksempel på i en ukeoppgave. Dette er på samme måte som hvis du bruker kulekoordinater: <span class="math inline"><em>θ</em> = 0</span> på nordpolen. Hvis du har en funksjon som går som <span class="math inline">1/<em>θ</em></span> så blir den uendelig på nordpolen. Men hvis du roterer aksene dine slik at <span class="math inline"><em>θ</em> = 0</span> et annet sted, så får du ikke lenger en uendelighet på nordpolen. <span><strong>Det som dermed er en ekte singularitet her, altså en ekte uendelighet, er ved <span class="math inline"><em>r</em> = 0</span>, altså i sentrum av et sort hull. Der bryter fysikken sammen!</strong></span> </span></p>
+<p><a href="ss18.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="ss18" label="ss18"></span></p>
+<p><a href="ss17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Schwarzschildgeometri<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow"> Men før vi skal begynne å bruke dette uttrykket for <span class="math inline"><em>Δ</em><em>s</em></span>, må vi innom en del nye konsepter og definisjoner! Hvis du hang med på de siste sidene kan du gå videre, hvis du ønsker en oppsummering først, kikk på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_1.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span></span></p>
+<p><a href="nytema2.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="nytema2" label="nytema2"></span> <a href="ss18.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">Inertialsystemer</span></strong></p>
+<p><span style="color: yellow">Nå trenger du en strekk på bena! Men spar gjerne kaffen til neste tema, der trenger du den mer.</span> <a href="inert1.html">La oss se litt nærmere på intertialsystem-begrepet...</a></p>
+
+<p><span id="inert1" label="inert1"></span></p>
+<p><a href="ss18.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span id="inert" label="inert"></span> Hva var et intertialsystem igjen?? Hvordan kan <span><strong>du</strong></span> teste om du er i et inertialsystem akkurat nå? Kan du lage en punkt-for-punkt oppskrift som enhver kan bruke for å sjekke om de er i et inertialsystem? <a href="inert1b.html">Jepp, har skrevet ned en punktliste nå</a></p>
+<p>Fikk du noe slikt?</p>
+<ol>
+<li><p>Ta en gjenstand, en hvilket som helst.</p></li>
+<li><p>Hold den med begge hender til du får den til å stå helt i ro i forhold til deg selv.</p></li>
+<li><p>Gjenstanden skal så slippes helt</p></li>
+<li><p>Forblir gjenstanden da på nøyaktig det samme sted som du slapp den? Selv etter at du venter lenge? Ja da er du i et intertialsystem!</p></li>
+</ol>
+<p><span><strong>Sååååååå, er <span><strong>DU</strong></span> i et intertialsystem nå?</strong></span></p>
+<p><a href="inert2.html">næææ, gjenstanden akselererte i retning jordas sentrum...</a></p>
+
+<p><span id="inert2" label="inert2"></span></p>
+<p><a href="inert1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Og så må jeg kjøpe meg ny kaffekopp 🙁.</p>
+<p><a href="inert3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert3" label="inert3"></span></p>
+<p><a href="inert2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Men trenger du å reise ut i rommet for å komme deg til et inertialsystem? Kan du tenke deg en måte å lage et intertialsystem her på jorda på??</p>
+<p><a href="inert4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert4" label="inert4"></span></p>
+<p><a href="inert3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Det var meningen at du skulle tenke deg godt om! Så, hvordan vil du gå frem for å lage et intertialsystem? Hvordan kan du slippe å ødelegge kaffekoppen neste gang du tar testen?</span></p>
+<p><a href="inert5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert5" label="inert5"></span></p>
+<p><a href="inert4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper1.png" alt="image" /></p>
+<p>Hvis du er i en heis i en skyskraper. Og heiskablene plutselig ryker. Hva skjer da?</p>
+<p><a href="inert7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert7" label="inert7"></span></p>
+<p><a href="inert5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper2.png" alt="image" /></p>
+<p>Hvis du følger oppskriften og nå tar en ball og slipper den i ro, hva skjer? Forblir den ikke i ro i forhold til deg? Både du og ballen blir vektløs inne i heisen (helt til den kræsjer da...). <span><strong>Du er da faktisk i et inertialsystem!</strong></span> Men nøyaktig hva gjør at ballen forblir i ro i forhold til deg når du slipper den?</p>
+<p><a href="inert8.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert8" label="inert8"></span></p>
+<p><a href="inert7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper2.png" alt="image" /></p>
+<p><span><strong>Nøyaktig hva gjør at ballen forblir i ro når du slipper den?</strong></span> Tegn krefter og se om du ser det! <span style="color: red">Ikke bla om før du har svaret!</span></p>
+<p><a href="inert9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert9" label="inert9"></span></p>
+<p><a href="inert8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper2.png" alt="image" /></p>
+<p>Er det ikke slik at tyngdeakselrasjonen er like for alle? Siden <span class="math display">$$G\frac{\cancel{m}M}{r^2}=\cancel{m}a$$</span> Massen til legemet forkortes bort og alle objekter får samme tyngdeakselrasjon, både heisen, ballen og du! Dere får dermed hele tiden samme hastighet. <span><strong>MERK:</strong></span> vi ser her bort fra luftmotstand på heisen og antar den er i fritt fall!</p>
+<p><a href="inert10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert10" label="inert10"></span></p>
+<p><a href="inert9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper3.png" alt="image" /></p>
+<p>Men hva hvis vi har <span><strong>to baller</strong></span> En øverst i heisen og en nederst. Vil disse også forbli i ro <span><strong>i forhold til heissystemet???</strong></span> <a href="inert10a.html">JA! Vi er jo i et inertialsystem</a><a href="inert10a.html">NEI! De vil begynne å falle nedover</a><br />
+<a href="inert10a.html">NEI! De vil begynne å falle oppover</a><a href="inert10a.html">NEI! De vil begynne å falle mot hverandre</a><br />
+<a href="inert10b.html">NEI! De vil begynne å gå fra hverandre</a><a href="inert10a.html">NEI! De vil gå i tilfeldige retninger</a></p>
+
+<p><span id="inert10a" label="inert10a"></span></p>
+<p><a href="inert10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Ikke helt! Tenk igjen: tegn krefter på begge ballene og på heisen. Krafta på heisen virker på massesenteret til heisen som er i midten av heisen. <span><strong>Hvordan vil ballene akselerere i forhold til heissystemet?</strong></span></span></p>
+
+<p><span id="inert10b" label="inert10b"></span></p>
+<p><a href="inert10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper4.png" alt="image" /></p>
+<p>Det er helt riktig. Ballen nederst er nærmest jordas sentrum og får størst tyngdeakselrasjon. Heisen som har massesenter i midten får litt mindre tyngdeakselrasjon enn ballen nederst. Og ballen øverst er lengst vekk fra jordas sentrum og får minst tyngdeakselrasjon. Dermed akselereres den nederste ballen litt mer nedover enn heisen. Og ballen øverst akselereres litt mindre enn heisen. Dermed vil ballen øverst “henge igjen” og ballen nederst falle litt nedover i forhold til heisen.</p>
+<p><a href="inert11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert11" label="inert11"></span></p>
+<p><a href="inert10b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/skyscraper4.png" alt="image" /></p>
+<p><span><strong>MEN MERK: Denne effekten er SVÆRT liten!!!</strong></span> Forskjellen i tyngdeakselrasjon for ballen øverst og nederst er veldig liten. Sannsynligvis vil ikke denne effekten være målbar. <span><strong>Vi har derfor det som vi kaller for et <span style="color: red">lokalt inertialsystem</span></strong></span>. Hvis du ikke kan måle at du har avvik fra et inertialsystem så er du for alle praktiske formål <span><strong>i et inertialsystem</strong></span> selv om dette inertialsystemet er begrenset i rom og i tid. Og i et inertialsystem vet vi at vi har Lorentzgeometri! Der er spesiell relativitetsteori gyldig og vi slipper å bruke det kompliserte ßuttrykket for <span class="math inline"><em>Δ</em><em>s</em></span>!!</p>
+<p><a href="inert12.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert12" label="inert12"></span></p>
+<p><a href="inert11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span><strong>La oss se på et eksempel til. Vi har et fly i fritt fall uten luftmotstand:</strong></span></p>
+<p><img src="../media/airplane1.png" alt="image" /></p>
+<p>Vi har også en ball i hver ende av flyet. Vil <span><strong>disse</strong></span> ballene forbli i ro i forhold til flyets referansesystem?? <a href="inert12a.html">JA! Vi er jo i et inertialsystem</a><a href="inert12a.html">NEI! De vil begynne å falle nedover</a><br />
+<a href="inert12a.html">NEI! De vil begynne å falle oppover</a><a href="inert12b.html">NEI! De vil begynne å falle mot hverandre</a><br />
+<a href="inert12a.html">NEI! De vil begynne å gå fra hverandre</a><a href="inert12a.html">NEI! De vil gå i tilfeldige retninger</a></p>
+<p><a href="inert13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert12a" label="inert12a"></span></p>
+<p><a href="inert12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Ikke helt! Tenk igjen: tegn krefter på begge ballene og på flyet. Tegn gjerne inn hele jorda med flyet langt vekk fra jorda. Pass på at kraftvektorene virker inn mot sentrum av jorda. <span><strong>Hvordan vil ballene akselerere i forhold til flysystemet?</strong></span></span></p>
+
+<p><span id="inert12b" label="inert12b"></span></p>
+<p><a href="inert12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<div class="columns">
+<p><img src="../media/airplane2.png" alt="image" /></p><p>Det er helt riktig. Her ser vi det hele på avstand. Kraftvektorene er slik at de også får en bitteliten komponent langs flyet slik at ballene akselereres mot hverandre.</p><p><a href="inert13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+</div>
+
+<p><span id="inert13" label="inert13"></span></p>
+<p><a href="inert12b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/airplane3.png" alt="image" /></p>
+<p>Ballenes bevegelse mot hverandre vil være ekstremt liten og sannsynligvis ikke målbar! Igjen så har vi et <span><strong>lokalt inertialsystem</strong></span> som har Lorentzgeometri, eller en geometri som er så nær Lorentzgeometrien at avvik ikke kan måles.</p>
+<p><a href="inert14.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert14" label="inert14"></span></p>
+<p><a href="inert13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi har sett to eksempler på <span><strong>lokale intertialsystem</strong></span>. Slike systemer er viktige for å gjøre det lett å regne når vi jobber med generell relativitetsteori. Det er mye lettere å regne i Lorentzgeometri når alle resultater fra spesiell relativitetsteori er gyldig enn å regne med ß-geometri. <span><strong>Når du har en problemstilling i et tyngdefelt er det derfor viktig å først prøve å identifisere slike lokale inertialsystemer.</strong></span></p>
+<p><a href="inert15.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert15" label="inert15"></span></p>
+<p><a href="inert14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<div class="block">
+<p><span>Et lokalt inertialsystem...</span> er et referansesystem som er <span><strong>avgrenset i tid og rom</strong></span> slik at man innenfor disse områdene i tid og rom kan regne med Lorentzgeometri. Grensene for dette lokale intertialsystemet begrenses av hvor nøyaktige svar du ønsker eller hvor nøyaktige måleinstrumenter du har. Sett deg en grense for nøyaktigheten for tallene og dette gir deg grensen for hvor stort området for det lokale intertialsystemet er i tid og i rom. I tillegg finnes det en betingelse til for at vi skal kunne bruke antakelsen om lokalt inertialsystem: <span><strong>observatøren må også gjøre målingene lokalt nær eventet: observatøren må også være nær eventet!</strong></span>.</p>
+</div>
+<p>Heisen er liten nok til at den er et lokalt inertialsystem, men hvis heisen var <span><strong>mye</strong></span> større og ballene fortsatt i hver sin ende, ville effekten av forskjellen i gravitasjon til slutt blitt målbar og kanskje for store for kravene vi ønsker å sette til nøyaktighet. Da blir heisen ikke lenger et lokalt inertialsystem. Det er altså en <span><strong>rombegrensning</strong></span>. Det lokale intertialsystemet er kun gyldig innenfor en utstrekning <span class="math inline"><em>Δ</em><em>y</em></span>. Tilsvarende: hadde heisen falt lenge nok, for eksempel flere år, da ville vi til slutt kunne måle ballenes bevegelse. Dermed er det også en <span><strong>tidsbegrensing</strong></span>, det lokale intertialsystemet er kun gylding innenfor et gitt tidsintervall <span class="math inline"><em>Δ</em><em>t</em></span> bestemt av hvor nøyaktig vi ønsker å regne.</p>
+<p><a href="inert16.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert16" label="inert16"></span></p>
+<p><a href="inert15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+La oss se på en <span><strong>analogi</strong></span>. Vi vet at jorda er rund. Det vil si at man på jorda må bruke sfærisk geometri når man beregner lengder, vinkler og arealer langs overflaten av jorda. <span><strong>På en kuleflate er ikke Euclidsk geometri gyldig</strong></span>. Langs en kuleflate kan du ikke bruke pytagoras setning og <span class="math inline"><em>Δ</em><em>s</em><sup>2</sup> ≠ <em>Δ</em><em>x</em><sup>2</sup> + <em>Δ</em><em>y</em><sup>2</sup></span>. <span><strong>Men for en bitteliten del av jordoverflaten så er overflaten tilnærmet helt flat og vi kan bruke Euclidsk geometri tilnærmet for denne delen av jordoverflaten:</strong></span></p>
+<p><embed src="spherical_geometry.pdf" /></p>
+<p>På et <span><strong>lite avgrensen område</strong></span> av jordoverfalten kan vi med god tilnærmelse bruke Euclidsk geometri, og det er jo det vi stort sett gjør når vi f.eks. beregner arealet av landområder.</p>
+<p><a href="inert17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="inert17" label="inert17"></span></p>
+<p><a href="inert16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>Inertialsystemer<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><embed src="spherical_geometry.pdf" /></p>
+<p>ß-geometri er geometrien for et krummet tidrom, altså at tidrommet er krummet litt som jordoverflaten er krummet. Mens Lorentzgeometri kalles <span><strong>flat tidromgeometri</strong></span> fordi denne er veldig lik flat Euclidsk geometri, kun med unntak av det berømte minustegnet i uttrykket for <span class="math inline"><em>Δ</em><em>s</em></span>. <span><strong>Helt på samme måte som man kan bruke flat Euclidsk geometri på et lite avgrensen område av jordoverflaten, kan man bruke Lorentzgeometri for flatt tidrom på et lite avgrensen område av tidrommet selv om geometrien rundt er en annen.</strong></span> Men merk at i det siste tilfellet er denne avgrensning er en avgrensing samtidig i både tid og i rom. <span style="color: red">Og dette området kalles et lokalt inertialsystem!</span></p>
+<p><a href="pause.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="pause" label="pause"></span> <a href="inert17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p>Kaffe!</p>
+<p><img src="../media/drink-coffee.png" alt="image" /></p>
+<p><br />
+<span style="color: yellow">En tur ut i minst 15 minutter. Trenger frisk luft nå! Og kanskje en tur i heisen? Eller flere turer i heisen? Helt til kablene ryker! Hadde jo vært kult å prøve ut Lorentzgeometri, ß-geometri er litt ut nå altså.</span></p>
+<p><br />
+<a href="nytema3.html">Jeg er klar til å fortsette...</a></p>
+
+<p><span id="nytema3" label="nytema3"></span> <a href="inert17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a></p>
+<p><span style="color: yellow">Nytt tema:</span></p>
+<p><br />
+</p>
+<p><strong><span style="color: yellow">3 observatører</span></strong></p>
+<p><a href="obs1.html">Jeg er klar...</a></p>
+
+<p><span id="obs1" label="obs1"></span></p>
+<p><a href="inert17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span id="observatorer" label="observatorer"></span> Når vi snakker om generell relativitetsteori skal vi ofte bruke sorte hull som eksempler. Dette er de enkleste makroskopiske objektene med stor masse som vi kan tenke oss. I et sort hull er all masse samlet i et uendelig lite punkt i rommet ved <span class="math inline"><em>r</em> = 0</span>. Om massen <span><strong>faktisk</strong></span> er samlet i et uendelig lite punkt er tvilsomt, det er nok et uttrykk for at vi ikke kjenner de fysiske lovene i et slikt system, men massen er nok konsentrert veldig kompakt i et veldig lite område rundt <span class="math inline"><em>r</em> = 0</span>. <span><strong>Men vet du hva definisjonen av et sort hull er? Hvordan kunne du gjøre et fysisk eksperiment for å sjekke om du er i et sort hull?</strong></span></p>
+<p><a href="obs2.html">Tjaaaa, jeg har kanskje et forslag</a></p>
+
+<p><span id="obs2" label="obs2"></span></p>
+<p><a href="obs1.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span><strong>Et sort hull er et område der unnslippingshastigheten er større en lyshastigheten.</strong></span> Derav navnet “sort”, hvis ikke en gang lys slipper ut, så er det en god betegnelse. Lys som sendes ut vil <span><strong>falle ned igjen</strong></span>.</p>
+<p><a href="obs3.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs3" label="obs3"></span></p>
+<p><a href="obs2.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi husker fra Newtons mekanikk at unnslippingshastighet viser seg å være: <span class="math display">$$v=\sqrt{\frac{2GM}{r}}$$</span> Hvis unnslippingshastigheten skal være lyshastigheten <span class="math inline"><em>v</em> = <em>c</em></span> og vi skriver dette med relativistiske enheter, får vi: <span class="math display">$$1=\sqrt{\frac{2M}{r}}$$</span> Vi ser at dette er oppfylt ved <span class="math inline"><em>r</em> = 2<em>M</em></span> som er nøyaktig den <span class="math inline"><em>r</em></span>-koordinaten som gir oss uendelig i <span class="math inline"><em>Δ</em><em>s</em></span> for ß-geometri: <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> <span><strong>Hvis vi klarer å presse materie sammen slik at den totale massen <span class="math inline"><em>M</em></span> er presset sammen innenfor en radius <span class="math inline"><em>r</em> = 2<em>M</em></span> så vil unnslippingshastigheten være større en lyshastigheten og vi har et sort hull</strong></span></p>
+<p><a href="obs4.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs4" label="obs4"></span></p>
+<p><a href="obs3.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Avstanden <span class="math inline"><em>r</em> = 2<em>M</em></span> fra sentrum av det sorte hullet (<span class="math inline"><em>r</em> = 0</span> der alle masse er konsentrert) kalles for <span style="color: red"><strong>hendeleshorisonten (event horizon)</strong></span> og <span style="color: red"><strong>ß-radien.</strong></span> Vi skal bruke begge navn her så merk deg disse! Hvis du altså kommer innenfor radien <span class="math inline"><em>r</em> = 2<em>M</em></span> fra sentrum av et sort hull, så er unnslippingshastigheten større enn lyshastigheten og du har ingen mulighet til å komme ut igjen. Du kan heller ikke sende lyssignaler til de som er på utsiden. Vi skal også senere se at hvis du kommer på innsiden av <span class="math inline"><em>r</em> = 2<em>M</em></span>, så er det umulig å stå stille, du vil automatisk bevege deg innover mot <span class="math inline"><em>r</em> = 0</span> uansett hva du gjør.</p>
+<p><a href="obs5.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs5" label="obs5"></span></p>
+<p><a href="obs4.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Et sort hull er et veldig enkelt objekt å jobbe med da de eneste egenskapene det har er <span><strong>masse</strong></span>, <span><strong>ladning</strong></span> og <span><strong>angulærmoment</strong></span> men <span><strong>ingen (kjent) utstrekning</strong></span>. Merk at et sort hull ikke er helt sort. Kvantemekaniske effekter ved hendelsehorisonten gir opphav til <span><em>Hawkingstråling</em></span>. Dermed stråler det sorte hullet Planck-stråling og på denne måten sakte men sikkert mister masse. Det skal vi ikke snakke mer om i dette kurset. Men et sort hull skal vi altså bruke som eksempel fremover.</p>
+<p><a href="obs6.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs6" label="obs6"></span></p>
+<p><a href="obs5.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Som i spesiell relativitetsteori så skjer eventer på forskjellige steder og forskjellige tider avhengig av observatøren. I spesiell relativitetsteori var det relativ fart mellom observatører som avgjorde når og hvor eventer skjer. I generell relativitetsteori har vi 3 grupper av observatører. <span style="color: black"><span style="background-color: sunset">Her <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_2.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span> kan du se en video om de 3 observatørene, og her er oppsummeringen av videoen:</p>
+<ul>
+<li><p><span><strong>Langt-vekkobservatøren</strong></span> befinner seg så langt bort fra den sfærisk symmetriske massen at han ikke kan måle tyngdefeltet og dermed har Lorentzgeometri. Langt-vekkobservatøren ser eventer rundt det sorte hullet med en kikkert da han ikke selv er til stede i nærheten av eventene som skjer.</p></li>
+<li><p><span><strong>Skallobservatører</strong></span> befinner seg på kuleformede skall som er satt opp på faste avstander <span class="math inline"><em>r</em></span> fra sentrum av den kulesymmetriske massen. Skallobservatørene måler posisjoner/avstander kun lokalt rundt sin egen posisjon. Normalt vil man sette opp en tenkt skallobservatør rett ved et event for å regne på hva som skjer ved eventet og hva lokale observatører som står i fast <span class="math inline"><em>r</em></span>-posisjon vil se. En skallobservatør kan f.eks. være oss her på jorda. Eller en satelitt i sirkulær bane rundt jorda.</p></li>
+<li><p><span><strong>Fritt fallende observatører</strong></span> er inne i et rom (f.eks. en heis) i fritt fall. Også disse måler posisjoner og avstander kun lokalt rundt sin egen posisjon. På samme måte som for skallobservatørene vil vi sette inn fiktive fritt fallende observatører i nærheten av eventer for å kunne regne på hva en lokal observatør som <span><strong>ikke</strong></span> står fast på et skall vil observere. Vi bruker den fritt fallende observatøren for eksempel når vi skal se på hva en observatør som faller inn i et sort hull vi oppleve</p></li>
+</ul>
+<p><a href="obs7.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs7" label="obs7"></span></p>
+<p><a href="obs6.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell1.png" alt="image" /></p>
+<p><span style="color: yellow">Før vi skal se nærmere på de 3 observatørene trenger vi å se nærmere på posisjonskoordinatet <span class="math inline"><em>r</em></span> i uttrykket for <span class="math inline"><em>Δ</em><em>s</em></span>. Hvordan vil f.eks. skallobservatøren måle hvilken avstand <span class="math inline"><em>r</em></span> hun har fra sentrum? I figuren ser vi en skallobservatør på et skall omkring et sort hull (lenger vekk enn <span class="math inline"><em>r</em> = 2<em>M</em></span> vel og merke!). Hun prøver å heise en meterstav (grønn-sort) ned i det sorte hullet for å måle avstanden til sentrum. <span><strong>Hvordan tror du det går?</strong></span></span></p>
+<p><a href="obs8.html">Tjaaa, ikke så bra kanskje?</a></p>
+
+<p><span id="obs8" label="obs8"></span></p>
+<p><a href="obs7.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell1.png" alt="image" /></p>
+<p>Nettopp ja! <span><strong>Ikke så bra!</strong></span>. Målestaven vil jo bare forsvinne inn i sentrum av det sorte hullet. Skallobservatøren kan jo bare fire ned målestaven mer og mer, men den kommer aldri frem. Målt på den måten er det <span><strong>uendelig langt</strong></span> frem til sentrum av det sorte hullet. <span><strong>Vi må finne en annen måte å definere og måle avstanden/koordinatet <span class="math inline"><em>r</em></span> på!!</strong></span>.</p>
+<p><a href="obs9.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs9" label="obs9"></span></p>
+<p><a href="obs8.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell2.png" alt="image" /></p>
+<p><span style="color: yellow">La oss se det hele fra langt-vekkobservatørens perspektiv. Langt-vekkobservatøren har Lorentzgeometri og kan dermed bruke Euclidsk geometri på flate plan når han kun ser på rommet og ikke på tiden. For langt-vekkobservatøren vil den vanlige regelen om at omkretsen av en sirkel er <span class="math inline">2<em>π</em><em>r</em></span> være gyldig. For denne observatøren vil dermed avstanden <span class="math inline"><em>r</em></span> fra sentrum til skallet som han kan måle i teleskopet sitt være like stor som omkretsen som han også kan måle i teleskopet delt på <span class="math inline">2<em>π</em></span>. Når uttrykket for <span class="math inline"><em>Δ</em><em>s</em></span> faller ut av Einsteinlikningen så har koordinatet <span class="math inline"><em>r</em></span> nettopp blitt definert på denne måten: det er avstanden <span class="math inline"><em>r</em></span> som en langt-vekkobservatør måler fra sentrum av det sorte hullet.</span></p>
+<p><a href="obs10.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs10" label="obs10"></span></p>
+<p><a href="obs9.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell2.png" alt="image" /></p>
+<p><span style="color: yellow"> Minner igjen om uttrykket for <span class="math inline"><em>Δ</em><em>s</em></span>: <span class="math display">$$\Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> der <span class="math inline"><em>r</em></span> altså er avstanden fra sentrum og ut til der eventet skjer <span><strong>målt fra en observatør langt unna tyngdefeltet!</strong></span>. Vi nevnte tidligere også det siste leddet som inneholder <span class="math inline"><em>ϕ</em></span>. Dette leddet så vi var helt likt med Lorentzgeometri. Det betyr at avstand målt rundt i <span class="math inline"><em>ϕ</em></span>-retning, slik som omkretsen av et skall, kommer til å være den samme for langt-vekkobservatøren som for skallobservatøren siden denne delen av geometrien er Lorentz/Euclid for begge.</span></p>
+<p><a href="obs11.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs11" label="obs11"></span></p>
+<p><a href="obs10.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell1.png" alt="image" /></p>
+<p><span style="color: yellow"> Hvis vi benytter oss av dette så kan vi konkludere med at vår venn Skallobservatøren i figuren over ikke trenger en målestokk, men <span><strong>et målebånd</strong></span> som hun trenger å trekke i en sirkel rundt hele skallet for å måle omkretsen. Og når hun har målt omkretsen kan hun finne hvilket <span class="math inline"><em>r</em></span>-koordinat hun er på ved å ta <span class="math display">$$r=\frac{\mathrm{omkrets}}{2\pi}$$</span> </span></p>
+<p><a href="obs12.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs12" label="obs12"></span></p>
+<p><a href="obs11.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell3.png" alt="image" /></p>
+<p><span style="color: yellow"> Når vi har klart for oss hvordan koordinaten <span class="math inline"><em>r</em></span> måles, er vi klare til å bli bedre kjent med alle våre 3 observatører. Vi begynner med <span><strong>langt vekk-observatøren</strong></span> som får informasjon om <span><strong>tidspunkter <span class="math inline"><em>t</em></span> for eventer</strong></span> fra klokker som han har plassert rundt det sorte hullet og som er synkronisert med hans egen klokke. Det er alltid en slik klokke plassert ut der det skjer et event. Klokka sender beskjed til langt-vekkobservatøren om tidspunktet som eventet skjedde på denne klokka som altså er fikset til å gå med samme hastighet og er synkronisert med langt-vekkobservatørens klokke. Lokale klokker vil nemlig gå med en annen hastighet som vi snart skal se. <span><strong>Posisjoner for eventer</strong></span> har vi allerede sett hvordan langt-vekkobservatøren måler gjennom ß-koordinatet <span class="math inline"><em>r</em></span>.</span></p>
+<p><a href="obs13.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs13" label="obs13"></span></p>
+<p><a href="obs12.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell5.png" alt="image" /></p>
+<p><span style="color: yellow"> La oss nå se på <span><strong>skallobservatøren</strong></span>. Skallobservatøren har sin egen klokke til å måle <span><strong>skalltid</strong></span> <span class="math inline"><em>t</em><sub>sh</sub></span>. MERK at skalltiden avhenger av hvilket skall (altså hvilken <span class="math inline"><em>r</em></span>) som skallobservatøren står på. Skallobservatører på forskjellige skall vil ikke være enige om tiden <span class="math inline"><em>t</em><sub>sh</sub></span>. Vi har sett at skallobservatøren må måle omkretsen av skallet for å finne koordinaten <span class="math inline"><em>r</em></span>. Denne koordinaten er <span><strong>ikke</strong></span> det målet som skallobservatøren bruker til å måle avstander med, dette er kun langt vekk-observatørens lengdemål. Vi skal snart se forskjellen på disse to, men la oss først begynne med å se på forskjellen mellom tiden <span class="math inline"><em>t</em></span> for et event målt av langt-vekkobservatøren og tiden <span class="math inline"><em>t</em><sub>sh</sub></span> målt av skallobservatøren på et skall <span class="math inline"><em>r</em></span>.</span></p>
+<p><a href="obs14.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs14" label="obs14"></span></p>
+<p><a href="obs13.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell5.png" alt="image" /></p>
+<p><span style="color: yellow"> For å finne forskjellen i tid mellom tidsintervallet <span class="math inline"><em>Δ</em><em>t</em></span> mellom to eventer målt av langt-vekkobservatøren og tidsintervallet <span class="math inline"><em>Δ</em><em>t</em><sub>sh</sub></span> målt av skallobservatøren på et skall <span class="math inline"><em>r</em></span>, skal vi gjøre slik som vi gjorde i spesiell relativitetsteori. Kan du huske hvordan vi brukte togobservatør og bakkeobservatør til å finne en sammenheng mellom et tidsintervall <span class="math inline"><em>Δ</em><em>t</em></span> på bakken og et tidsintervall <span class="math inline"><em>Δ</em><em>t</em>′</span> på toget?</span></p>
+<p><a href="obs15.html">Hvis jeg ikke husket det så sjekket jeg nå...</a></p>
+
+<p><span id="obs15" label="obs15"></span></p>
+<p><a href="obs14.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> Nettopp ja, vi lagde oss to eventer som var to tikk på klokka i togsystemet og så fant vi tiden mellom de to eventene på klokkene til hver av observatørene. Vi gjør det samme nå: Vi definerer oss <span><strong>to eventer som er to tikk på klokka til skallobservatøren</strong></span>. Hvis det er svært kort tidsintervall mellom disse tikkene, så kort at effektene av tyngdefeltet ikke merkes, så kan vi si at skallobservatøren befinner seg i et lokalt inertialsystem. <span><strong>MERK at det skal vi alltid gjøre med skallobservatøren! Vi skal alltid lage eventer som skjer så nær hverandre i tid at de er innenfor grensen til et lokalt inertialsystem.</strong></span> Dette betyr i praksis at <span class="math inline"><em>Δ</em></span>-ene våre egentlig skal være infinitesimale <span class="math inline"><em>d</em></span>-er, men for å gi mer fysisk forståelse så skal vi skrive endelige <span class="math inline"><em>Δ</em></span>-er.</span></p>
+<p><a href="obs16.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs16" label="obs16"></span></p>
+<p><a href="obs15.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> Siden vi for skallobservatøren alltid ser på eventer som skjer så nær hverandre i tid og rom så bruker dermed skallobservatøren <span><strong>alltid Lorentzgeometri.</strong></span> <span><strong>Langt-vekkobservatøren</strong></span> derimot kan <span><strong>aldri anta lokalt inertialsystem</strong></span>: husk at en viktig betingelse for lokalt intertialsystem var at observatøren også måtte være til stede lokalt der eventet skjedde for å gjøre målinger. Det får aldri langt-vekkobservatøren til per def! <span><strong>Han må dermed bruke ß-geometri.</strong></span></span></p>
+<p><a href="obs17.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs17" label="obs17"></span></p>
+<p><a href="obs16.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> Vi skal nå finne en sammenheng mellom tidsintervallet mellom de to tikkene på klokka til skallobservatøren. For skallobservatøren var tidsintervallet <span class="math inline"><em>Δ</em><em>t</em><sub>sh</sub></span> mens langt-vekkobservatøren målte et tidsintervall <span class="math inline"><em>Δ</em><em>t</em></span> mellom de samme to tikkene på klokka til skallobservatøren. Akkurat som i spesiell relativitetsteori skal vi bruke at tidromsintervallet <span class="math inline"><em>Δ</em><em>s</em></span> er det samme for begge observatører. Dette er et universalt resultat. Vi har: <span class="math display">$$\Delta s_\mathrm{sh}^2=\Delta t_\mathrm{sh}^2-\Delta r_\mathrm{sh}^2-r^2\Delta\phi_\mathrm{sh}^2\ \ \ \ \ \ \ \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Merk at “sh” står for “shell” altså skallobservatør. Merk også som vi akkurat har diskutert at skallobservatøren her bruker <span class="math inline"><em>Δ</em><em>s</em></span> for Lorentzgeometri mens lang-vekkobservatøren bruker ß-geometri.</span></p>
+<p><a href="obs18.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs18" label="obs18"></span></p>
+<p><a href="obs17.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> Vi vet at <span class="math inline"><em>Δ</em><em>s</em> = <em>Δ</em><em>s</em><sub>sh</sub></span> eller <span class="math display">$$\Delta t_\mathrm{sh}^2-\Delta r_\mathrm{sh}^2-r^2\Delta\phi_\mathrm{sh}^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> Men siden tikkene skjer på samme sted så er <span class="math inline"><em>Δ</em><em>r</em> = <em>Δ</em><em>r</em><sub>sh</sub> = 0</span> og <span class="math inline"><em>Δ</em><em>ϕ</em> = <em>Δ</em><em>ϕ</em><sub>sh</sub> = 0</span>. Og vi står igjen med <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> der <span class="math inline">$\sqrt{\sst}$</span> er den “gravitasjonelle Lorentfaktoren” som spiller samme rolle som <span class="math inline"><em>γ</em></span> i spesiell relativitetsteori.</span></p>
+<p><a href="obs19.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs19" label="obs19"></span></p>
+<p><a href="obs18.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> <span><strong>Men la du merke til en ting her:</strong></span> <span class="math display">$$\Delta t_\mathrm{sh}^2-\Delta r_\mathrm{sh}^2-r^2\Delta\phi_\mathrm{sh}^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2$$</span> <span><strong>Vi trenger strengt tatt ikke at de to tikkene er på samme <span class="math inline"><em>ϕ</em></span>-posisjon!</strong></span>. Som vi allerede har snakket om så er <span class="math inline"><em>ϕ</em></span>-delen av geometrien (<span class="math inline"><em>ϕ</em></span>-leddet i <span class="math inline"><em>Δ</em><em>s</em></span>) helt lik i Lorentz og ß-geometri som vi ser av uttrykket her. Dermed er også <span class="math inline"><em>ϕ</em> = <em>ϕ</em><sub>sh</sub></span>. Dermed trenger vi ikke kreve at <span class="math inline"><em>Δ</em><em>ϕ</em> = 0</span>. Siden <span class="math inline"><em>Δ</em><em>ϕ</em> = <em>Δ</em><em>ϕ</em><sub>sh</sub></span> så forkortes dette leddet bort på begge sider. Dermed er resultatet gyldig for alle tidsintervaller mellom eventer som foregår på det samme skallet.</span></p>
+<p><a href="obs20x.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs20x" label="obs20x"></span></p>
+<p><a href="obs19.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> <span><strong>Men hvilke konklusjoner kan du trekke fra dette uttrykket?</strong></span> Hvor går tiden fortere, langt inne i et tyngdefelt eller langt vekk fra tyngdefeltet? Hva skjer med tiden når <span class="math inline"><em>r</em></span> nærmer seg hendelsehorisonten på <span class="math inline"><em>r</em> = 2<em>M</em></span>? Og hva hvis to eventer er samtidige på skallet, er de samtidige for langt-vekkobservatøren også? Tenk deg godt om og lek litt med uttrykket før du går videre! </span></p>
+<p><a href="obs20.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs20" label="obs20"></span></p>
+<p><a href="obs20x.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> Ja hvor går tiden fortere? Anta at klokka til skallobservatøren tikker en gang i sekundet. Vil langt-vekkobservatøren med kikkert måle på sin klokke at det tar kortere eller lengere tid enn 1 sekund mellom hvert tikk på skallobservatørens klokke? <a href="obs20a.html">Kortere!</a><a href="obs20b.html">Lengere!</a><br />
+<a href="obs20a.html">Du lurer ikke meg, det blir selvfølgelig like lenge!</a> </span></p>
+
+<p><span id="obs20a" label="obs20a"></span></p>
+<p><a href="obs20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+<span style="color: yellow">Det ble ikke helt riktig <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> Er <span class="math inline"><em>r</em></span> her større eller mindre enn <span class="math inline">2<em>M</em></span>? Blir da <span class="math inline"><em>Δ</em><em>t</em></span> større eller mindre enn <span class="math inline"><em>Δ</em><em>t</em><sub>sh</sub></span>? Prøv f.eks. med å sette inn en verdi for <span class="math inline"><em>r</em></span> angitt i <span class="math inline"><em>M</em></span> (og pass på om <span class="math inline"><em>r</em></span> skal være større eller mindre enn <span class="math inline">2<em>M</em></span> da!). Da får du ut tall. </span></p>
+
+<p><span id="obs20b" label="obs20b"></span></p>
+<p><a href="obs20.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Flott! <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> Siden <span class="math inline"><em>r</em> &gt; 2<em>M</em></span> (altså skallobservatøren er utenfor hendelsehorisonten, det bør hun helst være!) så blir <span class="math inline"><em>Δ</em><em>t</em></span> større enn <span class="math inline"><em>Δ</em><em>t</em><sub>sh</sub></span>. Det tar altså <span><strong>mer</strong></span> enn et sekund mellom de to tikkene for langt-vekkobservatøren. Han ser altså at alt som foregår på skallet går i saktefilm. Hva da med en skallobservatør som står rett på hendelsehorisonten. Hvor lang tid vil langt-vekkobservatøren se at det tar mellom to tikk på klokka til denne skallobservatøren?</p>
+<p><a href="obs21.html">WOW, utrolig, jeg ser det!</a></p>
+
+<p><span id="obs21" label="obs21"></span></p>
+<p><a href="obs20b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> Vi ser altså at langt-vekkobservatøren vil se at tiden går saktere nedover i tyngdefeltet og stopper helt opp på <span class="math inline"><em>r</em> = 2<em>M</em></span>! Men hva med to hendelser som er samtidige på et gitt skall? Vi lærte i spesiell relativitetsteori at for observatører med forskjellig hastighet, er samtidighet relativt. Hvordan blir det her? <a href="obs22.html">Samtidige hendelser på skallet er <span><strong>ikke</strong></span> samtidige for langt-vekkonbservatøren</a><br />
+<a href="obs22.html">Samtidige hendelser på skallet <span><strong>er</strong></span> også samtidige for langt-vekkonbservatøren</a><br />
+</span></p>
+
+<p><span id="obs22" label="obs22"></span></p>
+<p><a href="obs21.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell4.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t$$</span> Enig at hvis <span class="math inline"><em>Δ</em><em>t</em><sub>sh</sub> = 0</span> (samtidige hendelser på skallet) her så må også <span class="math inline"><em>Δ</em><em>t</em> = 0</span>??? Det betyr at de også blir samtidige observert av lang-vekkobservatøren! Stikk motsatt at spesiell relativitet! Men merk at i det øyeblikk en av observatørene begynne å bevege seg og få en fart så trer også spesiell relativitet inn og samtidighet blir relativt igjen. </span></p>
+<p><a href="obs23.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs23" label="obs23"></span></p>
+<p><a href="obs22.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Vi har nå sett hvordan tiden går forskjellig mellom en langt-vekkobservatør og en skallobservatør. Hva så med lengder/avstander? Vi har allerede sett at avstander rundt langs <span class="math inline"><em>ϕ</em></span>-retning er like mellom langt-vekkobservatør og skallobservatør siden <span class="math inline"><em>ϕ</em></span>-delen av geometrien er lik. <span><strong>Men hva med lengder i <span class="math inline"><em>r</em></span>-retning?</strong></span></p>
+<p><a href="obs24.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs24" label="obs24"></span></p>
+<p><a href="obs23.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Hvordan fant vi sammenhengen mellom lengder målt av forskjellige observatører i spesiell relativitetsteori? <span><strong>Brukte vi ikke to eventer på hver side av objektet som vi skulle måle lengden til? Og at disse eventene var samtidige i det ene referansesystemet?</strong></span> <span style="color: red">Vi prøver oss på samme fremgangsmåte her, en meterstav der det skjer to samtidige eventer på hver ende av staven. Og samtidig for både skallobservatør og langt-vekkobservatør!</span></p>
+<p><a href="obs25.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs25" label="obs25"></span></p>
+<p><a href="obs24.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell6.png" alt="image" /></p>
+<p><span style="color: yellow"> Her ser vi situasjonen med to sprengladninger som går av samtidig (dermed to eventer) i begge ender av staven. Kan du nå finne en sammenheng mellom lengden <span class="math inline"><em>Δ</em><em>r</em></span> målt av langt-vekkobservatøren for staven som har lengden <span class="math inline"><em>Δ</em><em>r</em><sub>sh</sub></span> målt av skallobservatøren? <span><strong>Merk</strong></span> at vi antar svært små avstander her, <span class="math inline"><em>Δ</em><em>r</em></span> er egentlig en infinitesimal liten <span class="math inline"><em>d</em><em>r</em></span>. </span></p>
+<p><a href="obs26.html">Jeg har et forslag til svar!</a></p>
+
+<p><span id="obs26" label="obs26"></span></p>
+<p><a href="obs25.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell6.png" alt="image" /></p>
+<p><span style="color: yellow"> <span><strong>Fikk du:</strong></span> <span class="math display">$$\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}$$</span> Hvis ikke, se på <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_3.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. </span></p>
+<p><a href="obs26b.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs26b" label="obs26b"></span></p>
+<p><a href="obs26.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell6.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}$$</span> Ser du at igjen så er det faktoren <span class="math inline">$\sqrt{\sst}$</span> som kommer inn, akkurat som <span class="math inline"><em>γ</em></span> i spesiell relativitetsteori? Hvor lang vil langt-vekkobservatøren observere at staven er ettersom skallet kommer nærmere og nærmere hendelsehorisonten? </span></p>
+<p><a href="obs26c.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs26c" label="obs26c"></span></p>
+<p><a href="obs26b.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell6.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}$$</span> For langt-vekkobservatøren blir stavene kortere og kortere ettersom <span class="math inline"><em>r</em> → 2<em>M</em></span>. Men hva med skallobservatøren? Gitt at vi har to skallobservatører veldig nær hendelsehorisonten, en på <span class="math inline"><em>r</em> = <em>r</em><sub>1</sub></span> og en annen på <span class="math inline"><em>r</em> = <em>r</em><sub>2</sub></span>. Koordinatavstanden <span class="math inline"><em>Δ</em><em>r</em> = <em>r</em><sub>2</sub> − <em>r</em><sub>1</sub></span> er avstanden målt av langt-vekkobservatøren og den samme som skallobservatørene får hvis de bruker omkretsen. <span><strong>Men hva skjer med den direkte avstanden <span class="math inline"><em>Δ</em><em>r</em><sub>sh</sub></span> mellom skallene målt med målestav av skallobservatørene?</strong></span> Tenk deg at skallobservatøren over senker en målestav ned til skallet under. </span></p>
+<p><a href="obs27.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs27" label="obs27"></span></p>
+<p><a href="obs26c.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell1.png" alt="image" /></p>
+<p><span style="color: yellow"> <span class="math display">$$\Delta r_\mathrm{sh}=\frac{\Delta r}{\sqrt{\sst}}$$</span> Ser du at denne fysiske avstanden <span class="math inline"><em>Δ</em><em>r</em><sub>sh</sub></span> mellom skallene med avstand <span class="math inline"><em>Δ</em><em>r</em></span> blir uendelig lang ettersom <span class="math inline"><em>r</em></span> nærmer seg hendelsehorisonten? Fra et gitt skall er det altså uendelig langt ned til hendelsehorisonten målt med meterstaver! Husker du figuren over når vi prøvde å senke en stav ned for å finne <span class="math inline"><em>r</em></span>? Ser du nå hvorfor koordinatet <span class="math inline"><em>r</em></span> ikke er en normal “avstand” for en skallobservatør? </span></p>
+<p><a href="obs28.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs28" label="obs28"></span></p>
+<p><a href="obs27.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+</p>
+<p><img src="../media/shell7.png" alt="image" /></p>
+<p>Vi har ikke sagt så mye enda om <span><strong>den fritt fallende observatøren</strong></span>. Hun kommer vi nærmere tilbake til i eksempler. Men hun måler lokale tidsintervaller <span class="math inline"><em>Δ</em><em>t</em><sub>ff</sub></span> på sin egen klokke og bruker generelt lokale intertialsystem på samme måte som skallobservatøren. Den fritt fallende observatøren pleier vi å plassere ut mellom eventer slik at vi alltid kan bruke lokalt intertialsystem. <span><strong>Det er dermed kun langt-vekkobservatøren som trenger å bruke ß-geometri.</strong></span> <span style="color: yellow">For alle andre observatører må du passe på å finne eventer med avstander i tid og rom slik at antakelsen om lokalt inertialsystem er riktig og du kan bruke Lorentzgeometri!</span>.</p>
+<p><a href="obs29.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="obs29" label="obs29"></span></p>
+<p><a href="obs28.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span>3 observatører<span style="color: black"><span style="background-color: sunset"><a href="https://uio.padlet.org/fkhansen/9izkv0g8nc99ys5t">PADLET</a></span></span><br />
+Forvirret over alle observatørene??? Isåfall, ta gjerne en titt på oppsummeringen i <span style="color: black"><span style="background-color: sunset">denne videoen <video width="320" height="240" controls><source src="https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_4.mp4" type="video/mp4">Your browser does not support the video tag.</video><br></span></span>. Føler du derimot at dette var ganske klart så kommer det ikke noe nytt i videoen.</p>
+<p><a href="oppsummering.html" class="nesteforrigeside" class="nesteforrigeside">Neste side</a></p>
+
+<p><span id="oppsummering" label="oppsummering"></span> <a href="obs29.html" class="nesteforrigeside" class="nesteforrigeside">Forrige side</a><span style="color: black"><span style="background-color: sunset"><a href="https://nettskjema.no/a/171674" class="🙂🙁">🙂 🙁</a></span></span> <span><strong>Du er ferdig med forelesning 1 av 2 i del 2C.</strong></span>. Du bør nå:</p>
+<ul>
+<li><p>kjenne til hvordan et sort hull defineres og hvilke egenskaper det har</p></li>
+<li><p>kjenne til ß-geometrien, forstå uttrykket for <span class="math inline"><em>Δ</em><em>s</em></span>, spesielt vite hva <span class="math inline"><em>r</em></span>-koordinatet er og hvordan det måles.</p></li>
+<li><p>du bør også vite hva som skjer når <span class="math inline"><em>r</em> = 2<em>M</em></span> og hva hendelsehorisonten er.</p></li>
+<li><p>du bør forstå og kunne bruke begrepet <span><em>lokalt inertialsystem</em></span></p></li>
+<li><p>du bør kjenne til de 3 observatørene og hvordan disse måler tider og avstander og hvilken geometri hver av dem bruker</p></li>
+<li><p>kunne utlede og bruke transformasjonen av tidsintervaller og avstander mellom skallobservatøren og langt-vekkobservatøren</p></li>
+</ul>
+<p><span style="color: red">Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!</span></p>
+
+</body>
+</html>

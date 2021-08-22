@@ -85,7 +85,7 @@
 
 \newcommand{\headlinebutton}[1]{#1}
 
-\newcommand{\forumbutton}{\href{https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
+\newcommand{\forumbutton}{\href{https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t}{FORUM}}
 
 \newcommand{\curpage}{}
 \newcommand{\nextpage}{}

@@ -393,6 +393,7 @@ def main():
         latex_substitutions = [
             ('\\\\(?:begin|end)\{minipage\}(?:\{.*?\})?', ''),
             ('\\\\newcommand\{\\\\padletbutton\}\{(.*?)\}.*', '\\\\newcommand{\\\\padletbutton}{\\1}{PADLET}}'),
+            ('\\\\newcommand\{\\\\forumbutton\}\{(.*?)\}.*', '\\\\newcommand{\\\\forumbutton}{\\1}{FORUM}}'),
             ('\\\\Changey\[1\]\[yellow\]\{2\}', '🙂'),
             ('\\\\Changey\[1\]\[yellow\]\{-2\}', '🙁'),
             ('(\\\\newcommand{\\\\(?:d?next|cur)page).*', '\\1}{}'),
@@ -436,12 +437,13 @@ def main():
                 ('<a href="(https:\/\/www.uio.*?.mp4)">(.*?)<\/a>', '\\2 <video width="320" height="240" controls><source src="\\1" type="video/mp4">Your browser does not support the video tag.</video><br>'),
                 ('<a href="#(.*?)">(.*?)</a>', '<a href="\\1.html">\\2</a>'),
                 (' ', ' '),
+                #('style="color: white"', 'style="color: red"'),
+                ('<a href="https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t">FORUM</a>', '<a href="https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t" target="_blank">FORUM</a>'),
                 ('<a href="(.*?)">Trykk her (.*?)<\/a>', '<a href="\\1" class="trykkher">Trykk her \\2</a>'),
                 ('<a href="(.*?)">(Forrige|Neste) side<\/a>', '<a href="\\1" class="nesteforrigeside">\\2 side</a>'),
                 ('<a href="(.*?)">(Forrige|Neste) side<\/a>', '<a href="\\1" class="nesteforrigeside">\\2 side</a>'),
                 ('<a href="(.*?)">(Ja|Nei)<\/a>', '<a href="\\1" class="janei">\\2</a>'),
-                ('<a href="(.*?)">🙂 🙁<\/a>', '<a href="\\1" class="🙂🙁">🙂 🙁</a>'),
-                ('style="color: white"', 'style="color: red"')
+                ('<a href="(.*?)">🙂 🙁<\/a>', '<a href="\\1" class="🙂🙁">🙂 🙁</a>')
             ]
 
             for subpair in html_substitutions:
