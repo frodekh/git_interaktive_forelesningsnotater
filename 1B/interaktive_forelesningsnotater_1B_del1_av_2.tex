@@ -299,7 +299,10 @@ Dette er et alternativ til forelesningen i emnet. \textcolor{blue}{Har du gått 
 \vspace{1cm}
 \includegraphics[scale=0.4]{media/landing.png}\\
 \column{0.5\textwidth}
-\small Velkommen til del 1B! Etter at du har skutt raketten din ut i rommet, så skal vi i denne delen beregne banen til både romfartøyet ditt og planeten som du skal besøke. Vi skal se på både analytiske og numeriske baneberegninger og prøve å forstå hva som avgjør banen til et objekt. Vi skal, kun ved å ta utgangspunkt i Newtons lover, utlede analytisk at planeter går i ellipsebaner, og se at det faktisk også finnes andre baner. Numerisk baneberegning har du kanskje gjort før med Eulers metode. Det blir litt repetisjon før vi tar det videre. \\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
+\small Velkommen til del 1B! Etter at du har skutt raketten din ut i rommet, så skal vi i denne delen beregne banen til både romfartøyet ditt og planeten som du skal besøke. Vi skal se på både analytiske og numeriske baneberegninger og prøve å forstå hva som avgjør banen til et objekt. Vi skal, kun ved å ta utgangspunkt i Newtons lover, utlede analytisk at planeter går i ellipsebaner, og se at det faktisk også finnes andre baner. Numerisk baneberegning har du kanskje gjort før med Eulers metode. Det blir litt repetisjon før vi tar det videre. \\{\bf Er du klar?}\\
+\vspace*{0.5cm}
+{\bf Dette forelesningsnotatet tilsvarer en og en halv fysisk dobbelttime, og kanskje litt mer}\\
+\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
 
 %\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
 \end{columns}
@@ -457,13 +460,13 @@ Det vi har gjort så langt er å se hvordan vi kan finne romskipets bevegelse nu
 Utledningen av løsningen på dette {\bf 2-legemeproblemet} (og det er kun for 2 legemer at vi kan løse dette analytisk) er en ganske omfattende utledning, men på veien dit kommer vi innom mange temaer som vi skal bruke igjen og igjen i løpet av kurset, så det er viktig å forstå detaljene her.\\
 Trenger du en pause, så ta den nå! Trekk pusten godt!\\
 {\bf Er du klar?}
-\hyperlink{klar}{\choicebutton{{\bf Ja, kom igjen!}}}\ \ \ \ \hyperlink{pyse}{\choicebutton{Tjjjaaaaa....}}\
+\hyperlink{riktig_klar}{\choicebutton{{\bf Ja, kom igjen!}}}\ \ \ \ \hyperlink{red_pyse}{\choicebutton{Tjjjaaaaa....}}\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{pyse}
+\label{red_pyse}
 \lastpagebutton{euler4}
 \vspace*{2cm}
 \textcolor{white}{\Huge PYSE!}\\
@@ -473,7 +476,7 @@ Trenger du en pause, så ta den nå! Trekk pusten godt!\\
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{klar}
+\label{riktig_klar}
 \clastpagebutton{euler4}
 \vspace*{2cm}
 Se det, det var riktig instilling ja!
@@ -499,7 +502,7 @@ Se for øyeblikket bort ifra andre ting på figuren. Vi starter med litt oppvarm
 \vec{r} = a\vec{e}_x + b\vec{e}_y
 \]
 Hva er $a$ og $b$ her?\\
-\hyperlink{feilxy}{\choicebutton{{$a=1\ b=1$}}}\ \ \hyperlink{rettxy}{\choicebutton{$a=3\ b=2$}}\ \ \hyperlink{feilxy}{\choicebutton{$a=2\ b=3$}}\ \ \hyperlink{feilxy}{\choicebutton{$a=0\ b=0$}}
+\hyperlink{feilxy}{\choicebutton{{$a=1\ b=1$}}}\ \ \hyperlink{riktigxy}{\choicebutton{$a=3\ b=2$}}\ \ \hyperlink{feilxy}{\choicebutton{$a=2\ b=3$}}\ \ \hyperlink{feilxy}{\choicebutton{$a=0\ b=0$}}
 \end{columns}
 \end{frame}
 
@@ -515,7 +518,7 @@ Hva er $a$ og $b$ her?\\
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rettxy}
+\label{riktigxy}
 \begin{columns}
 \column{0.5\textwidth}
 \clastpagebutton{enhetsvektorer1}
@@ -538,7 +541,7 @@ Du kan dermed representere en vektor enten med komponentene langs x-y enhetsvekt
 
 \begin{frame}
 \label{enhetsvektorer2}
-\lastpagebutton{rettxy}
+\lastpagebutton{riktigxy}
 Et lite hint før du får svaret: Hva skjer med enhetsvektorene dersom romskipet beveger seg? Er det en grunnleggende forskjell mellom x-y-enhetsvektorene og r-$\theta$-enhetsvektorene da? \textcolor{red}{Tenk deg om og ...} \hyperlink{xyready}{\choicebutton{trykk her}}\\
 \pause
 \addtocounter{pageno}{-1}
@@ -561,7 +564,7 @@ Hvis vi nå skal skrive poisjonsvektoren $\vec{r}$ uttrykt ved de nye enhetsvekt
 \vec{r} = a\vec{e}_r+b\vec{e}_\theta
 \]
 hva blir da $a$ og $b$?
-\hyperlink{feilrt}{\choicebutton{{$a=1\ b=1$}}}\ \ \hyperlink{feilrt}{\choicebutton{$a=3\ b=2$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=\sqrt{13}\ b=\sqrt{13}$}}\ \ \hyperlink{rettrt}{\choicebutton{$a=\sqrt{13}\ b=0$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=0\ b=\sqrt{13}$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=\sqrt{13}\ b=30$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=\sqrt{13}\ b=1$}}
+\hyperlink{feilrt}{\choicebutton{{$a=1\ b=1$}}}\ \ \hyperlink{feilrt}{\choicebutton{$a=3\ b=2$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=\sqrt{13}\ b=\sqrt{13}$}}\ \ \hyperlink{riktigrt}{\choicebutton{$a=\sqrt{13}\ b=0$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=0\ b=\sqrt{13}$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=\sqrt{13}\ b=30$}}\ \ \hyperlink{feilrt}{\choicebutton{$a=\sqrt{13}\ b=1$}}
 \end{frame}
 
 
@@ -583,7 +586,7 @@ Hjelper det deg? Prøv igjen med dette som utgangspunkt!
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rettrt}
+\label{riktigrt}
 \clastpagebutton{enhetsvektorer3}
 {\bf STEMMER!}.Vi ser på figuren igjen:\\
 \includegraphics[scale=0.26]{media/unity_vectors.png}\\
@@ -597,7 +600,7 @@ Poisjonsvektoren har altså kun en komponent som går langs $\vec{e}_r$, ingen s
 
 \begin{frame}
 \label{hastighet1}
-\lastpagebutton{rettrt}
+\lastpagebutton{riktigrt}
 Det vi fant er altså at posisjonsvektoren kan skrives som 
 \[
 \vec{r}=r\vec{e}_r
@@ -606,15 +609,15 @@ der $r=|\vec{r}|$. Enig?\\
 Hvis du tar utgangspunkt i dette, hvordan vil du nå gå frem for å finne hastighetsvektoren $\vec{v}$ til romskipet, gitt at du kjenner $r(t)$ og $\theta(t)$?\\
 {\bf MERK:} Det er ikke meningen at du skal regne ut hastighetsvektoren riktig enda, kun tenke gjennom hvordan du vil gå frem for å gjøre det!\\
 Har du tenkt nøye gjennom hvordan du kunne tenke deg å gjøre det? Har du en ide? {\bf (tenk i maks 2-3 minutter)}\\
-\hyperlink{nohintv}{\choicebutton{{Ja, jeg tror det!}}}\\
-\hyperlink{hintv}{\choicebutton{tjaaaaa, et bittelite hint kanskje?}}
+\hyperlink{riktig_nohintv}{\choicebutton{{Ja, jeg tror det!}}}\\
+\hyperlink{red_hintv}{\choicebutton{tjaaaaa, et bittelite hint kanskje?}}
 \end{frame}
 
 
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{hintv}
+\label{red_hintv}
 \lastpagebutton{hastighet1}
 Hint skal bli:\\
 Hva er definisjonen av hastighet? Den med en derivert?
@@ -624,7 +627,7 @@ Hva er definisjonen av hastighet? Den med en derivert?
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{nohintv}
+\label{riktig_nohintv}
 \clastpagebutton{hastighet1}
 Var det noe alla:
 \[
@@ -654,7 +657,7 @@ Dette skal vi bruke mye i resten av kurset, så lær deg dette med en gang!
 
 \begin{frame}
 \label{hastighet2}
-\lastpagebutton{nohintv}
+\lastpagebutton{riktig_nohintv}
 Vi har altså:
 \[
 \vec{v}=\frac{d}{dt}(r\vec{e}_r)=\dot r\vec{e}_r+r\frac{d}{dt}\vec{e}_r
@@ -683,14 +686,14 @@ Tenk deg litt om, før du ...
 \begin{itemize}[<+->]
 \item[] Er det: \hypertarget<.>{eralt}{}
 \end{itemize}
-\hyperlink{erfeil}{\choicebutton{$a=\theta\  b = 0$}}\ \ \ \ \hyperlink{erfeil}{\choicebutton{$a=\sin{\theta}\  b = 0$}}\ \ \ \ \hyperlink{erfeil}{\choicebutton{$a=\cos{\theta}\ b=0$}}\ \ \ \ \hyperlink{erfeil}{\choicebutton{$a=\sin{\theta}\  b = \cos{\theta}$}}\ \ \ \ \hyperlink{errett}{\choicebutton{$a=\cos{\theta}\ b=\sin{\theta}$}}\ \ \ \ \hyperlink{erfeil}{\choicebutton{$a=1\ b=\sin{\theta}$}}
+\hyperlink{feilerfeil}{\choicebutton{$a=\theta\  b = 0$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=\sin{\theta}\  b = 0$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=\cos{\theta}\ b=0$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=\sin{\theta}\  b = \cos{\theta}$}}\ \ \ \ \hyperlink{riktigerrett}{\choicebutton{$a=\cos{\theta}\ b=\sin{\theta}$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=1\ b=\sin{\theta}$}}
 \end{frame}
 
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{erfeil}
+\label{feilerfeil}
 \dlastpagebutton{hastighet3}
 \textcolor{white}{Det ble galt! Husk at alt du gjør er å dekomponere $\vec{e}_r$ ned på x- og y-aksene. Husk også at lengden av $\vec{e}_r$ er 1. Hvis du har en hvilken som helst vektor med kjent lengde og du skal finne x- og y-komponentene, hva gjør du vanligvis?\\
 Prøv å ha dette i tankene når du nå går tilbake og gjør et nytt forsøk.\\
@@ -701,7 +704,7 @@ Hvis du ikke forstår dette, ta kontakt med gruppelærer eller foreleser!}
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{errett}
+\label{riktigerrett}
 \clastpagebutton{hastighet3}
 {\bf STEMMER!}. Når vi dekomponerer $\vec{e}_r$ ned på x- og y-aksen så er x- og y-komponentene av en vektor med lengde 1 lik cosinus og sinus til vinkelen, akkurat slik vi er vant til, dermed
 \[
@@ -713,7 +716,7 @@ Man kan vise helt tilsvarende at
 \]
 (hvordan kan du sjekke om disse er ortogonale?)\\
 Nå har du fått god hjelp til å derivere $\vec{e}_r$ med hensyn på tiden. Gjør regningen på papir (eller i hodet) og se om du finner et av følgende svar:\\
-\hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r = \vec{e}_\theta$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=\cos{\theta}\vec{e}_r$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=-\sin{\theta}\vec{e}_\theta$}}\ \ \ \ \hyperlink{derrett}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\vec{e}_\theta$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\vec{e}_r+\theta\vec{e}_r$}}\ \ \ \ \hyperlink{derfeil}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\sin{\theta}\vec{e}_r$}}
+\hyperlink{feilderfeil}{\choicebutton{$\dot{\vec{e}}_r = \vec{e}_\theta$}}\ \ \ \ \hyperlink{feilderfeil}{\choicebutton{$\dot{\vec{e}}_r=\cos{\theta}\vec{e}_r$}}\ \ \ \ \hyperlink{feilderfeil}{\choicebutton{$\dot{\vec{e}}_r=-\sin{\theta}\vec{e}_\theta$}}\ \ \ \ \hyperlink{riktigderrett}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\vec{e}_\theta$}}\ \ \ \ \hyperlink{feilderfeil}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\vec{e}_r+\theta\vec{e}_r$}}\ \ \ \ \hyperlink{feilderfeil}{\choicebutton{$\dot{\vec{e}}_r=\dot\theta\sin{\theta}\vec{e}_r$}}
 \end{frame}
 }
 
@@ -721,8 +724,8 @@ Nå har du fått god hjelp til å derivere $\vec{e}_r$ med hensyn på tiden. Gj�
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{derfeil}
-\lastpagebutton{errett}
+\label{feilderfeil}
+\lastpagebutton{riktigerrett}
 \textcolor{white}{Det ble galt! Hint:
 \[
 \frac{d}{dt}(\cos{\theta}) = -\dot\theta\sin{\theta}
@@ -739,8 +742,8 @@ Gå tilbake og prøv igjen, hvis du sliter med å forstå, kontakt foreleser/gru
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{derrett}
-\clastpagebutton{errett}
+\label{riktigderrett}
+\clastpagebutton{riktigerrett}
 {\bf Det er helt riktig}.
 Vi har altså 
 \[
@@ -756,13 +759,33 @@ Tilbake til hastigheten. Prøv nå å vise at
 \vec{v} = \dot{r}\vec{e}_r + r\dot\theta\vec{e}_\theta
 \]
 Hvis du ikke får dette til \textcolor{red}{etter å ha prøvd flere ganger}, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_1.mp4}{denne videoen her.} {\bf (fikk du det til, ikke kast bort tiden på videoen!)}\\
-\hyperlink{hastighet4}{\pagebutton{Neste side}}
+\hyperlink{pause0}{\pagebutton{Neste side}}
 \end{frame}
 }
 
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+\begin{frame}
+\label{pause0}
+\hyperlink{riktigderrett}{\pagebutton{\small Forrige side}}
+{\Huge
+\centerline{TID FOR EN KORT KAFFEPAUSE!!!}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+
+En kort tur ut nå, kroppen trenger litt bevegelse...\\
+\vspace*{0.5cm}
+Ihvertfall 5 min...
+}\\
+\vspace*{0.5cm}
+\hyperlink{hastighet4}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
+\end{frame}
+}
+
+
 \begin{frame}
 \label{hastighet4}
-\lastpagebutton{derrett}
+\lastpagebutton{riktigderrett}
 La oss prøve å tolke uttrykket for hastighet
 \[
 \vec{v} = \dot{r}\vec{e}_r + r\dot\theta\vec{e}_\theta
@@ -917,6 +940,8 @@ Ut å strekke på bena. Inn med litt koffein...\\
 Ihvertfall 10 min...
 }\\
 \vspace*{0.5cm}
+Kommer omtrent hit (kanskje 4 slides til) på en fysisk forelesning (en dobbelttime). Gå litt videre, og så gir du deg for idag (kanskje etter den første videoen)\\
+\vspace*{0.5cm}
 \hyperlink{kepler5}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
 \end{frame}
 }
@@ -941,7 +966,7 @@ En rask sjekk om du har oversikt over det som trengs
 \item Du vet hva lille/store halvakse, eksentrisitet, brennpunkt, apoapsis/aphel, periapsis/perihel er?
 \end{itemize}
 }
-\hyperlink{kepler5b}{\pagebutton{ÅJA, dette kan jeg, la oss sette igang med utledningen!}}\\
+\hyperlink{red_kepler5b}{\pagebutton{ÅJA, dette kan jeg, la oss sette igang med utledningen!}}\\
 \hyperlink{trengerep}{\pagebutton{Njaaaa...jeg trenger kanskje litt repetisjon}}
 \pause
 \addtocounter{pageno}{-1}
@@ -961,7 +986,7 @@ En rask sjekk om du har oversikt over det som trengs
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{kepler5b}
+\label{red_kepler5b}
 \dlastpagebutton{kepler5}
 Vi skal i det følgende løse det som vi kaller {\bf 2-legeme-problemet}:\\
 \includegraphics[scale=0.4]{media/forces.png}\\
@@ -974,7 +999,7 @@ På figuren ser du at vektoren $\vec{r}$ peker fra $m_1$ til $m_2$. {\bf Når vi
 
 \begin{frame}
 \label{kepler6}
-\lastpagebutton{kepler5b}
+\lastpagebutton{red_kepler5b}
 I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_5.mp4}{denne videoen} begynner vi utledningen av løsningen på 2-legemeproblemt. Vi diskuterer krefter på objektene og bruker Newtons lover inkludert gravitasjonsloven til å komme frem til
 \[
 \ddot{\vec{r}}+m\frac{\vec{r}}{r^3}=0
@@ -1110,14 +1135,14 @@ Ganske riktig ja! En cosinus eller sinus er jo akkurat slik at hvis du deriverer
 \]
 \end{block}
 Prøv deg litt frem på papir, maks 2-3 minutter, se hvor langt du kommer...
-\hyperlink{kepler14}{\pagebutton{Nå har jeg prøvd meg litt!}}
+\hyperlink{red_kepler14}{\pagebutton{Nå har jeg prøvd meg litt!}}
 \end{frame}
 
 
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{kepler14}
+\label{red_kepler14}
 \lastpagebutton{kepler13}
 Hvis du har funnet en løsning, er du {\bf helt} sikker på at du har funnet riktig løsning?. Før du går videre nå, ta din løsning $u(\theta)$ og dobbeltderiver den!
 Er svaret du får lik:
@@ -1132,7 +1157,7 @@ Helt sikker?
 
 \begin{frame}
 \label{kepler15}
-\lastpagebutton{kepler14}
+\lastpagebutton{red_kepler14}
 \addtocounter{pageno}{-1}
 Da skulle du ha fått følgende svar:
 \[
@@ -1182,13 +1207,13 @@ Der solen er i det ene brennpunktet
 \end{block}
 Dette er jo en generell løsning av 2-legemeproblemet og gjelder da for enhver banebevegelse. MEN, for ellipser så må $e=[0,1)$ men $e$ kan aldri bli 1. I denne løsningen så kan $e$ være en hvilken som helst positiv størrelse og enda være en løsning av likningen vår. Men hvis $e\ge1$ så har vi ikke en ellipse lenger! \textcolor{red}{Betyr det at det finnes løsninger av tolegemeproblemet som {\bf ikke} er ellipsebaner men andre typer baner? Som Kepler ikke visste noe om??}\\
 {\Large \bf Fortsettelse følger...}
-\hyperlink{kepler17}{\pagebutton{Neste side}}
+\hyperlink{feil_kepler17}{\pagebutton{Neste side}}
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{kepler17}
+\label{feil_kepler17}
 \hyperlink{kepler16}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
 {\Huge
 \textcolor{orange}{... i den neste og meget spennende forelesningen i emnet}\\
@@ -1201,8 +1226,8 @@ Dette er jo en generell løsning av 2-legemeproblemet og gjelder da for enhver b
 
 \begin{frame}
 \label{oppsummering}
-\hyperlink{kepler17}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
-Da er vi ved veis enda av den første forelesningen i del 1B. Du bør nå ha god oversikt over dette:
+\hyperlink{feil_kepler17}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+Da er vi ved veis enda av den første forelesningen i del 1B. I den fysiske forelesningen er jeg kanskje litt over halvveis i den andre dobbelttimen på dette punktet. Du bør nå ha god oversikt over dette:
 \begin{itemize}
 \item posisjonsvektorer, hastighetsvektorer, enhetsvektorer i polarkoordinater
 \item hvordan derivere vektorer i polarkoordinater

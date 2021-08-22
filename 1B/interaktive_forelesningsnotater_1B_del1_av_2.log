@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  20 AUG 2021 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 AUG 2021 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,53 +1095,57 @@ Dictionary: translator-theorem-dictionary, Language: English
 <media/landing.png, id=52, 360.34625pt x 329.23pt>
 File: media/landing.png Graphic file (type png)
 <use media/landing.png>
-Package pdftex.def Info: media/landing.png  used on input line 306.
+Package pdftex.def Info: media/landing.png  used on input line 309.
 (pdftex.def)             Requested size: 144.13594pt x 131.68965pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 306
+LaTeX Font Info:    Trying to load font information for U+msa on input line 309
 .
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 306
+LaTeX Font Info:    Trying to load font information for U+msb on input line 309
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 306.
+ut line 309.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [3
+)
+Overfull \vbox (3.07094pt too high) detected at line 309
+ []
+
+[3
 
  <./media/landing.png>]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 331--331
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 334--334
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/landing.png Graphic file (type png)
 <use media/landing.png>
-Package pdftex.def Info: media/landing.png  used on input line 331.
+Package pdftex.def Info: media/landing.png  used on input line 334.
 (pdftex.def)             Requested size: 144.13594pt x 131.68965pt.
 
-Overfull \vbox (2.10793pt too high) detected at line 331
+Overfull \vbox (2.10793pt too high) detected at line 334
  []
 
 [4
 
 ]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 331--331
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 334--334
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/landing.png Graphic file (type png)
 <use media/landing.png>
-Package pdftex.def Info: media/landing.png  used on input line 331.
+Package pdftex.def Info: media/landing.png  used on input line 334.
 (pdftex.def)             Requested size: 144.13594pt x 131.68965pt.
 
-Overfull \vbox (2.10793pt too high) detected at line 331
+Overfull \vbox (2.10793pt too high) detected at line 334
  []
 
 [5
@@ -1150,7 +1154,7 @@ Overfull \vbox (2.10793pt too high) detected at line 331
 <media/car_move_1.png, id=92, 981.6675pt x 453.695pt>
 File: media/car_move_1.png Graphic file (type png)
 <use media/car_move_1.png>
-Package pdftex.def Info: media/car_move_1.png  used on input line 343.
+Package pdftex.def Info: media/car_move_1.png  used on input line 346.
 (pdftex.def)             Requested size: 196.33002pt x 90.73738pt.
  [6
 
@@ -1158,57 +1162,57 @@ Package pdftex.def Info: media/car_move_1.png  used on input line 343.
 <media/car_move_2.png, id=105, 1074.0125pt x 451.6875pt>
 File: media/car_move_2.png Graphic file (type png)
 <use media/car_move_2.png>
-Package pdftex.def Info: media/car_move_2.png  used on input line 354.
+Package pdftex.def Info: media/car_move_2.png  used on input line 357.
 (pdftex.def)             Requested size: 214.79869pt x 90.33589pt.
  [7
 
  <./media/car_move_2.png>]
-Overfull \hbox (117.73422pt too wide) in paragraph at lines 372--372
+Overfull \hbox (117.73422pt too wide) in paragraph at lines 375--375
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/spaceship_move_1.png, id=118, 576.1525pt x 553.06625pt>
 File: media/spaceship_move_1.png Graphic file (type png)
 <use media/spaceship_move_1.png>
-Package pdftex.def Info: media/spaceship_move_1.png  used on input line 372.
+Package pdftex.def Info: media/spaceship_move_1.png  used on input line 375.
 (pdftex.def)             Requested size: 172.84708pt x 165.92114pt.
 
-Overfull \hbox (1.69943pt too wide) in paragraph at lines 372--372
+Overfull \hbox (1.69943pt too wide) in paragraph at lines 375--375
 []  
  []
 
 
-Overfull \hbox (10.88019pt too wide) in paragraph at lines 372--372
+Overfull \hbox (10.88019pt too wide) in paragraph at lines 375--375
 [][][][][][][][][]  
  []
 
 [8
 
  <./media/spaceship_move_1.png>]
-Overfull \hbox (117.73422pt too wide) in paragraph at lines 390--390
+Overfull \hbox (117.73422pt too wide) in paragraph at lines 393--393
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/spaceship_move_2.png, id=146, 576.1525pt x 552.0625pt>
 File: media/spaceship_move_2.png Graphic file (type png)
 <use media/spaceship_move_2.png>
-Package pdftex.def Info: media/spaceship_move_2.png  used on input line 390.
+Package pdftex.def Info: media/spaceship_move_2.png  used on input line 393.
 (pdftex.def)             Requested size: 172.84708pt x 165.62003pt.
 
-Overfull \hbox (1.69943pt too wide) in paragraph at lines 390--390
+Overfull \hbox (1.69943pt too wide) in paragraph at lines 393--393
 []  
  []
 
 [9
 
  <./media/spaceship_move_2.png>]
-Overfull \hbox (117.73422pt too wide) in paragraph at lines 417--417
+Overfull \hbox (117.73422pt too wide) in paragraph at lines 420--420
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/spaceship_move_2.png Graphic file (type png)
 <use media/spaceship_move_2.png>
-Package pdftex.def Info: media/spaceship_move_2.png  used on input line 417.
+Package pdftex.def Info: media/spaceship_move_2.png  used on input line 420.
 (pdftex.def)             Requested size: 115.22845pt x 110.41054pt.
 [10
 
@@ -1217,223 +1221,229 @@ Package pdftex.def Info: media/spaceship_move_2.png  used on input line 417.
 ] [12
 
 ]
-Overfull \hbox (57.08672pt too wide) in paragraph at lines 461--461
+Overfull \hbox (57.08672pt too wide) in paragraph at lines 464--464
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (57.08672pt too wide) in paragraph at lines 470--470
+Overfull \hbox (57.08672pt too wide) in paragraph at lines 473--473
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (57.08672pt too wide) in paragraph at lines 482--482
+Overfull \hbox (57.08672pt too wide) in paragraph at lines 485--485
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (12.97069pt too wide) in paragraph at lines 504--504
+Overfull \hbox (12.97069pt too wide) in paragraph at lines 507--507
 []| [][][][][]  
  []
 
 <media/unity_vectors.png, id=242, 591.20876pt x 478.78876pt>
 File: media/unity_vectors.png Graphic file (type png)
 <use media/unity_vectors.png>
-Package pdftex.def Info: media/unity_vectors.png  used on input line 504.
+Package pdftex.def Info: media/unity_vectors.png  used on input line 507.
 (pdftex.def)             Requested size: 177.36398pt x 143.63773pt.
 
-Overfull \hbox (6.21634pt too wide) in paragraph at lines 504--504
+Overfull \hbox (6.21634pt too wide) in paragraph at lines 507--507
 [][]  
  []
 
 
-Overfull \vbox (4.50179pt too high) detected at line 504
+Overfull \vbox (4.50179pt too high) detected at line 507
  []
 
 [16
 
  <./media/unity_vectors.png>]
-Overfull \hbox (62.08672pt too wide) in paragraph at lines 512--512
+Overfull \hbox (62.08672pt too wide) in paragraph at lines 515--515
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [17
 
 ]
-Overfull \hbox (233.23438pt too wide) in paragraph at lines 535--535
+Overfull \hbox (233.23438pt too wide) in paragraph at lines 538--538
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/unity_vectors.png Graphic file (type png)
 <use media/unity_vectors.png>
-Package pdftex.def Info: media/unity_vectors.png  used on input line 535.
+Package pdftex.def Info: media/unity_vectors.png  used on input line 538.
 (pdftex.def)             Requested size: 153.71065pt x 124.48213pt.
 [18
 
 ]
-Overfull \hbox (62.08672pt too wide) in paragraph at lines 552--552
+Overfull \hbox (62.08672pt too wide) in paragraph at lines 555--555
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [19
 
 ]
-Overfull \hbox (62.08672pt too wide) in paragraph at lines 552--552
+Overfull \hbox (62.08672pt too wide) in paragraph at lines 555--555
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [20
 
 ]
-Overfull \hbox (62.08672pt too wide) in paragraph at lines 565--565
+Overfull \hbox (62.08672pt too wide) in paragraph at lines 568--568
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/unity_vectors.png Graphic file (type png)
 <use media/unity_vectors.png>
-Package pdftex.def Info: media/unity_vectors.png  used on input line 565.
+Package pdftex.def Info: media/unity_vectors.png  used on input line 568.
 (pdftex.def)             Requested size: 165.53732pt x 134.05994pt.
 [21
 
 ]
-Overfull \hbox (62.08672pt too wide) in paragraph at lines 580--580
+Overfull \hbox (62.08672pt too wide) in paragraph at lines 583--583
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [22
 
 ]
-Overfull \hbox (62.08672pt too wide) in paragraph at lines 593--593
+Overfull \hbox (62.08672pt too wide) in paragraph at lines 596--596
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/unity_vectors.png Graphic file (type png)
 <use media/unity_vectors.png>
-Package pdftex.def Info: media/unity_vectors.png  used on input line 593.
+Package pdftex.def Info: media/unity_vectors.png  used on input line 596.
 (pdftex.def)             Requested size: 153.71065pt x 124.48213pt.
 [23
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 611--611
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 614--614
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [24
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 621--621
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 624--624
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 652--652
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 655--655
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [26
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 652--652
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 655--655
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [27
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 667--667
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 670--670
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [28
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 687--687
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 690--690
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/unity_vector_decomp.png, id=405, 219.82124pt x 197.73875pt>
 File: media/unity_vector_decomp.png Graphic file (type png)
 <use media/unity_vector_decomp.png>
-Package pdftex.def Info: media/unity_vector_decomp.png  used on input line 687.
+Package pdftex.def Info: media/unity_vector_decomp.png  used on input line 690.
 
 (pdftex.def)             Requested size: 109.91034pt x 98.86913pt.
 [29
 
  <./media/unity_vector_decomp.png>]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 687--687
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 690--690
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/unity_vector_decomp.png Graphic file (type png)
 <use media/unity_vector_decomp.png>
-Package pdftex.def Info: media/unity_vector_decomp.png  used on input line 687.
+Package pdftex.def Info: media/unity_vector_decomp.png  used on input line 690.
 
 (pdftex.def)             Requested size: 109.91034pt x 98.86913pt.
 [30
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 698--698
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 701--701
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [31
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 717--717
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 720--720
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (58.14229pt too wide) in paragraph at lines 733--733
+Overfull \hbox (58.14229pt too wide) in paragraph at lines 736--736
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [33
 
 ]
-Overfull \hbox (36.08214pt too wide) in paragraph at lines 760--760
+Overfull \hbox (36.08214pt too wide) in paragraph at lines 763--763
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [34
 
 ]
-Overfull \hbox (36.08214pt too wide) in paragraph at lines 772--772
+<media/drink-coffee.png, id=484, 16.8383pt x 11.61842pt>
+File: media/drink-coffee.png Graphic file (type png)
+<use media/drink-coffee.png>
+Package pdftex.def Info: media/drink-coffee.png  used on input line 782.
+(pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
+ [35
+
+ <./media/drink-coffee.png>]
+Overfull \hbox (36.08214pt too wide) in paragraph at lines 795--795
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[35
-
-]
-Overfull \hbox (36.08214pt too wide) in paragraph at lines 781--781
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-<media/tangential_vel.png, id=497, 309.155pt x 258.9675pt>
-File: media/tangential_vel.png Graphic file (type png)
-<use media/tangential_vel.png>
-Package pdftex.def Info: media/tangential_vel.png  used on input line 781.
-(pdftex.def)             Requested size: 154.57712pt x 129.48341pt.
 [36
 
- <./media/tangential_vel.png>]
-Overfull \hbox (69.14229pt too wide) in paragraph at lines 795--795
+]
+Overfull \hbox (36.08214pt too wide) in paragraph at lines 804--804
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
+<media/tangential_vel.png, id=507, 309.155pt x 258.9675pt>
+File: media/tangential_vel.png Graphic file (type png)
+<use media/tangential_vel.png>
+Package pdftex.def Info: media/tangential_vel.png  used on input line 804.
+(pdftex.def)             Requested size: 154.57712pt x 129.48341pt.
 [37
 
-] [38
+ <./media/tangential_vel.png>]
+Overfull \hbox (69.14229pt too wide) in paragraph at lines 818--818
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[38
 
 ] [39
 
@@ -1443,117 +1453,120 @@ Overfull \hbox (69.14229pt too wide) in paragraph at lines 795--795
 
 ] [42
 
+] [43
+
 ]
-<media/ellipse.png, id=600, 729.72626pt x 325.215pt>
+<media/ellipse.png, id=611, 729.72626pt x 325.215pt>
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 855.
+Package pdftex.def Info: media/ellipse.png  used on input line 878.
 (pdftex.def)             Requested size: 291.88533pt x 130.0837pt.
- [43
+ [44
 
  <./media/ellipse.png>]
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 855.
-(pdftex.def)             Requested size: 291.88533pt x 130.0837pt.
- [44
-
-]
-File: media/ellipse.png Graphic file (type png)
-<use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 864.
+Package pdftex.def Info: media/ellipse.png  used on input line 878.
 (pdftex.def)             Requested size: 291.88533pt x 130.0837pt.
  [45
 
 ]
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 880.
+Package pdftex.def Info: media/ellipse.png  used on input line 887.
 (pdftex.def)             Requested size: 291.88533pt x 130.0837pt.
  [46
 
 ]
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 889.
+Package pdftex.def Info: media/ellipse.png  used on input line 903.
 (pdftex.def)             Requested size: 291.88533pt x 130.0837pt.
-
-[47
+ [47
 
 ]
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 904.
-(pdftex.def)             Requested size: 218.91957pt x 97.56525pt.
- [48
+Package pdftex.def Info: media/ellipse.png  used on input line 912.
+(pdftex.def)             Requested size: 291.88533pt x 130.0837pt.
+
+[48
 
 ]
-<media/drink-coffee.png, id=664, 16.8383pt x 11.61842pt>
-File: media/drink-coffee.png Graphic file (type png)
-<use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 921.
-(pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
+File: media/ellipse.png Graphic file (type png)
+<use media/ellipse.png>
+Package pdftex.def Info: media/ellipse.png  used on input line 927.
+(pdftex.def)             Requested size: 218.91957pt x 97.56525pt.
  [49
 
- <./media/drink-coffee.png>]
-Overfull \hbox (2.69771pt too wide) in paragraph at lines 955--955
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+]
+File: media/drink-coffee.png Graphic file (type png)
+<use media/drink-coffee.png>
+Package pdftex.def Info: media/drink-coffee.png  used on input line 946.
+(pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
+
+Overfull \vbox (21.27083pt too high) detected at line 946
  []
 
 [50
 
 ]
-Overfull \hbox (2.69771pt too wide) in paragraph at lines 955--955
+Overfull \hbox (2.69771pt too wide) in paragraph at lines 980--980
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [51
 
 ]
-<media/forces.png, id=699, 379.4175pt x 204.765pt>
+Overfull \hbox (2.69771pt too wide) in paragraph at lines 980--980
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[52
+
+]
+<media/forces.png, id=707, 379.4175pt x 204.765pt>
 File: media/forces.png Graphic file (type png)
 <use media/forces.png>
-Package pdftex.def Info: media/forces.png  used on input line 971.
+Package pdftex.def Info: media/forces.png  used on input line 996.
 (pdftex.def)             Requested size: 151.7643pt x 81.90454pt.
- [52
+ [53
 
  <./media/forces.png>]
 File: media/forces.png Graphic file (type png)
 <use media/forces.png>
-Package pdftex.def Info: media/forces.png  used on input line 986.
+Package pdftex.def Info: media/forces.png  used on input line 1011.
 (pdftex.def)             Requested size: 151.7643pt x 81.90454pt.
- [53
+ [54
 
 ]
-<media/unityvectors_on_m1m2.png, id=722, 287.0725pt x 273.02pt>
+<media/unityvectors_on_m1m2.png, id=730, 287.0725pt x 273.02pt>
 File: media/unityvectors_on_m1m2.png Graphic file (type png)
 <use media/unityvectors_on_m1m2.png>
-Package pdftex.def Info: media/unityvectors_on_m1m2.png  used on input line 100
-8.
+Package pdftex.def Info: media/unityvectors_on_m1m2.png  used on input line 103
+3.
 (pdftex.def)             Requested size: 106.21515pt x 101.01581pt.
 
-Overfull \vbox (0.13007pt too high) detected at line 1008
+Overfull \vbox (0.13007pt too high) detected at line 1033
  []
 
-[54
+[55
 
- <./media/unityvectors_on_m1m2.png>] [55
-
-] [56
+ <./media/unityvectors_on_m1m2.png>] [56
 
 ] [57
 
+] [58
+
 ]
-<media/harmosc.png, id=782, 160.6pt x 276.03125pt>
+<media/harmosc.png, id=790, 160.6pt x 276.03125pt>
 File: media/harmosc.png Graphic file (type png)
 <use media/harmosc.png>
-Package pdftex.def Info: media/harmosc.png  used on input line 1088.
+Package pdftex.def Info: media/harmosc.png  used on input line 1113.
 (pdftex.def)             Requested size: 64.23885pt x 110.41054pt.
- [58
+ [59
 
- <./media/harmosc.png>] [59
-
-] [60
+ <./media/harmosc.png>] [60
 
 ] [61
 
@@ -1566,6 +1579,8 @@ Package pdftex.def Info: media/harmosc.png  used on input line 1088.
 ] [65
 
 ] [66
+
+] [67
 
 ]
 \tf@nav=\write6
@@ -1584,10 +1599,10 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1B_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25951 strings out of 478994
- 511404 string characters out of 5858185
- 852953 words of memory out of 5000000
- 42663 multiletter control sequences out of 15000+600000
+ 25957 strings out of 478994
+ 511573 string characters out of 5858185
+ 853096 words of memory out of 5000000
+ 42666 multiletter control sequences out of 15000+600000
  418125 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,13n,132p,982b,1323s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1608,11 +1623,11 @@ texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on interaktive_forelesningsnotater_1B_del1_av_2.pdf (66 pages, 1
-149142 bytes).
+Output written on interaktive_forelesningsnotater_1B_del1_av_2.pdf (67 pages, 1
+151370 bytes).
 PDF statistics:
- 984 PDF objects out of 1000 (max. 8388607)
- 804 compressed objects within 9 object streams
- 199 named destinations out of 1000 (max. 500000)
+ 993 PDF objects out of 1000 (max. 8388607)
+ 812 compressed objects within 9 object streams
+ 202 named destinations out of 1000 (max. 500000)
  450 words of extra memory for PDF output out of 10000 (max. 10000000)
 
