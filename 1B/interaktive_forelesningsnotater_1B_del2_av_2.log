@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  20 AUG 2021 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 AUG 2021 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1117,7 +1117,7 @@ thkerncmss.
 ) [3
 
  <./media/landing.png>]
-<media/ellipse.png, id=67, 729.72626pt x 325.215pt>
+<media/ellipse.png, id=68, 729.72626pt x 325.215pt>
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
 Package pdftex.def Info: media/ellipse.png  used on input line 334.
@@ -1127,7 +1127,7 @@ Package pdftex.def Info: media/ellipse.png  used on input line 334.
  <./media/ellipse.png>] [5
 
 ]
-<media/conicsections0.png, id=95, 550.055pt x 440.64626pt>
+<media/conicsections0.png, id=96, 550.055pt x 440.64626pt>
 File: media/conicsections0.png Graphic file (type png)
 <use media/conicsections0.png>
 Package pdftex.def Info: media/conicsections0.png  used on input line 375.
@@ -1151,7 +1151,7 @@ Package pdftex.def Info: media/conicsections0.png  used on input line 399.
 ] [9
 
 ]
-<media/oumuamua.png, id=140, 684.5575pt x 427.5975pt>
+<media/oumuamua.png, id=141, 684.5575pt x 427.5975pt>
 File: media/oumuamua.png Graphic file (type png)
 <use media/oumuamua.png>
 Package pdftex.def Info: media/oumuamua.png  used on input line 429.
@@ -1165,7 +1165,7 @@ Overfull \hbox (159.82698pt too wide) in paragraph at lines 457--457
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1b1.png, id=165, 434.62375pt x 564.1075pt>
+<media/1b1.png, id=166, 434.62375pt x 564.1075pt>
 File: media/1b1.png Graphic file (type png)
 <use media/1b1.png>
 Package pdftex.def Info: media/1b1.png  used on input line 457.
@@ -1182,7 +1182,7 @@ Overfull \hbox (159.82698pt too wide) in paragraph at lines 471--471
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1b2.png, id=178, 425.59pt x 506.89375pt>
+<media/1b2.png, id=179, 425.59pt x 506.89375pt>
 File: media/1b2.png Graphic file (type png)
 <use media/1b2.png>
 Package pdftex.def Info: media/1b2.png  used on input line 471.
@@ -1197,7 +1197,7 @@ Overfull \hbox (14.74193pt too wide) in paragraph at lines 471--471
  <./media/1b2.png>] [14
 
 ]
-<media/1b3.png, id=215, 434.62375pt x 247.92625pt>
+<media/1b3.png, id=216, 434.62375pt x 247.92625pt>
 File: media/1b3.png Graphic file (type png)
 <use media/1b3.png>
 Package pdftex.def Info: media/1b3.png  used on input line 495.
@@ -1207,7 +1207,7 @@ Package pdftex.def Info: media/1b3.png  used on input line 495.
  <./media/1b3.png>] [16
 
 ]
-<media/cm1.png, id=237, 568.1225pt x 457.71pt>
+<media/cm1.png, id=238, 568.1225pt x 457.71pt>
 File: media/cm1.png Graphic file (type png)
 <use media/cm1.png>
 Package pdftex.def Info: media/cm1.png  used on input line 517.
@@ -1235,92 +1235,96 @@ Overfull \hbox (36.94771pt too wide) in paragraph at lines 587--587
 [22
 
 ]
-<media/drink-coffee.png, id=306, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=307, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 604.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 606.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
- [23
+
+Overfull \vbox (19.7pt too high) detected at line 606
+ []
+
+[23
 
  <./media/drink-coffee.png>]
-Overfull \hbox (208.09537pt too wide) in paragraph at lines 620--620
+Overfull \hbox (208.09537pt too wide) in paragraph at lines 622--622
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/cm3.png, id=318, 994.71625pt x 611.28375pt>
+<media/cm3.png, id=319, 994.71625pt x 611.28375pt>
 File: media/cm3.png Graphic file (type png)
 <use media/cm3.png>
-Package pdftex.def Info: media/cm3.png  used on input line 620.
+Package pdftex.def Info: media/cm3.png  used on input line 622.
 (pdftex.def)             Requested size: 169.09952pt x 103.91685pt.
 [24
 
  <./media/cm3.png>]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 638--638
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 640--640
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 650--650
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 652--652
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [26
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 669--669
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 671--671
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [27
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 685--685
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 687--687
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [28
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 707--707
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 709--709
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/cm3.png Graphic file (type png)
 <use media/cm3.png>
-Package pdftex.def Info: media/cm3.png  used on input line 707.
+Package pdftex.def Info: media/cm3.png  used on input line 709.
 (pdftex.def)             Requested size: 169.09952pt x 103.91685pt.
 [29
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 718--718
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 720--720
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/cm2.png, id=401, 440.64626pt x 273.02pt>
+<media/cm2.png, id=403, 440.64626pt x 273.02pt>
 File: media/cm2.png Graphic file (type png)
 <use media/cm2.png>
-Package pdftex.def Info: media/cm2.png  used on input line 718.
+Package pdftex.def Info: media/cm2.png  used on input line 720.
 (pdftex.def)             Requested size: 176.25537pt x 109.20605pt.
 [30
 
  <./media/cm2.png>]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 734--734
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 736--736
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [31
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 753--753
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 755--755
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 765--765
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 767--767
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -1347,29 +1351,29 @@ Overfull \hbox (36.94771pt too wide) in paragraph at lines 765--765
 ] [43
 
 ]
-Overfull \hbox (157.95645pt too wide) in paragraph at lines 886--886
+Overfull \hbox (157.95645pt too wide) in paragraph at lines 888--888
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1b4.png, id=566, 453.695pt x 345.29pt>
+<media/1b4.png, id=568, 453.695pt x 345.29pt>
 File: media/1b4.png Graphic file (type png)
 <use media/1b4.png>
-Package pdftex.def Info: media/1b4.png  used on input line 886.
+Package pdftex.def Info: media/1b4.png  used on input line 888.
 (pdftex.def)             Requested size: 181.47478pt x 138.11354pt.
 
-Overfull \hbox (10.32713pt too wide) in paragraph at lines 886--886
+Overfull \hbox (10.32713pt too wide) in paragraph at lines 888--888
 [][]  
  []
 
-<media/1b4_2.png, id=567, 415.5525pt x 210.7875pt>
+<media/1b4_2.png, id=569, 415.5525pt x 210.7875pt>
 File: media/1b4_2.png Graphic file (type png)
 <use media/1b4_2.png>
-Package pdftex.def Info: media/1b4_2.png  used on input line 886.
+Package pdftex.def Info: media/1b4_2.png  used on input line 888.
 (pdftex.def)             Requested size: 166.21805pt x 84.3135pt.
-<media/1b4_3.png, id=568, 396.48125pt x 212.795pt>
+<media/1b4_3.png, id=570, 396.48125pt x 212.795pt>
 File: media/1b4_3.png Graphic file (type png)
 <use media/1b4_3.png>
-Package pdftex.def Info: media/1b4_3.png  used on input line 886.
+Package pdftex.def Info: media/1b4_3.png  used on input line 888.
 (pdftex.def)             Requested size: 158.58968pt x 85.11649pt.
 [44
 
@@ -1393,18 +1397,18 @@ Package pdftex.def Info: media/1b4_3.png  used on input line 886.
 \g__tikzsymbols_savebox_F_0 0 1 rg 0 0 1 RG_10_Changey_1_yellow_-2_box=\box83
 File: media/landing.png Graphic file (type png)
 <use media/landing.png>
-Package pdftex.def Info: media/landing.png  used on input line 996.
+Package pdftex.def Info: media/landing.png  used on input line 998.
 (pdftex.def)             Requested size: 126.12308pt x 115.23222pt.
  [52
 
 ]
-<media/debugging1.png, id=669, 650.43pt x 511.9125pt>
+<media/debugging1.png, id=671, 650.43pt x 511.9125pt>
 File: media/debugging1.png Graphic file (type png)
 <use media/debugging1.png>
-Package pdftex.def Info: media/debugging1.png  used on input line 1008.
+Package pdftex.def Info: media/debugging1.png  used on input line 1010.
 (pdftex.def)             Requested size: 195.1305pt x 153.57494pt.
 
-Overfull \vbox (7.36082pt too high) detected at line 1008
+Overfull \vbox (7.36082pt too high) detected at line 1010
  []
 
 [53
@@ -1412,26 +1416,26 @@ Overfull \vbox (7.36082pt too high) detected at line 1008
  <./media/debugging1.png>] [54
 
 ]
-<media/debugging2.png, id=693, 634.37pt x 499.8675pt>
+<media/debugging2.png, id=695, 634.37pt x 499.8675pt>
 File: media/debugging2.png Graphic file (type png)
 <use media/debugging2.png>
-Package pdftex.def Info: media/debugging2.png  used on input line 1039.
+Package pdftex.def Info: media/debugging2.png  used on input line 1041.
 (pdftex.def)             Requested size: 190.31245pt x 149.9614pt.
 
-Overfull \hbox (19.16481pt too wide) in paragraph at lines 1039--1039
+Overfull \hbox (19.16481pt too wide) in paragraph at lines 1041--1041
 [][]  
  []
 
 [55
 
  <./media/debugging2.png>]
-Overfull \hbox (112.15085pt too wide) in paragraph at lines 1056--1056
+Overfull \hbox (112.15085pt too wide) in paragraph at lines 1058--1058
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/debugging2.png Graphic file (type png)
 <use media/debugging2.png>
-Package pdftex.def Info: media/debugging2.png  used on input line 1056.
+Package pdftex.def Info: media/debugging2.png  used on input line 1058.
 (pdftex.def)             Requested size: 158.5921pt x 124.96657pt.
 [56
 
@@ -1453,15 +1457,18 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1B_del2_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25929 strings out of 478994
- 509912 string characters out of 5858185
- 859915 words of memory out of 5000000
+ 25930 strings out of 478994
+ 510010 string characters out of 5858185
+ 858931 words of memory out of 5000000
  42661 multiletter control sequences out of 15000+600000
  428376 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,14n,132p,982b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{front} has been referenced but does not exist, re
-placed by a fixed one
+ 131i,14n,132p,982b,1218s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{ja} has been referenced but does not exist, repla
+ced by a fixed one
+
+pdfTeX warning (dest): name{front} has been referenced but does not exist, repl
+aced by a fixed one
 
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1483,10 +1490,10 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive
 /2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2021/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
 Output written on interaktive_forelesningsnotater_1B_del2_av_2.pdf (57 pages, 2
-821845 bytes).
+823889 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 678 compressed objects within 7 object streams
- 172 named destinations out of 1000 (max. 500000)
+ 823 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
+ 173 named destinations out of 1000 (max. 500000)
  249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

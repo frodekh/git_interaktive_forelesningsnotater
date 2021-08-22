@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 AUG 2021 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 AUG 2021 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1117,71 +1117,71 @@ thkerncmss.
 ) [3
 
  <./media/rocket.png>]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 322--322
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 324--324
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/rocket.png Graphic file (type png)
 <use media/rocket.png>
-Package pdftex.def Info: media/rocket.png  used on input line 322.
+Package pdftex.def Info: media/rocket.png  used on input line 324.
 (pdftex.def)             Requested size: 157.38521pt x 240.09274pt.
 [4
 
 ]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 354--354
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 356--356
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/rocket.png Graphic file (type png)
 <use media/rocket.png>
-Package pdftex.def Info: media/rocket.png  used on input line 354.
+Package pdftex.def Info: media/rocket.png  used on input line 356.
 (pdftex.def)             Requested size: 118.0419pt x 180.07413pt.
 <media/1a6_1.png, id=75, 450.68375pt x 78.2925pt>
 File: media/1a6_1.png Graphic file (type png)
 <use media/1a6_1.png>
-Package pdftex.def Info: media/1a6_1.png  used on input line 354.
+Package pdftex.def Info: media/1a6_1.png  used on input line 356.
 (pdftex.def)             Requested size: 180.2703pt x 31.31644pt.
 <media/1a6_2.png, id=76, 462.72874pt x 225.84375pt>
 File: media/1a6_2.png Graphic file (type png)
 <use media/1a6_2.png>
-Package pdftex.def Info: media/1a6_2.png  used on input line 354.
+Package pdftex.def Info: media/1a6_2.png  used on input line 356.
 (pdftex.def)             Requested size: 185.08821pt x 90.33589pt.
 
-Overfull \hbox (9.12265pt too wide) in paragraph at lines 354--354
+Overfull \hbox (9.12265pt too wide) in paragraph at lines 356--356
 [][] 
  []
 
 
-Overfull \hbox (13.94057pt too wide) in paragraph at lines 354--354
+Overfull \hbox (13.94057pt too wide) in paragraph at lines 356--356
 []  
  []
 
 [5
 
  <./media/1a6_1.png> <./media/1a6_2.png>]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 354--354
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 356--356
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/rocket.png Graphic file (type png)
 <use media/rocket.png>
-Package pdftex.def Info: media/rocket.png  used on input line 354.
+Package pdftex.def Info: media/rocket.png  used on input line 356.
 (pdftex.def)             Requested size: 118.0419pt x 180.07413pt.
 File: media/1a6_1.png Graphic file (type png)
 <use media/1a6_1.png>
-Package pdftex.def Info: media/1a6_1.png  used on input line 354.
+Package pdftex.def Info: media/1a6_1.png  used on input line 356.
 (pdftex.def)             Requested size: 180.2703pt x 31.31644pt.
 File: media/1a6_2.png Graphic file (type png)
 <use media/1a6_2.png>
-Package pdftex.def Info: media/1a6_2.png  used on input line 354.
+Package pdftex.def Info: media/1a6_2.png  used on input line 356.
 (pdftex.def)             Requested size: 185.08821pt x 90.33589pt.
 
-Overfull \hbox (9.12265pt too wide) in paragraph at lines 354--354
+Overfull \hbox (9.12265pt too wide) in paragraph at lines 356--356
 [][] 
  []
 
 
-Overfull \hbox (13.94057pt too wide) in paragraph at lines 354--354
+Overfull \hbox (13.94057pt too wide) in paragraph at lines 356--356
 []  
  []
 
@@ -1205,7 +1205,7 @@ Overfull \hbox (13.94057pt too wide) in paragraph at lines 354--354
 <media/v_more_t_histogram.png, id=216, 794.97pt x 614.295pt>
 File: media/v_more_t_histogram.png Graphic file (type png)
 <use media/v_more_t_histogram.png>
-Package pdftex.def Info: media/v_more_t_histogram.png  used on input line 426.
+Package pdftex.def Info: media/v_more_t_histogram.png  used on input line 428.
 (pdftex.def)             Requested size: 158.99118pt x 122.85681pt.
  [14
 
@@ -1220,10 +1220,10 @@ Package pdftex.def Info: media/v_more_t_histogram.png  used on input line 426.
 <media/screenshot_1a4.png, id=281, 460.72125pt x 245.91875pt>
 File: media/screenshot_1a4.png Graphic file (type png)
 <use media/screenshot_1a4.png>
-Package pdftex.def Info: media/screenshot_1a4.png  used on input line 463.
+Package pdftex.def Info: media/screenshot_1a4.png  used on input line 465.
 (pdftex.def)             Requested size: 230.36006pt x 122.95906pt.
 
-Overfull \vbox (2.57826pt too high) detected at line 463
+Overfull \vbox (2.57826pt too high) detected at line 465
  []
 
 [18
@@ -1251,7 +1251,7 @@ Overfull \vbox (2.57826pt too high) detected at line 463
 <media/drink-coffee.png, id=427, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 568.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 570.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [28
 
@@ -1259,7 +1259,7 @@ Package pdftex.def Info: media/drink-coffee.png  used on input line 568.
 <media/screenshot_1a5.png, id=439, 425.59pt x 248.93pt>
 File: media/screenshot_1a5.png Graphic file (type png)
 <use media/screenshot_1a5.png>
-Package pdftex.def Info: media/screenshot_1a5.png  used on input line 577.
+Package pdftex.def Info: media/screenshot_1a5.png  used on input line 579.
 (pdftex.def)             Requested size: 212.79446pt x 124.46469pt.
  [29
 
@@ -1267,7 +1267,7 @@ Package pdftex.def Info: media/screenshot_1a5.png  used on input line 577.
 <media/mb_vx.png, id=452, 1035.87pt x 610.28pt>
 File: media/mb_vx.png Graphic file (type png)
 <use media/mb_vx.png>
-Package pdftex.def Info: media/mb_vx.png  used on input line 585.
+Package pdftex.def Info: media/mb_vx.png  used on input line 587.
 (pdftex.def)             Requested size: 207.17032pt x 122.05383pt.
  [30
 
@@ -1278,7 +1278,7 @@ Package pdftex.def Info: media/mb_vx.png  used on input line 585.
 ]
 File: media/mb_vx.png Graphic file (type png)
 <use media/mb_vx.png>
-Package pdftex.def Info: media/mb_vx.png  used on input line 604.
+Package pdftex.def Info: media/mb_vx.png  used on input line 606.
 (pdftex.def)             Requested size: 207.17032pt x 122.05383pt.
  [33
 
@@ -1296,7 +1296,7 @@ Package pdftex.def Info: media/mb_vx.png  used on input line 604.
 <media/gausskurve.png, id=555, 628.3475pt x 504.88625pt>
 File: media/gausskurve.png Graphic file (type png)
 <use media/gausskurve.png>
-Package pdftex.def Info: media/gausskurve.png  used on input line 669.
+Package pdftex.def Info: media/gausskurve.png  used on input line 672.
 (pdftex.def)             Requested size: 125.66727pt x 100.97545pt.
  [39
 
@@ -1312,7 +1312,7 @@ Package pdftex.def Info: media/gausskurve.png  used on input line 669.
 <media/gausskurve_fwhm.png, id=638, 453.695pt x 306.14375pt>
 File: media/gausskurve_fwhm.png Graphic file (type png)
 <use media/gausskurve_fwhm.png>
-Package pdftex.def Info: media/gausskurve_fwhm.png  used on input line 722.
+Package pdftex.def Info: media/gausskurve_fwhm.png  used on input line 725.
 (pdftex.def)             Requested size: 226.84694pt x 153.07149pt.
  [44
 
@@ -1352,7 +1352,7 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1A_del1_av_2
 Here is how much of TeX's memory you used:
  25876 strings out of 478994
  510083 string characters out of 5858185
- 846643 words of memory out of 5000000
+ 846645 words of memory out of 5000000
  42627 multiletter control sequences out of 15000+600000
  421227 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1376,7 +1376,7 @@ xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on interaktive_forelesningsnotater_1A_del1_av_2.pdf (52 pages, 7
-59469 bytes).
+62779 bytes).
 PDF statistics:
  842 PDF objects out of 1000 (max. 8388607)
  676 compressed objects within 7 object streams
