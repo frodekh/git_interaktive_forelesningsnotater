@@ -424,7 +424,7 @@ def main():
         latex_tmp.write(latex_file_str)
         latex_tmp.close()
         output = subprocess.run(["pandoc", "-f", "latex", "-t", "html5", fname + '_tmp'], capture_output=True, text=True).stdout
-        #os.remove(fname + '_tmp')
+        os.remove(fname + '_tmp')
 
         debug_singlefile = ""
 

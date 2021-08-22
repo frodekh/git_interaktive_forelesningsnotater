@@ -1,11 +1,27 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
+
+\input{usercommands}
+
 \usetheme{Boadilla}
 %\usepackage{multimedia}
-\usepackage{animate}
+%\usepackage{animate}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage{cancel}
 \usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
 
 %gets rid of bottom navigation bars
 \setbeamertemplate{footline}[frame number]{}
@@ -35,6 +51,7 @@
 \definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
 \definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
 \definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
 
 \hypersetup{
     colorlinks=true,
@@ -66,59 +83,219 @@
 
 \newcommand{\pagenobutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = apricot, rounded corners = 5pt]{\color{brown(traditional)}\Large\insertbuttontext};}\beamerbutton{#1}}
 
+\newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
 
 \newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
-\newcommand{\nextpage}{\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
-\newcommand{\dnextpage}{\stepcounter{pageno}\stepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
 
 
-%  \node[
-%  inner xsep=10pt,
-%  draw=structure!80,
-%  fill=structure!50,
-%  rounded corners=4pt]  {\Large\insertbuttontext};}
-% structure!90
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
 
 \newcounter{pageno}
 \newcounter{nopages}
-\setcounter{nopages}{27}
+\setcounter{nopages}{28}
+
+\newcommand{\headline}{\small Introduksjon}
 
 \begin{document}
 
 
 %%%%% front
-\begin{frame}
-\label{front}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1A\\Interaktive forelesningsnotater: forelesning 2 av 2}}\\
-\vspace*{1cm}
-\begin{alertblock}{\center{\bf VIKTIG}}
-Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
-\end{alertblock}
-\vspace*{0.5cm}
-%\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
-
-\end{frame}
 
 \begin{frame}
 \label{front2}
 \center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1A\\Interaktive forelesningsnotater: forelesning 2 av 2}}\\
 \begin{block}{\center{\bf VIKTIG}}
-Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese de fulle forelesningsnotatene (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+Dette er et alternativ til forelesningen i emnet.  \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1a.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
 \end{block}
 %\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+\begin{frame}
+\label{front3}
+{\large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Normalt gir jeg enda kortere tid enn dette til å tenke under den fysiske forelesningen. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær! Det er ikke nederlag, dette er ikke noe dere er forventet å kunne men en del av læringsprosessen.
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
 \hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
 %%%%% intro
 \begin{frame}
 \label{intro}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
-Velkommen til forelesning 2 i del 1A! Vi fortsetter nå der vi slapp med noen eksempler fra ukeoppgavene. Men før du setter igang, sjekk om du har kontroll på temaene fra første forelesning i del 1A:
+\hyperlink{front2}{\pagebutton{Forrige side}}\\
+Velkommen til forelesning 2 i del 1A! Dette forelesningsnotatet tilsvarer omtrent en dobbelttime forelesning. Vi fortsetter nå der vi slapp med noen eksempler fra ukeoppgavene. Men før du setter igang, sjekk om du har kontroll på temaene fra første forelesning i del 1A:
 \begin{enumerate}
 \item Hva er Maxwell-Boltzmannfordelingen, hvilke varianter av den finnes, hva sier den oss og hvordan brukes den?
 \item Hva sier bredden av Maxwell-Boltzmannfordelingen deg om gassen?
@@ -137,10 +314,10 @@ Kun når du har \textcolor{red}{\bf full kontroll} på alt dette kan du gå vide
 \begin{columns}
 \column{0.5\textwidth}
 \lastpagebutton{intro}
-\includegraphics[scale=0.4]{screenshot_1a1.png}\\
+\includegraphics[scale=0.4]{media/screenshot_1a1.png}\\
 \column{0.5\textwidth}
 Tenk gjennom og diskuter hvordan du vil løse oppgavene. Du trenger ikke nødvendigvis løse de nå, men ha en klar ide om hvordan de kan løses...
-Når du har det kan du gå til \hyperlink{stat8}{\pagebutton{Neste side}}
+Når du har det kan du gå til \hyperlink{stat8}{\pagebutton{Neste side}} {\bf Bruk maks 3 minutter til å tenke, finner du ikke ut av det, ta en kikk på hintet på neste side!}
 \end{columns}
 \end{frame}
 
@@ -150,10 +327,10 @@ Når du har det kan du gå til \hyperlink{stat8}{\pagebutton{Neste side}}
 \column{0.5\textwidth}
 \lastpagebutton{stat7}
 Hvis du er usikker på hvordan oppgavene løses, så kan du få et par hint i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_11.mp4}{denne videoen}. Her er neste utfordring:
-\includegraphics[scale=0.4]{screenshot_1a2_1.png}\\
+\includegraphics[scale=0.4]{media/screenshot_1a2_1.png}\\
 \column{0.5\textwidth}
-\includegraphics[scale=0.4]{screenshot_1a2_2.png}\\
-Tenk igjen nøye gjennom hvordan du vil gå frem å løse dette. Det er viktig at du diskuterer denne med medstudenter. Her får du ikke noe svar, hvis du er veldig usikker, spør gruppelærer!
+\includegraphics[scale=0.4]{media/screenshot_1a2_2.png}\\
+Tenk igjen nøye gjennom hvordan du vil gå frem å løse dette. Det er viktig at du diskuterer denne med medstudenter. Her får du ikke noe svar, hvis du er veldig usikker, spør gruppelærer! {\bf Bergens tenketiden din til 3-4 minutter nå, fortsett senere når du skal gjøre oppgaven.}
 \hyperlink{stat9}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -161,12 +338,12 @@ Tenk igjen nøye gjennom hvordan du vil gå frem å løse dette. Det er viktig a
 \begin{frame}
 \label{stat9}
 \lastpagebutton{stat8}
-Vi gir oss ikke med utfordringer her. Nå skal du prøve å oppdage en svært viktig statistisk regel gjennom å tenke det frem til løsningen på denne utfordringen:
+Vi gir oss ikke med utfordringer her. Nå skal du prøve å oppdage en svært viktig statistisk regel gjennom å tenke deg frem til løsningen på denne utfordringen:
 \begin{block}{\bf Hva iallverden har dette med astrofysikk å gjøre???}
 Anta at $P(h$) er sannsynlighetsfordelingen for kroppshøyden $h$ til en person, anta også at $P(IQ)$ er sannsynlighetsfordelingen for IQ til en person. Anta at disse er Gaussike fordelinger (noe som stemmer rimelig godt). Ved å bruke disse fordelingene, hvordan kunne du regne ut sannsynligheten for at en tilfeldig valgt person har både høyde og IQ over gjennomsnittet? (anta at det ikke er noen sammenheng mellom å være høy og å være intelligent). Hvis du kjenner en spesiell statistisk regel for å gjøre dette, glem den regelen nå og bruk kun logisk resonnement for å finne svaret.\\
 \end{block}
 På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men først, tror du svaret er:\\
-\hyperlink{feilprob}{\choicebutton{0\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{20\%}}\ \ \ \ \hyperlink{rettprob}{\choicebutton{25\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{50\%}}\\
+\hyperlink{feilprob}{\choicebutton{0\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{20\%}}\ \ \ \ \hyperlink{riktigprob}{\choicebutton{25\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{50\%}}\\
 \hyperlink{feilprob}{\choicebutton{60\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{75\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{90\%}}\ \ \ \ \hyperlink{feilprob}{\choicebutton{100\%}}\\
 \end{frame}
 
@@ -185,7 +362,7 @@ På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men 
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rettprob}
+\label{riktigprob}
 \clastpagebutton{stat9}
 HELT RIKTIG!
 Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_12.mp4}{denne videoen} nå for å lære en svært viktig regel for sannsynligheter og for å se hvordan du kan tenke for å komme frem til svaret på utfordringen. Ikke gå videre før du har forstått hva videoen prøver å forklare.
@@ -219,7 +396,7 @@ P(\vec{v}) = \left(\frac{m}{2\pi kT}\right)^{3/2}e^{-\frac{1}{2}\frac{mv^2}{kT}}
 \]
 der $v=|\vec{v}|$.
 \end{block}
-Hvis du ikke ser hvordan det kan gjøres, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_13.mp4}{denne videoen}.
+Tenk i maks 2-3 minutter. Hvis du ikke ser hvordan det kan gjøres, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_13.mp4}{denne videoen}.
 \hyperlink{stat11}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -229,10 +406,10 @@ Hvis du ikke ser hvordan det kan gjøres, ta en titt på \href{https://www.uio.n
 \column{0.5\textwidth}
 \lastpagebutton{stat10}
 La oss ta en titt på utdraget av resten av oppgave 1A.1:\\
-\includegraphics[scale=0.4]{screenshot_1a1_4.png}\\
+\includegraphics[scale=0.4]{media/screenshot_1a1_4.png}\\
 \column{0.5\textwidth}
-\includegraphics[scale=0.4]{screenshot_1a1_3.png}\\
-Diskuter med medstudenter hvordan du kan løse disse oppgavene. For øyeblikket er det viktigste at du ser {\bf hvordan} du skal gå frem for å løse dette.
+\includegraphics[scale=0.4]{media/screenshot_1a1_3.png}\\
+Diskuter med medstudenter hvordan du kan løse disse oppgavene. For øyeblikket er det viktigste at du ser {\bf hvordan} du skal gå frem for å løse dette. {\bf Tenk i maks 1 minutt på hver deloppgave.}
 \hyperlink{stat12}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -241,8 +418,8 @@ Diskuter med medstudenter hvordan du kan løse disse oppgavene. For øyeblikket 
 \label{stat12}
 \lastpagebutton{stat11}
 Hvis du ikke så hvordan oppgaven på forrige side skulle løses, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_14.mp4}{denne korte videoen} for litt hint.\\
-Du har allerede brynet deg på den første deloppgaven av 1A.4. Ta en kikk nå på den andre:\\
-\includegraphics[scale=0.4]{screenshot_1a4_all.png}\\
+Du har allerede (tidligere) brynet deg på den første deloppgaven av 1A.4. Ta en kikk nå på den andre:\\
+\includegraphics[scale=0.4]{media/screenshot_1a4_all.png}\\
 Denne gangen får du ikke hjelp, spør gruppelærer hvis du er i tvil.\\
 \hyperlink{stat13}{\pagebutton{Neste side}}
 \end{frame}
@@ -255,18 +432,32 @@ Denne gangen får du ikke hjelp, spør gruppelærer hvis du er i tvil.\\
 La oss nå gå tilbake til rakettmotoren vår i oppgave 1A6 (innleveringsoppgave).
  Utdrag fra oppgave 1A6:\\
  \vspace{0.5cm}
-\includegraphics[scale=0.35]{1a6_1.png}
-\includegraphics[scale=0.35]{1a6_2.png}\\
+\includegraphics[scale=0.35]{media/1a6_1.png}
+\includegraphics[scale=0.35]{media/1a6_2.png}\\
 \column{0.5\textwidth}
 Vi skal nå se på andre deloppgave:\\
 \vspace{0.5cm}
-\includegraphics[scale=0.35]{1a6_3.png}\\
+\includegraphics[scale=0.35]{media/1a6_3.png}\\
 Her kan du få bruk for \href{https://docs.python.org/2/library/random.html}{random-klassen (link)} i python. Spesielt bør du lese om \href{https://pynative.com/python-random-seed/}{\tt random.seed}, \href{https://kite.com/python/docs/random.gauss}{\tt random.gauss} og \href{https://kite.com/python/docs/random.uniform}{\tt random.uniform}.
 Er du enda usikker på hvordan du skal gjøre dette, så kan du få noen hint i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_15.mp4}{denne videoen}
-\hyperlink{ideelgass1}{\pagebutton{Neste side}}
+\hyperlink{pause}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 
+{
+\setbeamercolor{background canvas}{bg=cyan}
+\begin{frame}
+\label{pause}
+\hyperlink{stat13}{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{Kaffe?}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+\small Tiden har kommet for en god strekk på bena! Og helle på med en mørk væske som har høye partikkelhastigheter. Ta deg en ekstra god pause nå, fordi du etter pausen for alvor skal begynne å se på konstruksjon av rakettmotoren din.
+}\\
+\vspace*{0.5cm}
+\hyperlink{ideelgass1}{\pagebutton{Ok, jeg begynner å bli klar for romreise...}}
+\end{frame}
+}
 
 \begin{frame}
 \label{ideelgass1}
@@ -328,7 +519,7 @@ Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være
 \item[] \hypertarget<.>{elkoll5}{}
 \end{itemize}
 \vspace*{-0.5cm}
- Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret
+ Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?
 \hyperlink{elkoll6}{\pagebutton{Trykk her når du er enig, ikke før!}}
 \pause
 \begin{itemize}[<+->]
@@ -350,7 +541,7 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer \hyperlink{idee
 \addtocounter{pageno}{1}
 \dlastpagebutton{ideelgass3}
 Her ser vi situasjonen illustrert:\\
-\includegraphics[scale=0.6]{elcol.png}\\
+\includegraphics[scale=0.6]{media/elcol.png}\\
 \hyperlink{trykk1}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -363,10 +554,10 @@ Tenk deg om før du \hyperlink{trykkbutton1}{\pagebutton{trykker på denne knapp
 \pause
 \addtocounter{pageno}{-1}
 \begin{itemize}[<+->]
-\item[]  Er du enig i at partiklene utøver en kraft på veggen hver gang du treffer?\hypertarget<.>{trykkbutton1}{}
+\item[]  Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?\hypertarget<.>{trykkbutton1}{}
 \end{itemize}
 Kan det hjelpe deg litt med definisjonen?
-Tenk deg om igjen og \hyperlink{trykkbutton2}{\pagebutton{trykker på denne knappen}}
+Tenk deg om igjen og \hyperlink{trykkbutton2}{\pagebutton{trykk på denne knappen}}
 \pause
 \begin{itemize}[<+->]
 \item[]  Definisjon: \hypertarget<.>{trykkbutton2}{}
@@ -389,7 +580,7 @@ Kraft kan skrives som
 \[
 F = \frac{\Delta p}{\Delta t}
 \]
-altså endring i bevegelsesmengde per tid. Hvilken endring $\Delta p$ i bevegelsesmengde får en gasspartikkel med masse $m$ og x-hastighet $v_x$ på veggen ved kollisjon (anta ideel gass og dermed elastisk kollisjon)?\\
+altså endring i bevegelsesmengde per tid. Hvilken endring $\Delta p$ i bevegelsesmengde får en gasspartikkel med masse $m$ og x-hastighet $v_x$ på veggen ved kollisjon (anta ideel gass og dermed elastisk kollisjon)? {\bf (Bruk maks 2 min. til å tenke!)} \\
 \hyperlink{feilp}{\choicebutton{$|\Delta p| = mv_x$}}\ \ \ \ \hyperlink{feilp}{\choicebutton{$|\Delta p| = mv_x^2$}}\ \ \ \ \hyperlink{riktigp}{\choicebutton{$|\Delta p| = 2mv_x$}}\ \ \ \ \hyperlink{feilp}{\choicebutton{$|\Delta p| = \frac{1}{2}mv_x^2$}}\ \ \ \ \hyperlink{feilp}{\choicebutton{$|\Delta p| = 4mv_x$}}\\
 \end{frame}
 
@@ -420,7 +611,7 @@ Endring i bevegelsesmengde er lik bevegelsesmengden etter minus bevegelsesmengde
 \]
 Kraften som en partikkel utøver på veggen ved kollisjoner altså
 \[
-f = \frac{2p_x}{\Delta t}
+f = \frac{\Delta p}{\Delta t} = \frac{2p_x}{\Delta t}
 \]
 Men hva skal vi bruke som tiden her??? For å komme videre slik at vi kan finne et uttrykk for gasstrykket så trenger vi denne.
 For å finne ut av dette og dermed kunne utlede gasstrykket, så skal vi se på et bittelite volum $dV$ av gass rett ved en vegg. Vi antar at det lille volumet vårt har form som en sylinder eller som en rektangulær boks med lengde $\Delta x$ og endesideflater med areal $A$. \\
@@ -433,7 +624,7 @@ På neste side skal vi se nærmere på boksen...
 \label{trykk3}
 \lastpagebutton{trykk2}
 Her er den:\\
-\includegraphics[scale=0.5]{cylinder.png}\\
+\includegraphics[scale=0.5]{media/cylinder.png}\\
 Vi skal nå beregne den totale tiden det tar for alle partiklene i denne boksen å ha truffet veggen som ligger på høyre side av boksen.
 Først skal vi kun se på partiklene som har en gitt absoluttverdi $v_x$ av hastigheten. Du kan se disse partiklene i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_integral.mov?vrtx=view-as-webpage}{denne videoen}.
 De røde partiklene er de med hastighet $v_x$ på vei mot veggen på høyre side, de blå partiklene har hastighet $-v_x$ og er på vei vekk fra veggen (dvs. de har allerede kollidert med veggen tidligere.
@@ -444,7 +635,7 @@ De røde partiklene er de med hastighet $v_x$ på vei mot veggen på høyre side
 \label{trykk4}
 \lastpagebutton{trykk3}
 Hvor lang tid tar det før alle de røde partiklene har truffet veggen? (husk $\Delta x$ er lengden av boksen, $v_x$ er absoluttverdi av hastighetskomponent i x-retning som er lik for alle partikler og $A$ er arealet av endesideflatene)\\
-Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_integral.mov?vrtx=view-as-webpage}{videoen igjen}.\\
+Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_integral.mov?vrtx=view-as-webpage}{videoen igjen}. {\bf (Bruk maks 2 min. til å tenke!)}\\
 \hyperlink{feilt}{\choicebutton{$\Delta t = v_x \Delta t$}}\ \ \ \ \hyperlink{feilt}{\choicebutton{$\Delta t = \frac{v_x}{A}$}}\ \ \ \ \hyperlink{feilt}{\choicebutton{$\Delta t = \frac{v_x}{\Delta x}$}}\ \ \ \ \hyperlink{riktigt}{\choicebutton{$\Delta t = \frac{\Delta x}{v_x}$}}\ \ \ \ \hyperlink{feilt}{\choicebutton{$\Delta t = 2v_x\Delta x$}}
 \end{frame}
 
@@ -483,9 +674,9 @@ Ikke gå til neste side før du har svaret!
 Den blå ballen til venstre har beveget seg en strekning i negativ x-retning på $\Delta x$ siden den traff veggen med hastighet $v_x$, den traff dermed veggen en tid $\Delta x/v_x$ før videoen starter. Alle andre blå baller traff senere, altså kortere tid siden, fordi disse enda er nærmere veggen.\\
  Konklusjonen vår er at alle ballene i boksen traff veggen i løpet av totalt tiden $2\Delta x/v_x$. Og de 'la igjen' en bevegelsemengde $N\times2p_x$ der $N$ er antall partikler, Total kraft på veggen er dermed
 \[
-F = \frac{2Np_x}{2\Delta x/v_x} = \frac{Nv_xp_x}{\Delta x}
+F = \frac{\Delta p}{\Delta t} = N\times\frac{2p_x}{2\Delta x/v_x} = \frac{Nv_xp_x}{\Delta x}
 \]
-I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_16.mp4}{denne videoen} tar vi dette uttrykkt videre og utleder trykkintegralet:
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_16.mp4}{denne videoen} tar vi dette uttrykket videre og utleder trykkintegralet:
 \[
 P = \frac{1}{3}\int_0^\infty vp\;n(p)dp,
 \]
@@ -548,23 +739,23 @@ der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og
 \lastpagebutton{rakettmotor1}
 {\bf\large Men hva gjør du hvis koden ikke funker som den skal?\\
 Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du da?}
-\hyperlink{fdebug}{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ \hyperlink{rdebug}{\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
+\hyperlink{feildebug}{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ \hyperlink{riktigdebug}{\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{fdebug}
+\label{feildebug}
 \lastpagebutton{rakettmotor1b}
 \textcolor{white}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!\\}
-\hyperlink{rdebug}{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
+\hyperlink{riktigdebug}{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rdebug}
+\label{riktigdebug}
 \clastpagebutton{rakettmotor1b}
 Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til å debugge en kode. Her er noen tips hvis gassboksen og/eller rakettmotoren ikke gir de resultater som du forventer. Vi begynner med gassboks {\bf uten hull}.
 {\small
@@ -581,7 +772,7 @@ Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til �
 
 \begin{frame}
 \label{rakettmotor2}
-\lastpagebutton{rdebug}
+\lastpagebutton{riktigdebug}
 Og det bringer oss tilbake til spørsmålet vi hadde helt i starten!
 \begin{enumerate}
 \item Hvor mye bevegelsesmengde slipper ut av hullet for hver partikkel som slipper ut?
@@ -609,6 +800,7 @@ Hvis nå motoren uten hull gir fornuftig trykk, midlere partikkelenergi etc., da
 \begin{frame}
 \label{sammendrag}
 \lastpagebutton{rakettmotor2b}
+{\scriptsize
 Gratulerer, du er ferdig med Del 1A av AST2000. Dette bør du nå kunne svare på før du går videre:
 \begin{enumerate}
 \item Hva er, og hvordan bruker man, en statistisk fordelingsfunksjon? (eller sannsynlighetstetthet)
@@ -620,6 +812,8 @@ Gratulerer, du er ferdig med Del 1A av AST2000. Dette bør du nå kunne svare p�
 \item Hva gjør at en rakett akselererer?
 \item Hvordan går du frem for å beregne egenskapene en gass trenger i en rakettmotor for å få en gitt akselrasjon?
 \end{enumerate}
+    {\bf Det anbefales nå at du sjekke \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1a.pdf}{kortsvarsoppgavene} til del 1A for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+    }
 \end{frame}
 
 \end{document}
