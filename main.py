@@ -339,7 +339,7 @@ def create_hub_nav_html(fname: str) -> None:
             category += key
             category += "/"
             category += file
-            category += r'/front.html'
+            category += r'/front2.html'
             category += r'" class="lecture-link">'
             category += file
             category += r'</button></li>'  + '\n'
@@ -392,7 +392,13 @@ def main():
         
         latex_substitutions = [
             ('\\\\(?:begin|end)\{minipage\}(?:\{.*?\})?', ''),
-            ('\\\\newcommand\{\\\\padletbutton\}\{(.*?)\}.*', '\\\\newcommand{\\\\padletbutton}{\\1}{PADLET}}'),
+            #('\\\\newcommand\{\\\\padletbutton\}\{(.*?)\}.*', '\\\\newcommand{\\\\padletbutton}{\\1}{PADLET}}'),
+            ('\\\\newcommand\{\\\\forumbutton\}\{(.*?)\}.*', '\\\\newcommand{\\\\forumbutton}{\\1}{FORUM}}'),
+            # The two lines following this is the start of a failed atempt at implementing a general fix for hypertargets
+            # I'd recommend doing this at some point, as hypertargets are used to reveal text in later lecture notes
+            # So far this has been fixed manually in 1B/del1/enhetsvektorer2 for example
+            #('\\\\begin\{itemize\}\[<\+\->\]\n\\\\item\[\](.*?)\\\\hypertarget<.>\{.*?\}\{\}\n\\\\end\{itemize\}', '\\\\begin{exampleblock}{}\1\\\\end{exampleblock}'),
+            #('\\\\begin\{itemize\}\[<\+\->\]\n\\\\item\[\](.*?)\\\\hypertarget<\.>\{(?:.*?)\}\{\}\n\\\\end\{itemize\}', '\\\\begin{itemize}[<+->]\n\\item[]\1\n\\end{itemize}'),
             ('\\\\Changey\[1\]\[yellow\]\{2\}', '🙂'),
             ('\\\\Changey\[1\]\[yellow\]\{-2\}', '🙁'),
             ('(\\\\newcommand{\\\\(?:d?next|cur)page).*', '\\1}{}'),
@@ -404,15 +410,6 @@ def main():
         
         for subpair in latex_substitutions:
             latex_file_str = re.sub(subpair[0], subpair[1], latex_file_str)
-
-        """
-        latex_file_str = re.sub('\\\\(?:begin|end)\{minipage\}(?:\{.*?\})?', '', latex_file_str)
-        latex_file_str = re.sub('\\\\newcommand\{\\\\padletbutton\}\{(.*?)\}.*', '\\\\newcommand{\\\\padletbutton}{\\1}{PADLET}}', latex_file_str)
-        latex_file_str = re.sub('\\\\Changey\[1\]\[yellow\]\{2\}', '🙂', latex_file_str)
-        latex_file_str = re.sub('\\\\Changey\[1\]\[yellow\]\{-2\}', '🙁', latex_file_str)
-        latex_file_str = re.sub('(\\\\newcommand{\\\\(?:d?next|cur)page).*', '\\1}{}', latex_file_str)
-        latex_file_str = re.sub('\\\\newcommand\{(\\\\(?:.*?)button)\}\[1\]\{\\\\setbeamer.*', '\\\\newcommand{\\1}[1]{#1}', latex_file_str)
-        """
 
         hypertargets = re.findall('\\\\hyperlink\{(.*?)\}\{.*?\}+\s\\\\hypertarget<\.>\{(.*?)\}', latex_file_str)
         for target in hypertargets:
@@ -432,16 +429,21 @@ def main():
 
             html_substitutions = [
                 ('\[.*?\]', ''),
-                ('<img src="(.*?)"', '<img src="../media/\\1"'),
-                ('<a href="(https:\/\/www.uio.*?.mp4)">(.*?)<\/a>', '\\2 <video width="320" height="240" controls><source src="\\1" type="video/mp4">Your browser does not support the video tag.</video><br>'),
+                # Removed after Frode changed structure of LaTeX-code
+                #('<img src="(.*?)"', '<img src="../media/\\1"'),
+                # Replaced with this to mach new path
+                ('<img src="(.*?)"', '<img src="../\\1"'),
+                ('<a href="(https:\/\/www.uio.*?.(?:mp4|mov))(?:\\?vrtx=view-as-webpage)?">(.*?)<\/a>', '\\2 <video width="320" height="240" controls><source src="\\1" type="video/mp4">Your browser does not support the video tag.</video><br>'),
                 ('<a href="#(.*?)">(.*?)</a>', '<a href="\\1.html">\\2</a>'),
                 (' ', ' '),
+                #('style="color: white"', 'style="color: red"'),
+                ('<a href="https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t">FORUM</a>', '<a href="https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t" target="_blank" class="forum-button">FORUM</a>'),
+                ('<a href="https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16">FORUM</a>', '<a href="https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16" target="_blank" class="forum-button">FORUM</a>'),
                 ('<a href="(.*?)">Trykk her (.*?)<\/a>', '<a href="\\1" class="trykkher">Trykk her \\2</a>'),
                 ('<a href="(.*?)">(Forrige|Neste) side<\/a>', '<a href="\\1" class="nesteforrigeside">\\2 side</a>'),
                 ('<a href="(.*?)">(Forrige|Neste) side<\/a>', '<a href="\\1" class="nesteforrigeside">\\2 side</a>'),
                 ('<a href="(.*?)">(Ja|Nei)<\/a>', '<a href="\\1" class="janei">\\2</a>'),
-                ('<a href="(.*?)">🙂 🙁<\/a>', '<a href="\\1" class="🙂🙁">🙂 🙁</a>'),
-                ('style="color: white"', 'style="color: red"')
+                ('<a href="(.*?)">🙂 🙁<\/a>', '<a href="\\1" class="🙂🙁">🙂 🙁</a>')
             ]
 
             for subpair in html_substitutions:
