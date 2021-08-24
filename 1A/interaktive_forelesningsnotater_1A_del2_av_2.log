@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 AUG 2021 09:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  24 AUG 2021 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,24 +907,24 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 61.
 (./interaktive_forelesningsnotater_1A_del2_av_2.aux)
 \openout1 = `interaktive_forelesningsnotater_1A_del2_av_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -982,7 +982,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 266.
+Package hyperref Info: Link coloring ON on input line 268.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -996,66 +996,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 266.
-LaTeX Info: Redefining \pageref on input line 266.
-LaTeX Info: Redefining \nameref on input line 266.
+LaTeX Info: Redefining \ref on input line 268.
+LaTeX Info: Redefining \pageref on input line 268.
+LaTeX Info: Redefining \nameref on input line 268.
  (./interaktive_forelesningsnotater_1A_del2_av_2.out)
 (./interaktive_forelesningsnotater_1A_del2_av_2.out)
 \@outlinefile=\write5
 \openout5 = `interaktive_forelesningsnotater_1A_del2_av_2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 266.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 268.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 268.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 268.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 266.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 268.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 266.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 268.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 266.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 266.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 268.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 266.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 266.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 268.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 268.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 266.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 266.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 266.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 268.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 266.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 266.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 268.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 268.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
-66.
+68.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 2
-66.
+68.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 266.
+ut line 268.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1092,19 +1092,19 @@ Dictionary: translator-theorem-dictionary, Language: English
 [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 308
+LaTeX Font Info:    Trying to load font information for U+msa on input line 310
 .
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 308
+LaTeX Font Info:    Trying to load font information for U+msb on input line 310
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 308.
+ut line 310.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1112,41 +1112,41 @@ thkerncmss.
 ) [3
 
 ]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 322--322
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 324--324
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/screenshot_1a1.png, id=64, 434.62375pt x 506.89375pt>
 File: media/screenshot_1a1.png Graphic file (type png)
 <use media/screenshot_1a1.png>
-Package pdftex.def Info: media/screenshot_1a1.png  used on input line 322.
+Package pdftex.def Info: media/screenshot_1a1.png  used on input line 324.
 (pdftex.def)             Requested size: 173.8464pt x 202.7539pt.
 
-Overfull \hbox (2.69876pt too wide) in paragraph at lines 322--322
+Overfull \hbox (2.69876pt too wide) in paragraph at lines 324--324
 [][]  
  []
 
 [4
 
  <./media/screenshot_1a1.png>]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 336--336
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 338--338
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/screenshot_1a2_1.png, id=78, 422.57875pt x 358.33875pt>
 File: media/screenshot_1a2_1.png Graphic file (type png)
 <use media/screenshot_1a2_1.png>
-Package pdftex.def Info: media/screenshot_1a2_1.png  used on input line 336.
+Package pdftex.def Info: media/screenshot_1a2_1.png  used on input line 338.
 (pdftex.def)             Requested size: 169.0285pt x 143.33296pt.
 <media/screenshot_1a2_2.png, id=79, 428.60126pt x 199.74625pt>
 File: media/screenshot_1a2_2.png Graphic file (type png)
 <use media/screenshot_1a2_2.png>
-Package pdftex.def Info: media/screenshot_1a2_2.png  used on input line 336.
+Package pdftex.def Info: media/screenshot_1a2_2.png  used on input line 338.
 (pdftex.def)             Requested size: 171.43745pt x 79.89708pt.
 [5
 
  <./media/screenshot_1a2_1.png> <./media/screenshot_1a2_2.png>]
-Overfull \vbox (0.15967pt too high) detected at line 348
+Overfull \vbox (0.15967pt too high) detected at line 350
  []
 
 [6
@@ -1160,19 +1160,19 @@ Overfull \vbox (0.15967pt too high) detected at line 348
 ] [10
 
 ]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 415--415
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 417--417
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/screenshot_1a1_4.png, id=196, 425.59pt x 214.8025pt>
 File: media/screenshot_1a1_4.png Graphic file (type png)
 <use media/screenshot_1a1_4.png>
-Package pdftex.def Info: media/screenshot_1a1_4.png  used on input line 415.
+Package pdftex.def Info: media/screenshot_1a1_4.png  used on input line 417.
 (pdftex.def)             Requested size: 170.23297pt x 85.91946pt.
 <media/screenshot_1a1_3.png, id=197, 410.53375pt x 231.86626pt>
 File: media/screenshot_1a1_3.png Graphic file (type png)
 <use media/screenshot_1a1_3.png>
-Package pdftex.def Info: media/screenshot_1a1_3.png  used on input line 415.
+Package pdftex.def Info: media/screenshot_1a1_3.png  used on input line 417.
 (pdftex.def)             Requested size: 164.21059pt x 92.74484pt.
 [11
 
@@ -1180,29 +1180,29 @@ Package pdftex.def Info: media/screenshot_1a1_3.png  used on input line 415.
 <media/screenshot_1a4_all.png, id=211, 436.63126pt x 349.305pt>
 File: media/screenshot_1a4_all.png Graphic file (type png)
 <use media/screenshot_1a4_all.png>
-Package pdftex.def Info: media/screenshot_1a4_all.png  used on input line 425.
+Package pdftex.def Info: media/screenshot_1a4_all.png  used on input line 427.
 (pdftex.def)             Requested size: 174.6494pt x 139.71951pt.
  [12
 
  <./media/screenshot_1a4_all.png>]
-Overfull \hbox (98.42868pt too wide) in paragraph at lines 445--445
+Overfull \hbox (98.42868pt too wide) in paragraph at lines 447--447
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/1a6_1.png, id=223, 450.68375pt x 78.2925pt>
 File: media/1a6_1.png Graphic file (type png)
 <use media/1a6_1.png>
-Package pdftex.def Info: media/1a6_1.png  used on input line 445.
+Package pdftex.def Info: media/1a6_1.png  used on input line 447.
 (pdftex.def)             Requested size: 157.74167pt x 27.40277pt.
 <media/1a6_2.png, id=224, 462.72874pt x 225.84375pt>
 File: media/1a6_2.png Graphic file (type png)
 <use media/1a6_2.png>
-Package pdftex.def Info: media/1a6_2.png  used on input line 445.
+Package pdftex.def Info: media/1a6_2.png  used on input line 447.
 (pdftex.def)             Requested size: 161.95749pt x 79.04648pt.
 <media/1a6_3.png, id=225, 411.5375pt x 195.73125pt>
 File: media/1a6_3.png Graphic file (type png)
 <use media/1a6_3.png>
-Package pdftex.def Info: media/1a6_3.png  used on input line 445.
+Package pdftex.def Info: media/1a6_3.png  used on input line 447.
 (pdftex.def)             Requested size: 144.04028pt x 68.50696pt.
 [13
 
@@ -1210,7 +1210,7 @@ Package pdftex.def Info: media/1a6_3.png  used on input line 445.
 <media/drink-coffee.png, id=244, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 459.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 461.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [14
 
@@ -1222,125 +1222,105 @@ Package pdftex.def Info: media/drink-coffee.png  used on input line 459.
 
 ] [18
 
-] [19
+]
+
+LaTeX Warning: Command \o invalid in math mode on input line 542.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 542.
+
+[19
 
 ]
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 564.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 564.
 
 [20
 
 ]
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 586.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 586.
 
 [21
 
 ]
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 608.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 608.
 
 [22
 
 ]
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 630.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 536.
+LaTeX Warning: Command \o invalid in math mode on input line 630.
 
 [23
 
 ]
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-[24
-
-]
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-[25
-
-]
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-[26
-
-]
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 536.
-
-[27
-
-]
-<media/elcol.png, id=433, 351.3125pt x 310.15875pt>
+<media/elcol.png, id=358, 351.3125pt x 310.15875pt>
 File: media/elcol.png Graphic file (type png)
 <use media/elcol.png>
-Package pdftex.def Info: media/elcol.png  used on input line 546.
+Package pdftex.def Info: media/elcol.png  used on input line 638.
 (pdftex.def)             Requested size: 210.78911pt x 186.09668pt.
- [28
+ [24
 
- <./media/elcol.png>] [29
+ <./media/elcol.png>] [25
 
-] [30
+] [26
 
-] [31
+] [27
 
-] [32
+] [28
+
+]
+
+LaTeX Warning: Command \o invalid in math mode on input line 727.
+
+[29
+
+]
+
+LaTeX Warning: Command \o invalid in math mode on input line 749.
+
+[30
+
+]
+<media/cylinder.png, id=455, 384.43625pt x 153.57375pt>
+File: media/cylinder.png Graphic file (type png)
+<use media/cylinder.png>
+Package pdftex.def Info: media/cylinder.png  used on input line 761.
+(pdftex.def)             Requested size: 192.21765pt x 76.78668pt.
+ [31
+
+ <./media/cylinder.png>] [32
 
 ] [33
 
-]
+] [34
 
-LaTeX Warning: Command \o invalid in math mode on input line 598.
+] [35
 
-[34
+] [36
 
-]
-
-LaTeX Warning: Command \o invalid in math mode on input line 620.
-
-[35
-
-]
-<media/cylinder.png, id=572, 384.43625pt x 153.57375pt>
-File: media/cylinder.png Graphic file (type png)
-<use media/cylinder.png>
-Package pdftex.def Info: media/cylinder.png  used on input line 632.
-(pdftex.def)             Requested size: 192.21765pt x 76.78668pt.
- [36
-
- <./media/cylinder.png>] [37
+] [37
 
 ] [38
 
 ] [39
 
-] [40
+]
+[40
 
 ] [41
 
@@ -1351,23 +1331,12 @@ Package pdftex.def Info: media/cylinder.png  used on input line 632.
 ] [44
 
 ]
+Overfull \vbox (1.49185pt too high) detected at line 950
+ []
+
 [45
 
 ] [46
-
-] [47
-
-] [48
-
-] [49
-
-]
-Overfull \vbox (1.49185pt too high) detected at line 797
- []
-
-[50
-
-] [51
 
 ]
 \tf@nav=\write6
@@ -1385,10 +1354,10 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1A_del2_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25837 strings out of 478994
- 509850 string characters out of 5858185
- 854507 words of memory out of 5000000
- 42596 multiletter control sequences out of 15000+600000
+ 25856 strings out of 478994
+ 510074 string characters out of 5858185
+ 848912 words of memory out of 5000000
+ 42625 multiletter control sequences out of 15000+600000
  421367 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,12n,132p,1136b,1207s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1409,11 +1378,11 @@ texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on interaktive_forelesningsnotater_1A_del2_av_2.pdf (51 pages, 1
-000220 bytes).
+Output written on interaktive_forelesningsnotater_1A_del2_av_2.pdf (46 pages, 9
+77691 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 688 compressed objects within 7 object streams
- 149 named destinations out of 1000 (max. 500000)
- 427 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 728 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
