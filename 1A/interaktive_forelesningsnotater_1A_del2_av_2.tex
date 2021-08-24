@@ -79,6 +79,8 @@
 
 \newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
 
+\newcommand{\whitepagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = white, rounded corners = 8pt]{\color{white}\Large\insertbuttontext};}}
+
 \newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
 
 \newcommand{\pagenobutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = apricot, rounded corners = 5pt]{\color{brown(traditional)}\Large\insertbuttontext};}\beamerbutton{#1}}
@@ -469,99 +471,227 @@ Nå som vi vet hvordan lage gasspartiklene i rakettmotoren vår, så gjenstår n
 \end{itemize}
 De aller fleste gasser der temperaturen ikke er veldig høy eller veldig lav er gode tilnærmelser til ideele gasser.
 Men hva innebærer \textcolor{red}{elastiske kollisjoner}? Kan du huske det fra mekanikken? Tenk nøye gjennom det før du går videre!
-\hyperlink{ideelgass2}{\pagebutton{Neste side}}
+\hyperlink{ideelgass2_a}{\pagebutton{Neste side}}
 \end{frame}
 
 \begin{frame}
-\label{ideelgass2}
+\label{ideelgass2_a}
 \lastpagebutton{ideelgass1}
-I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{elkoll}{\pagebutton{Trykk her}}
-\pause
 \addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] ... den kinetiske energien til partiklene den samme før og etter kollisjonen ... \hypertarget<.>{elkoll}{}
-\end{itemize}
-Det betyr at absoluttverdien av bevegelsesmengden ... \hyperlink{elkoll2}{\pagebutton{Trykk her}}
-\pause
-\begin{itemize}[<+->]
-\item[] ... også er den samme før og etter kollisjonen (ser du det???) \hypertarget<.>{elkoll2}{}
-\end{itemize}
-\href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/animasjoner/particle_simulation_general.mov?vrtx=view-as-webpage}{Se på disse kollisjonene her mellom gasspartikler og vegg...}\\
+I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
+\textcolor{white}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
+\textcolor{white}{Det betyr at absoluttverdien av bevegelsesmengden ... {Trykk her}}
+\textcolor{white}{ ... også er den samme før og etter kollisjonen (ser du det???)}
+\textcolor{white}{Se på disse kollisjonene her mellom gasspartikler og vegg...}\\
 
-Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?\\
+\textcolor{white}{Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?}\\
 
-Når du vet svaret, gå til \hyperlink{ideelgass3}{\pagebutton{Neste side}}
+\textcolor{white}{Når du vet svaret, gå til {Neste side}}
 \end{frame}
 
 \begin{frame}
-\label{ideelgass3}
-\dlastpagebutton{ideelgass2}
+\label{ideelgass2_b}
+\lastpagebutton{ideelgass1}
+\addtocounter{pageno}{-1}
+I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
+\textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
+\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... \hyperlink{ideelgass2_c}{\pagebutton{Trykk her}}}
+\textcolor{white}{ ... også er den samme før og etter kollisjonen (ser du det???)}
+\textcolor{white}{Se på disse kollisjonene her mellom gasspartikler og vegg...}\\
+
+\textcolor{white}{Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?}\\
+
+\textcolor{white}{Når du vet svaret, gå til {Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{ideelgass2_c}
+\lastpagebutton{ideelgass1}
+\addtocounter{pageno}{-1}
+I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
+\textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
+\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... \pagebutton{Trykk her}}
+\textcolor{black}{ ... også er den samme før og etter kollisjonen (ser du det???)}
+\textcolor{black}{\href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/animasjoner/particle_simulation_general.mov?vrtx=view-as-webpage}{Se på disse kollisjonene her mellom gasspartikler og vegg...}}\\
+
+\textcolor{black}{Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?}\\
+
+\textcolor{black}{Når du vet svaret, gå til \hyperlink{ideelgass3_a}{\pagebutton{Neste side}}}
+\end{frame}
+
+\begin{frame}
+\label{ideelgass3_a}
+\dlastpagebutton{ideelgass2_a}
+\addtocounter{pageno}{-1}
 {\small
-{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?
-\hyperlink{elkoll3}{\pagebutton{Trykk her når du er enig}}
-\pause
-\addtocounter{pageno}{-2}
-\begin{itemize}[<+->]
-\item[] \hypertarget<.>{elkoll3}{}
-\end{itemize}
-\vspace*{-0.5cm}
-Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret? 
-\hyperlink{elkoll4}{\pagebutton{Trykk her når du er enig}}
-\pause
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{elkoll4}{}
-\end{itemize}
-\vspace*{-0.5cm}
-Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?
-\hyperlink{elkoll5}{\pagebutton{Trykk her når du er enig}}
-\pause
-\begin{itemize}[<+->]
-\item[] \hypertarget<.>{elkoll5}{}
-\end{itemize}
-\vspace*{-0.5cm}
- Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?
-\hyperlink{elkoll6}{\pagebutton{Trykk her når du er enig, ikke før!}}
-\pause
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{elkoll6}{}
-\end{itemize}
-\vspace*{-0.5cm}
-Er du da også enig i at ...
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+\hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
+\textcolor{white}{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+\textcolor{white}{Trykk her når du er enig}\\
+\textcolor{white}{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\textcolor{white}{Trykk her når du er enig}\\
+\textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\textcolor{white}{Trykk her når du er enig, ikke før!}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+\end{frame}
+
+\begin{frame}
+\label{ideelgass3_b}
+\lastpagebutton{ideelgass2_a}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+\hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+\hyperlink{ideelgass3_c}{\pagebutton{Trykk her når du er enig}}\\
+\textcolor{white}{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\textcolor{white}{Trykk her når du er enig}\\
+\textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\textcolor{white}{Trykk her når du er enig, ikke før!}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+\end{frame}
+
+\begin{frame}
+\label{ideelgass3_c}
+\lastpagebutton{ideelgass2_a}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+\hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+\pagebutton{Trykk her når du er enig}\\
+{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\hyperlink{ideelgass3_d}{\pagebutton{Trykk her når du er enig}}\\
+\textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\textcolor{white}{Trykk her når du er enig, ikke før!}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+\end{frame}
+
+\begin{frame}
+\label{ideelgass3_d}
+\lastpagebutton{ideelgass2_a}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+\hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+\pagebutton{Trykk her når du er enig}\\
+{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\pagebutton{Trykk her når du er enig}\\
+{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\hyperlink{ideelgass3_e}{\pagebutton{Trykk her når du er enig, ikke før!}}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+\end{frame}
+
+\begin{frame}
+\label{ideelgass3_e}
+\lastpagebutton{ideelgass2_a}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+\hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+\pagebutton{Trykk her når du er enig}\\
+{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\pagebutton{Trykk her når du er enig}\\
+{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\pagebutton{Trykk her når du er enig, ikke før!}\\
+{Er du da også enig i at ...
 \begin{eqnarray}
 p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
 p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
 \end{eqnarray}
 Hvis du er uenig i noe av det over, spør foreleser/gruppelærer \hyperlink{ideelgass3b}{\pagebutton{Neste side}}
-}
+}}
 \end{frame}
-
 
 \begin{frame}
 \label{ideelgass3b}
-\addtocounter{pageno}{1}
-\dlastpagebutton{ideelgass3}
+\dlastpagebutton{ideelgass3_a}
 Her ser vi situasjonen illustrert:\\
 \includegraphics[scale=0.6]{media/elcol.png}\\
-\hyperlink{trykk1}{\pagebutton{Neste side}}
+\hyperlink{trykk1_a}{\pagebutton{Neste side}}
 \end{frame}
 
 \begin{frame}
-\label{trykk1}
+\label{trykk1_a}
 \lastpagebutton{ideelgass3b}
+\addtocounter{pageno}{-1}
 Kan du definere gasstrykk?
 Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
-Tenk deg om før du \hyperlink{trykkbutton1}{\pagebutton{trykker på denne knappen}}
-\pause
+Tenk deg om før du \hyperlink{trykk1_b}{\pagebutton{trykker på denne knappen}}\\
+\textcolor{white}{Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?}\\
+\textcolor{white}{Kan det hjelpe deg litt med definisjonen?}
+\textcolor{white}{Tenk deg om igjen og {trykk på denne knappen}}\\
+\textcolor{white}{Definisjon:\\
+%\begin{alertblock}{\bf Gasstrykk er ...}
+{\bf Gasstrykk er ...}
+Den totale kraften fra partiklene per areal, altså:
+\[
+P = \frac{F}{A}
+\]
+der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{Neste side}}
+%\end{alertblock}
+\end{frame}
+
+
+\begin{frame}
+\label{trykk1_b}
+\lastpagebutton{ideelgass3b}
 \addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[]  Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?\hypertarget<.>{trykkbutton1}{}
-\end{itemize}
-Kan det hjelpe deg litt med definisjonen?
-Tenk deg om igjen og \hyperlink{trykkbutton2}{\pagebutton{trykk på denne knappen}}
-\pause
-\begin{itemize}[<+->]
-\item[]  Definisjon: \hypertarget<.>{trykkbutton2}{}
-\end{itemize}
+Kan du definere gasstrykk?
+Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
+Tenk deg om før du \hyperlink{trykk1_b}{\pagebutton{trykker på denne knappen}}\\
+{Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?}\\
+{Kan det hjelpe deg litt med definisjonen?}
+Tenk deg om igjen og \hyperlink{trykk1_c}{\pagebutton{trykk på denne knappen}}\\
+\textcolor{white}{Definisjon:\\
+%\begin{alertblock}{\bf Gasstrykk er ...}
+{\bf Gasstrykk er ...}
+Den totale kraften fra partiklene per areal, altså:
+\[
+P = \frac{F}{A}
+\]
+der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{Neste side}}
+%\end{alertblock}
+\end{frame}
+
+
+\begin{frame}
+\label{trykk1_c}
+\lastpagebutton{ideelgass3b}
+\addtocounter{pageno}{-1}
+Kan du definere gasstrykk?
+Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
+Tenk deg om før du \hyperlink{trykk1_b}{\pagebutton{trykker på denne knappen}}\\
+{Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?}\\
+{Kan det hjelpe deg litt med definisjonen?}
+Tenk deg om igjen og \hyperlink{trykk1_c}{\pagebutton{trykk på denne knappen}}\\
+{Definisjon:}\\
 \begin{alertblock}{\bf Gasstrykk er ...}
 Den totale kraften fra partiklene per areal, altså:
 \[
@@ -569,12 +699,11 @@ P = \frac{F}{A}
 \]
 der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).\hyperlink{trykk2}{\pagebutton{Neste side}}
 \end{alertblock}
-
 \end{frame}
 
 \begin{frame}
 \label{trykk2}
-\dlastpagebutton{trykk1}
+\dlastpagebutton{trykk1_a}
 \textcolor{red}{\underline{La oss se om vi kan finne et uttrykk for gasstrykket:}}\\
 Kraft kan skrives som 
 \[
@@ -654,13 +783,26 @@ Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/underv
 \begin{frame}
 \label{riktigt}
 \clastpagebutton{trykk4}
+\addtocounter{pageno}{-1}
 HELT RIKTIG!\\
 Når den røde partikkelen helt til venstre har truffet veggen, så har alle røde partikler truffet veggen. Partikkelen trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$, dermed tar det den tid $\Delta x/v_x$. Men vi må også se hvor lang tid de blå partiklene har brukt for å treffe veggen! Disse er på vei bort fra veggen og har dermed truffet veggen tidligere, men hvor lang tid tok det for alle de blå partiklene å treffe veggen? Kan du bruke samme type resonnement?
-Hvis du ikke ser det, \hyperlink{trykkbutton3}{\pagebutton{trykk her for et tips}}
-\pause
-\begin{itemize}[<+->]
-\item[] Den blå ballen helt til venstre er vel den første som traff veggen? \hypertarget<.>{trykkbutton3}{}
-\end{itemize}
+Hvis du ikke ser det, \hyperlink{riktigt_b}{\pagebutton{trykk her for et tips}}
+\textcolor{yellow}{Den blå ballen helt til venstre er vel den første som traff veggen?\\
+Hvor lang tid er det siden i det videoen starter?
+Ikke gå til neste side før du har svaret!
+{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktigt_b}
+\lastpagebutton{trykk4}
+HELT RIKTIG!\\
+Når den røde partikkelen helt til venstre har truffet veggen, så har alle røde partikler truffet veggen. Partikkelen trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$, dermed tar det den tid $\Delta x/v_x$. Men vi må også se hvor lang tid de blå partiklene har brukt for å treffe veggen! Disse er på vei bort fra veggen og har dermed truffet veggen tidligere, men hvor lang tid tok det for alle de blå partiklene å treffe veggen? Kan du bruke samme type resonnement?
+Hvis du ikke ser det, \hyperlink{riktigt_b}{\pagebutton{trykk her for et tips}}
+Den blå ballen helt til venstre er vel den første som traff veggen?\\
 Hvor lang tid er det siden i det videoen starter?
 Ikke gå til neste side før du har svaret!
 \hyperlink{trykk5}{\pagebutton{Neste side}}
@@ -719,12 +861,22 @@ Siden vi holder temperatur og tetthet i boksen konstant, kan du beregne raketten
 \begin{frame}
 \label{rakettmotor1b0}
 \lastpagebutton{rakettmotor1}
-I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?\hyperlink{escvel1}{\pagebutton{Trykk her når du har tenkt!}}
-\pause
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{escvel1}{}
-\end{itemize}
-\vspace*{-0.5cm}
+\addtocounter{pageno}{-1}
+I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?\hyperlink{rakettmotor1b0_b}{\pagebutton{Trykk her når du har tenkt!}}\\
+\textcolor{white}{
+Svaret du skal få er
+\[
+v_\mathrm{esc}=\sqrt{\frac{2GM}{R}}
+\]
+der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og $M$ er jordas masse. Fikk du det? Hvis ikke, spør foreleser/gruppelærer!
+{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{rakettmotor1b0_b}
+\lastpagebutton{rakettmotor1}
+I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?\hyperlink{rakettmotor1b0_b}{\pagebutton{Trykk her når du har tenkt!}}\\
+
 Svaret du skal få er
 \[
 v_\mathrm{esc}=\sqrt{\frac{2GM}{R}}
@@ -732,6 +884,7 @@ v_\mathrm{esc}=\sqrt{\frac{2GM}{R}}
 der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og $M$ er jordas masse. Fikk du det? Hvis ikke, spør foreleser/gruppelærer!
 \hyperlink{rakettmotor1b}{\pagebutton{Neste side}}
 \end{frame}
+
 
 
 \begin{frame}
