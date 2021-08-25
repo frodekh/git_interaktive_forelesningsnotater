@@ -87,6 +87,7 @@ def create_hub_nav_html(fname: str) -> None:
             <link rel="stylesheet" href="lecture.css">
             <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="pagehistory.js"></script>
         </head>
 
         <body>
@@ -163,7 +164,7 @@ def create_hub_nav_html(fname: str) -> None:
             <section class="home-section">
                 <article class="lecture">
                     <div class="lecture-container" id="lecture-container">
-                        <iframe class="iframe" src="forelesninger/dashboard.html" title="W3Schools Free Online Web Tutorials"></iframe>
+                        <iframe id="iframe" class="iframe" src="forelesninger/dashboard.html" title="" onload="iframeclick()"></iframe>
                     </div>
                 </article>
                 <div id="player" style="position: fixed; left: -100%;"></div>
@@ -240,6 +241,7 @@ def create_hub_nav_html(fname: str) -> None:
                         setIframe(e);
                     });
                 }
+                //set iframe...somehow
                 function setIframe(e){
                     iframe.classList.add("global-fade-animation");
 
@@ -248,7 +250,7 @@ def create_hub_nav_html(fname: str) -> None:
 
                     setTimeout(() => {
                             
-                            iframe.innerHTML = `<iframe class="iframe" src="${src}" title="W3Schools Free Online Web Tutorials"></iframe>`
+                            iframe.innerHTML = `<iframe id="iframe" class="iframe" src="${src}" onload="iframeclick()"></iframe>`
                             iframe.classList.remove("global-fade-animation");
 
                         }, 300);

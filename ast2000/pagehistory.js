@@ -57,6 +57,9 @@ const datetime = () => {
     if(s < 10){
         s = '0'+s
     }
+    if(m < 10){
+        m = '0'+m
+    }
 
     return dd + '/' + mm + '/' + yyyy + " kl: "+h+":"+m+":"+s;
 }
