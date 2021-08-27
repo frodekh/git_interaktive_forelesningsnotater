@@ -290,6 +290,24 @@ Dette er et alternativ til forelesningen i emnet. \textcolor{blue}{Har du gått 
 \hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
+
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{blue_nytema1}{\headlinebutton{Kjeglesnitt}}
+\item \hyperlink{blue_nytema2}{\headlinebutton{Keplers 2. og 3.lov}}
+\item \hyperlink{blue_nytema3}{\headlinebutton{Massesenter}}
+\item \hyperlink{blue_nytema4}{\headlinebutton{Energi og type kjeglesnitt}}
+\item \hyperlink{blue_nytema5}{\headlinebutton{Tips til koding}}
+\end{itemize}
+\hyperlink{intro}{\choicebutton{Neste side}}
+\end{frame}
+
+
+
+
 %%%%% intro
 \begin{frame}
 \label{intro}
@@ -350,7 +368,6 @@ der det ene objektet er i brennpunktet:
 }
 
 
-\renewcommand{\headline}{\small Kjeglesnitt}
 
 
 \begin{frame}
@@ -370,13 +387,29 @@ Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesni
 }
 \column{0.5\textwidth}
 De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne er hyperbler. Den sorte prikkete ellipsen har $e=0$ og er dermed en sirkel. Den heltrukne sorte linja er en ellipse med eksentrisitet $e=0.7$. Den sorte prikken er brennpunktet i sirkelen  (og dermed sentrum siden det er sirkel), den oransje prikken er brennpunktet i ellipsen.
-\hyperlink{conic3}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema1}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 
+\renewcommand{\headline}{\small Kjeglesnitt}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema1}
+\hyperlink{conic2}{\pagebutton{\small Forrige side}}
+\nytemaside{euler4}
+\textcolor{yellow}{La oss repetere litt om kjeglesnitt og se mer på uttrykket i polarkoordinater.}\\
+\vspace*{0.5cm}
+\hyperlink{conic3}{\pagebutton{Ja, hvordan var nå det igjen...}}
+\end{frame}
+}
+
+
+
+
 \begin{frame}
 \label{conic3}
-\dlastpagebutton{conic2}
+\dlastpagebutton{blue_nytema1}
 \begin{columns}
   \column{0.5\textwidth}
   \centerline{
@@ -435,10 +468,21 @@ Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra de
 \lastpagebutton{feil_conic5}
 Vi skal snart se litt på hva betingelsene er for at et objekt får en elliptisk, parabel eller hyperbelbane. Dette er jo spesielt viktig for satelitter. Hvis vi ønsker å ha en satelitt i bane rundt jorda så bør vi helst sørge for at den går i en ellipsebane. Ellers vil vi jo miste satelitten! Men før vi gjør det la oss kikke litt på ukeoppgavene.\\
 Vi har her utledet Keplers 1.lov. Men hva med Keplers 2. og 3. lov? De skal du få lov til å utlede selv i oppgave 1B.1 og 1B.2.\\ 
-\hyperlink{oppgaver1}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema2}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Keplers 2. og 3.lov}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema2}
+\hyperlink{conic6}{\pagebutton{\small Forrige side}}
+\nytemaside{xxx}
+\textcolor{yellow}{Nå skal du få tyvtitte litt på oppgavene der du skal utlede Keplers 2. og 3. lov. Nå som vi har utledet Keplers første lov, så er det {\bf mye} enklere å utlede de to siste, lover!}\\
+\vspace*{0.5cm}
+\hyperlink{oppgaver1}{\pagebutton{Virkelig?}}
+\end{frame}
+}
 
 
 \begin{frame}
@@ -501,10 +545,21 @@ Tenk i maks 2-3 minutter om du ser en måte å løse den på? Hvis ikke, ta det 
 \lastpagebutton{oppgaver4}
 Men stopp en hal! Har vi egentlig løst 2-legemeproblemet? Vi har løst problemet i tilfellet hvor vi setter oss på $m_1$ og ser på bevegelsen til $m_2$ som da blir en ellipsebane med $m_1$ i det ene brennpunktet. Men hva hvis vi setter oss på $m_2$? Likningene vi får blir jo de samme, så løsningen blir den samme med massene byttet om, $m_2$ står i et brennpunkt til ellipsebanen som $m_1$ følger. Men hva hvis vi nå befinner oss et punkt langt vekk og ser legemene på avstand mens vi ikke befinner oss i referansesystemet til noen av dem? Hvordan vil da $m_1$ og $m_2$ bevege seg?\\
 Tenk deg godt om før du går til neste side...
-\hyperlink{cm2}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema3}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Massesenter}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema3}
+\hyperlink{cm1}{\pagebutton{\small Forrige side}}
+\nytemaside{xxx}
+\textcolor{yellow}{Vi skal repetere noe du kjenner godt, og bruke dette til å gjøre det fulle 2-legeme-problemet litt enklere å løse.}\\
+\vspace*{0.5cm}
+\hyperlink{cm2}{\pagebutton{Massesenter, kan godt trenge en kjapp repetisjon ja...}}
+\end{frame}
+}
 
 
 \begin{frame}
@@ -763,14 +818,26 @@ a_1+a_2=a?
 \]
 Her kommer du til å trenge definisjonen av $\hat\mu$
 Før du går over til siste tema, ta en liten pause, jogg en tur rundt Blindern, stup kråke 10 ganger på gressplenen ved Frederikke. Ikke gå videre før du har gjort alt det!
-\hyperlink{energi1}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema4}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Energi og type kjeglesnitt}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema4}
+\hyperlink{cm11}{\pagebutton{\small Forrige side}}
+\nytemaside{xxx}
+\textcolor{yellow}{Vi skal gjøre noen energibetraktninger og finne noen svært viktige resultater.}\\
+\vspace*{0.5cm}
+\hyperlink{energi1}{\pagebutton{Å ja?}}
+\end{frame}
+}
+
 
 \begin{frame}
 \label{energi1}
-\lastpagebutton{cm11}
+\lastpagebutton{blue_nytema4}
 Så var vi kommet til siste tema her. Vi hintet allerede om det tidligere:\\
 \textcolor{blue}{Hva avgjør om et objekt følger en ellipsebane, parabelbane eller hyperbelbane? Og hva avgjør parameterene $a$ og $e$ til denne banen?}\\
 Vi har allerede innsett at ellipsebaner betyr at objektet er gravitasjonelt bundet siden det holder seg i bane rundt det andre objektet, mens for parabel- og hyperbelbaner så er det ikke lenger gravitasjonelt bundet, objektet bare 'sneier forbi'. Det må vel bety at totalenergien er viktig her: er den potensielle gravitasjonsenergien større eller mindre enn den kinetiske energien? La oss sette opp energien til systemet vårt. Vi tar igjen perspektivet fra $m_1$ og ser på banen som $m_2$ lager rundt $m_1$:
@@ -993,12 +1060,22 @@ Men det blir også mye \textcolor{red}{numerisk baneberegning} som vi snakket om
 Vi skal lande satelitten trygt. Her er det klart at du i den numeriske baneberegningen}
 \column{0.5\textwidth}
 {\small  også trenger å ta med friksjonskreftene når du kommer inn i atmosfæren. Dette er forklart nærmere i oppgave 1B8. Men når du å skal velge hvilken hastighet og retning du vil sende ut landersonden din ut fra modersonden med, gitt posisjonen din i banen, så har du nå fått god hjelp: ved å beregne energien og spinnet du får ved en gitt utgangshastighet så vet du nøyaktig hva slags bane du får. Kanskje strategien din er å lage en veldig avlang (eksentrisk) ellipsebane som sneier atmosfæren din ved hver nærpassering? Isåfall vet du nå hva du må gjøre med spinnet for å få en store $e$. Eller hvis du har en helt annen strategi: nå kan du forutsi hva slags bane du får frem til du begynner å treffe atmosfæren.}
-\hyperlink{koding2}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema5}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 
 \renewcommand{\headline}{\small Tips til koding}
-
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema5}
+\hyperlink{koding}{\pagebutton{\small Forrige side}}
+\nytemaside{xxx}
+\textcolor{yellow}{Som du nok har oppdaget så blir det alltid noen feil når man koder. Og det kan ta innmari lang tid å finne feilen. Dermed kommer igjen noen tips til feilsøking...}\\
+\vspace*{0.5cm}
+\hyperlink{koding2}{\pagebutton{Ja, kjekt å ha!}}
+\end{frame}
+}
 
 \begin{frame}
 \label{koding2}

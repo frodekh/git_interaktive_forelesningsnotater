@@ -290,6 +290,21 @@ Dette er et alternativ til forelesningen i emnet. \textcolor{blue}{Har du gått 
 \hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{blue_nytema1}{\headlinebutton{Numerisk løsning}}
+\item \hyperlink{blue_nytema2}{\headlinebutton{Forberede 2-legemeproblem: enhetsvektorer}}
+\item \hyperlink{blue_nytema3}{\headlinebutton{Forberede 2-legemeproblem: vektorregning}}
+\item \hyperlink{blue_nytema4}{\headlinebutton{Forberede 2-legemeproblem: $v_r$ og $v_\theta$}}
+\item \hyperlink{blue_nytema5}{\headlinebutton{Keplers lover}}
+\item \hyperlink{blue_nytema6}{\headlinebutton{Løse 2-legemeproblemet}}
+\end{itemize}
+\hyperlink{intro}{\choicebutton{Neste side}}
+\end{frame}
+
 %%%%% intro
 \begin{frame}
 \label{intro}
@@ -327,7 +342,7 @@ Har du varmet opp? Er du svett og klar til å starte kampen? ...og sendt inn skj
 \addtocounter{pageno}{-1}
 \vspace*{1cm}
 \begin{itemize}[<+->]
-\item[] \hyperlink{basicfysikk1a}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
+\item[] \hyperlink{blue_nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
 \end{itemize}
 
 \end{columns}
@@ -335,6 +350,20 @@ Har du varmet opp? Er du svett og klar til å starte kampen? ...og sendt inn skj
 
 
 \renewcommand{\headline}{\small Numerisk løsning}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema1}
+\hyperlink{intro}{\pagebutton{\small Forrige side}}
+\nytemaside{euler4}
+\textcolor{yellow}{Vi skal begynne med numeriske baneberegninger}\\
+\vspace*{0.5cm}
+\hyperlink{basicfysikk1a}{\pagebutton{Høres kjent ut, men la oss se da...}}
+\end{frame}
+}
+
+
+
 
 \begin{frame}
 \label{basicfysikk1a}
@@ -447,10 +476,21 @@ Du kommer frem til samme resultat hvis vi gjør de infinitsimale størrelsene en
 \]
 Hvis du ganger opp med $\Delta t$ på begge sider av likningene her, så ender du igjen opp med det samme som på de forrige slidene. Merk deg denne måten å tenkte på da du vil bruke den til å løse andre typer differensiallilkninger senere.\\
 {\bf Da er repetisjonen over, nå begynner moroa her...}\\
-\hyperlink{euler4}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema2}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Forberede 2-legemeproblem: enhetsvektorer}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema2}
+\hyperlink{euler3}{\pagebutton{\small Forrige side}}
+\nytemaside{hastighet1}
+\textcolor{yellow}{\tiny Nå skal vi begynne med en laaaaang analytisk utledning her som til slutt ender opp med bevis for at planeter går i ellipsebaner. Vi går gjennom utledningen fordi (1) det er virkelig morsomt og faktisk ha utledet dette fra scratch, hører med til allmenndannelsen og (2) fordi mange av tingene vi bruker underveis i utledningen er viktige metoder i matematikk og fysikk som vi skal bruke mange ganger i AST2000 og også ting som skal brukes i numeriske beregninger for å få de til å gå fortere. Vi begynner med å definere et nytt sett med enhetsvektorer i planet. }\\
+\vspace*{0.5cm}
+\hyperlink{euler4}{\pagebutton{Ok, jeg er klar!}}
+\end{frame}
+}
 
 \begin{frame}
 \label{euler4}
@@ -592,15 +632,26 @@ Hjelper det deg? Prøv igjen med dette som utgangspunkt!
 \includegraphics[scale=0.26]{media/unity_vectors.png}\\
 Poisjonsvektoren har altså kun en komponent som går langs $\vec{e}_r$, ingen som går ortogonalt. Hvis vi tenker litt på det så er det egentlig opplagt siden $\vec{e}_r$ er definert fra $\vec{r}$.
 
-\hyperlink{hastighet1}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema3}{\pagebutton{Neste side}}
 \end{frame}
 }
 
 \renewcommand{\headline}{\small Forberede 2-legemeproblem: vektorregning}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema3}
+\hyperlink{riktigrt}{\pagebutton{\small Forrige side}}
+\nytemaside{hastighet4}
+\textcolor{yellow}{Vi skal leke oss litt med våre nye enhetsvektorer. Og derivere vektorfunksjoner.}\\
+\vspace*{0.5cm}
+\hyperlink{hastighet1}{\pagebutton{Kuuult, sett igang!}}
+\end{frame}
+}
 
 \begin{frame}
 \label{hastighet1}
-\lastpagebutton{riktigrt}
+\lastpagebutton{blue_nytema3}
 Det vi fant er altså at posisjonsvektoren kan skrives som 
 \[
 \vec{r}=r\vec{e}_r
@@ -736,9 +787,6 @@ Gå tilbake og prøv igjen, hvis du sliter med å forstå, kontakt foreleser/gru
 \end{frame}
 }
 
-
-\renewcommand{\headline}{\small Forberede 2-legemeproblem: $v_r$ og $v_\theta$}
-
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
@@ -778,7 +826,20 @@ En kort tur ut nå, kroppen trenger litt bevegelse...\\
 Ihvertfall 5 min...
 }\\
 \vspace*{0.5cm}
-\hyperlink{hastighet4}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
+\hyperlink{blue_nytema4}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
+\end{frame}
+}
+
+\renewcommand{\headline}{\small Forberede 2-legemeproblem: $v_r$ og $v_\theta$}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema4}
+\hyperlink{riktigderrett}{\pagebutton{\small Forrige side}}
+\nytemaside{kepler}
+\textcolor{yellow}{La oss tolke radial- og tangensialhastighetene. Viktig å få god forståelse for disse, vi kommer til å se dem igjen mange ganger, også i andre temaer.}\\
+\vspace*{0.5cm}
+\hyperlink{hastighet4}{\pagebutton{Yes!}}
 \end{frame}
 }
 
@@ -814,10 +875,21 @@ Hvis du har tenkt deg nøye om, se på \href{https://www.uio.no/studier/emner/ma
 \vec{h}=\frac{\vec{r}\times\vec{p}}{m}
 \]
 der $\vec{p}=m\vec{v}$ er bevegelsesmengden til romskipet og $m$ er massen. Denne størrelsen skal vi bruke mye fremover. Hvis du har forstått alt vi har gått gjennom frem til nå, så bør du få til å vise at $h=r^2\dot\theta$ (bruk uttrykket vi har funnet for $\vec{v}$). Hvis ikke, så er det {\bf svært viktig} at du kontakter foreleser eller gruppelærer for hjelp før du går videre!
-\hyperlink{kepler}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema5}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Keplers lover}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema5}
+\hyperlink{hastighet6}{\pagebutton{\small Forrige side}}
+\nytemaside{red_kepler5b}
+\textcolor{yellow}{Keplers lover... De kan da vel alle? Hmmm, vel, har ihvertfall hørt om dem...}\\
+\vspace*{0.5cm}
+\hyperlink{kepler}{\pagebutton{men hvordan var de nå igjen da...}}
+\end{frame}
+}
 
 \begin{frame}
 \label{kepler}
@@ -966,7 +1038,7 @@ En rask sjekk om du har oversikt over det som trengs
 \item Du vet hva lille/store halvakse, eksentrisitet, brennpunkt, apoapsis/aphel, periapsis/perihel er?
 \end{itemize}
 }
-\hyperlink{red_kepler5b}{\pagebutton{ÅJA, dette kan jeg, la oss sette igang med utledningen!}}\\
+\hyperlink{blue_nytema6}{\pagebutton{ÅJA, dette kan jeg, la oss sette igang med utledningen!}}\\
 \hyperlink{trengerep}{\pagebutton{Njaaaa...jeg trenger kanskje litt repetisjon}}
 \pause
 \addtocounter{pageno}{-1}
@@ -981,6 +1053,17 @@ En rask sjekk om du har oversikt over det som trengs
 
 
 \renewcommand{\headline}{\small Løse 2-legemeproblemet}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema6}
+\hyperlink{kepler5}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\textcolor{yellow}{Keplers lover... De kan da vel alle? Hmmm, vel, har ihvertfall hørt om dem...}\\
+\vspace*{0.5cm}
+\hyperlink{red_kepler5b}{\pagebutton{men hvordan var det nå igjen da...}}
+\end{frame}
+}
 
 
 {
