@@ -290,7 +290,24 @@ Dette er et alternativ til forelesningen i emnet.  \textcolor{blue}{Har du gått
 \item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
 \end{itemize}
 }
-\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\hyperlink{tableofcontents}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{stat9}{\headlinebutton{Multiplikasjon av sannsynlighet}}
+\item \hyperlink{blue_nytema2}{\headlinebutton{Gasstrykk}}
+  
+\item \hyperlink{riktigp}{\headlinebutton{Trykkutledning: bevegelsemengden}}
+\item \hyperlink{trykk5}{\headlinebutton{Trykkintegralet}}
+\item \hyperlink{blue_nytema3}{\headlinebutton{Tips til feilsøking i koden}}
+\end{itemize}
+\hyperlink{intro}{\choicebutton{Neste side}}
 \end{frame}
 
 %%%%% intro
@@ -306,10 +323,21 @@ Velkommen til forelesning 2 i del 1A! Dette forelesningsnotatet tilsvarer omtren
 \item Hva er standardavvik, varianse og FWHM?
 \end{enumerate}
 Kun når du har \textcolor{red}{\bf full kontroll} på alt dette kan du gå videre. Hvis ikke, gå tilbake til første forelesning for å reptere litt eller spør foreleser og/eller gruppelærer hvis det er ting som er uklare.\\
-{\bf Er du klar?}\ \ \ \ \ \hyperlink{stat7}{\pagebutton{Neste side}}
+{\bf Er du klar?}\ \ \ \ \ \hyperlink{blue_nytema1}{\pagebutton{Neste side}}
 \end{frame}
 
-
+\renewcommand{\headline}{Mer om sannsynlighet}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema1}
+\hyperlink{intro}{\pagebutton{\small Forrige side}}
+\nytemaside{ideelgass1}
+\textcolor{yellow}{Vi skal nå se på noen eksempler og regneregler for sannsynlighet.}\\
+\vspace*{0.5cm}
+\hyperlink{stat7}{\pagebutton{Sett igang...}}
+\end{frame}
+}
 
 \begin{frame}
 \label{stat7}
@@ -336,6 +364,7 @@ Tenk igjen nøye gjennom hvordan du vil gå frem å løse dette. Det er viktig a
 \hyperlink{stat9}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
+
 
 \begin{frame}
 \label{stat9}
@@ -457,9 +486,23 @@ Er du enda usikker på hvordan du skal gjøre dette, så kan du få noen hint i 
 \small Tiden har kommet for en god strekk på bena! Og helle på med en mørk væske som har høye partikkelhastigheter. Ta deg en ekstra god pause nå, fordi du etter pausen for alvor skal begynne å se på konstruksjon av rakettmotoren din.
 }\\
 \vspace*{0.5cm}
-\hyperlink{ideelgass1}{\pagebutton{Ok, jeg begynner å bli klar for romreise...}}
+\hyperlink{blue_nytema2}{\pagebutton{Ok, jeg begynner å bli klar for romreise...}}
 \end{frame}
 }
+
+\renewcommand{\headline}{Gasstrykk}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema2}
+\hyperlink{intro}{\pagebutton{\small Forrige side}}
+\nytemaside{rakettmotor1b}
+\textcolor{yellow}{Vi skal nå se på hvordan partikler i en gass kolliderer med veggene i beholderen. Vi bruker det til å definere gasstrykk og skal til slutt utlede {\bf trykkintegralet} som gjør at vi kan beregne trykket i en gass når vi kjenner fordelingsfunksjonen for hastighet.}\\
+\vspace*{0.5cm}
+\hyperlink{ideelgass1}{\pagebutton{\small Vi begynner med å se på gasspartiklene i rakettmotoren vår...}}
+\end{frame}
+}
+
 
 \begin{frame}
 \label{ideelgass1}
@@ -882,14 +925,26 @@ Svaret du skal få er
 v_\mathrm{esc}=\sqrt{\frac{2GM}{R}}
 \]
 der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og $M$ er jordas masse. Fikk du det? Hvis ikke, spør foreleser/gruppelærer!
-\hyperlink{rakettmotor1b}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema3}{\pagebutton{Neste side}}
 \end{frame}
 
+\renewcommand{\headline}{Bug-fiksing}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema3}
+\hyperlink{rakettmotor1}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\textcolor{yellow}{Du får helt sikkert flere feil i koden når du begynner å programmere innleveringsoppgaven/prosjektdelen. Her skal du få noen tips til hvordan feilsøke.}\\
+\vspace*{0.5cm}
+\hyperlink{rakettmotor1b}{\pagebutton{Jeg??? Feil???? Ok, la meg se på det likevel da...}}
+\end{frame}
+}
 
 
 \begin{frame}
 \label{rakettmotor1b}
-\lastpagebutton{rakettmotor1}
+\lastpagebutton{blue_nytema3}
 {\bf\large Men hva gjør du hvis koden ikke funker som den skal?\\
 Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du da?}
 \hyperlink{feildebug}{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ \hyperlink{riktigdebug}{\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
