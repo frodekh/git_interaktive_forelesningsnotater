@@ -373,13 +373,31 @@ der det ene objektet er i brennpunktet:
 \begin{frame}
 \label{conic2}
 \lastpagebutton{feil_conic1b}
-Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesnitt (conic sections)} i polarkoordinater. Vet du hvilke 3 typer kurver som inngår i kjeglesnittene? Den ene er ellipser ja, men de andre to?\\
-\hyperlink{conicsections}{\pagebutton{Trykk her når du har funnet ut av det}}
-\pause
 \addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] Ganske riktig, {\it parabler} og {\it hyperbler}: \hypertarget<.>{conicsections}{}
-\end{itemize}
+Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesnitt (conic sections)} i polarkoordinater. Vet du hvilke 3 typer kurver som inngår i kjeglesnittene? Den ene er ellipser ja, men de andre to?\\
+\hyperlink{conic2_b}{\pagebutton{Trykk her når du har funnet ut av det}}\\
+\textcolor{white}{Ganske riktig, {\it parabler} og {\it hyperbler}: }
+\begin{columns}
+\column{0.5\textwidth}
+\centerline{\textcolor{white}{
+  xxxx
+  xxxx
+  xxxx}
+}
+\column{0.5\textwidth}
+\textcolor{white}{De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne er hyperbler. Den sorte prikkete ellipsen har $e=0$ og er dermed en sirkel. Den heltrukne sorte linja er en ellipse med eksentrisitet $e=0.7$. Den sorte prikken er brennpunktet i sirkelen  (og dermed sentrum siden det er sirkel), den oransje prikken er brennpunktet i ellipsen.}
+\textcolor{white}{Neste side}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{conic2_b}
+\lastpagebutton{feil_conic1b}
+\addtocounter{pageno}{-1}
+Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesnitt (conic sections)} i polarkoordinater. Vet du hvilke 3 typer kurver som inngår i kjeglesnittene? Den ene er ellipser ja, men de andre to?\\
+{\pagebutton{Trykk her når du har funnet ut av det}}\\
+Ganske riktig, {\it parabler} og {\it hyperbler}:
 \begin{columns}
   \column{0.5\textwidth}
 \centerline{
@@ -390,6 +408,12 @@ De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne e
 \hyperlink{blue_nytema1}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
+
+
+
+
+
+
 
 \renewcommand{\headline}{\small Kjeglesnitt}
 {
@@ -575,23 +599,45 @@ Hvis vi kjenner posisjonene $\vec{r_1}$ og $\vec{r_2}$ på figuren, hvordan kan 
 \begin{frame}
 \label{cm3}
 \lastpagebutton{cm2}
+\addtocounter{pageno}{-1}
 Stemmer! Vi må rett og slett ta midlet mellom de to posisjonene, vektet med massene:
 \[
 \vec{R}=\frac{m_1\vec{r_1}+m_2\vec{r_2}}{m_1+m_2}
 \]
 Men hva hvis vi nå skal finne massesenteret $\vec{R}$ til en galakse og vi kjenner posisjonene $\vec{r_i}$ til alle $N$ stjernene med masse $m_i$ i galaksen? (anta at det ikke finnes annen masse i galaksen). Hvordan kan vi generalisere uttrykket vårt??\\
-\hyperlink{cm3a}{\pagebutton{Diskuter og trykk her når du har funnet ut av det}}
-\pause
+\hyperlink{cm3_b}{\pagebutton{Diskuter og trykk her når du har funnet ut av det}}\\
+\textcolor{white}{
+Vi bare midler på samme måte over alle objekter:
+\[
+\vec{R}=\frac{1}{M}\sum_{i=1}^Nm_i\vec{r_i}
+\]
+Her er $M$ summen over alle massene. Pass på at du har denne friskt i minne videre...
+{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{cm3_b}
+\lastpagebutton{cm2}
 \addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] Vi bare midler på samme måte over alle objekter: \hypertarget<.>{cm3a}{}
-\end{itemize}
+Stemmer! Vi må rett og slett ta midlet mellom de to posisjonene, vektet med massene:
+\[
+\vec{R}=\frac{m_1\vec{r_1}+m_2\vec{r_2}}{m_1+m_2}
+\]
+Men hva hvis vi nå skal finne massesenteret $\vec{R}$ til en galakse og vi kjenner posisjonene $\vec{r_i}$ til alle $N$ stjernene med masse $m_i$ i galaksen? (anta at det ikke finnes annen masse i galaksen). Hvordan kan vi generalisere uttrykket vårt??\\
+\hyperlink{cm3a}{\pagebutton{Diskuter og trykk her når du har funnet ut av det}}\\
+Vi bare midler på samme måte over alle objekter:
 \[
 \vec{R}=\frac{1}{M}\sum_{i=1}^Nm_i\vec{r_i}
 \]
 Her er $M$ summen over alle massene. Pass på at du har denne friskt i minne videre...
 \hyperlink{cm4}{\pagebutton{Neste side}}
 \end{frame}
+
+
+
+
+
+
 
 \begin{frame}
 \label{cm4}
@@ -900,39 +946,82 @@ Tenk deg godt om her...kan du se hva som er feil?\\
 \begin{frame}
 \label{energi2}
 \lastpagebutton{energi1}
-Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ \hyperlink{energi2a}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2a}{\pagebutton{Tja}}
-\pause
 \addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$. \hypertarget<.>{energi2a}{}
-\end{itemize}
+Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ \hyperlink{energi2_b}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2_b}{\pagebutton{Tja}}\\
+\textcolor{white}{
+I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
-\hyperlink{energi2b}{\pagebutton{Trykk her når du har funnet svaret!}}
-\pause
-\begin{itemize}[<+->]
-\item[]  Akkurat ja, massesentersystemet!\hypertarget<.>{energi2b}{}
-\end{itemize}
+{Trykk her når du har funnet svaret!}\\
+Akkurat ja, massesentersystemet!\\
+Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eksterne krefter, så er massesenteret ikke akseleret, det er et intertialsystem.
+{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{energi2_b}
+\lastpagebutton{energi1}
+\addtocounter{pageno}{-1}
+Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebutton{Ja}}\ \ \ \ {\pagebutton{Tja}}\\
+I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
+Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
+\hyperlink{energi2_c}{\pagebutton{Trykk her når du har funnet svaret!}}\\
+\textcolor{white}{
+Akkurat ja, massesentersystemet!\\
+Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eksterne krefter, så er massesenteret ikke akseleret, det er et intertialsystem.
+{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{energi2_c}
+\lastpagebutton{energi1}
+\addtocounter{pageno}{-1}
+Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebutton{Ja}}\ \ \ \ {\pagebutton{Tja}}\\
+I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
+Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
+{\pagebutton{Trykk her når du har funnet svaret!}}\\
+Akkurat ja, massesentersystemet!\\
 Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eksterne krefter, så er massesenteret ikke akseleret, det er et intertialsystem.
 \hyperlink{energi3}{\pagebutton{Neste side}}
 \end{frame}
 
 
+
+
+
+
+
+
 \begin{frame}
 \label{energi3}
 \dlastpagebutton{energi2}
+\addtocounter{pageno}{-1}
 Skriv opp uttrykket for total energi i massesentersystemet.\\
-\hyperlink{energi3a}{\pagebutton{Sånn, da var det gjort!}}\\
-\pause
+\hyperlink{energi3_b}{\pagebutton{Sånn, da var det gjort!}}\\
+\textcolor{white}{
+Var det dette du fikk:\\
+\[
+E=\frac{1}{2}m_1(\vec{v_1}^\mathrm{CM})^2+\frac{1}{2}m_2(\vec{v_2}^\mathrm{CM})^2-G\frac{m_1m_2}{r}
+\]
+Isåfall var det riktig!
+{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{energi3_b}
+\lastpagebutton{energi2}
 \addtocounter{pageno}{-2}
-\begin{itemize}[<+->]
-\item[] Var det dette du fikk: \hypertarget<.>{energi3a}{}
-\end{itemize}
+Skriv opp uttrykket for total energi i massesentersystemet.\\
+{\pagebutton{Sånn, da var det gjort!}}\\
+Var det dette du fikk:\\
 \[
 E=\frac{1}{2}m_1(\vec{v_1}^\mathrm{CM})^2+\frac{1}{2}m_2(\vec{v_2}^\mathrm{CM})^2-G\frac{m_1m_2}{r}
 \]
 Isåfall var det riktig!
 \hyperlink{energi4}{\pagebutton{Neste side}}
 \end{frame}
+
+
+
 
 
 \begin{frame}
@@ -958,12 +1047,27 @@ Hvis du sliter med å se hva som er svaret på tredje deloppgave, ta en titt på
 \begin{frame}
 \label{energi5}
 \lastpagebutton{energi4}
-Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren $\vec{v}$? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra det ene legemet til det andre. Hastighetsvektoren $\vec{v}$ er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? \hyperlink{energi5a}{\pagebutton{Jeg husker/har repetert hvordan det var}}
-\pause
 \addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] \hypertarget<.>{energi5a}{}
-\end{itemize}
+Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren $\vec{v}$? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra det ene legemet til det andre. Hastighetsvektoren $\vec{v}$ er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? \hyperlink{energi5_b}{\pagebutton{Jeg husker/har repetert hvordan det var}}
+\textcolor{white}{
+\[
+\vec{v}=\frac{d}{dt}\left(r\vec{e}_r\right)=\dot r\vec{e}_r+r\dot\theta\vec{e}_\theta
+\]
+Husker du hvorfor $v_\theta$ ser slik ut rent geometrisk? ({frisk opp!}).
+Og så trenger vi en ting til, nemlig posisjonen $r(f)$ som funksjon av vinkel $f$ (hvordan var nå vinkelen $f$ definert?, det bør du repetere nå!).
+\[
+r=\frac{p}{1+e\cos{f}}
+\]
+hvor formen på $p$ og verdien på $e$ avgjør formen på banen.
+{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{energi5_b}
+\lastpagebutton{energi4}
+\addtocounter{pageno}{-1}
+Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren $\vec{v}$? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra det ene legemet til det andre. Hastighetsvektoren $\vec{v}$ er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? {\pagebutton{Jeg husker/har repetert hvordan det var}}
 \[
 \vec{v}=\frac{d}{dt}\left(r\vec{e}_r\right)=\dot r\vec{e}_r+r\dot\theta\vec{e}_\theta
 \]
@@ -975,6 +1079,11 @@ r=\frac{p}{1+e\cos{f}}
 hvor formen på $p$ og verdien på $e$ avgjør formen på banen.
 \hyperlink{energi6}{\pagebutton{Neste side}}
 \end{frame}
+
+
+
+
+
 
 \begin{frame}
 \label{energi6}
