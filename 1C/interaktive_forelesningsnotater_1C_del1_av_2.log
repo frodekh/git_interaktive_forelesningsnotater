@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  3 SEP 2021 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  3 SEP 2021 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,12 +1123,12 @@ Overfull \hbox (98.42868pt too wide) in paragraph at lines 336--336
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1c4_1.png, id=84, 380.42125pt x 238.8925pt>
+<media/1c4_1.png, id=83, 380.42125pt x 238.8925pt>
 File: media/1c4_1.png Graphic file (type png)
 <use media/1c4_1.png>
 Package pdftex.def Info: media/1c4_1.png  used on input line 336.
 (pdftex.def)             Requested size: 152.16579pt x 95.5553pt.
-<media/1c4_2.png, id=85, 368.37625pt x 231.86626pt>
+<media/1c4_2.png, id=84, 368.37625pt x 231.86626pt>
 File: media/1c4_2.png Graphic file (type png)
 <use media/1c4_2.png>
 Package pdftex.def Info: media/1c4_2.png  used on input line 336.
@@ -1138,7 +1138,7 @@ Package pdftex.def Info: media/1c4_2.png  used on input line 336.
  <./media/1c4_1.png> <./media/1c4_2.png>] [6
 
 ]
-<media/angular_distance.png, id=111, 630.355pt x 233.87375pt>
+<media/angular_distance.png, id=110, 630.355pt x 233.87375pt>
 File: media/angular_distance.png Graphic file (type png)
 <use media/angular_distance.png>
 Package pdftex.def Info: media/angular_distance.png  used on input line 364.
@@ -1151,7 +1151,7 @@ File: media/angular_distance.png Graphic file (type png)
 Package pdftex.def Info: media/angular_distance.png  used on input line 382.
 (pdftex.def)             Requested size: 252.13753pt x 93.54782pt.
 
-Overfull \vbox (4.19414pt too high) detected at line 382
+Overfull \vbox (2.89833pt too high) detected at line 382
  []
 
 [8
@@ -1161,7 +1161,7 @@ File: media/angular_distance.png Graphic file (type png)
 <use media/angular_distance.png>
 Package pdftex.def Info: media/angular_distance.png  used on input line 406.
 (pdftex.def)             Requested size: 157.58836pt x 58.46828pt.
-<media/tangential_vel.png, id=137, 309.155pt x 258.9675pt>
+<media/tangential_vel.png, id=136, 309.155pt x 258.9675pt>
 File: media/tangential_vel.png Graphic file (type png)
 <use media/tangential_vel.png>
 Package pdftex.def Info: media/tangential_vel.png  used on input line 406.
@@ -1177,7 +1177,7 @@ Overfull \hbox (144.31pt too wide) in paragraph at lines 422--422
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/resolution.png, id=152, 380.42125pt x 580.1675pt>
+<media/resolution.png, id=151, 380.42125pt x 580.1675pt>
 File: media/resolution.png Graphic file (type png)
 <use media/resolution.png>
 Package pdftex.def Info: media/resolution.png  used on input line 422.
@@ -1207,322 +1207,322 @@ Package pdftex.def Info: media/angular_distance.png  used on input line 451.
 ] [14
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 493--493
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 494--494
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/spectrum.png, id=208, 795.97375pt x 546.04pt>
 File: media/spectrum.png Graphic file (type png)
 <use media/spectrum.png>
-Package pdftex.def Info: media/spectrum.png  used on input line 493.
+Package pdftex.def Info: media/spectrum.png  used on input line 494.
 (pdftex.def)             Requested size: 159.19193pt x 109.20605pt.
 [15
 
  <./media/spectrum.png>]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 508--508
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 509--509
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/halpha_sinus.png, id=220, 568.1225pt x 346.29375pt>
+<media/halpha_sinus.png, id=221, 568.1225pt x 346.29375pt>
 File: media/halpha_sinus.png Graphic file (type png)
 <use media/halpha_sinus.png>
-Package pdftex.def Info: media/halpha_sinus.png  used on input line 508.
+Package pdftex.def Info: media/halpha_sinus.png  used on input line 509.
 (pdftex.def)             Requested size: 170.43805pt x 103.88892pt.
 [16
 
  <./media/halpha_sinus.png>]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 526--526
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 527--527
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [17
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 543--543
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 544--544
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [18
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 556--556
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 557--557
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \vbox (4.17006pt too high) detected at line 556
+Overfull \vbox (4.17006pt too high) detected at line 557
  []
 
 [19
 
 ]
-Overfull \hbox (204.7893pt too wide) in paragraph at lines 577--577
+Overfull \hbox (204.7893pt too wide) in paragraph at lines 578--578
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/halpha_sinus.png Graphic file (type png)
 <use media/halpha_sinus.png>
-Package pdftex.def Info: media/halpha_sinus.png  used on input line 577.
+Package pdftex.def Info: media/halpha_sinus.png  used on input line 578.
 (pdftex.def)             Requested size: 159.07321pt x 96.96158pt.
 [20
 
 ]
-Overfull \hbox (204.7893pt too wide) in paragraph at lines 596--596
+Overfull \hbox (204.7893pt too wide) in paragraph at lines 597--597
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/halpha_sinus.png Graphic file (type png)
 <use media/halpha_sinus.png>
-Package pdftex.def Info: media/halpha_sinus.png  used on input line 596.
+Package pdftex.def Info: media/halpha_sinus.png  used on input line 597.
 (pdftex.def)             Requested size: 159.07321pt x 96.96158pt.
 
-Overfull \vbox (5.11926pt too high) detected at line 596
+Overfull \vbox (5.11926pt too high) detected at line 597
  []
 
 [21
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 617--617
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 618--618
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \vbox (28.35799pt too high) detected at line 617
+Overfull \vbox (41.958pt too high) detected at line 618
  []
 
 [22
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 636--636
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 637--637
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/star_orbit.png, id=310, 446.66875pt x 311.1625pt>
+<media/star_orbit.png, id=311, 446.66875pt x 311.1625pt>
 File: media/star_orbit.png Graphic file (type png)
 <use media/star_orbit.png>
-Package pdftex.def Info: media/star_orbit.png  used on input line 636.
+Package pdftex.def Info: media/star_orbit.png  used on input line 637.
 (pdftex.def)             Requested size: 169.73589pt x 118.24298pt.
 
-Overfull \vbox (5.33719pt too high) detected at line 636
+Overfull \vbox (7.46635pt too high) detected at line 637
  []
 
 [23
 
  <./media/star_orbit.png>]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 649--649
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 650--650
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [24
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 662--662
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 663--663
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 679--679
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 680--680
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/vr.png, id=344, 441.65pt x 530.98375pt>
+<media/vr.png, id=345, 441.65pt x 530.98375pt>
 File: media/vr.png Graphic file (type png)
 <use media/vr.png>
-Package pdftex.def Info: media/vr.png  used on input line 679.
+Package pdftex.def Info: media/vr.png  used on input line 680.
 (pdftex.def)             Requested size: 167.82874pt x 201.77591pt.
 
-Overfull \vbox (8.60803pt too high) detected at line 679
+Overfull \vbox (8.60803pt too high) detected at line 680
  []
 
 [26
 
  <./media/vr.png>]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 692--692
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 693--693
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/vr.png Graphic file (type png)
 <use media/vr.png>
-Package pdftex.def Info: media/vr.png  used on input line 692.
+Package pdftex.def Info: media/vr.png  used on input line 693.
 (pdftex.def)             Requested size: 167.82874pt x 201.77591pt.
 [27
 
 ]
-Overfull \hbox (5.47365pt too wide) in paragraph at lines 700--700
+Overfull \hbox (5.47365pt too wide) in paragraph at lines 703--703
 [][][][][][][][][][]  
  []
 
 [28
 
 ]
-Overfull \hbox (204.7893pt too wide) in paragraph at lines 719--719
+Overfull \hbox (204.7893pt too wide) in paragraph at lines 722--722
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/vr.png Graphic file (type png)
 <use media/vr.png>
-Package pdftex.def Info: media/vr.png  used on input line 719.
+Package pdftex.def Info: media/vr.png  used on input line 722.
 (pdftex.def)             Requested size: 141.33087pt x 169.91826pt.
 [29
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 735--735
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 738--738
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/vr.png Graphic file (type png)
 <use media/vr.png>
-Package pdftex.def Info: media/vr.png  used on input line 735.
+Package pdftex.def Info: media/vr.png  used on input line 738.
 (pdftex.def)             Requested size: 88.32843pt x 106.19485pt.
 [30
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 748--748
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 751--751
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [31
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 756--756
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 759--759
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 767--767
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 770--770
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [33
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 786--786
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 789--789
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [34
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 800--800
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 803--803
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [35
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 822--822
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 825--825
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [36
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 843--843
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 846--846
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [37
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 853--853
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 856--856
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/vr.png Graphic file (type png)
 <use media/vr.png>
-Package pdftex.def Info: media/vr.png  used on input line 853.
+Package pdftex.def Info: media/vr.png  used on input line 856.
 (pdftex.def)             Requested size: 141.33087pt x 169.91826pt.
 [38
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 863--863
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 866--866
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [39
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 874--874
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 877--877
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [40
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 886--886
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 889--889
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/vr.png Graphic file (type png)
 <use media/vr.png>
-Package pdftex.def Info: media/vr.png  used on input line 886.
+Package pdftex.def Info: media/vr.png  used on input line 889.
 (pdftex.def)             Requested size: 141.33087pt x 169.91826pt.
 [41
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 905--905
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 908--908
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [42
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 922--922
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 925--925
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [43
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 936--936
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 939--939
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [44
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 947--947
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 950--950
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [45
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 958--958
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 961--961
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [46
 
 ]
-Overfull \hbox (33.64165pt too wide) in paragraph at lines 967--967
+Overfull \hbox (33.64165pt too wide) in paragraph at lines 970--970
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [47
 
 ]
-<media/drink-coffee.png, id=590, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=591, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 986.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 989.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [48
 
  <./media/drink-coffee.png>] [49
 
 ]
-<media/inklinasjon.png, id=612, 364.36125pt x 179.67125pt>
+<media/inklinasjon.png, id=613, 364.36125pt x 179.67125pt>
 File: media/inklinasjon.png Graphic file (type png)
 <use media/inklinasjon.png>
-Package pdftex.def Info: media/inklinasjon.png  used on input line 1017.
+Package pdftex.def Info: media/inklinasjon.png  used on input line 1020.
 (pdftex.def)             Requested size: 218.61842pt x 107.80356pt.
 
-Overfull \hbox (13.23917pt too wide) in paragraph at lines 1017--1017
+Overfull \hbox (13.23917pt too wide) in paragraph at lines 1020--1020
 [][]  
  []
 
@@ -1543,18 +1543,18 @@ Overfull \hbox (13.23917pt too wide) in paragraph at lines 1017--1017
 ] [57
 
 ]
-<media/eclipse.png, id=707, 400.49625pt x 245.91875pt>
+<media/eclipse.png, id=708, 400.49625pt x 245.91875pt>
 File: media/eclipse.png Graphic file (type png)
 <use media/eclipse.png>
-Package pdftex.def Info: media/eclipse.png  used on input line 1130.
+Package pdftex.def Info: media/eclipse.png  used on input line 1134.
 (pdftex.def)             Requested size: 200.24763pt x 122.95906pt.
  [58
 
  <./media/eclipse.png>]
-<media/eclipse2.png, id=719, 437.635pt x 408.52625pt>
+<media/eclipse2.png, id=720, 437.635pt x 408.52625pt>
 File: media/eclipse2.png Graphic file (type png)
 <use media/eclipse2.png>
-Package pdftex.def Info: media/eclipse2.png  used on input line 1149.
+Package pdftex.def Info: media/eclipse2.png  used on input line 1153.
 (pdftex.def)             Requested size: 196.93393pt x 183.83511pt.
  [59
 
@@ -1565,17 +1565,17 @@ Package pdftex.def Info: media/eclipse2.png  used on input line 1149.
 ]
 File: media/eclipse2.png Graphic file (type png)
 <use media/eclipse2.png>
-Package pdftex.def Info: media/eclipse2.png  used on input line 1184.
+Package pdftex.def Info: media/eclipse2.png  used on input line 1188.
 (pdftex.def)             Requested size: 175.05089pt x 163.4076pt.
 
-Overfull \hbox (3.90324pt too wide) in paragraph at lines 1184--1184
+Overfull \hbox (3.90324pt too wide) in paragraph at lines 1188--1188
 [][]  
  []
 
 [62
 
 ]
-Overfull \vbox (11.76897pt too high) detected at line 1204
+Overfull \vbox (11.76897pt too high) detected at line 1208
  []
 
 [63
@@ -1583,12 +1583,12 @@ Overfull \vbox (11.76897pt too high) detected at line 1204
 ]
 File: media/eclipse2.png Graphic file (type png)
 <use media/eclipse2.png>
-Package pdftex.def Info: media/eclipse2.png  used on input line 1221.
+Package pdftex.def Info: media/eclipse2.png  used on input line 1225.
 (pdftex.def)             Requested size: 131.2915pt x 122.55882pt.
  [64
 
 ]
-Overfull \vbox (0.69737pt too high) detected at line 1240
+Overfull \vbox (0.69737pt too high) detected at line 1244
  []
 
 [65
@@ -1610,23 +1610,20 @@ Overfull \vbox (0.69737pt too high) detected at line 1240
 \openout8 = `interaktive_forelesningsnotater_1C_del1_av_2.snm'.
 
  (./interaktive_forelesningsnotater_1C_del1_av_2.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1C_del1_av_2
 .out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  26001 strings out of 478994
- 511148 string characters out of 5858185
- 852154 words of memory out of 5000000
+ 511278 string characters out of 5858185
+ 852156 words of memory out of 5000000
  42701 multiletter control sequences out of 15000+600000
  418725 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,13n,132p,1002b,1268s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{front} has been referenced but does not exist, re
-placed by a fixed one
+pdfTeX warning (dest): name{litenvinkel6b} has been referenced but does not e
+xist, replaced by a fixed one
 
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1644,10 +1641,10 @@ l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local
 texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on interaktive_forelesningsnotater_1C_del1_av_2.pdf (68 pages, 6
-336299 bytes).
+336847 bytes).
 PDF statistics:
- 958 PDF objects out of 1000 (max. 8388607)
- 786 compressed objects within 8 object streams
+ 959 PDF objects out of 1000 (max. 8388607)
+ 787 compressed objects within 8 object streams
  210 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 
