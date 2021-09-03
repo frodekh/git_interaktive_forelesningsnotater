@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  3 SEP 2021 09:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  3 SEP 2021 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1598,7 +1598,7 @@ Here is how much of TeX's memory you used:
  42707 multiletter control sequences out of 15000+600000
  418431 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,13n,132p,982b,1264s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,13n,132p,1002b,1264s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{front} has been referenced but does not exist, re
 placed by a fixed one
 
@@ -1618,7 +1618,7 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on interaktive_forelesningsnotater_1B_del1_av_2.pdf (72 pages, 1
-165042 bytes).
+165059 bytes).
 PDF statistics:
  1019 PDF objects out of 1200 (max. 8388607)
  832 compressed objects within 9 object streams
