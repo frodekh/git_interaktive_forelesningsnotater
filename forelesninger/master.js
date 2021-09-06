@@ -51,13 +51,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     //check if page title should be a right or wrong answer 
-    //by asserting the page title, sets bg color thereafter
+    //by asserting the page title, sets bg color thereafter in the starting html-tag
     let title = document.title
     console.log(title)
     if(title.includes("feil")){
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'black'
-        document.body.appendChild(ele)
         return
     }
     if(title.includes("riktig") || title.includes("rett")){
@@ -67,28 +66,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
         return
     }
     if(title.includes("pause")){
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'cyan'
-        document.body.appendChild(ele)
         return
     }
     if(title.includes("red")){
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'red'
-        document.body.appendChild(ele)
         return
     }
     if(title.includes("blue")){
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'blue'
-        document.body.appendChild(ele)
         return
     }
     if(title.includes("tema")){
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'blue'
-        document.body.appendChild(ele)
-
+        
         const p = document.querySelectorAll('p');
         p[1].style.fontSize = '50px'
         p[1].style.textAlign = 'center'
@@ -104,9 +99,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         p.forEach(element => {
             element.style.fontSize = '30px'
         });
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'red'
-        document.body.appendChild(ele)
         return
     }
 })
