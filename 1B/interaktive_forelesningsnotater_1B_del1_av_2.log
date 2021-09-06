@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  3 SEP 2021 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  6 SEP 2021 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1141,7 +1141,7 @@ Overfull \vbox (2.10793pt too high) detected at line 342
 ] [6
 
 ]
-<media/car_move_1.png, id=112, 981.6675pt x 453.695pt>
+<media/car_move_1.png, id=111, 981.6675pt x 453.695pt>
 File: media/car_move_1.png Graphic file (type png)
 <use media/car_move_1.png>
 Package pdftex.def Info: media/car_move_1.png  used on input line 369.
@@ -1149,7 +1149,7 @@ Package pdftex.def Info: media/car_move_1.png  used on input line 369.
  [7
 
  <./media/car_move_1.png>]
-<media/car_move_2.png, id=125, 1074.0125pt x 451.6875pt>
+<media/car_move_2.png, id=124, 1074.0125pt x 451.6875pt>
 File: media/car_move_2.png Graphic file (type png)
 <use media/car_move_2.png>
 Package pdftex.def Info: media/car_move_2.png  used on input line 380.
@@ -1161,7 +1161,7 @@ Overfull \hbox (117.73422pt too wide) in paragraph at lines 398--398
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/spaceship_move_1.png, id=137, 576.1525pt x 553.06625pt>
+<media/spaceship_move_1.png, id=136, 576.1525pt x 553.06625pt>
 File: media/spaceship_move_1.png Graphic file (type png)
 <use media/spaceship_move_1.png>
 Package pdftex.def Info: media/spaceship_move_1.png  used on input line 398.
@@ -1183,7 +1183,7 @@ Overfull \hbox (117.73422pt too wide) in paragraph at lines 416--416
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/spaceship_move_2.png, id=164, 576.1525pt x 552.0625pt>
+<media/spaceship_move_2.png, id=163, 576.1525pt x 552.0625pt>
 File: media/spaceship_move_2.png Graphic file (type png)
 <use media/spaceship_move_2.png>
 Package pdftex.def Info: media/spaceship_move_2.png  used on input line 416.
@@ -1238,7 +1238,7 @@ Overfull \hbox (12.97069pt too wide) in paragraph at lines 541--541
 []| [][][][][]  
  []
 
-<media/unity_vectors.png, id=267, 591.20876pt x 478.78876pt>
+<media/unity_vectors.png, id=266, 591.20876pt x 478.78876pt>
 File: media/unity_vectors.png Graphic file (type png)
 <use media/unity_vectors.png>
 Package pdftex.def Info: media/unity_vectors.png  used on input line 541.
@@ -1357,7 +1357,7 @@ Overfull \hbox (58.14229pt too wide) in paragraph at lines 768--768
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/unity_vector_decomp.png, id=435, 219.82124pt x 197.73875pt>
+<media/unity_vector_decomp.png, id=434, 219.82124pt x 197.73875pt>
 File: media/unity_vector_decomp.png Graphic file (type png)
 <use media/unity_vector_decomp.png>
 Package pdftex.def Info: media/unity_vector_decomp.png  used on input line 768.
@@ -1406,7 +1406,7 @@ Overfull \hbox (58.14229pt too wide) in paragraph at lines 855--855
 [37
 
 ]
-<media/drink-coffee.png, id=506, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=505, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
 Package pdftex.def Info: media/drink-coffee.png  used on input line 874.
@@ -1427,7 +1427,7 @@ Overfull \hbox (36.08214pt too wide) in paragraph at lines 909--909
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/tangential_vel.png, id=538, 309.155pt x 258.9675pt>
+<media/tangential_vel.png, id=537, 309.155pt x 258.9675pt>
 File: media/tangential_vel.png Graphic file (type png)
 <use media/tangential_vel.png>
 Package pdftex.def Info: media/tangential_vel.png  used on input line 909.
@@ -1459,7 +1459,7 @@ Overfull \hbox (197.92891pt too wide) in paragraph at lines 1017--1017
 [48
 
 ]
-<media/ellipse.png, id=634, 729.72626pt x 325.215pt>
+<media/ellipse.png, id=633, 729.72626pt x 325.215pt>
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
 Package pdftex.def Info: media/ellipse.png  used on input line 1031.
@@ -1518,7 +1518,7 @@ Overfull \hbox (2.69771pt too wide) in paragraph at lines 1156--1156
 ] [57
 
 ]
-<media/forces.png, id=725, 379.4175pt x 204.765pt>
+<media/forces.png, id=724, 379.4175pt x 204.765pt>
 File: media/forces.png Graphic file (type png)
 <use media/forces.png>
 Package pdftex.def Info: media/forces.png  used on input line 1183.
@@ -1533,7 +1533,7 @@ Package pdftex.def Info: media/forces.png  used on input line 1198.
  [59
 
 ]
-<media/unityvectors_on_m1m2.png, id=748, 287.0725pt x 273.02pt>
+<media/unityvectors_on_m1m2.png, id=747, 287.0725pt x 273.02pt>
 File: media/unityvectors_on_m1m2.png Graphic file (type png)
 <use media/unityvectors_on_m1m2.png>
 Package pdftex.def Info: media/unityvectors_on_m1m2.png  used on input line 122
@@ -1552,7 +1552,7 @@ Overfull \vbox (0.13007pt too high) detected at line 1220
 ] [63
 
 ]
-<media/harmosc.png, id=808, 160.6pt x 276.03125pt>
+<media/harmosc.png, id=807, 160.6pt x 276.03125pt>
 File: media/harmosc.png Graphic file (type png)
 <use media/harmosc.png>
 Package pdftex.def Info: media/harmosc.png  used on input line 1300.
@@ -1592,36 +1592,33 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1B_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26015 strings out of 478994
- 512196 string characters out of 5858185
+ 26014 strings out of 478994
+ 512191 string characters out of 5858185
  849503 words of memory out of 5000000
  42707 multiletter control sequences out of 15000+600000
  418431 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,13n,132p,1002b,1264s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{front} has been referenced but does not exist, re
-placed by a fixed one
-
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on interaktive_forelesningsnotater_1B_del1_av_2.pdf (72 pages, 1
-165059 bytes).
+165019 bytes).
 PDF statistics:
- 1019 PDF objects out of 1200 (max. 8388607)
- 832 compressed objects within 9 object streams
- 218 named destinations out of 1000 (max. 500000)
+ 1018 PDF objects out of 1200 (max. 8388607)
+ 831 compressed objects within 9 object streams
+ 217 named destinations out of 1000 (max. 500000)
  450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

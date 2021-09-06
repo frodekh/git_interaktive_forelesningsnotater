@@ -762,7 +762,7 @@ helt til vi finner en som gir oss den minste mulige kvadratforskjellen. Rent mat
  Tidspunktet for observasjon nr. $i$ er derfor $t_i$ og vi har totalt $N$ slike observasjoner. Da få vi at kvadratforskjellen er gitt ved:
 \begin{align*}
 &\Delta(v_*, P, t_0) = \\
-&\sum_{i=1}^N\left[v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i, v_*, P, t_0)\right]^2
+&\sum_{i=1}^N\left(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i, v_*, P, t_0)\right)^2
 \end{align*}
 der vi ser at $\Delta$ altså er en funksjon av de ukjente parameterene $P$, $v_*$ og $t_0$. Her er $v_r^\mathrm{obs}$ den observerte sorte kurven og $v_r^\mathrm{mod}$ er den røde modellkurven. Vi skal altså finne de parameterene $P$, $v_*$ og $t_0$ som minimaliserer $\Delta$. Dette vil være de tallene $P$, $v_*$ og $t_0$ som passer best til dataene og de vi skal bruke videre til å finne massen.
 \hyperlink{pause}{\pagebutton{Neste side}}
@@ -880,7 +880,7 @@ Flott! Du fikk det til. Det betyr at du forstår hva det betyr at støyen er Gau
 {\small 
 Men hva skal vi gjøre i en slik situasjon når støyen varierer med tiden? Hvis vi bruker vanlig minste kvadraters metode her, så behandler vi dataene av dårlig kvalitet på samme måte som dataene av god kvalitet, kan det være riktig? Vi kan vel ikke få et optimalt godt estimat av modellen vår på den måten? Kan du tenkte deg hvordan vi kan gjøre en liten modifikasjon av minste kvadraters metode
 \[
-\Delta(v_*, P, t_0) = \sum_{i=1}^N\left[v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i, v_*, P, t_0)\right]^2
+\Delta(v_*, P, t_0) = \sum_{i=1}^N\left(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i, v_*, P, t_0)\right)^2
 \]
 for å ta hensyn til at standardavviket til støyen ikke alltid er den samme?
 {\bf Tenk deg om (1 min) før du går videre!}
