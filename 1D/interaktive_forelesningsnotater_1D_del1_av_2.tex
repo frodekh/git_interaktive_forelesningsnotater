@@ -1,8 +1,11 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
+
+\input{usercommands}
+
 \usetheme{Boadilla}
 %\usepackage{multimedia}
-\usepackage{animate}
+%\usepackage{animate}
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{cancel}
@@ -11,7 +14,7 @@
 
 %%%%mathcircled
 \makeatletter
-\newcommand\mathcircled[1]{%
+\newcommand\mathcircled[1]{%`
   \mathpalette\@mathcircled{#1}%
 }
 \newcommand\@mathcircled[2]{%
@@ -19,7 +22,6 @@
 }
 \makeatother
 %%%%
-
 
 %gets rid of bottom navigation bars
 \setbeamertemplate{footline}[frame number]{}
@@ -49,6 +51,7 @@
 \definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
 \definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
 \definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
 
 \hypersetup{
     colorlinks=true,
@@ -71,6 +74,9 @@
 %body
 \setbeamercolor{block body}{fg=yellow,bg=bronze}
 
+
+
+
 \newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
 
 \newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
@@ -79,73 +85,221 @@
 
 \newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
 
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
 
 \newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
 \newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 \newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\\}
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
 \newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
 \newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
 
-\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\\}
-\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\\}
-\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\\}
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
 \centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
-\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
 \vspace*{0.5cm}
 }
 
-%  \node[
-%  inner xsep=10pt,
-%  draw=structure!80,
-%  fill=structure!50,
-%  rounded corners=4pt]  {\Large\insertbuttontext};}
-% structure!90
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
 
 \newcounter{pageno}
 \newcounter{nopages}
-\setcounter{nopages}{36}
+\setcounter{nopages}{42}
 
 \newcommand{\headline}{\small Introduksjon}
 
 \begin{document}
 
-
-%%%%% front
-\begin{frame}
-\label{front}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1D\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
-\vspace*{1cm}
-\begin{alertblock}{\center{\bf VIKTIG}}
-Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
-\end{alertblock}
-\vspace*{0.5cm}
-%\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
-
-\end{frame}
-
 \begin{frame}
 \label{front2}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1D\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1C\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
 \begin{block}{\center{\bf VIKTIG}}
-Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1c.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
 \end{block}
 %\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{tableofcontents}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
 
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{blue_blue_nytema1}{\headlinebutton{Fluks og luminositet}}
+\item \hyperlink{blue_blue_nytema2}{\headlinebutton{Sorte legemer}}
+\item \hyperlink{blue_blue_nytema3}{\headlinebutton{Romvinkler}}
+\item \hyperlink{blue_blue_nytema3}{\headlinebutton{Intensitet}}
+\item \hyperlink{blue_blue_nytema4}{\headlinebutton{Hvordan får vi informasjon om universet?}}
+\end{itemize}
+\hyperlink{intro}{\choicebutton{Neste side}}
+\end{frame}
 
 %%%%% intro
 \begin{frame}
@@ -154,9 +308,9 @@ Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått 
 \column{0.5\textwidth}
 \hyperlink{front}{\pagebutton{Forrige side}}\\
 \vspace{1cm}
-\includegraphics[scale=0.25]{radiotelescopes.png}\\
+\includegraphics[scale=0.25]{media/radiotelescopes.png}\\
 \column{0.5\textwidth}
-\small Velkommen til del 1D! Nesten all informasjon vi har om verdensrommet har vi fra stråling som kommer fra objektene. I denne forelesningen skal vi se nærmere på denne strålingen, hvilke prosesser som genererer den og hvordan vi kan få informasjon fra den. Noe har du kanskje vært borti allerede på videregående, som f.eks. sorte legemer, Wiens forskyvningslov og spektrallinjer? Her skal vi fordype oss videre i disse temaene og se både på litt teori men i stor grad på hvordan vi kan anvende det til å få informasjon om universet. \\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
+\small Velkommen til del 1D! Nesten all informasjon vi har om verdensrommet har vi fra stråling som kommer fra objektene. I denne forelesningen skal vi se nærmere på denne strålingen, hvilke prosesser som genererer den og hvordan vi kan få informasjon fra den. Noe har du kanskje vært borti allerede på videregående, som f.eks. sorte legemer, Wiens forskyvningslov og spektrallinjer? Her skal vi fordype oss videre i disse temaene og se både på litt teori men i stor grad på hvordan vi kan anvende det til å få informasjon om universet. Dette forelesningsnotatet tilsvarer litt mer enn en dobbelttime fysisk forelesning. \\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
 %\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
 \end{columns}
 \end{frame}
@@ -171,20 +325,14 @@ Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått 
 \end{alertblock}
 \href{https://nettskjema.no/a/155782}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
 Er du klar og har sendt inn skjemaet?
-\href{https://nettskjema.no/a/155782}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
-%\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
-\end{itemize}
+\href{https://nettskjema.no/a/155782}{\choicebutton{Nei}}\ \ \ \ \hyperlink{blue_nytema1}{\choicebutton{Ja}}\\
 \end{frame}
 
 \renewcommand{\headline}{\small Fluks og luminositet}
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema1}
+\label{blue_nytema1}
 \hyperlink{intro2}{\pagebutton{\small Forrige side}}
 \nytemaside{sortleg}
 \hyperlink{1d3}{\pagebutton{Sett igang med å lære de to uttrykkene!}}
@@ -194,7 +342,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{1d3}
-\dlastpagebutton{intro2}
+\lastpagebutton{intro2}
 {\bf Vi skal fortsette der vi slapp i skjemaet.} 
 \begin{block}{Fluks $F$ er...}
 ... den lille energimengden $\Delta E$ som passerer gjennom en lite areal $\Delta A$ i løpet av et kort tidsrom $\Delta t$. Det kan f.eks. være energimengden som vi mottar på et lite areal $\Delta A$ av jordoverflaten fra sola, dette ville vært {\it mottatt} fluks. Det kunne også være energien som blir strålt ut per areal $\Delta A$ av soloverflaten, dette ville vært {\it utsendt} fluks.
@@ -213,8 +361,8 @@ F=\frac{\Delta E}{\Delta A\Delta t}=\frac{d^2E}{dAdt}\ \ \ \ \ L=\frac{\Delta E}
 \label{1d3b}
 \lastpagebuttoncr{1d3}
 La oss se på oppgaveteksten til oppgave 1D.3 (prosjektstudenter har et liknende problem i utfordring B i del 3). Vi begynner rett på 4. deloppgave, anta at du ser på sola og fluksen $F$ som sola stråler ut er kjent fra Stefan-Boltzmanns lov, $F=\sigma T^4$, denne har du kanskje sett før, men vi skal komme nærmere inn på denne senere. Det viktigste nå er at $F$ er et kjent tall, det samme er {\bf radiusen} til sola.
-\includegraphics[scale=0.4]{1d3_1.png}\\
-{\bf Du skal altså ikke bruke tall nå, kun diskutere \textcolor{red}{hvordan} du vil løse oppgaven}.
+\includegraphics[scale=0.4]{media/1d3_1.png}\\
+{\bf Du skal altså ikke bruke tall nå, kun diskutere \textcolor{red}{hvordan} du vil løse oppgaven (tenk maks 1 min)}.
 \hyperlink{1d3-2}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -225,9 +373,9 @@ La oss se på oppgaveteksten til oppgave 1D.3 (prosjektstudenter har et liknende
 \column{0.5\textwidth}
 \lastpagebutton{1d3b}
 Hvis du får til denne oppgaven, så har du funnet luminositeten $L$ til sola. Da kan vi gå videre til neste deloppgave:\\
-\includegraphics[scale=0.4]{1d3_2.png}\\
+\includegraphics[scale=0.4]{media/1d3_2.png}\\
 \column{0.5\textwidth}
-{\bf Igjen skal du kun diskutere hvordan oppgaven kan løses.} Ser du her at fluks kan ha to betydninger, vi kan snakke om \textcolor{red}{utstrålt fluks} og \textcolor{red}{mottatt fluks}. I begge tilfeller er det energien som passerer gjennom et areal per tidsenhet, enten den ene eller andre veien. Ser du hvordan du kan finne fluksen fra sola som mottas ved f.eks. Saturn? Ideen er veldig lik den du brukte til å finne luminositeten til sola. Tenk deg godt om før du går videre til neste side.
+{\bf Igjen skal du kun diskutere hvordan oppgaven kan løses.} Ser du her at fluks kan ha to betydninger, vi kan snakke om \textcolor{red}{utstrålt fluks} og \textcolor{red}{mottatt fluks}. I begge tilfeller er det energien som passerer gjennom et areal per tidsenhet, enten den ene eller andre veien. Ser du hvordan du kan finne fluksen fra sola som mottas ved f.eks. Saturn? Ideen er veldig lik den du brukte til å finne luminositeten til sola. Tenk deg godt om før du går videre til neste side. (tenk maks 2 min)
 \hyperlink{1d3-3}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -239,10 +387,10 @@ Hvis du får til denne oppgaven, så har du funnet luminositeten $L$ til sola. D
 \column{0.5\textwidth}
 \lastpagebutton{1d3-2}
 Hvis du får til denne oppgaven, så har du funnet fluksen $F_\mathrm{Saturn}$ fra sola på Saturn (du skal altså ikke finne tall, men vite hvordan du kunne funnet dette tallet). Hvis du ikke fikk det til, bare anta at du har fått denne størrelsen. Da kan vi gå videre til neste deloppgave:\\
-\includegraphics[scale=0.4]{1d3_3.png}\\
+\includegraphics[scale=0.4]{media/1d3_3.png}\\
 \column{0.5\textwidth}
 {\bf Igjen skal du kun diskutere hvordan oppgaven kan løses.}
-Ikke gå videre før du har et forslag til løsning og repeter hele prosessen for hvordan du nå kan finne hvor stort solpanel du trenger for at en satelitt ved saturn skal få nok solenergi til å drive instrumentene ombord. 
+Tenk omkring et minutt og se om du ser hvordan du kan gå frem. Deretter, repeter hele prosessen for hvordan du nå kan finne hvor stort solpanel du trenger for at en satelitt ved Saturn skal få nok solenergi til å drive instrumentene ombord. 
 \hyperlink{1d4-1}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -255,9 +403,9 @@ Ikke gå videre før du har et forslag til løsning og repeter hele prosessen fo
 \column{0.5\textwidth}
 Hvis du slet med å få til oppgave 1D3, så kan du \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_1.mp4}{se på denne videoen for å få noen tips}. Hvis du er usikker på fremgangsmåte eller svaret, {\bf spør gruppelærer}. 
 Når du har forstått godt hvordan du løser 1D3, så er du klar til å ta fatt på å {\bf diskutere} 1D.4 (også i prosjektet må en liknende utfordring løses):
-\includegraphics[scale=0.4]{1d4_1.png}
+\includegraphics[scale=0.4]{media/1d4_1.png}
 \column{0.5\textwidth}
-\includegraphics[scale=0.32]{1d4_2.png}\\
+\includegraphics[scale=0.32]{media/1d4_2.png}\\
 \textcolor{red}{Legg merke til hintet om å anta at planeten er en skive!} \hyperlink{1d4-2}{\pagebutton{\small Neste side}}
 \end{columns}
 \end{frame}
@@ -269,15 +417,17 @@ Når du har forstått godt hvordan du løser 1D3, så er du klar til å ta fatt 
 \column{0.5\textwidth}
 \lastpagebuttoncr{1d4-1}
 Siste deloppgave av 1D.4:
-\includegraphics[scale=0.42]{1d4_3.png}\\
+\includegraphics[scale=0.42]{media/1d4_3.png}\\
 \column{0.5\textwidth}
+{\small
 Du skal igjen kun diskutere fremgangsmåten, ikke nødvendigvis løse oppgaven med tall nå. 
 \begin{itemize}
 \item Husk at for en planet å være i likevekt med stabil temperatur så må den motta like mye energi som den sender ut. 
-\item Du kommer du igjen til å trenge Stefan-Boltzmanns low, $F=\sigma T^4$ der $\sigma$ er et tall og $T$ er temperaturen til legemet. Stefan-Boltzmanns lov gjelder kun for sorte legemer (forklaring senere), vi skal her anta at Saturn er et sort legeme.
+\item Du kommer du igjen til å trenge Stefan-Boltzmanns low, $F=\sigma T^4$ der $\sigma$ er et tall og $T$ er temperaturen til legemet. Stefan-Boltzmanns lov sier hvor stor fluks som stråles ut fra overflaten av sorte legemer (forklaring senere), vi skal her anta at Saturn er et sort legeme.
 \end{itemize}
-\textcolor{red}{Ikke gå videre før du har tenkt godt gjennom hva du kan gjøre.}
+\textcolor{red}{Ikke gå videre før du har tenkt gjennom hva du kan gjøre (1 min maks for nå).}
 {\bf Hvis du ikke får det til, få hjelp av en gruppelærer!}
+}
 \hyperlink{sblaw}{\pagebutton{\small Neste side}}
 \end{columns}
 \end{frame}
@@ -297,34 +447,41 @@ F=\sigma T^4
 \]
 Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
 \end{block}
-\hyperlink{sblaw2}{\pagebutton{\small Neste side}}
+\hyperlink{red_sblaw2}{\pagebutton{\small Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Sorte legemer}
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema2}
+\label{blue_nytema2}
 \hyperlink{sblaw}{\pagebutton{\small Forrige side}}
 \nytemaside{romvink}
-\hyperlink{sblaw2}{\pagebutton{Neste side!}}
+\hyperlink{red_sblaw2}{\pagebutton{Neste side!}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{sblaw2}
+\label{red_sblaw2}
 \lastpagebutton{sblaw}\label{sortleg}
 \textcolor{yellow}{\huge Men så var det dette sorte legemet da?\\
-Kan du huske hvordan et sort legeme er definert??\hyperlink{sblaw2b}{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
+Kan du huske hvordan et sort legeme er definert??\hyperlink{red_sblaw2_b}{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
 }
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{sblaw2b}{}
-\end{itemize}
-\vspace*{-0.5cm}
+\textcolor{red}{Husket du det omtrent? Et sort legeme er et legeme som absorberer all stråling som faller på det. Ingen stråling går gjennom legemet og ingen stråling reflekteres. {\bf MERK:} Det betyr {\bf ikke} at objektet ikke stråler!! Sorte legemer sender ut sort stråling som kommer fra bevegelsen til atomene og molekylene i legemet. En stjerne er en ok tilnærmelse til et sort legeme.}
+\textcolor{red}{Neste side}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=red}
+\begin{frame}
+\label{red_sblaw2_b}
+\lastpagebutton{sblaw}\label{sortleg}
+\textcolor{yellow}{\huge Men så var det dette sorte legemet da?\\
+Kan du huske hvordan et sort legeme er definert??{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
+}
 \textcolor{yellow}{Husket du det omtrent? Et sort legeme er et legeme som absorberer all stråling som faller på det. Ingen stråling går gjennom legemet og ingen stråling reflekteres. {\bf MERK:} Det betyr {\bf ikke} at objektet ikke stråler!! Sorte legemer sender ut sort stråling som kommer fra bevegelsen til atomene og molekylene i legemet. En stjerne er en ok tilnærmelse til et sort legeme.}
 \hyperlink{sblaw3}{\pagebutton{Neste side}}
 \end{frame}
@@ -334,14 +491,14 @@ Kan du huske hvordan et sort legeme er definert??\hyperlink{sblaw2b}{\pagebutton
 
 \begin{frame}
 \label{sblaw3}
-\dlastpagebutton{sblaw2}
+\dlastpagebutton{red_sblaw2}
 For sorte legemer kan man utlede {\it Plancks strålingslov}. Denne utledningen kommer du til å gjøre i senere kurs, her bare aksepterer vi at for fluks $F(\lambda)$ så er den gitt ved''
 \[
 F(\lambda) = \frac{2\pi hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
 \]
 \textcolor{red}{\bf Hvordan kan du bruke dette til å utlede Stefan-Boltzmanns lov?} \\
 (og derav også utlede tallet $\sigma$,. merk at dette ikke har noe med standardavvik å gjøre selv om vi bruker samme symbol). \\
-{\bf Merk at du ikke skal gjøre utledningen, men tenke detaljert gjennom hvordan du ville gått frem!}. Hvis du er usikker, gå gjerne tilbake og se på definisjonen av Stefan-Boltzmanns lov.
+{\bf Merk at du ikke skal gjøre utledningen, men tenke detaljert gjennom hvordan du ville gått frem! (maks 1-2 min)}. Hvis du er usikker, gå gjerne tilbake og se på definisjonen av Stefan-Boltzmanns lov.
 \hyperlink{wien}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -407,14 +564,14 @@ Ved hvilken bølgelengde $\lambda$ stråler solen mest energi? Anta at solen er 
 hvor enhetene her er meter ganger Kelvin.
 \end{block}
 Bruk \href{https://en.wikipedia.org/wiki/Color}{bølgelengdeoversikten her} for å finne hvilken farge det tilsvarer.{\bf Overrasket?} Kan du finne en forklaring hvis svaret ikke stemmer overens med dine forventninger?
-\hyperlink{nytema3}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema3}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Romvinkler}
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema3}
+\label{blue_nytema3}
 \hyperlink{wien3}{\pagebutton{\small Forrige side}}
 \nytemaside{intens}
 \hyperlink{solidangle}{\pagebutton{Et nytt uttrykk å lære og så en pause !}}
@@ -442,23 +599,46 @@ Når du har gravd litt i gamle minner, så kan du.. \hyperlink{solidangle2}{\pag
 \lastpagebuttoncr{solidangle}
 {\small
 Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:
-\includegraphics[scale=0.42]{angle.png}\\
+\includegraphics[scale=0.42]{media/angle.png}\\
 Buelengden $\Delta s$ er størrelsen på vinkelen i radianer! Hvis det ikke er en enhetssrikel, så må du dele buelengden på $r$ for å reskalere til enhetssirkelen:
 \[
 \theta=\frac{\Delta s}{r}
 \]
 {\bf Kan du nå tenke deg hvordan generalisering til 3 dimensjoner blir?}
 }
-\hyperlink{solidangle2b}{\pagebutton{Trykk her når du har tenkt}}
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{solidangle2b}{}
-\end{itemize}
+\hyperlink{solidangle2_b}{\pagebutton{Trykk her når du har tenkt}}
+\column{0.5\textwidth}
+\textcolor{white}{\small 
+Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:\\
+\vspace*{3cm}
+En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$ på overflaten av enhetskula som romvinkelen utspenner. Tenk deg f.eks. en bunt av lysstråler som strømmer ut fra sentrum og inn i romvinkelen $\Omega$. Et typisk bruksområde for romvinkler er å se på lysbunter som stråler ut i en gitt retning. Igjen, hvis vi ikke har enhetskula må vi reskalere:
+\[
+\Omega = \frac{\Delta A}{r^2}
+\]
+{Neste side}}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{solidangle2_b}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebuttoncr{solidangle}
+{\small
+Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:
+\includegraphics[scale=0.42]{media/angle.png}\\
+Buelengden $\Delta s$ er størrelsen på vinkelen i radianer! Hvis det ikke er en enhetssrikel, så må du dele buelengden på $r$ for å reskalere til enhetssirkelen:
+\[
+\theta=\frac{\Delta s}{r}
+\]
+{\bf Kan du nå tenke deg hvordan generalisering til 3 dimensjoner blir?}
+}
+{\pagebutton{Trykk her når du har tenkt}}
 \column{0.5\textwidth}
 {\small 
 Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:
-\includegraphics[scale=0.42]{solidangle.png}\\
+\includegraphics[scale=0.42]{media/solidangle.png}\\
 En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$ på overflaten av enhetskula som romvinkelen utspenner. Tenk deg f.eks. en bunt av lysstråler som strømmer ut fra sentrum og inn i romvinkelen $\Omega$. Et typisk bruksområde for romvinkler er å se på lysbunter som stråler ut i en gitt retning. Igjen, hvis vi ikke har enhetskula må vi reskalere:
 \[
 \Omega = \frac{\Delta A}{r^2}
@@ -476,14 +656,14 @@ En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$
 \hyperlink{solidangle2}{\pagebutton{\small Forrige side}}
 {\Huge
 \centerline{Litt tidlig med kaffepause sier du???}
-\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 ÅNEI, ta deg pausen du, for neste tema kommer du virkelig til å trenge det, lover!\\
 \vspace*{0.5cm}
 Ihvertfall 10 min...
 }\\
 \vspace*{0.5cm}
-\hyperlink{nytema4}{\pagebutton{Jeg trekker pusten nå og er klar til ...}}
+\hyperlink{blue_nytema4}{\pagebutton{Jeg trekker pusten nå og er klar til ...}}
 \end{frame}
 }
 
@@ -492,7 +672,7 @@ Ihvertfall 10 min...
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema4}
+\label{blue_nytema4}
 \hyperlink{solidangle2}{\pagebutton{\small Forrige side}}
 \nytemaside{info}
 \hyperlink{intensity1}{\pagebutton{Jeg er så klar som det er mulig å være!}}
@@ -507,7 +687,7 @@ Vi skal nå gå over til intensitetsbegrepet. {\it Intensiteten er energien per 
 \[
 I(\lambda)=\frac{\Delta E}{\cos{\theta}\Delta A\Delta t\Delta \lambda\Delta \Omega}
 \]
-\centerline{\includegraphics[scale=0.7]{intensity.png}}
+\centerline{\includegraphics[scale=0.7]{media/intensity.png}}
 Nærmere forklaring finner du \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_3.mp4}{i denne videoen}
 \hyperlink{intensity2}{\pagebutton{Neste side}}
 \end{frame}
@@ -563,13 +743,13 @@ Ta et papir og gjør om slik at du uttrykker denne ved frekvens $B(\nu)$ isteden
 B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \]
 {\bf\Large ??}\\
-\hyperlink{bnuja}{\choicebutton{JA!}}\ \ \ \ \hyperlink{bnunei}{\choicebutton{NEI!}}\
+\hyperlink{feil_bnuja}{\choicebutton{JA!}}\ \ \ \ \hyperlink{riktig_bnunei}{\choicebutton{NEI!}}\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{bnuja}
+\label{feil_bnuja}
 \lastpagebutton{intensity3b}
 \textcolor{white}{Det var synd for det ble FEIL:
 \[
@@ -583,7 +763,7 @@ B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{bnunei}
+\label{riktig_bnunei}
 \clastpagebutton{intensity3b}
 Det høres bra ut, for det uttrykket er nemlig feil...
  \hyperlink{intensity4}{\pagebutton{Neste side}}
@@ -619,7 +799,7 @@ B(\nu) = \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{kT}}-1}
 \label{intensity5}
 \lastpagebutton{intensity4}
 Her ser du $B(\lambda)$:\\
-\includegraphics[scale=0.5]{blambda.png}\\
+\includegraphics[scale=0.5]{media/blambda.png}\\
 Kan du forklare Stefan-Boltzmanns lov og Wiens forskyvningslov {\bf kun} ved å bruke denne figuren?
 Prøv å bruke figuren til å forklare de to lovene til hverandre (eller til deg selv)
 \hyperlink{intensity6}{\pagebutton{Jeg har gjort det, ihvertfall forsøkt}}
@@ -631,9 +811,9 @@ Prøv å bruke figuren til å forklare de to lovene til hverandre (eller til deg
 \column{0.4\textwidth}
 \lastpagebuttoncr{intensity5}
 Hvis du hadde problemer med forklaringen, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_5.mp4}{denne videoen}.
-Da er du klar til å løse oppgave 1D.1. Diskuter hvordan du vil gå frem for å løse denne oppgaven. Hvis du sliter, kontakt gruppelærer.
+Da er du klar til å løse oppgave 1D.1. Akkurat nå skal du kun diskutere hvordan du vil gå frem for å løse denne oppgaven (maks 2 min). 
 \column{0.6\textwidth}
-\includegraphics[scale=0.45]{1d1.png}
+\includegraphics[scale=0.45]{media/1d1.png}
 \end{columns}
 \hyperlink{pause2}{\pagebutton{Neste side}}
 \end{frame}
@@ -645,14 +825,14 @@ Da er du klar til å løse oppgave 1D.1. Diskuter hvordan du vil gå frem for å
 \hyperlink{intensity6}{\pagebutton{\small Forrige side}}
 {\Huge
 \centerline{Mer kaffe sier du???}
-\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 Det har du fortjent nå.{\small Og så kan du jo se om du finner en kakebit som du kan fordøye sammen med intensitetbegrepet?}\\
 \vspace*{0.5cm}
 Ihvertfall 10 min...
 }\\
 \vspace*{0.5cm}
-\hyperlink{nytema5}{\pagebutton{Gå videre...}}
+\hyperlink{blue_nytema5}{\pagebutton{Gå videre...}}
 \end{frame}
 }
 
@@ -660,7 +840,7 @@ Ihvertfall 10 min...
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema5}
+\label{blue_nytema5}
 \hyperlink{intensity6}{\pagebutton{\small Forrige side}}
 \nytemaside{elmag}
 \hyperlink{straling}{\pagebutton{Resten av denne forelesningen er Planckekjøring, sett igang}}
@@ -672,13 +852,21 @@ Ihvertfall 10 min...
 \label{straling}
 \lastpagebutton{intensity6}\label{info}
 Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?
-\hyperlink{straling1b}{\pagebutton{Trykk her når du har tenkt}}
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] \hypertarget<.>{straling1b}{}
-\end{itemize}
-\vspace{-0.5cm}
+\hyperlink{straling_b}{\pagebutton{Trykk her når du har tenkt}}
+\textcolor{white}{
+kosmisk stråling\\
+nøytrinoer\\
+gravitasjonsbølger\\
+La oss se på hver av disse...\\
+{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{straling_b}
+\lastpagebutton{intensity6}\label{info}
+Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?
+{\pagebutton{Trykk her når du har tenkt}}
 \begin{itemize}
 \item kosmisk stråling
 \item nøytrinoer
@@ -731,14 +919,14 @@ Ingen over, ingen ved siden! Elektromagnetisk stråling er den klare vinneren. N
 \end{itemize}
 
 \end{block}
-\hyperlink{nytema6}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema6}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Kilder til elektromagnetisk stråling}
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema6}
+\label{blue_nytema6}
 \hyperlink{straling5}{\pagebutton{\small Forrige side}}
 \nytemaside{0}
 \hyperlink{straling6}{\pagebutton{Vi fortsetter med litt 'light' stoff, gå igang}}
@@ -759,7 +947,7 @@ Synkrotronstråling oppstår typisk når elektroner blir akselerert i magnetiske
 \begin{frame}
 \label{straling7}
 \lastpagebutton{straling6}
-\includegraphics[scale=0.15]{bremss.png}{\tiny (Figur: Wikipedia)}
+\includegraphics[scale=0.15]{media/bremss.png}{\tiny (Figur: Wikipedia)}
 \begin{alertblock}{Bremsstrahlung}
 \small
 Strålingen med det tyske navnet ``Bremsstrahlung'' oppstår når raske elektroner blir bremset i det elektriske feltet fra en atomkjerne. Oppbremsingen medfører en akselrasjon som dermed gjør at det avgies stråling på alle bølgelengder. Det intergalaktiske mediet (IGM) er en meget varm gass av elektroner og atomkjerner som befinner seg mellom galaksene i en galaksenhop. Den høye temperaturen gir elektronene høy hastighet, men stadige hastighetsendringer når de nærmer seg atmokjernene gir opphav til Bremsstralhung i form av røntgenstråler. Slike røntgenstråler er en viktig kilde til informasjon om fjerne galaksehoper.
@@ -789,7 +977,7 @@ I kvantemekanikken har elementærpartikler det vi kaller kvantespinn, det kan sa
 \label{straling10}
 \lastpagebutton{straling9}
 Illustrasjon av spin-flip i hydrogenatomet:
-\includegraphics[scale=0.3]{21cm.png}{\tiny (Figur: Wikipedia)}
+\includegraphics[scale=0.3]{media/21cm.png}{\tiny (Figur: Wikipedia)}
 \hyperlink{oppsummering}{\pagebutton{Neste side}}
 \end{frame}
 
