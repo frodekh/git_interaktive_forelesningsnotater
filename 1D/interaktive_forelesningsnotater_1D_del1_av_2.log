@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  16 SEP 2021 09:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  21 SEP 2021 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,7 +1136,7 @@ Overfull \vbox (4.33675pt too high) detected at line 358
 [7
 
 ]
-<media/1d3_1.png, id=160, 430.60875pt x 57.21375pt>
+<media/1d3_1.png, id=159, 430.60875pt x 57.21375pt>
 File: media/1d3_1.png Graphic file (type png)
 <use media/1d3_1.png>
 Package pdftex.def Info: media/1d3_1.png  used on input line 367.
@@ -1148,7 +1148,7 @@ Overfull \hbox (130.87311pt too wide) in paragraph at lines 381--381
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1d3_2.png, id=174, 450.68375pt x 492.84125pt>
+<media/1d3_2.png, id=173, 450.68375pt x 492.84125pt>
 File: media/1d3_2.png Graphic file (type png)
 <use media/1d3_2.png>
 Package pdftex.def Info: media/1d3_2.png  used on input line 381.
@@ -1165,7 +1165,7 @@ Overfull \hbox (130.87311pt too wide) in paragraph at lines 396--396
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1d3_3.png, id=186, 416.55624pt x 257.96375pt>
+<media/1d3_3.png, id=185, 416.55624pt x 257.96375pt>
 File: media/1d3_3.png Graphic file (type png)
 <use media/1d3_3.png>
 Package pdftex.def Info: media/1d3_3.png  used on input line 396.
@@ -1173,7 +1173,7 @@ Package pdftex.def Info: media/1d3_3.png  used on input line 396.
 [10
 
  <./media/1d3_3.png>]
-<media/1d4_1.png, id=200, 443.6575pt x 285.065pt>
+<media/1d4_1.png, id=199, 443.6575pt x 285.065pt>
 File: media/1d4_1.png Graphic file (type png)
 <use media/1d4_1.png>
 Package pdftex.def Info: media/1d4_1.png  used on input line 411.
@@ -1188,7 +1188,7 @@ Overfull \hbox (6.3122pt too wide) in paragraph at lines 411--411
 []  
  []
 
-<media/1d4_2.png, id=201, 399.4925pt x 650.43pt>
+<media/1d4_2.png, id=200, 399.4925pt x 650.43pt>
 File: media/1d4_2.png Graphic file (type png)
 <use media/1d4_2.png>
 Package pdftex.def Info: media/1d4_2.png  used on input line 411.
@@ -1196,7 +1196,7 @@ Package pdftex.def Info: media/1d4_2.png  used on input line 411.
 [11
 
  <./media/1d4_1.png> <./media/1d4_2.png>]
-<media/1d4_3.png, id=214, 419.5675pt x 407.5225pt>
+<media/1d4_3.png, id=213, 419.5675pt x 407.5225pt>
 File: media/1d4_3.png Graphic file (type png)
 <use media/1d4_3.png>
 Package pdftex.def Info: media/1d4_3.png  used on input line 433.
@@ -1236,7 +1236,7 @@ l.487 \end{frame}
 ] [23
 
 ]
-<media/angle.png, id=382, 199.74625pt x 157.58875pt>
+<media/angle.png, id=379, 199.74625pt x 157.58875pt>
 File: media/angle.png Graphic file (type png)
 <use media/angle.png>
 Package pdftex.def Info: media/angle.png  used on input line 620.
@@ -1248,7 +1248,7 @@ File: media/angle.png Graphic file (type png)
 <use media/angle.png>
 Package pdftex.def Info: media/angle.png  used on input line 649.
 (pdftex.def)             Requested size: 83.89284pt x 66.18681pt.
-<media/solidangle.png, id=394, 172.645pt x 151.56625pt>
+<media/solidangle.png, id=391, 172.645pt x 151.56625pt>
 File: media/solidangle.png Graphic file (type png)
 <use media/solidangle.png>
 Package pdftex.def Info: media/solidangle.png  used on input line 649.
@@ -1256,7 +1256,7 @@ Package pdftex.def Info: media/solidangle.png  used on input line 649.
  [25
 
  <./media/solidangle.png>]
-<media/drink-coffee.png, id=405, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=402, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
 Package pdftex.def Info: media/drink-coffee.png  used on input line 667.
@@ -1270,7 +1270,7 @@ Overfull \vbox (3.1857pt too high) detected at line 667
  <./media/drink-coffee.png>] [27
 
 ]
-<media/intensity.png, id=427, 414.54875pt x 180.675pt>
+<media/intensity.png, id=423, 414.54875pt x 180.675pt>
 File: media/intensity.png Graphic file (type png)
 <use media/intensity.png>
 Package pdftex.def Info: media/intensity.png  used on input line 693.
@@ -1295,7 +1295,7 @@ Package pdftex.def Info: media/intensity.png  used on input line 693.
 ] [36
 
 ]
-<media/blambda.png, id=528, 407.5225pt x 303.1325pt>
+<media/blambda.png, id=524, 407.5225pt x 303.1325pt>
 File: media/blambda.png Graphic file (type png)
 <use media/blambda.png>
 Package pdftex.def Info: media/blambda.png  used on input line 806.
@@ -1307,7 +1307,7 @@ Overfull \hbox (15.86006pt too wide) in paragraph at lines 819--819
 [][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1d1.png, id=542, 434.62375pt x 471.7625pt>
+<media/1d1.png, id=538, 434.62375pt x 471.7625pt>
 File: media/1d1.png Graphic file (type png)
 <use media/1d1.png>
 Package pdftex.def Info: media/1d1.png  used on input line 819.
@@ -1389,7 +1389,7 @@ Overfull \hbox (24.17pt too wide) in paragraph at lines 956--956
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/bremss.png, id=713, 557.08125pt x 682.55pt>
+<media/bremss.png, id=709, 557.08125pt x 682.55pt>
 File: media/bremss.png Graphic file (type png)
 <use media/bremss.png>
 Package pdftex.def Info: media/bremss.png  used on input line 956.
@@ -1415,7 +1415,7 @@ Overfull \hbox (24.17pt too wide) in paragraph at lines 982--982
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/21cm.png, id=782, 751.80875pt x 685.56125pt>
+<media/21cm.png, id=778, 751.80875pt x 685.56125pt>
 File: media/21cm.png Graphic file (type png)
 <use media/21cm.png>
 Package pdftex.def Info: media/21cm.png  used on input line 982.
@@ -1444,8 +1444,8 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1D_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25955 strings out of 478994
- 512040 string characters out of 5858185
+ 25951 strings out of 478994
+ 511972 string characters out of 5858185
  844578 words of memory out of 5000000
  42692 multiletter control sequences out of 15000+600000
  421285 words of font info for 90 fonts, out of 8000000 for 9000
@@ -1453,18 +1453,6 @@ Here is how much of TeX's memory you used:
  131i,12n,132p,1002b,1207s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{front} has been referenced but does not exist, re
 placed by a fixed one
-
-pdfTeX warning (dest): name{blue_blue_nytema4} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{blue_blue_nytema3} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{blue_blue_nytema2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{blue_blue_nytema1} has been referenced but does not
- exist, replaced by a fixed one
 
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
@@ -1484,10 +1472,10 @@ ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2021/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
 Output written on interaktive_forelesningsnotater_1D_del1_av_2.pdf (53 pages, 3
-313237 bytes).
+313339 bytes).
 PDF statistics:
- 892 PDF objects out of 1000 (max. 8388607)
- 684 compressed objects within 7 object streams
- 170 named destinations out of 1000 (max. 500000)
+ 887 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
+ 166 named destinations out of 1000 (max. 500000)
  676 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  16 SEP 2021 09:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  21 SEP 2021 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,16 +1224,6 @@ File: media/absline.png Graphic file (type png)
 <use media/absline.png>
 Package pdftex.def Info: media/absline.png  used on input line 514.
 (pdftex.def)             Requested size: 168.22551pt x 81.10156pt.
-
-Overfull \hbox (64.3359pt too wide) in paragraph at lines 514--514
-[][][][][][][][][] 
- []
-
-
-Overfull \hbox (68.14148pt too wide) in paragraph at lines 514--514
-[][][][][][][][][]  
- []
-
 [17
 
 ]
@@ -1245,16 +1235,6 @@ File: media/absline.png Graphic file (type png)
 <use media/absline.png>
 Package pdftex.def Info: media/absline.png  used on input line 531.
 (pdftex.def)             Requested size: 168.22551pt x 81.10156pt.
-
-Overfull \hbox (64.3359pt too wide) in paragraph at lines 531--531
-[][][][][] 
- []
-
-
-Overfull \hbox (68.14148pt too wide) in paragraph at lines 531--531
-[][][][][]  
- []
-
 [18
 
 ]
@@ -1269,7 +1249,7 @@ Package pdftex.def Info: media/absline.png  used on input line 549.
 [19
 
 ]
-<media/linewidth.png, id=253, 422.57875pt x 214.8025pt>
+<media/linewidth.png, id=256, 422.57875pt x 214.8025pt>
 File: media/linewidth.png Graphic file (type png)
 <use media/linewidth.png>
 Package pdftex.def Info: media/linewidth.png  used on input line 560.
@@ -1300,7 +1280,7 @@ l.595 \end{frame}
 ] [29
 
 ]
-<media/vx_histogram.pdf, id=386, 794.97pt x 614.295pt>
+<media/vx_histogram.pdf, id=389, 794.97pt x 614.295pt>
 File: media/vx_histogram.pdf Graphic file (type pdf)
 <use media/vx_histogram.pdf>
 Package pdftex.def Info: media/vx_histogram.pdf  used on input line 704.
@@ -1308,7 +1288,7 @@ Package pdftex.def Info: media/vx_histogram.pdf  used on input line 704.
  [30
 
  <./media/vx_histogram.pdf, page is rotated 90 degrees>]
-<media/linegen.png, id=403, 855.195pt x 659.46375pt>
+<media/linegen.png, id=406, 855.195pt x 659.46375pt>
 File: media/linegen.png Graphic file (type png)
 <use media/linegen.png>
 Package pdftex.def Info: media/linegen.png  used on input line 716.
@@ -1352,7 +1332,7 @@ Package pdftex.def Info: media/linegen.png  used on input line 769.
  [36
 
 ]
-<media/drink-coffee.png, id=469, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=472, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
 Package pdftex.def Info: media/drink-coffee.png  used on input line 787.
@@ -1366,7 +1346,7 @@ Overfull \hbox (178.84543pt too wide) in paragraph at lines 819--819
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/noisyspectrum.png, id=491, 379.4175pt x 229.85875pt>
+<media/noisyspectrum.png, id=494, 379.4175pt x 229.85875pt>
 File: media/noisyspectrum.png Graphic file (type png)
 <use media/noisyspectrum.png>
 Package pdftex.def Info: media/noisyspectrum.png  used on input line 819.
@@ -1385,7 +1365,7 @@ Overfull \hbox (7.69777pt too wide) in paragraph at lines 845--845
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/noisy_chi2.png, id=515, 404.51125pt x 277.035pt>
+<media/noisy_chi2.png, id=518, 404.51125pt x 277.035pt>
 File: media/noisy_chi2.png Graphic file (type png)
 <use media/noisy_chi2.png>
 Package pdftex.def Info: media/noisy_chi2.png  used on input line 845.
@@ -1423,7 +1403,7 @@ Package pdftex.def Info: media/noisy_chi2.png  used on input line 864.
 ] [45
 
 ]
-<media/sky.png, id=565, 934.49126pt x 640.3925pt>
+<media/sky.png, id=568, 934.49126pt x 640.3925pt>
 File: media/sky.png Graphic file (type png)
 <use media/sky.png>
 Package pdftex.def Info: media/sky.png  used on input line 895.
@@ -1503,7 +1483,7 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1D_del2_av_2
 Here is how much of TeX's memory you used:
  25879 strings out of 478994
  509056 string characters out of 5858185
- 860439 words of memory out of 5000000
+ 861439 words of memory out of 5000000
  42603 multiletter control sequences out of 15000+600000
  418675 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1531,10 +1511,10 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on interaktive_forelesningsnotater_1D_del2_av_2.pdf (61 pages, 8
-064933 bytes).
+065466 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 745 compressed objects within 8 object streams
+ 893 PDF objects out of 1000 (max. 8388607)
+ 749 compressed objects within 8 object streams
  188 named destinations out of 1000 (max. 500000)
  249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

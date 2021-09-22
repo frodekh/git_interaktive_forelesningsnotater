@@ -1,8 +1,11 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
+
+\input{usercommands}
+
 \usetheme{Boadilla}
 %\usepackage{multimedia}
-\usepackage{animate}
+%\usepackage{animate}
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{cancel}
@@ -11,7 +14,7 @@
 
 %%%%mathcircled
 \makeatletter
-\newcommand\mathcircled[1]{%
+\newcommand\mathcircled[1]{%`
   \mathpalette\@mathcircled{#1}%
 }
 \newcommand\@mathcircled[2]{%
@@ -19,7 +22,6 @@
 }
 \makeatother
 %%%%
-
 
 %gets rid of bottom navigation bars
 \setbeamertemplate{footline}[frame number]{}
@@ -49,6 +51,7 @@
 \definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
 \definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
 \definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
 
 \hypersetup{
     colorlinks=true,
@@ -71,6 +74,9 @@
 %body
 \setbeamercolor{block body}{fg=yellow,bg=bronze}
 
+
+
+
 \newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
 
 \newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
@@ -79,38 +85,177 @@
 
 \newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
 
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
 
 \newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
 \newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 \newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\\}
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
 \newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
 \newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
 
-\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\\}
-\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\\}
-\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\\}
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
 \centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
-\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
 \vspace*{0.5cm}
 }
 
-%  \node[
-%  inner xsep=10pt,
-%  draw=structure!80,
-%  fill=structure!50,
-%  rounded corners=4pt]  {\Large\insertbuttontext};}
-% structure!90
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
 
 \newcounter{pageno}
 \newcounter{nopages}
@@ -120,72 +265,78 @@
 
 \begin{document}
 
-
-%%%%% front
-\begin{frame}
-\label{front}
-\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1F\\Interaktive forelesningsnotater}}\\
-\vspace*{1cm}
-\begin{alertblock}{\center{\bf VIKTIG}}
-Du må bruke {\bf presentasjonsmodus/fullskjermsvisning} for å lese denne, men du skal {\bf ikke} bruke frem/tilbake-knappene, {\bf KUN knappene som dukker opp på sliden} for å ta deg videre! Ofte må du laste filen ned til maskinen din og åpne den der for å få til dette. Merk at noen knapper vil åpne nettskjema, videoer eller andre ressurser i internettbrowseren din. Når du gjør det riktig, skal du kun se en side av gangen, og når du trykker på knappene som dukker opp på skjermen så skal disse ta deg frem/tilbake i dokumentet. \textcolor{red}{Du vil miste mye læringsutbytte hvis du ser flere slides av gangen. Får du det ikke til, spør foreleser/gruppelærer!}
-\end{alertblock}
-\vspace*{0.5cm}
-%\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{front2}{\pagebutton{Trykk denne knappen for å begynne}}
-
-\end{frame}
-
 \begin{frame}
 \label{front2}
 \center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1F\\Interaktive forelesningsnotater}}\\
 \begin{block}{\center{\bf VIKTIG}}
-Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1f.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1f.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
 \end{block}
 %\setbeamercolor{button}{bg=black,fg=yellow}
-\hyperlink{intro}{\pagebutton{Trykk denne knappen for å begynne}}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
 \end{frame}
 
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{tableofcontents}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
 
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{blue_nytema1}{\headlinebutton{Elementærpartikler}}
+\item \hyperlink{blue_nytema2}{\headlinebutton{Galaktiske rotasjonskurver}}
+\item \hyperlink{blue_nytema3}{\headlinebutton{Mørk materie}}
+\item \hyperlink{blue_nytema4}{\headlinebutton{Modellering av mørk materie-haloer}}
+\item \hyperlink{blue_nytema5}{\headlinebutton{Hva er mørk materie?}}
+\end{itemize}
+\hyperlink{blue_intro}{\choicebutton{Neste side}}
+\end{frame}
 
 %%%%% intro
+{
+\setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{intro}
+\label{blue_intro}
 \begin{columns}
 \column{0.5\textwidth}
 \hyperlink{front}{\pagebutton{Forrige side}}\\
 %\vspace{1cm}
-\includegraphics[scale=0.5]{dark_matter.jpg}\\
+\includegraphics[scale=0.5]{media/dark_matter.jpg}\\
 \column{0.5\textwidth}
-\small \textcolor{yellow}{\bf Velkommen til del 1F! Her skal vi ta en gjennomgang av alle de kjente elementærpartiklene som bygger opp universet vårt og så skal vi spekulere litt i om det finnes noen ukjente. Vi skal se på 'mørk materie'-begrepet, hvor det kommer fra, hva som gjør at vi trenger det og hva slags materie det kan være snakk om.}
- \\{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
+\small \textcolor{yellow}{\bf Velkommen til del 1F! Her skal vi ta en gjennomgang av alle de kjente elementærpartiklene som bygger opp universet vårt og så skal vi spekulere litt i om det finnes noen ukjente. Vi skal se på 'mørk materie'-begrepet, hvor det kommer fra, hva som gjør at vi trenger det og hva slags materie det kan være snakk om. Dette forelesningsnotatet tilsvarer omkring en dobbelttime fysisk forelesning.}
+ \\ \textcolor{yellow}{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
 %\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
 \end{columns}
 \end{frame}
-
+}
 
 
 \begin{frame}
 \label{intro2}
-\lastpagebutton{intro}
+\lastpagebutton{blue_intro}
 \begin{alertblock}{Vi begynner som vanlig...}
 ...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
 \end{alertblock}
 \href{https://nettskjema.no/a/160496}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
 Er du klar og har sendt inn skjemaet?
-\href{https://nettskjema.no/a/160496}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
+\href{https://nettskjema.no/a/160496}{\choicebutton{Nei}}\ \ \ \ \hyperlink{blue_nytema1}{\choicebutton{Ja}}\\
 %\hyperlink{intro2}{\choicebutton{Nei}}\ \ \ \ \hyperlink{brainstormdone}{\choicebutton{Ja}}\\
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[] \hyperlink{nytema1}{\pagebutton{Neste side}} \hypertarget<.>{brainstormdone}{}
-\end{itemize}
 \end{frame}
 
 \renewcommand{\headline}{\small Elementærpartikler}
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema1}
+\label{blue_nytema1}
 \hyperlink{intro2}{\pagebutton{\small Forrige side}}
 \nytemaside{rotakurv}
 \hyperlink{partikler1}{\pagebutton{Opplys meg! (om den mørke materien)}}
@@ -198,7 +349,7 @@ Er du klar og har sendt inn skjemaet?
 \dlastpagebutton{intro2}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.2]{std_model_Wiki.pdf}\\
+\includegraphics[scale=0.2]{media/std_model_Wiki.pdf}\\
 I oversikten over ser du alle kjente elementærpartikler i den såkalte \href{https://en.wikipedia.org/wiki/Standard_Model}{standardmodellen} i partikkelfysikk untatt den såkalte Higgspartikkelen.
 \column{0.5\textwidth}
  Før du går videre bør du nå gå inn i de vanlige \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1f.pdf}{forelesningsnotatene} for del 1F og lese avsnitt 1 ``Some particle physics''. Det har ikke meningen at alt dette blir repetert her, så bedre at du leser denne godt. På de neste sidene skal du bli testet i det du har lest. {\bf Prøv å pugge dette stoffet nå slik at du klarer å ta testen uten å slå opp!} \textcolor{red}{ Dette har dukket opp flere ganger på eksamen og i prosjektet kan du få bruk for å beskrive dette med egne ord. Har du pugget dette en gang vil det sitte mye fortere neste gang.}
@@ -212,18 +363,18 @@ I oversikten over ser du alle kjente elementærpartikler i den såkalte \href{ht
 \label{partikler2}
 \lastpagebutton{partikler1}
 Kun et av disse utsagnene er riktig, trykk på det rikige!\\
-\hyperlink{f1}{\choicebutton{protoner er bosoner}}\\
-\hyperlink{f1}{\choicebutton{fotoner er fermioner}}\\
-\hyperlink{f1}{\choicebutton{Higgspartikkelen er et fermion}}\\
-\hyperlink{f1}{\choicebutton{nøytronet er et boson}}\\
-\hyperlink{r1}{\choicebutton{nøytrinoet er et fermion}}\\
-\hyperlink{f1}{\choicebutton{gravitonet er et fermion}}\\
+\hyperlink{feil1}{\choicebutton{protoner er bosoner}}\\
+\hyperlink{feil1}{\choicebutton{fotoner er fermioner}}\\
+\hyperlink{feil1}{\choicebutton{Higgspartikkelen er et fermion}}\\
+\hyperlink{feil1}{\choicebutton{nøytronet er et boson}}\\
+\hyperlink{riktig1}{\choicebutton{nøytrinoet er et fermion}}\\
+\hyperlink{feil1}{\choicebutton{gravitonet er et fermion}}\\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{f1}
+\label{feil1}
 \lastpagebutton{partikler2}
 \textcolor{white}{Det var feil! Sjekk at du har kontroll på forskjellen mellom fermioner og bosoner, og hvilke partikler som tilhører hver gruppe. Det letteste er å lære hvilke partikler som er kraft-overførende, de pluss Higgspartikkelen er de eneste bosonene blant alementærpartiklene
 }
@@ -233,7 +384,7 @@ Kun et av disse utsagnene er riktig, trykk på det rikige!\\
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{r1}
+\label{riktig1}
 \clastpagebutton{partikler2}
 {\Huge\bf Flott, bra jobba!}
  \hyperlink{partikler3}{\pagebutton{Neste side}}
@@ -244,18 +395,18 @@ Kun et av disse utsagnene er riktig, trykk på det rikige!\\
 \label{partikler3}
 \lastpagebutton{partikler2}
 Kun et av disse utsagnene er riktig, trykk på det rikige!\\
-\hyperlink{f2}{\choicebutton{nøytroner er mesoner}}\\
-\hyperlink{f2}{\choicebutton{protoner er leptoner}}\\
-\hyperlink{f2}{\choicebutton{nøytrinoer er hadroner}}\\
-\hyperlink{f2}{\choicebutton{kvarker er baryoner}}\\
-\hyperlink{f2}{\choicebutton{protoner er mesoner}}\\
-\hyperlink{r2}{\choicebutton{nøytroner er hadroner}}\\
+\hyperlink{feil2}{\choicebutton{nøytroner er mesoner}}\\
+\hyperlink{feil2}{\choicebutton{protoner er leptoner}}\\
+\hyperlink{feil2}{\choicebutton{nøytrinoer er hadroner}}\\
+\hyperlink{feil2}{\choicebutton{kvarker er baryoner}}\\
+\hyperlink{feil2}{\choicebutton{protoner er mesoner}}\\
+\hyperlink{riktig2}{\choicebutton{nøytroner er hadroner}}\\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{f2}
+\label{feil2}
 \lastpagebutton{partikler3}
 \textcolor{white}{Det var feil! Sjekk at du har kontroll på forskjellen mellom leptoner og hadroner på den ene siden, og hadronene som deles opp i mesoner og baryoner på den andre. Du må også vite hvor mange kvarker protoner og nøytronene består av og dermed hva slags type partikler disse er.
 }
@@ -265,7 +416,7 @@ Kun et av disse utsagnene er riktig, trykk på det rikige!\\
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{r2}
+\label{riktig2}
 \clastpagebutton{partikler3}
 {\Huge\bf Flott, bra jobba!}
  \hyperlink{partikler4}{\pagebutton{Neste side}}
@@ -276,18 +427,18 @@ Kun et av disse utsagnene er riktig, trykk på det rikige!\\
 \label{partikler4}
 \lastpagebutton{partikler3}
 Kun et av disse utsagnene er riktig, trykk på det rikige!\\
-\hyperlink{f3}{\choicebutton{protoner har leptonnummer +1}}\\
-\hyperlink{f3}{\choicebutton{elektronnøytrinoet har elektrisk ladning -1}}\\
-\hyperlink{f3}{\choicebutton{oppkvarken har elektrisk ladning +1}}\\
-\hyperlink{f3}{\choicebutton{nedkvarken har leptonnumer +1}}\\
-\hyperlink{r3}{\choicebutton{fotoner kan ha spinn +1}}\\
-\hyperlink{f3}{\choicebutton{positronet(antipartikkelen til elektronet) har el. ladning -1}}\\
+\hyperlink{feil3}{\choicebutton{protoner har leptonnummer +1}}\\
+\hyperlink{feil3}{\choicebutton{elektronnøytrinoet har elektrisk ladning -1}}\\
+\hyperlink{feil3}{\choicebutton{oppkvarken har elektrisk ladning +1}}\\
+\hyperlink{feil3}{\choicebutton{nedkvarken har leptonnumer +1}}\\
+\hyperlink{riktig3}{\choicebutton{fotoner kan ha spinn +1}}\\
+\hyperlink{feil3}{\choicebutton{positronet(antipartikkelen til elektronet) har el. ladning -1}}\\
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{f3}
+\label{feil3}
 \lastpagebutton{partikler4}
 \textcolor{white}{Det var feil! Sjekk at du har kontroll på leptonnummer, spinn og elektrisk ladning. Det er ikke forventet at du skal huske nøyaktig elektrisk ladning til alle kvarkene, men vite at ladningene er i 1/3-deler eller 2/3-deler.
 }
@@ -297,7 +448,7 @@ Kun et av disse utsagnene er riktig, trykk på det rikige!\\
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{r3}
+\label{riktig3}
 \clastpagebutton{partikler4}
 {\Huge\bf Flott, bra jobba!}
 Merk at du er forventet å ha kontroll på leptonnummer, spinn og elektrisk ladning. Det er ikke forventet at du skal huske nøyaktig elektrisk ladning til alle kvarkene, men vite at ladningene er i 1/3-deler eller 2/3-deler.
@@ -317,7 +468,7 @@ Ta nå frem et papir, skriv ned de 4 grunnleggende kreftene vi har i naturen sam
 \label{partikler6}
 \lastpagebutton{partikler5}
  {\Huge\bf Fikk du det riktig?} Hvis ikke, ta en runde til med repetisjon om elementærpartikler så det sitter skikkelig!
-\hyperlink{nytema2}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema2}{\pagebutton{Neste side}}
 \end{frame}
 
 
@@ -325,22 +476,22 @@ Ta nå frem et papir, skriv ned de 4 grunnleggende kreftene vi har i naturen sam
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema2}
+\label{blue_nytema2}
 \hyperlink{partikler6}{\pagebutton{\small Forrige side}}
 \nytemaside{morkmat}
-\hyperlink{rotkurv0}{\pagebutton{Sett igang!}}
+\hyperlink{feil_rotkurv0}{\pagebutton{Sett igang!}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{rotkurv0}
+\label{feil_rotkurv0}
 \lastpagebutton{partikler6}\label{rotakurv}
 \textcolor{yellow}{
 {\small
 Før vi skal se på galaktiske rotasjonskurver (hva nå enn det er ...) så skal vi se hvordan en typisk galakse ser ut. Vi skal nærmere bestemt se på en spiralgalakse slik som vår egen Melkevei som et eksempel:\\
-\includegraphics[scale=0.45]{fig_4-1.pdf}\\
+\includegraphics[scale=0.45]{media/fig_4-1.pdf}\\
 Dimensjonene som er tegnet inn gjelder for Melkeveien som er en typisk spiralgalakse. Den består av en {\bf rund tynn skive} ($\sim$1000 lysår tykkelse) med stjerner som vi kaller {\bf galakseskiven}. Den er omkring 100.000 - 200.000 lysår i diameter. I sentrum er det en kuleformet ansamling av stjerner som kalles {\bf galakseutbulingen} med diameter omkring 10.000 lysår. Stjernene går i bane i galakseplanet omkring det supermassive sorte hullet i sentrum av galaksen. Det er noen hundre milliarder stjerner i Melkeveien og stjernetettheten i en typisk galakse faller kraftig av med avstand $r$ fra sentrum som $\rho_\mathrm{star}(r)\propto r^{-3.5}$.
 }}
 \hyperlink{rotkurv1}{\pagebutton{Neste side}}
@@ -350,21 +501,34 @@ Dimensjonene som er tegnet inn gjelder for Melkeveien som er en typisk spiralgal
 
 \begin{frame}
 \label{rotkurv1}
-\lastpagebutton{rotkurv0}
+\lastpagebutton{feil_rotkurv0}
 \begin{columns}
 \column{0.5\textwidth}
 Tilbake til spørsmålet på skjemaet. Under ser du en galakse: 
-\includegraphics[scale=0.15]{dark_matter.jpg}\\
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
 Det er ikke helt urimelig å anta at alle stjernene i denne spiralgalaksen befinner seg i det samme planet, galakseplanet, og at de går i bane rundt det sorte hullet i sentrum. Anta videre at {\bf alle stjerner går i sirkelbaner} som alle ligger {\bf i dette galakseplanet}. Vi antar altså at all materie i galaksen ligger i en tynn skive.
 \column{0.5\textwidth}
 Vi skal ta for oss en stjerne i avstand $r$ fra sentrum av galaksen. Hva blir gravitasjonskraften på denne stjerna fra resten av galaksen?
-\hyperlink{rotkurv1b}{\pagebutton{Trykk her når du har forslag!}}
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{rotkurv1b}{}
-\end{itemize}
-\vspace*{-1cm}
+\hyperlink{rotkurv1_b}{\pagebutton{Trykk her når du har forslag!}}\\
+\textcolor{white}{
+Husker du fra utledningen av likningen for hydrostatisk likevekt? Gravitasjonskreftene fra et kulesymmetrisk skall er 0 innenfor skallet. Det samme gjelder i 2 dimensjoner, altså for en skive, så lenge objektet vi ser på beveger seg kun i skiven. {\bf Vi får altså ingen tyngdekraft fra stjernene på utsiden av radius $r$.}
+{Neste side}}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\label{rotkurv1_b}
+\lastpagebutton{feil_rotkurv0}
+\begin{columns}
+\column{0.5\textwidth}
+Tilbake til spørsmålet på skjemaet. Under ser du en galakse: 
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+Det er ikke helt urimelig å anta at alle stjernene i denne spiralgalaksen befinner seg i det samme planet, galakseplanet, og at de går i bane rundt det sorte hullet i sentrum. Anta videre at {\bf alle stjerner går i sirkelbaner} som alle ligger {\bf i dette galakseplanet}. Vi antar altså at all materie i galaksen ligger i en tynn skive.
+\column{0.5\textwidth}
+Vi skal ta for oss en stjerne i avstand $r$ fra sentrum av galaksen. Hva blir gravitasjonskraften på denne stjerna fra resten av galaksen?
+{\pagebutton{Trykk her når du har forslag!}}\\
+
 Husker du fra utledningen av likningen for hydrostatisk likevekt? Gravitasjonskreftene fra et kulesymmetrisk skall er 0 innenfor skallet. Det samme gjelder i 2 dimensjoner, altså for en skive, så lenge objektet vi ser på beveger seg kun i skiven. {\bf Vi får altså ingen tyngdekraft fra stjernene på utsiden av radius $r$.}
 \hyperlink{rotkurv2}{\pagebutton{Neste side}}
 \end{columns}
@@ -376,7 +540,7 @@ Husker du fra utledningen av likningen for hydrostatisk likevekt? Gravitasjonskr
 \dlastpagebutton{rotkurv1}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.15]{dark_matter.jpg}\\
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
 Helt på samme måte, så får vi vanlig Newtonsk gravitasjonskraft
 \[
 F=G\frac{M(r)m}{r^2}
@@ -395,17 +559,31 @@ Da vet vi at resultatet gir oss Keplers lover, \textcolor{red}{MEN} de må anven
 \lastpagebutton{rotkurv2}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.15]{dark_matter.jpg}\\
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
  Men hvis vi nå ser på de få stjernene som befinner seg helt i utkanten av galaksen, så er situasjonen en annen. {\bf Her er det få stjerner og totalmassen innenfor $r$ endrer seg svært lite ettersom vi går videre utover fra galaksen ($r$ øker videre).} For stjernene i utkanten av galaksen så vil massen $M(r)=M$ der $M$ er massen til hele galaksen være en svært god tilnærmelse.
 \column{0.5\textwidth}
 Da kommer vi til et annet spørsmål fra skjemaet. {\bf Hvilken banehastighet har disse stjernene??} Husk at vi antar sirkelbaner, og husk at tyngdekrafta er den vanlige Newtonske med en masse $M$ (hele galaksens masse) i sentrum. Hva må den bli?
-\hyperlink{rotkurv3b}{\pagebutton{Trykk her når du har forslag!}}
-\pause
-\addtocounter{pageno}{-1}
-\begin{itemize}[<+->]
-\item[]  \hypertarget<.>{rotkurv3b}{}
-\end{itemize}
-\vspace*{-1cm}
+\hyperlink{rotkurv3_b}{\pagebutton{Trykk her når du har forslag!}}\\
+\textcolor{white}{
+Ganske riktig ja, da kan vi bruke god gammeldags {\it sentripetalakselrasjon} som gir
+\[
+v=\sqrt{\frac{GM}{r}}
+\]
+for alle stjerner i de ytre delene av galaksen.
+{Neste side}}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\label{rotkurv3_b}
+\lastpagebutton{rotkurv2}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+ Men hvis vi nå ser på de få stjernene som befinner seg helt i utkanten av galaksen, så er situasjonen en annen. {\bf Her er det få stjerner og totalmassen innenfor $r$ endrer seg svært lite ettersom vi går videre utover fra galaksen ($r$ øker videre).} For stjernene i utkanten av galaksen så vil massen $M(r)=M$ der $M$ er massen til hele galaksen være en svært god tilnærmelse.
+\column{0.5\textwidth}
+Da kommer vi til et annet spørsmål fra skjemaet. {\bf Hvilken banehastighet har disse stjernene??} Husk at vi antar sirkelbaner, og husk at tyngdekrafta er den vanlige Newtonske med en masse $M$ (hele galaksens masse) i sentrum. Hva må den bli?
+{\pagebutton{Trykk her når du har forslag!}}\\
 Ganske riktig ja, da kan vi bruke god gammeldags {\it sentripetalakselrasjon} som gir
 \[
 v=\sqrt{\frac{GM}{r}}
@@ -425,10 +603,10 @@ v(r)=\sqrt{\frac{GM}{r}}\ \ \ \ \mathrm{for\ r\ stor\ nok}
 \]
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.45]{fig_4-2.pdf}\\
+\includegraphics[scale=0.45]{media/fig_4-2.pdf}\\
 \column{0.5\textwidth}
 I figuren til venstre ser du denne modellen tegnet inn (nederste kurve). {\bf Den øverste kurven derimot, er typisk for faktiske observasjoner av stjerne hastigheter!} \textcolor{red}{Helt forskjellig fra den teoretiske modellen!} Vi ser at den faktiske kurven er nesten flat og ikke følger en $\sqrt{1/r}$ modell.
-\hyperlink{rotkurv5}{\pagebutton{Neste side}}
+\hyperlink{red_rotkurv5}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 
@@ -436,7 +614,7 @@ I figuren til venstre ser du denne modellen tegnet inn (nederste kurve). {\bf De
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{rotkurv5}
+\label{red_rotkurv5}
 \lastpagebutton{rotkurv4}
 \textcolor{yellow}{\Huge Hva kan forårsake et så stort avvik mellom teori og observasjon?}
 \textcolor{yellow}{Det er helt klart at noe er galt med modellen, men hva? Hvilken antakelse har gått galt?}\\
@@ -447,25 +625,25 @@ I figuren til venstre ser du denne modellen tegnet inn (nederste kurve). {\bf De
 
 \begin{frame}
 \label{rotkurv6}
-\lastpagebutton{rotkurv5}
+\lastpagebutton{red_rotkurv5}
 I modellen vår
 \[
 v(r)=\sqrt{\frac{GM}{r}}\ \ \ \ \mathrm{for\ r\ stor\ nok}
 \]
 så avtar hastigheten med $\sqrt{1/r}$ fordi stjernene kommer lenger og lenger unna massesenteret til galaksen. Siden $M$ ikke øker (nevneverdig) så må gravitasjonskrafta avta med avstanden! Dermed blir hastigheten lavere med $r$ (Keplers 2. lov). {\bf Men observasjonene viser altså at hastigheten ikke avtar med avstanden.} Tyngdekreftene på stjernene lenger ut må dermed være større enn vi trodde. {\bf Hvis vi ser på Newtons tyngdelov så er det kun massen $M$ som her evt. kan øke slik at tyngdekraften blir større og vi dermed får større sentripetalakselrasjon!} 
 \textcolor{red}{Hvis totalmassen $M(r)$ innenfor en radius $r$ øker kraftig med $r$ også i de ytre delene av galaksen så kan dette forklare at den observerte {\bf rotasjonskurven} (lær til dette order, det brukes mye: stjernehastighet som funksjon av avstand $r$ fra galaksesenter) ikke stemmer overens med den teoretiske. {\bf MEN} det er bare det at vi ikke ser noen stjerner eller annen form for synlig materie i ytterkantene som kan forklare at $M(r)$ skal øke.}
-\hyperlink{rotkurv6b}{\pagebutton{Neste side}}
+\hyperlink{blue_rotkurv6b}{\pagebutton{Neste side}}
 \end{frame}
 
 
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{rotkurv6b}
+\label{blue_rotkurv6b}
 \hyperlink{rotkurv6}{\pagebutton{\small Forrige side}}
 \textcolor{yellow}{\Huge Hang du med nå eller?}
 \textcolor{yellow}{Hvis ikke, gå en side eller to tilbake til du er helt sikker på at du forstår!}
-\hyperlink{rotkurv7}{\pagebutton{Jeg henger godt med!}}
+\hyperlink{riktig_rotkurv7}{\pagebutton{Jeg henger godt med!}}
 \end{frame}
 }
 
@@ -474,7 +652,7 @@ så avtar hastigheten med $\sqrt{1/r}$ fordi stjernene kommer lenger og lenger u
 {
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
-\label{rotkurv7}
+\label{riktig_rotkurv7}
 \lastpagebutton{rotkurv6}
 \textcolor{red}{\Huge Det er her hypotesen om \textcolor{black}{\bf mørk materie} kommer inn. For at $M(r)$ skal kunne øke nevneverdig med $r$ i de ytre delene av galaksen, sa må det finnes materie der som ikke er synlig, som ikke avgir lys, derav \textcolor{black}{\bf mørk materie}}
 Du kan se det hele animert \href{https://commons.wikimedia.org/w/index.php?title=File\%3AGalaxy_rotation_under_the_influence_of_dark_matter.ogv}{her,} hvor du ser en galakse roterer med og uten mørk materie (se rotasjonskurvene under galaksen). Legg merke til stjernehastigheten ytterst!
@@ -487,16 +665,16 @@ Du kan se det hele animert \href{https://commons.wikimedia.org/w/index.php?title
 \setbeamercolor{background canvas}{bg=cyan}
 \begin{frame}
 \label{pause}
-\hyperlink{rotkurv7}{\pagebutton{\small Forrige side}}
+\hyperlink{riktig_rotkurv7}{\pagebutton{\small Forrige side}}
 {\Huge
 \centerline{Kaffe???  Yes!!}
-\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Dette var mørkt stoff, og mørkere skal det bli! Dermed trenger du en tur ut i dagslys nå!!
 \vspace*{0.5cm}
 Ihvertfall 10 min...
 }\\
 \vspace*{0.5cm}
-\hyperlink{nytema3}{\pagebutton{Har klarnet tankene nå!}}
+\hyperlink{blue_nytema3}{\pagebutton{Har klarnet tankene nå!}}
 \end{frame}
 }
 
@@ -504,8 +682,8 @@ Ihvertfall 10 min...
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema3}
-\hyperlink{rotkurv7}{\pagebutton{\small Forrige side}}
+\label{blue_nytema3}
+\hyperlink{riktig_rotkurv7}{\pagebutton{\small Forrige side}}
 \nytemaside{modmat}
 \hyperlink{mm0}{\pagebutton{Endelig kom vi til saken her!}}
 \end{frame}
@@ -514,7 +692,7 @@ Ihvertfall 10 min...
 
 \begin{frame}
 \label{mm0}
-\lastpagebutton{rotkurv7}
+\lastpagebutton{riktig_rotkurv7}
 {\Huge Skulle du ha bittelitt tid til overs og lyst til å se en repetisjon av hva vi akkurat snakket om, med litt andre ord og med litt info om hvordan målinger gjøres for å måle rotasjonskurven til Melkeveien, ta en titt på \href{https://www.youtube.com/watch?v=1aZ0Vujb08o}{denne 3 minutters Youtube-videoen.}}
 \hyperlink{mm1}{\pagebutton{Neste side}}
 \end{frame}
@@ -527,12 +705,13 @@ Ihvertfall 10 min...
 \begin{columns}
 \column{0.5\textwidth}
 Vi begynner med å kikke på en av ukeoppgavene:
-\includegraphics[width=\linewidth]{oppgave1f1_1.png}\\
+\includegraphics[width=\linewidth]{media/oppgave1f1_1.png}\\
 \column{0.5\textwidth}
 Finner du massen til galaksene? Kikk deretter på deloppgave 2:
-\includegraphics[width=0.97\linewidth]{oppgave1f1_2.png}\\
+\includegraphics[width=0.97\linewidth]{media/oppgave1f1_2.png}\\
+{\small 
 Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i deloppgave 1 når du kun beregner massen fra kun fra gravitasjonskraften mens du får $2\times10^{11}$ solmasser når du bruker den synlige massen. Hvis du er usikker på hvordan disse oppgavene løses, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1f/videoer/video1f.mp4}{denne videoen}.\textcolor{red}{\bf MERK feil i videoen: det er $1.9\times10^{17}$ sekunder ikke år! Men slutt-resultatet blir riktig!}
-\hyperlink{mm2}{\pagebutton{Neste side}}
+\hyperlink{mm2}{\pagebutton{Neste side}}}
 \end{columns}
 \end{frame}
 
@@ -540,20 +719,20 @@ Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i delop
 \label{mm2}
 \lastpagebutton{mm1}
 {\bf Hva betyr dette?} Du fant en mye større masse til 2-galaksesystemet hvis du brukte tyngdekraften til å måle massen enn hvis du telte massen til de synlige stjernene. Igjen så er dette et typisk resultat. Når man ser på galaksers bevegelse omkring hverandre i en galaksehop så finner man samme resultat som når vi ser på rotasjonskurven til enkeltgalakser! {\bf Husker du forresten hva en galaksehop er???} Det er noen 100 eller noen 1000 galasker som går i bane omkring et felles massesenter. Dette er de største strukturene i universet.
-\hyperlink{mm3}{\pagebutton{Neste side}}
+\hyperlink{feil_mm3}{\pagebutton{Neste side}}
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm3}
+\label{feil_mm3}
 \textcolor{yellow}{\tiny Bilde:NASA/ESA/J. Lotz (STScI)}\lastpagebutton{mm2}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.75]{lenses.jpg}
+\includegraphics[scale=0.75]{media/lenses.jpg}
 \column{0.5\textwidth}
 \textcolor{yellow}{\small Man har også en helt uavhengig måte å måle massen til en galaksehop på ved å se på lysavbøyning av lys fra meget fjerne objekter som ligger langt bak galaksehopen. \textcolor{red}{I bildet her er prikkene galakser i en galaksehop mens buene er det avbøyde lyset fra fjerne objekter.} Lyset fra det fjerne objektet passerer gjennom hopen, men blir avbøyd på grunn av tyngdekrafta i galaksehopa. Ved å se på avbøyninga til lyset kan man 'veie' galaksehopa og på den måten finne massen til hopa. Denne typen målinger bekrefter det som man finner ved andre metoder: {\bf Akkurat som enkeltgalaksene så innholder også galaksehopene mye mer masse enn den synlige massen.}}
-\hyperlink{mm4}{\pagebutton{Neste side}}
+\hyperlink{feil_mm4}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 }
@@ -561,13 +740,13 @@ Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i delop
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm4}
-\lastpagebutton{mm3}
+\label{feil_mm4}
+\lastpagebutton{feil_mm3}
 \textcolor{yellow}{Observasjoner av galakser og galaksehoper viser at omkring $85\%$  av massen i universet er mørk materie.}\\
 \textcolor{yellow}{\Huge Men hva er nå denne mørke materien???}\\
 \textcolor{yellow}{Kan det være døde stjerner/planeter, andre mørke objekter??} 
 \textcolor{yellow}{Observasjoner av den kosmiske bakgrunnsstrålingen viser at den mørke materien mest sannsynlig ikke består av partikler fra standardmodellen men sannsynligvis er nye og ukjente partikler utenfor standardmodellen for partikkelfysikk. Partikler som aldri eller svært sjeldent reagerer med de kjente partiklene på noen annen måte enn gjennom gravitasjon!}
-\hyperlink{mm5}{\pagebutton{Neste side}}
+\hyperlink{feil_mm5}{\pagebutton{Neste side}}
 \end{frame}
 }
 
@@ -575,14 +754,14 @@ Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i delop
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm5}
-\textcolor{yellow}{\tiny Bilde: ESA/Planck}\lastpagebutton{mm4}
-\includegraphics[scale=0.15]{cmb.jpg}
+\label{feil_mm5}
+\textcolor{yellow}{\tiny Bilde: ESA/Planck}\lastpagebutton{feil_mm4}
+\includegraphics[scale=0.15]{media/cmb.jpg}
 \vspace*{-6cm}
 \begin{itemize}
 \item \textcolor{blue}{\bf Størrelsen på fluktuasjonene i den kosmiske bakgrunnsstrålingen bekrefter at det trengs omkring $85\%$ mørk materie for å danne de strukturene vi idag ser i universet.}
 \item \textcolor{red}{\bf Samtidig så setter nukleosyntesen, perioden i universets tidlige historie da de første atomkjernene ble dannet, en grense for hvor mye 'vanlig materie' som kan eksistere. Hvis det hadde eksistert betydelig mer vanlig materie (som reagerer med partikler i standardmodellen gjennom andre krefter enn gravitasjon), så hadde vi hatt en helt annen sammensetning av grunnstoffer i universet idag.}
-\item \textcolor{blue}{\bf Dette forteller oss at den mørke materien må bestå av partikler som reagerer svært svakt med andre partikler, unntatt gjennom gravitasjon da vi jo 'ser' den mørke materien gjennom gravitasjonspåvirkning av andre legemer. Hvis en partikkel skal sende ut/absorbere fotoner, må den kunne virke med elektromagnetiske krefter, gjør den ikke det, så blir den 'mørk'. I standardmodellen har vi kun en slik partikkel som virker svært svakt gjennom andre krefter enn gravitasjon: nøytrinoet. \textcolor{red}{Kan mørk materie være nøytrinoer???}\hyperlink{mm6}{\pagebutton{Neste side}}}
+\item \textcolor{blue}{\bf Dette forteller oss at den mørke materien må bestå av partikler som reagerer svært svakt med andre partikler, unntatt gjennom gravitasjon da vi jo 'ser' den mørke materien gjennom gravitasjonspåvirkning av andre legemer. Hvis en partikkel skal sende ut/absorbere fotoner, må den kunne virke med elektromagnetiske krefter, gjør den ikke det, så blir den 'mørk'. I standardmodellen har vi kun en slik partikkel som virker svært svakt gjennom andre krefter enn gravitasjon: nøytrinoet. \textcolor{red}{Kan mørk materie være nøytrinoer???}\hyperlink{feil_mm6}{\pagebutton{Neste side}}}
 \end{itemize}
 \end{frame}
 }
@@ -591,8 +770,8 @@ Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i delop
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm6}
-\lastpagebutton{mm5}
+\label{feil_mm6}
+\lastpagebutton{feil_mm5}
 \textcolor{yellow}{Mørk materie kan kategoriseres bl.a. som:}
 \begin{itemize}
 \item \textcolor{yellow}{{\bf Varm mørk materie (Warm Dark Matter WDM):} Dette er lette mørk materiepartikler med hastigheter nær lyshastigheten. Denne typen partikler vil oppføre seg tilnærmet som lys pga. sin høye hastighet. Nettopp nøytrinoer er en slik mulig WDM-kandidat.}
@@ -602,47 +781,47 @@ Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i delop
 ...og så finnes selvfølgelig mellomtingen LWDM (Luke Warm Dark Matter). \\
 {\Large Men hvordan kan vi skille mellom disse to teoriene? Gitt at de kun vekselvirker med gravitasjon og i svært liten/ingen grad med de andre fundamentale kreftene, hvordan kan vi gjennom observasjoner avgjøre f.eks. om vi har WDM eller CDM?
 Tenk deg godt om før du blar om!}}
-\hyperlink{mm7}{\pagebutton{Neste side}}
+\hyperlink{feil_mm7}{\pagebutton{Neste side}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm7}
-\lastpagebutton{mm6}
+\label{feil_mm7}
+\lastpagebutton{feil_mm6}
 \textcolor{yellow}{
 Kunne man f.eks. bruke observasjonene vi har av galaktiske rotasjonskurver? Eller observasjonene av galaksenes hastighet i galaksehoper? {\bf Isåfall, på hvilken måte ville disse observasjonene være forskjellige avhengig av typen mørk materie?}\\
 \vspace*{2cm}
 {\Large Diskuter og se om dere får noen ideer før du går videre til ...}
 }
-\hyperlink{mm8}{\pagebutton{... neste side}}
+\hyperlink{feil_mm8}{\pagebutton{... neste side}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm8}
-\lastpagebutton{mm7}
-\includegraphics[scale=0.25]{dark_matter.jpg}
+\label{feil_mm8}
+\lastpagebutton{feil_mm7}
+\includegraphics[scale=0.25]{media/dark_matter.jpg}
 \textcolor{yellow}{
 På bildet av galaksen ser du også en blå 'sky' inntegnet. Denne illustrerer hvordan den mørke materien har klumpet seg rundt galaksen. Ved å kartlegge fordelingen av mørk materie i en galakse har man funnet ut av den mørke materien ligger i det vi kaller en {\bf halo} omkring galaksen. Det er en tilnærmet kulesymmetrisk sky av mørk materie med radius som er flere ganger større enn radiusen til galaksen som man finner ved å observere fordelingen av stjerner og gass. Den synlige delen av galaksen ligger i sentrum av denne haloen.}\\
-\hyperlink{mm9}{\pagebutton{... neste side}}
+\hyperlink{feil_mm9}{\pagebutton{... neste side}}
 \end{frame}
 }
 
 {
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\label{mm9}
-\lastpagebutton{mm8}
-\includegraphics[scale=0.25]{dark_matter.jpg}
+\label{feil_mm9}
+\lastpagebutton{feil_mm8}
+\includegraphics[scale=0.25]{media/dark_matter.jpg}
 \textcolor{yellow}{
 {\bf Vil ikke tetthet og tetthetsvariasjoner av mørk materie i en slik halo være forskjellig avhengig av hvilken type mørk materie man har? Hvordan tror du WDM med partikler nær lyshastighet ville klumpet seg slik?}
 Hvis vi nå kan lage en modell av tetthet av mørk materie som funksjon av $r$, altså $\rho(r)$, utifra hastighetsmålingene vi har i galaksen, så vil det være et viktig redskap i å kunne forstå hva slags mørk materie vi har ved å se hvordan den mørke materien kan klumpe seg ifølge modellen $\rho(r)$ vi finner.
 }
-\hyperlink{nytema4}{\pagebutton{Det skal vi se litt på nå...}}
+\hyperlink{blue_nytema4}{\pagebutton{Det skal vi se litt på nå...}}
 \end{frame}
 }
 
@@ -650,8 +829,8 @@ Hvis vi nå kan lage en modell av tetthet av mørk materie som funksjon av $r$, 
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema4}
-\hyperlink{mm9}{\pagebutton{\small Forrige side}}
+\label{blue_nytema4}
+\hyperlink{feil_mm9}{\pagebutton{\small Forrige side}}
 \nytemaside{hvaer}
 \hyperlink{mod1}{\pagebutton{La oss gjøre litt utledning igjen...}}
 \end{frame}
@@ -660,7 +839,7 @@ Hvis vi nå kan lage en modell av tetthet av mørk materie som funksjon av $r$, 
 
 \begin{frame}
 \label{mod1}
-\lastpagebutton{mm9}\label{modmat}
+\lastpagebutton{feil_mm9}\label{modmat}
 Vi ønsker altså å finne et uttrykk for $\rho(r)$ utifra hastighetsfunksjonen $v(r)$. Vi antar altså kulesymmetri siden tettheten kun er en funksjon av $r$. Dette er rimelig siden vi har observert at den mørke materien ligger i en kulesymmetrisk halo og ikke i en skive slik som den vanlige materien gjør i en spiralgalakse. Den mørke materien dominerer, så det er en god antakelse og kun se på den mørke materien her. Tettheten i avstanden $r$ fra sentrum av galaksen er vel egentlig:
 \[
 \rho(r)=\frac{\mathrm{masse\ av\ infinitesimalt\ kuleskall}}{\mathrm{volum \ av\ infinitesimalt\ kuleskall}}=\frac{dM}{4\pi r^2\,dr}=\frac{1}{4\pi r^2}\frac{dM}{dr}
@@ -763,14 +942,14 @@ Ser du at
 \end{itemize}
 Hvis du ikke ser det, spør foreleser! Ser du dermed at når $r\rightarrow0$ så går $\rho$ mot den konstante tettheten $\rho_0$? Og når $r$ blir veldig stor så får vi tilbake $\rho(r)\propto1/r^2$ som vi fant over?
 \textcolor{red}{Men hva betyr nå disse resultatene for forståelsen av hva den mørke materien er??}
-\hyperlink{nytema5}{\pagebutton{Neste side}}
+\hyperlink{blue_nytema5}{\pagebutton{Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Hva er mørk materie?}
 {
 \setbeamercolor{background canvas}{bg=blue}
 \begin{frame}
-\label{nytema5}
+\label{blue_nytema5}
 \hyperlink{mod7}{\pagebutton{\small Forrige side}}
 \nytemaside{0}
 \hyperlink{hvamm1}{\pagebutton{Og svaret er ...}}
@@ -797,7 +976,7 @@ Vi nevnte tidligere at det finnes en partikkel i stnandardmodellen som kunne pas
 \label{hvamm3}
 \lastpagebutton{hvamm2}
 {\bf ...mørk materie må være en ny og enda ukjent partikkel.} En partikkel som enda ikke er en del av standardmodellen. Teoretisk partikkelfysikk har i mange tiår allerede forutsagt eksistensen av mange forskjellige typer slike partikler ved å se på symmetrier i de matematiske teoriene. En av de mange mulige teoretiske utvideleser av standardmodellen er den såkalte {\bf supersymmetriske modellen}. I den modellen har ethvert fermion en supersymmetrisk partnerpartikkel som er et boson, og hvert boson en supersymmetrisk partnerpartikkel som er et fermion (litt på samme måte som alle partikler har en antipartikkel med motsatt ladning og leptonnummer). Partneren til protonet ville vært et {\bf sproton}, partneren til elektronet et {\bf selektron} og parteneren til fotonet et {\bf fotino}. Selv om denne teorien har eksistert i veldig lang tid, så har man så langt \textcolor{red}{ikke lykkes i å bekrefte at disse partiklene faktisk eksisterer. Men hvis de eksisterer så er mange av disse forutsagt å ha de egenskapene som vi ser at CDM har.} I tilleg til supersymmetri finnes det også en rekke andre teorier som forutsier utvidelser av standardmodellen med partikler som passer til å være CDM, men så langt er altså ingen av disse teoriene bekreftet.
-\hyperlink{hvamm3b}{\pagebutton{MEN...}}
+\hyperlink{red_hvamm3b}{\pagebutton{MEN...}}
 \end{frame}
 
 
@@ -805,7 +984,7 @@ Vi nevnte tidligere at det finnes en partikkel i stnandardmodellen som kunne pas
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{hvamm3b}
+\label{red_hvamm3b}
 \lastpagebutton{hvamm3}
 \textcolor{yellow}{\Huge kanskje det finnes en annen mulighet???}\\
 \textcolor{yellow}{\large tenk tilbake på utledningen av rotasjonskurvene:
@@ -821,7 +1000,7 @@ v(r)=\sqrt{\frac{GM}{r}}
 
 \begin{frame}
 \label{hvamm4}
-\lastpagebutton{hvamm3b}
+\lastpagebutton{red_hvamm3b}
 {\Huge Så flott at du har et forslag! Det vil jeg gjerne høre om...}
 \hyperlink{hvamm5}{\pagebutton{Jo, nå skal du høre...}}
 \end{frame}
@@ -863,7 +1042,8 @@ Gratulerer, del 1F er overstått. Du bør nå:
 \item ha en anelse om hva mørk materie kan være og hvilke kategorier vi deler den opp i
 \item ... og at det spekuleres i at gravitasjonsloven kan være feil...
 \end{itemize}
-\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}\\
+{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1f.pdf}{kortsvarsoppgavene} til del 1F for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
 \end{frame}
 
 
