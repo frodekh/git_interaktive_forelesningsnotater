@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  2 JUL 2021 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  22 SEP 2021 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,279 +1164,40 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<main_sequence_stars.jpg, id=76, 1927.2pt x 1084.05pt>
-File: main_sequence_stars.jpg Graphic file (type jpg)
-<use main_sequence_stars.jpg>
-Package pdftex.def Info: main_sequence_stars.jpg  used on input line 331.
-(pdftex.def)             Requested size: 289.06754pt x 162.60048pt.
 
-Overfull \hbox (117.91989pt too wide) in paragraph at lines 331--331
-[][]  
- []
+LaTeX Warning: File `main_sequence_stars.jpg' not found on input line 331.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 331
-.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 331
-.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 331.
+! Package pdftex.def Error: File `main_sequence_stars.jpg' not found: using dra
+ft setting.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-) [4
-
- <./main_sequence_stars.jpg>] [5
-
-] [6
-
-] [7
-
-]
-<fig_11-3.pdf, id=151, 593.00177pt x 349.2733pt>
-File: fig_11-3.pdf Graphic file (type pdf)
-<use fig_11-3.pdf>
-Package pdftex.def Info: fig_11-3.pdf  used on input line 372.
-(pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
- [8
-
- <./fig_11-3.pdf>]
-File: fig_11-3.pdf Graphic file (type pdf)
-<use fig_11-3.pdf>
-Package pdftex.def Info: fig_11-3.pdf  used on input line 378.
-(pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
- [9
-
-] [10
-
-]
-[11
-
-] [12
-
-]
-File: fig_11-3.pdf Graphic file (type pdf)
-<use fig_11-3.pdf>
-Package pdftex.def Info: fig_11-3.pdf  used on input line 398.
-(pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
-
-Overfull \vbox (3.98854pt too high) detected at line 398
- []
-
-[13
-
-]
-<HR_diagram.pdf, id=610, 983.675pt x 1161.33875pt>
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 412.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [14
-
- <./HR_diagram.pdf>] [15
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 442.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [16
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 442.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [17
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 442.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [18
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 442.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [19
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 454.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [20
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 454.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
- [21
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 466.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
-
-Overfull \vbox (2.19801pt too high) detected at line 466
- []
-
-[22
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 466.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
-
-Overfull \vbox (2.19801pt too high) detected at line 466
- []
-
-[23
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 482.
-(pdftex.def)             Requested size: 147.54488pt x 174.1933pt.
- [24
-
-] [25
-
-] [26
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 509.
-(pdftex.def)             Requested size: 147.54488pt x 174.1933pt.
- [27
-
-] [28
-
-] [29
-
-] [30
-
-]
-File: HR_diagram.pdf Graphic file (type pdf)
-<use HR_diagram.pdf>
-Package pdftex.def Info: HR_diagram.pdf  used on input line 543.
-(pdftex.def)             Requested size: 118.0359pt x 139.35463pt.
- [31
-
-] [32
-
-] [33
-
-] [34
-
-] [35
-
-] [36
-
-]
-<fig_13-2.pdf, id=916, 438.63875pt x 583.17876pt>
-File: fig_13-2.pdf Graphic file (type pdf)
-<use fig_13-2.pdf>
-Package pdftex.def Info: fig_13-2.pdf  used on input line 595.
-(pdftex.def)             Requested size: 131.59264pt x 174.95497pt.
- [37
-
- <./fig_13-2.pdf>]
-File: fig_13-2.pdf Graphic file (type pdf)
-<use fig_13-2.pdf>
-Package pdftex.def Info: fig_13-2.pdf  used on input line 605.
-(pdftex.def)             Requested size: 131.59264pt x 174.95497pt.
- [38
-
-] [39
-
-] [40
-
-] [41
-
-] [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-]
-[50
-
-] [51
-
-] [52
-
-] [53
-
-]
-\tf@nav=\write6
-\openout6 = `interaktive_forelesningsnotater_3D_del1_av_2.nav'.
-
-\tf@toc=\write7
-\openout7 = `interaktive_forelesningsnotater_3D_del1_av_2.toc'.
-
-\tf@snm=\write8
-\openout8 = `interaktive_forelesningsnotater_3D_del1_av_2.snm'.
-
- (./interaktive_forelesningsnotater_3D_del1_av_2.aux)
-Package rerunfilecheck Info: File `interaktive_forelesningsnotater_3D_del1_av_2
-.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.331 \end{frame}
+                 
+? x
+ 
 Here is how much of TeX's memory you used:
- 27035 strings out of 478994
- 529830 string characters out of 5858185
- 894513 words of memory out of 5000000
- 43755 multiletter control sequences out of 15000+600000
- 425429 words of font info for 105 fonts, out of 8000000 for 9000
+ 26736 strings out of 478994
+ 525548 string characters out of 5858185
+ 876011 words of memory out of 5000000
+ 43632 multiletter control sequences out of 15000+600000
+ 406436 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,11n,132p,1135b,1397s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on interaktive_forelesningsnotater_3D_del1_av_2.pdf (53 pages, 1
-686647 bytes).
+ 131i,11n,132p,1135b,1330s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{intro} has been referenced but does not exist, repl
+aced by a fixed one
+
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on interaktive_forelesningsnotater_3D_del1_av_2.pdf (3 pages, 49
+103 bytes).
 PDF statistics:
- 1222 PDF objects out of 1440 (max. 8388607)
- 1098 compressed objects within 11 object streams
- 160 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

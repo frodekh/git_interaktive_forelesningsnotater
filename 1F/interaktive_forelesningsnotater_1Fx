@@ -269,7 +269,7 @@
 \label{front2}
 \center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1F\\Interaktive forelesningsnotater}}\\
 \begin{block}{\center{\bf VIKTIG}}
-\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1f.png}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1f.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
 \end{block}
 %\setbeamercolor{button}{bg=black,fg=yellow}
 \hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
@@ -278,7 +278,7 @@
 \begin{frame}
 \label{front3}
 {\Large
-\begin{itemize}
+x\begin{itemize}
 \item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
 \item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
 \item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
@@ -349,10 +349,10 @@ Er du klar og har sendt inn skjemaet?
 \dlastpagebutton{intro2}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.2]{media/std_model_Wiki.png}\\
+\includegraphics[scale=0.2]{media/std_model_Wiki.pdf}\\
 I oversikten over ser du alle kjente elementærpartikler i den såkalte \href{https://en.wikipedia.org/wiki/Standard_Model}{standardmodellen} i partikkelfysikk untatt den såkalte Higgspartikkelen.
 \column{0.5\textwidth}
- Før du går videre bør du nå gå inn i de vanlige \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1f.png}{forelesningsnotatene} for del 1F og lese avsnitt 1 ``Some particle physics''. Det har ikke meningen at alt dette blir repetert her, så bedre at du leser denne godt. På de neste sidene skal du bli testet i det du har lest. {\bf Prøv å pugge dette stoffet nå slik at du klarer å ta testen uten å slå opp!} \textcolor{red}{ Dette har dukket opp flere ganger på eksamen og i prosjektet kan du få bruk for å beskrive dette med egne ord. Har du pugget dette en gang vil det sitte mye fortere neste gang.}
+ Før du går videre bør du nå gå inn i de vanlige \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1f.pdf}{forelesningsnotatene} for del 1F og lese avsnitt 1 ``Some particle physics''. Det har ikke meningen at alt dette blir repetert her, så bedre at du leser denne godt. På de neste sidene skal du bli testet i det du har lest. {\bf Prøv å pugge dette stoffet nå slik at du klarer å ta testen uten å slå opp!} \textcolor{red}{ Dette har dukket opp flere ganger på eksamen og i prosjektet kan du få bruk for å beskrive dette med egne ord. Har du pugget dette en gang vil det sitte mye fortere neste gang.}
 \hyperlink{partikler2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -491,7 +491,7 @@ Ta nå frem et papir, skriv ned de 4 grunnleggende kreftene vi har i naturen sam
 \textcolor{yellow}{
 {\small
 Før vi skal se på galaktiske rotasjonskurver (hva nå enn det er ...) så skal vi se hvordan en typisk galakse ser ut. Vi skal nærmere bestemt se på en spiralgalakse slik som vår egen Melkevei som et eksempel:\\
-\includegraphics[scale=0.45]{media/fig_4-1.png}\\
+\includegraphics[scale=0.45]{media/fig_4-1.pdf}\\
 Dimensjonene som er tegnet inn gjelder for Melkeveien som er en typisk spiralgalakse. Den består av en {\bf rund tynn skive} ($\sim$1000 lysår tykkelse) med stjerner som vi kaller {\bf galakseskiven}. Den er omkring 100.000 - 200.000 lysår i diameter. I sentrum er det en kuleformet ansamling av stjerner som kalles {\bf galakseutbulingen} med diameter omkring 10.000 lysår. Stjernene går i bane i galakseplanet omkring det supermassive sorte hullet i sentrum av galaksen. Det er noen hundre milliarder stjerner i Melkeveien og stjernetettheten i en typisk galakse faller kraftig av med avstand $r$ fra sentrum som $\rho_\mathrm{star}(r)\propto r^{-3.5}$.
 }}
 \hyperlink{rotkurv1}{\pagebutton{Neste side}}
@@ -603,7 +603,7 @@ v(r)=\sqrt{\frac{GM}{r}}\ \ \ \ \mathrm{for\ r\ stor\ nok}
 \]
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.45]{media/fig_4-2.png}\\
+\includegraphics[scale=0.45]{media/fig_4-2.pdf}\\
 \column{0.5\textwidth}
 I figuren til venstre ser du denne modellen tegnet inn (nederste kurve). {\bf Den øverste kurven derimot, er typisk for faktiske observasjoner av stjerne hastigheter!} \textcolor{red}{Helt forskjellig fra den teoretiske modellen!} Vi ser at den faktiske kurven er nesten flat og ikke følger en $\sqrt{1/r}$ modell.
 \hyperlink{red_rotkurv5}{\pagebutton{Neste side}}
@@ -1016,7 +1016,7 @@ Hva om Newtons gravitasjonslov er feil? Newtons gravitasjon kommer jo bare fra E
 \label{hvamm6}
 \lastpagebutton{hvamm5}
 Det finnes også en annen grunn til at man studerer muligheten for at Einsteins gravitasjonslov må utvides. Det finnes nemlig en annen usynlig komponent i universets sammensetning som heter {\bf mørk energi}. Vi skal ikke snakke om den i dette kurset, men den får universet til å utvide seg fortere og fortere. For å forklare denne så ser det virkelig ut som man kanskje trenger en modifisert gravitasjonslov. {\bf Men hva om en slik modifisert gravitasjonslov også kan forklare galaktiske rotasjonskurver og andre observasjoer som indikerer eksistensen av mørk materie?} Ja da hadde vi ikke trengt den mørke materien. \textcolor{red}{Problemet er bare at ingen heller ikke har klart å lage en overbevisende modifisert gravitasjonsteori som gir oss både mørk materie og mørk energi}.\\
-\textcolor{blue}{Hvis du er interessert og har lyst til å kikke på et av de mest populære modifiserte gravitasjonsteoriene, ta en kikke på \href{https://www.eso.org/sci/meetings/santiago/abs05/Sep2005/Scarpa.png}{denne introduksjonen} om teorien MOND (MOdified Newtonian Dynamics) hvor du også får se en modifisert versjon av Newtons gravitasjonslov som gir flate rotasjonskurver for galakser.}
+\textcolor{blue}{Hvis du er interessert og har lyst til å kikke på et av de mest populære modifiserte gravitasjonsteoriene, ta en kikke på \href{https://www.eso.org/sci/meetings/santiago/abs05/Sep2005/Scarpa.pdf}{denne introduksjonen} om teorien MOND (MOdified Newtonian Dynamics) hvor du også får se en modifisert versjon av Newtons gravitasjonslov som gir flate rotasjonskurver for galakser.}
 \hyperlink{hvamm7}{\pagebutton{Neste side}}
 \end{frame}
 
