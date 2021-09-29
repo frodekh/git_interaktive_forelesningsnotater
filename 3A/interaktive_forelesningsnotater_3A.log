@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  29 SEP 2021 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  29 SEP 2021 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1696,11 +1696,7 @@ Overfull \hbox (5.10773pt too wide) in paragraph at lines 1210--1210
 
  <./media/ladder4.png>] [79
 
-]
-Overfull \vbox (56.11513pt too high) detected at line 1234
- []
-
-[80
+] [80
 
 ] [81
 
@@ -1716,7 +1712,8 @@ Overfull \vbox (56.11513pt too high) detected at line 1234
 
 ] [87
 
-] [88
+]
+[88
 
 ] [89
 
@@ -1763,11 +1760,11 @@ not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26272 strings out of 478994
- 515508 string characters out of 5858185
+ 26273 strings out of 478994
+ 515527 string characters out of 5858185
  848278 words of memory out of 5000000
- 42873 multiletter control sequences out of 15000+600000
- 428319 words of font info for 115 fonts, out of 8000000 for 9000
+ 42874 multiletter control sequences out of 15000+600000
+ 428613 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,11n,132p,1376b,1246s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{front} has been referenced but does not exist, re
@@ -1798,7 +1795,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on interaktive_forelesningsnotater_3A.pdf (94 pages, 45154877 by
+Output written on interaktive_forelesningsnotater_3A.pdf (94 pages, 45154951 by
 tes).
 PDF statistics:
  1780 PDF objects out of 2073 (max. 8388607)
