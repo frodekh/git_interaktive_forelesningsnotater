@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  29 SEP 2021 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  2 OCT 2021 14:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1317,22 +1317,18 @@ Package pdftex.def Info: media/galaxy_left.png  used on input line 518.
  [24
 
  <./media/galaxy_left.png>]
-File: media/galaxy_left.png Graphic file (type png)
-<use media/galaxy_left.png>
-Package pdftex.def Info: media/galaxy_left.png  used on input line 533.
-(pdftex.def)             Requested size: 142.52997pt x 109.60754pt.
-<media/galaxy_right.png, id=329, 712.6625pt x 547.04375pt>
-File: media/galaxy_right.png Graphic file (type png)
-<use media/galaxy_right.png>
-Package pdftex.def Info: media/galaxy_right.png  used on input line 533.
-(pdftex.def)             Requested size: 142.52997pt x 109.4068pt.
+<media/galaxy_comb.png, id=329, 1420.30624pt x 542.025pt>
+File: media/galaxy_comb.png Graphic file (type png)
+<use media/galaxy_comb.png>
+Package pdftex.def Info: media/galaxy_comb.png  used on input line 534.
+(pdftex.def)             Requested size: 284.05621pt x 108.40308pt.
 
-Overfull \vbox (5.73695pt too high) detected at line 533
+Overfull \vbox (4.53249pt too high) detected at line 534
  []
 
 [25
 
- <./media/galaxy_right.png>] [26
+ <./media/galaxy_comb.png>] [26
 
 ] [27
 
@@ -1340,7 +1336,7 @@ Overfull \vbox (5.73695pt too high) detected at line 533
 <media/fig_11-2.pdf, id=365, 375.57637pt x 139.41849pt>
 File: media/fig_11-2.pdf Graphic file (type pdf)
 <use media/fig_11-2.pdf>
-Package pdftex.def Info: media/fig_11-2.pdf  used on input line 571.
+Package pdftex.def Info: media/fig_11-2.pdf  used on input line 572.
 (pdftex.def)             Requested size: 300.46149pt x 111.53493pt.
  [28
 
@@ -1348,10 +1344,10 @@ Package pdftex.def Info: media/fig_11-2.pdf  used on input line 571.
 <media/galaxy_both.png, id=384, 712.6625pt x 546.04pt>
 File: media/galaxy_both.png Graphic file (type png)
 <use media/galaxy_both.png>
-Package pdftex.def Info: media/galaxy_both.png  used on input line 581.
+Package pdftex.def Info: media/galaxy_both.png  used on input line 582.
 (pdftex.def)             Requested size: 213.8004pt x 163.81326pt.
 
-Overfull \vbox (5.82411pt too high) detected at line 581
+Overfull \vbox (5.82411pt too high) detected at line 582
  []
 
 [29
@@ -1359,7 +1355,7 @@ Overfull \vbox (5.82411pt too high) detected at line 581
  <./media/galaxy_both.png>]
 File: media/fig_11-2.pdf Graphic file (type pdf)
 <use media/fig_11-2.pdf>
-Package pdftex.def Info: media/fig_11-2.pdf  used on input line 588.
+Package pdftex.def Info: media/fig_11-2.pdf  used on input line 589.
 (pdftex.def)             Requested size: 300.46149pt x 111.53493pt.
  [30
 
@@ -1373,10 +1369,10 @@ Package pdftex.def Info: media/fig_11-2.pdf  used on input line 588.
 <media/ladder2.png, id=438, 443.6575pt x 555.07375pt>
 File: media/ladder2.png Graphic file (type png)
 <use media/ladder2.png>
-Package pdftex.def Info: media/ladder2.png  used on input line 645.
+Package pdftex.def Info: media/ladder2.png  used on input line 646.
 (pdftex.def)             Requested size: 177.45984pt x 222.02556pt.
 
-Overfull \hbox (6.3122pt too wide) in paragraph at lines 645--645
+Overfull \hbox (6.3122pt too wide) in paragraph at lines 646--646
 [][] 
  []
 
@@ -1394,11 +1390,11 @@ Overfull \hbox (6.3122pt too wide) in paragraph at lines 645--645
 <media/open_cluster_NGC265.jpg, id=494, 1707.37875pt x 1707.37875pt>
 File: media/open_cluster_NGC265.jpg Graphic file (type jpg)
 <use media/open_cluster_NGC265.jpg>
-Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 695.
+Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 696.
 
 (pdftex.def)             Requested size: 153.65746pt x 153.65746pt.
 
-Overfull \vbox (1.73961pt too high) detected at line 695
+Overfull \vbox (1.73961pt too high) detected at line 696
  []
 
 [39
@@ -1408,7 +1404,7 @@ Overfull \vbox (1.73961pt too high) detected at line 695
 File: media/globular_cluster_NGC362.jpg Graphic file (type jpg)
 <use media/globular_cluster_NGC362.jpg>
 Package pdftex.def Info: media/globular_cluster_NGC362.jpg  used on input line 
-706.
+707.
 (pdftex.def)             Requested size: 167.02986pt x 168.59576pt.
  [40
 
@@ -1416,10 +1412,10 @@ Package pdftex.def Info: media/globular_cluster_NGC362.jpg  used on input line
 <media/fig_11-3.pdf, id=517, 593.00177pt x 349.2733pt>
 File: media/fig_11-3.pdf Graphic file (type pdf)
 <use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 716.
+Package pdftex.def Info: media/fig_11-3.pdf  used on input line 717.
 (pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
 
-Overfull \vbox (2.39732pt too high) detected at line 716
+Overfull \vbox (2.39732pt too high) detected at line 717
  []
 
 [41
@@ -1427,10 +1423,10 @@ Overfull \vbox (2.39732pt too high) detected at line 716
  <./media/fig_11-3.pdf>]
 File: media/fig_11-3.pdf Graphic file (type pdf)
 <use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 726.
+Package pdftex.def Info: media/fig_11-3.pdf  used on input line 727.
 (pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
 
-Overfull \vbox (2.00983pt too high) detected at line 726
+Overfull \vbox (2.00983pt too high) detected at line 727
  []
 
 [42
@@ -1438,10 +1434,10 @@ Overfull \vbox (2.00983pt too high) detected at line 726
 ]
 File: media/fig_11-3.pdf Graphic file (type pdf)
 <use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 740.
+Package pdftex.def Info: media/fig_11-3.pdf  used on input line 741.
 (pdftex.def)             Requested size: 225.343pt x 132.72522pt.
 
-Overfull \vbox (1.85283pt too high) detected at line 740
+Overfull \vbox (1.85283pt too high) detected at line 741
  []
 
 [43
@@ -1449,10 +1445,10 @@ Overfull \vbox (1.85283pt too high) detected at line 740
 ]
 File: media/fig_11-3.pdf Graphic file (type pdf)
 <use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 748.
+Package pdftex.def Info: media/fig_11-3.pdf  used on input line 749.
 (pdftex.def)             Requested size: 225.343pt x 132.72522pt.
 
-Overfull \vbox (8.55737pt too high) detected at line 748
+Overfull \vbox (8.55737pt too high) detected at line 749
  []
 
 [44
@@ -1460,14 +1456,14 @@ Overfull \vbox (8.55737pt too high) detected at line 748
 ]
 File: media/fig_11-3.pdf Graphic file (type pdf)
 <use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 757.
+Package pdftex.def Info: media/fig_11-3.pdf  used on input line 758.
 (pdftex.def)             Requested size: 225.343pt x 132.72522pt.
  [45
 
 ]
 File: media/open_cluster_NGC265.jpg Graphic file (type jpg)
 <use media/open_cluster_NGC265.jpg>
-Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 768.
+Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 769.
 
 (pdftex.def)             Requested size: 153.65746pt x 153.65746pt.
  [46
@@ -1475,7 +1471,7 @@ Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 768.
 ]
 File: media/fig_11-3.pdf Graphic file (type pdf)
 <use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 777.
+Package pdftex.def Info: media/fig_11-3.pdf  used on input line 778.
 (pdftex.def)             Requested size: 225.343pt x 132.72522pt.
  [47
 
@@ -1486,79 +1482,47 @@ Package pdftex.def Info: media/fig_11-3.pdf  used on input line 777.
 ] [50
 
 ]
-<media/fig_11-4a.pdf, id=1010, 375.57637pt x 293.66089pt>
-File: media/fig_11-4a.pdf Graphic file (type pdf)
-<use media/fig_11-4a.pdf>
-Package pdftex.def Info: media/fig_11-4a.pdf  used on input line 829.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
-<media/fig_11-4b.pdf, id=1011, 375.57637pt x 293.66089pt>
-File: media/fig_11-4b.pdf Graphic file (type pdf)
-<use media/fig_11-4b.pdf>
-Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 829.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
+<media/fig_11-4comb.png, id=1010, 1407.2575pt x 547.04375pt>
+File: media/fig_11-4comb.png Graphic file (type png)
+<use media/fig_11-4comb.png>
+Package pdftex.def Info: media/fig_11-4comb.png  used on input line 831.
+(pdftex.def)             Requested size: 281.44652pt x 109.4068pt.
+ [51
 
-Overfull \vbox (1.39528pt too high) detected at line 829
- []
-
-[51
-
- <./media/fig_11-4a.pdf> <./media/fig_11-4b.pdf
-
-pdfTeX warning: pdflatex (file ./media/fig_11-4b.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->]
-File: media/fig_11-4a.pdf Graphic file (type pdf)
-<use media/fig_11-4a.pdf>
-Package pdftex.def Info: media/fig_11-4a.pdf  used on input line 839.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
-File: media/fig_11-4b.pdf Graphic file (type pdf)
-<use media/fig_11-4b.pdf>
-Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 839.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
+ <./media/fig_11-4comb.png>]
+File: media/fig_11-4comb.png Graphic file (type png)
+<use media/fig_11-4comb.png>
+Package pdftex.def Info: media/fig_11-4comb.png  used on input line 842.
+(pdftex.def)             Requested size: 281.44652pt x 109.4068pt.
  [52
 
 ]
-File: media/fig_11-4a.pdf Graphic file (type pdf)
-<use media/fig_11-4a.pdf>
-Package pdftex.def Info: media/fig_11-4a.pdf  used on input line 847.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
-File: media/fig_11-4b.pdf Graphic file (type pdf)
-<use media/fig_11-4b.pdf>
-Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 847.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
- [53
+File: media/fig_11-4comb.png Graphic file (type png)
+<use media/fig_11-4comb.png>
+Package pdftex.def Info: media/fig_11-4comb.png  used on input line 851.
+(pdftex.def)             Requested size: 281.44652pt x 109.4068pt.
+
+[53
 
 ]
-File: media/fig_11-4a.pdf Graphic file (type pdf)
-<use media/fig_11-4a.pdf>
-Package pdftex.def Info: media/fig_11-4a.pdf  used on input line 856.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
-File: media/fig_11-4b.pdf Graphic file (type pdf)
-<use media/fig_11-4b.pdf>
-Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 856.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
+File: media/fig_11-4comb.png Graphic file (type png)
+<use media/fig_11-4comb.png>
+Package pdftex.def Info: media/fig_11-4comb.png  used on input line 861.
+(pdftex.def)             Requested size: 281.44652pt x 109.4068pt.
  [54
 
 ]
-File: media/fig_11-4a.pdf Graphic file (type pdf)
-<use media/fig_11-4a.pdf>
-Package pdftex.def Info: media/fig_11-4a.pdf  used on input line 864.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
-File: media/fig_11-4b.pdf Graphic file (type pdf)
-<use media/fig_11-4b.pdf>
-Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 864.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
+File: media/fig_11-4comb.png Graphic file (type png)
+<use media/fig_11-4comb.png>
+Package pdftex.def Info: media/fig_11-4comb.png  used on input line 870.
+(pdftex.def)             Requested size: 281.44652pt x 109.4068pt.
  [55
 
 ]
-File: media/fig_11-4a.pdf Graphic file (type pdf)
-<use media/fig_11-4a.pdf>
-Package pdftex.def Info: media/fig_11-4a.pdf  used on input line 879.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
-File: media/fig_11-4b.pdf Graphic file (type pdf)
-<use media/fig_11-4b.pdf>
-Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 879.
-(pdftex.def)             Requested size: 142.72049pt x 111.59229pt.
+File: media/fig_11-4comb.png Graphic file (type png)
+<use media/fig_11-4comb.png>
+Package pdftex.def Info: media/fig_11-4comb.png  used on input line 886.
+(pdftex.def)             Requested size: 281.44652pt x 109.4068pt.
  [56
 
 ] [57
@@ -1566,7 +1530,7 @@ Package pdftex.def Info: media/fig_11-4b.pdf  used on input line 879.
 ] [58
 
 ]
-Overfull \vbox (2.59406pt too high) detected at line 915
+Overfull \vbox (2.59406pt too high) detected at line 922
  []
 
 [59
@@ -1574,35 +1538,35 @@ Overfull \vbox (2.59406pt too high) detected at line 915
 ]
 File: media/open_cluster_NGC265.jpg Graphic file (type jpg)
 <use media/open_cluster_NGC265.jpg>
-Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 926.
+Package pdftex.def Info: media/open_cluster_NGC265.jpg  used on input line 933.
 
 (pdftex.def)             Requested size: 153.65746pt x 153.65746pt.
 
-Overfull \vbox (1.61877pt too high) detected at line 926
+Overfull \vbox (1.61877pt too high) detected at line 933
  []
 
 [60
 
 ]
-<media/ladder_coffee.png, id=1133, 542.025pt x 666.49pt>
+<media/ladder_coffee.png, id=1118, 542.025pt x 666.49pt>
 File: media/ladder_coffee.png Graphic file (type png)
 <use media/ladder_coffee.png>
-Package pdftex.def Info: media/ladder_coffee.png  used on input line 949.
+Package pdftex.def Info: media/ladder_coffee.png  used on input line 956.
 (pdftex.def)             Requested size: 243.90898pt x 299.91772pt.
 
-Overfull \vbox (38.0416pt too high) detected at line 949
+Overfull \vbox (38.0416pt too high) detected at line 956
  []
 
 [61
 
  <./media/ladder_coffee.png>]
-<media/ladder3.png, id=1142, 435.6275pt x 550.055pt>
+<media/ladder3.png, id=1127, 435.6275pt x 550.055pt>
 File: media/ladder3.png Graphic file (type png)
 <use media/ladder3.png>
-Package pdftex.def Info: media/ladder3.png  used on input line 967.
+Package pdftex.def Info: media/ladder3.png  used on input line 974.
 (pdftex.def)             Requested size: 174.24791pt x 220.0181pt.
 
-Overfull \hbox (3.10027pt too wide) in paragraph at lines 967--967
+Overfull \hbox (3.10027pt too wide) in paragraph at lines 974--974
 [][] 
  []
 
@@ -1615,13 +1579,13 @@ Overfull \hbox (3.10027pt too wide) in paragraph at lines 967--967
 ] [65
 
 ]
-Overfull \vbox (5.79794pt too high) detected at line 1028
+Overfull \vbox (5.79794pt too high) detected at line 1035
  []
 
 [66
 
 ]
-Overfull \vbox (3.64633pt too high) detected at line 1047
+Overfull \vbox (3.64633pt too high) detected at line 1054
  []
 
 [67
@@ -1629,7 +1593,7 @@ Overfull \vbox (3.64633pt too high) detected at line 1047
 ] [68
 
 ]
-Overfull \vbox (1.29865pt too high) detected at line 1075
+Overfull \vbox (1.29865pt too high) detected at line 1082
  []
 
 [69
@@ -1637,10 +1601,10 @@ Overfull \vbox (1.29865pt too high) detected at line 1075
 ] [70
 
 ]
-<media/cepheide_kurve.png, id=1259, 655.44875pt x 403.5075pt>
+<media/cepheide_kurve.png, id=1244, 655.44875pt x 403.5075pt>
 File: media/cepheide_kurve.png Graphic file (type png)
 <use media/cepheide_kurve.png>
-Package pdftex.def Info: media/cepheide_kurve.png  used on input line 1103.
+Package pdftex.def Info: media/cepheide_kurve.png  used on input line 1110.
 (pdftex.def)             Requested size: 229.41049pt x 141.22974pt.
  [71
 
@@ -1649,7 +1613,7 @@ Package pdftex.def Info: media/cepheide_kurve.png  used on input line 1103.
 ] [73
 
 ]
-Overfull \vbox (1.06218pt too high) detected at line 1140
+Overfull \vbox (1.06218pt too high) detected at line 1147
  []
 
 [74
@@ -1657,13 +1621,13 @@ Overfull \vbox (1.06218pt too high) detected at line 1140
 ] [75
 
 ]
-<media/SNIa.jpg, id=1333, 1952.29375pt x 1027.84pt>
+<media/SNIa.jpg, id=1318, 1952.29375pt x 1027.84pt>
 File: media/SNIa.jpg Graphic file (type jpg)
 <use media/SNIa.jpg>
-Package pdftex.def Info: media/SNIa.jpg  used on input line 1170.
+Package pdftex.def Info: media/SNIa.jpg  used on input line 1177.
 (pdftex.def)             Requested size: 195.24081pt x 102.79001pt.
 
-Overfull \hbox (24.09317pt too wide) in paragraph at lines 1170--1170
+Overfull \hbox (24.09317pt too wide) in paragraph at lines 1177--1177
 [][] 
  []
 
@@ -1672,23 +1636,23 @@ Overfull \hbox (24.09317pt too wide) in paragraph at lines 1170--1170
  <./media/SNIa.jpg>]
 File: media/SNIa.jpg Graphic file (type jpg)
 <use media/SNIa.jpg>
-Package pdftex.def Info: media/SNIa.jpg  used on input line 1192.
+Package pdftex.def Info: media/SNIa.jpg  used on input line 1199.
 (pdftex.def)             Requested size: 195.24081pt x 102.79001pt.
 
-Overfull \hbox (24.09317pt too wide) in paragraph at lines 1192--1192
+Overfull \hbox (24.09317pt too wide) in paragraph at lines 1199--1199
 [][] 
  []
 
 [77
 
 ]
-<media/ladder4.png, id=1352, 440.64626pt x 551.05875pt>
+<media/ladder4.png, id=1337, 440.64626pt x 551.05875pt>
 File: media/ladder4.png Graphic file (type png)
 <use media/ladder4.png>
-Package pdftex.def Info: media/ladder4.png  used on input line 1210.
+Package pdftex.def Info: media/ladder4.png  used on input line 1217.
 (pdftex.def)             Requested size: 176.25537pt x 220.41959pt.
 
-Overfull \hbox (5.10773pt too wide) in paragraph at lines 1210--1210
+Overfull \hbox (5.10773pt too wide) in paragraph at lines 1217--1217
 [][] 
  []
 
@@ -1720,18 +1684,18 @@ Overfull \hbox (5.10773pt too wide) in paragraph at lines 1210--1210
 ] [90
 
 ]
-<media/ladder5.png, id=1597, 446.66875pt x 549.05125pt>
+<media/ladder5.png, id=1582, 446.66875pt x 549.05125pt>
 File: media/ladder5.png Graphic file (type png)
 <use media/ladder5.png>
-Package pdftex.def Info: media/ladder5.png  used on input line 1349.
+Package pdftex.def Info: media/ladder5.png  used on input line 1356.
 (pdftex.def)             Requested size: 178.66432pt x 219.61661pt.
 
-Overfull \hbox (7.51668pt too wide) in paragraph at lines 1349--1349
+Overfull \hbox (7.51668pt too wide) in paragraph at lines 1356--1356
 [][] 
  []
 
 
-Overfull \hbox (12.4996pt too wide) in paragraph at lines 1349--1349
+Overfull \hbox (12.4996pt too wide) in paragraph at lines 1356--1356
 [][][][][][][][][][]  
  []
 
@@ -1760,10 +1724,10 @@ not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26273 strings out of 478994
- 515527 string characters out of 5858185
- 848278 words of memory out of 5000000
- 42874 multiletter control sequences out of 15000+600000
+ 26267 strings out of 478994
+ 515364 string characters out of 5858185
+ 848220 words of memory out of 5000000
+ 42869 multiletter control sequences out of 15000+600000
  428613 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,11n,132p,1376b,1246s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1795,11 +1759,11 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on interaktive_forelesningsnotater_3A.pdf (94 pages, 45154951 by
+Output written on interaktive_forelesningsnotater_3A.pdf (94 pages, 48765360 by
 tes).
 PDF statistics:
- 1780 PDF objects out of 2073 (max. 8388607)
- 1509 compressed objects within 16 object streams
+ 1764 PDF objects out of 2073 (max. 8388607)
+ 1498 compressed objects within 15 object streams
  288 named destinations out of 1000 (max. 500000)
- 644 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 639 words of extra memory for PDF output out of 10000 (max. 10000000)
 

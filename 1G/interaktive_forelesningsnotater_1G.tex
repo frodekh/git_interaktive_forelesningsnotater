@@ -52,6 +52,7 @@
 \definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
 \definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
 \definecolor{darkblue}{rgb}{0,0,0.54}
+\definecolor{redbrown}{rgb}{0.6,0,0}
 
 \hypersetup{
     colorlinks=true,
@@ -314,7 +315,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \hyperlink{front}{\pagebutton{Forrige side}}\\
 \includegraphics[scale=0.7]{media/neutron_star.jpg}\\
 \column{0.5\textwidth}
-\textcolor{yellow}{\bf Velkommen til del 1G! Her skal vi en tur innom kvanteverdenen. Når vi senere skal lære om døende stjerner så trenger vi å forstå litt om gasser som har ekstremt høy tetthet. Disse gassene oppfører seg ikke lenger som ideele gasser. Faktisk ikke i det hele tatt. Det skal vi se på her. Men for å forstå det, trenger vi bittelitt kvantefysikk. Deltajene om dette får du i senere semester. Dette interaktive forelesningsnotatet (unntat de brune sidene som ikke er pensum) tar ca. en dobbelttime fysisk forelesning å gå gjennom. {\small (illustrasjon: En nøytronstjerne består av degenerert kvantegass (NASA/Dana Berry)}\hyperlink{intro2}{\pagebutton{Neste side}}}
+\textcolor{yellow}{\bf Velkommen til del 1G! Her skal vi en tur innom kvanteverdenen. Når vi senere skal lære om døende stjerner så trenger vi å forstå litt om gasser som har ekstremt høy tetthet. Disse gassene oppfører seg ikke lenger som ideele gasser. Faktisk ikke i det hele tatt. Det skal vi se på her. Men for å forstå det, trenger vi bittelitt kvantefysikk. Deltajene om dette får du i senere semester. Dette interaktive forelesningsnotatet (untatt de brune sidene som ikke er pensum) tar ca. en dobbelttime fysisk forelesning å gå gjennom. {\small (illustrasjon: En nøytronstjerne består av degenerert kvantegass (NASA/Dana Berry)}\hyperlink{intro2}{\pagebutton{Neste side}}}
  \\\vspace*{3cm}\hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -456,12 +457,12 @@ ifølge Maxwell Boltzmann, og vi ser at det er veldig tett med partikler der. De
 \lastpagebutton{prom4b2}
 {\footnotesize
 \textcolor{yellow}{\it\footnotesize
-(Det som kommer på denne og de kommende {\bf brune sidene} er litt på siden av pensum, mest for deg som vil forstå litt mer. Det kan også hende at disse sidene gir mer mening etter at du har kommet gjennom hele 1G, så kom gjerne tilbake igjen hit når du er ferdig med 1G. \textcolor{red}{\bf Du kan altså hvis du vil, hoppe over de brune sidene uten å miste noe viktig)}}\\
+(Det som kommer på denne og de kommende {\bf brune sidene} er litt på siden av pensum, mest for deg som vil forstå litt mer. Det kan også hende at disse sidene gir mer mening etter at du har kommet gjennom hele 1G, så kom gjerne tilbake igjen hit når du er ferdig med 1G. \textcolor{cyan}{\bf Du kan altså hvis du vil, hoppe over de brune sidene uten å miste noe viktig)}}\\
 \textcolor{yellow}{
 {\bf For å løse motsigelsene her, la oss gå et øyeblikk tilbake til sannsynlighet- og antalltetthetene fra 1A:}}
 \begin{itemize}
-\item \textcolor{yellow}{$P(p_x)$ gir oss sannsynlighetstettheten for at en partikkel har bevegelsesmengde $p_x$. For å få sannsynlighet må vi gange med $dp_x$. Helt tilsvarende med antalltettheten $n(p_x)=nP(p_x)$ der $n$ er antall partikler per volum. \textcolor{red}{\bf For å få et faktisk antall per volum må vi da gange opp: $n(p_x)dp_x$.}}
-\item \textcolor{yellow}{Antalltettheten av partikler med bevegelsesmengde $\vec{p}$ er $n(\vec{p})=n(p_x)n(p_y)n(p_z)$. \textcolor{red}{\bf Men for å få et faktisk antall per volum må vi igjen gange opp med intervallet  $dp_xdp_ydp_z$: $n(\vec{p})dp_xdp_ydp_z=n(p_x)n(p_y)n(p_z)dp_xdp_ydp_z$}.}
+\item \textcolor{yellow}{$P(p_x)$ gir oss sannsynlighetstettheten for at en partikkel har bevegelsesmengde $p_x$. For å få sannsynlighet må vi gange med $dp_x$. Helt tilsvarende med antalltettheten $n(p_x)=nP(p_x)$ der $n$ er antall partikler per volum. \textcolor{cyan}{\bf For å få et faktisk antall per volum må vi da gange opp: $n(p_x)dp_x$.}}
+\item \textcolor{yellow}{Antalltettheten av partikler med bevegelsesmengde $\vec{p}$ er $n(\vec{p})=n(p_x)n(p_y)n(p_z)$. \textcolor{cyan}{\bf Men for å få et faktisk antall per volum må vi igjen gange opp med intervallet  $dp_xdp_ydp_z$: $n(\vec{p})dp_xdp_ydp_z=n(p_x)n(p_y)n(p_z)dp_xdp_ydp_z$}.}
 \end{itemize}
 \textcolor{yellow}{Legg merke til at $dp_xdp_ydp_z$ er volumet av en boks i $\vec{p}$-rommet! Vi må gange opp sannsynlighetstettheten $P(\vec{p})$ eller den tilsvarende antalltettheten $n(\vec{p})$ med et 3D-intervall i $\vec{p}$-rommet slik som $dp_xdp_ydp_z$ for å få sannsynlighet eller antall partikler (per fysisk volum) for partikler i dette bevegelsesmengdeintervallet.}
 }
@@ -492,7 +493,7 @@ der $N$ er antall partikler i gassen per fysisk volum $V$ (f.eks. $1\mathrm{m}^3
 \label{brown_prom4d}
 \lastpagebutton{brown_prom4c2}
 \textcolor{yellow}{
-{\bf Hva hvis vi vil ha antalltettheten av partikler med absoluttverdi mellom $p$ of $p+dp$ av bevegelsesmengden?} Altså alle partikler med absoluttverdi $p$ av bevegelsesmengden. \textcolor{red}{\bf Disse befinner seg vel på et skall i avstand $p$ fra origo i $\vec{p}$-rommet med tykkelse $dp$?} Volumet $V_p$ av et slikt kuleskall er vel $4\pi p^2dp$? Hvis vi {\bf ganger opp antalltettheten $n(\vec{p})$ med dette volumet $V_p$, så får vi antall partikler per fyisk volum $V$} med absoluttverdi av bevegelsesmengde mellom $p$ og $p+dp$? Altså $n(\vec{p})4\pi p^2 dp$.} \\
+{\bf Hva hvis vi vil ha antalltettheten av partikler med absoluttverdi mellom $p$ of $p+dp$ av bevegelsesmengden?} Altså alle partikler med absoluttverdi $p$ av bevegelsesmengden. \textcolor{cyan}{\bf Disse befinner seg vel på et skall i avstand $p$ fra origo i $\vec{p}$-rommet med tykkelse $dp$?} Volumet $V_p$ av et slikt kuleskall er vel $4\pi p^2dp$? Hvis vi {\bf ganger opp antalltettheten $n(\vec{p})$ med dette volumet $V_p$, så får vi antall partikler per fyisk volum $V$} med absoluttverdi av bevegelsesmengde mellom $p$ og $p+dp$? Altså $n(\vec{p})4\pi p^2 dp$.} \\
 \vspace*{0.5cm}
 \textcolor{yellow}{
 La oss gå tilbake til del 1A: Husker du definisjonen av $n(p)$? Var ikke den også slik at hvis vi ganger den med $dp$, altså $n(p)dp$ er dette også antall partikler per (fysisk) volum med absoluttverdi av bevegelsesmengde mellom $p$ og $p+dp$? Begge uttrykkene gir det samme:
@@ -554,7 +555,7 @@ Ser du at antalltettheten $n(p)$ avhenger av fordelingen $n(p_x)$, $n(p_y)$ og $
 Men hva i alle dager hadde dette å gjøre med motsigelsen vår?? {\bf Er det flest partikler konsentrert i origo i $\vec{p}$-rommet slik $n(p_x)$ indikerer eller er tettheten av partikler i  $\vec{p}$-rommet størst i et kuleskall slik som $n(p)$ indikerer? Ser du løsningen nå?} {\pagebutton{Kanskje...}}\\
 }
 \textcolor{yellow}{
-Ser du at antalltettheten $n(p)$ avhenger av fordelingen $n(p_x)$, $n(p_y)$ og $n(p_z)$ av komponentene samt volumet av et kuleskall $4\pi p^2 dp$? {\bf Fordelingen i $\vec{p}$-rommet må være gitt av $n(p_x)$, $n(p_y)$ og $n(p_z)$, altså de Gaussiske fordelingene med topp i origo!} \textcolor{red}{\bf Men hvorfor har da $n(p)$ en topp på en $p$ som er større enn 0? $n(p)$ sier jo at det er flere partikler med $p$ nær toppen i $n(p)$ enn det er partikler veldig nær origo?}{\bf JA, det er helt riktig, FORDI volumet av kuleskallet er større for større $p$!}. Du vil altså se en opphoping av partikler rundt {\bf origo} i $\vec{p}$-rommet, MEN det vil likevel være flere partikler totalt som har en $p$ som ligger et stykk lenger ut fra origo, fordi volumet av kuleskallet som rommer disse $p$-verdiene er større selv om tettheten av partikler i dette området av $\vec{p}$-rommet er lavere.}\\
+Ser du at antalltettheten $n(p)$ avhenger av fordelingen $n(p_x)$, $n(p_y)$ og $n(p_z)$ av komponentene samt volumet av et kuleskall $4\pi p^2 dp$? {\bf Fordelingen i $\vec{p}$-rommet må være gitt av $n(p_x)$, $n(p_y)$ og $n(p_z)$, altså de Gaussiske fordelingene med topp i origo!} \textcolor{cyan}{\bf Men hvorfor har da $n(p)$ en topp på en $p$ som er større enn 0? $n(p)$ sier jo at det er flere partikler med $p$ nær toppen i $n(p)$ enn det er partikler veldig nær origo?}{\bf JA, det er helt riktig, FORDI volumet av kuleskallet er større for større $p$!}. Du vil altså se en opphoping av partikler rundt {\bf origo} i $\vec{p}$-rommet, MEN det vil likevel være flere partikler totalt som har en $p$ som ligger et stykk lenger ut fra origo, fordi volumet av kuleskallet som rommer disse $p$-verdiene er større selv om tettheten av partikler i dette området av $\vec{p}$-rommet er lavere.}\\
 \textcolor{yellow}{
 {\bf Skjønner??} Hvis ikke så er det ikke så farlig, dette var som sagt en liten digresjon for deg som ønsker å forstå litt mer i dybden. Nå skal vi fortsette med pensum her. {\bf Og hvis du ikke hang helt med men har lyst til å forstå, les resten av 1G og kom så tilbake til de brune sidene, da blir det kanskje klarere...}
 }
