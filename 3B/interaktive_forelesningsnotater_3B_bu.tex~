@@ -1,0 +1,699 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+
+\input{usercommands}
+
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+%\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+
+
+
+\newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\pagenobutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = apricot, rounded corners = 5pt]{\color{brown(traditional)}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotatene-del-3a-3e/18}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
+
+\newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{42}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3B\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part3b.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{tableofcontents}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{blue_nytema1}{\headlinebutton{Virialteoremet}}
+\item \hyperlink{blue_nytema2}{\headlinebutton{Hvor kommer solas energi fra?}}
+\item \hyperlink{blue_nytema3}{\headlinebutton{Jeans-grensene}}
+\end{itemize}
+\hyperlink{feil_intro}{\choicebutton{Neste side}}
+\end{frame}
+
+%%%%% intro
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feil_intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.4]{media/gmc.jpg}
+\column{0.5\textwidth}
+{\small
+\textcolor{yellow}{\bf Velkommen til del 3B! Vi skal i de følgende delene av kurset følge stjernenes livsløp. I denne delen starter vi med stjernenes fødsel. I den forbindelse trenger vi å bruke en viktig sammenheng for store systemer som kalles {\it virialteoremet}. Dette skal gi oss noen uttrykk som sier noe om en gass-sky vil kollapse under sin egen gravitasjon for å danne en stjerner eller ikke. Dette forelesningsnotatet går jeg normalt gjennom på ca. en klokketime med fysisk forelesning, ihvertfall mindre enn en dobbelttime.}\\
+
+\textcolor{yellow}{(Illustrasjon: En molekylsky i Orions belte, NASA/JPL-Caltech/UCLA)}}
+\hyperlink{intro2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{intro2}
+\lastpagebutton{feil_intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/165582}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/165582}{\choicebutton{Nei}}\ \ \ \ \hyperlink{blue_nytema1}{\choicebutton{Ja}}\\
+\end{frame}
+
+
+
+
+
+\renewcommand{\headline}{Virialteoremet}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{solasenergi}
+\hyperlink{vir1}{\pagebutton{La oss se hva virialteoremet er...}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{vir1}
+\dlastpagebutton{intro2}
+Vi har tidligere i kurset utledet analytisk løsningen på 2-legemeproblemet. Så fort vi bare får et legeme til, så er ikke bevegelseslikningene lenger analytisk løsbare. I astrofysikken jobber vi ofte med enorme systemer, f.eks. er det flere hundre milliarder stjerner i en galakse, og enda langt flere gasspartikler i en gass-sky. Hundre-millioner-legeme-problemet er ihvertfall ikke analytisk løsbart. Men vi har tidligere i kurset utledet en generelt analytisk uttrykk som gjelder for slike systemer, nemlig Newtons 2.lov for massesenteret i et system. {\bf Virialteoremet} er et annet slikt analytisk uttrykk som er gyldig for veldig store systemer. Det er en sammenheng mellom den kinetiske energien og den potensielle for et slikt system.
+\hyperlink{vir2}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+
+\begin{frame}
+\label{vir2}
+\lastpagebutton{vir1}{\bf SIDE 12/23/33}\\
+Det er ikke pensum i AST2000 å utlede virialteoremet, men det er ikke spesielt vanskelig, er du interessert så finner du den fulle utledningen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3b.pdf}{de vanlige forelesningsnotatene for 3B}. La oss bruke en galakse som et eksempel her. Hvis du beregner den kinetiske energien til alle objektene i galaksen og tar gjennomsnittet så får du {\bf gjennomsnittlig kinetisk energi $\langle K\rangle$} for denne galaksen. Helt tilsvarende: hvis du beregner den totale gravitasjonelle potensielle energien mellom alle objektene i galaksen og tar midlet over alle objektene så får du {\bf midlere potensiell energi $\langle U\rangle$} for denne galaksen. \textcolor{red}{Virialteormet sier at
+\[
+\langle K\rangle = -\frac{1}{2}\langle U\rangle
+\]
+for store systemer som er i {\bf likevekt}.} I AST2000 skal vi ikke gå nærmere inn på nøyaktig hva betingelsen for denne likevekten er, det vil normalt være opplagt når du kan bruke denne likevektsbetingelsen. Men generelt kan vi si at for et system som er gravitasjonelt bundet (ikke går i oppløsning) så gjelder teoremet. {\bf Vi brukte galakse med stjerner som eksempel, men vi kan like godt bruke en hel gass-sky, der legemene i systemet er gasspartiklene.} Det skal vi se på nå.
+\hyperlink{vir3}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{vir3}
+\lastpagebutton{vir2}
+Vi skal bruke virialteoremet på en molekylær gass-sky bl.a. for å se om en molekylsky vil kollapse fra sin egen gravitasjon og danne en stjerne. Hvis vi nå skal bruke virialteoremet så trenger vi å kjenne ihvertfall enten $\langle K\rangle$ eller $\langle U\rangle$. Hvis vi nå antar \textcolor{red}{at gass-skya har form som en kule og at tettheten er den samme gjennom hele gass-skya,} altså at den har uniform tetthet, {\bf kan du tenke deg hvordan du kunne finne den totale potensielle energien til gass-skya (og dermed $\langle U\rangle$) ?} Altså summen av den potensielle energien mellom alle gasspartiklene i hele skya. Du kan uttrykke den med totalmassen $M$ til skya samt radiusen $R$. \textcolor{red}{Prøv deg litt frem før du går videre!}
+\hyperlink{vir3b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{vir3b}
+\lastpagebutton{vir3}
+{\bf Et hint:} prøv først å finne potensiell energi i et infinitesimalt tynt kuleskall i avstand $r$. Tenk deg et lite element av gassen med masse $dm$ i dette skallet. Hva er den potensielle energien mellom denne massen og resten av skya? Har den noe potensiell energi med den delen av skya som ligger i et skall på utsiden av $r$? Og hva med den delen av sky som ligger på innsiden av $r$? Og hvis du integrerer dette over alle $dm$ i hele kuleskallet? Og dermed over hele stjerna? \textcolor{red}{Prøv deg litt til!}
+\hyperlink{vir4}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{vir4}
+\lastpagebutton{vir3b}
+{\Huge Fant du ut av det?}
+Fikk du at total potensiell energi i skya er gitt ved:
+\[
+U_\mathrm{TOT}=-\frac{3GM^2}{5R}
+\]
+????
+(og dermed $\langle U\rangle=U_\mathrm{TOT}/N$ der $N$ er antall partikler i skya)
+Hvis ikke, se på utledningen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_1.mp4}{denne videoen.} \textcolor{red}{ Denne utledningen det forventet at du kan gjøre på stående fot!}
+\hyperlink{blue_nytema2}{\pagebutton{Neste side}}
+\end{frame}
+
+\renewcommand{\headline}{Hvor kommer solas energi fra?}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema2}
+\hyperlink{vir4}{\pagebutton{\small Forrige side}}
+\nytemaside{jeans}
+\hyperlink{sol1}{\pagebutton{La oss se på et eksempel...}}
+\end{frame}
+}
+
+\begin{frame}
+\label{sol1}
+\lastpagebutton{vir4}\label{solasenergi}
+{\Huge Vi skal nå se på et eksempel for hvordan virialteoremet har blitt brukt.}
+\textcolor{red}{\Large Det var en gang for lenge, lenge siden...}
+\hyperlink{sol2}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{sol2}
+\lastpagebutton{sol1}
+Nei, vi skal ikke fortelle eventyr her! Før Einstein oppdaget den spesielle relativitetsteorien, visste man ikke hvor solas energi kom fra. {\bf En mulig teori var at solas stråler fordi den enda faller sammen på grunn av gravitasjon.} Altså at sola enda ikke har nådd hydrostatisk likevekt, gravitasjon vinner enda over gasstrykk og får solas radius til å krympe kontinuerlig. {\bf Når en gass-sky kollapser fra sin egen gravitasjon så avgir gasspartiklene stråling i fallet.} Gravitasjonsenergi blir omgjort til kinetisk energi i gasspartiklene og til stråling.
+{\Large Finnes det noen måte å teste denne teorien på??? {\bf Kan du tenke deg det?}}
+\hyperlink{sol3}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{sol3}
+\lastpagebutton{sol2}
+En måte man gjorde dette på var å tenke som følger:
+\begin{itemize}
+\item de visste også den gang fra geologiske undersøkelser at jorda og sola er omkring 4.5 milliarder år gammel.
+\item de visste også på samme måte at luminositeten til sola ikke har endret seg drastisk på denne tiden slik at det er en rimlig antakelse å se at solas luminositet har vært den samme som idag i hele sin levetid.
+\item Energiregnskapet for en gass-sky som kollapser er vel at total kinetisk pluss potensiell energi i skya pluss energien av strålingen den sender ut må være bevart?
+\item Vi kjenner solas nåværende luminositet, altså energi per tid som den sender ut
+\end{itemize}
+{\Huge\bf Kan du nå tenke deg hvordan vi kan teste teorien?}
+\hyperlink{sol4}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{sol4}
+\lastpagebutton{sol3}
+{\Huge Hva med å bruke luminositeten til sola pluss energiregnskap til å beregne hvor lenge sola har eksistert, og så sammenlikne med den faktiske? Hvordan ville du beregnet solas totale levetid?}
+\hyperlink{red_sol4b}{\pagebutton{Jeg har tenkt gjennom hvordan dette kunne gjøres}}
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=red}
+\begin{frame}
+\label{red_sol4b}
+\lastpagebutton{sol4}
+\textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
+\hyperlink{red_sol4_c}{\pagebutton{lover!}}\\
+
+\textcolor{red}{Du kan få noen tips hvis du vil ha?}\\
+\textcolor{red}{Det hadde ikke vært dumt, nei!}\\
+
+\textcolor{red}{Kan du bruke virialteoremet til å finne solas totale energi mens den enda var en enormt stor gass-sky? Og kan du gjøre det samme for sola idag? (du kjenner solas radius og masse idag) Vil ikke forskjellen mellom disse to være total energi strålt ut i hele solas levetid? Og du kjenner hvor mye som stråles ut per tid? (solas luminositet er $L=3.83\times10^{26}\mathrm{W}$). Hvor lenge har sola da eksistert? (ta gjerne en kikk igjen på antakelsene for 2 sider siden)
+Jeg har tenkt gjennom hvordan dette kunne gjøres}
+\end{frame}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+\begin{frame}
+\label{red_sol4_c}
+\lastpagebutton{sol4}
+\textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
+{\pagebutton{lover!}}\\
+
+\textcolor{yellow}{Du kan få noen tips hvis du vil ha?}
+\hyperlink{red_sol4_d}{\pagebutton{Det hadde ikke vært dumt, nei!}}\\
+
+\textcolor{red}{Kan du bruke virialteoremet til å finne solas totale energi mens den enda var en enormt stor gass-sky? Og kan du gjøre det samme for sola idag? (du kjenner solas radius og masse idag) Vil ikke forskjellen mellom disse to være total energi strålt ut i hele solas levetid? Og du kjenner hvor mye som stråles ut per tid? (solas luminositet er $L=3.83\times10^{26}\mathrm{W}$). Hvor lenge har sola da eksistert? (ta gjerne en kikk igjen på antakelsene for 2 sider siden)
+Jeg har tenkt gjennom hvordan dette kunne gjøres}
+\end{frame}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+\begin{frame}
+\label{red_sol4_d}
+\lastpagebutton{sol4}
+\textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
+{\pagebutton{lover!}}\\
+
+\textcolor{yellow}{Du kan få noen tips hvis du vil ha?}
+{\pagebutton{Det hadde ikke vært dumt, nei!}}\\
+
+\textcolor{yellow}{Kan du bruke virialteoremet til å finne solas totale energi mens den enda var en enormt stor gass-sky? Og kan du gjøre det samme for sola idag? (du kjenner solas radius og masse idag) Vil ikke forskjellen mellom disse to være total energi strålt ut i hele solas levetid? Og du kjenner hvor mye som stråles ut per tid? (solas luminositet er $L=3.83\times10^{26}\mathrm{W}$). Hvor lenge har sola da eksistert? (ta gjerne en kikk igjen på antakelsene for 2 sider siden)}
+\hyperlink{sol5}{\pagebutton{Jeg har tenkt gjennom hvordan dette kunne gjøres}}
+\end{frame}
+}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\label{sol5}
+\dlastpagebutton{red_sol4b}
+{\Large Fikk du at solas levetid på denne måten blir omkring 8 millioner år? Og at vi dermed kan konkludere med, som de den gang gjorde, at solas energi ikke kan komme fra gravitasjonsinnfall men at sola må ha en annen energikilde?}
+Hvis du ikke fikk det til, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_2.mp4}{denne utledningen} som viser hvordan vi kan gjøre energiregnskapet med virialteoremet og dermed anslå solas alder. Denne typen resonnement og denne måten å bruke virialteoremet på bør du ha kontroll på.
+\hyperlink{blue_nytema3}{\pagebutton{Neste side}}
+\end{frame}
+
+\renewcommand{\headline}{Jeans-grensene}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema3}
+\hyperlink{sol5}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\hyperlink{feil_jeans1}{\pagebutton{La oss bruke virialteoremet videre...}}
+\end{frame}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feil_jeans1}
+\begin{columns}
+\column{0.5\textwidth}
+\lastpagebutton{sol5}\label{jeans}
+\includegraphics[scale=0.4]{media/gmc.jpg}
+\column{0.5\textwidth}
+\textcolor{yellow}{\small\bf Så var vi endelig fremme ved hovedpoenget her. Vil en gassky kollapse fra sin egen gravitasjon eller ikke? På bildet ser du en typisk molekylsky eller GMC (Giant Molecular Cloud). Den kalles dette fordi den i tillegg til hydrogen og helium også har mer komplekse molekyler. Den kan typisk være noen lysår stor og ha en temperatur på mellom 10 og 100K før den begynner å kollapse. Spørsmålet er hva avgjør om denne skya blir en stjerne eller om den bare forblir en sky?}
+\hyperlink{jeans2}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{jeans2}
+\lastpagebutton{feil_jeans1}
+Hvis skyen er i likevekt, så vil den vel holde seg omtrent slik den er? I likevekt har vi liten eller sakte endring. Skal vi få laget en stjerne eller ti fra gass-skya så ønsker vi nok heller at skyen er bittelitt vekk fra denne likevekten. Men ønsker vi da
+\[
+\langle K\rangle < -\frac{1}{2}\langle U\rangle
+\]
+{\bf eller}
+\[
+\langle K\rangle > -\frac{1}{2}\langle U\rangle
+\]
+Hva mener du?
+\hyperlink{jeans3}{\pagebutton{Trykk her når du har gjort deg opp en mening!}}
+\end{frame}
+
+
+\begin{frame}
+\label{jeans3}
+\lastpagebutton{jeans2}
+For å få laget stjerner ønsker vi vel at skya skal bli mer bundet? Altså mindre hastighet på gasspartiklene og gjerne nærmere sammen? {\bf Det betyr vel større potensiell energi? Og mindre kinetisk?}
+{\Huge Høres det riktig ut?}
+\hyperlink{jeans4}{\pagebutton{Trykk her når du har gjort deg opp en mening!}}
+\end{frame}
+
+\begin{frame}
+\label{jeans4}
+\lastpagebutton{jeans3}
+Det må vel bli sånn? Hvis den kinetiske energien til gasspartiklene er veldig stor så vil vel partiklene slippe løs fra tyngdepotensialet til de andre partiklene og dermed får vi ihvertfall ingen kollaps. Dermed må vi ha:
+\[
+\langle K\rangle < -\frac{1}{2}\langle U\rangle
+\]
+Vi har allerede et uttrykk for $\langle U\rangle$:
+\[
+\langle U\rangle=-\frac{3GM^2}{5NR}
+\]
+Der $N$ er antall partikler i gassen. Men hva med $\langle K\rangle$??? {\bf Hvis du antar ideel gass med temperatur $T$, hva blir da $\langle K\rangle$???}
+\hyperlink{jeans5}{\pagebutton{Trykk her når du har et uttrykk!}}
+\end{frame}
+
+
+\begin{frame}
+\label{jeans5}
+\lastpagebutton{jeans4}
+Hvis vi antar ideel gass, så var vel gjennomsnittlig kinetisk energi for en partikkel gitt ved $\frac{3}{2}kT$? La oss videre nå anta at gass-skya er kuleformet med uniform tetthet $\rho$ gjennom hele skya. Temperaturen er $T$ og midlere molekylvekt målt i hydrogenmasser $m_H$ er $\mu$. (gå tilbake til \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1e.pdf}{del 1E} hvis du ikke husker hva midlere molekylvekt er). Med disse antakelsene, kan du nå finne et uttrykk for {\bf den minste mulige massen} gass-sky må ha for at den skal kollapse å forme stjerner? Uttrykk ulikheten med massen på den ene sida og følgende på den andre sida:
+\begin{itemize}
+\item tettheten $\rho$
+\item midlere molekylvekt $\mu$ målt i $m_H$
+\item temperaturen $T$ til gass-skya
+\item tall og naturkonstanter (inkludert $m_H$)
+\item ingenting annet.
+\end{itemize}
+\hyperlink{jeans6}{\pagebutton{Trykk her når du har et uttrykk!}}
+\end{frame}
+
+
+\begin{frame}
+\label{jeans6}
+\lastpagebutton{jeans5}
+Fikk du:\\
+\hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{10kT}{G\mu m_H}\right)^{1/2}\left(\frac{3}{4\pi\rho}\right)^{1/2}$}}\\
+\hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{12kT}{G\mu m_H}\right)^{1/2}\left(\frac{5}{4\pi\rho}\right)^{3/2}$}}\\
+\hyperlink{riktig_mjeansr}{\choicebutton{$M>\left(\frac{5kT}{G\mu m_H}\right)^{3/2}\left(\frac{3}{4\pi\rho}\right)^{1/2}$}}\\
+\hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{7kT}{G\mu m_H}\right)^{2}\left(\frac{5}{3\pi\rho}\right)^{1/2}$}}\\
+\hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{10kT}{G\mu m_H}\right)^{5/2}\left(\frac{1}{\pi\rho}\right)^{3/2}$}}\\
+\hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{7kT}{G\mu m_H}\right)^{1/2}\left(\frac{1}{\pi\rho}\right)^{5/2}$}}\\
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feil_mjeansf}
+\lastpagebutton{jeans6}
+\textcolor{yellow}{\Huge Det ble galt! Her gjelder det bare å holde tunga rett i munnen og gjøre regningen riktig. Hvis du har kommet hit for 2.gang uten å få det riktig, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_3.mp4}{denne videoen}.}
+\end{frame}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktig_mjeansr}
+\clastpagebutton{jeans6}
+Flott, det er helt riktig! Hvis du likevel er usikker, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_3.mp4}{denne videoen}. Denne grensemassen vi har kommet frem til kalles Jeans-massen $M_J$:
+\[
+M_J=\left(\frac{5kT}{G\mu m_H}\right)^{3/2}\left(\frac{3}{4\pi\rho}\right)^{1/2}
+\]
+og selv om mange antakelser ingikk i utledningen så viser dette Jeans-kriteriet seg å være et godt kriterium for å vite om en gass-sky er i ferd med å danne stjerner eller ikke.
+\hyperlink{jeans6b}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{jeans6b}
+\lastpagebutton{riktig_mjeansr}
+På helt tilsvarende måte, kan man nå finne Jeans-radien, som isteden for masse er et uttrykk for en minste mulige radius en sky kan ha for å kunne danne stjerner. Hvis radien er mindre så har vi ikke nok masse og dermed nok gravitasjon for å kunne få til kollaps.
+\[
+\langle K\rangle < -\frac{1}{2}\langle U\rangle
+\]
+Nå som du har sett hvordan vi kommer frem til Jeans-massen, så bør du nå få til å komme frem til Jeans-radien helt selv. Du skal altså begynne med samme utgangspunkt som vi hadde for Jeansmassen (gå tilbake og kikk hvis nødvendig). Men denne gangen skal du ende opp med en minste mulig radius $R$ på den ene siden av likningen, og et uttrykk med de samme størrelsene (og ingen andre) på andre siden. {\bf Klarer du det?}
+\hyperlink{jeans7}{\pagebutton{Trykk her når du har et uttrykk!}}
+\end{frame}
+
+
+\begin{frame}
+\label{jeans7}
+\lastpagebutton{jeans6b}
+Hvis du gjorde det riktig, skal du komme frem til:
+\[
+R_J=\left(\frac{15kT}{4\pi G\mu m_H \rho}\right)^{1/2}.
+\]
+og altså at:
+\[
+R>R_J
+\]
+som kriterium for kollaps. \textcolor{red}{\bf Hvis du ikke fikk det til, gå først tilbake og se videoen for utledning av $M_J$. Hvis du med dette enda ikke klarer å komme frem, spør foreleser!}.
+\hyperlink{jeans7b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{jeans7b}
+\lastpagebutton{jeans7}
+Ta en kikk på deloppgave 5 av oppgve 3B.3:
+\includegraphics[scale=0.6]{media/oppgave_3b_3.png}\\
+{\Huge Ser du svaret?}
+Hvis du er usikker, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_4.mp4}{denne videoen her.}
+\hyperlink{jeans8}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+\begin{frame}
+\label{jeans8}
+\lastpagebutton{jeans7b}
+Du har nå kommet frem til Jeans-kriteriene som kan brukes for å avgjøre om en gass-sky vil danne stjerner. Hvis Jeans-kriteriet er oppfyllt, vil skya kollapse. Gravitasjon vil trekke gasspartiklene sammen mot massesenteret. Etterhvert øker temperaturen mer og mer ettersom tettheten øker. Når temperaturen i sentrum har blitt stor nok til å starte kjernereaksjoner, får vi en kraftig økning i temperatur og gass-trykk. Da blir gass- og strålingstrykket stort nok til å motstå gravitasjon og vi oppnår hydrostatisk likevekt. Da har stjerna kommet til hovedserien i HR-diagrammet. Vi skal i neste del se på kjernereaksjonene i sentrum av en stjerne.
+\hyperlink{oppsummering}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{jeans8}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+Gratulerer, del 3B er overstått. Du bør nå:
+\begin{itemize}
+\item Forstå hva virialteoremet sier og hvordan bruke det
+\item Kunne utlede uttrykket for total potensiell energi i en kuleformet uniform kule.
+\item Kunne bruke virialteoremet til å kunne utlede Jeans-kriteriene
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del3b.pdf}{kortsvarsoppgavene} til del 3B for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+\end{frame}
+
+
+
+\end{document}

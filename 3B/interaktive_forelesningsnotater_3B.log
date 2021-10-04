@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  2 OCT 2021 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  4 OCT 2021 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1128,7 +1128,7 @@ thkerncmss.
 ] [7
 
 ]
-Overfull \vbox (0.64148pt too high) detected at line 368
+Overfull \vbox (14.24149pt too high) detected at line 368
  []
 
 [8
@@ -1142,57 +1142,65 @@ Overfull \vbox (0.64148pt too high) detected at line 368
 ] [12
 
 ]
-Overfull \hbox (53.94139pt too wide) in paragraph at lines 416--416
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (79.97815pt too wide) in paragraph at lines 416--416
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss
+/bx/n/10.95 SIDE 
  []
 
 [13
 
 ]
-Overfull \hbox (53.94139pt too wide) in paragraph at lines 424--424
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (79.97815pt too wide) in paragraph at lines 424--424
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [14
 
 ]
-Overfull \hbox (58.94139pt too wide) in paragraph at lines 438--438
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (84.97815pt too wide) in paragraph at lines 438--438
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [15
 
 ]
-Overfull \hbox (58.94139pt too wide) in paragraph at lines 445--445
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (84.97815pt too wide) in paragraph at lines 445--445
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [16
 
 ]
-Overfull \hbox (58.94139pt too wide) in paragraph at lines 460--460
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (84.97815pt too wide) in paragraph at lines 460--460
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [17
 
 ]
-Overfull \hbox (58.94139pt too wide) in paragraph at lines 477--477
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (84.97815pt too wide) in paragraph at lines 477--477
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [18
 
 ]
-Overfull \hbox (58.94139pt too wide) in paragraph at lines 494--494
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (84.97815pt too wide) in paragraph at lines 494--494
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [19
 
 ]
-Overfull \hbox (58.94139pt too wide) in paragraph at lines 512--512
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (84.97815pt too wide) in paragraph at lines 512--512
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
  []
 
 [20
@@ -1200,8 +1208,9 @@ Overfull \hbox (58.94139pt too wide) in paragraph at lines 512--512
 ] [21
 
 ]
-Overfull \hbox (138.77353pt too wide) in paragraph at lines 538--538
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (164.81029pt too wide) in paragraph at lines 538--538
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss
+/bx/n/10.95 SIDE 
  []
 
 File: media/gmc.jpg Graphic file (type jpg)
@@ -1211,6 +1220,10 @@ Package pdftex.def Info: media/gmc.jpg  used on input line 538.
 
 Overfull \hbox (150.04666pt too wide) in paragraph at lines 538--538
 [][]  
+ []
+
+
+Overfull \vbox (7.53615pt too high) detected at line 538
  []
 
 [22
@@ -1263,7 +1276,7 @@ not changed.
 Here is how much of TeX's memory you used:
  25669 strings out of 478994
  505817 string characters out of 5858185
- 842415 words of memory out of 5000000
+ 842537 words of memory out of 5000000
  42482 multiletter control sequences out of 15000+600000
  417927 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1287,7 +1300,7 @@ ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on interaktive_forelesningsnotater_3B.pdf (34 pages, 300588 byte
+Output written on interaktive_forelesningsnotater_3B.pdf (34 pages, 302424 byte
 s).
 PDF statistics:
  496 PDF objects out of 1000 (max. 8388607)

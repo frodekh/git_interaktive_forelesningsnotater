@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -91,9 +91,9 @@
 \newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 \newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton}
 
 \newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
 \newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
@@ -321,7 +321,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 
 \begin{frame}
 \label{intro2}
-\lastpagebutton{feil_intro}
+\lastpagebutton{feil_intro}{\bf SIDE 1/1/26}\\
 \begin{alertblock}{Vi begynner som vanlig...}
 ...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
 \end{alertblock}
@@ -348,7 +348,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{vir1}
-\dlastpagebutton{intro2}
+\dlastpagebutton{intro2}{\bf SIDE 2/6/26}\\
 Vi har tidligere i kurset utledet analytisk løsningen på 2-legemeproblemet. Så fort vi bare får et legeme til, så er ikke bevegelseslikningene lenger analytisk løsbare. I astrofysikken jobber vi ofte med enorme systemer, f.eks. er det flere hundre milliarder stjerner i en galakse, og enda langt flere gasspartikler i en gass-sky. Hundre-millioner-legeme-problemet er ihvertfall ikke analytisk løsbart. Men vi har tidligere i kurset utledet en generelt analytisk uttrykk som gjelder for slike systemer, nemlig Newtons 2.lov for massesenteret i et system. {\bf Virialteoremet} er et annet slikt analytisk uttrykk som er gyldig for veldig store systemer. Det er en sammenheng mellom den kinetiske energien og den potensielle for et slikt system.
 \hyperlink{vir2}{\pagebutton{Neste side}}
 \end{frame}
@@ -358,7 +358,7 @@ Vi har tidligere i kurset utledet analytisk løsningen på 2-legemeproblemet. S�
 
 \begin{frame}
 \label{vir2}
-\lastpagebutton{vir1}
+\lastpagebutton{vir1}{\bf SIDE 3/6/26}\\
 Det er ikke pensum i AST2000 å utlede virialteoremet, men det er ikke spesielt vanskelig, er du interessert så finner du den fulle utledningen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3b.pdf}{de vanlige forelesningsnotatene for 3B}. La oss bruke en galakse som et eksempel her. Hvis du beregner den kinetiske energien til alle objektene i galaksen og tar gjennomsnittet så får du {\bf gjennomsnittlig kinetisk energi $\langle K\rangle$} for denne galaksen. Helt tilsvarende: hvis du beregner den totale gravitasjonelle potensielle energien mellom alle objektene i galaksen og tar midlet over alle objektene så får du {\bf midlere potensiell energi $\langle U\rangle$} for denne galaksen. \textcolor{red}{Virialteormet sier at
 \[
 \langle K\rangle = -\frac{1}{2}\langle U\rangle
@@ -369,14 +369,14 @@ for store systemer som er i {\bf likevekt}.} I AST2000 skal vi ikke gå nærmere
 
 \begin{frame}
 \label{vir3}
-\lastpagebutton{vir2}
+\lastpagebutton{vir2}{\bf SIDE 4/6/26}\\
 Vi skal bruke virialteoremet på en molekylær gass-sky bl.a. for å se om en molekylsky vil kollapse fra sin egen gravitasjon og danne en stjerne. Hvis vi nå skal bruke virialteoremet så trenger vi å kjenne ihvertfall enten $\langle K\rangle$ eller $\langle U\rangle$. Hvis vi nå antar \textcolor{red}{at gass-skya har form som en kule og at tettheten er den samme gjennom hele gass-skya,} altså at den har uniform tetthet, {\bf kan du tenke deg hvordan du kunne finne den totale potensielle energien til gass-skya (og dermed $\langle U\rangle$) ?} Altså summen av den potensielle energien mellom alle gasspartiklene i hele skya. Du kan uttrykke den med totalmassen $M$ til skya samt radiusen $R$. \textcolor{red}{Prøv deg litt frem før du går videre!}
 \hyperlink{vir3b}{\pagebutton{Neste side}}
 \end{frame}
 
 \begin{frame}
 \label{vir3b}
-\lastpagebutton{vir3}
+\lastpagebutton{vir3}{\bf SIDE 5/6/26}\\
 {\bf Et hint:} prøv først å finne potensiell energi i et infinitesimalt tynt kuleskall i avstand $r$. Tenk deg et lite element av gassen med masse $dm$ i dette skallet. Hva er den potensielle energien mellom denne massen og resten av skya? Har den noe potensiell energi med den delen av skya som ligger i et skall på utsiden av $r$? Og hva med den delen av sky som ligger på innsiden av $r$? Og hvis du integrerer dette over alle $dm$ i hele kuleskallet? Og dermed over hele stjerna? \textcolor{red}{Prøv deg litt til!}
 \hyperlink{vir4}{\pagebutton{Neste side}}
 \end{frame}
@@ -384,7 +384,7 @@ Vi skal bruke virialteoremet på en molekylær gass-sky bl.a. for å se om en mo
 
 \begin{frame}
 \label{vir4}
-\lastpagebutton{vir3b}
+\lastpagebutton{vir3b}{\bf SIDE 6/6/26}\\
 {\Huge Fant du ut av det?}
 Fikk du at total potensiell energi i skya er gitt ved:
 \[
@@ -409,7 +409,7 @@ Hvis ikke, se på utledningen i \href{https://www.uio.no/studier/emner/matnat/as
 
 \begin{frame}
 \label{sol1}
-\lastpagebutton{vir4}\label{solasenergi}
+\lastpagebutton{vir4}\label{solasenergi}{\bf SIDE 7/14/26}\\
 {\Huge Vi skal nå se på et eksempel for hvordan virialteoremet har blitt brukt.}
 \textcolor{red}{\Large Det var en gang for lenge, lenge siden...}
 \hyperlink{sol2}{\pagebutton{Neste side}}
@@ -417,7 +417,7 @@ Hvis ikke, se på utledningen i \href{https://www.uio.no/studier/emner/matnat/as
 
 \begin{frame}
 \label{sol2}
-\lastpagebutton{sol1}
+\lastpagebutton{sol1}{\bf SIDE 8/14/26}\\
 Nei, vi skal ikke fortelle eventyr her! Før Einstein oppdaget den spesielle relativitetsteorien, visste man ikke hvor solas energi kom fra. {\bf En mulig teori var at solas stråler fordi den enda faller sammen på grunn av gravitasjon.} Altså at sola enda ikke har nådd hydrostatisk likevekt, gravitasjon vinner enda over gasstrykk og får solas radius til å krympe kontinuerlig. {\bf Når en gass-sky kollapser fra sin egen gravitasjon så avgir gasspartiklene stråling i fallet.} Gravitasjonsenergi blir omgjort til kinetisk energi i gasspartiklene og til stråling.
 {\Large Finnes det noen måte å teste denne teorien på??? {\bf Kan du tenke deg det?}}
 \hyperlink{sol3}{\pagebutton{Neste side}}
@@ -425,7 +425,7 @@ Nei, vi skal ikke fortelle eventyr her! Før Einstein oppdaget den spesielle rel
 
 \begin{frame}
 \label{sol3}
-\lastpagebutton{sol2}
+\lastpagebutton{sol2}{\bf SIDE 9/14/26}\\
 En måte man gjorde dette på var å tenke som følger:
 \begin{itemize}
 \item de visste også den gang fra geologiske undersøkelser at jorda og sola er omkring 4.5 milliarder år gammel.
@@ -439,7 +439,7 @@ En måte man gjorde dette på var å tenke som følger:
 
 \begin{frame}
 \label{sol4}
-\lastpagebutton{sol3}
+\lastpagebutton{sol3}{\bf SIDE 10/14/26}\\
 {\Huge Hva med å bruke luminositeten til sola pluss energiregnskap til å beregne hvor lenge sola har eksistert, og så sammenlikne med den faktiske? Hvordan ville du beregnet solas totale levetid?}
 \hyperlink{red_sol4b}{\pagebutton{Jeg har tenkt gjennom hvordan dette kunne gjøres}}
 \end{frame}
@@ -448,7 +448,7 @@ En måte man gjorde dette på var å tenke som følger:
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_sol4b}
-\lastpagebutton{sol4}
+\lastpagebutton{sol4}{\bf SIDE 11/14/26}\\
 \textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
 \hyperlink{red_sol4_c}{\pagebutton{lover!}}\\
 
@@ -465,7 +465,7 @@ Jeg har tenkt gjennom hvordan dette kunne gjøres}
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_sol4_c}
-\lastpagebutton{sol4}
+\lastpagebutton{sol4}{\bf SIDE 12/14/26}\\
 \textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
 {\pagebutton{lover!}}\\
 
@@ -482,7 +482,7 @@ Jeg har tenkt gjennom hvordan dette kunne gjøres}
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_sol4_d}
-\lastpagebutton{sol4}
+\lastpagebutton{sol4}{\bf SIDE 13/14/26}\\
 \textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
 {\pagebutton{lover!}}\\
 
@@ -505,7 +505,7 @@ Jeg har tenkt gjennom hvordan dette kunne gjøres}
 
 \begin{frame}
 \label{sol5}
-\dlastpagebutton{red_sol4b}
+\dlastpagebutton{red_sol4b}{\bf SIDE 14/14/26}\\
 {\Large Fikk du at solas levetid på denne måten blir omkring 8 millioner år? Og at vi dermed kan konkludere med, som de den gang gjorde, at solas energi ikke kan komme fra gravitasjonsinnfall men at sola må ha en annen energikilde?}
 Hvis du ikke fikk det til, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_2.mp4}{denne utledningen} som viser hvordan vi kan gjøre energiregnskapet med virialteoremet og dermed anslå solas alder. Denne typen resonnement og denne måten å bruke virialteoremet på bør du ha kontroll på.
 \hyperlink{blue_nytema3}{\pagebutton{Neste side}}
@@ -529,7 +529,7 @@ Hvis du ikke fikk det til, se på \href{https://www.uio.no/studier/emner/matnat/
 \label{feil_jeans1}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{sol5}\label{jeans}
+\lastpagebutton{sol5}\label{jeans}{\bf SIDE 15/26/26}\\
 \includegraphics[scale=0.4]{media/gmc.jpg}
 \column{0.5\textwidth}
 \textcolor{yellow}{\small\bf Så var vi endelig fremme ved hovedpoenget her. Vil en gassky kollapse fra sin egen gravitasjon eller ikke? På bildet ser du en typisk molekylsky eller GMC (Giant Molecular Cloud). Den kalles dette fordi den i tillegg til hydrogen og helium også har mer komplekse molekyler. Den kan typisk være noen lysår stor og ha en temperatur på mellom 10 og 100K før den begynner å kollapse. Spørsmålet er hva avgjør om denne skya blir en stjerne eller om den bare forblir en sky?}
@@ -541,7 +541,7 @@ Hvis du ikke fikk det til, se på \href{https://www.uio.no/studier/emner/matnat/
 
 \begin{frame}
 \label{jeans2}
-\lastpagebutton{feil_jeans1}
+\lastpagebutton{feil_jeans1}{\bf SIDE 16/26/26}\\
 Hvis skyen er i likevekt, så vil den vel holde seg omtrent slik den er? I likevekt har vi liten eller sakte endring. Skal vi få laget en stjerne eller ti fra gass-skya så ønsker vi nok heller at skyen er bittelitt vekk fra denne likevekten. Men ønsker vi da
 \[
 \langle K\rangle < -\frac{1}{2}\langle U\rangle
@@ -557,7 +557,7 @@ Hva mener du?
 
 \begin{frame}
 \label{jeans3}
-\lastpagebutton{jeans2}
+\lastpagebutton{jeans2}{\bf SIDE 17/26/26}\\
 For å få laget stjerner ønsker vi vel at skya skal bli mer bundet? Altså mindre hastighet på gasspartiklene og gjerne nærmere sammen? {\bf Det betyr vel større potensiell energi? Og mindre kinetisk?}
 {\Huge Høres det riktig ut?}
 \hyperlink{jeans4}{\pagebutton{Trykk her når du har gjort deg opp en mening!}}
@@ -565,7 +565,7 @@ For å få laget stjerner ønsker vi vel at skya skal bli mer bundet? Altså min
 
 \begin{frame}
 \label{jeans4}
-\lastpagebutton{jeans3}
+\lastpagebutton{jeans3}{\bf SIDE 18/26/26}\\
 Det må vel bli sånn? Hvis den kinetiske energien til gasspartiklene er veldig stor så vil vel partiklene slippe løs fra tyngdepotensialet til de andre partiklene og dermed får vi ihvertfall ingen kollaps. Dermed må vi ha:
 \[
 \langle K\rangle < -\frac{1}{2}\langle U\rangle
@@ -581,7 +581,7 @@ Der $N$ er antall partikler i gassen. Men hva med $\langle K\rangle$??? {\bf Hvi
 
 \begin{frame}
 \label{jeans5}
-\lastpagebutton{jeans4}
+\lastpagebutton{jeans4}{\bf SIDE 19/26/26}\\
 Hvis vi antar ideel gass, så var vel gjennomsnittlig kinetisk energi for en partikkel gitt ved $\frac{3}{2}kT$? La oss videre nå anta at gass-skya er kuleformet med uniform tetthet $\rho$ gjennom hele skya. Temperaturen er $T$ og midlere molekylvekt målt i hydrogenmasser $m_H$ er $\mu$. (gå tilbake til \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1e.pdf}{del 1E} hvis du ikke husker hva midlere molekylvekt er). Med disse antakelsene, kan du nå finne et uttrykk for {\bf den minste mulige massen} gass-sky må ha for at den skal kollapse å forme stjerner? Uttrykk ulikheten med massen på den ene sida og følgende på den andre sida:
 \begin{itemize}
 \item tettheten $\rho$
@@ -596,7 +596,7 @@ Hvis vi antar ideel gass, så var vel gjennomsnittlig kinetisk energi for en par
 
 \begin{frame}
 \label{jeans6}
-\lastpagebutton{jeans5}
+\lastpagebutton{jeans5}{\bf SIDE 20/26/26}\\
 Fikk du:\\
 \hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{10kT}{G\mu m_H}\right)^{1/2}\left(\frac{3}{4\pi\rho}\right)^{1/2}$}}\\
 \hyperlink{feil_mjeansf}{\choicebutton{$M>\left(\frac{12kT}{G\mu m_H}\right)^{1/2}\left(\frac{5}{4\pi\rho}\right)^{3/2}$}}\\
@@ -610,7 +610,7 @@ Fikk du:\\
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_mjeansf}
-\lastpagebutton{jeans6}
+\lastpagebutton{jeans6}{\bf SIDE 21/26/26}\\
 \textcolor{yellow}{\Huge Det ble galt! Her gjelder det bare å holde tunga rett i munnen og gjøre regningen riktig. Hvis du har kommet hit for 2.gang uten å få det riktig, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_3.mp4}{denne videoen}.}
 \end{frame}
 }
@@ -620,7 +620,7 @@ Fikk du:\\
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_mjeansr}
-\clastpagebutton{jeans6}
+\clastpagebutton{jeans6}{\bf SIDE 22/26/26}\\
 Flott, det er helt riktig! Hvis du likevel er usikker, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_3.mp4}{denne videoen}. Denne grensemassen vi har kommet frem til kalles Jeans-massen $M_J$:
 \[
 M_J=\left(\frac{5kT}{G\mu m_H}\right)^{3/2}\left(\frac{3}{4\pi\rho}\right)^{1/2}
@@ -633,7 +633,7 @@ og selv om mange antakelser ingikk i utledningen så viser dette Jeans-kriteriet
 
 \begin{frame}
 \label{jeans6b}
-\lastpagebutton{riktig_mjeansr}
+\lastpagebutton{riktig_mjeansr}{\bf SIDE 23/26/26}\\
 På helt tilsvarende måte, kan man nå finne Jeans-radien, som isteden for masse er et uttrykk for en minste mulige radius en sky kan ha for å kunne danne stjerner. Hvis radien er mindre så har vi ikke nok masse og dermed nok gravitasjon for å kunne få til kollaps.
 \[
 \langle K\rangle < -\frac{1}{2}\langle U\rangle
@@ -645,7 +645,7 @@ Nå som du har sett hvordan vi kommer frem til Jeans-massen, så bør du nå få
 
 \begin{frame}
 \label{jeans7}
-\lastpagebutton{jeans6b}
+\lastpagebutton{jeans6b}{\bf SIDE 24/26/26}\\
 Hvis du gjorde det riktig, skal du komme frem til:
 \[
 R_J=\left(\frac{15kT}{4\pi G\mu m_H \rho}\right)^{1/2}.
@@ -660,7 +660,7 @@ som kriterium for kollaps. \textcolor{red}{\bf Hvis du ikke fikk det til, gå f�
 
 \begin{frame}
 \label{jeans7b}
-\lastpagebutton{jeans7}
+\lastpagebutton{jeans7}{\bf SIDE 25/26/26}\\
 Ta en kikk på deloppgave 5 av oppgve 3B.3:
 \includegraphics[scale=0.6]{media/oppgave_3b_3.png}\\
 {\Huge Ser du svaret?}
@@ -672,7 +672,7 @@ Hvis du er usikker, se på \href{https://www.uio.no/studier/emner/matnat/astro/A
 
 \begin{frame}
 \label{jeans8}
-\lastpagebutton{jeans7b}
+\lastpagebutton{jeans7b}{\bf SIDE 26/26/26}\\
 Du har nå kommet frem til Jeans-kriteriene som kan brukes for å avgjøre om en gass-sky vil danne stjerner. Hvis Jeans-kriteriet er oppfyllt, vil skya kollapse. Gravitasjon vil trekke gasspartiklene sammen mot massesenteret. Etterhvert øker temperaturen mer og mer ettersom tettheten øker. Når temperaturen i sentrum har blitt stor nok til å starte kjernereaksjoner, får vi en kraftig økning i temperatur og gass-trykk. Da blir gass- og strålingstrykket stort nok til å motstå gravitasjon og vi oppnår hydrostatisk likevekt. Da har stjerna kommet til hovedserien i HR-diagrammet. Vi skal i neste del se på kjernereaksjonene i sentrum av en stjerne.
 \hyperlink{oppsummering}{\pagebutton{Neste side}}
 \end{frame}

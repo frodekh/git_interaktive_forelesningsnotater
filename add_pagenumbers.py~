@@ -1,0 +1,18 @@
+
+
+filename = '3B/interaktive_forelesningsnotater_3B.tex'
+
+with open(filename) as file:
+    lines = file.readlines()
+    
+pg = 1
+for line in lines:
+    if 'lastpagebutton' in line:
+        line = rstrp(line)
+        line += 'SIDE '+str(pg)+'\\'
+
+with open(filename, 'w') as f:
+    for item in lines:
+        f.write("%s\n" % item)
+
+        
