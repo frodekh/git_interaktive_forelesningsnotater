@@ -92,9 +92,9 @@
 \newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 \newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
 
-\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\padletbutton\\}
-\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\padletbutton\\}
-\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\padletbutton\\}
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\padletbutton}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\padletbutton}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\padletbutton}
 
 \newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
 \newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
@@ -114,11 +114,11 @@
 }
 
 
-\newcommand{\fullframe}[5]{
+\newcommand{\fullframe}[6]{
 \begin{frame}
 \label{#1}
 \addtocounter{pageno}{#4}
-\lastpagebutton{#2}
+\lastpagebutton{#2}{\bf #6}
 #5
 \hyperlink{#3}{\pagebutton{Neste side}}
 \end{frame}
@@ -319,7 +319,7 @@ Dette er en erstatning for forelesningen i emnet. \textcolor{blue}{Har du gått 
 \begin{columns}
 \column{0.5\textwidth}
 \hyperlink{front}{\pagebutton{Forrige side}}\\
-\includegraphics[scale=0.25]{clock.png}
+\includegraphics[scale=0.25]{media/clock.png}
 \column{0.5\textwidth}
 {\small
 {\bf Velkommen til forelesning 1 av 2 i del 2A! Vi begynner med den spesielle relativitetsteorien. Hovedfokuset her er å prøve å få en viss forståelse for hva som skjer. Matematikken i del 2A blir holdt på et veldig enkelt nivå mens forståelsen og intuisjonen for hovedprinsippene i relativitetsteorien skal spille hovedrollen. Dette blir også det som forventes av deg i rapport/bloggskriving (prosjekt) og på eksamen (standardløp). Vi begynner forsiktig med den klassiske relativitetsteorien...}\\
@@ -365,15 +365,15 @@ Er du klar og har sendt inn skjemaet?
 
 
 \fullframe{kr1}{intro2}{kr2}{1}{
-\centerline{\includegraphics[scale=0.3]{klassrel1.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel1.png}}
 {\small
 Her ser vi en blå bil som står rolig i forhold til (ift) bakken ({\bf merk} hastigheter må alltid angies {\bf i forhold til} noe). Den oransje bilen beveger seg med 100 km/t i forhold til bakken og den blå bilen.\\
 {\tiny Figurene i dette dokumentet er png-er fra hiclipart.com som har blitt satt sammen og mikset}
 }
-}
+}{SIDE 10/11/12}
 
 \choiceframe{kr2}{kr1}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel2.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel2.png}}
 {\small
 Nå har den blå bilen starten motoren slik at den har en fart på 50 km/t i forhold til bakken. Den oransje bilen har enda 100 km/t i forhold til bakken. \textcolor{red}{Hvilken hastighet har den oransje bilen i den blå bilens referansesystem? {\bf Et referansesystem er et sett av observatører som alle er i ro i forhold til hverandre og derfor vil være enige om hastighetsmålinger av objekter}.}\\
 \hyperlink{kr2a}{\choicebutton{-100 km/t}}\hyperlink{kr2a}{\choicebutton{-50 km/t}}\hyperlink{kr2a}{\choicebutton{0 km/t}}\hyperlink{kr2b}{\choicebutton{50 km/t}}\hyperlink{kr2a}{\choicebutton{100 km/t}}
@@ -385,13 +385,13 @@ Nå har den blå bilen starten motoren slik at den har en fart på 50 km/t i for
 }
 
 \colfullframe{kr2b}{kr2}{kr3}{-1}{yellow}{\huge
-\centerline{\includegraphics[scale=0.3]{klassrel3.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel3.png}}
 Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene?
 }
 
 
 \choiceframe{kr3}{kr2b}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel4.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel4.png}}
 {\small
 Hva nå hvis den blå bilen øker til 100 km/t? Den oransje bilen har enda 100 km/t i forhold til bakken. Hvilken hastighet har den oransje bilen i den blå bilens referansesystem? {\bf Et referansesystem er et sett av observatører som alle er i ro i forhold til hverandre og derfor vil være enige om hastighetsmålinger av objekter}.\\
 \hyperlink{kr3a}{\choicebutton{-100 km/t}}\hyperlink{kr3a}{\choicebutton{-50 km/t}}\hyperlink{kr3b}{\choicebutton{0 km/t}}\hyperlink{kr3a}{\choicebutton{50 km/t}}\hyperlink{kr3a}{\choicebutton{100 km/t}}
@@ -404,12 +404,12 @@ Hva nå hvis den blå bilen øker til 100 km/t? Den oransje bilen har enda 100 k
 }
 
 \colfullframe{kr3b}{kr3}{kr4}{-1}{yellow}{\Large
-\centerline{\includegraphics[scale=0.3]{klassrel5.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel5.png}}
 Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene? Var det samme sammenheng som i forrige spørsmål?
 }
 
 \choiceframe{kr4}{kr3b}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel6.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel6.png}}
 {\small
 Hva nå hvis den blå bilen øker til 150 km/t? Den oransje bilen har enda 100 km/t i forhold til bakken. Hvilken hastighet har den oransje bilen i den blå bilens referansesystem? \textcolor{red}{\bf Et referansesystem er et sett av observatører som alle er i ro i forhold til hverandre og derfor vil være enige om hastighetsmålinger av objekter}.\\
 \hyperlink{kr4a}{\choicebutton{-150 km/t}}\hyperlink{kr4b}{\choicebutton{-50 km/t}}\hyperlink{kr4a}{\choicebutton{0 km/t}}\hyperlink{kr4a}{\choicebutton{50 km/t}}\hyperlink{kr4a}{\choicebutton{150 km/t}}
@@ -421,13 +421,13 @@ Hva nå hvis den blå bilen øker til 150 km/t? Den oransje bilen har enda 100 k
 }
 
 \colfullframe{kr4b}{kr4}{kr5}{-1}{yellow}{\Large
-\centerline{\includegraphics[scale=0.3]{klassrel7.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel7.png}}
 Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene? Var det samme sammenheng som i forrige spørsmål?
 }
 
 
 \fullframe{kr5}{kr4b}{kr6}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel7.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel7.png}}
 {\small
 Kom du frem til formelen for klassisk relativitet? Ble de noe sånt som:
 \[
@@ -438,7 +438,7 @@ der merkede hastigheter er hastigheter målt i blått bil sitt referansesystem, 
 }
 
 \fullframe{kr6}{kr5}{kr7}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel7.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel7.png}}
 {\small
 La oss prøve:
 \[
@@ -451,7 +451,7 @@ Farta til blå bils referansesysteme i forhold til bakkesystem er 150 km/t til h
 
 \fullframe{kr7}{kr6}{kr8}{0}{
 {\bf La oss prøve den på lys:}
-\centerline{\includegraphics[scale=0.55]{fig_7-3.pdf}}
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.pdf}}
 Dette er det klassiske {\bf Michelson-Morley-eksperimentet.} Der ble farta til lys i forhold til jorda sitt referansesystem målt. Lys blir sendt ut fra en fjern stjerne mot jorda. Vi antar at stjerna er i samme referansesystem som sola. Det ble sendt ut med lyshastighet $c=300 000$ km/s. Anta at farta til dette lyset så blir målt på jorda i forhold til jordas referansesystem, først den 1.januar når jorda er på vei {\bf bort fra} lysstrålen, og så 1.juli når jorda er på vei {\bf mot} lysstrålen.
 
 }
@@ -459,7 +459,7 @@ Dette er det klassiske {\bf Michelson-Morley-eksperimentet.} Der ble farta til l
 
 
 \choiceframe{kr8}{kr7}{0}{
-\centerline{\includegraphics[scale=0.55]{fig_7-3.pdf}}
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.pdf}}
 
 Hvis vi bruker klassisk relativitet og glemmer Einstein litt, hvilken fart måler man for lyset i jordas referansesystem den 1.januar? Jordas banehastighet er ca. 30 km/s i forhold til solas (og stjernas) referansesystem.
 \hyperlink{kr8b}{\choicebutton{c - 30km/s}}\hyperlink{kr8a}{\choicebutton{\ \ c\ \ }}\hyperlink{kr8a}{\choicebutton{c + 30km/s}}
@@ -470,7 +470,7 @@ Hvis vi bruker klassisk relativitet og glemmer Einstein litt, hvilken fart måle
 }
 
 \colfullframe{kr8b}{kr8}{kr9}{-1}{yellow}{
-\centerline{\includegraphics[scale=0.55]{fig_7-3.pdf}}
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.pdf}}
 Det er helt riktig!
 \[
 v'_\mathrm{lys}=v_\mathrm{lys}-v_\mathrm{rel}
@@ -479,7 +479,7 @@ Hvis vi nå bruker positiv hastighet nedover: referansesystemet til jorda bevege
 }
 
 \fullframe{kr9}{kr8b}{kr10}{0}{
-\centerline{\includegraphics[scale=0.55]{fig_7-3.pdf}}
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.pdf}}
 \[
 v'_\mathrm{lys}=v_\mathrm{lys}-v_\mathrm{rel}
 \]
@@ -489,7 +489,7 @@ Vi kan bruke akkurat samme resonnement for 1.juli, men da er hastigheten til jor
 
 
 \fullframe{kr10}{kr9}{kr11}{0}{\small
-\centerline{\includegraphics[scale=0.55]{fig_7-3.pdf}}
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.pdf}}
 {\bf Akkurat dette var Einsteins utgangspunkt da han oppdaget relativitetsteorien. Han spurte seg hva konsekvensene for de fysiske lovene blir hvis lyshastigheten er den samme for alle observatører, noe Michelson og Morleys eksperiment tydet på.} \textcolor{red}{Men tygg litt på den: alle observatører måler lys til å ha den samme hastigheten $c=300000$ km/s?.} Da kan ikke lenger 
 \[
 v'=v-v_\mathrm{rel}
@@ -499,29 +499,29 @@ gjelde for lys. Men gjelder det likevel for alle andre objekter? Einstein lagde 
 
 
 \fullframe{kr11}{kr10}{kr12}{0}{\huge
-\centerline{\includegraphics[scale=0.3]{klassrel8.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel8.png}}
 La oss se på situasjonen med bilen men nå et foton eller lysbølge isteden for den oransje bilen.
 }
 
 
 \fullframe{kr12}{kr11}{kr13}{0}{\large
-\centerline{\includegraphics[scale=0.3]{klassrel9.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel9.png}}
 Her har vi en superraskt bil som har nådd 1/3 av lyshastigheten. Men hvilken hastighet måler observatøren i bilen lyset til å ha?
 }
 
 
 \fullframe{kr13}{kr12}{kr14}{0}{\large
-\centerline{\includegraphics[scale=0.3]{klassrel10.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel10.png}}
 Nettopp ja! Vi vet nå at hastigheten til lys er den samme målt fra alle referansesystemer, så da blir det vel slik?
 }
 
 \fullframe{kr14}{kr13}{kr15}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel11.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel11.png}}
 {\bf Men nå begynner det vel å bli absurd??} Bilen har praktisk talt lyshastighet (den kan aldri få lyshastighet siden den har masse: det trengs uendelig med energi for å få noe som har masse til å nå lyshastighet. Fotoner er masseløse og kan derfor gå med lysets hastighet, dette kommer vi nærmere tilbake til). \textcolor{red}{Enda måler den lyset til å ha lyshastighet i forhold til seg selv?}
 }
 
 \fullframe{kr15}{kr14}{nytema2}{0}{
-\centerline{\includegraphics[scale=0.3]{klassrel11.png}}
+\centerline{\includegraphics[scale=0.3]{media/klassrel11.png}}
 Nettopp disse absurditetene var det Einstein ville se nærmere på for å få en bedre forståelse for det som skjer. Han oppdaget raskt at vi da fikk selvmotsigelser. Einstein utledet relativitetsteorien basert på disse selvmotsigelsene. Vi skal nå følge et av Einsteins egne tankeeksperimenter. Et av de som satte ham på sporet av relativitetsteorien...
 }
 
@@ -546,13 +546,13 @@ I det følgende skal vi se på og regne på et tankeeksperiment. La oss først i
 }
 
 \fullframe{tog2}{tog1}{tog3}{0}{\footnotesize
-\centerline{\includegraphics[scale=0.3]{tog1.png}}
+\centerline{\includegraphics[scale=0.3]{media/tog1.png}}
 Et tog ruller bortover mot høyre med fart $v$. Midt inne i toget har vi passasjer P med to store øyne. På bakken står professor O. Vi har en stor x-akse på bakken der professor O står i origo. Lengden av toget er $L$. På dette øyeblikksbildet er midten av toget, og dermed også passasjer P, i origo på x-aksen. Akkurat i dette øyeblikket slår to lyn ned samtidig, et foran i toget (event A) og et bak (event B). Lysstrålene fra de to lynnedslagene begynner å bre seg utover mot passasjer P (markert med lysbølger og blå piler)
 }
 
 
 \fullframe{tog3}{tog2}{tog3b}{0}{\footnotesize
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Vi skal enda anta at vi ikke vet noe om Einsteins relativitetsteori. Vi skal nå prøve å tenke slik som Einstein gjorde før han hadde oppdaget relativitetsteorien. Når vi jobber med problemer i relativitetsteori, er det viktig å skrive ned posisjons- og tidskoordinater for eventer. Vi sier at i det dette øyeblikksbildet ble tatt så starter vi en stoppeklokke slik at $t=0$ i dette øyeblikket. Da blir koordinatene til event A og B som følger:
 \[
 x_A=L/2,\ \ \ \ t_A=0, \ \ \ \ x_B=-L/2,\ \ \ \ t_B=0
@@ -561,7 +561,7 @@ x_A=L/2,\ \ \ \ t_A=0, \ \ \ \ x_B=-L/2,\ \ \ \ t_B=0
 }
 
 \fullframe{tog3b}{tog3}{tog3c}{0}{\footnotesize
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Vi skal innføre et event til her, nemlig event P som er at professoren og passasjeren har samme x-koordinat (vi regner kun på x-posisjoner her siden all bevegelse er i x-retning, det er ingen bevegelse i y-retning). Det betyr at i dette øyeblikket så kan de to håndhilse og utveksle informasjon. Posisjon og koordinat til dette eventet må vel være:
 \[
 x_P=0,\ \ \ \ t_P=0
@@ -570,12 +570,12 @@ x_P=0,\ \ \ \ t_P=0
 }
 
 \fullframe{tog3c}{tog3b}{tog4}{0}{\footnotesize
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Er du også enig i at professoren vil se lysglimtene fra de to lynnedslagene samtidig? Professoren står på bakken i en avstand $L/2$ fra både event A og B. De to eventene er samtidige, lyset går med samme fart fra begge lynnedslagene, dermed vil professoren se at lynnedslagene er samtidige. Men hva med passasjer P?
 }
 
 \choiceframe{tog4}{tog3c}{0}{\footnotesize
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Tenk på hvordan toget beveger seg, passasjeren beveger seg og lysbølgene fra lynnedslagene. Hva vil passasjer P se?
 \hyperlink{tog4a}{\choicebutton{P ser begge samtidig}}\hyperlink{tog4b}{\choicebutton{P ser A før B}}\hyperlink{tog4a}{\choicebutton{P ser B før A}}
 }
@@ -585,28 +585,28 @@ Tenk på hvordan toget beveger seg, passasjeren beveger seg og lysbølgene fra l
 }
 
 \colfullframetxt{tog4b}{tog4}{tog5}{-1}{yellow}{Ok, slik må det være!}{
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Det stemmer. Må det ikke bli slik da: toget (og dermed passasjer P) beveger seg {\bf mot} lysstrålen fra A men vekk fra lysstrålen fra B. Vi har lært at lys alltid går med lyshastighet uansett referansesystem, så lysstrålene går like fort. Men hvis passasjeren da beveger seg mot lysstrålen fra A så vil vel den treffe passasjeren sitt ansikt først. Og siden passasjeren beveger seg vekk fra B, vil B treffe øynene til P senere? Og dermed må vel passasjeren se A for B?
 }
 
 \fullframe{tog5}{tog4b}{tog6}{0}{
-\centerline{\includegraphics[scale=0.26]{tog2.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog2.png}}
 Her ser vi {\bf event C} illustrert. Event C er når lysstrålen fra lynnedslag A treffer øyet til passasjer P slik at passasjeren ser at lynet har slått ned foran. Toget har beveget seg litt til høyre (med hastighet $v$), lysstrålen fra A her beveget seg mot venstre. Siden P har beveget seg bort fra lysstrålen fra B, så har denne lysstrålen enda ikke truffet og passasjer P vet dermed enda ikke at det skjedde et lynnedslag bak.
 }
 
 
 \fullframe{tog6}{tog5}{tog7}{0}{
-\centerline{\includegraphics[scale=0.26]{tog3.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog3.png}}
 Her ser vi {\bf event D} illustrert. Event D er når lysstrålen fra lynnedslag B treffer øyet til passasjer P slik at passasjeren ser at lynet har slått ned bak også. Toget har beveget seg enda litt lenger til høyre (med hastighet $v$).
 }
 
 \fullframe{tog7}{tog6}{tog8}{0}{
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Din oppgave nå er å finne tidspunktene når event C og event D skjer. Uttrykk svarene med togets lengde $L$ og lyshastigheten $c$.
 }
 
 \choiceframe{tog8}{tog7}{0}{
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Hva stemmer? \hyperlink{tog8a}{\choicebutton{\small $t_c=L/2, \ \ t_D=L/2$}} \hyperlink{tog8a}{\choicebutton{\small $t_c=L/(2v) - v/c, \ \ t_D=L/(2v) + v/c$}}\\
 \hyperlink{tog8a}{\choicebutton{\small $t_c=L\sqrt{1-(v/c)^2}/v,\ \ t_D=L/\sqrt{1-(v/c)^2}/v$}}\\
 \hyperlink{tog8b}{\choicebutton{\small $t_c=L/2/(c+v), \ \ t_D=L/2/(c-v)$}}\hyperlink{tog8a}{\choicebutton{\small $t_c=L/2/c, \ \ t_D=L/2/v$}}\\
@@ -618,7 +618,7 @@ Hva stemmer? \hyperlink{tog8a}{\choicebutton{\small $t_c=L/2, \ \ t_D=L/2$}} \hy
 }
 
 \colfullframe{tog8b}{tog8}{pause}{-1}{yellow}{
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Det er helt riktig! Hvis du enda er usikker,  ta en titt på denne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_1.mp4}{videoen}
 }
 
@@ -630,7 +630,7 @@ Det er helt riktig! Hvis du enda er usikker,  ta en titt på denne \href{https:/
 \hyperlink{tog8b}{\pagebutton{\small Forrige side}}
 {\huge
 \centerline{Kaffe?}
-\centerline{\includegraphics[scale=4]{drink-coffee.png}}\\
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Litt frisk luft nå! Ikke lov å bli inne. Vekk fra alle skjermer.
 Ikke lov å fortsette før du har tatt minst 15 min. pause!
 Og forbered hjernen på et sjokk: nå kommer selvmotsigelsen her...
@@ -642,7 +642,7 @@ Og forbered hjernen på et sjokk: nå kommer selvmotsigelsen her...
 
 
 \fullframe{tog9}{tog8b}{tog10}{0}{
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Så vi fant at siden toget og passasjeren beveger seg mot lysstrålen fra A så vil passasjeren se lynnedslag A før lynnedslag B, selv om begge skjedde samtidig, ok? Og tidspunktet for event C og D som er passasjerens observasjoner av henholdsvis lynnedslag A og B er
 \[
 t_C=\frac{L/2}{c+v},\ \ t_D=\frac{L/2}{c-v}
@@ -651,12 +651,12 @@ t_C=\frac{L/2}{c+v},\ \ t_D=\frac{L/2}{c-v}
 
 
 \fullframe{tog10}{tog9}{tog11}{0}{
-\centerline{\includegraphics[scale=0.26]{tog4.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog4.png}}
 La oss regne på situasjonen {\bf en gang til}. Men nå flytter vi oss til passasjer P sitt referansesystem. I dette referansesystemet står toget stille mens bakken, professor O og x-aksen (som står fast på bakken) beveger seg bakover. Vi har innført en egen merket $x'$-akse som står fast på toget og måler alle posisjoner i forhold til toget. Passasjer P står på origo på denne aksen.
 }
 
 \fullframe{tog11}{tog10}{tog12}{0}{
-\centerline{\includegraphics[scale=0.26]{tog4.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog4.png}}
 Hvordan blir det nå? Vi har jo nøyaktig den samme situasjonen, vi bare regner fra et annet referansesystem. Da bør vi få samme svar. Gjør vi det? Toget står altså stille, bakken beveger seg med hastighet $v$ bakover, lysstrålene fra lynnedslagene beveger seg med lysets hastighet. Hva skjer?
 \hyperlink{tog11b}{\choicebutton{P ser begge samtidig}}\hyperlink{tog11a}{\choicebutton{P ser A før B}}\hyperlink{tog11a}{\choicebutton{P ser B før A}}
 }
@@ -667,12 +667,12 @@ Hvordan blir det nå? Vi har jo nøyaktig den samme situasjonen, vi bare regner 
 }
 
 \colfullframetxt{tog11b}{tog11}{tog12}{-1}{yellow}{Joa...}{
-\centerline{\includegraphics[scale=0.26]{tog1.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
 Det stemmer. Må det ikke bli slik da: toget (og dermed passasjer P) står i ro. Begge lysstrålene har en avstand $L/2$ å tilbakelegge med samme hastighet $c$. Vil de ikke treffe passasjeren samtidig? Vil ikke passasjeren se begge lynnedslag samtidig?
 }
 
 \choiceframe{tog12}{tog11b}{0}{
-\centerline{\includegraphics[scale=0.26]{tog5.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog5.png}}
 Når skjer event C og D? Hvor lang tid tar det for strålene å nå passasjer P?\\
 \hyperlink{tog12a}{\choicebutton{\small $t_c=t_D=L\sqrt{1-(v/c)^2}/v$}}\\
 \hyperlink{tog12a}{\choicebutton{\small $t_c=t_D=L/2/(c+v)$}}\hyperlink{tog12b}{\choicebutton{\small $t_c=t_D=L/2/c$}}\\
@@ -685,7 +685,7 @@ Når skjer event C og D? Hvor lang tid tar det for strålene å nå passasjer P?
 }
 
 \colfullframe{tog12b}{tog12}{tog13}{-1}{yellow}{
-\centerline{\includegraphics[scale=0.26]{tog5.png}}
+\centerline{\includegraphics[scale=0.26]{media/tog5.png}}
 Det er helt riktig! Hvis du enda er usikker, ta en titt på denne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_2.mp4}{videoen}
 }
 
@@ -698,19 +698,19 @@ La oss spørre passasjer P selv hva hun så da! Og også professor P...
 }
 
 \colfullframe{tog15}{tog14}{tog16}{0}{silver}{
-\centerline{\includegraphics[scale=0.4]{samtale1.png}}
+\centerline{\includegraphics[scale=0.4]{media/samtale1.png}}
 }
 
 \colfullframe{tog16}{tog15}{tog17}{0}{silver}{
-\centerline{\includegraphics[scale=0.4]{samtale2.png}}
+\centerline{\includegraphics[scale=0.4]{media/samtale2.png}}
 }
 
 \colfullframe{tog17}{tog16}{tog18}{0}{silver}{
-\centerline{\includegraphics[scale=0.4]{samtale3.png}}
+\centerline{\includegraphics[scale=0.4]{media/samtale3.png}}
 }
 
 \colfullframe{tog18}{tog17}{tog19}{0}{silver}{
-\centerline{\includegraphics[scale=0.4]{samtale4.png}}
+\centerline{\includegraphics[scale=0.4]{media/samtale4.png}}
 }
 
 \fullframe{tog19}{tog18}{tog20}{0}{\Huge
