@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  2 JUL 2021 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  5 OCT 2021 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,10 +1164,10 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<clock.png, id=76, 745.8264pt x 734.2632pt>
-File: clock.png Graphic file (type png)
-<use clock.png>
-Package pdftex.def Info: clock.png  used on input line 330.
+<media/clock.png, id=76, 745.8264pt x 734.2632pt>
+File: media/clock.png Graphic file (type png)
+<use media/clock.png>
+Package pdftex.def Info: media/clock.png  used on input line 330.
 (pdftex.def)             Requested size: 186.45615pt x 183.56534pt.
 
 Overfull \hbox (15.3085pt too wide) in paragraph at lines 330--330
@@ -1193,25 +1193,31 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [4
 
- <./clock.png>] [5
+ <./media/clock.png>] [5
 
 ] [6
 
 ] [7
 
 ]
-<klassrel1.png, id=155, 769.87625pt x 507.8975pt>
-File: klassrel1.png Graphic file (type png)
-<use klassrel1.png>
-Package pdftex.def Info: klassrel1.png  used on input line 373.
+<media/klassrel1.png, id=155, 769.87625pt x 507.8975pt>
+File: media/klassrel1.png Graphic file (type png)
+<use media/klassrel1.png>
+Package pdftex.def Info: media/klassrel1.png  used on input line 373.
 (pdftex.def)             Requested size: 230.96466pt x 152.37042pt.
- [8
 
- <./klassrel1.png>]
-<klassrel2.png, id=169, 764.8575pt x 532.99126pt>
-File: klassrel2.png Graphic file (type png)
-<use klassrel2.png>
-Package pdftex.def Info: klassrel2.png  used on input line 381.
+Overfull \hbox (10.55347pt too wide) in paragraph at lines 373--373
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cm
+ss/bx/n/10.95 SIDE 
+ []
+
+[8
+
+ <./media/klassrel1.png>]
+<media/klassrel2.png, id=169, 764.8575pt x 532.99126pt>
+File: media/klassrel2.png Graphic file (type png)
+<use media/klassrel2.png>
+Package pdftex.def Info: media/klassrel2.png  used on input line 381.
 (pdftex.def)             Requested size: 229.45901pt x 159.8986pt.
 
 Overfull \hbox (0.81789pt too wide) in paragraph at lines 381--381
@@ -1225,21 +1231,21 @@ Overfull \vbox (3.99556pt too high) detected at line 381
 
 [9
 
- <./klassrel2.png>] [10
+ <./media/klassrel2.png>] [10
 
 ]
-<klassrel3.png, id=196, 773.89125pt x 530.98375pt>
-File: klassrel3.png Graphic file (type png)
-<use klassrel3.png>
-Package pdftex.def Info: klassrel3.png  used on input line 390.
+<media/klassrel3.png, id=196, 773.89125pt x 530.98375pt>
+File: media/klassrel3.png Graphic file (type png)
+<use media/klassrel3.png>
+Package pdftex.def Info: media/klassrel3.png  used on input line 390.
 (pdftex.def)             Requested size: 232.16916pt x 159.29634pt.
  [11
 
- <./klassrel3.png>]
-<klassrel4.png, id=209, 774.895pt x 545.03625pt>
-File: klassrel4.png Graphic file (type png)
-<use klassrel4.png>
-Package pdftex.def Info: klassrel4.png  used on input line 399.
+ <./media/klassrel3.png>]
+<media/klassrel4.png, id=209, 774.895pt x 545.03625pt>
+File: media/klassrel4.png Graphic file (type png)
+<use media/klassrel4.png>
+Package pdftex.def Info: media/klassrel4.png  used on input line 399.
 (pdftex.def)             Requested size: 232.47029pt x 163.51213pt.
 
 Overfull \hbox (0.81789pt too wide) in paragraph at lines 399--399
@@ -1253,21 +1259,21 @@ Overfull \vbox (7.60909pt too high) detected at line 399
 
 [12
 
- <./klassrel4.png>] [13
+ <./media/klassrel4.png>] [13
 
 ]
-<klassrel5.png, id=237, 769.87625pt x 534.99875pt>
-File: klassrel5.png Graphic file (type png)
-<use klassrel5.png>
-Package pdftex.def Info: klassrel5.png  used on input line 409.
+<media/klassrel5.png, id=237, 769.87625pt x 534.99875pt>
+File: media/klassrel5.png Graphic file (type png)
+<use media/klassrel5.png>
+Package pdftex.def Info: media/klassrel5.png  used on input line 409.
 (pdftex.def)             Requested size: 230.96466pt x 160.50085pt.
  [14
 
- <./klassrel5.png>]
-<klassrel6.png, id=250, 764.8575pt x 544.0325pt>
-File: klassrel6.png Graphic file (type png)
-<use klassrel6.png>
-Package pdftex.def Info: klassrel6.png  used on input line 417.
+ <./media/klassrel5.png>]
+<media/klassrel6.png, id=250, 764.8575pt x 544.0325pt>
+File: media/klassrel6.png Graphic file (type png)
+<use media/klassrel6.png>
+Package pdftex.def Info: media/klassrel6.png  used on input line 417.
 (pdftex.def)             Requested size: 229.45901pt x 163.211pt.
 
 Overfull \hbox (0.81789pt too wide) in paragraph at lines 417--417
@@ -1281,496 +1287,506 @@ Overfull \vbox (7.30795pt too high) detected at line 417
 
 [15
 
- <./klassrel6.png>] [16
+ <./media/klassrel6.png>] [16
 
 ]
-<klassrel7.png, id=277, 766.865pt x 532.99126pt>
-File: klassrel7.png Graphic file (type png)
-<use klassrel7.png>
-Package pdftex.def Info: klassrel7.png  used on input line 426.
+<media/klassrel7.png, id=277, 766.865pt x 532.99126pt>
+File: media/klassrel7.png Graphic file (type png)
+<use media/klassrel7.png>
+Package pdftex.def Info: media/klassrel7.png  used on input line 426.
 (pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
  [17
 
- <./klassrel7.png>]
-File: klassrel7.png Graphic file (type png)
-<use klassrel7.png>
-Package pdftex.def Info: klassrel7.png  used on input line 438.
+ <./media/klassrel7.png>]
+File: media/klassrel7.png Graphic file (type png)
+<use media/klassrel7.png>
+Package pdftex.def Info: media/klassrel7.png  used on input line 439.
 (pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
 
-Overfull \vbox (2.74002pt too high) detected at line 438
+Overfull \vbox (2.74002pt too high) detected at line 439
  []
 
 [18
 
 ]
-File: klassrel7.png Graphic file (type png)
-<use klassrel7.png>
-Package pdftex.def Info: klassrel7.png  used on input line 449.
+File: media/klassrel7.png Graphic file (type png)
+<use media/klassrel7.png>
+Package pdftex.def Info: media/klassrel7.png  used on input line 450.
 (pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
  [19
 
 ]
-<fig_7-3.pdf, id=318, 375.57637pt x 217.57822pt>
-File: fig_7-3.pdf Graphic file (type pdf)
-<use fig_7-3.pdf>
-Package pdftex.def Info: fig_7-3.pdf  used on input line 457.
+<media/fig_7-3.pdf, id=318, 375.57637pt x 217.57822pt>
+File: media/fig_7-3.pdf Graphic file (type pdf)
+<use media/fig_7-3.pdf>
+Package pdftex.def Info: media/fig_7-3.pdf  used on input line 458.
 (pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
  [20
 
- <./fig_7-3.pdf>]
-File: fig_7-3.pdf Graphic file (type pdf)
-<use fig_7-3.pdf>
-Package pdftex.def Info: fig_7-3.pdf  used on input line 466.
+ <./media/fig_7-3.pdf>]
+File: media/fig_7-3.pdf Graphic file (type pdf)
+<use media/fig_7-3.pdf>
+Package pdftex.def Info: media/fig_7-3.pdf  used on input line 466.
 (pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
  [21
 
 ] [22
 
 ]
-File: fig_7-3.pdf Graphic file (type pdf)
-<use fig_7-3.pdf>
-Package pdftex.def Info: fig_7-3.pdf  used on input line 479.
+File: media/fig_7-3.pdf Graphic file (type pdf)
+<use media/fig_7-3.pdf>
+Package pdftex.def Info: media/fig_7-3.pdf  used on input line 479.
 (pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
  [23
 
 ]
-File: fig_7-3.pdf Graphic file (type pdf)
-<use fig_7-3.pdf>
-Package pdftex.def Info: fig_7-3.pdf  used on input line 487.
+File: media/fig_7-3.pdf Graphic file (type pdf)
+<use media/fig_7-3.pdf>
+Package pdftex.def Info: media/fig_7-3.pdf  used on input line 488.
 (pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
  [24
 
 ]
-File: fig_7-3.pdf Graphic file (type pdf)
-<use fig_7-3.pdf>
-Package pdftex.def Info: fig_7-3.pdf  used on input line 498.
+File: media/fig_7-3.pdf Graphic file (type pdf)
+<use media/fig_7-3.pdf>
+Package pdftex.def Info: media/fig_7-3.pdf  used on input line 499.
 (pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
 
-Overfull \vbox (3.76534pt too high) detected at line 498
+Overfull \vbox (3.76534pt too high) detected at line 499
  []
 
 [25
 
 ]
-<klassrel8.png, id=395, 772.8875pt x 545.03625pt>
-File: klassrel8.png Graphic file (type png)
-<use klassrel8.png>
-Package pdftex.def Info: klassrel8.png  used on input line 504.
+<media/klassrel8.png, id=395, 772.8875pt x 545.03625pt>
+File: media/klassrel8.png Graphic file (type png)
+<use media/klassrel8.png>
+Package pdftex.def Info: media/klassrel8.png  used on input line 505.
 (pdftex.def)             Requested size: 231.86803pt x 163.51213pt.
  [26
 
- <./klassrel8.png>]
-<klassrel9.png, id=409, 762.85pt x 526.96875pt>
-File: klassrel9.png Graphic file (type png)
-<use klassrel9.png>
-Package pdftex.def Info: klassrel9.png  used on input line 510.
+ <./media/klassrel8.png>]
+<media/klassrel9.png, id=409, 762.85pt x 526.96875pt>
+File: media/klassrel9.png Graphic file (type png)
+<use media/klassrel9.png>
+Package pdftex.def Info: media/klassrel9.png  used on input line 511.
 (pdftex.def)             Requested size: 228.85677pt x 158.09184pt.
  [27
 
- <./klassrel9.png>]
-<klassrel10.png, id=422, 765.86125pt x 529.98pt>
-File: klassrel10.png Graphic file (type png)
-<use klassrel10.png>
-Package pdftex.def Info: klassrel10.png  used on input line 516.
+ <./media/klassrel9.png>]
+<media/klassrel10.png, id=422, 765.86125pt x 529.98pt>
+File: media/klassrel10.png Graphic file (type png)
+<use media/klassrel10.png>
+Package pdftex.def Info: media/klassrel10.png  used on input line 517.
 (pdftex.def)             Requested size: 229.76015pt x 158.99521pt.
  [28
 
- <./klassrel10.png>]
-<klassrel11.png, id=435, 761.84625pt x 518.93875pt>
-File: klassrel11.png Graphic file (type png)
-<use klassrel11.png>
-Package pdftex.def Info: klassrel11.png  used on input line 521.
+ <./media/klassrel10.png>]
+<media/klassrel11.png, id=435, 761.84625pt x 518.93875pt>
+File: media/klassrel11.png Graphic file (type png)
+<use media/klassrel11.png>
+Package pdftex.def Info: media/klassrel11.png  used on input line 522.
 (pdftex.def)             Requested size: 228.55563pt x 155.68282pt.
+ [29
 
-[29
-
- <./klassrel11.png>]
-File: klassrel11.png Graphic file (type png)
-<use klassrel11.png>
-Package pdftex.def Info: klassrel11.png  used on input line 526.
+ <./media/klassrel11.png>]
+File: media/klassrel11.png Graphic file (type png)
+<use media/klassrel11.png>
+Package pdftex.def Info: media/klassrel11.png  used on input line 527.
 (pdftex.def)             Requested size: 228.55563pt x 155.68282pt.
  [30
 
 ] [31
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 546--546
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 547--547
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 551--551
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 552--552
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<tog1.png, id=480, 1009.7725pt x 551.05875pt>
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 551.
+<media/tog1.png, id=480, 1009.7725pt x 551.05875pt>
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 552.
 (pdftex.def)             Requested size: 302.93408pt x 165.3189pt.
 
-Overfull \vbox (2.7714pt too high) detected at line 551
+Overfull \vbox (2.7714pt too high) detected at line 552
  []
 
 [33
 
- <./tog1.png>]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 561--561
+ <./media/tog1.png>]
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 562--562
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 561.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 562.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [34
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 570--570
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 571--571
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 570.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 571.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [35
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 575--575
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 576--576
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 575.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 576.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [36
 
 ]
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 581.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 581--581
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 581.
-(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [37
 
 ]
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 585--585
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [38
 
 ]
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 590.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 590--590
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 590.
-(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [39
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 595--595
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 596--596
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<tog2.png, id=566, 1009.7725pt x 550.055pt>
-File: tog2.png Graphic file (type png)
-<use tog2.png>
-Package pdftex.def Info: tog2.png  used on input line 595.
+<media/tog2.png, id=566, 1009.7725pt x 550.055pt>
+File: media/tog2.png Graphic file (type png)
+<use media/tog2.png>
+Package pdftex.def Info: media/tog2.png  used on input line 596.
 (pdftex.def)             Requested size: 262.53465pt x 143.01093pt.
 [40
 
- <./tog2.png>]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 601--601
+ <./media/tog2.png>]
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 602--602
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<tog3.png, id=579, 1008.76875pt x 551.05875pt>
-File: tog3.png Graphic file (type png)
-<use tog3.png>
-Package pdftex.def Info: tog3.png  used on input line 601.
+<media/tog3.png, id=579, 1008.76875pt x 551.05875pt>
+File: media/tog3.png Graphic file (type png)
+<use media/tog3.png>
+Package pdftex.def Info: media/tog3.png  used on input line 602.
 (pdftex.def)             Requested size: 262.27368pt x 143.27188pt.
 [41
 
- <./tog3.png>]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 606--606
+ <./media/tog3.png>]
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 607--607
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 606.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 607.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [42
 
 ]
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 614.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 614--614
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 614.
-(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [43
 
 ]
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 618--618
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [44
 
 ]
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 623.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 623--623
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 623.
-(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [45
 
 ]
-<drink-coffee.png, id=643, 16.8383pt x 11.61842pt>
-File: drink-coffee.png Graphic file (type png)
-<use drink-coffee.png>
-Package pdftex.def Info: drink-coffee.png  used on input line 640.
+<media/drink-coffee.png, id=643, 16.8383pt x 11.61842pt>
+File: media/drink-coffee.png Graphic file (type png)
+<use media/drink-coffee.png>
+Package pdftex.def Info: media/drink-coffee.png  used on input line 640.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [46
 
- <./drink-coffee.png>]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 650--650
+ <./media/drink-coffee.png>]
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 651--651
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 650.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 651.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 
-Overfull \vbox (1.79747pt too high) detected at line 650
+Overfull \vbox (1.79747pt too high) detected at line 651
  []
 
 [47
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 656--656
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 657--657
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<tog4.png, id=668, 1010.77625pt x 552.0625pt>
-File: tog4.png Graphic file (type png)
-<use tog4.png>
-Package pdftex.def Info: tog4.png  used on input line 656.
+<media/tog4.png, id=668, 1010.77625pt x 552.0625pt>
+File: media/tog4.png Graphic file (type png)
+<use media/tog4.png>
+Package pdftex.def Info: media/tog4.png  used on input line 657.
 (pdftex.def)             Requested size: 262.79562pt x 143.53285pt.
 [48
 
- <./tog4.png>]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 662--662
+ <./media/tog4.png>]
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 663--663
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-File: tog4.png Graphic file (type png)
-<use tog4.png>
-Package pdftex.def Info: tog4.png  used on input line 662.
+File: media/tog4.png Graphic file (type png)
+<use media/tog4.png>
+Package pdftex.def Info: media/tog4.png  used on input line 663.
 (pdftex.def)             Requested size: 262.79562pt x 143.53285pt.
 [49
 
 ]
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 667--667
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [50
 
 ]
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 672.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 672--672
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-File: tog1.png Graphic file (type png)
-<use tog1.png>
-Package pdftex.def Info: tog1.png  used on input line 672.
-(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [51
 
 ]
+<media/tog5.png, id=717, 1015.795pt x 551.05875pt>
+File: media/tog5.png Graphic file (type png)
+<use media/tog5.png>
+Package pdftex.def Info: media/tog5.png  used on input line 680.
+(pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 680--680
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<tog5.png, id=717, 1015.795pt x 551.05875pt>
-File: tog5.png Graphic file (type png)
-<use tog5.png>
-Package pdftex.def Info: tog5.png  used on input line 680.
-(pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
 [52
 
- <./tog5.png>]
+ <./media/tog5.png>]
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 685--685
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [53
 
 ]
+File: media/tog5.png Graphic file (type png)
+<use media/tog5.png>
+Package pdftex.def Info: media/tog5.png  used on input line 690.
+(pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 690--690
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-File: tog5.png Graphic file (type png)
-<use tog5.png>
-Package pdftex.def Info: tog5.png  used on input line 690.
-(pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
 [54
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 694--694
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 695--695
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [55
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 698--698
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 699--699
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [56
 
 ]
+<media/samtale1.png, id=780, 1027.84pt x 550.055pt>
+File: media/samtale1.png Graphic file (type png)
+<use media/samtale1.png>
+Package pdftex.def Info: media/samtale1.png  used on input line 702.
+(pdftex.def)             Requested size: 411.12872pt x 220.0181pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 702--702
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<samtale1.png, id=780, 1027.84pt x 550.055pt>
-File: samtale1.png Graphic file (type png)
-<use samtale1.png>
-Package pdftex.def Info: samtale1.png  used on input line 702.
-(pdftex.def)             Requested size: 411.12872pt x 220.0181pt.
 [57
 
- <./samtale1.png>]
+ <./media/samtale1.png>]
+<media/samtale2.png, id=793, 1027.84pt x 551.05875pt>
+File: media/samtale2.png Graphic file (type png)
+<use media/samtale2.png>
+Package pdftex.def Info: media/samtale2.png  used on input line 706.
+(pdftex.def)             Requested size: 411.12872pt x 220.41959pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 706--706
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<samtale2.png, id=793, 1027.84pt x 551.05875pt>
-File: samtale2.png Graphic file (type png)
-<use samtale2.png>
-Package pdftex.def Info: samtale2.png  used on input line 706.
-(pdftex.def)             Requested size: 411.12872pt x 220.41959pt.
 [58
 
- <./samtale2.png>]
+ <./media/samtale2.png>]
+<media/samtale3.png, id=806, 1026.83624pt x 546.04pt>
+File: media/samtale3.png Graphic file (type png)
+<use media/samtale3.png>
+Package pdftex.def Info: media/samtale3.png  used on input line 710.
+(pdftex.def)             Requested size: 410.72722pt x 218.41212pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 710--710
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<samtale3.png, id=806, 1026.83624pt x 546.04pt>
-File: samtale3.png Graphic file (type png)
-<use samtale3.png>
-Package pdftex.def Info: samtale3.png  used on input line 710.
-(pdftex.def)             Requested size: 410.72722pt x 218.41212pt.
 [59
 
- <./samtale3.png>]
+ <./media/samtale3.png>]
+<media/samtale4.png, id=819, 1022.82124pt x 547.04375pt>
+File: media/samtale4.png Graphic file (type png)
+<use media/samtale4.png>
+Package pdftex.def Info: media/samtale4.png  used on input line 714.
+(pdftex.def)             Requested size: 409.12125pt x 218.81361pt.
+
 Overfull \hbox (3.15645pt too wide) in paragraph at lines 714--714
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<samtale4.png, id=819, 1022.82124pt x 547.04375pt>
-File: samtale4.png Graphic file (type png)
-<use samtale4.png>
-Package pdftex.def Info: samtale4.png  used on input line 714.
-(pdftex.def)             Requested size: 409.12125pt x 218.81361pt.
 [60
 
- <./samtale4.png>]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 718--718
+ <./media/samtale4.png>]
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 719--719
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [61
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 722--722
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 723--723
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [62
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 726--726
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 727--727
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \vbox (3.33704pt too high) detected at line 726
+Overfull \vbox (3.33704pt too high) detected at line 727
  []
 
 [63
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 734--734
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 735--735
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [64
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 741--741
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 742--742
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [65
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 746--746
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 747--747
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [66
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 751--751
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 752--752
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \vbox (3.33704pt too high) detected at line 751
+Overfull \vbox (3.33704pt too high) detected at line 752
  []
 
 [67
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 755--755
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 756--756
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [68
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 760--760
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 761--761
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [69
 
 ]
-Overfull \hbox (3.15645pt too wide) in paragraph at lines 769--769
+Overfull \hbox (3.15645pt too wide) in paragraph at lines 770--770
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -1794,9 +1810,9 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_2A_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27294 strings out of 478994
- 532822 string characters out of 5858185
- 891262 words of memory out of 5000000
+ 27295 strings out of 478994
+ 533518 string characters out of 5858185
+ 891299 words of memory out of 5000000
  43943 multiletter control sequences out of 15000+600000
  421751 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1821,7 +1837,7 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 /2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
 Output written on interaktive_forelesningsnotater_2A_del1_av_2.pdf (71 pages, 6
-3110599 bytes).
+3110660 bytes).
 PDF statistics:
  1084 PDF objects out of 1200 (max. 8388607)
  894 compressed objects within 9 object streams
