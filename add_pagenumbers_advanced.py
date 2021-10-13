@@ -1,6 +1,6 @@
 
 
-filename = '2A/interaktive_forelesningsnotater_2A_del2_av_2.tex'
+filename = '2B/interaktive_forelesningsnotater_2B_del2_av_2.tex'
 
 with open(filename) as file:
     lines = file.readlines()
@@ -27,7 +27,7 @@ for line in lines:
         inframe = True
     elif ('frame' in line) and (not ('newcommand' in line)) and (not ('end' in line)) and (not ('mp4' in line)) and inframe:
         ln = lines[lastparan].rstrip()
-        lines[lastparan] = ln + '{SIDE '+str(pg)+'/'+str(pgnytemas[nytemas]-2)+'/'+str(totpg-2)+'}' + '\r'
+        lines[lastparan] = ln + '{SIDE '+str(pg)+'/'+str(pgnytemas[nytemas]-0)+'/'+str(totpg-0)+'}' + '\r'
         pg += 1
         if  ('frame' in line) and  ('begin' in line): inframe = False
     if ('nytemaside' in line): nytemas += 1
