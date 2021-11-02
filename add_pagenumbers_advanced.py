@@ -1,6 +1,6 @@
 
 
-filename = '3E/interaktive_forelesningsnotater_3E.tex'
+filename = '2D/interaktive_forelesningsnotater_2D.tex'
 
 with open(filename) as file:
     lines = file.readlines()
