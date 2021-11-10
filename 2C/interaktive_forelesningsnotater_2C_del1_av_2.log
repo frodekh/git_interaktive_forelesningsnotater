@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  18 OCT 2021 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  10 NOV 2021 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1098,13 +1098,13 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<media/spacetimebending.pdf, id=68, 796.9775pt x 597.23125pt>
-File: media/spacetimebending.pdf Graphic file (type pdf)
-<use media/spacetimebending.pdf>
-Package pdftex.def Info: media/spacetimebending.pdf  used on input line 345.
-(pdftex.def)             Requested size: 199.24388pt x 149.30743pt.
+<media/spacetimebending.png, id=68, 1072.005pt x 800.9925pt>
+File: media/spacetimebending.png Graphic file (type png)
+<use media/spacetimebending.png>
+Package pdftex.def Info: media/spacetimebending.png  used on input line 345.
+(pdftex.def)             Requested size: 268.0006pt x 200.24763pt.
 
-Overfull \hbox (28.09624pt too wide) in paragraph at lines 345--345
+Overfull \hbox (96.85295pt too wide) in paragraph at lines 345--345
 [][]  
  []
 
@@ -1127,7 +1127,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [4
 
- <./media/spacetimebending.pdf>] [5
+ <./media/spacetimebending.png>] [5
 
 ] [6
 
@@ -1157,7 +1157,7 @@ Overfull \hbox (32.72372pt too wide) in paragraph at lines 424--424
 10.95 SIDE 
  []
 
-<media/earth.png, id=160, 469.755pt x 469.755pt>
+<media/earth.png, id=147, 469.755pt x 469.755pt>
 File: media/earth.png Graphic file (type png)
 <use media/earth.png>
 Package pdftex.def Info: media/earth.png  used on input line 424.
@@ -1380,7 +1380,7 @@ Overfull \hbox (37.72372pt too wide) in paragraph at lines 680--680
 10.95 SIDE 
  []
 
-<media/bh.jpg, id=309, 789.95125pt x 592.2125pt>
+<media/bh.jpg, id=295, 789.95125pt x 592.2125pt>
 File: media/bh.jpg Graphic file (type jpg)
 <use media/bh.jpg>
 Package pdftex.def Info: media/bh.jpg  used on input line 680.
@@ -1437,7 +1437,7 @@ Overfull \hbox (7.68687pt too wide) in paragraph at lines 732--732
 ] [30
 
 ]
-<media/skyscraper1.png, id=401, 353.32pt x 683.55376pt>
+<media/skyscraper1.png, id=387, 353.32pt x 683.55376pt>
 File: media/skyscraper1.png Graphic file (type png)
 <use media/skyscraper1.png>
 Package pdftex.def Info: media/skyscraper1.png  used on input line 758.
@@ -1449,7 +1449,7 @@ Overfull \vbox (12.52844pt too high) detected at line 758
 [31
 
  <./media/skyscraper1.png>]
-<media/skyscraper2.png, id=415, 357.335pt x 680.5425pt>
+<media/skyscraper2.png, id=400, 357.335pt x 680.5425pt>
 File: media/skyscraper2.png Graphic file (type png)
 <use media/skyscraper2.png>
 Package pdftex.def Info: media/skyscraper2.png  used on input line 763.
@@ -1479,7 +1479,7 @@ Overfull \vbox (18.71646pt too high) detected at line 777
 [34
 
 ]
-<media/skyscraper3.png, id=448, 340.27126pt x 685.56125pt>
+<media/skyscraper3.png, id=434, 340.27126pt x 685.56125pt>
 File: media/skyscraper3.png Graphic file (type png)
 <use media/skyscraper3.png>
 Package pdftex.def Info: media/skyscraper3.png  used on input line 786.
@@ -1493,7 +1493,7 @@ Overfull \vbox (2.72911pt too high) detected at line 786
  <./media/skyscraper3.png>] [36
 
 ]
-<media/skyscraper4.png, id=474, 289.08pt x 523.9575pt>
+<media/skyscraper4.png, id=460, 289.08pt x 523.9575pt>
 File: media/skyscraper4.png Graphic file (type png)
 <use media/skyscraper4.png>
 Package pdftex.def Info: media/skyscraper4.png  used on input line 796.
@@ -1508,7 +1508,7 @@ Package pdftex.def Info: media/skyscraper4.png  used on input line 802.
  [38
 
 ]
-<media/airplane1.png, id=497, 831.105pt x 327.2225pt>
+<media/airplane1.png, id=483, 831.105pt x 327.2225pt>
 File: media/airplane1.png Graphic file (type png)
 <use media/airplane1.png>
 Package pdftex.def Info: media/airplane1.png  used on input line 811.
@@ -1519,7 +1519,7 @@ Package pdftex.def Info: media/airplane1.png  used on input line 811.
  <./media/airplane1.png>] [40
 
 ]
-<media/airplane2.png, id=525, 301.125pt x 470.75874pt>
+<media/airplane2.png, id=511, 301.125pt x 470.75874pt>
 File: media/airplane2.png Graphic file (type png)
 <use media/airplane2.png>
 Package pdftex.def Info: media/airplane2.png  used on input line 822.
@@ -1527,7 +1527,7 @@ Package pdftex.def Info: media/airplane2.png  used on input line 822.
  [41
 
  <./media/airplane2.png>]
-<media/airplane3.png, id=537, 837.1275pt x 311.1625pt>
+<media/airplane3.png, id=522, 837.1275pt x 311.1625pt>
 File: media/airplane3.png Graphic file (type png)
 <use media/airplane3.png>
 Package pdftex.def Info: media/airplane3.png  used on input line 827.
@@ -1543,22 +1543,30 @@ Overfull \vbox (6.76439pt too high) detected at line 838
 [44
 
 ]
-<media/spherical_geometry.pdf, id=582, 275.49425pt x 117.52808pt>
-File: media/spherical_geometry.pdf Graphic file (type pdf)
-<use media/spherical_geometry.pdf>
-Package pdftex.def Info: media/spherical_geometry.pdf  used on input line 845.
-(pdftex.def)             Requested size: 123.97125pt x 52.88713pt.
- [45
+<media/spherical_geometry.png, id=568, 1159.33125pt x 493.845pt>
+File: media/spherical_geometry.png Graphic file (type png)
+<use media/spherical_geometry.png>
+Package pdftex.def Info: media/spherical_geometry.png  used on input line 845.
+(pdftex.def)             Requested size: 521.69424pt x 222.22818pt.
 
- <./media/spherical_geometry.pdf>]
-File: media/spherical_geometry.pdf Graphic file (type pdf)
-<use media/spherical_geometry.pdf>
-Package pdftex.def Info: media/spherical_geometry.pdf  used on input line 850.
-(pdftex.def)             Requested size: 123.97125pt x 52.88713pt.
- [46
+Overfull \vbox (130.56824pt too high) detected at line 845
+ []
+
+[45
+
+ <./media/spherical_geometry.png>]
+File: media/spherical_geometry.png Graphic file (type png)
+<use media/spherical_geometry.png>
+Package pdftex.def Info: media/spherical_geometry.png  used on input line 850.
+(pdftex.def)             Requested size: 521.69424pt x 222.22818pt.
+
+Overfull \vbox (142.6474pt too high) detected at line 850
+ []
+
+[46
 
 ]
-<media/drink-coffee.png, id=602, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=588, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
 Package pdftex.def Info: media/drink-coffee.png  used on input line 864.
@@ -1584,7 +1592,7 @@ Overfull \vbox (17.90251pt too high) detected at line 919
 [54
 
 ]
-<media/shell1.png, id=685, 696.6025pt x 371.3875pt>
+<media/shell1.png, id=671, 696.6025pt x 371.3875pt>
 File: media/shell1.png Graphic file (type png)
 <use media/shell1.png>
 Package pdftex.def Info: media/shell1.png  used on input line 924.
@@ -1599,7 +1607,7 @@ Package pdftex.def Info: media/shell1.png  used on input line 929.
  [56
 
 ]
-<media/shell2.png, id=708, 544.0325pt x 380.42125pt>
+<media/shell2.png, id=694, 544.0325pt x 380.42125pt>
 File: media/shell2.png Graphic file (type png)
 <use media/shell2.png>
 Package pdftex.def Info: media/shell2.png  used on input line 934.
@@ -1629,7 +1637,7 @@ Package pdftex.def Info: media/shell1.png  used on input line 954.
  [59
 
 ]
-<media/shell3.png, id=740, 995.72pt x 682.55pt>
+<media/shell3.png, id=726, 995.72pt x 682.55pt>
 File: media/shell3.png Graphic file (type png)
 <use media/shell3.png>
 Package pdftex.def Info: media/shell3.png  used on input line 961.
@@ -1641,7 +1649,7 @@ Overfull \vbox (8.89758pt too high) detected at line 961
 [60
 
  <./media/shell3.png>]
-<media/shell5.png, id=752, 642.4pt x 439.6425pt>
+<media/shell5.png, id=738, 642.4pt x 439.6425pt>
 File: media/shell5.png Graphic file (type png)
 <use media/shell5.png>
 Package pdftex.def Info: media/shell5.png  used on input line 967.
@@ -1664,7 +1672,7 @@ Overfull \vbox (21.48831pt too high) detected at line 974
 [62
 
 ]
-<media/shell4.png, id=776, 652.4375pt x 430.60875pt>
+<media/shell4.png, id=762, 652.4375pt x 430.60875pt>
 File: media/shell4.png Graphic file (type png)
 <use media/shell4.png>
 Package pdftex.def Info: media/shell4.png  used on input line 980.
@@ -1764,7 +1772,7 @@ Overfull \vbox (15.48557pt too high) detected at line 1085
 ] [75
 
 ]
-<media/shell6.png, id=916, 871.255pt x 609.27625pt>
+<media/shell6.png, id=902, 871.255pt x 609.27625pt>
 File: media/shell6.png Graphic file (type png)
 <use media/shell6.png>
 Package pdftex.def Info: media/shell6.png  used on input line 1102.
@@ -1812,7 +1820,7 @@ Package pdftex.def Info: media/shell1.png  used on input line 1145.
  [80
 
 ]
-<media/shell7.png, id=970, 1012.78375pt x 624.3325pt>
+<media/shell7.png, id=956, 1012.78375pt x 624.3325pt>
 File: media/shell7.png Graphic file (type png)
 <use media/shell7.png>
 Package pdftex.def Info: media/shell7.png  used on input line 1150.
@@ -1848,8 +1856,8 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_2C_del1_av_2
  ) 
 Here is how much of TeX's memory you used:
  26143 strings out of 478994
- 512682 string characters out of 5858185
- 852636 words of memory out of 5000000
+ 512634 string characters out of 5858185
+ 853629 words of memory out of 5000000
  42784 multiletter control sequences out of 15000+600000
  430205 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1883,10 +1891,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf-
 dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on interaktive_forelesningsnotater_2C_del1_av_2.pdf (83 pages, 2
-1474749 bytes).
+3145844 bytes).
 PDF statistics:
- 1143 PDF objects out of 1200 (max. 8388607)
- 952 compressed objects within 10 object streams
+ 1129 PDF objects out of 1200 (max. 8388607)
+ 942 compressed objects within 10 object streams
  252 named destinations out of 1000 (max. 500000)
  264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

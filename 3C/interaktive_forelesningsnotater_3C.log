@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  15 OCT 2021 09:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  8 NOV 2021 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,28 +1190,42 @@ Overfull \vbox (8.4762pt too high) detected at line 456
 [16
 
 ]
-<media/fig_19-3.pdf, id=228, 375.57637pt x 233.3126pt>
-File: media/fig_19-3.pdf Graphic file (type pdf)
-<use media/fig_19-3.pdf>
-Package pdftex.def Info: media/fig_19-3.pdf  used on input line 464.
-(pdftex.def)             Requested size: 225.34755pt x 139.98863pt.
+<media/fig_19-3.png, id=228, 1137.24875pt x 704.6325pt>
+File: media/fig_19-3.png Graphic file (type png)
+<use media/fig_19-3.png>
+Package pdftex.def Info: media/fig_19-3.png  used on input line 464.
+(pdftex.def)             Requested size: 682.35452pt x 422.78278pt.
 
-Overfull \vbox (8.137pt too high) detected at line 464
+Overfull \hbox (340.05922pt too wide) in paragraph at lines 464--464
+[][]  
+ []
+
+
+Overfull \vbox (290.93114pt too high) detected at line 464
  []
 
 [17
 
- <./media/fig_19-3.pdf>]
-File: media/fig_19-3.pdf Graphic file (type pdf)
-<use media/fig_19-3.pdf>
-Package pdftex.def Info: media/fig_19-3.pdf  used on input line 472.
-(pdftex.def)             Requested size: 225.34755pt x 139.98863pt.
- [18
+ <./media/fig_19-3.png>]
+File: media/fig_19-3.png Graphic file (type png)
+<use media/fig_19-3.png>
+Package pdftex.def Info: media/fig_19-3.png  used on input line 472.
+(pdftex.def)             Requested size: 682.35452pt x 422.78278pt.
+
+Overfull \hbox (340.05922pt too wide) in paragraph at lines 472--472
+[][]  
+ []
+
+
+Overfull \vbox (277.33113pt too high) detected at line 472
+ []
+
+[18
 
 ] [19
 
 ]
-<media/approaching_protons.png, id=268, 533.995pt x 255.95625pt>
+<media/approaching_protons.png, id=260, 533.995pt x 255.95625pt>
 File: media/approaching_protons.png Graphic file (type png)
 <use media/approaching_protons.png>
 Package pdftex.def Info: media/approaching_protons.png  used on input line 493.
@@ -1240,7 +1254,7 @@ Package pdftex.def Info: media/approaching_protons.png  used on input line 510.
  [22
 
 ]
-<media/cross_section.png, id=304, 377.41pt x 318.18875pt>
+<media/cross_section.png, id=296, 377.41pt x 318.18875pt>
 File: media/cross_section.png Graphic file (type png)
 <use media/cross_section.png>
 Package pdftex.def Info: media/cross_section.png  used on input line 519.
@@ -1290,7 +1304,7 @@ Overfull \vbox (2.6912pt too high) detected at line 635
 [30
 
 ]
-<media/drink-coffee.png, id=398, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=389, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
 Package pdftex.def Info: media/drink-coffee.png  used on input line 654.
@@ -1310,53 +1324,49 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 688--688
 [34
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 719--719
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 721--721
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/pp_chain_Wiki.pdf, id=440, 680.5425pt x 969.6225pt>
-File: media/pp_chain_Wiki.pdf Graphic file (type pdf)
-<use media/pp_chain_Wiki.pdf>
-Package pdftex.def Info: media/pp_chain_Wiki.pdf  used on input line 719.
-(pdftex.def)             Requested size: 68.05823pt x 96.96793pt.
-
-Overfull \vbox (4.23882pt too high) detected at line 719
- []
-
+<media/pp_chain_Wiki.png, id=432, 559.08875pt x 795.97375pt>
+File: media/pp_chain_Wiki.png Graphic file (type png)
+<use media/pp_chain_Wiki.png>
+Package pdftex.def Info: media/pp_chain_Wiki.png  used on input line 721.
+(pdftex.def)             Requested size: 55.91214pt x 79.60204pt.
 [35
 
- <./media/pp_chain_Wiki.pdf>]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 738--738
+ <./media/pp_chain_Wiki.png>]
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 740--740
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 
-Overfull \vbox (1.05692pt too high) detected at line 738
+Overfull \vbox (1.05692pt too high) detected at line 740
  []
 
 [36
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 773--773
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 777--777
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/CNO_cycle_Wiki.pdf, id=481, 1003.75pt x 1003.75pt>
-File: media/CNO_cycle_Wiki.pdf Graphic file (type pdf)
-<use media/CNO_cycle_Wiki.pdf>
-Package pdftex.def Info: media/CNO_cycle_Wiki.pdf  used on input line 773.
-(pdftex.def)             Requested size: 120.4448pt x 120.4448pt.
+<media/CNO_cycle_Wiki.png, id=469, 708.6475pt x 706.64pt>
+File: media/CNO_cycle_Wiki.png Graphic file (type png)
+<use media/CNO_cycle_Wiki.png>
+Package pdftex.def Info: media/CNO_cycle_Wiki.png  used on input line 777.
+(pdftex.def)             Requested size: 85.03403pt x 84.79314pt.
 
-Overfull \vbox (16.3203pt too high) detected at line 773
+Overfull \vbox (12.86742pt too high) detected at line 777
  []
 
 [37
 
- <./media/CNO_cycle_Wiki.pdf>]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 788--788
+ <./media/CNO_cycle_Wiki.png>]
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 792--792
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1364,7 +1374,7 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 788--788
 [38
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 799--799
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 803--803
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1372,7 +1382,7 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 799--799
 [39
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 812--812
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 816--816
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1380,32 +1390,32 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 812--812
 [40
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 841--841
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 847--847
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/triple-alpha_Wiki.pdf, id=547, 752.8125pt x 501.875pt>
-File: media/triple-alpha_Wiki.pdf Graphic file (type pdf)
-<use media/triple-alpha_Wiki.pdf>
-Package pdftex.def Info: media/triple-alpha_Wiki.pdf  used on input line 841.
-(pdftex.def)             Requested size: 90.33359pt x 60.2224pt.
+<media/triple-alpha_Wiki.png, id=530, 924.45375pt x 616.3025pt>
+File: media/triple-alpha_Wiki.png Graphic file (type png)
+<use media/triple-alpha_Wiki.png>
+Package pdftex.def Info: media/triple-alpha_Wiki.png  used on input line 847.
+(pdftex.def)             Requested size: 110.92966pt x 73.95311pt.
 [41
 
- <./media/triple-alpha_Wiki.pdf>]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 857--857
+ <./media/triple-alpha_Wiki.png>]
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 863--863
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 
-Overfull \vbox (2.26599pt too high) detected at line 857
+Overfull \vbox (2.26599pt too high) detected at line 863
  []
 
 [42
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 867--867
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 873--873
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1413,7 +1423,7 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 867--867
 [43
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 880--880
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 886--886
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1421,29 +1431,29 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 880--880
 [44
 
 ]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 893--893
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 899--899
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/eksamen2012_6.png, id=609, 593.21625pt x 178.6675pt>
+<media/eksamen2012_6.png, id=589, 593.21625pt x 178.6675pt>
 File: media/eksamen2012_6.png Graphic file (type png)
 <use media/eksamen2012_6.png>
-Package pdftex.def Info: media/eksamen2012_6.png  used on input line 893.
+Package pdftex.def Info: media/eksamen2012_6.png  used on input line 899.
 (pdftex.def)             Requested size: 355.9325pt x 107.20131pt.
 
-Overfull \hbox (13.63719pt too wide) in paragraph at lines 893--893
+Overfull \hbox (13.63719pt too wide) in paragraph at lines 899--899
 [] 
  []
 
 
-Overfull \vbox (11.49825pt too high) detected at line 893
+Overfull \vbox (11.49825pt too high) detected at line 899
  []
 
 [45
 
  <./media/eksamen2012_6.png>]
-Overfull \hbox (17.64227pt too wide) in paragraph at lines 905--905
+Overfull \hbox (17.64227pt too wide) in paragraph at lines 911--911
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1453,7 +1463,7 @@ Overfull \hbox (17.64227pt too wide) in paragraph at lines 905--905
 ] [47
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 927--927
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 933--933
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss
 /bx/n/10.95 SIDE 
  []
@@ -1461,31 +1471,31 @@ Overfull \hbox (30.60211pt too wide) in paragraph at lines 927--927
 [48
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 947--947
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 953--953
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-File: media/pp_chain_Wiki.pdf Graphic file (type pdf)
-<use media/pp_chain_Wiki.pdf>
-Package pdftex.def Info: media/pp_chain_Wiki.pdf  used on input line 947.
-(pdftex.def)             Requested size: 68.05823pt x 96.96793pt.
+File: media/pp_chain_Wiki.png Graphic file (type png)
+<use media/pp_chain_Wiki.png>
+Package pdftex.def Info: media/pp_chain_Wiki.png  used on input line 953.
+(pdftex.def)             Requested size: 55.91214pt x 79.60204pt.
 [49
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 967--967
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 973--973
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-File: media/pp_chain_Wiki.pdf Graphic file (type pdf)
-<use media/pp_chain_Wiki.pdf>
-Package pdftex.def Info: media/pp_chain_Wiki.pdf  used on input line 967.
-(pdftex.def)             Requested size: 68.05823pt x 96.96793pt.
+File: media/pp_chain_Wiki.png Graphic file (type png)
+<use media/pp_chain_Wiki.png>
+Package pdftex.def Info: media/pp_chain_Wiki.png  used on input line 973.
+(pdftex.def)             Requested size: 55.91214pt x 79.60204pt.
 [50
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 978--978
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 984--984
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1493,19 +1503,19 @@ Overfull \hbox (30.60211pt too wide) in paragraph at lines 978--978
 [51
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 992--992
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 998--998
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 
-Overfull \vbox (15.68176pt too high) detected at line 992
+Overfull \vbox (15.68176pt too high) detected at line 998
  []
 
 [52
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 999--999
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 1005--1005
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1513,7 +1523,7 @@ Overfull \hbox (30.60211pt too wide) in paragraph at lines 999--999
 [53
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 1008--1008
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 1014--1014
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1521,19 +1531,19 @@ Overfull \hbox (30.60211pt too wide) in paragraph at lines 1008--1008
 [54
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 1016--1016
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 1022--1022
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 
-Overfull \vbox (15.29008pt too high) detected at line 1016
+Overfull \vbox (15.29008pt too high) detected at line 1022
  []
 
 [55
 
 ]
-Overfull \hbox (30.60211pt too wide) in paragraph at lines 1026--1026
+Overfull \hbox (30.60211pt too wide) in paragraph at lines 1032--1032
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1558,11 +1568,11 @@ not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25929 strings out of 478994
- 510278 string characters out of 5858185
- 847123 words of memory out of 5000000
- 42662 multiletter control sequences out of 15000+600000
- 426418 words of font info for 109 fonts, out of 8000000 for 9000
+ 25922 strings out of 478994
+ 510081 string characters out of 5858185
+ 847062 words of memory out of 5000000
+ 42655 multiletter control sequences out of 15000+600000
+ 424470 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,16n,132p,1237b,1209s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -1587,11 +1597,11 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/
 21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
 1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on interaktive_forelesningsnotater_3C.pdf (57 pages, 3087803 byt
+Output written on interaktive_forelesningsnotater_3C.pdf (57 pages, 3800619 byt
 es).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
- 700 compressed objects within 7 object streams
+ 827 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
  175 named destinations out of 1000 (max. 500000)
  296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
