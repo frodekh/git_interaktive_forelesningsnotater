@@ -64,6 +64,9 @@
 \let\hrefori\href
 \renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
 
+%Schwarzschild command
+\renewcommand{\ss}{Schwarz\-schild }
+
 
 %title
 \setbeamercolor{block title alerted}{fg=white,bg=cyan}
@@ -339,7 +342,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 {\small
 \textcolor{yellow}{\bf Velkommen til forelesning 1 av 2 i del 2C! Vi skal nå se hvordan geometrien til tidrommet, og dermed uttrykket for tidromsavstander $\Delta s$ endrer seg i et gravitasjonsfelt. Vi får en krumning av det 4-dimensjonale tidrommet, vanskelig å se for seg, men med dramatiske konsekvenser for oss! Vi skal så se på hvordan vi kan regne med en slik krum geometri og hvilke observatører som observerer hva.}\\
 \textcolor{red}{Fremstillingen av generell relativitetsteori i AST2000 er basert på den fantastiske boken ``Exploring black holes'' av E. Taylor, J. Wheeler og E. Bertschinger, gratis tilgjengelig \href{http://www.eftaylor.com/exploringblackholes/}{her}. Anbefales på det sterkeste for den som er interessert.}
-{(\tiny Illustrasjon fra pngegg.com)}}
+{\tiny \textcolor{red}{(Illustrasjon fra pngegg.com)}}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -348,8 +351,9 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 
 \begin{frame}`
 \label{intro2}
-\lastpagebutton{feil_intro}
-\textcolor{red}{\bf SIDE 0/73/73 Mange sider sier du? Neida, det er mye figurer og mange sider med stor og veldig lite skrift. Jeg kommer normalt gjennom dette på en dobbelttime fysisk forelesning}
+\lastpagebutton{feil_intro} {SIDE 0/73/73}
+\\
+\textcolor{red}{\bf Mange sider sier du? Neida, det er mye figurer og mange sider med stor og veldig lite skrift. Jeg kommer normalt gjennom dette på en dobbelttime fysisk forelesning}
 \begin{alertblock}{Vi begynner som vanlig...}
 ...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
 \end{alertblock}
@@ -386,13 +390,18 @@ Til venstre her har vi Einsteintensoren $G_{\mu\nu}$ og til høyre har vi stress
 }{SIDE 1/18/73}
 
 \colfullframe{feil_ss2}{ss1}{feil_ss4}{0}{black}{
+{\large
+\textcolor{black}{
+\begin{align*}
+a&b
+\end{align*}
+
+\centerline{\includegraphics[scale=0.1]{media/earth-hidden.png}}
 {\Huge
 \begin{align*}
-a&b\\
-c&d\\
-e&f
+a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{
 La oss ta et eksempel: anta at du har helt tomt tidrom, bare vakum. Putter vi det inn i $T_{\mu\nu}$ på høyre side i Einsteinlikningen så faller det ut av venstresiden at
 \[
@@ -404,16 +413,17 @@ Altså at rommet har Lorentzgeometri! Det vil si at Lorentzgeometri er gyldig n�
 
 \colfullframe{feil_ss4}{feil_ss2}{feil_ss5}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 Hvis vi isteden har en {\bf kulesymmetrisk massefordeling} og putter det inn i $T_{\mu\nu}$ på høyre side i Einsteinlikningen så faller det ut av venstresiden at
 \[
@@ -426,16 +436,17 @@ Dette er tidromsavstanden i \ss-geometri. Kort tid etter at Einstein hadde formu
 
 \colfullframe{feil_ss5}{feil_ss4}{feil_ss6}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -446,16 +457,17 @@ Massen til den kulesymmetriske massefordelingen er $M$. Tidromsavstanden er her 
 
 \colfullframe{feil_ss6}{feil_ss5}{feil_ss7}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -468,16 +480,17 @@ Nope, det trenger vi ikke!} Kan du se hvorfor? Tenk deg litt om før du blar om!
 
 \colfullframetxt{feil_ss7}{feil_ss6}{feil_ss8}{0}{black}{\small ikke gå videre før du har et forslag}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -488,16 +501,16 @@ La oss først tenke, $\Delta s$, det er da en avstand eller da en linje mellom 2
 
 \colfullframe{feil_ss8}{feil_ss7}{feil_ss9}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -507,12 +520,18 @@ Tenkte vi på det samme? Sentret av den kulesymmetriske massefordelingen, selvf�
 }{SIDE 7/18/73}
 
 \colfullframetxt{feil_ss9}{feil_ss8}{feil_ss10}{0}{black}{\small Neste side}{
+{\large
+\textcolor{black}{
+\begin{align*}
+a&b
+\end{align*}
+
+\centerline{\includegraphics[scale=0.1]{media/earth-hidden.png}}
 {\Huge
 \begin{align*}
-a&b\\
-e&f
+a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\footnotesize
 La oss gå tilbake et øyeblikk til tomt rom. Hvis vi i romt rom definerer oss et ``sentrum'', så kan også Lorentzavstanden skrives i polarkoordinater. Da ser det slik ut:
 \[
@@ -530,16 +549,17 @@ Sammenlikn med \ss:
 
 \colfullframetxt{feil_ss10}{feil_ss9}{feil_ss11}{0}{black}{\small ikke gå videre før du har et forslag}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -570,16 +590,17 @@ Ser du noe rart eller ikke??}
 
 \colfullframe{feil_ss12}{feil_ss11}{feil_ss13}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\small
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -591,16 +612,17 @@ Ser du at masse $M$ blir delt på avstand $r$? Og at dette skal bli et enhetslø
 
 \colfullframe{feil_ss13}{feil_ss12}{feil_ss14}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\footnotesize
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -615,16 +637,17 @@ altså {\bf 1\,kg\;=\;$7.42\times10^{-28}$ meter.}
 
 \colfullframe{feil_ss14}{feil_ss13}{feil_ss15}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\footnotesize
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -639,16 +662,17 @@ altså {\bf 1\,kg\;=\;$7.42\times10^{-28}$ meter.}
 
 \colfullframe{feil_ss15}{feil_ss14}{feil_ss16}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.1]{media/earth.png}}
 {\Huge
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{\footnotesize
 \[
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
@@ -659,16 +683,17 @@ a&b
 
 \colfullframe{feil_ss16}{feil_ss15}{feil_ss17}{0}{black}{
 {\large
+\textcolor{black}{
 \begin{align*}
 a&b
 \end{align*}
-}
+
 \centerline{\includegraphics[scale=0.08]{media/bh.jpg}}
 {\Large
 \begin{align*}
 a&b
 \end{align*}
-}
+}}}
 \textcolor{yellow}{
 {\tiny Bilde: Event Horizon Telescope Collaboration}\\
 \footnotesize
