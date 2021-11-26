@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  18 OCT 2021 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  26 NOV 2021 09:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**interaktive_forelesningsnotater_2C_del2_av_2
+**interaktive_forelesningsnotater_2C_del2_av_2.tex
 (./interaktive_forelesningsnotater_2C_del2_av_2.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
@@ -907,24 +907,24 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 62.
 (./interaktive_forelesningsnotater_2C_del2_av_2.aux)
 \openout1 = `interaktive_forelesningsnotater_2C_del2_av_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -982,7 +982,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 303.
+Package hyperref Info: Link coloring ON on input line 305.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -996,66 +996,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 303.
-LaTeX Info: Redefining \pageref on input line 303.
-LaTeX Info: Redefining \nameref on input line 303.
+LaTeX Info: Redefining \ref on input line 305.
+LaTeX Info: Redefining \pageref on input line 305.
+LaTeX Info: Redefining \nameref on input line 305.
  (./interaktive_forelesningsnotater_2C_del2_av_2.out)
 (./interaktive_forelesningsnotater_2C_del2_av_2.out)
 \@outlinefile=\write5
 \openout5 = `interaktive_forelesningsnotater_2C_del2_av_2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 303.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 305.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 303.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 305.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 303.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 303.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 305.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 303.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 303.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 303.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 305.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 303.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 303.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 303.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 305.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 303.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 303.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 303.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 305.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 303.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 303.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 305.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 303.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 305.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 303.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 303.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 303.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 303.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 303.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 305.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 303.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 303.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 305.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 305.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
-03.
+05.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 3
-03.
+05.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 303.
+ut line 305.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1094,41 +1094,41 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<media/spacetimebending.pdf, id=68, 796.9775pt x 597.23125pt>
-File: media/spacetimebending.pdf Graphic file (type pdf)
-<use media/spacetimebending.pdf>
-Package pdftex.def Info: media/spacetimebending.pdf  used on input line 357.
-(pdftex.def)             Requested size: 199.24388pt x 149.30743pt.
+<media/spacetimebending.png, id=68, 1072.005pt x 800.9925pt>
+File: media/spacetimebending.png Graphic file (type png)
+<use media/spacetimebending.png>
+Package pdftex.def Info: media/spacetimebending.png  used on input line 359.
+(pdftex.def)             Requested size: 268.0006pt x 200.24763pt.
 
-Overfull \hbox (28.09624pt too wide) in paragraph at lines 357--357
+Overfull \hbox (96.85295pt too wide) in paragraph at lines 359--359
 [][]  
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 357
+LaTeX Font Info:    Trying to load font information for U+msa on input line 359
 .
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 357
+LaTeX Font Info:    Trying to load font information for U+msb on input line 359
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 357.
+ut line 359.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [4
 
- <./media/spacetimebending.pdf>] [5
+ <./media/spacetimebending.png>] [5
 
 ] [6
 
 ]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 387--387
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 389--389
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1136,7 +1136,7 @@ Overfull \hbox (1.33249pt too wide) in paragraph at lines 387--387
 [7
 
 ]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 391--391
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 393--393
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1144,7 +1144,7 @@ Overfull \hbox (1.33249pt too wide) in paragraph at lines 391--391
 [8
 
 ]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 396--396
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 398--398
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1152,221 +1152,221 @@ Overfull \hbox (1.33249pt too wide) in paragraph at lines 396--396
 [9
 
 ]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 402--402
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 404--404
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/maks_aldring2.png, id=167, 975.645pt x 530.98375pt>
+<media/maks_aldring2.png, id=153, 975.645pt x 530.98375pt>
 File: media/maks_aldring2.png Graphic file (type png)
 <use media/maks_aldring2.png>
-Package pdftex.def Info: media/maks_aldring2.png  used on input line 402.
+Package pdftex.def Info: media/maks_aldring2.png  used on input line 404.
 (pdftex.def)             Requested size: 214.64256pt x 116.81677pt.
 
-Overfull \vbox (10.03598pt too high) detected at line 402
+Overfull \vbox (10.03598pt too high) detected at line 404
  []
 
 [10
 
  <./media/maks_aldring2.png>]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 407--407
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 409--409
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/maks_aldring1.png, id=182, 468.75125pt x 394.47375pt>
+<media/maks_aldring1.png, id=168, 468.75125pt x 394.47375pt>
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 407.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 409.
 (pdftex.def)             Requested size: 103.12558pt x 86.78448pt.
 [11
 
  <./media/maks_aldring1.png>]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 417--417
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 419--419
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 417.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 419.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [12
 
 ]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 424--424
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 426--426
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 424.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 426.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [13
 
 ]
-Overfull \hbox (1.33249pt too wide) in paragraph at lines 429--429
+Overfull \hbox (1.33249pt too wide) in paragraph at lines 431--431
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 429.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 431.
 (pdftex.def)             Requested size: 103.12558pt x 86.78448pt.
 [14
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 435--435
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 437--437
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 435.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 437.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [15
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 440--440
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 442--442
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 440.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 442.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [16
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 449--449
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 451--451
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 449.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 451.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [17
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 458--458
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 460--460
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 458.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 460.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [18
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 470--470
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 472--472
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 470.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 472.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [19
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 478--478
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 480--480
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 478.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 480.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 
-Overfull \vbox (7.42206pt too high) detected at line 478
+Overfull \vbox (7.42206pt too high) detected at line 480
  []
 
 [20
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 491--491
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 493--493
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 491.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 493.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 
-Overfull \vbox (11.54494pt too high) detected at line 491
+Overfull \vbox (11.54494pt too high) detected at line 493
  []
 
 [21
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 504--504
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 506--506
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 504.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 506.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 
-Overfull \vbox (17.6945pt too high) detected at line 504
+Overfull \vbox (17.6945pt too high) detected at line 506
  []
 
 [22
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 513--513
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 515--515
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 513.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 515.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [23
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 522--522
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 524--524
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 522.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 524.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 
-Overfull \vbox (18.79025pt too high) detected at line 522
+Overfull \vbox (18.79025pt too high) detected at line 524
  []
 
 [24
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 531--531
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 533--533
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring1.png Graphic file (type png)
 <use media/maks_aldring1.png>
-Package pdftex.def Info: media/maks_aldring1.png  used on input line 531.
+Package pdftex.def Info: media/maks_aldring1.png  used on input line 533.
 (pdftex.def)             Requested size: 140.62645pt x 118.34303pt.
 [25
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 539--539
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 541--541
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1374,7 +1374,7 @@ Overfull \hbox (6.33249pt too wide) in paragraph at lines 539--539
 [26
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 551--551
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 553--553
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1382,77 +1382,77 @@ Overfull \hbox (6.33249pt too wide) in paragraph at lines 551--551
 [27
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 556--556
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 558--558
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring2.png Graphic file (type png)
 <use media/maks_aldring2.png>
-Package pdftex.def Info: media/maks_aldring2.png  used on input line 556.
+Package pdftex.def Info: media/maks_aldring2.png  used on input line 558.
 (pdftex.def)             Requested size: 214.64256pt x 116.81677pt.
 [28
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 561--561
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 563--563
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/maks_aldring3.png, id=376, 812.03375pt x 682.55pt>
+<media/maks_aldring3.png, id=362, 812.03375pt x 682.55pt>
 File: media/maks_aldring3.png Graphic file (type png)
 <use media/maks_aldring3.png>
-Package pdftex.def Info: media/maks_aldring3.png  used on input line 561.
+Package pdftex.def Info: media/maks_aldring3.png  used on input line 563.
 (pdftex.def)             Requested size: 178.64798pt x 150.16145pt.
 
-Overfull \vbox (18.30981pt too high) detected at line 561
+Overfull \vbox (18.30981pt too high) detected at line 563
  []
 
 [29
 
  <./media/maks_aldring3.png>]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 571--571
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 573--573
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring3.png Graphic file (type png)
 <use media/maks_aldring3.png>
-Package pdftex.def Info: media/maks_aldring3.png  used on input line 571.
+Package pdftex.def Info: media/maks_aldring3.png  used on input line 573.
 (pdftex.def)             Requested size: 162.40387pt x 136.50758pt.
 
-Overfull \vbox (16.68646pt too high) detected at line 571
+Overfull \vbox (16.68646pt too high) detected at line 573
  []
 
 [30
 
 ]
-<media/drink-coffee.png, id=398, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=383, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 586.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 588.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [31
 
  <./media/drink-coffee.png>]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 594--594
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 596--596
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/maks_aldring4.png, id=410, 749.80125pt x 527.9725pt>
+<media/maks_aldring4.png, id=396, 749.80125pt x 527.9725pt>
 File: media/maks_aldring4.png Graphic file (type png)
 <use media/maks_aldring4.png>
-Package pdftex.def Info: media/maks_aldring4.png  used on input line 594.
+Package pdftex.def Info: media/maks_aldring4.png  used on input line 596.
 (pdftex.def)             Requested size: 179.95598pt x 126.71599pt.
 
-Overfull \vbox (0.50598pt too high) detected at line 594
+Overfull \vbox (0.50598pt too high) detected at line 596
  []
 
 [32
 
  <./media/maks_aldring4.png>]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 600--600
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 602--602
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1460,81 +1460,81 @@ Overfull \hbox (6.33249pt too wide) in paragraph at lines 600--600
 [33
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 605--605
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 607--607
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/maks_aldring5.png, id=433, 816.04875pt x 720.6925pt>
+<media/maks_aldring5.png, id=419, 816.04875pt x 720.6925pt>
 File: media/maks_aldring5.png Graphic file (type png)
 <use media/maks_aldring5.png>
-Package pdftex.def Info: media/maks_aldring5.png  used on input line 605.
+Package pdftex.def Info: media/maks_aldring5.png  used on input line 607.
 (pdftex.def)             Requested size: 163.20685pt x 144.13594pt.
 
-Overfull \vbox (2.31482pt too high) detected at line 605
+Overfull \vbox (2.31482pt too high) detected at line 607
  []
 
 [34
 
  <./media/maks_aldring5.png>]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 617--617
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 619--619
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring5.png Graphic file (type png)
 <use media/maks_aldring5.png>
-Package pdftex.def Info: media/maks_aldring5.png  used on input line 617.
+Package pdftex.def Info: media/maks_aldring5.png  used on input line 619.
 (pdftex.def)             Requested size: 179.53128pt x 158.55284pt.
 
-Overfull \hbox (6.80629pt too wide) detected at line 617
+Overfull \hbox (6.80629pt too wide) detected at line 619
 []
  []
 
 [35
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 627--627
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 629--629
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring5.png Graphic file (type png)
 <use media/maks_aldring5.png>
-Package pdftex.def Info: media/maks_aldring5.png  used on input line 627.
+Package pdftex.def Info: media/maks_aldring5.png  used on input line 629.
 (pdftex.def)             Requested size: 179.53128pt x 158.55284pt.
 [36
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 638--638
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 640--640
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring5.png Graphic file (type png)
 <use media/maks_aldring5.png>
-Package pdftex.def Info: media/maks_aldring5.png  used on input line 638.
+Package pdftex.def Info: media/maks_aldring5.png  used on input line 640.
 (pdftex.def)             Requested size: 179.53128pt x 158.55284pt.
 [37
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 658--658
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 660--660
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/maks_aldring5.png Graphic file (type png)
 <use media/maks_aldring5.png>
-Package pdftex.def Info: media/maks_aldring5.png  used on input line 658.
+Package pdftex.def Info: media/maks_aldring5.png  used on input line 660.
 (pdftex.def)             Requested size: 171.37529pt x 151.34988pt.
 
-Overfull \vbox (10.87843pt too high) detected at line 658
+Overfull \vbox (10.87843pt too high) detected at line 660
  []
 
 [38
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 671--671
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 673--673
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1542,7 +1542,7 @@ Overfull \hbox (6.33249pt too wide) in paragraph at lines 671--671
 [39
 
 ]
-Overfull \hbox (6.33249pt too wide) in paragraph at lines 685--685
+Overfull \hbox (6.33249pt too wide) in paragraph at lines 692--692
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1552,24 +1552,24 @@ Overfull \hbox (6.33249pt too wide) in paragraph at lines 685--685
 ] [41
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 708--708
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 715--715
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/shell7.png, id=539, 1012.78375pt x 624.3325pt>
+<media/shell7.png, id=530, 1012.78375pt x 624.3325pt>
 File: media/shell7.png Graphic file (type png)
 <use media/shell7.png>
-Package pdftex.def Info: media/shell7.png  used on input line 708.
+Package pdftex.def Info: media/shell7.png  used on input line 715.
 (pdftex.def)             Requested size: 253.19531pt x 156.08273pt.
 
-Overfull \vbox (3.11716pt too high) detected at line 708
+Overfull \vbox (3.11716pt too high) detected at line 715
  []
 
 [42
 
  <./media/shell7.png>]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 714--714
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 721--721
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1577,7 +1577,7 @@ Overfull \hbox (0.43582pt too wide) in paragraph at lines 714--714
 [43
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 718--718
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 725--725
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1585,28 +1585,12 @@ Overfull \hbox (0.43582pt too wide) in paragraph at lines 718--718
 [44
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 725--725
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
-10.95 SIDE 
- []
-
-<media/2c4.png, id=576, 440.64626pt x 730.73pt>
-File: media/2c4.png Graphic file (type png)
-<use media/2c4.png>
-Package pdftex.def Info: media/2c4.png  used on input line 725.
-(pdftex.def)             Requested size: 141.00967pt x 233.83838pt.
-
-Overfull \vbox (16.12837pt too high) detected at line 725
- []
-
-[45
-
- <./media/2c4.png>]
 Overfull \hbox (0.43582pt too wide) in paragraph at lines 732--732
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
+<media/2c4.png, id=567, 440.64626pt x 730.73pt>
 File: media/2c4.png Graphic file (type png)
 <use media/2c4.png>
 Package pdftex.def Info: media/2c4.png  used on input line 732.
@@ -1615,26 +1599,42 @@ Package pdftex.def Info: media/2c4.png  used on input line 732.
 Overfull \vbox (16.12837pt too high) detected at line 732
  []
 
-[46
+[45
 
-]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 749--749
+ <./media/2c4.png>]
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 739--739
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/2c4.png Graphic file (type png)
 <use media/2c4.png>
-Package pdftex.def Info: media/2c4.png  used on input line 749.
+Package pdftex.def Info: media/2c4.png  used on input line 739.
 (pdftex.def)             Requested size: 141.00967pt x 233.83838pt.
 
-Overfull \vbox (16.12837pt too high) detected at line 749
+Overfull \vbox (16.12837pt too high) detected at line 739
+ []
+
+[46
+
+]
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 756--756
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
+10.95 SIDE 
+ []
+
+File: media/2c4.png Graphic file (type png)
+<use media/2c4.png>
+Package pdftex.def Info: media/2c4.png  used on input line 756.
+(pdftex.def)             Requested size: 141.00967pt x 233.83838pt.
+
+Overfull \vbox (16.12837pt too high) detected at line 756
  []
 
 [47
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 773--773
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 780--780
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1642,7 +1642,7 @@ Overfull \hbox (0.43582pt too wide) in paragraph at lines 773--773
 [48
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 782--782
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 789--789
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1650,7 +1650,7 @@ Overfull \hbox (0.43582pt too wide) in paragraph at lines 782--782
 [49
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 786--786
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 793--793
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1658,7 +1658,7 @@ Overfull \hbox (0.43582pt too wide) in paragraph at lines 786--786
 [50
 
 ]
-Overfull \hbox (0.43582pt too wide) in paragraph at lines 796--796
+Overfull \hbox (0.43582pt too wide) in paragraph at lines 803--803
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1666,20 +1666,20 @@ Overfull \hbox (0.43582pt too wide) in paragraph at lines 796--796
 [51
 
 ]
-Overfull \hbox (7.9369pt too wide) in paragraph at lines 807--807
+Overfull \hbox (7.9369pt too wide) in paragraph at lines 814--814
 [][][][][][][][][]  
  []
 
 [52
 
 ]
-<media/gps.png, id=660, 699.61375pt x 317.185pt>
+<media/gps.png, id=651, 699.61375pt x 317.185pt>
 File: media/gps.png Graphic file (type png)
 <use media/gps.png>
-Package pdftex.def Info: media/gps.png  used on input line 813.
+Package pdftex.def Info: media/gps.png  used on input line 820.
 (pdftex.def)             Requested size: 223.88097pt x 101.50127pt.
 
-Overfull \vbox (5.5205pt too high) detected at line 813
+Overfull \vbox (5.5205pt too high) detected at line 820
  []
 
 [53
@@ -1687,29 +1687,29 @@ Overfull \vbox (5.5205pt too high) detected at line 813
  <./media/gps.png>]
 File: media/gps.png Graphic file (type png)
 <use media/gps.png>
-Package pdftex.def Info: media/gps.png  used on input line 819.
+Package pdftex.def Info: media/gps.png  used on input line 826.
 (pdftex.def)             Requested size: 223.88097pt x 101.50127pt.
  [54
 
 ]
 File: media/gps.png Graphic file (type png)
 <use media/gps.png>
-Package pdftex.def Info: media/gps.png  used on input line 827.
+Package pdftex.def Info: media/gps.png  used on input line 834.
 (pdftex.def)             Requested size: 223.88097pt x 101.50127pt.
  [55
 
 ]
 File: media/gps.png Graphic file (type png)
 <use media/gps.png>
-Package pdftex.def Info: media/gps.png  used on input line 835.
+Package pdftex.def Info: media/gps.png  used on input line 842.
 (pdftex.def)             Requested size: 223.88097pt x 101.50127pt.
  [56
 
 ]
-<media/gps2.png, id=705, 323.2075pt x 100.375pt>
+<media/gps2.png, id=696, 323.2075pt x 100.375pt>
 File: media/gps2.png Graphic file (type png)
 <use media/gps2.png>
-Package pdftex.def Info: media/gps2.png  used on input line 846.
+Package pdftex.def Info: media/gps2.png  used on input line 853.
 (pdftex.def)             Requested size: 226.2437pt x 70.26201pt.
  [57
 
@@ -1764,7 +1764,7 @@ Package pdftex.def Info: media/gps2.png  used on input line 846.
 ] [81
 
 ]
-Overfull \vbox (1.01414pt too high) detected at line 1081
+Overfull \vbox (1.01414pt too high) detected at line 1088
  []
 
 [82
@@ -1788,45 +1788,50 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_2C_del2_av_2
  ) 
 Here is how much of TeX's memory you used:
  26076 strings out of 478994
- 510670 string characters out of 5858185
- 848028 words of memory out of 5000000
+ 510646 string characters out of 5858185
+ 848022 words of memory out of 5000000
  42728 multiletter control sequences out of 15000+600000
  430143 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,15n,132p,1136b,1209s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,15n,132p,1140b,1209s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{gps19b} has been referenced but does not exist, r
 eplaced by a fixed one
 
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pf
-b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on interaktive_forelesningsnotater_2C_del2_av_2.pdf (83 pages, 5
-057630 bytes).
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9
+.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on interaktive_forelesningsnotater_2C_del2_av_2.pdf (83 pages, 6
+467587 bytes).
 PDF statistics:
- 1126 PDF objects out of 1200 (max. 8388607)
- 952 compressed objects within 10 object streams
+ 1132 PDF objects out of 1200 (max. 8388607)
+ 958 compressed objects within 10 object streams
  253 named destinations out of 1000 (max. 500000)
  224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
