@@ -83,11 +83,11 @@ def create_hub_nav_html(fname: str) -> None:
 
         <head>
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="hub_style.css">
-            <link rel="stylesheet" href="lecture.css">
+            <link rel="stylesheet" href="forelesninger/hub_style.css">
+            <link rel="stylesheet" href="forelesninger/lecture.css">
             <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="pagehistory.js"></script>
+            <script src="forelesninger/pagehistory.js"></script>
         </head>
 
         <body>
@@ -216,10 +216,10 @@ def create_hub_nav_html(fname: str) -> None:
 
             <script>
 
-                let arrow = document.querySelectorAll(".arrow");
+                let arrow = document.querySelectorAll(".iocn-link");
                 for (var i = 0; i < arrow.length; i++) {
                     arrow[i].addEventListener("click", (e) => {
-                        let arrowParent = e.target.parentElement.parentElement;
+                        let arrowParent = e.target.parentElement;
                         arrowParent.classList.toggle("showMenu");
                     });
                 }
@@ -363,17 +363,41 @@ def main():
     # Check requirement and print error if pandoc is missing
     import sys, subprocess
     from shutil import which
-    
+    import shutil
+    import pathlib
+
+    output_dir_name = "output"
+    output_path = pathlib.Path(f"{output_dir_name}/")
+    try:
+        output_path.mkdir(exist_ok=True)
+    except FileExistsError:
+        raise FileExistsError(
+            f"{output_dir_name} directory already exists. Please remove or rename this before creating a new version"
+        )
+
     if which("pandoc") is None:
         print("This script requires Pandoc to work.")
         print("Please install Pandoc by running 'brew install pandoc'")
         print("Exiting...")
         exit()
 
-    if len(sys.argv) > 1:
-        files_list = sys.argv[1:]
-    else:
-        files_list = [input("Please enter a file name:\n")]
+    # if len(sys.argv) > 1:
+    #     files_list = sys.argv[1:]
+    # else:
+    #     files_list = [input("Please enter a file name:\n")]
+
+
+    files_list = []
+    media_list = []
+    current_dir = pathlib.Path.cwd()
+    for dir in current_dir.iterdir():
+        if str(dir.name)[0].isdigit():
+            for file in dir.iterdir():
+                if file.name.startswith("interaktive_") and file.name.endswith(".tex"):
+                    files_list.append("/".join(file.parts[-2:]))
+                elif file.name == "media":
+                    media_list.append(str(file))
+
 
     for fname in files_list:
         fname_list = fname.split('_')
@@ -406,7 +430,7 @@ def main():
             ('(\\\\newcommand{\\\\(?:d?next|cur)page).*', '\\1}{}'),
             ('\\\\newcommand\{(\\\\(?:.*?)button)\}\[1\]\{\\\\setbeamer.*', '\\\\newcommand{\\1}[1]{#1}'),
             #('\\\\setbeamercolor.*', '')
-            ('\{\n\\\\setbeamercolor.*', '{\n')
+            ('\{\n\\\\setbeamercolor.*', '{\n'),
             #('\\\\end\{frame\}\n\}', '\\\\end{frame}')
         ]
         
@@ -434,18 +458,26 @@ def main():
                 # Removed after Frode changed structure of LaTeX-code
                 #('<img src="(.*?)"', '<img src="../media/\\1"'),
                 # Replaced with this to mach new path
-                ('<img src="(.*?)"', '<img src="../\\1"'),
+                ('<img src="(.*?)"', '<img src="../\\1" onclick="imageZoomOverlay(this)"'),
                 ('<a href="(https:\/\/www.uio.*?.(?:mp4|mov))(?:\\?vrtx=view-as-webpage)?">(.*?)<\/a>', '\\2 <video width="320" height="240" controls><source src="\\1" type="video/mp4">Your browser does not support the video tag.</video><br>'),
                 ('<a href="#(.*?)">(.*?)</a>', '<a href="\\1.html">\\2</a>'),
                 (' ', ' '),
                 #('style="color: white"', 'style="color: red"'),
                 ('<a href="https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t">FORUM</a>', '<a href="https://uio.forum.org/fkhansen/9izkv0g8nc99ys5t" target="_blank" class="forum-button">FORUM</a>'),
                 ('<a href="https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16">FORUM</a>', '<a href="https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16" target="_blank" class="forum-button">FORUM</a>'),
-                ('<a href="(.*?)">Trykk her (.*?)<\/a>', '<a href="\\1" class="trykkher">Trykk her \\2</a>'),
+                # ('<a href="(http.*?)">Trykk her (.*?)<\/a>', '<a href="\\1" target="_blank" class="trykkher">Trykk her \\2</a>'),
+                # ('<a href="(http.*?)">dette skjemaet(.*?)<\/a>', '<a href="\\1" target="_blank" class="trykkher">dette skjemaet</a>'),
+                ('<a href="(http.*?)">', '<a href="\\1" target="_blank" class="trykkher">'),
+                ('<span style="background-color: sunset">', '<span class="newtab">'),
+                ('<a href="(.*?\.html)">Trykk her(.*?)<\/a>', '<a href="\\1" class="trykkher">Trykk her \\2</a>'),
                 ('<a href="(.*?)">(Forrige|Neste) side<\/a>', '<a href="\\1" class="nesteforrigeside">\\2 side</a>'),
                 ('<a href="(.*?)">(Forrige|Neste) side<\/a>', '<a href="\\1" class="nesteforrigeside">\\2 side</a>'),
-                ('<a href="(.*?)">(Ja|Nei)<\/a>', '<a href="\\1" class="janei">\\2</a>'),
-                ('<a href="(.*?)">🙂 🙁<\/a>', '<a href="\\1" class="🙂🙁">🙂 🙁</a>')
+                ('<a href="(.*?)">(Ja|Nei)<\/a>', '<a href="\\1"  class="janei">\\2</a>'),
+                ('<a href="(.*?)">🙂 🙁<\/a>', '<a href="\\1" target="_blank" class="🙂🙁">🙂 🙁</a>'),
+                ('<strong>SIDE(.*)<\/strong>', '<strong class="side">SIDE\\1</strong>'),
+                ('🙂 🙁</a></span></span>(.*?)<span><span class="newtab">',  '🙂 🙁</a></span></span><span class="frametitle">\\1</span><span><span class="newtab">'),
+                ('color: denim', 'color: rgb(15, 74, 140)')
+
             ]
 
             for subpair in html_substitutions:
@@ -467,7 +499,52 @@ def main():
 
     print("Converting latex...")
     print('[' + 78 * '#' + ']')
-    create_hub_nav_html("index.html")
+    # create_hub_nav_html("index.html")
+
+    print("Copying over media files...")
+
+
+    files_to_copy_to_forelesninger = [
+        "html/master.js", 
+        "html/dashboard.html", 
+        "html/style.css",
+        "html/foundation.css",
+        "html/hub_style.css",
+        "html/pagehistory.js",
+        "html/lecture.css",
+        "html/space.png",
+    ]
+    
+    target_path = pathlib.Path("forelesninger/")
+    for file in files_to_copy_to_forelesninger:
+        file = pathlib.Path(file)
+        if file.is_file():
+            shutil.copy2(file, target_path)
+
+    files_to_copy_to_output = [
+        "html/index.html",
+    ]
+
+    for file in files_to_copy_to_output:
+        file = pathlib.Path(file)
+        if file.is_file():
+            shutil.copy2(file, output_dir_name)
+
+    shutil.copytree(str(target_path.resolve()), str(output_path.resolve()) + "/forelesninger/", dirs_exist_ok=True)
+
+    media_path = output_path / "forelesninger/"
+    for dir in media_path.iterdir():
+        if dir.is_dir():
+            part = str(dir.name)
+            media_to_copy = [media for media in media_list if part in media]
+            if len(media_to_copy) > 1:
+                raise ValueError("A duplicate directory name exists in lecture notes")
+            elif len(media_to_copy) == 1:
+                media_to_copy = media_to_copy[0]
+                shutil.copytree(media_to_copy, f"{dir}/media/", dirs_exist_ok=True)
+
+    shutil.rmtree(str(target_path.resolve()))
+
 
 if __name__ == "__main__":
     main()
