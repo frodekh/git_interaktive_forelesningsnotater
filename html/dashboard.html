@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="foundation.css">
     <style>
         .list-group {
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
             margin-top: 1rem;
             margin-bottom: 1rem;
             border: 1px solid #e6e6e6;
             border-radius: 0;
             color: white;
-            background: #191D26;
+            background: #212731;
             box-shadow: none;
-            overflow: hidden;
+            overflow: scroll;
             color: #0a0a0a;
             }
 
@@ -108,16 +111,16 @@
         <h1>Velkommen!</h1>
         <h2>Bruk navigasjonen på venstre side for å velge forelesningsnotat.</h2>
         <br/>
-        <!-- <div class="container-ul">
+        <div class="container-ul">
             <h3>Historikk</h3>
             <ul id="historylist" class="list-group"></ul>
-        </div> -->
+        </div>
     </article>
     
-    <!-- <script src="pagehistory.js"></script>
+    <script src="pagehistory.js"></script>
     <script>
         document.getElementById('historylist').innerHTML = getHistory()
-    </script> -->
+    </script>
 
 </body>
 </html>

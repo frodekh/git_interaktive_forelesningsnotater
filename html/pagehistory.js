@@ -25,13 +25,23 @@ function iframeclick() {
 }
 
 function getHistory(){
-    const historyCookies = document.cookie.split(';')
+    let historyCookies = document.cookie.split(';')
+
+    historyCookies.sort(function(a, b){
+        let a_str = ((a.substr(a.length -23).replace("kl: ", "")).replaceAll("/", "-")).split("-")
+        let a_date = new Date(a_str[1]+ "-" + a_str[0] + "-" + a_str[2])
+        let b_str = ((b.substr(b.length -23).replace("kl: ", "")).replaceAll("/", "-")).split("-")
+        let b_date = new Date(b_str[1]+ "-" + b_str[0] + "-" + b_str[2])
+        
+        return b_date - a_date
+    })
+    
     let html = ''
-    for(let i = historyCookies.length -1; i > 0 ; i--){
+    for(let i = 0; i < historyCookies.length; i++){
         let split = historyCookies[i].split( '=' );
 
         let link = split[1].split('?')[0]
-        link = link.replace("https://acruxdb.uio.no","")
+        link = link.replace("https://ast2000.utenforuio.no","")
         let timestamp = historyCookies[i].split( '?' );
         timestamp = timestamp[timestamp.length - 1]
         
@@ -39,7 +49,6 @@ function getHistory(){
  
         html += `<a href='${link}'><li class='list-group-item'>${name}<br/><span class='small-font'> ${timestamp} <span></li></a>`
     }
-    //console.log(html)
  
     return html
 }

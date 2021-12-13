@@ -75,7 +75,7 @@ def create_html_file(fname: str, title: str, body: str) -> None:
     fopen.close()
 
 def create_hub_nav_html(fname: str) -> None:
-    fopen = open("./index.html", 'w')
+    fopen = open(fname, 'w')
     html_start = """
 
         <!DOCTYPE html>
@@ -499,7 +499,7 @@ def main():
 
     print("Converting latex...")
     print('[' + 78 * '#' + ']')
-    # create_hub_nav_html("index.html")
+    create_hub_nav_html("html/index.html")
 
     print("Copying over media files...")
 
