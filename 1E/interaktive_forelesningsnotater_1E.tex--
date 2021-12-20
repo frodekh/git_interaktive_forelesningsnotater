@@ -1,0 +1,870 @@
+%convert -coalesce launch.gif launch_%d.png
+\documentclass{beamer}
+
+\input{../usercommands_html}
+
+\usetheme{Boadilla}
+%\usepackage{multimedia}
+%\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{tikzsymbols}
+\usepackage{ifthen}
+
+%%%%mathcircled
+\makeatletter
+\newcommand\mathcircled[1]{%`
+  \mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[2]{%
+  \tikz[baseline=(math.base)] \node[draw,circle,red, thick, inner sep=2pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+%%%%
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\definecolor{darkscarlet}{rgb}{0.34, 0.01, 0.1}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{green(ryb)}{rgb}{0.4, 0.69, 0.2}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{silver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{turquoise}{rgb}{0.19, 0.84, 0.78}
+\definecolor{uclagold}{rgb}{1.0, 0.7, 0.0}
+\definecolor{urobilin}{rgb}{0.88, 0.68, 0.13}
+\definecolor{vegasgold}{rgb}{0.77, 0.7, 0.35}
+\definecolor{vanilla}{rgb}{0.95, 0.9, 0.67}
+\definecolor{straw}{rgb}{0.89, 0.85, 0.44}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{brown(traditional)}{rgb}{0.59, 0.29, 0.0}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{darkblue}{rgb}{0,0,0.54}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yellow,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\let\hrefori\href
+\renewcommand{\href}[2]{{\setlength{\fboxsep}{1pt}\colorbox{sunset}{\hrefori{#1}{#2}}}}
+
+
+%title
+\setbeamercolor{block title alerted}{fg=white,bg=cyan}
+%body
+\setbeamercolor{block body alerted}{fg=black!90,bg=yellow!60}
+
+%title
+\setbeamercolor{block title}{fg=black,bg=turquoise}
+%body
+\setbeamercolor{block body}{fg=yellow,bg=bronze}
+
+
+
+
+\newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\pagenobutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = apricot, rounded corners = 5pt]{\color{brown(traditional)}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\headlinebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = blue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{#1}}
+
+\newcommand{\forumbutton}{\href{https://astro-discourse.utenforuio.no/c/ast2000/sporsmal-til-forelesningsnotater-del-1a-1g/16}{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = darkblue, rounded corners = 5pt]{\color{yellow}\Large\insertbuttontext};}\beamerbutton{\textcolor{red}{\small FORUM}}}}
+
+\newcommand{\curpage}{\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\nextpage}{\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+\newcommand{\dnextpage}{\refstepcounter{pageno}\refstepcounter{pageno}\pagenobutton{\small side \thepageno\  av \thenopages}}
+
+\newcommand{\lastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebutton}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\lastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\}
+\newcommand{\clastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\}
+\newcommand{\dlastpagebuttonx}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\}
+
+\newcommand{\lastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\nextpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\clastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\curpage\\\headlinebutton{\headline}\forumbutton\\}
+\newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
+
+\newcommand{\nytemaside}[1]{
+\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\vspace*{1cm}
+\centerline{\Large\bf\textcolor{yellow}{\headline}}
+\vspace*{2cm}
+\ifthenelse{\equal{#1}{0}}{\centerline{\textcolor{yellow}{Siste tema i denne forelesningen!}}}{\centerline{\textcolor{yellow}{\footnotesize Dette temaet fortsetter frem til side \ref{#1} av \thenopages.}}}
+\vspace*{0.5cm}
+}
+
+
+\newcommand{\fullframe}[5]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#5
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetwo}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#5
+\column{0.5\textwidth}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+
+
+
+\newcommand{\fullframetxt}[6]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{#5}}
+\end{frame}
+}
+
+\newcommand{\choiceframe}[4]{
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#4
+\end{frame}
+}
+
+\newcommand{\colfullframe}[6]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#6
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetwo}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+\begin{columns}
+\column{0.5\textwidth}
+#6
+\column{0.5\textwidth}
+#7
+\hyperlink{#3}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+}
+}
+
+\newcommand{\colfullframetxt}[7]{
+{
+\setbeamercolor{background canvas}{bg=#5}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#4}
+\lastpagebutton{#2}
+#7
+\hyperlink{#3}{\pagebutton{#6}}
+\end{frame}
+}
+}
+
+\newcommand{\colchoiceframe}[5]{
+{
+\setbeamercolor{background canvas}{bg=#4}
+\begin{frame}
+\label{#1}
+\addtocounter{pageno}{#3}
+\lastpagebutton{#2}
+#5
+\end{frame}
+}
+}
+
+
+\newcommand{\pagequestion}[3]{
+\hyperlink{#1}{\pagebutton{#2}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#3}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\samepagequestion}[4]{
+\hyperlink{#1}{\pagebutton{#2}}\hyperlink{#1}{\pagebutton{#3}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#4}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcommand{\twopagequestion}[7]{
+\hyperlink{#1}{\pagebutton{#3}}\hyperlink{#2}{\pagebutton{#4}}
+\pause
+%#3 normalt -1 for første spørsmål
+\addtocounter{pageno}{#5}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+#7
+\addtocounter{pageno}{#6}
+\begin{itemize}[<+->]
+\item[] \hypertarget<.>{#1}{}
+\end{itemize}
+\vspace{-0.5cm}
+}
+
+\newcounter{pageno}
+\newcounter{nopages}
+\setcounter{nopages}{42}
+
+\newcommand{\headline}{\small Introduksjon}
+
+\begin{document}
+
+\begin{frame}
+\label{front2}
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1E\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1e.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+\hyperlink{front3}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+\begin{frame}
+\label{front3}
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+\hyperlink{tableofcontents}{\pagebutton{Trykk denne knappen for å begynne}}
+\end{frame}
+
+\begin{frame}
+\label{tableofcontents}
+\hyperlink{front3}{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item \hyperlink{blue_nytema1}{\headlinebutton{Hydrostatisk likevekt}}
+\item \hyperlink{blue_nytema2}{\headlinebutton{Utledning: hydrostatisk likevekt}}
+\item \hyperlink{hydrostat15}{\headlinebutton{Likningen for hydrostatisk likevekt}}
+\end{itemize}
+\hyperlink{blue_intro}{\choicebutton{Neste side}}
+\end{frame}
+
+
+%%%%% intro
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_intro}
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{front}{\pagebutton{Forrige side}}\\
+%\vspace{1cm}
+\includegraphics[scale=0.3]{media/atmosphere.jpg}\\
+\column{0.5\textwidth}
+\small \textcolor{yellow}{Velkommen til del 1E! Her skal vi bruke litt termodynamikk igjen, nå kombinert med gravitasjonskrefter. Både i planetatmosfærer og inne i en stjerne så har vi gass som blir trukket på av tyngdekraften. Men for stabile stjerner og stabile atmosfærer så er det noe som trykker tilbake og gjør at at disse ikke kollapser. Vi skal her utlede en kraftfull likning som gjør av vi kan lære mye om et slikt system (som atmosfærer eller en stjernes oppbygging) utifra det enkle faktum at det er stabilt. Dette interaktive forelesningsnotatet tilsvarer litt mindre enn en dobbelttime fysisk forelesning.}
+ \\\textcolor{yellow}{\bf Er du klar?}\\\vspace*{1cm}\hyperlink{intro2}{\pagebutton{Neste side}}
+%\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
+\end{columns}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{intro2}
+\lastpagebutton{blue_intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/160338}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/160338}{\choicebutton{Nei}}\ \ \ \ \hyperlink{blue_nytema1}{\choicebutton{Ja}}\\
+\end{frame}
+
+\renewcommand{\headline}{\small Hydrostatisk likevekt}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema1}
+\hyperlink{intro2}{\pagebutton{\small Forrige side}}
+\nytemaside{likningen}
+\hyperlink{hydrostat1}{\pagebutton{Nå er jeg nysjerrig her!}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{hydrostat1}
+\dlastpagebutton{intro2}
+{\bf Fant du svar på spørsmålene på skjemaet?} 
+Innså du at trykket kan ha en rolle i å gi motkraft til gravitasjon?\\
+\includegraphics[scale=0.5]{media/star_dm.png}\\
+Her ser vi et bittelite element av gassen med masse $dm$. Gravitasjonskrafta prøver å trekke gasselementet nedover mens trykket virker oppover og motvirker krafta? Er det slik det funker? Altså siden
+\[
+P=\frac{F}{A}
+\]
+så får vi en bitteliten kraft $dF=PdA$ der $dA$ er arealet av det bittelille gasselementet?
+\hyperlink{hydrostat2}{\pagebutton{Tja, noe sånt må det vel være}}\hyperlink{hydrostat2}{\pagebutton{Mjaaaa, må tenke litt på'n}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat2}
+\lastpagebutton{hydrostat1}
+Vi zoomer nå inn på dette gasselementet som vi har valgt her til å være sylindrisk med sideflateareal $dA$ og høyde $dr$.\\
+\includegraphics[scale=0.6]{media/dm_no_r.png}\\
+Her ser vi kreftene tegnet inn. \textcolor{red}{ Enig i at gravitasjon virker kun nedover?}\textcolor{blue}{ Også enig i at trykket ikke kun virker oppover, gasstrykk virker jo fra alle kanter, ikke sant?}{\bf \ Dermed vil vel gasstrykket ovenfra kanselere gasstrykket nedenfra?}\textcolor{red}{ Og vi er like langt...?}{\bf \ Gravitasjon vinner igjen fordi kreftene fra gass-trykket kanselerer hverandre?} Og dermed faller solen sammen til et sort hull og atmosfæren vår faller ned! {\bf Ikke det som skjer i virkeligheten sier du?} \textcolor{red}{Hvorfor ikke det da???}
+\hyperlink{hydrostat3}{\pagebutton{Nåde deg hvis du trykker her uten å ha tenkt deg om først!}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat3}
+\lastpagebutton{hydrostat2}
+\hyperlink{hydrostat4}{\pagebutton{Jeg vet svaret!!!}}\\
+\vspace*{1cm}
+\hyperlink{hydrostat4}{\pagebutton{Jeg klarer ikke å se det}}\\
+\vspace*{1cm}
+\hyperlink{hydrostat2}{\pagebutton{Jeg tenkte egentlig ikke så nøye gjennom...}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat4}
+\lastpagebutton{hydrostat3}
+OK da! Så kanskje gasstrykket ikke er det samme i alle høyder $r$? Jammen det stemmer jo i atmosfæren vår ihvertfall. Der minker jo trykket med høyden slik at trykket er en funksjon av avstand $r$ fra jordas sentrum. Siden gass-elementet vårt er infinitesimalt lite så er høydeforskjellen over og under infinitesimalt liten, den er $dr$, men da blir vel også trykkforskjellen $dP$ mellom trykket ovenfra og trykket nedenfra infinitesimalt liten? La oss illustrere det her:\\
+\includegraphics[scale=0.25]{media/dm.png}\\
+\hyperlink{hydrostat4b}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat4b}
+\lastpagebutton{hydrostat4}
+Javel! Den bittelitte trykkforskjellen $dP$ må altså være slik at trykk-krafta er større undenfra enn ovenfra. Men en en infinitesimal liten trykkforsjell $dP$ må vel gi opphav til en infinitesimal liten kraft undenfra. {\bf Hvordan kan denne infinitesimalt lille krafta klare å veie opp mot tyngdekrafta som trekker nedover???}\\
+\includegraphics[scale=0.25]{media/dm.png}\\
+\hyperlink{hydrostat4c}{\pagebutton{Jeg tror kanskje jeg vet det...}}\\
+\hyperlink{hydrostat4c}{\pagebutton{Jeg har tenkt og tenkte, men denne var litt vrien...}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat4c}
+\lastpagebutton{hydrostat4b}
+{\bf AHA!} Javisst ja, massen $dm$ er jo også infinitesimalt lite. Og tyngdekrafta er proporsjonalt med massen, dermed blir også tyngdekrafta infinitesimalt liten. Og da er det ikke så rart at en bitteliten trykk-kraft kan stå imot.
+\begin{alertblock}{Hydrostatisk likevekt}
+Hvis trykkendringene oppover i atmosfæren eller oppover i stjerna er slik at trykk-krafta undenfra på ethvert område inne i gassen nøyaktig oppveier tyngdekrafta, så vil stjerna eller atmosfæren være stabil. Dette kaller vi {\bf hydrostatisk likevekt}. Når en stjerne  (eller atmosfære) dannes så er den i begynnelsen ikke i en slik likevekt, men siden dette er en energetisk fordelaktig tilstand så vil stjerna med tiden nå en slik likevekt.
+\end{alertblock}
+Vi skal nå bruke Newtons 2.lov på et slikt masseelement inne i gassen til å utlede en likning som beskriver hvordan et slik gasselement vil akselerere hvis en av kreftene er større enn det andre. Til slutt krever vi at elementet ikke akselererer, altså at vi har hydrostatiskk likevekt. Da får vi {\bf likningen for hydrostatisk likevekt.} \textcolor{red}{Denne likningen skal vi bruke til bl.a. å modellere atmosfærer og stjerners indre.}
+\hyperlink{blue_nytema2}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\renewcommand{\headline}{\small Likningen for hydrostatisk likevekt}
+{
+\setbeamercolor{background canvas}{bg=blue}
+\begin{frame}
+\label{blue_nytema2}
+\hyperlink{hydrostat4c}{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\hyperlink{hydrostat5}{\pagebutton{Sett igang med utledningene!}}
+\end{frame}
+}
+
+
+
+\begin{frame}
+\label{hydrostat5}
+\lastpagebutton{hydrostat4c}\label{likningen}
+\includegraphics[scale=0.25]{media/dm.png}\\
+Så lenge trykk er $P=F/A$ og krafta undenfra er gitt ved gasstrykket $P(r)$ i denne høyden, så blir vel kraften undenfra gitt ved
+\[
+dF_\mathrm{oppover}=P(r)dA
+\]
+Og tilsvarende blir vel kraften fra gasstrykket $P(r+dr)$ ovenfra (merk $r+dr$ siden vi er $dr$ høyere opp)
+\[
+dF_\mathrm{nedover}=P(r+dr)dA
+\]
+{\bf Får du det til å stemme?}
+\hyperlink{riktig_stemmer}{\pagebutton{Soleklart!}}\hyperlink{feil_stemmerikke}{\pagebutton{Dette tror jeg ikke kan stemme!}}
+\end{frame}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feil_stemmerikke}
+\lastpagebutton{hydrostat5}
+\textcolor{white}{Hva er det du ikke synes stemmer? Mistenker at du kanskje ikke henger helt med. Ta kontakt med foreleser!}
+\hyperlink{hydrostat6}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktig_stemmer}
+\clastpagebutton{hydrostat5}
+Det er bra vi er enig!
+ \hyperlink{hydrostat6}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{hydrostat6}
+\lastpagebutton{hydrostat5}
+Hva så med gravitasjonskrafta da? Hvis massen av gasselementet er $dm$, så bli vel det...
+\hyperlink{hydrostat6_b}{\pagebutton{Trykk her når du har skrevet ned et forslag!}}\\
+
+\textcolor{white}{
+\[
+dF=-G\frac{M(r)dm}{r^2}
+\]
+der $M(r)$ er massen av alt som er under høyden $r$. Når vi modellerer en atmosfære så vil jo massen til planeten utgjør i praksis hele $M(r)$ slik at $M(r)=M$ der $M$ er massen til planeten. Den lille ekstra massen fra atmosfæren som vi får ettersom vi kommer høyere og høyere opp er forsvinnende liten i forhold til den totalt massen $M$ av planeten.
+MEN, situasjonen er derimot en helt annen hvis...}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat6_b}
+\lastpagebutton{hydrostat5}
+Hva så med gravitasjonskrafta da? Hvis massen av gasselementet er $dm$, så bli vel det...
+{\pagebutton{Trykk her når du har skrevet ned et forslag!}}\\
+
+\[
+dF=-G\frac{M(r)dm}{r^2}
+\]
+der $M(r)$ er massen av alt som er under høyden $r$. Når vi modellerer en atmosfære så vil jo massen til planeten utgjør i praksis hele $M(r)$ slik at $M(r)=M$ der $M$ er massen til planeten. Den lille ekstra massen fra atmosfæren som vi får ettersom vi kommer høyere og høyere opp er forsvinnende liten i forhold til den totalt massen $M$ av planeten.
+
+\hyperlink{hydrostat7}{\pagebutton{MEN, situasjonen er derimot en helt annen hvis...}}
+\end{frame}
+
+
+
+
+\begin{frame}
+\label{hydrostat7}
+\dlastpagebutton{hydrostat6}
+\begin{columns}
+\column{0.5\textwidth}
+{\small
+\textcolor{red}{Situasjonen er derimot en helt annen hvis vi for eksempel holder på å modellere en stjernes indre:}\\
+\includegraphics[scale=0.5]{media/star_dm.png}\\
+Her blir den totale massen under posisjonen $r$ tydelig større og større fra $r=0$ i sentrum til $r=R$ på overflaten av stjerna. Her må vi ta med $r$-variasjonen av $M(r)$. Men hvis du ser på figuren, nøyaktig hvilken del av denne stjerna bidrar til massen $M(r)$ som virker med tyngdekraft på $dm$??
+}
+\column{0.5\textwidth}
+\hyperlink{hydrostat7_b}{\pagebutton{\small Trykk her når du har et forslag!}}\\
+\textcolor{white}{
+{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???
+small Tenk 2 ganger før du trykker her!}\\
+\textcolor{white}{
+Du tenkte bare 1 gang! Tenk en gang til!
+\small Trykk her når du er ferdigtenkt}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat7_b}
+\dlastpagebutton{hydrostat6}
+\begin{columns}
+\column{0.5\textwidth}
+{\small
+\textcolor{red}{Situasjonen er derimot en helt annen hvis vi for eksempel holder på å modellere en stjernes indre:}\\
+\includegraphics[scale=0.5]{media/star_dm.png}\\
+Her blir den totale massen under posisjonen $r$ tydelig større og større fra $r=0$ i sentrum til $r=R$ på overflaten av stjerna. Her må vi ta med $r$-variasjonen av $M(r)$. Men hvis du ser på figuren, nøyaktig hvilken del av denne stjerna bidrar til massen $M(r)$ som virker med tyngdekraft på $dm$??
+}
+\column{0.5\textwidth}
+\pagebutton{\small Trykk her når du har et forslag!}\\
+{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???
+\hyperlink{hydrostat7_c}{\pagebutton{\small Tenk 2 ganger før du trykker her!}}\\
+
+\textcolor{white}{
+Du tenkte bare 1 gang! Tenk en gang til!
+\small Trykk her når du er ferdigtenkt}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat7_c}
+\dlastpagebutton{hydrostat6}
+\begin{columns}
+\column{0.5\textwidth}
+{\small
+\textcolor{red}{Situasjonen er derimot en helt annen hvis vi for eksempel holder på å modellere en stjernes indre:}\\
+\includegraphics[scale=0.5]{media/star_dm.png}\\
+Her blir den totale massen under posisjonen $r$ tydelig større og større fra $r=0$ i sentrum til $r=R$ på overflaten av stjerna. Her må vi ta med $r$-variasjonen av $M(r)$. Men hvis du ser på figuren, nøyaktig hvilken del av denne stjerna bidrar til massen $M(r)$ som virker med tyngdekraft på $dm$??
+}
+\column{0.5\textwidth}
+\pagebutton{\small Trykk her når du har et forslag!}\\
+
+
+{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???
+{\pagebutton{\small Tenk 2 ganger før du trykker her!}}\\
+
+Du tenkte bare 1 gang! Tenk en gang til!
+\hyperlink{hydrostat8}{\pagebutton{\small Trykk her når du er ferdigtenkt}}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+\label{hydrostat8}
+\addtocounter{pageno}{1}
+\dlastpagebutton{hydrostat7}
+\includegraphics[scale=0.5]{media/star_dm.png}\\
+Man kan vise at hvis du har et skall med kulesymmetrisk massefordeling så vil den totale gravitasjonskrafta på alt det som er innenfor skallet være 0! Vi skal ikke vise det her, men det finnes en helt analog utledning i elektromagnetisme: den elektriske krafta innenfor et elektrisk ladd kuleskall er 0. Gravitasjonskreftene fra de forskjellige sidene av skallet nuller hverandre ut. {\bf Dermed får vi ingen gravitasjonskrefter på $dm$ fra alt som ligger i avstand større enn $r$ fra sentrum.}
+\hyperlink{hydrostat9}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat9}
+\lastpagebutton{hydrostat8}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.5]{media/star_dm.png}\\
+Vi får altså en total tyngdekraft 
+\[
+dF=-G\frac{M(r)dm}{r^2}
+\]
+på gasselementet med masse $dm$ der {\bf $M(r)$ altså er den totale massen av stjerna innenfor radius $r$}. 
+\column{0.5\textwidth}
+Nå er det vel slik at tyngdeakselrasjonen ved overflaten av en planet med masse $M$ er gitt ved
+\[
+g=-G\frac{M}{r^2}
+\]
+
+Tyngdeakselrasjonen ved gasselementet vårt $dm$ i en avstand $r$ fra sentrum må vel dermed bli
+\[
+g(r)=-G\frac{M(r)}{r^2}
+\]
+som insatt gir at kraften på $dm$ kan skrives ved hjelp av $g(r)$ i avstand $r$ fra sentrum som
+\[
+dF=g(r)dm
+\]
+\hyperlink{hydrostat10}{\pagebutton{Neste side}}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat10}
+\lastpagebutton{hydrostat9}
+\includegraphics[scale=0.25]{media/dm.png}\\
+Oppsummert så har vi vel kommet frem til at vi har en tyngdekraft $F=g(r)dm$ som virker nedover, en trykk-kraft $P(r)dA$ som virker oppover og en trykk-kraft $P(r+dr)dA$ som virker nedover. La oss da skrive ned Newtons 2.lov på gass-elementet $dF_\mathrm{tot}=dm\,a$ som gir oss
+\[
+-dF^\mathrm{grav}-dF^\mathrm{pressure}(r+dr)+dF^\mathrm{pressure}(r)=dm\frac{d^2r}{dt^2}
+\]
+Hvor vi har skrevet posisjonen (høyden) av gasselementet som $r$ og dermed akselrasjonen til gasselementet som den dobbelt tidsderiverte av $r$.
+
+\hyperlink{hydrostat11}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat11}
+\lastpagebutton{hydrostat10}
+\includegraphics[scale=0.25]{media/dm.png}\\
+Vi setter nå inn det som vi kjenner i 
+\[
+-dF^\mathrm{grav}-dF^\mathrm{pressure}(r+dr)+dF^\mathrm{pressure}(r)=dm\frac{d^2r}{dt^2}
+\]
+og får
+\[
+-g(r)dm-P(r+dr)dA+P(r)dA=dm\frac{d^2r}{dt^2}
+\]
+\textcolor{red}{\bf Henger du med?? Hvis ikke spør foreleser!}\\
+Det neste vi skal gjøre nå er å skrive ut massen av $dm$ ved hjelp av tettheten. Vi antar at gasstettheten er kulesymetrisk, dvs. at all gass i avstand $r$ fra sentrum har samme massetetthet $\rho(r)$.
+\hyperlink{hydrostat12}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat12}
+\lastpagebutton{hydrostat11}
+Kan du se hvordan vi kan skrive $dm$ uttrykt ved hjelp av $dr$, $dA$ og $\rho(r)$??
+\hyperlink{hydrostat12_b}{\pagebutton{Ja, det er rett frem}}\hyperlink{hydrostat12_b}{\pagebutton{Nei, det var ikke helt rett frem...}}\\
+\textcolor{white}{
+{\bf Det bør være rett frem! Du kjenner tetthet og du kan finne volum, hva blir da massen?}
+Vi hadde kommet til:
+\[
+-g(r)dm-P(r+dr)dA+P(r)dA=dm\frac{d^2r}{dt^2}
+\]
+Ta et stykke papir, skriv ned denne likningen, sett inn for uttrykket ditt for $dm$. {\bf Deretter:} Er du enig i at $P(r+dr)-P(r)$ kan skrives som en liten trykkendring $dP$? Hvis du nå forkorter bort felles faktorer og deler hele likningen på $dr$, hvordan blir likningen din seendes ut?
+ Neste side}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat12_b}
+\lastpagebutton{hydrostat11}
+Kan du se hvordan vi kan skrive $dm$ uttrykt ved hjelp av $dr$, $dA$ og $\rho(r)$??
+{\pagebutton{Ja, det er rett frem}}\hyperlink{hydrostat12_b}{\pagebutton{Nei, det var ikke helt rett frem...}}\\
+
+{\bf Det bør være rett frem! Du kjenner tetthet og du kan finne volum, hva blir da massen?}
+Vi hadde kommet til:
+\[
+-g(r)dm-P(r+dr)dA+P(r)dA=dm\frac{d^2r}{dt^2}
+\]
+Ta et stykke papir, skriv ned denne likningen, sett inn for uttrykket ditt for $dm$. {\bf Deretter:} Er du enig i at $P(r+dr)-P(r)$ kan skrives som en liten trykkendring $dP$? Hvis du nå forkorter bort felles faktorer og deler hele likningen på $dr$, hvordan blir likningen din seendes ut?
+\hyperlink{red_hydrostat13}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+\begin{frame}
+\label{red_hydrostat13}
+\hyperlink{hydrostat12}{\pagebutton{\small Forrige side}}
+\textcolor{yellow}{\Huge\bf Beklager du kan ikke gå videre før du faktisk har gjort jobben. Frem med papir og blyant! Hvis du ikke fullførte utledningen på forrige side, gå tilbake nå. Dette er regning som du bør kunne!}
+\hyperlink{hydrostat14}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{hydrostat14}
+\dlastpagebutton{red_hydrostat13}
+Er du helt sikker på at du har kommet frem til noe?
+\hyperlink{hydrostat14_b}{\pagebutton{Slutt å mase!}}\\
+\textcolor{white}{
+Fikk du:
+\[
+-g(r)\rho(r)-\frac{dP}{dr}=\rho\frac{d^2r}{dt^2}
+\]
+?????\\
+Hvis du ikke får til å komme frem til dette uttrykket, spør foreleser!\\
+{\bf Men vi er ikke fremme ved likningen for hydrostatisk likevekt! I likevekt så faller ikke atmosfæren ned! Stjerna holder konstant radius! Dermed endrer ikke gassen i atmosfæren eller inne i stjerna høyde. Da blir vel den tidsderiverte av $r$ lik 0?}
+Neste side}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat14_b}
+\dlastpagebutton{red_hydrostat13}
+Er du helt sikker på at du har kommet frem til noe?
+{\pagebutton{Slutt å mase!}}\\
+
+Fikk du:
+\[
+-g(r)\rho(r)-\frac{dP}{dr}=\rho\frac{d^2r}{dt^2}
+\]
+?????\\
+Hvis du ikke får til å komme frem til dette uttrykket, spør foreleser!\\
+{\bf Men vi er ikke fremme ved likningen for hydrostatisk likevekt! I likevekt så faller ikke atmosfæren ned! Stjerna holder konstant radius! Dermed endrer ikke gassen i atmosfæren eller inne i stjerna høyde. Da blir vel den tidsderiverte av $r$ lik 0?}
+\hyperlink{hydrostat15}{\pagebutton{Neste side}}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\label{hydrostat15}
+\addtocounter{pageno}{1}
+\dlastpagebutton{hydrostat14}
+Nettopp ja! Setter vi den tidsderiverte til 0, så få vi
+\begin{block}{\bf likningen for hydrostatisk likevekt...}
+\[
+\frac{dP}{dr}=-\rho(r)g(r)
+\]
+\end{block}
+Dette er en meget kraftfull likning! {\bf Det veldig enkle faktum at en atmosfære ikke faller ned eller at radiusen til en stjerne er konstant gjør at vi vet at denne likningen er oppfyllt!}\textcolor{red}{Og hvis vi vet at denne likningen er oppfyllt, så kan vi dermed løse den for å finne f.eks. trykk, tetthet og temperatur som funksjon av høyde!}. Nesten alt vi vet om stjerners oppgygning er basert på denne likningen, kombinert med andre gasslikninger.
+\hyperlink{hydrostat16}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat16}
+\lastpagebutton{hydrostat15}
+Vi hadde:
+\[
+\frac{dP}{dr}=-\rho(r)g(r)
+\]
+På venstre side har vi trykkendring $dP$ per skritt $dr$ som du tar oppover i atmosfæren/stjerna. På høyre side ser vi massetettheten ganger tyngdeakselrasjonen i høyden $r$. Likningen sier at trykkenndringen når du går oppover må avhenge av dette produktet som jo er nært knyttet til tyngdekrafta (masse ganger tyngdeakselrasjon er jo tyngdekraft!). Den må avhenge av tyngdekrafta slik at denne blir nøyaktig oppveid. {\bf Det gir mening!}. \\
+\textcolor{red}{Hvordan løser vi noe sånt da???}
+\hyperlink{hydrostat17}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat17}
+\lastpagebutton{hydrostat16}
+Vi hadde:
+\[
+\frac{dP}{dr}=-\rho(r)g(r)
+\]
+\textcolor{red}{Numerisk} er dette ganske rett frem. Vi har en første ordens differensial-likning. Dette har vi allerede vært borti! Eulers metode. Gang opp $dr$ til høyre side og vi har:
+\[
+dP=-\rho(r)g(r)dr\ \ \ \mathrm{eller}\ \ \ \Delta P=-\rho(r)g(r)\Delta r
+\]
+Altså hvis du kjenner trykket $P_0$ på f.eks overflaten av planeten, så kan du nå skritt for skritt gå oppover i atmosfæren og benytte denne likningen til å finne den lille trykkendringen $\Delta P$ og dermed oppdatere trykket i neste skritt osv.\\
+\textcolor{red}{Analytisk} benytter vi oss igjen av den nederste likningen her med differensialer. Vi har $dP$ på venstre side og $dr$ på høyre side. Da kan vi sette på et integral på begge sider, og integrere trykket fra en høyde $r$ til en annen.
+\hyperlink{hydrostat18}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat18}
+\lastpagebutton{hydrostat17}
+I del 1E skal du løse en oppgave som går ut på å modellere en atmosfære. Husk at likningen for ideel gass
+\[
+P=nkT
+\]
+gir oss en sammenheng mellom trykk, tetthet og temperatur. Hvis det er slik at trykket må variere oppover for at vi skal ha hydrostatisk likevekt, så sier vel denne likningen at også temperatur og/eller tetthet må variere? Dermed kan vi kanskje skrive denne likningen slik:
+\[
+P(r)=n(r)kT(r)
+\]
+der vi har fått med avhengighet av posisjonen $r$. Merk at vi ofte skriver ut antall-tettheten $n(r)$ ved hjelp av massetettheten $\rho(r)$ på denne måten:
+\[
+n(r)=\frac{\rho(r)}{\mu m_H}
+\]
+der $\mu$ er det vi kaller {\bf midlere molekylvekt} og $m_H$ er massen til hydrogenatomet. Det er veldig viktig at du forstår hva denne midlere molekylvekta er for noe.
+
+\hyperlink{hydrostat19}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat19}
+\lastpagebutton{hydrostat18}
+\begin{block}{\bf Midlere molekylvekt $\mu$ er...}
+{\small den gjennomsnittlige vekta til atomene/molekylene i en gass delt på massen til hydrogenatomet. Det er altså gjennomsnittlig/midlere vekt av et molekyl i gassen målt i hydrogenmasser!
+\[
+\mu=\sum_{i=1}^Nf_i\frac{m_i}{m_H}
+\]
+der summen går over alle {\it typer} molekyler i gassen, $m_i$ er massen til denne typen molekyl og $f_i$ er andelen av denne typen molekyler i gassen.}
+\end{block}
+{\small
+\textcolor{red}{La oss regne ut den midlere molelkylvekta til jordas atmosfære.} {\bf Den består av ca. $78\%$ nitrogen, $21\%$ oksygen og $1\%$ argon. Andelene av disse er altså 0.78, 0.21 og 0.01.} Nitrogen (den mest vanlige isotopen) har 7 protoner og 7 nøytroner i kjernen. Målt i hydrogenatomer som har kun 1 proton så er dermed {\bf vekta av nitrogen lik ca. 14 hydrogenatomer} (protonets og nøytronets vekt er så like at vi med rimelig god nøyaktighet kan sette disse like her). Gjør vi tilsvarende for de andre grunnstoffene så har vi:
+\[
+\mu=14\times0.78+16\times0.21+40\times0.01=14.68
+\]
+\hyperlink{hydrostat20}{\pagebutton{Neste side}}
+}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat20}
+\lastpagebutton{hydrostat19}
+Vi kan altså skrive ideel gasslov som
+\[
+P(r)=\frac{\rho(r)kT(r)}{\mu m_H}
+\]
+som er formen vi skal bruke når vi skal regne på stjernenes indre senere, men også når vi skal modellere atmosfærer.
+Du skal f.eks. løse for et tilfelle der atmosfæren er isoterm, dvs. vi antar at temperaturen er konstant, dvs. $T(r)=T$, for en del av atmosfæren. {\bf Klarer du å vise at likningen for hydrostatisk likevekt i dette tilfelle kan skrives som}
+\[
+\frac{d\rho(r)}{dr}=-\frac{\mu m_H\rho(r)g(r)}{kT}
+\]
+{\bf ???}
+\hyperlink{hydrostat20b}{\pagebutton{Neste side}}
+\end{frame}
+
+\begin{frame}
+\label{hydrostat20b}
+\lastpagebutton{hydrostat20}
+\textcolor{blue}{Når vi kommer til del 3 der vi skal se på stjernenes indre, kommer du også til å se på {\bf strålingstrykket}. Inne i stjernene er det så mye stråling at fotonene oppfører seg som partikler i en gass og dermed gir opphave til et ``gasstrykk'' fra fotonene. Trykket fra en slik fotongass er $P=\frac{1}{3}aT^4$ der $a$ er {\it strålingskonstanten} $a=7.56\times10^{-16}\mathrm{J}/\mathrm{m}^3\mathrm{K}^4$. Dette kommer du til å utlede i senere kurs. For å se på hydrostatisk likevekt i tilfeller der strålingstrykket dominerer over gasstrykket, så kan man altså trenge å kombinere denne likningen  (isteden for ideel gasslov) med likningen for hydrostatisk likevekt.}\\
+{\Large\bf Forresten...}
+Hvorfor er det riktig å skrive at
+\[
+n(r)=\frac{\rho(r)}{\mu m_H}
+\]
+??? Hvis du har forstått betydningen av antalltetthet $n(r)$, massetetthet $\rho(r)$, samt midlere molekylvekt $\mu$, bør det være klart for deg nå. Hvis du sliter med å se det, ta f.eks. en gass med kun hydrogen. Får du det til å stemme i dette tilfelle? Er du usikker, {\bf spør!}. Dette må du ha kontroll på.
+\hyperlink{hydrostat21}{\pagebutton{Neste side}}
+\end{frame}
+
+
+\begin{frame}
+\label{hydrostat21}
+\lastpagebutton{hydrostat20}
+Vi avslutter denne delen med en liten test:
+\begin{alertblock}{Hva er...}
+den midlere molekylvekta i en gass som består av $50\%$ hydrogen og $50\%$ helium (typisk i en aldrende stjerne)? Klarer du å svare i løpet av 30 sekunder?
+\end{alertblock}
+\hyperlink{feil}{\choicebutton{0.1}}\hyperlink{feil}{\choicebutton{0.5}}\hyperlink{feil}{\choicebutton{1.0}}\hyperlink{feil}{\choicebutton{1.5}}\hyperlink{feil}{\choicebutton{2.0}}\hyperlink{riktig}{\choicebutton{2.5}}\hyperlink{feil}{\choicebutton{3.0}}\hyperlink{feil}{\choicebutton{4.0}}
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\label{feil}
+\lastpagebutton{hydrostat21}
+\textcolor{white}{Det ble nok galt. Ta deg litt mer tid til å tenke, kanskje det gikk litt for fort? Hvis du sliter, gå tilbake til eksemplet! Prøv igjen!
+}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+\begin{frame}
+\label{riktig}
+\clastpagebutton{hydrostat21}
+Flott, du forstår det! Skulle du likevel tvile, gå tilbake til eksemplet!
+\hyperlink{oppsummering}{\pagebutton{Neste side}}
+\end{frame}
+}
+
+
+\begin{frame}
+\label{oppsummering}
+\hyperlink{hydrostat21}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+Gratulerer, del 1E er overstått! Du bør nå kunne
+\begin{itemize}
+\item forstå hvorfor atmosfæren ikke faller ned
+\item forstå hva hydrostatisk likevekt betyr
+\item forstå utledningen av likningen for hydrostatisk likevekt (dette har kommet på eksamen! Med litt hjelp da!)
+\item vite utgangspunktet for å løse likningen numerisk og analytisk
+\item kombinere ideel gasslov med likningen for hydrostatisk likevekt
+\item huske hva midlere molekylvekt er og kunne regne den ut for en gass
+\end{itemize}
+\textcolor{red}{Hvis du ikke har gjort det allerede, trykk på smiley-ene og si din mening om dette interaktive forelesningsnotatet. Var det for tørt? Var det for vanskelig? Var det for spennende? Nøyaktig hva kan jeg gjøre for at det skal bli bedre? {\bf Takk!}}
+{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1e.pdf}{kortsvarsoppgavene} til del 1E for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}\\
+\end{frame}
+
+
+\end{document}

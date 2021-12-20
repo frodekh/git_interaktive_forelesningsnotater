@@ -1,0 +1,1 @@
+for d in ??/; do sed -i -- "s/usercommands/usercommands_pdf/g" "$d"*.tex; done
