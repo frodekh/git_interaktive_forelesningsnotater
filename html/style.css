@@ -373,3 +373,18 @@ z-index: -1;
 background-color: navy !important;
 color: red !important;
 }
+
+.pagebtn-inactive {
+  color: var(--a-text);
+  background-color: var(--a-bg);
+    text-decoration: none;
+    border-radius: 1cm;
+    padding: 0.2cm;
+    margin: 0.2cm;
+    /* line-height: 1cm; */
+    width: fit-content;
+    align-self: center;
+    white-space: nowrap;
+    border: solid 1px var(--blue);
+  
+  }
