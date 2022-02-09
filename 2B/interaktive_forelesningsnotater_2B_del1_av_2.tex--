@@ -719,7 +719,7 @@ der det altså egentlig er en sum over $\nu$ som vi ikke skriver.}
 
 \fullframe{vv3_b}{vv2}{vv4}{0}{\large
 Fikk du...
-\pagebutton{ja, fikk du...}
+^pagebutton ja, fikk du...^
 \[
 x_\mu'=\sum_{\nu=0}^3C_{\mu\nu}x_\nu
 \]

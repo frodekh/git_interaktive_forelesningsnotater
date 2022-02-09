@@ -23,6 +23,14 @@ ascii = """
 
 """
 
+FONT_SIZES = {
+    "small": 15,
+    "normal": 20,
+    "large": 30,
+    "huge": 40,
+}
+
+
 def find_buttons(string):
     return re.findall(buttons, string)
 
@@ -477,8 +485,11 @@ def main():
                 ('<strong>SIDE(.*)<\/strong>', '<strong class="side">SIDE\\1</strong>'),
                 ('🙂 🙁</a></span></span>(.*?)<span><span class="newtab">',  '🙂 🙁</a></span></span><span class="frametitle">\\1</span><span><span class="newtab">'),
                 ('color: denim', 'color: rgb(15, 74, 140)')
-
             ]
+
+            size_subs = [(fr'\^{size}(.*?)\^', f'<span style="font-size:{int(pt*1.3333)}px;">\\1</span>') for size, pt in FONT_SIZES.items()]
+            html_substitutions += size_subs
+            html_substitutions += [(r'\^pagebutton(.*?)\^', f'<span class="pagebtn-inactive">\\1</span>')]
 
             for subpair in html_substitutions:
                 frame = re.sub(subpair[0], subpair[1], frame)
