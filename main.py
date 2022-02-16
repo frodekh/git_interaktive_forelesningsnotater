@@ -491,7 +491,7 @@ def main():
 
             size_subs = [(fr'@{size}(.*?)@', f'<span style="font-size:{int(pt*1.3333)}px;">\\1</span>') for size, pt in FONT_SIZES.items()]
             html_substitutions += size_subs
-            html_substitutions += [(r'`\^pagebutton(.*?)`\^', f'<span class="pagebtn-inactive">\\1</span>')]
+            html_substitutions += [(r'@pagebutton(.*?)@', f'<span class="pagebtn-inactive">\\1</span>')]
 
             for subpair in html_substitutions:
                 frame = re.sub(subpair[0], subpair[1], frame)
