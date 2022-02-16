@@ -1,7 +1,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{../usercommands_html}
+\input{../usercommands_pdf}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -107,7 +107,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -384,13 +384,13 @@ Er du klar og har sendt inn skjemaet?
 }
 
 
-\fullframe{ma1}{intro2}{ma2}{1}{\Huge
+\fullframe{ma1}{intro2}{ma2}{1}{\Huge\htmlcom{large}{
 Vi begynner med den siste sida fra forrige forelesning: Hvis du ikke husker helt hva vi drev med anbefales det sterkt å ta en titt på oppsummeringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_4.mp4}{denne videoen} slik at du er klar for det som nå kommer...
-}{SIDE 1/31/63}
+}}{SIDE 1/31/63}
 
-\fullframe{ma2}{ma1}{ma3}{0}{\huge
+\fullframe{ma2}{ma1}{ma3}{0}{\huge\htmlcom{large}{
 Husker du prinsippet om maksimal aldring? I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_9.mp4}{denne videoen} fra del 2B får du en oversikt over prinsippet og hvordan det kan brukes til å vise Newtons 1.lov i et inertialsystem med Lorentzgeometri. Hvis du ikke husker helt hvordan det var, kikk gjennom videoen nå før du går videre!
-}{SIDE 2/31/63}
+}}{SIDE 2/31/63}
 
 
 \fullframe{ma3}{ma2}{ma4}{0}{\Large
@@ -452,7 +452,7 @@ Hvis du ikke ser hvordan du kommer frem til dette, ta en kikk på {denne videoen
 
 \fullframe{ma8_b}{ma7}{ma9}{0}{
 \centerline{\includegraphics[scale=0.3]{media/maks_aldring1.png}}
-Fikk du...{\pagebutton{Ja, jeg fikk...}}
+Fikk du...{\pagebuttonolink{Ja, jeg fikk...}}
 \[
 \Delta\tau_{13}=\sqrt{\Delta t_{12}^2-\Delta x_{12}^2}+\sqrt{\Delta t_{23}^2-\Delta x_{23}^2}
 \]
@@ -494,7 +494,7 @@ Fikk du...\hyperlink{ma11_b}{\pagebutton{\small Ja, jeg fikk...}}\textcolor{whit
 
 \fullframe{ma11_b}{ma10}{ma12}{0}{\small
 \centerline{\includegraphics[scale=0.3]{media/maks_aldring1.png}}
-Fikk du...{\pagebutton{\small Ja, jeg fikk...}}
+Fikk du...{\pagebuttonolink{\small Ja, jeg fikk...}}
 \[
 \frac{\Delta t_{12}}{\sqrt{\Delta t_{12}^2-\Delta x_{12}^2}}+\frac{\Delta t_{23}}{\sqrt{\Delta t_{23}^2-\Delta x_{23}^2}}=0
 \]
@@ -578,7 +578,7 @@ Har prinsippet om maksimal aldring her gitt oss bevaring av bevegelsesmengde? El
 \label{pause}
 \hyperlink{ma20}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe!}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 }
 \textcolor{yellow}{\large MEN først litt kaffe. Og etter kaffen, en tur ut, ta med deg ball. Kast den bortover og oppover og lim gjerne fast en klokke for å måle hvor mye ballen eldes. Og for å forberede deg på det neste: kast ballen rett oppover og se om den fortsetter med konstant hastighet eller om den akselereres på noen måte. Og hvis det siste skjer kan du jo filosofere litt rundt hvorfor den akselereres? Ikke gå videre før du {\bf er helt klar i hodet igjen!}}
@@ -715,14 +715,14 @@ Vi er tilbake til den {\bf fritt fallende observatøren}. Hun begynner å falle 
 }{SIDE 32/41/63}
 
 \colchoiceframe{feil_ff1a}{denim_ff1}{0}{black}{\Huge
-\textcolor{yellow}{
+\textcolor{yellow}{\htmlcom{large}{
 Det ble galt. Gå et par sider tilbake og se på uttrykket for energi i tyngdefeltet. Hva blir dette når $r$ er veldig stor og hastigheten er 0?
 }
-}{SIDE 33/41/63}
+}}{SIDE 33/41/63}
 
-\colfullframe{riktig_ff1b}{denim_ff1}{ff2}{-1}{yellow}{\Huge
+\colfullframe{riktig_ff1b}{denim_ff1}{ff2}{-1}{yellow}{\Huge\htmlcom{large}{
 Det ble riktig. Vi begynner med energi $E=m$ i grensen $r\rightarrow\infty$ og $v=0$.
-}{SIDE 34/41/63}
+}}{SIDE 34/41/63}
 
 \fullframetwo{ff2}{riktig_ff1b}{ff3}{0}{\footnotesize
 For å komme frem til en hastighet $v$ for det fallende legemet/observatøren skal vi følge oppgave 2C.4. Merk at vi først prøver å finne hastigheten $v=dr/dt$ til det fallende legemet målt av langt-vekkobservatøren. Deretter konverterer vi dette uttrykket til hastighet $v_\mathrm{sh}$ målt av en lokal skallobservatør. På den måten kan vi sammenlikne den hastigheten til legemet som funksjon av tiden sett av de to forskjellige observatørene. {\bf Det er sterkt anbefalt at du prøver deg på denne oppgaven. Sett deg en kort tidsgrense i tilfelle du blir stående fast og bruk videoen på neste side til å hjelpe deg kun til de delene der du sitter fast. Dette er en meget god eksempeloppgave for å lære å regne med uttrykket for energi.} (MERK at det i den første oppgaven står ``information above'', det tilsvarer det som står på de 3 foregående sidene!)
@@ -788,9 +788,9 @@ Dette uttrykket gjelder for hele fallet fra start til slutt. Hvilken hastighet v
 I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_12.mp4}{denne videoen} får du svar på spørsmålene fra de foregående sidene...
 }{SIDE 39/41/63}
 
-\fullframe{ff7}{ff6}{ff7b}{0}{\Huge
+\fullframe{ff7}{ff6}{ff7b}{0}{\Huge\htmlcom{large}{
 Vi avslutter vår studie av det fritt fallende legemet for denne gang ved å se på hva som skjer på innsiden av hendelsehorisonten. \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_13.mp4}{Denne videoen} tar for seg litt av hva som skjer der.
-}{SIDE 40/41/63}
+}}{SIDE 40/41/63}
 
 \fullframe{ff7b}{ff7}{blue_nytema3}{0}{
 Oppsummert har vi at:
@@ -837,7 +837,7 @@ Her har du 3 ukjente som er de 3 komponentene av posisjonsvektoren din $\vec{x}$
 \centerline{\includegraphics[scale=0.32]{media/gps.png}}
 \textcolor{yellow}{
 {\Large Fikk du det til???} Trenger du et hint?}
-{\pagebutton{Neida, fikk det til jeg!}}{\pagebutton{Gjerne et hint ja!}}
+{\pagebuttonolink{Neida, fikk det til jeg!}}{\pagebutton{Gjerne et hint ja!}}
 \textcolor{yellow}{Strekning er lik fart ganger tid. Hvor lang tid bruker hver av signalene fra satelitten frem til GPS-mottakeren? Det er 3 slike signaler!}
 }{SIDE 44/63/63}
 
@@ -869,14 +869,15 @@ Her er jo $\Delta t_1$ tiden det tar fra signalet ble sendt ut fra satelitt 1 ti
 
 
 \colchoiceframe{feil_gps5a}{gps5}{0}{black}{\Huge
-\textcolor{yellow}{
+\textcolor{yellow}{\htmlcom{large}{
 Her var du litt rask, prøv igjen, dette får du til!
 }
-}{SIDE 47/63/63}
+}}{SIDE 47/63/63}
 
 \colfullframetxt{riktig_gps5b}{gps5}{gps6}{-1}{yellow}{mener du et relativistisk problem? Ja, saktens...}{\Huge
+\htmlcom{large}{
 Nettopp! {\bf Hele 300 meter feil med bare et mikrosekund bom på tiden.} Da må tidsmålingen være {\bf veldig} nøyaktig for at du skal få meningsfull posisjon med GPS. Men ser du et problem her???
-}{SIDE 48/63/63}
+}}{SIDE 48/63/63}
 
 
 \fullframetxt{gps6}{riktig_gps5b}{gps7}{0}{Tror jeg husker...}{\Large
@@ -888,7 +889,8 @@ Var det ikke slik at tiden går saktere {\bf nede i et tyngdefelt}? Altså at ti
 \[
 \Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
 \]
-{\bf Men hvor mye saktere går klokkene våre? Blir det størrelseorden mikrosekund?} Isåfall kan det ha stor effekt på posisjonsmålinger med GPS. Men det er en ting til: Satelittene har en ganske høy hastighet i forhold til oss, da kommer også spesiell relativitetsteori inn! Men hvilken vei virker den? Går klokkene våre fortere eller saktere enn satelittens klokker på grunn av spesiell relativitet?\hyperlink{gps7_b}{\pagebutton{Jeg har tenkt og vet svaret!}}\textcolor{white}{
+  {\bf Men hvor mye saktere går klokkene våre? Blir det størrelseorden mikrosekund?} Isåfall kan det ha stor effekt på posisjonsmålinger med GPS. Men det er en ting til: Satelittene har en ganske høy hastighet i forhold til oss, da kommer også spesiell relativitetsteori inn! Men hvilken vei virker den? Går klokkene våre fortere eller saktere enn satelittens klokker på grunn av spesiell relativitet?\\
+  \hyperlink{gps7_b}{\pagebutton{Jeg har tenkt og vet svaret!}}\textcolor{white}{
 Var det ikke slik at $\Delta t=\gamma\Delta\tau$? Der $t$ er lab-tida, altså tida vår mens $\tau$ er egentida til satelitten (toget)? Husk at $\gamma$ er en forstørrelsefaktor. Vi husker at vi ser alt i saktefilm i toget slik at tiden mellom to tikk på klokka i toget tok {\bf lenger tid} på våre klokker, $\Delta t>\Delta\tau$. Altså at våre klokker går {\bf raskere} enn satelittklokkene!. \textcolor{white}{Denne er nøyaktig motsatt av den generell-relativistiske effekten der våre klokker går fortere enn satelittklokkene på grunn av tyngdefeltet. {\bf De to effektene motvirker altså hverandre, men nuller de hverandre ut??} Det må vi sjekke nå!}}
 }{SIDE 50/63/63}
 
@@ -897,7 +899,8 @@ Var det ikke slik at tiden går saktere {\bf nede i et tyngdefelt}? Altså at ti
 \[
 \Delta t_\mathrm{sh}=\sqrt{\sst}\Delta t
 \]
-{\bf Men hvor mye saktere går klokkene våre? Blir det størrelseorden mikrosekund?} Isåfall kan det ha stor effekt på posisjonsmålinger med GPS. Men det er en ting til: Satelittene har en ganske høy hastighet i forhold til oss, da kommer også spesiell relativitetsteori inn! Men hvilken vei virker den? Går klokkene våre fortere eller saktere enn satelittens klokker på grunn av spesiell relativitet?{\pagebutton{Jeg har tenkt og vet svaret!}}
+  {\bf Men hvor mye saktere går klokkene våre? Blir det størrelseorden mikrosekund?} Isåfall kan det ha stor effekt på posisjonsmålinger med GPS. Men det er en ting til: Satelittene har en ganske høy hastighet i forhold til oss, da kommer også spesiell relativitetsteori inn! Men hvilken vei virker den? Går klokkene våre fortere eller saktere enn satelittens klokker på grunn av spesiell relativitet?\\
+  {\pagebuttonolink{Jeg har tenkt og vet svaret!}}
 Var det ikke slik at $\Delta t=\gamma\Delta\tau$? Der $t$ er lab-tida, altså tida vår mens $\tau$ er egentida til satelitten (toget)? Husk at $\gamma$ er en forstørrelsefaktor. Vi husker at vi ser alt i saktefilm i toget slik at tiden mellom to tikk på klokka i toget tok {\bf lenger tid} på våre klokker, $\Delta t>\Delta\tau$. Altså at våre klokker går {\bf raskere} enn satelittklokkene!. \textcolor{red}{Denne er nøyaktig motsatt av den generell-relativistiske effekten der våre klokker går saktere enn satelittklokkene på grunn av tyngdefeltet. {\bf De to effektene motvirker altså hverandre, men nuller de hverandre ut??} Det må vi sjekke nå!}
 }{SIDE 50/63/63}
 
@@ -910,17 +913,17 @@ Har du lagt merke til at vi egentlig skal transformere tidsintervall mellom {\bf
 }{SIDE 52/63/63}
 
 \colfullframenotxt{red_gps10}{gps9}{gps11}{0}{red}{\Huge
-\textcolor{yellow}{
-Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...\hyperlink{red_gps10_b}{\pagebutton{Hint? Please?}}}\textcolor{red}{
+\textcolor{yellow}{\htmlcom{large}{
+Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...\hyperlink{red_gps10_b}{\pagebutton{Hintx? Please?}}}\textcolor{red}{
 Det fikk du på forrige side, selv om det ikke står eksplisitt at det er et hint...}
-}{SIDE 53/63/63}
+}}{SIDE 53/63/63}
 
 \colfullframetxt{red_gps10_b}{gps9}{gps11}{0}{red}{Jeg har tenkt og tenkt...}{\Huge
-\textcolor{yellow}{
-Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...{\pagebutton{Hint? Please?}}
-Det fikk du på forrige side, selv om det ikke står eksplisitt at det er et hint...
+\textcolor{yellow}{\htmlcom{large}{
+Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...}}{\pagebuttonolink{Hint? Please?}}
+{\htmlcom{large}{Det fikk du på forrige side, selv om det ikke står eksplisitt at det er et hint...
 }
-}{SIDE 53/63/63}
+}}{SIDE 53/63/63}
 
 
 \fullframetxt{gps11}{red_gps10}{gps12}{1}{Absolutt, dette kan jeg!}{
@@ -950,7 +953,7 @@ der $\Delta s$ og $\Delta t$ altså er tidroms- og langt-vekktidsintervall mello
 }{SIDE 55/63/63}
 
 \fullframenotxt{gps12_b}{gps11}{gps13}{0}{
-La oss begynne med $\Delta\tau_\mathrm{sat}$, kan du finne et uttrykk for denne som også inneholder $\Delta t$?{\pagebutton{Hint?}}
+La oss begynne med $\Delta\tau_\mathrm{sat}$, kan du finne et uttrykk for denne som også inneholder $\Delta t$?{\pagebuttonolink{Hint?}}
 Et egettidsintervall mellom to eventer er vel lik tidromsintervallet mellom disse eventene? Og hvordan ser tidromsintervallet ut?\hyperlink{gps12_c}{\pagebutton{Ahaa.....}}\textcolor{white}{
 Siden vi nå skal gå fra et skall til et annet så kan vi ikke anta lokalt inertialsystem, da må vi bruke full \ss-geometri:
 \[
@@ -964,8 +967,8 @@ der $\Delta s$ og $\Delta t$ altså er tidroms- og langt-vekktidsintervall mello
 }{SIDE 55/63/63}
 
 \fullframenotxt{gps12_c}{gps11}{gps13}{0}{
-La oss begynne med $\Delta\tau_\mathrm{sat}$, kan du finne et uttrykk for denne som også inneholder $\Delta t$?{\pagebutton{Hint?}}
-Et egettidsintervall mellom to eventer er vel lik tidromsintervallet mellom disse eventene? Og hvordan ser tidromsintervallet ut?{\pagebutton{Ahaa.....}}
+La oss begynne med $\Delta\tau_\mathrm{sat}$, kan du finne et uttrykk for denne som også inneholder $\Delta t$?{\pagebuttonolink{Hint?}}
+Et egettidsintervall mellom to eventer er vel lik tidromsintervallet mellom disse eventene? Og hvordan ser tidromsintervallet ut?{\pagebuttonolink{Ahaa.....}}
 Siden vi nå skal gå fra et skall til et annet så kan vi ikke anta lokalt inertialsystem, da må vi bruke full \ss-geometri:
 \[
 \Delta\tau_\mathrm{sat}^2=\Delta s^2=\sst\Delta t^2-\frac{\Delta r_\mathrm{sat}^2}{\sst}-r_\mathrm{sat}^2\Delta\phi_\mathrm{sat}^2
@@ -979,13 +982,13 @@ der $\Delta s$ og $\Delta t$ altså er tidroms- og langt-vekktidsintervall mello
 
 
 \fullframe{gps12_d}{gps11}{gps13}{0}{
-La oss begynne med $\Delta\tau_\mathrm{sat}$, kan du finne et uttrykk for denne som også inneholder $\Delta t$?{\pagebutton{Hint?}}
-Et egettidsintervall mellom to eventer er vel lik tidromsintervallet mellom disse eventene? Og hvordan ser tidromsintervallet ut?{\pagebutton{Ahaa.....}}
+La oss begynne med $\Delta\tau_\mathrm{sat}$, kan du finne et uttrykk for denne som også inneholder $\Delta t$?{\pagebuttonolink{Hint?}}
+Et egettidsintervall mellom to eventer er vel lik tidromsintervallet mellom disse eventene? Og hvordan ser tidromsintervallet ut?{\pagebuttonolink{Ahaa.....}}
 Siden vi nå skal gå fra et skall til et annet så kan vi ikke anta lokalt inertialsystem, da må vi bruke full \ss-geometri:
 \[
 \Delta\tau_\mathrm{sat}^2=\Delta s^2=\sst\Delta t^2-\frac{\Delta r_\mathrm{sat}^2}{\sst}-r_\mathrm{sat}^2\Delta\phi_\mathrm{sat}^2
 \]
-der $\Delta s$ og $\Delta t$ altså er tidroms- og langt-vekktidsintervall mellom de to tikkene på satelittklokka.{\pagebutton{OK!}}
+der $\Delta s$ og $\Delta t$ altså er tidroms- og langt-vekktidsintervall mellom de to tikkene på satelittklokka.{\pagebuttonolink{OK!}}
 {\bf Men satelitten endrer vel ikke $r$-poisjon?} Den er jo fast på et skall, så vi får vel $\Delta r_\mathrm{sat}=0$ som gir
 \[
 \Delta\tau_\mathrm{sat}^2=\sst\Delta t^2-r_\mathrm{sat}^2\Delta\phi_\mathrm{sat}^2
@@ -1009,7 +1012,7 @@ Vi hadde altså
 \[
 \Delta\tau_\mathrm{sat}^2=\left(1-\frac{2M}{r_\mathrm{sat}}\right)\Delta t^2-r_\mathrm{sat}^2\Delta\phi_\mathrm{sat}^2
 \]
-Men vi har en $\Delta\phi_\mathrm{sat}$ her! Hadde det ikke vært bedre å få inn satelitthastigheten $v_{\phi,\mathrm{sat}}$? Hvordan kan du gjøre det?{\pagebutton{Jeg har tenkt og har et forslag...}}
+Men vi har en $\Delta\phi_\mathrm{sat}$ her! Hadde det ikke vært bedre å få inn satelitthastigheten $v_{\phi,\mathrm{sat}}$? Hvordan kan du gjøre det?{\pagebuttonolink{Jeg har tenkt og har et forslag...}}
 Vi vet jo fra celestmekanikk at tangensialhastighet er gitt ved $v_\phi=r\dot{\phi}=r\Delta\phi/\Delta t$, ikke sant? Omskrevet har vi da $r\Delta\phi=v_\phi\Delta t$. Insatt gir det oss
 \[
 \Delta\tau_\mathrm{sat}^2=\Delta t^2\left(1-\frac{2M}{r_\mathrm{sat}}-v_{\phi,\mathrm{sat}}^2\right)
@@ -1032,11 +1035,11 @@ kan vi nå finne forholdet $\Delta\tau_\mathrm{jord}/\Delta\tau_\mathrm{sat}$ so
 Legg merke til at tidsintervallet $\Delta t$ blir forkortet vekk siden vi ser på det samme tidsintervallet (for langt-vekkobservatøren) i begge tilfeller.
 }{SIDE 57/63/63}
 
-\fullframe{gps15}{gps14}{gps16}{0}{{\Huge
+\fullframe{gps15}{gps14}{gps16}{0}{{\Huge\htmlcom{large}{
 {\bf Pent lite uttrykk, hva?}
 \[
 \frac{\Delta\tau_\mathrm{jord}}{\Delta\tau_\mathrm{sat}}=\sqrt{\frac{1-\frac{2M}{r_\mathrm{jord}}-v_{\phi,\mathrm{jord}}^2}{1-\frac{2M}{r_\mathrm{sat}}-v_{\phi,\mathrm{sat}}^2}}
-\]}
+\]}}
 Hvis vi lar tyngdefeltet her bli veldig svakt, si $M\rightarrow0$ og vi lar oss selv stå i ro $v_{\phi,\mathrm{jord}}=0$, ser du hva vi får da? Står det ikke da egentlig her at $\Delta t=\gamma\Delta\tau$? Slik ser vi at den spesielle relativitetsteorien er innebakt i \ss-geometrien, når tyngdefeltet er lite får vi tilbake Lorentz.
 }{SIDE 58/63/63}
 
@@ -1044,20 +1047,20 @@ Hvis vi lar tyngdefeltet her bli veldig svakt, si $M\rightarrow0$ og vi lar oss 
 \[
 \frac{\Delta\tau_\mathrm{jord}}{\Delta\tau_\mathrm{sat}}=\sqrt{\frac{1-\frac{2M}{r_\mathrm{jord}}-v_{\phi,\mathrm{jord}}^2}{1-\frac{2M}{r_\mathrm{sat}}-v_{\phi,\mathrm{sat}}^2}}
 \]
-La oss prøve å sette inn tall: Vi kjenner avstanden til jordas overflate $r_\mathrm{jord}\approx6000$\;km og satelittene går i en høyde av 20\,000\,km som betyr  $r_\mathrm{sat}\approx26000$\,km. Det holder med omtrentlige tall her, vi skal jo kun gjøre et overslag for å finne størrelseorden. Et punkt på jordoverflaten snurrer en gang rundt i løpet av omkring 24 timer, altså er $v_{\phi,\mathrm{jord}}=2\pi\times6000/(24\times3600)$\,km/s og satelittene bruker 12 timer på en runde, altså $v_{\phi,\mathrm{sat}}=2\pi\times26000/(12\times3600)$\,km/s. Vi fant på forrige forelesning at jordas masse i meter er $M=4.45$\,mm. {\bf Husk at hastighetene må deles på lyshastigheten for å få relativistiske enheter!}. {\huge Sett inn disse tallene i telleren og nevneren av brøken hver for seg! Hvilke tall fikk du?}\textcolor{red}{Det er {\bf svært viktig} at du faktisk gjør dette, du kommer til å oppdage noe!}
+La oss prøve å sette inn tall: Vi kjenner avstanden til jordas overflate $r_\mathrm{jord}\approx6000$\;km og satelittene går i en høyde av 20\,000\,km som betyr  $r_\mathrm{sat}\approx26000$\,km. Det holder med omtrentlige tall her, vi skal jo kun gjøre et overslag for å finne størrelseorden. Et punkt på jordoverflaten snurrer en gang rundt i løpet av omkring 24 timer, altså er $v_{\phi,\mathrm{jord}}=2\pi\times6000/(24\times3600)$\,km/s og satelittene bruker 12 timer på en runde, altså $v_{\phi,\mathrm{sat}}=2\pi\times26000/(12\times3600)$\,km/s. Vi fant på forrige forelesning at jordas masse i meter er $M=4.45$\,mm. {\bf Husk at hastighetene må deles på lyshastigheten for å få relativistiske enheter!}. {\huge\htmlcom{large}{ Sett inn disse tallene i telleren og nevneren av brøken hver for seg! Hvilke tall fikk du?}\textcolor{red}{Det er {\bf svært viktig} at du faktisk gjør dette, du kommer til å oppdage noe!}}
 }{SIDE 59/63/63}
 
 
-\fullframe{gps17}{gps16}{gps18}{0}{\huge
+\fullframe{gps17}{gps16}{gps18}{0}{\huge\htmlcom{large}{
 Fikk du noe alla $0.99999999$ og kanskje til slutt noen andre siffer? For både telleren og nevneren? Fikk du ikke det, har du gjort noe galt, du {\bf skal få det!}.\textcolor{red}{Men dele to slike tall på hverandre? Og deretter ta kvadratroten??? {\bf Her er det duket for store numeriske feil!!!}}
-}{SIDE 60/63/63}
+}}{SIDE 60/63/63}
 
 
 \fullframetxt{gps18}{gps17}{gps19}{0}{Jeg tror jeg vet det...}{\large
 \[
 \frac{\Delta\tau_\mathrm{jord}}{\Delta\tau_\mathrm{sat}}=\sqrt{\frac{1-\frac{2M}{r_\mathrm{jord}}-v_{\phi,\mathrm{jord}}^2}{1-\frac{2M}{r_\mathrm{sat}}-v_{\phi,\mathrm{sat}}^2}}
 \]
-Dette skjer selvfølgelig fordi både $2M/r$ og $v^2$ er {\bf mye mindre} enn 1 både i teller og nevner. Vi har altså 1 og trekker fra noen bittesmå tall. {\bf Dette vil alltid skje når du bruker relativitetsteori på ``hverdagen'', altså lave hastigheter og svake gravitasjonsfelt.}{\huge Hva gjør vi da??? {\bf Forslag til løsning?}}
+Dette skjer selvfølgelig fordi både $2M/r$ og $v^2$ er {\bf mye mindre} enn 1 både i teller og nevner. Vi har altså 1 og trekker fra noen bittesmå tall. {\bf Dette vil alltid skje når du bruker relativitetsteori på ``hverdagen'', altså lave hastigheter og svake gravitasjonsfelt.}{\huge\htmlcom{large}{ Hva gjør vi da??? {\bf Forslag til løsning?}}}
 }{SIDE 61/63/63}
 
 
@@ -1073,7 +1076,7 @@ I {denne videoen får du hjelp...}}
 \[
 \frac{\Delta\tau_\mathrm{jord}}{\Delta\tau_\mathrm{sat}}=\sqrt{\frac{1-\frac{2M}{r_\mathrm{jord}}-v_{\phi,\mathrm{jord}}^2}{1-\frac{2M}{r_\mathrm{sat}}-v_{\phi,\mathrm{sat}}^2}}
 \]
-Jaaaa, altså hvis $2M/r$ og $v^2$ er små størrelser, hvorfor ikke {\bf rekkeutvikle} i disse? Da skulle vi ende opp med polynomer som vi fint kan regne uten numeriske problemer. {\bf Dette pleier å være løsningen!}. Men hvordan vil du gå frem for å rekkeutvikle her?\hyperlink{gps19b}{\pagebutton{Tjaaaaaa...}}
+Jaaaa, altså hvis $2M/r$ og $v^2$ er små størrelser, hvorfor ikke {\bf rekkeutvikle} i disse? Da skulle vi ende opp med polynomer som vi fint kan regne uten numeriske problemer. {\bf Dette pleier å være løsningen!}. Men hvordan vil du gå frem for å rekkeutvikle her?{\pagebuttonolink{Tjaaaaaa...}}
 I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_14.mp4}{denne videoen får du hjelp...}
 }{SIDE 62/63/63}
 

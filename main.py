@@ -24,6 +24,8 @@ ascii = """
 """
 
 FONT_SIZES = {
+    "tiny": 5,
+    "footnotesize": 10,
     "small": 15,
     "normal": 20,
     "large": 30,

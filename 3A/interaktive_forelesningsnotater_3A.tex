@@ -1,7 +1,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{../usercommands_html}
+\input{usercommands_html}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -77,7 +77,7 @@
 
 
 
-\newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{\htmlcom{pagebutton}#1}}
+\newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
 
 \newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
 
@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165595}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{\htmlcom{large}Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -315,7 +315,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \includegraphics[scale=0.4]{media/ladder1.png}
 \column{0.5\textwidth}
 {\small
-\textcolor{yellow}{Velkommen til del 3A! ^largeI denne delen av kurset skal vi se hvordan vi kan finne^ avstander til objekter i verdensrommet. Det finnes mange forskjellige metoder, noen egner seg for det nære verdensrom, andre kun for veldig fjerne objekter. Ofte bygger de på hverandre slik at metodene for fjernere objekter må kalibereres med metodene for nære objekter, og slik må man gå steg for steg med metode for metode lenger og lenger utover i universet. Derfor kalles spektret av metoder for avstandsmålinger for {\bf den kosmiske avstandsstigen}.}\textcolor{blue}{\bf\footnotesize (illustrasjon: Credit: ESA/Hubble \& NASA, RELICS; Acknowledgement: D. Coe et al. + Hiclipart)}\hyperlink{intro2}{\pagebutton{Neste side}}
+\textcolor{yellow}{Velkommen til del 3A! I denne xdelen av kurset skal vi se hvordan vi kan finne avstander til objekter i verdensrommet. Det finnes mange forskjellige metoder, noen egner seg for det nære verdensrom, andre kun for veldig fjerne objekter. Ofte bygger de på hverandre slik at metodene for fjernere objekter må kalibereres med metodene for nære objekter, og slik må man gå steg for steg med metode for metode lenger og lenger utover i universet. Derfor kalles spektret av metoder for avstandsmålinger for {\bf den kosmiske avstandsstigen}.}\textcolor{blue}{\bf\footnotesize (illustrasjon: Credit: ESA/Hubble \& NASA, RELICS; Acknowledgement: D. Coe et al. + Hiclipart)}\hyperlink{intro2}{\pagebutton{Neste side}}
 }
 \end{columns}
 \end{frame}

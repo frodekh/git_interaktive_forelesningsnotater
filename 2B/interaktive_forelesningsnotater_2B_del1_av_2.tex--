@@ -75,9 +75,6 @@
 %body
 \setbeamercolor{block body}{fg=yellow,bg=bronze}
 
-
-
-
 \newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
 
 \newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
@@ -105,7 +102,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171403}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -339,7 +336,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 {\small
 {\bf Velkommen til forelesning 1 av 2 i del 2B! I denne første forelesningen skal vi se nærmere på fremstilling av eventer i tid og rom og avstander mellom slike i et tidromdiagram. Vi skal forsøke å forstå litt mer av hva tidromsavstanden $\Delta s$ sier oss. Til slutt skal vi introdusere 4-vektorer som er 4-dimensjonale vektorer i tidrommet.} I den fysiske forelesningen kommer jeg normalt gjennom alt i dette notatet i løpet av en dobbelttime. Ofte begynner jeg såvidt litt på det neste også.\\
 \textcolor{red}{Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken ``Spacetime Physics'' av E. Taylor og J. Wheeler, gratis tilgjengelig \href{http://www.eftaylor.com/spacetimephysics/}{her}. Anbefales på det sterkeste for den som er interessert.}
-{(\tiny Illustrasjon fra pngegg.com)}}
+{(\tiny \htmlcom{footnotesize}{Illustrasjon fra pngegg.com})}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -512,7 +509,7 @@ Det var riktig. Er du likevel i tvil kan du se på \href{https://www.uio.no/stud
 \label{pause}
 \hyperlink{riktig_td11b}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe?}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Vi er ikke helt ferdig med dette temaet enda, men jeg ble litt rastløs her, vi skal gjennom en eksempeloppgave til før neste tema, men jeg tror vi trenger litt frisk luft og en dose koffein nå!
 Ikke lov å fortsette før du har tatt minst 15 min. pause {\bf og en skikkelig strekk på bena!}
@@ -614,16 +611,16 @@ Altså, hvordan blir verdenslinja til dette legemet fra event A til event B? Og 
 
 
 \fullframe{td21}{td20}{td22}{0}{\Huge
-  Blir det en rett linje fra A til B i tidrommet? Hvordan visste du det?
+\htmlcom{large}{Blir det en rett linje fra A til B i tidrommet? Hvordan visste du det?}
 }{SIDE 30/38/44}
 
 
 \fullframe{td22}{td21}{td23}{0}{\Huge
-  Rett linje betyr konstant hastighet, ikke sant? Hvorfor konstant hastighet?
+\htmlcom{large}{Rett linje betyr konstant hastighet, ikke sant? Hvorfor konstant hastighet?}
 }{SIDE 31/38/44}
 
 \fullframe{td23}{td22}{td24}{0}{\Huge
-  Var det Newtons første lov du brukte?
+\htmlcom{large}{Var det Newtons første lov du brukte?}
 }{SIDE 32/38/44}
 
 \fullframetxt{td24}{td23}{td25}{0}{Hæææææææææ?????}{
@@ -646,7 +643,7 @@ La oss si at det tok 10 sekunder fra A til B i bilen som kjørte med konstant ha
 }{SIDE 35/38/44}
 
 \colfullframe{red_td25c}{td25b}{td25d}{0}{red}{\Huge
-\textcolor{yellow}{Har du tegnet tidromsdiagrammet med de 3 verdenslinjene og med prikker på? Dette likner på en av ukeoppgavene og flere eksamensoppgaver, så sjansen er stor for at du kommer til å trenge dette. Bedre å lære og forstå det nå!}
+\textcolor{yellow}{\htmlcom{large}{Har du tegnet tidromsdiagrammet med de 3 verdenslinjene og med prikker på? Dette likner på en av ukeoppgavene og flere eksamensoppgaver, så sjansen er stor for at du kommer til å trenge dette. Bedre å lære og forstå det nå!}}
 }{SIDE 36/38/44}
 
 \fullframe{td25d}{red_td25c}{td26}{0}{\Huge
@@ -671,9 +668,9 @@ For å oppsummere:
 \label{pause2}
 \hyperlink{td26}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe igjen?}
+\centerline{\htmlcom{large}{Kaffe igjen?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
-Dette vasr mye abstrakt tenkning, da trenger vi litt koffein og litt adrenalin: En løpetur ut først, 3 ganger rundt fysikkbygningen så fort du kan! Ikke lov å fortsette før du har løpt alle 3 rundene!
+Dette var mye abstrakt tenkning, da trenger vi litt koffein og litt adrenalin: En løpetur ut først, 3 ganger rundt fysikkbygningen så fort du kan! Ikke lov å fortsette før du har løpt alle 3 rundene!
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema3}{\pagebutton{Ok, jeg er klar for 4D(X?)-matematikk... }}
@@ -719,7 +716,8 @@ der det altså egentlig er en sum over $\nu$ som vi ikke skriver.}
 
 \fullframe{vv3_b}{vv2}{vv4}{0}{\large
 Fikk du...
-^pagebutton ja, fikk du...^
+\pagebuttonolink{ja fikk du...}
+
 \[
 x_\mu'=\sum_{\nu=0}^3C_{\mu\nu}x_\nu
 \]
@@ -756,7 +754,7 @@ Kan du nå skrive det vanlige vektorskalarproduktet
 \vec{x}\cdot\vec{y}=
 \]
 ved hjelp av Einsteinkonvensjonen?
-{\pagebutton{ja, det blir...}}
+{\pagebuttonolink{ja, det blir...}}
 \[
 \vec{x}\cdot\vec{y}=x_iy_i
 \]
@@ -798,7 +796,7 @@ Ser du nå hvorfor skalarproduktet i 4D-tidrom er definert med et minus mellom t
 \Delta x_\mu=x_\mu-y_\mu
 \]
 Kan du nå skrive tidromsavstanden $\Delta s^2$ mellom de to eventene uttrykt ved $\Delta x_\mu$?
-\pagebutton{ja, det blir...}\\
+\pagebuttonolink{ja, det blir...}\\
 Er du sikker på at du har forsøkt?\\
 \hyperlink{vv6_c}{\pagebutton{jada, jada, få se da!}}
 \textcolor{white}{
@@ -814,9 +812,9 @@ Ser du nå hvorfor skalarproduktet i 4D-tidrom er definert med et minus mellom t
 \Delta x_\mu=x_\mu-y_\mu
 \]
 Kan du nå skrive tidromsavstanden $\Delta s^2$ mellom de to eventene uttrykt ved $\Delta x_\mu$?
-\pagebutton{ja, det blir...}\\
+\pagebuttonolink{ja, det blir...}\\
 Er du sikker på at du har forsøkt?\\
-\pagebutton{jada, jada, få se da!}
+\pagebuttonolink{jada, jada, få se da!}
 \[
 \Delta s^2=\Delta x_\mu\Delta x^\mu
 \]

@@ -1,7 +1,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{../usercommands_html}
+\input{../usercommands_pdf}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -336,7 +336,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 {\small
 {\bf Velkommen til forelesning 2 av 2 i del 2A! Denne tar bittelitt mer enn en dobbelttime fysisk forelesning. I denne forelesningen skal vi gå gjennom eksempler der vi bruker tidromsintervallets invarians til å løse forskjellige problemstillinger. Disse problemstillingene likner mye på de som du trenger å løse for prosjektet eller for eksamen, så følg nøye med. }\\
 \textcolor{red}{Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken ``Spacetime Physics'' av E. Taylor og J. Wheeler, gratis tilgjengelig \href{http://www.eftaylor.com/spacetimephysics/}{her}. Anbefales på det sterkeste for den som er interessert.}
-{(\tiny Illustrasjon fra pngegg.com)}}
+{(\tiny \htmlcom{footnotesize}{Illustrasjon fra pngegg.com})}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -396,7 +396,9 @@ Tenk deg følgende situasjon. Et romskip kjører bortover med hastighet på 99.9
 }{SIDE 5/7/39}
 
 \fullframe{rep6}{rep5}{rep7}{0}{\huge
+\htmlcom{large}{
 Tenk deg nå hvordan dette ser ut fra en astronaut i romskipet? Hvordan beveger bakken seg? Og hva skjer med lysstrålene? Hvordan beveger de seg? Ser det forskjellig ut? Ikke gå videre før du har et klart bilde i hodet av hvordan dette ser ut fra astronautens synspunkt.
+}
 }{SIDE 6/7/39}
 
 \fullframe{rep7}{rep6}{blue_nytema2}{0}{\large
@@ -423,7 +425,9 @@ Vi skal prøve å finne en tolkning av tidromsintervallet.
 }
 
 \fullframe{eks1}{rep7}{eks2}{0}{\label{eks1}\Huge
+\htmlcom{large}{
 Vi skal nå se på et eksempel der du skal bruke tidromsintervallet og litt hoderegning til å transformere mellom to systemer. Dette eksempler gir samtidig litt intuisjon for tidromsintervallet. Einstein brukte mye tog som eksempler, det skal vi også...
+}
 }{SIDE 8/19/39}
 
 \fullframe{eks2}{eks1}{eks3}{0}{\small
@@ -466,7 +470,8 @@ t_A'&=0, &t_B'&=3m, &t_C'&=6m
 
 
 \fullframenotxt{eks9}{eks8}{eks10}{0}{
-  Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan? \hyperlink{eks9_b}{\pagebutton{Jeg har tenkt litt over det og har kanskje en ide}}
+Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan?\\
+\hyperlink{eks9_b}{\pagebutton{Jeg har tenkt litt over det og har kanskje en ide}}
   \textcolor{white}{
 Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$? {høres rimlig ut det ja...}\\
 Kan du regne ut tidromsintervallet mellom event A og event C i meter?{ok, done...}\\
@@ -475,8 +480,10 @@ Vi kjenner altså tidromsintervallet mellom eventene! I bakkesystemet kjenner vi
 }{SIDE 15/19/39}
 
 \fullframenotxt{eks9_b}{eks8}{eks10}{0}{
-Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan? \pagebutton{Jeg har tenkt litt over det og har kanskje en ide}
-Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$? \hyperlink{eks9_c}{\pagebutton{høres rimlig ut det ja...}}
+Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan?\\
+\pagebuttonolink{Jeg har tenkt litt over det og har kanskje en ide}
+Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$?\\
+\hyperlink{eks9_c}{\pagebutton{høres rimlig ut det ja...}}
 \textcolor{white}{
 Kan du regne ut tidromsintervallet mellom event A og event C i meter? {ok, done...}{0}\\
 Fikk du $\Delta s' = \sqrt{(6\m)^2-0^2}=6\m$? {det må det bli!}\\
@@ -484,28 +491,39 @@ Vi kjenner altså tidromsintervallet mellom eventene! I bakkesystemet kjenner vi
 }{SIDE 15/19/39}
 
 \fullframenotxt{eks9_c}{eks8}{eks10}{0}{
-Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan? \pagebutton{Jeg har tenkt litt over det og har kanskje en ide}
-Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$? \pagebutton{høres rimlig ut det ja...}
-Kan du regne ut tidromsintervallet mellom event A og event C i meter? \hyperlink{eks9_d}{\pagebutton{ok, done...}}
+Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan?\\
+\pagebuttonolink{Jeg har tenkt litt over det og har kanskje en ide}
+Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$?\\
+\pagebuttonolink{høres rimlig ut det ja...}
+Kan du regne ut tidromsintervallet mellom event A og event C i meter?\\
+\hyperlink{eks9_d}{\pagebutton{ok, done...}}
 \textcolor{white}{
 Fikk du $\Delta s' = \sqrt{(6\m)^2-0^2}=6\m$? {det må det bli!}\\
 Vi kjenner altså tidromsintervallet mellom eventene! I bakkesystemet kjenner vi kun den romlige avstanden mellom A og C, men ikke tidsintervallet. Kan du bruke invarians av tidromsintervallet til å finne $t_C'$?}
 }{SIDE 15/19/39}
 
 \fullframenotxt{eks9_d}{eks8}{eks10}{0}{
-Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan? \pagebutton{Jeg har tenkt litt over det og har kanskje en ide}
-Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$? \pagebutton{høres rimlig ut det ja...}
-Kan du regne ut tidromsintervallet mellom event A og event C i meter? \pagebutton{ok, done...}
-Fikk du $\Delta s' = \sqrt{(6\m)^2-0^2}=6\m$? \hyperlink{eks9_e}{\pagebutton{det må det bli!}}
+Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan?\\
+\pagebuttonolink{Jeg har tenkt litt over det og har kanskje en ide}
+Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$?\\
+\pagebuttonolink{høres rimlig ut det ja...}
+Kan du regne ut tidromsintervallet mellom event A og event C i meter?\\
+\pagebuttonolink{ok, done...}
+Fikk du $\Delta s' = \sqrt{(6\m)^2-0^2}=6\m$?\\
+\hyperlink{eks9_e}{\pagebutton{det må det bli!}}
 \textcolor{white}{
 Vi kjenner altså tidromsintervallet mellom eventene! I bakkesystemet kjenner vi kun den romlige avstanden mellom A og C, men ikke tidsintervallet. Kan du bruke invarians av tidromsintervallet til å finne $t_C'$?}
 }{SIDE 15/19/39}
 
 \fullframetxt{eks9_e}{eks8}{eks10}{0}{La meg tenke og regne bittelitt her...}{
-Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan? \pagebutton{Jeg har tenkt litt over det og har kanskje en ide}
-Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$? \pagebutton{høres rimlig ut det ja...}
-Kan du regne ut tidromsintervallet mellom event A og event C i meter? \pagebutton{ok, done...}
-Fikk du $\Delta s' = \sqrt{(6\m)^2-0^2}=6\m$? \pagebutton{det må det bli!}
+Hva så med tidspunktene $t_B$ og $t_C$ i bakkesystemet? Kan vi bruke invarians av tidromsintervallet? Isåfall hvordan?\\
+\pagebuttonolink{Jeg har tenkt litt over det og har kanskje en ide}
+Vi vet hvor langt det er mellom f.eks. event A og C i både tid og rom i togsystemet, enig? Dvs. vi kjenner både $\Delta x_\mathrm{AC}'$ og $\Delta t_\mathrm{AC}'$ i togsystemet, dermed kan vi vel enkelt finne $\Delta s' = \sqrt{(\Delta t')^2-(\Delta x')^2}$?\\
+\pagebuttonolink{høres rimlig ut det ja...}
+Kan du regne ut tidromsintervallet mellom event A og event C i meter?\\
+\pagebuttonolink{ok, done...}
+Fikk du $\Delta s' = \sqrt{(6\m)^2-0^2}=6\m$?\\
+\pagebuttonolink{det må det bli!}
 Vi kjenner altså tidromsintervallet mellom eventene! I bakkesystemet kjenner vi kun den romlige avstanden mellom A og C, men ikke tidsintervallet. Kan du bruke invarians av tidromsintervallet til å finne $t_C'$?
 }{SIDE 15/19/39}
 
@@ -547,7 +565,7 @@ Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i me
 
 \fullframetwonotxt{eks11_b}{eks10}{eks11x}{0}{\footnotesize
 Ofte er dette eneste måte å løse problemet på, men i dette tilfellet her finnes det en annen som gir litt mer innsikt i problemstillingen. Prøv å tegne hele lysstrålen fra A til C i labsystemet. Sett mål på alle lengder på tegningen.\\
-\pagebutton{\footnotesize Ok, jeg har gjort det}
+\pagebuttonolink{\footnotesize Ok, jeg har gjort det}
 Ble den slik?
 \includegraphics[scale=0.25]{media/triangle.png}\\
 der høyden er 3m?\\
@@ -570,11 +588,11 @@ Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i me
 
 \fullframetwonotxt{eks11_c}{eks10}{eks11x}{0}{\footnotesize
 Ofte er dette eneste måte å løse problemet på, men i dette tilfellet her finnes det en annen som gir litt mer innsikt i problemstillingen. Prøv å tegne hele lysstrålen fra A til C i labsystemet. Sett mål på alle lengder på tegningen.\\
-\pagebutton{\footnotesize Ok, jeg har gjort det}
+\pagebuttonolink{\footnotesize Ok, jeg har gjort det}
 Ble den slik?
 \includegraphics[scale=0.25]{media/triangle.png}\\
 der høyden er 3m?\\
-\pagebutton{\footnotesize Jepp!}
+\pagebuttonolink{\footnotesize Jepp!}
 Streken fra A til B er jo avstanden som lyset har tilbakelagt fra A til B. Kan du bruke geometri på figuren til å finne\\
 \vspace*{4cm}
 }
@@ -593,17 +611,17 @@ Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i me
 
 \fullframetwonotxt{eks11_d}{eks10}{eks11x}{0}{\footnotesize
 Ofte er dette eneste måte å løse problemet på, men i dette tilfellet her finnes det en annen som gir litt mer innsikt i problemstillingen. Prøv å tegne hele lysstrålen fra A til C i labsystemet. Sett mål på alle lengder på tegningen.\\
-\pagebutton{\footnotesize Ok, jeg har gjort det}
+\pagebuttonolink{\footnotesize Ok, jeg har gjort det}
 Ble den slik?
 \includegraphics[scale=0.25]{media/triangle.png}\\
 der høyden er 3m?\\
-\pagebutton{\footnotesize Jepp!}
+\pagebuttonolink{\footnotesize Jepp!}
 Streken fra A til B er jo avstanden som lyset har tilbakelagt fra A til B. Kan du bruke geometri på figuren til å finne\\
 \vspace*{4cm}
 }
 {\footnotesize
 denne avstanden? Tilsvarende for A til C?\\
-\pagebutton{\footnotesize Ok, jeg har regnet}
+\pagebuttonolink{\footnotesize Ok, jeg har regnet}
 Ble det $\sqrt{(4\m)^2+(3\m)^2}=5m$ for både A til B og B til C? Dermed har lyset totalt tilbakelagt en avstand på $2\sqrt{(4\m)^2+(3\m)^2}=10m$ fra A til C?\\
 \hyperlink{eks11_e}{\pagebutton{\footnotesize Enig!}}
 \textcolor{white}{
@@ -616,19 +634,19 @@ Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i me
 
 \fullframetwonotxt{eks11_e}{eks10}{eks11x}{0}{\footnotesize
 Ofte er dette eneste måte å løse problemet på, men i dette tilfellet her finnes det en annen som gir litt mer innsikt i problemstillingen. Prøv å tegne hele lysstrålen fra A til C i labsystemet. Sett mål på alle lengder på tegningen.\\
-\pagebutton{\footnotesize Ok, jeg har gjort det}
+\pagebuttonolink{\footnotesize Ok, jeg har gjort det}
 Ble den slik?
 \includegraphics[scale=0.25]{media/triangle.png}\\
 der høyden er 3m?\\
-\pagebutton{\footnotesize Jepp!}
+\pagebuttonolink{\footnotesize Jepp!}
 Streken fra A til B er jo avstanden som lyset har tilbakelagt fra A til B. Kan du bruke geometri på figuren til å finne\\
 \vspace*{4cm}
 }
 {\footnotesize
 denne avstanden? Tilsvarende for A til C?\\
-\pagebutton{\footnotesize Ok, jeg har regnet}
+\pagebuttonolink{\footnotesize Ok, jeg har regnet}
 Ble det $\sqrt{(4\m)^2+(3\m)^2}=5m$ for både A til B og B til C? Dermed har lyset totalt tilbakelagt en avstand på $2\sqrt{(4\m)^2+(3\m)^2}=10m$ fra A til C?\\
-\pagebutton{\footnotesize Enig!}
+\pagebuttonolink{\footnotesize Enig!}
 Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i meter)\\
 \hyperlink{eks11_f}{\pagebutton{\footnotesize Ja, det må vel være...}}
 \textcolor{white}{
@@ -639,21 +657,21 @@ Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i me
 
 \fullframetwo{eks11_f}{eks10}{eks11x}{0}{\footnotesize
 Ofte er dette eneste måte å løse problemet på, men i dette tilfellet her finnes det en annen som gir litt mer innsikt i problemstillingen. Prøv å tegne hele lysstrålen fra A til C i labsystemet. Sett mål på alle lengder på tegningen.\\
-\pagebutton{\footnotesize Ok, jeg har gjort det}
+\pagebuttonolink{\footnotesize Ok, jeg har gjort det}
 Ble den slik?
 \includegraphics[scale=0.25]{media/triangle.png}\\
 der høyden er 3m?\\
-\pagebutton{\footnotesize Jepp!}
+\pagebuttonolink{\footnotesize Jepp!}
 Streken fra A til B er jo avstanden som lyset har tilbakelagt fra A til B. Kan du bruke geometri på figuren til å finne\\
 \vspace*{4cm}
 }
 {\footnotesize
 denne avstanden? Tilsvarende for A til C?\\
-\pagebutton{\footnotesize Ok, jeg har regnet}
+\pagebuttonolink{\footnotesize Ok, jeg har regnet}
 Ble det $\sqrt{(4\m)^2+(3\m)^2}=5m$ for både A til B og B til C? Dermed har lyset totalt tilbakelagt en avstand på $2\sqrt{(4\m)^2+(3\m)^2}=10m$ fra A til C?\\
-\pagebutton{\footnotesize Enig!}
+\pagebuttonolink{\footnotesize Enig!}
 Men hvor lang tid bruker lys på å bevege seg en avstand 10m? (angi svaret i meter)\\
-\pagebutton{\footnotesize Ja, det må vel være...}
+\pagebuttonolink{\footnotesize Ja, det må vel være...}
 ...10 meter det? Et tidsintervall på 10 meter var jo definert som tiden lyset bruker på å tilbakelegge 10 m, det var slik vi regnet om tidsintervaller til meter. Men da har vi også funnet hvor lang tid det tar fra event A til event C i labsystemet, nøyaktig samme svar som vi fikk med å regne invarians av tidromsintervallet på forrige side. Alt er konsistent!
 \vspace*{4cm}
 }{SIDE 17/19/39}
@@ -698,7 +716,7 @@ Kikk igjen på denne figuren:
 \label{pause}
 \hyperlink{eks12}{\pagebutton{\small Forrige side}}
 {\Large
-\centerline{Kaffe allerede nå?}
+\centerline{\htmlcom{large}{Kaffe allerede nå?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Jepp, og ta gjerne dobbelt dose. Resten av denne forelesningen trenger {\bf din fulle konsentrasjon!} Spesielt krever den at du faktisk driver og regner litt på papir. Hvis du ikke er i humør til det nå, vent til en annen gang, ellers får du ikke noe ut av dette. Vi skal ta en liten pause underveis for at du får puste litt.
 }\\
@@ -815,7 +833,7 @@ Som er den siste av de tre likningene vi trenger. Fikk du det ikke til, ta en ti
 \label{pause2}
 \hyperlink{tog13}{\pagebutton{\small Forrige side}}
 {\Large
-\centerline{Kakaopause}
+\centerline{\htmlcom{large}{Kakaopause}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Kulda setter inn, og litt kakao må man kunne kose seg med oppi all denne abstrakte tenkingen og regningen. For å prøve å se den 4 dimensjonen anbefales det å bruke denne pausen til å stå på hodet (jeg mener det, vel, ihvertfall for å få litt blod til hodet). Bruk veggen til hjelp. Og en tur i frisk luft er absolutt påkrevet før du går videre. Ikke finn på å fortsette før hodet er klart igjen!
 }\\
@@ -851,7 +869,7 @@ L^2&=L_0^2-(t_A'-t_B')^2\\
 (L/2)^2&=(L_0/2)^2-(t_A')^2\\
 \frac{(L/2)^2}{(1+v)^2}(1-v^2)&=(t_A'+L_0/2)^2
 \end{align}
-Sett inn for L i likning (3) fra likning (2). Da skulle du få to mulige løsninger for $t_A'$. Hvilke?\pagebutton{\small Wow, det blir litt lang regning...}
+Sett inn for L i likning (3) fra likning (2). Da skulle du få to mulige løsninger for $t_A'$. Hvilke?\pagebuttonolink{\small Wow, det blir litt lang regning...}
 Fikk du:
 \begin{align*}
 t_A'&=-L_0/2\\
@@ -870,13 +888,13 @@ L^2&=L_0^2-(t_A'-t_B')^2\\
 (L/2)^2&=(L_0/2)^2-(t_A')^2\\
 \frac{(L/2)^2}{(1+v)^2}(1-v^2)&=(t_A'+L_0/2)^2
 \end{align}
-Sett inn for L i likning (3) fra likning (2). Da skulle du få to mulige løsninger for $t_A'$. Hvilke?\pagebutton{\small Wow, det blir litt lang regning...}
+Sett inn for L i likning (3) fra likning (2). Da skulle du få to mulige løsninger for $t_A'$. Hvilke?\pagebuttonolink{\small Wow, det blir litt lang regning...}
 Fikk du:
 \begin{align*}
 t_A'&=-L_0/2\\
 t_A'&=-vL_0/2
 \end{align*}
-??? Men kun en løsning kan være riktig. Kan du se at det er noe veldig ufysisk med en av disse løsningene? (hint: hva betyr $t_A'$? Hva blir $t_C'$ gitt disse løsningene? Og hva er tolkningen av det?)\pagebutton{\small Jeg har tenkt litt!}
+??? Men kun en løsning kan være riktig. Kan du se at det er noe veldig ufysisk med en av disse løsningene? (hint: hva betyr $t_A'$? Hva blir $t_C'$ gitt disse løsningene? Og hva er tolkningen av det?)\pagebuttonolink{\small Jeg har tenkt litt!}
 Løsningen $t_A=-L_0/2$ er ufysisk. Hvis du er usikker, både på hvordan vi kom frem til disse to løsningene og hvorfor den ene løsningen er ufysisk, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_10.mp4}{denne videoen}.{\bf (Merk at videoen har lang og stygg regning, hvis du ikke er interessert i detaljer, spol frem til tolkning av det ufysiske resultatet)}
 }{SIDE 33/39/39}
 

@@ -1,7 +1,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{../usercommands_pdf}
+\input{usercommands_html}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -313,7 +313,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 {\small
 {\bf Velkommen til forelesning 1 av 2 i del 2A! Denne tilsvarer omtrent en dobbelttime forelesning (kommer normalt ca. halvveis ut i den aller siste videoen på en forelesning). Vi begynner med den spesielle relativitetsteorien. Hovedfokuset her er å prøve å få en viss forståelse for hva som skjer. Matematikken i del 2A blir holdt på et veldig enkelt nivå mens forståelsen og intuisjonen for hovedprinsippene i relativitetsteorien skal spille hovedrollen. Dette blir også det som forventes av deg i rapport/bloggskriving (prosjekt) og på eksamen (standardløp). Vi begynner forsiktig med den klassiske relativitetsteorien...}\\
 \textcolor{red}{Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken ``Spacetime Physics'' av E. Taylor og J. Wheeler, gratis tilgjengelig \href{http://www.eftaylor.com/spacetimephysics/}{her}. Anbefales på det sterkeste for den som er interessert.}
-{(\tiny Illustrasjon fra pngegg.com)}}
+{(\tiny \htmlcom{footnotesize}{Illustrasjon fra pngegg.com)}}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -360,12 +360,12 @@ Nå har den blå bilen starten motoren slik at den har en fart på 50 km/t i for
 }{SIDE 2/23/61}
 
 \colchoiceframe{feil_kr2a}{kr2}{0}{black}{\Huge
-\textcolor{yellow}{Det ble galt! Er du sikker på at du kikket skikkelig på figuren? Hvordan var klassisk relativitet? Hva må du gjøre for å finne den oransje bilens hastighet i forhold til den blå? Tenk en gang til og prøv igjen!}
+\textcolor{yellow}{\htmlcom{large}{Det ble galt! Er du sikker på at du kikket skikkelig på figuren? Hvordan var klassisk relativitet? Hva må du gjøre for å finne den oransje bilens hastighet i forhold til den blå? Tenk en gang til og prøv igjen!}}
 }{SIDE 3/23/61}
 
 \colfullframe{riktig_kr2b}{kr2}{kr3}{-1}{yellow}{\huge
 \centerline{\includegraphics[scale=0.3]{media/klassrel3.png}}
-Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene?
+\htmlcom{large}{Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene?}
 }{SIDE 4/23/61}
 
 
@@ -379,7 +379,7 @@ Hva nå hvis den blå bilen øker til 100 km/t? Den oransje bilen har enda 100 k
 
 
 \colchoiceframe{feil_kr3a}{kr3}{0}{black}{\Huge
-\textcolor{yellow}{Det ble galt! Er du sikker på at du kikket skikkelig på figuren? Går ikke begge bilene her med samme fart i forhold til bakken? Tenk en gang til og prøv igjen!}
+\textcolor{yellow}{\htmlcom{large}{Det ble galt! Er du sikker på at du kikket skikkelig på figuren? Går ikke begge bilene her med samme fart i forhold til bakken? Tenk en gang til og prøv igjen!}}
 }{SIDE 6/23/61}
 
 \colfullframe{riktig_kr3b}{kr3}{kr4}{-1}{yellow}{\Large
@@ -396,7 +396,7 @@ Hva nå hvis den blå bilen øker til 150 km/t? Den oransje bilen har enda 100 k
 }{SIDE 8/23/61}
 
 \colchoiceframe{feil_kr4a}{kr4}{0}{black}{\huge
-\textcolor{yellow}{Er du heeeelt sikker!Har  du kikket skikkelig på figuren? Går ikke blå fortere enn oransje? Hvis du sitter i en bil og kjører fortere enn bilen ved siden av, hvis du betrakter deg selv om i ro, hva er farten til den andre bilen? Tenk en gang til og prøv igjen!}
+\textcolor{yellow}{\htmlcom{large}{Er du heeeelt sikker!Har  du kikket skikkelig på figuren? Går ikke blå fortere enn oransje? Hvis du sitter i en bil og kjører fortere enn bilen ved siden av, hvis du betrakter deg selv om i ro, hva er farten til den andre bilen? Tenk en gang til og prøv igjen!}}
 }{SIDE 9/23/61}
 
 \colfullframe{riktig_kr4b}{kr4}{kr5}{-1}{yellow}{\Large
@@ -479,7 +479,7 @@ gjelde for lys. Men gjelder det likevel for alle andre objekter? Einstein lagde 
 
 \fullframe{kr11}{kr10}{kr12}{0}{\huge
 \centerline{\includegraphics[scale=0.3]{media/klassrel8.png}}
-La oss se på situasjonen med bilen men nå et foton eller lysbølge isteden for den oransje bilen.
+\htmlcom{large}{La oss se på situasjonen med bilen men nå et foton eller lysbølge isteden for den oransje bilen.}
 }{SIDE 19/23/61}
 
 
@@ -608,7 +608,7 @@ Det er helt riktig! Hvis du enda er usikker,  ta en titt på denne \href{https:/
 \label{pause}
 \hyperlink{riktig_tog8b}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe?}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Litt frisk luft nå! Ikke lov å bli inne. Vekk fra alle skjermer.
 Ikke lov å fortsette før du har tatt minst 15 min. pause!
@@ -669,11 +669,11 @@ Det er helt riktig! Hvis du enda er usikker, ta en titt på denne \href{https://
 }{SIDE 45/61/61}
 
 \fullframe{tog13}{riktig_tog12b}{tog14}{0}{\Huge
-Men hva iallverden er rett da??? Ser passasjer P lysglimtene {\bf samtidig} eller {\bf A før B?}. Har vi gjort noe galt i noen av regningene?
+\htmlcom{large}{Men hva iallverden er rett da??? Ser passasjer P lysglimtene {\bf samtidig} eller {\bf A før B?}. Har vi gjort noe galt i noen av regningene?}
 }{SIDE 46/61/61}
 
 \fullframe{tog14}{tog13}{tog15}{0}{\Huge
-La oss spørre passasjer P selv hva hun så da! Og også professor P...
+\htmlcom{large}{La oss spørre passasjer P selv hva hun så da! Og også professor P...}
 }{SIDE 47/61/61}
 
 \colfullframe{tog15}{tog14}{tog16}{0}{silver}{
@@ -693,15 +693,15 @@ La oss spørre passasjer P selv hva hun så da! Og også professor P...
 }{SIDE 51/61/61}
 
 \fullframe{tog19}{tog18}{tog20}{0}{\Huge
-Hvem har rett??? Hva skjedde egentlig??? Diskuter i 5-10 minutter.
+\htmlcom{large}{Hvem har rett??? Hva skjedde egentlig??? Diskuter i 5-10 minutter.}
 }{SIDE 52/61/61}
 
 \fullframe{tog20}{tog19}{tog21}{0}{\Huge
-Einstein så kun to mulige løsninger på dilemmaet. Gjør du?
+\htmlcom{large}{Einstein så kun to mulige løsninger på dilemmaet. Gjør du?}
 }{SIDE 53/61/61}
 
 \fullframe{tog21}{tog20}{tog22}{0}{\huge
-{\bf 1)} De fysiske lovene er forskjellige i de forskjellige referansesystemene. Vi får feil svar, fordi vi har brukt de samme fysiske lovene i begge referansesystem når vi har regnet. Men hvordan skal vi vite hvilke fysiske lover gjelder i hvilket referansesystem? Hvis det ikke finnes et absolutt referansesystem som vi kan definere alle andre fra, da er dette en umulig løsning.
+\htmlcom{large}{{\bf 1)} De fysiske lovene er forskjellige i de forskjellige referansesystemene. Vi får feil svar, fordi vi har brukt de samme fysiske lovene i begge referansesystem når vi har regnet. Men hvordan skal vi vite hvilke fysiske lover gjelder i hvilket referansesystem? Hvis det ikke finnes et absolutt referansesystem som vi kan definere alle andre fra, da er dette en umulig løsning.}
 }{SIDE 54/61/61}
 
 \fullframe{tog22}{tog21}{tog23}{0}{\large
@@ -726,7 +726,7 @@ Einsteins to postulater her, relativitetsprinsippet og det at samtidighet er rel
 
 
 \fullframe{tog25}{tog24}{tog25b}{0}{\huge
-Merk videre at postulatet om at samtidighet er relativt kun er en følge av postulatet (med sterk empirisk støtte) om at lyshastigheten er den samme for alle observatører kombinert med relativitetsprinsippet: Hvis disse to samtidig skal være oppfylt, så må samtidighet være relativt for å unngå selvmotsigelser slik som det med lynnedslagene i toget.
+\htmlcom{large}{Merk videre at postulatet om at samtidighet er relativt kun er en følge av postulatet (med sterk empirisk støtte) om at lyshastigheten er den samme for alle observatører kombinert med relativitetsprinsippet: Hvis disse to samtidig skal være oppfylt, så må samtidighet være relativt for å unngå selvmotsigelser slik som det med lynnedslagene i toget.}
 }{SIDE 58/61/61}
 
 \fullframe{tog25b}{tog25}{tog26}{0}{\large

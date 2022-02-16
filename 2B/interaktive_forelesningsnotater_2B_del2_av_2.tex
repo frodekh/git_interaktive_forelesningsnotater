@@ -1,7 +1,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{../usercommands_pdf}
+\input{usercommands_html}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171403}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -339,7 +339,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 {\small
 {\bf Velkommen til forelesning 2 av 2 i del 2B! I denne forelesningen skal vi gå gjennom eksempler der vi bruker tidromsintervallets invarians til å løse forskjellige problemstillinger. Disse problemstillingene likner mye på de som du trenger å løse for prosjektet eller for eksamen, så følg nøye med. }\\
 \textcolor{red}{Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken ``Spacetime Physics'' av E. Taylor og J. Wheeler, gratis tilgjengelig \href{http://www.eftaylor.com/spacetimephysics/}{her}. Anbefales på det sterkeste for den som er interessert.}
-{(\tiny Illustrasjon fra pngegg.com)}}
+{(\tiny \htmlcom{footnotesize}{Illustrasjon fra pngegg.com})}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -375,7 +375,7 @@ Vi begynner med en oppsummering av det vi vet om 4-vektorer i \href{https://www.
 }{SIDE 1/10/56}
 
 \fullframetxt{vv2}{vv1}{red_vv3}{0}{\small Trykk her etter at du har tenkt gjennom hva en 4-vektor er}{\large
-Vi skal utlede litt regneregler for 4-vektorer. {\bf Det som er spesielt viktig for å vite om en regneoperasjon på en 4-vektor er lov, er om resultatet av regneoperasjonen også er en 4-vektor.} \textcolor{red}{La oss si at du har en 4-vektor $A_\mu$. Og så har du et tidromsintervall $\Delta s$ mellom to eventer.} Si at du av en eller annen grunn skal \textcolor{red}{gange dette tidromsintervallet med 4-vektoren $A_\mu$.}{\Huge Kan du gjøre det????} {\bf Eller rettere sagt: blir resultatet av denne gangeoperasjonen en 4-vektor?} Sagt matematisk:
+Vi skal utlede litt regneregler for 4-vektorer. {\bf Det som er spesielt viktig for å vite om en regneoperasjon på en 4-vektor er lov, er om resultatet av regneoperasjonen også er en 4-vektor.} \textcolor{red}{La oss si at du har en 4-vektor $A_\mu$. Og så har du et tidromsintervall $\Delta s$ mellom to eventer.} Si at du av en eller annen grunn skal \textcolor{red}{gange dette tidromsintervallet med 4-vektoren $A_\mu$.}{\Huge \htmlcom{large}{Kan du gjøre det????}} {\bf Eller rettere sagt: blir resultatet av denne gangeoperasjonen en 4-vektor?} Sagt matematisk:
 \[
 B_\mu=\Delta s A_\mu
 \]
@@ -384,7 +384,7 @@ Er $B_\mu$ en 4-vektor? Hvordan kan vi sjekke det?
 
 
 \colfullframe{red_vv3}{vv2}{vv4}{0}{red}{\Huge
-\textcolor{yellow}{Så? {\bf Er} $B_\mu$ virkelig en 4-vektor eller ikke? Hva var kravet til en 4-vektor? Er du usikker, gå tilbake til repetisjonen i starten her.}
+\textcolor{yellow}{\htmlcom{large}{Så? {\bf Er} $B_\mu$ virkelig en 4-vektor eller ikke? Hva var kravet til en 4-vektor? Er du usikker, gå tilbake til repetisjonen i starten her.}}
 }{SIDE 3/10/56}
 
 \fullframetxt{vv4}{red_vv3}{red_vv5}{0}{Jeg har tenkt godt gjennom problemstillingen}{\Large
@@ -392,7 +392,7 @@ Er ikke kravet at en 4-vektor skal kunne transformeres fra et referansesystem ti
 \[
 A_\mu'=C_{\mu\nu}A_\nu
 \]
-er oppfylt (merk, $C_{\mu\nu}$ er Lorentzmatrisa og Einsteins summekonvensjon har blitt brukt). Dermed vet vi hva komponentene av $A_\mu$ er i det merkede systemet, hvis vi kjenner dem i det umerkede. {\Huge Men oppfyller $B_\mu$ denne betingelsen?}
+er oppfylt (merk, $C_{\mu\nu}$ er Lorentzmatrisa og Einsteins summekonvensjon har blitt brukt). Dermed vet vi hva komponentene av $A_\mu$ er i det merkede systemet, hvis vi kjenner dem i det umerkede. {\Huge \htmlcom{large}{Men oppfyller $B_\mu$ denne betingelsen?}}
 }{SIDE 4/10/56}
 
 \colfullframe{red_vv5}{vv4}{vv6}{0}{red}{\Large
@@ -415,7 +415,7 @@ La oss ta en til: Hvis vi nå isteden for å gange $A_\mu$ med $\Delta s$, gange
 \[
 B_\mu=tA_\mu
 \]
-der $t$ er tidspunktet til et event målt i umerket system. {\Huge Er $B_\mu$ en 4-vektor?} Gjenta utledningen du akkurat gjorde på nytt...
+der $t$ er tidspunktet til et event målt i umerket system. {\Huge \htmlcom{large}{Er $B_\mu$ en 4-vektor?}} Gjenta utledningen du akkurat gjorde på nytt...
 }{SIDE 7/10/56}
 
 
@@ -448,33 +448,33 @@ Hvis vi har en posisjonsvektor $\vec{x}$ for et objekt, så vet vi at hastighete
 \[
 \vec{v}=\frac{d\vec{x}}{dt}.
 \]
-Kan vi definere en tilsvarende 4-dimensjonal hastighet? Altså med hvilken hastighet beveger du deg gjennom tidrommet? Posisjonen din i rom og tid kan vi angi med en posisjons-4-vektor $x_\mu$.{\Huge Men hva blir 4-hastigheten din, $V_\mu$?} Noen forslag til hvordan denne kan defineres?
+Kan vi definere en tilsvarende 4-dimensjonal hastighet? Altså med hvilken hastighet beveger du deg gjennom tidrommet? Posisjonen din i rom og tid kan vi angi med en posisjons-4-vektor $x_\mu$.{\Huge \htmlcom{large}{Men hva blir 4-hastigheten din, $V_\mu$?}} Noen forslag til hvordan denne kan defineres?
 }{SIDE 11/26/56}
 
 \choiceframe{hast2}{hast1}{0}{\huge
-Fikk du:
+\htmlcom{huge}{Fikk du:
 \[
 V_\mu=\frac{dx_\mu}{dt}
-\]
+\]}
 \hyperlink{feil_hast2b}{\choicebutton{det høres ut som en fornuftig generalisering...}}
 \hyperlink{feil_hast2a}{\choicebutton{Næææææææ.....}}
 }{SIDE 12/26/56}
 
 \colfullframe{feil_hast2a}{hast2}{feil_hast3}{0}{black}{\Huge
-\textcolor{yellow}{Du har god grunn til å tvile ja, men {\bf hvilken grunn?} Ikke gå videre før du vet hvorfor du tviler! Se på uttrykket en gang til:
+\textcolor{yellow}{\htmlcom{large}{Du har god grunn til å tvile ja, men {\bf hvilken grunn?} Ikke gå videre før du vet hvorfor du tviler! Se på uttrykket en gang til:
 \[
 V_\mu=\frac{dx_\mu}{dt}
 \]
-Hva er galt her? (hva lært vi nettopp?)
+Hva er galt her? (hva lært vi nettopp?)}
 }
 }{SIDE 13/26/56}
 
 \colfullframe{feil_hast2b}{hast2}{feil_hast3}{-1}{black}{\Huge
-\textcolor{yellow}{Fornuftig sier du? Se på uttrykket en gang til:
+\textcolor{yellow}{\htmlcom{large}{Fornuftig sier du? Se på uttrykket en gang til:
 \[
 V_\mu=\frac{dx_\mu}{dt}
 \]
-Hva er galt her? (hva lærte vi nettopp?)}
+Hva er galt her? (hva lærte vi nettopp?)}}
 }{SIDE 14/26/56}
 
 \colfullframe{feil_hast3}{hast2}{red_hast4}{0}{black}{\Large
@@ -482,12 +482,12 @@ Hva er galt her? (hva lærte vi nettopp?)}
 \[
 V_\mu=\frac{dx_\mu}{dt}
 \]
-Vi ser her at $dx_\mu$ er en 4-vektor (en differanse $\Delta x_\mu$ mellom to eventer eller to punkter langs verdenslinja) men $dt$ er {\bf ikke en skalar!}. Vi utledet over at vi ikke kan gange/dele en 4-vektor med et tall som ikke er en skalar! $dt$ er et tidsintervall målt i et gitt referansesystem. Dette tallet er forskjellig i et annet referansesystem. Dermed blir {\bf ikke} $V_\mu$ en 4-vektor. Og hvis vi vil ha en hastighetsvektor i det 4-dimensjonale rom, bør det være en 4-vektor! \textcolor{red}{\Huge Har du et bedre forslag?}}
+Vi ser her at $dx_\mu$ er en 4-vektor (en differanse $\Delta x_\mu$ mellom to eventer eller to punkter langs verdenslinja) men $dt$ er {\bf ikke en skalar!}. Vi utledet over at vi ikke kan gange/dele en 4-vektor med et tall som ikke er en skalar! $dt$ er et tidsintervall målt i et gitt referansesystem. Dette tallet er forskjellig i et annet referansesystem. Dermed blir {\bf ikke} $V_\mu$ en 4-vektor. Og hvis vi vil ha en hastighetsvektor i det 4-dimensjonale rom, bør det være en 4-vektor! \textcolor{red}{\Huge \htmlcom{large}{Har du et bedre forslag?}}}
 }{SIDE 15/26/56}
 
 
 \colfullframe{red_hast4}{feil_hast3}{hast5}{0}{red}{\Huge
-  Et hint: kan vi derivere med hensyn på {\bf en annen tid} enn $t$? Ikke bla videre før du har et forslag!
+  \htmlcom{large}{Et hint: kan vi derivere med hensyn på {\bf en annen tid} enn $t$? Ikke bla videre før du har et forslag!}
 }{SIDE 16/26/56}
 
 \fullframenotxt{hast5}{red_hast4}{red_hast6}{0}{
@@ -499,25 +499,27 @@ Viste ikke vi i forrige forelesning at $\Delta s = \Delta \tau$? Og hvis $\Delta
 }{SIDE 17/26/56}
 
 \fullframenotxt{hast5_b}{red_hast4}{red_hast6}{0}{
-Hva med {\bf egentid $\tau$? Husker du hva det var?}\pagebutton{javisst ja (evt. jeg repeterte nå)}\\
+Hva med {\bf egentid $\tau$? Husker du hva det var?}\pagebuttonolink{javisst ja (evt. jeg repeterte nå)}\\
 Var ikke det armbåndsurtid?\hyperlink{hast5_c}{\pagebutton{jovisst!}}\\
 \textcolor{white}{
-Altså tiden målt på en klokke som står fast på objektet som vi ser på, altså det objektet vi måler hastigheten til. Men er det en invariant størrelse da? ({\bf det må del vel være for at vi skal dele det med en 4-vektor!?)}{det var det og jeg husker hvorfor (evt. jeg repeterte nå)}\\
+  Altså tiden målt på en klokke som står fast på objektet som vi ser på, altså det objektet vi måler hastigheten til. Men er det en invariant størrelse da? ({\bf det må del vel være for at vi skal dele det med en 4-vektor!?)}{det var det og jeg husker hvorfor (evt. jeg repeterte nå)}\\
+  
 Viste ikke vi i forrige forelesning at $\Delta s = \Delta \tau$? Og hvis $\Delta s$ er invariant så må også $\Delta \tau$ altså egentidsintervaller, være det. Men kan du se intuitivt hvorfor et egentidsintervall er invariant? Hvor bare {\bf må} det per def være en invariant størrelse?}
 }{SIDE 17/26/56}
 
 \fullframenotxt{hast5_c}{red_hast4}{red_hast6}{0}{
-Hva med {\bf egentid $\tau$? Husker du hva det var?}\pagebutton{javisst ja (evt. jeg repeterte nå)}\\
-Var ikke det armbåndsurtid?{\pagebutton{jovisst!}}\\
+Hva med {\bf egentid $\tau$? Husker du hva det var?}\pagebuttonolink{javisst ja (evt. jeg repeterte nå)}\\
+Var ikke det armbåndsurtid?{\pagebuttonolink{jovisst!}}\\
+
 Altså tiden målt på en klokke som står fast på objektet som vi ser på, altså det objektet vi måler hastigheten til. Men er det en invariant størrelse da? ({\bf det må del vel være for at vi skal dele det med en 4-vektor!?)}\hyperlink{hast5_d}{\pagebutton{det var det og jeg husker hvorfor (evt. jeg repeterte nå)}}\\
 \textcolor{white}{
 Viste ikke vi i forrige forelesning at $\Delta s = \Delta \tau$? Og hvis $\Delta s$ er invariant så må også $\Delta \tau$ altså egentidsintervaller, være det. Men kan du se intuitivt hvorfor et egentidsintervall er invariant? Hvor bare {\bf må} det per def være en invariant størrelse?}
 }{SIDE 17/26/56}
 
 \fullframetxt{hast5_d}{red_hast4}{red_hast6}{0}{Dette bør du kunne svare på}{
-Hva med {\bf egentid $\tau$? Husker du hva det var?}\pagebutton{javisst ja (evt. jeg repeterte nå)}\\
-Var ikke det armbåndsurtid?{\pagebutton{jovisst!}}\\
-Altså tiden målt på en klokke som står fast på objektet som vi ser på, altså det objektet vi måler hastigheten til. Men er det en invariant størrelse da? ({\bf det må del vel være for at vi skal dele det med en 4-vektor!?)}{\pagebutton{det var det og jeg husker hvorfor (evt. jeg repeterte nå)}}\\
+Hva med {\bf egentid $\tau$? Husker du hva det var?}\pagebuttonolink{javisst ja (evt. jeg repeterte nå)}\\
+Var ikke det armbåndsurtid?{\pagebuttonolink{jovisst!}}\\
+Altså tiden målt på en klokke som står fast på objektet som vi ser på, altså det objektet vi måler hastigheten til. Men er det en invariant størrelse da? ({\bf det må del vel være for at vi skal dele det med en 4-vektor!?)}{\pagebuttonolink{det var det og jeg husker hvorfor (evt. jeg repeterte nå)}}\\
 Viste ikke vi i forrige forelesning at $\Delta s = \Delta \tau$? Og hvis $\Delta s$ er invariant så må også $\Delta \tau$ altså egentidsintervaller, være det. Men kan du se intuitivt hvorfor et egentidsintervall er invariant? Hvorfor bare {\bf må} det per def være en invariant størrelse?
 }{SIDE 17/26/56}
 
@@ -532,7 +534,7 @@ Viste ikke vi i forrige forelesning at $\Delta s = \Delta \tau$? Og hvis $\Delta
 
 
 \colfullframe{red_hast6}{hast5}{hast7}{1}{red}{\Huge
-  Et hint: hva betyr invariant? Dette {\bf må} du ha kontroll på nå, hvis ikke spør!
+  \htmlcom{large}{Et hint: hva betyr invariant? Dette {\bf må} du ha kontroll på nå, hvis ikke spør!}
 }{SIDE 18/26/56}
 
 \fullframe{hast7}{red_hast6}{hast8}{0}{\huge
@@ -583,7 +585,7 @@ Hvis du ikke fikk det til, se på \href{https://www.uio.no/studier/emner/matnat/
 \label{pause}
 \hyperlink{hast11}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe!}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 Kanskje skulle du legge deg ned på sofaen og lukke øynene i 10 min? Så alt ikke helt går i surr! Og så en strekk på bena, ok ikke minst {\bf kaffe!}.
 }\\
@@ -631,18 +633,20 @@ Hvordan kan vi tolke dette??? En fart på 1 betyr lysfarta? Beveger vi oss alle 
 }
 
 \fullframenotxt{hast15}{hast14}{red_hast16}{0}{\label{htrans}
-Nå skal vi se {\bf hvorfor} vi var så interessert i at 4-hastigheten skal være en 4-vektor. Husker du Lorentztransformasjonene? De som transformere posisjon og tidspunkt for et event fra et umerket til et merket referansesystem? Hvis vi går tilbake til togene våre i forrige forelesning så har vi en observatør på bakken og en i toget. \textcolor{red}{Begge observatører observerer et event, f.eks. et av lynnedslagene. Bakkeobservatøren måler at lynnedslaget finner sted i posisjon og tid $(x,t)$ og togobservatøren måler at det finner sted i posisjon og tid $(x',t')$. Vi kan da bruke Lorentztransformasjonene til å finne det ene fra det andre hvis vi kjenner relativ hastighet $v_\mathrm{rel}$ mellom observatørene.} \hyperlink{hast15_b}{\pagebutton{Ok, det har jeg kontroll på!}}\textcolor{white}{
+  Nå skal vi se {\bf hvorfor} vi var så interessert i at 4-hastigheten skal være en 4-vektor. Husker du Lorentztransformasjonene? De som transformere posisjon og tidspunkt for et event fra et umerket til et merket referansesystem? Hvis vi går tilbake til togene våre i forrige forelesning så har vi en observatør på bakken og en i toget. \textcolor{red}{Begge observatører observerer et event, f.eks. et av lynnedslagene. Bakkeobservatøren måler at lynnedslaget finner sted i posisjon og tid $(x,t)$ og togobservatøren måler at det finner sted i posisjon og tid $(x',t')$. Vi kan da bruke Lorentztransformasjonene til å finne det ene fra det andre hvis vi kjenner relativ hastighet $v_\mathrm{rel}$ mellom observatørene.}\\
+  \hyperlink{hast15_b}{\pagebutton{Ok, det har jeg kontroll på!}}\textcolor{white}{
 Men hva nå hvis begge observatører ser et fly i lufta. Observatøren på bakken vil da måle flyet til å ha fart $v_x$ i x-retning. Observatøren på toget derimot vil måle av flyet har fart $v'_x$. Hvordan kan vi nå transformere mellom disse to? Kan vi bruke 4-hastigheten til det?}
 }{SIDE 27/33/56}
 
 \fullframetxt{hast15_b}{hast14}{red_hast16}{0}{Jeg har et forslag}{\label{htrans}
-Nå skal vi se {\bf hvorfor} vi var så interessert i at 4-hastigheten skal være en 4-vektor. Husker du Lorentztransformasjonene? De som transformere posisjon og tidspunkt for et event fra et umerket til et merket referansesystem? Hvis vi går tilbake til togene våre i forrige forelesning så har vi en observatør på bakken og en i toget. \textcolor{red}{Begge observatører observerer et event, f.eks. et av lynnedslagene. Bakkeobservatøren måler at lynnedslaget finner sted i posisjon og tid $(x,t)$ og togobservatøren måler at det finner sted i posisjon og tid $(x',t')$. Vi kan da bruke Lorentztransformasjonene til å finne det ene fra det andre hvis vi kjenner relativ hastighet $v_\mathrm{rel}$ mellom observatørene.} {\pagebutton{Ok, det har jeg kontroll på!}}
+  Nå skal vi se {\bf hvorfor} vi var så interessert i at 4-hastigheten skal være en 4-vektor. Husker du Lorentztransformasjonene? De som transformere posisjon og tidspunkt for et event fra et umerket til et merket referansesystem? Hvis vi går tilbake til togene våre i forrige forelesning så har vi en observatør på bakken og en i toget. \textcolor{red}{Begge observatører observerer et event, f.eks. et av lynnedslagene. Bakkeobservatøren måler at lynnedslaget finner sted i posisjon og tid $(x,t)$ og togobservatøren måler at det finner sted i posisjon og tid $(x',t')$. Vi kan da bruke Lorentztransformasjonene til å finne det ene fra det andre hvis vi kjenner relativ hastighet $v_\mathrm{rel}$ mellom observatørene.}\\
+  {\pagebuttonolink{Ok, det har jeg kontroll på!}}
 Men hva nå hvis begge observatører ser et fly i lufta. Observatøren på bakken vil da måle flyet til å ha fart $v_x$ i x-retning. Observatøren på toget derimot vil måle av flyet har fart $v'_x$. Hvordan kan vi nå transformere mellom disse to? Kan vi bruke 4-hastigheten til det?
 }{SIDE 27/33/56}
 
 
 \colfullframe{red_hast16}{hast15}{hast17}{1}{red}{\Huge
-\textcolor{yellow}{Et hint: hva var definisjonen av 4-vektor igjen? Var det ikke en egenskap som alle 4-vektorer må ha? Kan du bruke denne, gitt at du nå vet at $V_\mu$ er en 4-vektor? Hjalp det deg til å forstå hvordan vi kan gå frem for å finne $v'_x$ fra $v_x$?}
+\textcolor{yellow}{\htmlcom{large}{Et hint: hva var definisjonen av 4-vektor igjen? Var det ikke en egenskap som alle 4-vektorer må ha? Kan du bruke denne, gitt at du nå vet at $V_\mu$ er en 4-vektor? Hjalp det deg til å forstå hvordan vi kan gå frem for å finne $v'_x$ fra $v_x$?}}
 }{SIDE 28/33/56}
 
 
@@ -789,7 +793,7 @@ Kan vi finne en tolkning av {\bf tidsdelen} av denne 4-vektoren? \textcolor{red}
 \begin{frame}
 \label{pause2}
 \hyperlink{pe8}{\pagebutton{\small Forrige side}}
-\centerline{{\small Kaffe!} Kaffe! {\Large Kaffe} {\huge Kaffe!} {\bf\Huge Kaffe!}}
+\centerline{{\small \htmlcom{tiny}{Kaffe!}} \htmlcom{footnotesize}{Kaffe!} {\Large \htmlcom{normal}{Kaffe}} {\huge \htmlcom{large}{Kaffe!}} {\bf\Huge \htmlcom{huge}{Kaffe!}}}
 {\huge
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}
 Jada, jada, helt klart velfortjent nå! Det verste er overstått, nå er det bare småplukk igjen (viktig småplukk vel og merke!), og så litt spennende saker som er utenfor pensum for de interesserte på de siste sidene...
@@ -871,7 +875,7 @@ La du merke til noe rart i dette uttrykket?
 \[
 E_\mathrm{relativistisk}^2-p_\mathrm{relativistisk}^2=m^2
 \]
-{\pagebutton{Tjaaaaaaa...}}\\
+{\pagebuttonolink{Tjaaaaaaa...}}\\
 Hva med enhetene i denne likningen da?\\
 \hyperlink{pe12_c}{\pagebutton{Dæggern... her varre no'rart...}}\\
 \textcolor{white}{
@@ -888,9 +892,9 @@ La du merke til noe rart i dette uttrykket?
 \[
 E_\mathrm{relativistisk}^2-p_\mathrm{relativistisk}^2=m^2
 \]
-{\pagebutton{Tjaaaaaaa...}}\\
+{\pagebuttonolink{Tjaaaaaaa...}}\\
 Hva med enhetene i denne likningen da?\\
-{\pagebutton{Dæggern... her varre no'rart...}}\\
+{\pagebuttonolink{Dæggern... her varre no'rart...}}\\
 Sa jo det jo! Men egentlig ikke så rart. Vi bruker jo nå konsekvent at vi har samme enheter for tidsintervaller som for romlige avstander. Dette endrer også andre enheter. Det gjør at vi nå {\bf måler både masse, bevegelsesmengde og energi i kg!}. Dette faller automatisk ut av at vi bruker like enheter på tid og rom. For å gjøre om til vanlige SI enheter trenger du da å gjøre
 \begin{align*}
 E(\mathrm{Joule})&=E(\mathrm{kg})c^2\\
@@ -929,7 +933,7 @@ der
 }{SIDE 48/56/56}
 
 \colfullframe{red_pe15}{pe14}{pe16}{0}{red}{\Huge
-\textcolor{yellow}{Ja, nå bør du begynne å lukte lunta når du blir spurt om å transformere en størrelse fra et referansesystem til et annet! Da bør du prøve å finne en passende 4-vektor, og bruke de kjente transformasjonsegenskapene til en 4-vektor. Hva er disse?}
+\textcolor{yellow}{\htmlcom{large}{Ja, nå bør du begynne å lukte lunta når du blir spurt om å transformere en størrelse fra et referansesystem til et annet! Da bør du prøve å finne en passende 4-vektor, og bruke de kjente transformasjonsegenskapene til en 4-vektor. Hva er disse?}}
 }{SIDE 49/56/56}
 
 
@@ -947,7 +951,7 @@ der $E$ og $p_x$ er {\bf relativistiske} bevegelsesmengder og energier og
 }{SIDE 50/56/56}
 
 \fullframe{pe17}{pe16}{pe17b0}{0}{\Huge
-Fikk du det til? Hvis ikke, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_22.mp4}{denne videoen}. Merk at denne typen transformasjoner bør du kunne gjøre!
+\htmlcom{large}{Fikk du det til? Hvis ikke, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_22.mp4}{denne videoen}. Merk at denne typen transformasjoner bør du kunne gjøre!}
 }{SIDE 51/56/56}
 
 
@@ -960,14 +964,16 @@ Den blå ringen illustrerer atomkjernens størrelse. Kjernepartiklene oppfører 
 \fullframenotxt{pe17b}{pe17b0}{pe17c}{0}{\footnotesize
 Her skal vi se på et øyeblikksbilde som gjør det lett å regne:
 \centerline{\includegraphics[scale=0.3]{media/nucleus2.png}}\\
-Partiklene går her i nøyaktig motsatt regning med samme fart $v$. Etter litt tid vil de selvfølgelig bli dradd tilbake igjen av den sterke kjernekrafta. Sett opp 4-bev.mengdevektoren $P_\mu(1)$ og $P_\mu(2)$ for begge partiklene hver for seg og sum så disse sammen til $P_\mu(M)$ for hele atomkjernen. Du kan uttrykke svaret med massen $m$ og farta $v$. \hyperlink{pe17b_b}{\pagebutton{Ok, har gjort det!}} \textcolor{white}{Fikk du $P_\mu(1)=(\gamma m, \gamma mv)$ og $P_\mu(2)=(\gamma m, -\gamma mv)$??? Og for kjernen $P(M)=(2m\gamma,0)$??}
+Partiklene går her i nøyaktig motsatt regning med samme fart $v$. Etter litt tid vil de selvfølgelig bli dradd tilbake igjen av den sterke kjernekrafta. Sett opp 4-bev.mengdevektoren $P_\mu(1)$ og $P_\mu(2)$ for begge partiklene hver for seg og sum så disse sammen til $P_\mu(M)$ for hele atomkjernen. Du kan uttrykke svaret med massen $m$ og farta $v$. \hyperlink{pe17b_b}{\pagebutton{Ok, har gjort det!}}\\
+\textcolor{white}{Fikk du $P_\mu(1)=(\gamma m, \gamma mv)$ og $P_\mu(2)=(\gamma m, -\gamma mv)$??? Og for kjernen $P(M)=(2m\gamma,0)$??}
 }{SIDE 52b/56/56}
 
 
 \fullframe{pe17b_b}{pe17b0}{pe17c}{0}{\footnotesize
 Her skal vi se på et øyeblikksbilde som gjør det lett å regne:
 \centerline{\includegraphics[scale=0.3]{media/nucleus2.png}}\\
-Partiklene går her i nøyaktig motsatt regning med samme fart $v$. Etter litt tid vil de selvfølgelig bli dradd tilbake igjen av den sterke kjernekrafta. Sett opp 4-bev.mengdevektoren $P_\mu(1)$ og $P_\mu(2)$ for begge partiklene hver for seg og sum så disse sammen til $P_\mu(M)$ for hele atomkjernen. Du kan uttrykke svaret med massen $m$ og farta $v$. {\pagebutton{Ok, har gjort det!}} Fikk du $P_\mu(1)=(\gamma m, \gamma mv)$ og $P_\mu(2)=(\gamma m, -\gamma mv)$??? Og for kjernen $P(M)=(2m\gamma,0)$??
+Partiklene går her i nøyaktig motsatt regning med samme fart $v$. Etter litt tid vil de selvfølgelig bli dradd tilbake igjen av den sterke kjernekrafta. Sett opp 4-bev.mengdevektoren $P_\mu(1)$ og $P_\mu(2)$ for begge partiklene hver for seg og sum så disse sammen til $P_\mu(M)$ for hele atomkjernen. Du kan uttrykke svaret med massen $m$ og farta $v$. {\pagebuttonolink{Ok, har gjort det!}}\\
+Fikk du $P_\mu(1)=(\gamma m, \gamma mv)$ og $P_\mu(2)=(\gamma m, -\gamma mv)$??? Og for kjernen $P(M)=(2m\gamma,0)$??
 }{SIDE 52b/56/56}
 
 
@@ -986,7 +992,8 @@ M=\sqrt{(2m\gamma)^2-0^2}=2m\gamma
 
 \fullframetwonotxt{pe17c_b}{pe17b}{pe18}{1}{
 \centerline{\includegraphics[scale=0.35]{media/nucleus2.png}}
-Hvordan finner man massen av en partikkel med 4-bev.mengdevektor $P_\mu$??{\pagebutton{\small Det har vi jo akkurat lært...}} Javisst ja, man tar skalarprodukt, $M=\sqrt{P_\mu(M)P^\mu(M)}$. Så hva blir totalmassen til atomkjernen? \hyperlink{pe17c_c}{\pagebutton{\small Regne, regne, regne, det blir...}}\textcolor{white}{
+Hvordan finner man massen av en partikkel med 4-bev.mengdevektor $P_\mu$??{\pagebuttonolink{\small Det har vi jo akkurat lært...}} Javisst ja, man tar skalarprodukt, $M=\sqrt{P_\mu(M)P^\mu(M)}$. Så hva blir totalmassen til atomkjernen?\\
+\hyperlink{pe17c_c}{\pagebutton{\small Regne, regne, regne, det blir...}}\textcolor{white}{
 \[
 M=\sqrt{(2m\gamma)^2-0^2}=2m\gamma
 \]}
@@ -997,7 +1004,8 @@ M=\sqrt{(2m\gamma)^2-0^2}=2m\gamma
 
 \fullframetwo{pe17c_c}{pe17b}{pe18}{1}{
 \centerline{\includegraphics[scale=0.35]{media/nucleus2.png}}
-Hvordan finner man massen av en partikkel med 4-bev.mengdevektor $P_\mu$??{\pagebutton{\small Det har vi jo akkurat lært...}} Javisst ja, man tar skalarprodukt, $M=\sqrt{P_\mu(M)P^\mu(M)}$. Så hva blir totalmassen til atomkjernen? {\pagebutton{\small Regne, regne, regne, det blir...}}
+Hvordan finner man massen av en partikkel med 4-bev.mengdevektor $P_\mu$??{\pagebuttonolink{\small Det har vi jo akkurat lært...}} Javisst ja, man tar skalarprodukt, $M=\sqrt{P_\mu(M)P^\mu(M)}$. Så hva blir totalmassen til atomkjernen?\\
+{\pagebuttonolink{\small Regne, regne, regne, det blir...}}
 \[
 M=\sqrt{(2m\gamma)^2-0^2}=2m\gamma
 \]
@@ -1013,18 +1021,20 @@ M=\sqrt{(2m\gamma)^2-0^2}=2m\gamma
 
 
 \fullframe{pe18}{pe17c}{pe19}{2}{\huge
-\textcolor{red}{Vi skal avslutte med en tur {\bf utenfor pensum}}. For det første, la meg nevne {\bf tensorbegrepet}: Går man videre med 4-vektorformalismen, så innfører man også noe som heter {\bf tensorer}. Dette er en utvidelse av matrisebegrepet til 4-dimensjonalt tidrom, på samme måte som 4-vektorer er en utvidelse av vektorbegrepet til 4-dimensjonalt tidrom.
+\textcolor{red}{\htmlcom{large}{Vi skal avslutte med en tur {\bf utenfor pensum}}. For det første, la meg nevne {\bf tensorbegrepet}: Går man videre med 4-vektorformalismen, så innfører man også noe som heter {\bf tensorer}. Dette er en utvidelse av matrisebegrepet til 4-dimensjonalt tidrom, på samme måte som 4-vektorer er en utvidelse av vektorbegrepet til 4-dimensjonalt tidrom.}
 }{SIDE 54/56/56}
 
 
 \fullframe{pe19}{pe18}{pe20}{0}{
 {\bf Vi avslutter med Maxwells likninger på 4-vektor-formalisme: (\textcolor{red}{Også utenfor pensum!})}\\
-{\Huge
-\vspace*{-1cm}
-\[
-\square A^\mu=\mu_0J^\mu
-\]
-}
+%{\Huge
+%  \vspace*{-1cm}
+%\[
+%\square A^\mu=\mu_0J^\mu
+%\]
+%}
+\centerline{\includegraphics[scale=0.1]{media/maxwell.png}}\\
+
 {\bf Dette er alle Maxwells likninger, som i 4-vektorformalismen kun blir denne lille likningen!}
 Her er
 \[
@@ -1034,7 +1044,7 @@ A^\mu=(\phi,\vec{A})
 \[
 J^\mu=(\rho,\vec{j})
 \]
-som er {\bf 4-strøm} der tidsdelen er ladning og romdelen er elektrisk strøm. Firkanten $\square$ er d'Alembert-operatoren som tilsvarer nabla $\nabla$ i 4-dimensjonalt tidrom. {\bf Denne ene og korte likningen er ekvivalent med alle 4 Maxwell-likningene}. Vi ser igjen at likninger blir mye mer elegante i 4-dimensjonalt tidrom.
+som er {\bf 4-strøm} der tidsdelen er ladning og romdelen er elektrisk strøm. Firkanten er d'Alembert-operatoren som tilsvarer nabla $\nabla$ i 4-dimensjonalt tidrom. {\bf Denne ene og korte likningen er ekvivalent med alle 4 Maxwell-likningene}. Vi ser igjen at likninger blir mye mer elegante i 4-dimensjonalt tidrom.
 }{SIDE 55/56/56}
 
 \fullframe{pe20}{pe19}{oppsummering}{0}{\small

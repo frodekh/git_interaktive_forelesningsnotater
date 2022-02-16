@@ -1,7 +1,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{../usercommands_pdf}
+\input{usercommands_html}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -108,7 +108,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171674}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -342,7 +342,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 {\small
 \textcolor{yellow}{\bf Velkommen til forelesning 1 av 2 i del 2C! Vi skal nå se hvordan geometrien til tidrommet, og dermed uttrykket for tidromsavstander $\Delta s$ endrer seg i et gravitasjonsfelt. Vi får en krumning av det 4-dimensjonale tidrommet, vanskelig å se for seg, men med dramatiske konsekvenser for oss! Vi skal så se på hvordan vi kan regne med en slik krum geometri og hvilke observatører som observerer hva.}\\
 \textcolor{red}{Fremstillingen av generell relativitetsteori i AST2000 er basert på den fantastiske boken ``Exploring black holes'' av E. Taylor, J. Wheeler og E. Bertschinger, gratis tilgjengelig \href{http://www.eftaylor.com/exploringblackholes/}{her}. Anbefales på det sterkeste for den som er interessert.}
-{\tiny \textcolor{red}{(Illustrasjon fra pngegg.com)}}}
+{\tiny \textcolor{red}{(\htmlcom{footnotesize}{Illustrasjon fra pngegg.com)}}}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -380,11 +380,11 @@ Er du klar og har sendt inn skjemaet?
 
 
 \fullframe{ss1}{intro2}{feil_ss2}{1}{{\Huge
-Vi begynner utradisjonelt med en likning som {\bf ikke er pensum}. Dette er Einsteinlikningen:
+\htmlcom{large}{Vi begynner utradisjonelt med en likning som {\bf ikke er pensum}. Dette er Einsteinlikningen:
 \[
 G_{\mu\nu}=8\pi T_{\mu\nu}
 \]
-}
+}}
 \small
 Til venstre her har vi Einsteintensoren $G_{\mu\nu}$ og til høyre har vi stressenergitensoren $T_{\mu\nu}$. Vi lærte kort (utenfor pensum) på slutten av del 2B hva en tensor er, altså en matrise med spesielle betingelser på samme måte som en 4-vektor er en vektor med spesielle betingelser. I elementene av $T_{\mu\nu}$ setter man inn energiinnholdet (deriblant også masseinnholdet) i systemet man ser på som funksjon av posisjon i rommet. Og ut på venstre siden faller tidrommets geometri ut. Med tidrommets geometri menes rett og slett et uttrykk for $\Delta s$, altså for hvordan avstander skal måles i tidrommet.
 }{SIDE 1/18/73}
@@ -473,7 +473,7 @@ a&b
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
 \]
 {\Huge
-Nope, det trenger vi ikke!} Kan du se hvorfor? Tenk deg litt om før du blar om!
+\htmlcom{large}{Nope, det trenger vi ikke!}} Kan du se hvorfor? Tenk deg litt om før du blar om!
 }
 }{SIDE 5/18/73}
 
@@ -585,7 +585,7 @@ Ser du noe rart eller ikke??}
 \Delta s^2=\sst\Delta t^2-\frac{\Delta r^2}{\sst}-r^2\Delta\phi^2
 \]
 }
-\textcolor{yellow}{\Huge Hva med enhetene? Hva med ting under brøkstreken?}
+\textcolor{yellow}{\Huge \htmlcom{large}{Hva med enhetene? Hva med ting under brøkstreken?}}
 }{SIDE 11/18/73}
 
 \colfullframe{feil_ss12}{feil_ss11}{feil_ss13}{0}{black}{
@@ -716,9 +716,9 @@ Merk at \ss-tidromsavstanden $\Delta s$ {\bf kun er gyldig i den delen av rommet
 }{SIDE 17/18/73}
 
 \colfullframe{feil_ss18}{feil_ss17}{blue_nytema2}{0}{black}{
-\textcolor{yellow}{\Huge
+\textcolor{yellow}{\Huge\htmlcom{large}{
 Men før vi skal begynne å bruke dette uttrykket for $\Delta s$, må vi innom en del nye konsepter og definisjoner! Hvis du hang med på de siste sidene kan du gå videre, hvis du ønsker en oppsummering først, kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_1.mp4}{denne videoen}}
-}{SIDE 18/18/73}
+}}{SIDE 18/18/73}
 
 
 \renewcommand{\headline}{Inertialsystemer}
@@ -745,7 +745,7 @@ Forblir gjenstanden da på nøyaktig det samme sted som du slapp den? Selv etter
 }{SIDE 19/39/73}
 
 \fullframetxt{inert1_b}{feil_ss18}{inert2}{0}{næææ, gjenstanden akselererte i retning jordas sentrum...}{\label{inert}
-Hva var et intertialsystem igjen?? Hvordan kan {\bf du} teste om du er i et inertialsystem akkurat nå? Kan du lage en punkt-for-punkt oppskrift som enhver kan bruke for å sjekke om de er i et inertialsystem?{\pagebutton{Jepp, har skrevet ned en punktliste nå}}
+Hva var et intertialsystem igjen?? Hvordan kan {\bf du} teste om du er i et inertialsystem akkurat nå? Kan du lage en punkt-for-punkt oppskrift som enhver kan bruke for å sjekke om de er i et inertialsystem?{\pagebuttonolink{Jepp, har skrevet ned en punktliste nå}}
 Fikk du noe slikt?
 \begin{enumerate}
 \item Ta en gjenstand, en hvilket som helst.
@@ -762,25 +762,28 @@ Fikk du noe slikt?
 
 
 
-\fullframe{inert2}{inert1}{inert3}{1}{\Huge
+\fullframe{inert2}{inert1}{inert3}{1}{\Huge\htmlcom{large}{
 Og så må jeg kjøpe meg ny kaffekopp \Changey[1][yellow]{-2}.
-}{SIDE 21/39/73}
+}}{SIDE 21/39/73}
 
 
 
-\fullframe{inert3}{inert2}{red_inert4}{0}{\Huge
+\fullframe{inert3}{inert2}{red_inert4}{0}{\Huge\htmlcom{large}{
 Men trenger du å reise ut i rommet for å komme deg til et inertialsystem? Kan du tenke deg en måte å lage et intertialsystem her på jorda på??
-}{SIDE 22/39/73}
+}}{SIDE 22/39/73}
 
-\colfullframe{red_inert4}{inert3}{inert5}{0}{red}{\Huge
+\colfullframe{red_inert4}{inert3}{inert5}{0}{red}{\Huge\htmlcom{large}{
 \textcolor{yellow}{Det var meningen at du skulle tenke deg godt om! Så, hvordan vil du gå frem for å lage et intertialsystem? Hvordan kan du slippe å ødelegge kaffekoppen neste gang du tar testen?}
-}{SIDE 23/39/73}
+}}{SIDE 23/39/73}
 
 
 \fullframe{inert5}{red_inert4}{inert7}{0}{\huge
 \centerline{\includegraphics[scale=0.25]{media/skyscraper1.png}}
+\htmlcom{large}{
 Hvis du er i en heis i en skyskraper. Og heiskablene plutselig ryker. Hva skjer da?
-}{SIDE 24/39/73}
+}}{SIDE 24/39/73}
+
+
 
 \fullframe{inert7}{inert5}{inert8}{0}{
 \centerline{\includegraphics[scale=0.25]{media/skyscraper2.png}}
@@ -880,7 +883,7 @@ La oss se på en {\bf analogi}. Vi vet at jorda er rund. Det vil si at man på j
 \label{pause}
 \hyperlink{inert17}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe!}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 \textcolor{yellow}{En tur ut i minst 15 minutter. Trenger frisk luft nå! Og kanskje en tur i heisen? Eller flere turer i heisen? Helt til kablene ryker! Hadde jo vært kult å prøve ut Lorentzgeometri, \ss-geometri er litt ut nå altså.}
 }\\
@@ -950,7 +953,7 @@ Som i spesiell relativitetsteori så skjer eventer på forskjellige steder og fo
 
 \colfullframe{denim_obs8}{denim_obs7}{denim_obs9}{0}{denim}{\footnotesize
 \centerline{\includegraphics[scale=0.35]{media/shell1.png}}
-Nettopp ja! {\bf Ikke så bra!}. Målestaven vil jo bare forsvinne inn i sentrum av det sorte hullet. Skallobservatøren kan jo bare fire ned målestaven mer og mer, men den kommer aldri frem. Målt på den måten er det {\bf uendelig langt} frem til sentrum av det sorte hullet. {\bf Vi må finne en annen måte å definere og måle avstanden/koordinatet $r$ på!!}.
+\textcolor{yellow}{Nettopp ja! {\bf Ikke så bra!}. Målestaven vil jo bare forsvinne inn i sentrum av det sorte hullet. Skallobservatøren kan jo bare fire ned målestaven mer og mer, men den kommer aldri frem. Målt på den måten er det {\bf uendelig langt} frem til sentrum av det sorte hullet. {\bf Vi må finne en annen måte å definere og måle avstanden/koordinatet $r$ på!!}}.
 }{SIDE 47/73/73}
 
 \colfullframe{denim_obs9}{denim_obs8}{denim_obs10}{0}{denim}{\footnotesize
@@ -1110,9 +1113,9 @@ Enig at hvis $\Delta t_\mathrm{sh}=0$ (samtidige hendelser på skallet) her så 
 }{SIDE 64/73/73}
 
 
-\fullframe{obs23}{denim_obs22}{obs24}{0}{\huge
+\fullframe{obs23}{denim_obs22}{obs24}{0}{\huge\htmlcom{large}{
 Vi har nå sett hvordan tiden går forskjellig mellom en langt-vekkobservatør og en skallobservatør. Hva så med lengder/avstander? Vi har allerede sett at avstander rundt langs $\phi$-retning er like mellom langt-vekkobservatør og skallobservatør siden $\phi$-delen av geometrien er lik. {\bf Men hva med lengder i $r$-retning?}
-}{SIDE 65/73/73}
+}}{SIDE 65/73/73}
 
 \fullframe{obs24}{obs23}{denim_obs25}{0}{\Large
   Hvordan fant vi sammenhengen mellom lengder målt av forskjellige observatører i spesiell relativitetsteori? {\bf Brukte vi ikke to eventer på hver side av objektet som vi skulle måle lengden til? Og at disse eventene var samtidige i det ene referansesystemet?} \textcolor{red}{Vi prøver oss på samme fremgangsmåte her, en meterstav der det skjer to samtidige eventer på hver ende av staven. Og samtidig for både skallobservatør og langt-vekkobservatør!}
@@ -1174,9 +1177,9 @@ Ser du at denne fysiske avstanden $\Delta r_\mathrm{sh}$ mellom skallene med avs
 Vi har ikke sagt så mye enda om {\bf den fritt fallende observatøren}. Hun kommer vi nærmere tilbake til i eksempler. Men hun måler lokale tidsintervaller $\Delta t_\mathrm{ff}$ på sin egen klokke og bruker generelt lokale intertialsystem på samme måte som skallobservatøren. Den fritt fallende observatøren pleier vi å plassere ut mellom eventer slik at vi alltid kan bruke lokalt intertialsystem. {\bf Det er dermed kun langt-vekkobservatøren som trenger å bruke \ss-geometri.} \textcolor{yellow}{For alle andre observatører må du passe på å finne eventer med avstander i tid og rom slik at antakelsen om lokalt inertialsystem er riktig og du kan bruke Lorentzgeometri!}.
 }{SIDE 72/73/73}
 
-\fullframe{obs29}{denim_obs28}{oppsummering}{0}{\Huge
+\fullframe{obs29}{denim_obs28}{oppsummering}{0}{\Huge\htmlcom{large}{
 Forvirret over alle observatørene??? Isåfall, ta gjerne en titt på oppsummeringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2c/videoer/video2c_4.mp4}{denne videoen}. Føler du derimot at dette var ganske klart så kommer det ikke noe nytt i videoen.
-}{SIDE 73/73/73}
+}}{SIDE 73/73/73}
 
 
 
