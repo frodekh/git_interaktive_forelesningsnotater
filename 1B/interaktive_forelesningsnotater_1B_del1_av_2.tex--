@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -503,7 +503,7 @@ Trenger du en pause, så ta den nå! Trekk pusten godt!\\
 \label{red_pyse}
 \lastpagebutton{euler4}
 \vspace*{2cm}
-\textcolor{white}{\Huge PYSE!}\\
+\textcolor{white}{\Huge \htmlcom{huge}{PYSE!}}\\
 \end{frame}
 }
 
@@ -513,8 +513,8 @@ Trenger du en pause, så ta den nå! Trekk pusten godt!\\
 \label{riktig_klar}
 \clastpagebutton{euler4}
 \vspace*{2cm}
-Se det, det var riktig instilling ja!
-Moroa begynner på ...
+\htmlcom{large}{Se det, det var riktig innstilling ja!
+Moroa begynner på ...}
 \hyperlink{enhetsvektorer1}{\pagebutton{.. neste side}}
 \end{frame}
 }
@@ -672,8 +672,9 @@ Har du tenkt nøye gjennom hvordan du kunne tenke deg å gjøre det? Har du en i
 \begin{frame}
 \label{red_hintv}
 \lastpagebutton{hastighet1}
-Hint skal bli:\\
-Hva er definisjonen av hastighet? Den med en derivert?
+\textcolor{yellow}{\htmlcom{large}{
+Hint skal bli:}\\
+\htmlcom{large}{Hva er definisjonen av hastighet? Den med en derivert?}}
 \end{frame}
 }
 
@@ -862,7 +863,7 @@ Hvis du ikke får dette til \textcolor{red}{etter å ha prøvd flere ganger}, ta
 \label{pause0}
 \hyperlink{riktigderrett}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{TID FOR EN KORT KAFFEPAUSE!!!}
+\centerline{\htmlcom{large}{TID FOR EN KORT KAFFEPAUSE!!!}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 En kort tur ut nå, kroppen trenger litt bevegelse...\\
@@ -958,7 +959,7 @@ Se gjerne {denne videoen} hvis du er usikker på hva lovene sier. {\bf Hvis du a
 \lastpagebutton{hastighet6}
 \addtocounter{pageno}{-1}
 Nå begynner vi å nærme oss \textcolor{red}{den analytiske utledning av baner} her, men før i setter igang, har du hørt om Keplers lover?
-{\pagebutton{JA!}}\ \ \ \ \ {\pagebutton{NEI!}}\\
+{\pagebuttonolink{JA!}}\ \ \ \ \ {\pagebuttonolink{NEI!}}\\
 Så fint da! Da husker du kanskje også omtrent hva Keplers lover sier? Tenk deg om før du går videre!!!\\
 \hyperlink{kepler_c}{\pagebutton{Få se Keplers lover da vel!}}
 \textcolor{white}{
@@ -975,7 +976,7 @@ Se gjerne {denne videoen} hvis du er usikker på hva lovene sier. {\bf Hvis du a
 \lastpagebutton{hastighet6}
 \addtocounter{pageno}{-1}
 Nå begynner vi å nærme oss \textcolor{red}{den analytiske utledning av baner} her, men før i setter igang, har du hørt om Keplers lover?
-{\pagebutton{JA!}}\ \ \ \ \ {\pagebutton{NEI!}}\\
+{\pagebuttonolink{JA!}}\ \ \ \ \ {\pagebuttonolink{NEI!}}\\
 \vspace*{2cm}
 OK, her er de:\\
 \begin{enumerate}
@@ -1021,7 +1022,7 @@ der $a$ er \textcolor{white}{store halvakse (semi major axis)} og $b$ er \textco
 \lastpagebutton{kepler0b}
 \addtocounter{pageno}{-1}
 Når vi snakker om ellipsebaner, husker du forresten formelen for en ellipse...?
-{\pagebutton{Trykk her når du har tenkt deg om...}}\\
+{\pagebuttonolink{Trykk her når du har tenkt deg om...}}\\
 Ellipser:
 \[
 \frac{x^2}{a^2}+\frac{y^2}{b^2}=1
@@ -1090,7 +1091,7 @@ der $r(f)$ er lengden av vektoren $\vec{r}$ i figuren, altså avstanden fra bren
 \label{pause}
 \hyperlink{kepler4b}{\pagebutton{\small Forrige side}}
 {\Large
-\centerline{TID FOR KAFFEPAUSE!!!}
+\centerline{\htmlcom{large}{TID FOR KAFFEPAUSE!!!}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 Ut å strekke på bena. Inn med litt koffein...\\
@@ -1151,7 +1152,7 @@ En rask sjekk om du har oversikt over det som trengs
 \end{itemize}
 }
 \hyperlink{blue_nytema6}{\pagebutton{ÅJA, dette kan jeg, la oss sette igang med utledningen!}}\\
-{\pagebutton{Njaaaa...jeg trenger kanskje litt repetisjon}}\\
+{\pagebuttonolink{Njaaaa...jeg trenger kanskje litt repetisjon}}\\
 \textcolor{red}{\small Bruk 'forrige side'-knappene til å gå bakover og repetere. Dette er viktig, ikke gå videre før du har kontroll, da blir alt bare så mye vanskeligere.}
 \end{frame}
 
@@ -1175,10 +1176,11 @@ En rask sjekk om du har oversikt over det som trengs
 \begin{frame}
 \label{red_kepler5b}
 \dlastpagebutton{kepler5}
+\textcolor{yellow}{
 Vi skal i det følgende løse det som vi kaller {\bf 2-legeme-problemet}:\\
 \includegraphics[scale=0.4]{media/forces.png}\\
 {\bf To legemer med masse $m_1$ og $m_2$ påvirker hverandre kun med gravitasjonskrefter. Det virker ingen eksterne krefter. Initialposisjonene og initialhastighetene til begge legemene er kjent.} For å gjøre utledningen enklere skal vi først sette oss på $m_1$ og utlede bevegelsen til $m_2$ sett ifra $m_1$. Dermed trenger vi kun å se på bevegelsen til {\it et} legeme. Etter det skal vi se på bevegelsene til begge legemene.\\
-På figuren ser du at vektoren $\vec{r}$ peker fra $m_1$ til $m_2$. {\bf Når vi setter oss på $m_1$ og definerer origo der, så er denne $\vec{r}$ altså poisjonsvektoren til $m_2$. Når vi har funnet hvordan $\vec{r}(t)$ endrer seg som funksjon av tiden så har vi løst 2-legeme-problemet sett fra objekt $m_1$.}
+På figuren ser du at vektoren $\vec{r}$ peker fra $m_1$ til $m_2$. {\bf Når vi setter oss på $m_1$ og definerer origo der, så er denne $\vec{r}$ altså poisjonsvektoren til $m_2$. Når vi har funnet hvordan $\vec{r}(t)$ endrer seg som funksjon av tiden så har vi løst 2-legeme-problemet sett fra objekt $m_1$.}}
 \hyperlink{kepler6}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -1330,13 +1332,14 @@ Prøv deg litt frem på papir, maks 2-3 minutter, se hvor langt du kommer...
 \begin{frame}
 \label{red_kepler14}
 \lastpagebutton{kepler13}
+\textcolor{yellow}{
 Hvis du har funnet en løsning, er du {\bf helt} sikker på at du har funnet riktig løsning?. Før du går videre nå, ta din løsning $u(\theta)$ og dobbeltderiver den!
 Er svaret du får lik:
 \[
 \frac{m}{h^2}-u
 \]
 ???\\
-Helt sikker?
+Helt sikker?}
 \hyperlink{kepler15}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -1402,9 +1405,9 @@ Dette er jo en generell løsning av 2-legemeproblemet og gjelder da for enhver b
 \label{feil_kepler17}
 \hyperlink{kepler16}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
 {\Huge
-\textcolor{orange}{... i den neste og meget spennende forelesningen i emnet}\\
-\textcolor{orange}{AST2000...}\\
-\textcolor{orange}{Følg med!}\\
+\textcolor{orange}{\htmlcom{large}{... i den neste og meget spennende forelesningen i emnet}}\\
+\textcolor{orange}{\htmlcom{large}{AST2000...}}\\
+\textcolor{orange}{\htmlcom{large}{Følg med!}}\\
 }
 \hyperlink{oppsummering}{\pagebutton{Neste side}}
 \end{frame}

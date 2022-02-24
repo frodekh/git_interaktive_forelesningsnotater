@@ -360,7 +360,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 }
 
 
-\begin{frame}`
+\begin{frame}
 \label{intro2}
 \lastpagebutton{feil_intro}
 \begin{alertblock}{Vi begynner som vanlig...}
@@ -852,7 +852,7 @@ x=\mathrm{et\ eller\ annet\ ganger\ }c\Delta t_1 + ...
 høres det sannsynlig ut?
 }{SIDE 45/63/63}
 
-\fullframe{gps5}{gps4}{gps6}{0}{\Large
+\fullframenotxt{gps5}{gps4}{gps6}{0}{\Large
 Hvis du er enig i det, så la oss som eksempel bare anta for enkelhetsskyld til første orden at
 \[
 x\approx c\Delta t_1
@@ -914,16 +914,16 @@ Har du lagt merke til at vi egentlig skal transformere tidsintervall mellom {\bf
 
 \colfullframenotxt{red_gps10}{gps9}{gps11}{0}{red}{\Huge
 \textcolor{yellow}{\htmlcom{large}{
-Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...\hyperlink{red_gps10_b}{\pagebutton{Hintx? Please?}}}\textcolor{red}{
-Det fikk du på forrige side, selv om det ikke står eksplisitt at det er et hint...}
+Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...}}\hyperlink{red_gps10_b}{\pagebutton{Hint? Please?}}\textcolor{red}{
+{\htmlcom{large}{Det fikk du på forrige side, selv om det ikke står eksplisitt at det er et hint...}}
 }}{SIDE 53/63/63}
 
 \colfullframetxt{red_gps10_b}{gps9}{gps11}{0}{red}{Jeg har tenkt og tenkt...}{\Huge
 \textcolor{yellow}{\htmlcom{large}{
-Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...}}{\pagebuttonolink{Hint? Please?}}
+Her bør du prøve å se om du finner en løsning. Dette kan være en typisk oppgave...}}{\pagebuttonolink{Hint? Please?}}\textcolor{yellow}{
 {\htmlcom{large}{Det fikk du på forrige side, selv om det ikke står eksplisitt at det er et hint...
 }
-}}{SIDE 53/63/63}
+}}}{SIDE 53/63/63}
 
 
 \fullframetxt{gps11}{red_gps10}{gps12}{1}{Absolutt, dette kan jeg!}{
@@ -1039,7 +1039,8 @@ Legg merke til at tidsintervallet $\Delta t$ blir forkortet vekk siden vi ser p�
 {\bf Pent lite uttrykk, hva?}
 \[
 \frac{\Delta\tau_\mathrm{jord}}{\Delta\tau_\mathrm{sat}}=\sqrt{\frac{1-\frac{2M}{r_\mathrm{jord}}-v_{\phi,\mathrm{jord}}^2}{1-\frac{2M}{r_\mathrm{sat}}-v_{\phi,\mathrm{sat}}^2}}
-\]}}
+\]
+}}
 Hvis vi lar tyngdefeltet her bli veldig svakt, si $M\rightarrow0$ og vi lar oss selv stå i ro $v_{\phi,\mathrm{jord}}=0$, ser du hva vi får da? Står det ikke da egentlig her at $\Delta t=\gamma\Delta\tau$? Slik ser vi at den spesielle relativitetsteorien er innebakt i \ss-geometrien, når tyngdefeltet er lite får vi tilbake Lorentz.
 }{SIDE 58/63/63}
 

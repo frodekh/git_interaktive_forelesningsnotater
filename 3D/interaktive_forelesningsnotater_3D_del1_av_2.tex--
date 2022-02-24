@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -367,7 +367,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 \column{0.5\textwidth}
 {\small
 \textcolor{yellow}{\bf Velkommen til forelesning 1 av 2 i del 3D! En stjerne har blitt født og har begynt fusjon i sentrum. Stjernen er på hovedserien. Men hva betyr det egentlig at stjernen er på hovedserien? Det skal vi se litt på! Vi skal se på sammenhenger mellom luminositet, masse og temperatur til stjerner. Og så skal vi se hva som skjer i alderdommen. \textcolor{red}{{\large Den første forelesningen i del 3D tar normalt ca. 1 time i den fysiske forelesningen, dvs. halvparten av en dobbelttime. Den andre forelesningen i del 3D er lenger og tar normalt en hel dobbeltime og litt mer.}}}\\
-\textcolor{yellow}{(Illustrasjon: Solen observert med Solar Dynamics Observatory (Image: NASA/SDO))}}
+\textcolor{yellow}{\htmlcom{footnotesize}{(Illustrasjon: Solen observert med Solar Dynamics Observatory (Image: NASA/SDO))}}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -415,7 +415,7 @@ Har du lagt merke til at HR-diagrammene vi har vist så langt også har {\it spe
 
 \colfullframe{feil_hr2a}{hr2}{hr3}{0}{black}{
 \Huge
-\textcolor{white}{Det ble galt! Hvis gassen er kald, så har atomene og elektronene lite energi og elektronet vil for det meste være i laveste energitilstand, noe som gjør at det lett absorberer et foton slik at det hopper opp til neste energitilstand.}
+\textcolor{white}{\htmlcom{large}{Det ble galt! Hvis gassen er kald, så har atomene og elektronene lite energi og elektronet vil for det meste være i laveste energitilstand, noe som gjør at det lett absorberer et foton slik at det hopper opp til neste energitilstand.}}
 }{SIDE 3/7/29}
 
 \colfullframe{riktig_hr2b}{hr2}{hr3}{-1}{yellow}{
@@ -468,7 +468,7 @@ Det første du skal legge merke til her er romertallene som står bak de lilla l
 \includegraphics[scale=0.17]{media/HR_diagram.png}\\
 \column{0.5\textwidth}
 \textcolor{yellow}{
-Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?
+Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?\\
 \hyperlink{feil_hr6_b}{\pagebutton{\small Ja, det er noe på x-aksen...}}}
 Det stemmer! Der står det noe om fargeindeks! Husker du dette med størrelseklasser med filtre? Altså $m_V$ eller $M_V$ for visuell størrelseklasse, $m_B$ eller $M_B$ for blå størrelseklasse, osv. (fra {del 3A}).\\
 {\small Ja!}{\small Nei, men nå repeterte jeg det!}
@@ -482,8 +482,8 @@ Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M
 \includegraphics[scale=0.17]{media/HR_diagram.png}\\
 \column{0.5\textwidth}
 \textcolor{yellow}{
-Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?
-{\pagebutton{\small Ja, det er noe på x-aksen...}}
+Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?\\
+{\pagebuttonolink{\small Ja, det er noe på x-aksen...}}
 Det stemmer! Der står det noe om fargeindeks! Husker du dette med størrelseklasser med filtre? Altså $m_V$ eller $M_V$ for visuell størrelseklasse, $m_B$ eller $M_B$ for blå størrelseklasse, osv. (fra \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}).\\
 \hyperlink{feil_hr6_c}{\pagebutton{\small Ja!}}\hyperlink{feil_hr6_c}{\pagebutton{\small Nei, men nå repeterte jeg det!}}}
 Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M_V$. Men hvilken av dem?
@@ -496,10 +496,10 @@ Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M
 \includegraphics[scale=0.17]{media/HR_diagram.png}\\
 \column{0.5\textwidth}
 \textcolor{yellow}{
-Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?
-\hyperlink{feil_hr6_b}{\pagebutton{\small Ja, det er noe på x-aksen...}}
-Det stemmer! Der står det noe om fargeindeks! Husker du dette med størrelseklasser med filtre? Altså $m_V$ eller $M_V$ for visuell størrelseklasse, $m_B$ eller $M_B$ for blå størrelseklasse, osv. (fra \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}).\\
-\pagebutton{\small Ja!}\pagebutton{\small Nei, men nå repeterte jeg det!}
+Har du sett noe annet som er forskjellig på aksene i dette HR-diagrammet?\\
+{\pagebuttonolink{\small Ja, det er noe på x-aksen...}}
+Det stemmer! Der står det noe om fargeindeks! Husker du dette med størrelseklasser med filtre? Altså $m_V$ eller $M_V$ for visuell størrelseklasse, $m_B$ eller $M_B$ for blå størrelseklasse, osv. (fra \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3a.pdf}{del 3A}.\\
+\pagebuttonolink{\small Ja!}\pagebuttonolink{\small Nei, men nå repeterte jeg det!}
 Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M_V$. Men hvilken av dem?}
 \end{columns}
 }{SIDE 8/14/29}
@@ -510,8 +510,9 @@ Når det på x-aksen står fargeindeks B-V, så betyr det $m_B-m_V$ eller $M_B-M
 }
 {
 \textcolor{yellow}{\small
-La oss tenke litt, $m_B-m_V$ er vel den tilsynelatende størrelseklassen målt i blått lys minus den målt i visuelt (altså midt i det synlige fargespektret). Hvis vi har en glovarm blå stjerne, blir $m_B-m_V$ da et positivt eller negativt tall?}
-\hyperlink{feil_hr7_b}{\pagebutton{\small Tror jeg vet!}} \hyperlink{feil_hr7_b}{\pagebutton{\small Usikker!}}
+La oss tenke litt, $m_B-m_V$ er vel den tilsynelatende størrelseklassen målt i blått lys minus den målt i visuelt (altså midt i det synlige fargespektret). Hvis vi har en glovarm blå stjerne, blir $m_B-m_V$ da et positivt eller negativt tall?}\\
+\hyperlink{feil_hr7_b}{\pagebutton{\small Tror jeg vet!}}\\
+\hyperlink{feil_hr7_b}{\pagebutton{\small Usikker!}}\\
 Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks betyr liten størrelseklasse $m_B$ (det {\bf må} du ha kontroll pa nå!). Den lyser dermed mindre sterkt i andre deler av det synlige spektret. Fluksen tatt med V-filter er altså mindre, og dermed er $m_V$ {\bf større} enn $m_B$, noe som gir at $m_B-m_V$ er et negativt tall for blå stjerner. Ser du på HR-diagrammet her og x-aksen, så ser vel det riktig ut?
 }{SIDE 9/14/29}
 
@@ -520,10 +521,10 @@ Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks bet
 }
 {
 \textcolor{yellow}{\small
-La oss tenke litt, $m_B-m_V$ er vel den tilsynelatende størrelseklassen målt i blått lys minus den målt i visuelt (altså midt i det synlige fargespektret). Hvis vi har en glovarm blå stjerne, blir $m_B-m_V$ da et positivt eller negativt tall?
-{\pagebutton{\small Tror jeg vet!}} {\pagebutton{\small Usikker!}}
-Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks betyr liten størrelseklasse $m_B$ (det {\bf må} du ha kontroll pa nå!). Den lyser dermed mindre sterkt i andre deler av det synlige spektret. Fluksen tatt med V-filter er altså mindre, og dermed er $m_V$ {\bf større} enn $m_B$, noe som gir at $m_B-m_V$ er et negativt tall for blå stjerner. Ser du på HR-diagrammet her og x-aksen, så ser vel det riktig ut?
-}
+La oss tenke litt, $m_B-m_V$ er vel den tilsynelatende størrelseklassen målt i blått lys minus den målt i visuelt (altså midt i det synlige fargespektret). Hvis vi har en glovarm blå stjerne, blir $m_B-m_V$ da et positivt eller negativt tall?}\\
+{\pagebuttonolink{\small Tror jeg vet!}}\\
+{\pagebuttonolink{\small Usikker!}}\\
+\textcolor{yellow}{\small Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks betyr liten størrelseklasse $m_B$ (det {\bf må} du ha kontroll pa nå!). Den lyser dermed mindre sterkt i andre deler av det synlige spektret. Fluksen tatt med V-filter er altså mindre, og dermed er $m_V$ {\bf større} enn $m_B$, noe som gir at $m_B-m_V$ er et negativt tall for blå stjerner. Ser du på HR-diagrammet her og x-aksen, så ser vel det riktig ut?}
 }{SIDE 9/14/29}
 
 
@@ -532,8 +533,8 @@ Hvis stjernen er blå betyr det at den lyser sterkt i blått lys. Stor fluks bet
 }
 {
 \textcolor{yellow}{\small
-Vi snakket så langt om $m_B-m_V$. Hvordan blir det med absolutt størrelseklasse? Hvis vi tar $M_B-M_V$ istedenfor $m_B-m_V$ for vår blå stjerne. Vil den da også bli negativ?
-\hyperlink{feil_hr8_b}{\pagebutton{\small Ja!}} \hyperlink{feil_hr8_b}{\pagebutton{\small Avhenger vel av avstanden?}}}
+Vi snakket så langt om $m_B-m_V$. Hvordan blir det med absolutt størrelseklasse? Hvis vi tar $M_B-M_V$ istedenfor $m_B-m_V$ for vår blå stjerne. Vil den da også bli negativx?\\
+\hyperlink{feil_hr8_b}{\pagebutton{\small Avhenger vel av avstanden?}}} \hyperlink{feil_hr8_b}{\pagebutton{\small Ja!}}\\
 Må ikke den faktisk også bli negativ? Det at vi går fra tilsynelatende til absolutt størrelseklasse betyr jo bare at vi måler mottatt fluks i en avstand av 10pc isteden for den faktiske avstanden. Det vil endre på mottat fluks, men vil vel ikke endre det faktum at det blir mottatt mer blått enn f.eks. gult lys? Det må være det samme i alle avstander (med mindre det er noe mellom oss og stjernen som tar opp lys bare i gitte farger).
 }{SIDE 10/14/29}
 
@@ -542,8 +543,8 @@ Må ikke den faktisk også bli negativ? Det at vi går fra tilsynelatende til ab
 }
 {
 \textcolor{yellow}{\small
-Vi snakket så langt om $m_B-m_V$. Hvordan blir det med absolutt størrelseklasse? Hvis vi tar $M_B-M_V$ istedenfor $m_B-m_V$ for vår blå stjerne. Vil den da også bli negativ?
-\pagebutton{\small Ja!} \pagebutton{\small Avhenger vel av avstanden?}
+Vi snakket så langt om $m_B-m_V$. Hvordan blir det med absolutt størrelseklasse? Hvis vi tar $M_B-M_V$ istedenfor $m_B-m_V$ for vår blå stjerne. Vil den da også bli negativ?\\ 
+\pagebuttonolink{\small Avhenger vel av avstanden?} \pagebuttonolink{\small Ja!}\\
 Må ikke den faktisk også bli negativ? Det at vi går fra tilsynelatende til absolutt størrelseklasse betyr jo bare at vi måler mottatt fluks i en avstand av 10pc isteden for den faktiske avstanden. Det vil endre på mottat fluks, men vil vel ikke endre det faktum at det blir mottatt mer blått enn f.eks. gult lys? Det må være det samme i alle avstander (med mindre det er noe mellom oss og stjernen som tar opp lys bare i gitte farger).
 }
 }{SIDE 10/14/29}
@@ -578,7 +579,7 @@ Skriv dette ut først som visuelle størrelseklasser, deretter som blå størrel
 
 \colfullframe{red_hr10_b}{feil_hr9}{feil_hr11}{0}{red}{
 \textcolor{yellow}{\Large
-Fikk du til utledningen? Hvis ikke, skal du få et hint.{\pagebutton{Hint, {\bf pleeeease!}}}\\
+Fikk du til utledningen? Hvis ikke, skal du få et hint.{\pagebuttonolink{Hint, {\bf pleeeease!}}}\\
 Hint skal bli. Du har den kjente sammenhengen mellom tilsynelatende og absolutt størrelseklasse
 \[
 m-M=5\log{\frac{r}{10\mathrm{pc}}}
@@ -613,7 +614,7 @@ Aha, en varm stjerne har toppen i Planck-spektret på lavere bølgelengder {Wien
 
 \colfullframe{red_hr12_b}{feil_hr11}{blue_nytema3}{0}{red}{
 \textcolor{yellow}{\Large
-Fant du ut av det??? {\pagebutton{Få se svaret da!}}
+Fant du ut av det??? {\pagebuttonolink{Få se svaret da!}}
 Aha, en varm stjerne har toppen i Planck-spektret på lavere bølgelengder (husk \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{Wiens forskyvningslov!}) som tilsvarer blått lys. Og hvis intensiteten og dermed også fluksen er større i blått lys, får vi (som vi fant ut for et par sider siden) en lav og til og med negativ fargeindeks. Helt motsatt, hvis temperaturen er lav, vi har mest Planck-stråling på lange bølgelengder (rødt lys), så har vi mindre fluks i blått enn i visuelt og vi får en større og positiv fargeindeks. {\bf Skjønner? Hvis ikke, spør foreleser!}
 }
 }{SIDE 14/14/29}
@@ -653,11 +654,11 @@ Right? {\bf Har du lagt merke til at HR-diagrammene er log-log-plott?} Det at vi
 \[
 \log{L}=\log{4\pi R^2\sigma}+4\log{T}
 \]
-Enig?? (produktregel for logaritme). {\Large\bf Har du nå en ide om hva det betyr at stjernene legger seg i en rett linje i HR-diagrammet?}.}
+Enig?? (produktregel for logaritme). {\Large\bf \htmlcom{large}{Har du nå en ide om hva det betyr at stjernene legger seg i en rett linje i HR-diagrammet?}.}}
 }{SIDE 16/29/29}
 
 \fullframe{hr14_b}{feil_hr13}{hr15}{0}{
-Hvis du har et kuleformet sort legeme (la oss kalle det en stjerne), kan du uttrykke luminositeteten $L$ til dette ved hjelp av overflatetemperatur $T$ og radius $R$? Hvis du trenger å friske opp sort stråling, fluks og luminositet, kikke tilbake på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{del 1D}. {\pagebutton{Jeg har skrevet ned uttrykket!}}
+Hvis du har et kuleformet sort legeme (la oss kalle det en stjerne), kan du uttrykke luminositeteten $L$ til dette ved hjelp av overflatetemperatur $T$ og radius $R$? Hvis du trenger å friske opp sort stråling, fluks og luminositet, kikke tilbake på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1d.pdf}{del 1D}. {\pagebuttonolink{Jeg har skrevet ned uttrykket!}}
 \[
 L=4\pi R^2\sigma T^4
 \]
@@ -693,7 +694,7 @@ med likningen for en rett linje
 \[
 y=ax+b
 \]
-ikke sant? {\pagebutton{OK! Stemmer vel det.}}
+ikke sant? {\pagebuttonolink{OK! Stemmer vel det.}}
 Vi ser at dette er en rett linje med stigningstall 4 (husk at $T$ øker i motsatt retning på x-aksen) og med $\log{4\pi R^2\sigma}$ som konstanten som skifter denne linja opp og ned. Men {\bf hva sier dette oss om hovedseriestjernene????} Ikke bla om før du har et forslag!
 }{SIDE 17/29/29}
 
@@ -739,7 +740,7 @@ for forskjellige verdier av $R$. {\bf Ser du at det vi kaller hovedserie er stje
 }{SIDE 20/29/29}
 
 \colfullframenotxt{red_hr18}{hr17}{hr19}{0}{red}{
-\centerline{\textcolor{yellow}{\Huge Ja gjør det egentlig det?}}
+\centerline{\textcolor{yellow}{\Huge \htmlcom{large}{Ja gjør det egentlig det?}}}
 Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}\hyperlink{red_hr18_b}{\pagebutton{Jeg har tenkt meg godt om og har et forslag!}}
 \textcolor{red}{
 En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...{fordi at...}}
@@ -750,8 +751,8 @@ En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...{fordi at...}}
 }{SIDE 21/29/29}
 
 \colfullframenotxt{red_hr18_b}{hr17}{hr19}{0}{red}{
-\centerline{\textcolor{yellow}{\Huge Ja gjør det egentlig det?}}
-Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}{\pagebutton{Jeg har tenkt meg godt om og har et forslag!}}
+\centerline{\textcolor{yellow}{\Huge \htmlcom{large}{Ja gjør det egentlig det?}}}
+Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}{\pagebuttonolink{Jeg har tenkt meg godt om og har et forslag!}}
 En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...\hyperlink{red_hr18_c}{\pagebutton{fordi at...}}
 \textcolor{red}{Stjerna når hydrostatisk likevekt før temperaturen er høy nok til å starte fusjonsreaksjoner. Med lav masse og dermed liten tyngdekraft trengs ikke så høy temperatur for å få et stort nok mot-trykk. Skjønner? Slike mislykkede stjerner kaller vi {\it brune dverger}\\
 En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...{fordi at...}}
@@ -760,20 +761,20 @@ En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...{fordi at...}}
 }{SIDE 21/29/29}
 
 \colfullframenotxt{red_hr18_c}{hr17}{hr19}{0}{red}{
-\centerline{\textcolor{yellow}{\Huge Ja gjør det egentlig det?}}
-Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}{\pagebutton{Jeg har tenkt meg godt om og har et forslag!}}
-En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...{\pagebutton{fordi at...}}
+\centerline{\textcolor{yellow}{\Huge \htmlcom{large}{Ja gjør det egentlig det?}}}
+Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}{\pagebuttonolink{Jeg har tenkt meg godt om og har et forslag!}}
+En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...{\pagebuttonolink{fordi at...}}
 \textcolor{yellow}{Stjerna når hydrostatisk likevekt før temperaturen er høy nok til å starte fusjonsreaksjoner. Med lav masse og dermed liten tyngdekraft trengs ikke så høy temperatur for å få et stort nok mot-trykk. Skjønner? Slike mislykkede stjerner kaller vi {\it brune dverger}}\\
 En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...\hyperlink{red_hr18_d}{\pagebutton{fordi at...}}
 \textcolor{red}{Ved sammentrekning så er tyngdekrafta så stor, og lager så fort en så høy temperatur, at gasstrykket vinner over tyngdekrafta før vi når hydrostatisk likevekt. Vi får dermed ikke dannet noen stjerne.}
 }{SIDE 21/29/29}
 
 \colfullframe{red_hr18_d}{hr17}{hr19}{0}{red}{
-\centerline{\textcolor{yellow}{\Huge Ja gjør det egentlig det?}}
-Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}{\pagebutton{Jeg har tenkt meg godt om og har et forslag!}}
-En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...{\pagebutton{fordi at...}}
+\centerline{\textcolor{yellow}{\Huge \htmlcom{large}{Ja gjør det egentlig det?}}}
+Finnes det noen grense for hvor stor eller liten masse en stjerna kan ha? {\bf Hvis det gjør det, hva (hvilken fysisk prosess) gjør at det finnes en minste grense? Og hva gjør at det finnes en øvre grense?}{\pagebuttonolink{Jeg har tenkt meg godt om og har et forslag!}}
+En stjerne kan ikke ha mindre masse enn ca. $0.08M_\odot$ fordi...{\pagebuttonolink{fordi at...}}
 \textcolor{yellow}{Stjerna når hydrostatisk likevekt før temperaturen er høy nok til å starte fusjonsreaksjoner. Med lav masse og dermed liten tyngdekraft trengs ikke så høy temperatur for å få et stort nok mot-trykk. Skjønner? Slike mislykkede stjerner kaller vi {\it brune dverger}}\\
-En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...{\pagebutton{fordi at...}}
+En stjerne kan ikke ha større masse enn ca. $100M_\odot$ fordi...{\pagebuttonolink{fordi at...}}
 \textcolor{yellow}{Ved sammentrekning så er tyngdekrafta så stor, og lager så fort en så høy temperatur, at gasstrykket vinner over tyngdekrafta før vi når hydrostatisk likevekt. Vi får dermed ikke dannet noen stjerne.}
 }{SIDE 21/29/29}
 
@@ -803,11 +804,11 @@ Før stjerna har blitt en stjerne, altså mens den er en enorm GMC (Giant Molecu
 
 
 \colfullframe{feil_hr20b}{hr20}{hr21}{0}{black}{
-\textcolor{white}{\Huge Det ble galt!}
+\textcolor{white}{\Huge \htmlcom{large}{Det ble galt!}}
 }{SIDE 24/29/29}
 
 \colfullframe{riktig_hr20c}{hr20}{hr21}{-1}{yellow}{
-{\Huge Det ble riktig!}
+{\Huge \htmlcom{large}{Det ble riktig!}}
 }{SIDE 25/29/29}
 
 \fullframe{hr21}{hr20}{ms1}{0}{
@@ -828,7 +829,7 @@ Sjekk at du husker hva alle symbolene står for her! Tenk nå at du ser på gass
 
 
 \colfullframe{feil_ms1b}{ms1}{riktig_ms1c}{0}{black}{
-\textcolor{white}{\Huge Ikke heeelt. Hva skjer med $\mu$? Hvis du plutselig har masse heliumatomer og færre hydrogenatomer, vil ikke $\mu$ endre seg? Hvordan vil det påvirke trykket?}
+\textcolor{white}{\Huge \htmlcom{large}{Ikke heeelt. Hva skjer med $\mu$? Hvis du plutselig har masse heliumatomer og færre hydrogenatomer, vil ikke $\mu$ endre seg? Hvordan vil det påvirke trykket?}}
 }{SIDE 28/29/29}
 
 \colfullframe{riktig_ms1c}{ms1}{oppsummering}{-1}{yellow}{

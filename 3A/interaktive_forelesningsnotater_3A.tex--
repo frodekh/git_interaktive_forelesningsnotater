@@ -315,7 +315,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \includegraphics[scale=0.4]{media/ladder1.png}
 \column{0.5\textwidth}
 {\small
-\textcolor{yellow}{Velkommen til del 3A! I denne xdelen av kurset skal vi se hvordan vi kan finne avstander til objekter i verdensrommet. Det finnes mange forskjellige metoder, noen egner seg for det nære verdensrom, andre kun for veldig fjerne objekter. Ofte bygger de på hverandre slik at metodene for fjernere objekter må kalibereres med metodene for nære objekter, og slik må man gå steg for steg med metode for metode lenger og lenger utover i universet. Derfor kalles spektret av metoder for avstandsmålinger for {\bf den kosmiske avstandsstigen}.}\textcolor{blue}{\bf\footnotesize (illustrasjon: Credit: ESA/Hubble \& NASA, RELICS; Acknowledgement: D. Coe et al. + Hiclipart)}\hyperlink{intro2}{\pagebutton{Neste side}}
+\textcolor{yellow}{Velkommen til del 3A! I denne delen av kurset skal vi se hvordan vi kan finne avstander til objekter i verdensrommet. Det finnes mange forskjellige metoder, noen egner seg for det nære verdensrom, andre kun for veldig fjerne objekter. Ofte bygger de på hverandre slik at metodene for fjernere objekter må kalibereres med metodene for nære objekter, og slik må man gå steg for steg med metode for metode lenger og lenger utover i universet. Derfor kalles spektret av metoder for avstandsmålinger for {\bf den kosmiske avstandsstigen}.}\textcolor{blue}{\bf\footnotesize \htmlcom{footnotesize}{(illustrasjon: Credit: ESA/Hubble \& NASA, RELICS; Acknowledgement: D. Coe et al. + Hiclipart)}}\hyperlink{intro2}{\pagebutton{Neste side}}
 }
 \end{columns}
 \end{frame}
@@ -374,7 +374,7 @@ Er du klar og har sendt inn skjemaet?
 \begin{frame}
 \label{red_paral3}
 \lastpagebutton{paral2}
-\textcolor{yellow}{\Large Fant du ut av det??}
+\textcolor{yellow}{\Large \htmlcom{large}{Fant du ut av det??}}
 \textcolor{yellow}{Hvis ikke, prøv å tegne alt ovenfra: begge øynene dine, reven og fjellene. Ser du det nå?}
 \hyperlink{paral4}{\pagebutton{Tenk deg godt om før du blar om!}}
 \end{frame}
@@ -650,7 +650,7 @@ Fikk du 10pc? Det skulle du!
 \begin{frame}
 \label{msfit1}
 \dlastpagebutton{riktig_paral19b}\label{hrfit}
-{\Huge Hovedserietilpasning????}
+{\Huge \htmlcom{large}{Hovedserietilpasning????}}
 La oss dele opp ordet:{\bf Hovedserie}-tilpasning.
 Dette med tilpasning kan man kanskje få noe ut av men for å forstå hva hovedserien er, så trenger vi å bruke Hertzspring-Russel-diagrammet!
 \hyperlink{msfit2}{\pagebutton{Hvafforno'???}}
@@ -659,7 +659,7 @@ Dette med tilpasning kan man kanskje få noe ut av men for å forstå hva hoveds
 \begin{frame}
 \label{msfit2}
 \lastpagebutton{msfit1}
-{\Huge Hertzsprung-Russel-diagrammet????}
+{\Huge \htmlcom{large}{Hertzsprung-Russel-diagrammet????}}
 Jepp, tida har kommet til å introdusere dere til et av de viktigste redskaper for å studere stjerners liv og virke. Men for å forstå hva et Hertzsprung-Russel-diagram, eller bare {\bf HR-diagram}, er så trenger du å vite hva en stjernehop er, eller rettere sagt hva en åpen hop og en kulehop er.
 \hyperlink{msfit3}{\pagebutton{Hvafforno'???}}
 \end{frame}
@@ -667,7 +667,7 @@ Jepp, tida har kommet til å introdusere dere til et av de viktigste redskaper f
 \begin{frame}
 \label{msfit3}
 \lastpagebutton{msfit2}
-{\Huge Stjernehop????}
+{\Huge \htmlcom{large}{Stjernehop????}}
 Hva i alle dager er det...
 \hyperlink{msfit4}{\pagebutton{...for noe???}}
 \end{frame}
@@ -782,9 +782,9 @@ Dermed kunne vi jo forsøke å lage oss et HR-diagram som det over, men med $m$ 
 \begin{frame}
 \label{red_msfit14}
 \lastpagebutton{msfit13}
-{\Large
+{\Large\htmlcom{large}{
 \textcolor{yellow}{Her bør du faktisk stoppe opp og tenke litt! Gi deg noen minutter til å tenke godt gjennom problemstillingen: hvordan tror du dette diagrammet blir seende ut? Du har all kunnskap du trenger for å vite det!}
-}
+}}
 \hyperlink{red_msfit15}{\pagebutton{Tenk det godt om før du blar om!}}
 \end{frame}
 }
@@ -794,13 +794,13 @@ Dermed kunne vi jo forsøke å lage oss et HR-diagram som det over, men med $m$ 
 \begin{frame}
 \label{red_msfit15}
 \lastpagebutton{red_msfit14}
-{\Large
+{\Large\htmlcom{large}{
 \textcolor{yellow}{OK da, du skal få et hint: formelen
 \[
 m-M=5\log{\frac{r}{10\mathrm{pc}}}
 \]
 gir deg svaret!}
-}
+}}
 \hyperlink{msfit16}{\pagebutton{Tenk det godt om før du blar om!}}
 \end{frame}
 }
@@ -855,7 +855,7 @@ Ser du at hvis vi nå plotter $m$ på y-aksen isteden for $M$, så blir $m$-verd
 \lastpagebutton{msfit17x}
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
-{\Large Flott! Stemmer!}
+{\Large\htmlcom{large}{ Flott! Stemmer!}}
 {\bf Er du enig i at figuren til venstre viser fordelingen av absolutte størrelseklasser for en (hvilken som helst) stjernehop?} (hvis ikke, bla tilbake og les på nytt). Hvis du går tilbake til 1D og definisjonen av {\bf absolutt størrelseklasse så var det den tilsynelatende størrelseklassen som en stjerne ville hatt hvis den ble flyttet til en avstand av 10 pc.} 
 \hyperlink{msfit18}{\pagebutton{OK! Skjønner!}}
 \end{frame}
@@ -891,7 +891,7 @@ til å finne avstanden til stjernehopen i diagrammet til høyre?} Er den ...\\
 \begin{frame}
 \label{feil_msfit19a}
 \lastpagebutton{msfit19}
-\textcolor{yellow}{\Large Det ble nok galt! Hvorfor tar du ikke utgangspunkt i stjernene med temperatur A slik som vi gjorde på de forrige sidene? Vi vet jo at diagrammet har blitt skiftet opp/ned med en konstant størrelse (gå tilbake igjen hvis du er usikker på hvorfor), så da skulle vi få samme resultat uansett hvilken temperatur vi ser på. Da har du $m$ og $M$...}
+\textcolor{yellow}{\Large\htmlcom{large}{Det ble nok galt! Hvorfor tar du ikke utgangspunkt i stjernene med temperatur A slik som vi gjorde på de forrige sidene? Vi vet jo at diagrammet har blitt skiftet opp/ned med en konstant størrelse (gå tilbake igjen hvis du er usikker på hvorfor), så da skulle vi få samme resultat uansett hvilken temperatur vi ser på. Da har du $m$ og $M$...}}
 \end{frame}
 }
 
@@ -940,7 +940,7 @@ Du har altså gjort en {\bf hovedserietilpasning} for å finne avstanden til stj
 \hyperlink{feil_msfit21}{\pagebutton{\small Forrige side}}
 \begin{columns}
 \column{0.5\textwidth}
-{\Huge\bf \centerline{\textcolor{yellow}{Kaffe?}}}
+{\Huge\bf \centerline{\textcolor{yellow}{\htmlcom{large}{Kaffe?}}}}
 \vspace*{-0.9cm}
 \centerline{\includegraphics[scale=0.45]{media/ladder_coffee.png}}
 \column{0.5\textwidth}
@@ -1235,7 +1235,7 @@ Supernovaer av type Ia er svært lyssterke og kan observeres i galakser som er o
 \begin{frame}
 \label{tf2}
 \lastpagebutton{tf1}
-{\huge På de neste sidene skal du få gjøre litt detektivarbeid. Du skal se rett og slett se hvor mange tips du trenger før du innser {\bf hvorfor} det er en sammenheng mellom bredden av 21cm-linja og luminositeten til galaksen. {\bf MERK at det ikke er meningen at du skal finne denne sammenhengen, den er komplisert, men du skal innse hvorfor det finnes en sammenheng her.}}
+{\huge\htmlcom{large}{ På de neste sidene skal du få gjøre litt detektivarbeid. Du skal se rett og slett se hvor mange tips du trenger før du innser {\bf hvorfor} det er en sammenheng mellom bredden av 21cm-linja og luminositeten til galaksen. {\bf MERK at det ikke er meningen at du skal finne denne sammenhengen, den er komplisert, men du skal innse hvorfor det finnes en sammenheng her.}}}
 \textcolor{red}{Første forsøk kommer nå: klarer du å se {\bf hvorfor} det er en slik sammenheng uten noe tips? Tegn galaksen med hydrogenskyene i bane, det kan være til hjelp.}
 \hyperlink{tf3}{\pagebutton{Tenk deg godt om før du går til første tips!}}
 \end{frame}
@@ -1253,7 +1253,7 @@ Emisjonslinjen på 21cm fra en galakse har en meget spesiell form. Ta en kikk p�
 \label{tf4}
 \lastpagebutton{tf3}
 \begin{alertblock}{Tips 2:}
-{\Huge Dopplereffekten! Kom du på sporet nå?}
+{\Huge \htmlcom{large}{Dopplereffekten! Kom du på sporet nå?}}
 \end{alertblock}
 \hyperlink{tf5}{\pagebutton{Tenk deg godt om før du går til tredje tips!}}
 \end{frame}
@@ -1271,7 +1271,7 @@ Forrige tips fortalte deg at Dopplereffekten gir opphave til den spesielle forme
 \label{tf6}
 \lastpagebutton{tf5}
 \begin{alertblock}{Tips 4:}
-{\Huge Mørk materie og galaktiske rotasjonskurver! Ser du nå hvorfor de to toppene på siden er høyere enn i sentrum av linja?}
+{\Huge\htmlcom{large}{ Mørk materie og galaktiske rotasjonskurver! Ser du nå hvorfor de to toppene på siden er høyere enn i sentrum av linja?}}
 \end{alertblock}
 \hyperlink{tf7}{\pagebutton{Tenk deg godt om før du går til femte tips!}}
 \end{frame}

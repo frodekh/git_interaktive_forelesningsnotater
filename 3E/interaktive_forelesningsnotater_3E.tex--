@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/168692}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -338,7 +338,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 \column{0.5\textwidth}
 {\small
 \textcolor{green}{\bf Velkommen til del 3E! Vi har allerede sett hva som skjer med aldrende stjerner. Nå skal vi se hva som skjer i dødsøyeblikket og etterpå. Hvordan ender en stjerne sitt liv? Og hvorfor slik? Hva slags rester får vi igjen etterpå? Og spesielt, hva kommer til å skje med solen? I den fysiske forelesningen bruker jeg normalt omkring en dobbelttime på dette.}}\\
-\textcolor{green}{(Illustrasjon: Røntgenbilde av supernovarest G292.0+1.8  i Melkeveien (NASA/Chandra)}
+\textcolor{green}{\htmlcom{footnotesize}{(Illustrasjon: Røntgenbilde av supernovarest G292.0+1.8  i Melkeveien (NASA/Chandra)}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -411,7 +411,7 @@ I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsm
 }
 {
 \textcolor{yellow}{\bf\small Etter flere etterfølgende helium-skallflash blir altså de yttre delene av stjernen kastet av, bit for bit, helt til vi sitter igjen kun med den elektrondegenererte CO-kjernen. Dette kaller vi en hvit dvergstjerne. Solen kommer til å bli en slik hvit dvergstjerne. Rundt denne hvite dvergen har vi en stor kuleformet gassky som består av all gassen som ble kastet av stjerna. Dette kaller vi en planetarisk tåke. Men hvor på HR-diagrammet finner du nå denne hvite dvergen?}\\
-\textcolor{green}{(\tiny Illustrasjon: Helixtåken som er omkring 215pc unna er en av våre nærmeste planetariske tåker. Ringen spenner ut omkring 1pc og har en vinkelutstrekning på himmelen på rundt halvparten av fullmånen. NASA/ESA)}
+\textcolor{green}{(\tiny \htmlcom{footnotesize}{Illustrasjon: Helixtåken som er omkring 215pc unna er en av våre nærmeste planetariske tåker. Ringen spenner ut omkring 1pc og har en vinkelutstrekning på himmelen på rundt halvparten av fullmånen. NASA/ESA)}}
 }{SIDE 8/12/54}
 
 \fullframetxt{low8}{feil_low7}{low9}{0}{Jeg har tegnet HR-diagrammet!}{\Large
@@ -429,7 +429,7 @@ Den har ikke lenger en energikilde. Dermed vil den vel miste energi kontinuerlig
 }{SIDE 11/12/54}
 
 \fullframe{low11}{low10}{blue_nytema2}{0}{\Huge
-Vi skal snart lage oss en forenklet matematisk modell av en hvit dverg, men før det, la oss se hva som skjer med de massive stjernene...
+\htmlcom{large}{Vi skal snart lage oss en forenklet matematisk modell av en hvit dverg, men før det, la oss se hva som skjer med de massive stjernene...}
 }{SIDE 12/12/54}
 
 
@@ -487,13 +487,13 @@ Men for virkelig massive stjerner $M>25M_\odot$ slik at den gjenværende kjernen
 
 \colfullframe{feil_high9a}{high9}{high10}{0}{black}{\Large
 \textcolor{yellow}{\Huge
-Gratulerer! Du er en hot kandidat til Nobelsprisen i fysikk til neste år! Pass på å få en vitenskaplig artikkel om dette ut fort før noen knabber ideen din!
+\htmlcom{large}{Gratulerer! Du er en hot kandidat til Nobelsprisen i fysikk til neste år! Pass på å få en vitenskaplig artikkel om dette ut fort før noen knabber ideen din!}
 }
 }{SIDE 22/25/54}
 
 \colfullframe{riktig_high9b}{high9}{high10}{-1}{yellow}{\Large
 {\Huge
-Det er ikke så rart, for det er det ingen andre som har heller. Her står forskningsfronten!
+\htmlcom{large}{Det er ikke så rart, for det er det ingen andre som har heller. Her står forskningsfronten!}
 }
 }{SIDE 23/25/54}
 
@@ -516,7 +516,7 @@ Vi har altså 3 mulige utfall her:
 \label{pause}
 \hyperlink{fusj9r}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{Jepp, {\bf nå} er det tid for kaffe}}
+\centerline{\htmlcom{large}{Jepp, {\bf nå} er det tid for kaffe}}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 {\large Og du trenger den for nå skal vi gjøre litt regning med kvantegasser. Hvordan var løpeturen? En til frem og tilbake før kaffen! Så er du frisk og klar for regningen...}\\
 \vspace{0.5cm}
@@ -581,7 +581,7 @@ Ja i en vanlig stjerne så var dette det trykket fra en ideel gass $P=nkT$. I ek
 }{SIDE 31/50/54}
 
 \fullframe{komp6}{red_komp5}{komp7}{0}{\Huge
-Så trykket i en degenerert gass avhenger altså ikke av temperaturen? Det avhenger kun av tettheten?
+\htmlcom{large}{Så trykket i en degenerert gass avhenger altså ikke av temperaturen? Det avhenger kun av tettheten?}
 }{SIDE 32/50/54}
 
 \fullframe{komp7}{komp6}{komp8}{0}{\large
@@ -627,7 +627,7 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframenotxt{komp10_b}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
 Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?\hyperlink{komp10_c}{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}\textcolor{white}{Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\small Kan være med på den ja...}
 Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
@@ -637,8 +637,8 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframenotxt{komp10_c}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
-Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebuttonolink{\small Jaaaaa...høres rimlig ut det og}}
 Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?\hyperlink{komp10_d}{\pagebutton{\small Kan være med på den ja...}}\textcolor{white}{
 Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
@@ -648,9 +648,9 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframenotxt{komp10_d}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
-Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}
-Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebutton{\small Kan være med på den ja...}}
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebuttonolink{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebuttonolink{\small Kan være med på den ja...}}
 Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?\hyperlink{komp10_e}{\pagebutton{\small Jaaaaa...}}\textcolor{white}{ Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
 n_p=\frac{Z}{A}\frac{\rho}{m_H}
@@ -659,10 +659,10 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframe{komp10_e}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
-Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}
-Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebutton{\small Kan være med på den ja...}}
-Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\pagebutton{\small Jaaaaa...}} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebuttonolink{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebuttonolink{\small Kan være med på den ja...}}
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\pagebuttonolink{\small Jaaaaa...}} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
 n_p=\frac{Z}{A}\frac{\rho}{m_H}
 \]
@@ -694,7 +694,7 @@ så får vi...
 }{SIDE 38/50/54}
 
 \fullframetxt{komp12}{komp11}{komp13}{0}{da får jeg ...}{\huge
-...et uttrykk som består av $R$, $M$, $Z$, $A$ og ellers naturkonstanter??? Skal vi prøve å bruke dette til å finne radien til en hvit dvergstjerne? Prøv å få radien alene på den ene siden. Hva får du?
+\htmlcom{large}{...et uttrykk som består av $R$, $M$, $Z$, $A$ og ellers naturkonstanter??? Skal vi prøve å bruke dette til å finne radien til en hvit dvergstjerne? Prøv å få radien alene på den ene siden. Hva får du?}
 }{SIDE 39/50/54}
 
 \fullframe{komp13}{komp12}{komp14}{0}{\large
@@ -706,7 +706,7 @@ Merk at det står omtrent lik her, vi har gjort mange grove antakelser. Dette er
 }{SIDE 40/50/54}
 
 \fullframe{komp14}{komp13}{komp15}{0}{\huge
-Fikk du at en hvit dvergstjerne har en radius med størrelseorden omtrent som jordas? Altså en hvit dverg er en stjerne på størrelse med jorda, men med solas masse! Et uhyre kompakt objekt med andre ord. Hvor mye veier da en milliliter av materiale fra en hvit dverg? Du får ikke svaret her, du må regne det ut selv.
+\htmlcom{large}{Fikk du at en hvit dvergstjerne har en radius med størrelseorden omtrent som jordas? Altså en hvit dverg er en stjerne på størrelse med jorda, men med solas masse! Et uhyre kompakt objekt med andre ord. Hvor mye veier da en milliliter av materiale fra en hvit dverg? Du får ikke svaret her, du må regne det ut selv.}
 }{SIDE 41/50/54}
 
 \fullframe{komp15}{komp14}{komp16}{0}{
@@ -730,21 +730,21 @@ og vi antar uniform massetetthet og at $Z/A=1/2$. \textcolor{red}{\bf Du bør n�
 }{SIDE 43/50/54}
 
 \colfullframe{red_komp17}{komp16}{red_komp18}{0}{red}{\Huge
-\textcolor{yellow}{Ser du det?? Skjedde det noe rart i utledningen? Fant du en radius $R$?
-Ikke gå videre før du oppdager det rare!}
+\textcolor{yellow}{\htmlcom{large}{Ser du det?? Skjedde det noe rart i utledningen? Fant du en radius $R$?
+Ikke gå videre før du oppdager det rare!}}
 }{SIDE 44/50/54}
 
 
 \colfullframe{red_komp18}{red_komp17}{red_komp19}{0}{red}{\Huge
-\textcolor{yellow}{OK da, kan du regne ut $M$ isteden?}
+\textcolor{yellow}{\htmlcom{large}{OK da, kan du regne ut $M$ isteden?}}
 }{SIDE 45/50/54}
 
 \colfullframe{red_komp19}{red_komp18}{komp20}{0}{red}{\Huge
-\textcolor{yellow}{Hva fikk du for $M$? Gi svaret i solmasser!}
+\textcolor{yellow}{\htmlcom{large}{Hva fikk du for $M$? Gi svaret i solmasser!}}
 }{SIDE 46/50/54}
 
 \fullframe{komp20}{red_komp19}{komp21}{0}{\Huge
-Klarte du å utlede {\bf Chandrasekharmassen} på omkring 1.4 solmasser?
+\htmlcom{large}{Klarte du å utlede {\bf Chandrasekharmassen} på omkring 1.4 solmasser?}
 }{SIDE 47/50/54}
 
 \fullframe{komp21}{komp20}{komp22}{0}{
@@ -786,7 +786,7 @@ Vi har sett hvordan man i supernovaeksplosjoner har en så energetisk gass at kj
 }{SIDE 51/54/54}
 
 \fullframe{nd1_b}{komp23}{nd2}{0}{\label{avslutning}\small
-Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}{\pagebutton{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
+Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}{\pagebuttonolink{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
 
 Vi har sett hvordan man i supernovaeksplosjoner har en så energetisk gass at kjernereaksjoner som {\bf bruker energi} kan foregå: lettere grunnstoffer blir fusjonert til enda lettere grunnstoffer. En slik prosess er normalt ikke mulig da den trenger energi, men i en supernovaeksplosjon har vi enorme energimengder tilgjengelig. Også det motsatte vil da skje: jern kan fusjonere til tyngde grunnstoffer. {\bf Grunnstoffene tyngre enn jern i universet kommer fra supernovaeksplosjoner, men ikke bare: de siste årenes utvikling i gravitasjonsbølgedeteksjon har også avslørt at kollisjoner mellom nøytronstjerner, igjen svært energirike hendelser, også er ansvarlig for en stor andel av de tyngre grunnstoffene.}
 }{SIDE 51/54/54}

@@ -105,7 +105,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -457,7 +457,7 @@ Ikke gå videre før du har regnet ut svaret og har tenkt litt gjennom hva svare
 \begin{frame}
 \label{red_litenvinkel6b}
 \lastpagebutton{litenvinkel6}
-{\Huge\centerline{Hva fikk du??}}
+{\Huge\centerline{\htmlcom{large}{Hva fikk du??}}}
 \centerline{\bf Ble avstanden større eller mindre enn 1 AU? (avstanden sol-jord)}
 \vspace*{0.5cm}
 Ville du kunne avbilde en planet i avstand 1AU fra en av våre nærmeste stjerner? Hva med en planet i samme avstand som Jupiter i vårt solsystem?\\
@@ -534,7 +534,7 @@ Formelen gir oss endringen $\Delta\lambda$ i bølgelengden for lys som opprinnel
 {\bf Et lite hint til før du går videre...}\\
 {\bf ... Dopplereffekten!}\\
 Husker du hva den går ut på???\\
-Husker du formelen for endring i bølgelengde pga. Dopplereffekten?\pagebutton{Trykk her når du har tenkt...}\\
+Husker du formelen for endring i bølgelengde pga. Dopplereffekten?\pagebuttonolink{Trykk her når du har tenkt...}\\
 Ganske riktig
 \[
 \frac{\Delta\lambda}{\lambda}=\frac{v}{c}
@@ -610,11 +610,10 @@ Vi lærte i del 1B at når en planet går i bane omkring en stjerne, så går jo
 \column{0.5\textwidth}
 \textcolor{white}{
 De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane. 
-Her har stjernas bane om massesenter(CM):
+Her har stjernas bane om massesenter(CM):}
 %\includegraphics[scale=0.38]{media/star_orbit.png}\\
 \vspace*{5cm}
 \textcolor{white}{Før du går videre: merk av punktene A, B, C og D i hastighetsplottet ditt!}
-\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 
@@ -626,7 +625,7 @@ Her har stjernas bane om massesenter(CM):
 \begin{columns}
 \column{0.5\textwidth}
 Fikk du at også hastigheten er en sinuskurve? Kan du nå se for deg hvordan stjerna beveger seg? Og hvorfor? {\bf Det er viktig at du faktisk har laget teningen da vi skal bruke den videre!}\\
-\pagebutton{Tenk før du trykker her}\\
+\pagebuttonolink{Tenk før du trykker her}\\
 Vi lærte i del 1B at når en planet går i bane omkring en stjerne, så går jo både stjerna og planeten i bane omkring et felles massesenter. Hvis stjerna har en planet i bane rundt seg, så vil altså stjerna gå i bane om massesenteret med planeten. {\bf Vi skal i hele del 1C alltid anta sirkelbaner for å gjøre det lettere å regne.}
 \column{0.5\textwidth}
 De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane. 
@@ -641,7 +640,7 @@ Her har stjernas bane om massesenter:
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{red_vr7}]
+\label{red_vr7}
 \dlastpagebutton{vr6}
 \addtocounter{pageno}{-1}
 \textcolor{yellow}{\Large Men har du lagt merke til at hastigheten $v_r$ i plottet ditt ikke oscillerer omkring 0??? Fra figuren på forrige side, skulle man vel tro at radialhastigheten (altså hastigheten langs synslinja) skal være 0 i punktene A og C. Dermed skulle vi vel ikke hatt noen Dopplereffekt og dermed ingen bølgelengdeforskyvning i disse to punktene. Kan du tenke deg en forklaring på hvorfor kurven din ikke oscillerer omkring $v_r=0$ i punktene A og C?}\\
@@ -658,7 +657,7 @@ Her har stjernas bane om massesenter:
 \lastpagebutton{vr6}
 \addtocounter{pageno}{-1}
 \textcolor{yellow}{\Large Men har du lagt merke til at hastigheten $v_r$ i plottet ditt ikke oscillerer omkring 0??? Fra figuren på forrige side, skulle man vel tro at radialhastigheten (altså hastigheten langs synslinja) skal være 0 i punktene A og C. Dermed skulle vi vel ikke hatt noen Dopplereffekt og dermed ingen bølgelengdeforskyvning i disse to punktene. Kan du tenke deg en forklaring på hvorfor kurven din ikke oscillerer omkring $v_r=0$ i punktene A og C?}\\
-{\pagebutton{Diskuter 2 min før du går videre!}}\\
+{\pagebuttonolink{Diskuter 2 min før du går videre!}}\\
 \textcolor{yellow}{Ganske riktig! Hastigheten til i punktene A og C viser massesenterets hastighet i forhold til oss: massesenteret beveger seg med en konstant hastighet i forhold til oss, i tillegg beveger stjernen seg i en sirkelbane omkring massesenteret. Den konstante hastigheten som en stjerne (eller massesenteret planet-stjerne) har i forhold til oss kalles {\it egenhastigheten (engelsk: peculiar velocity)}. Merk deg ordet som blir mye brukt videre.}
 \hyperlink{vr8}{\pagebutton{Neste side}}
 \end{frame}
@@ -698,7 +697,7 @@ Ta gjerne også en kikk på \href{https://commons.wikimedia.org/wiki/File:Radial
 \begin{frame}
 \label{pause_vr8c}
 \hyperlink{vr8b}{\pagebutton{\small Forrige side}}
-{\Huge Det er litt regning igjen før det blir pause! Det kan være greit å klarne tankene litt før du går videre}\\
+{\Huge \htmlcom{large}{Det er litt regning igjen før det blir pause! Det kan være greit å klarne tankene litt før du går videre}}\\
 Finn en vegg (hvis du trenger det), og stå på hodet nå. Alt pleier å bli mye klarere hvis du bare ser det fra en annen vinkel! Kikk ut av vinduet! Hvis det mot formodning er sol, kan du se for deg sola som raser omkring massesenteret med jorda? Og formen på banen var...?\\
 \hyperlink{vr9}{\pagebutton{Jeg har tatt 10 push-ups og 10 sit-ups, så la oss fortsette}}
 \end{frame}
@@ -793,7 +792,7 @@ Merk at siden $a$ er radien i banen til planeten om stjerna (eller omvendt), så
 \label{vr11_b}
 \lastpagebutton{riktigbane}
 \addtocounter{pageno}{-1}
-Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\\pagebutton{...trykk her når du har svaret...}\\
+Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\\pagebuttonolink{...trykk her når du har svaret...}\\
 Siden banehastigheten er konstant (pga. sirkelbane), så må vel
 \[
 v=\frac{2\pi a}{P}
@@ -839,7 +838,7 @@ til
 \[
 m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
 \]
-der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehastighet omkring massesenteret og $v_p$ er planetens banehastighet om massesenteret. Når du har regnet litt og tenkt litt, ... {\pagebutton{... trykk her}}\\
+der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehastighet omkring massesenteret og $v_p$ er planetens banehastighet om massesenteret. Når du har regnet litt og tenkt litt, ... {\pagebuttonolink{... trykk her}}\\
 {\bf Hvis du fikk dette til og forstår hvordan det blir slik, gå videre til ...}
 \hyperlink{vr12}{\pagebutton{... neste side,}}
 \textcolor{red}{\bf hvis ikke ta en titt på forklaringene i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_1.mp4}{denne videoen} først}
@@ -872,8 +871,8 @@ Er det...
 \begin{frame}
 \label{riktigv}
 \clastpagebutton{vr12}
-HELT RIKTIG!
-Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.\\
+\htmlcom{large}{HELT RIKTIG!
+Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.}\\
  \hyperlink{vr13}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -916,7 +915,7 @@ Men vi hadde jo at
 m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
 \]
 der vi trenger summen av $v_*$ og $v_p$, mens det eneste vi leser av er $v_*$. Men hvilken må være er størst, $v_*$ eller $v_p$? Bruk kun fysisk resonnement uten matematikk.
-{\pagebutton{Trykk her når du har svaret!}}\\
+{\pagebuttonolink{Trykk her når du har svaret!}}\\
 Nettopp, fra Newtons 3.lov vet vi at kraften på begge legemer er lik, men fra Newtons annen lov vet vi at det mest minst massive objektet får størst akselrasjon og dermed må ha størst hastighet. Siden stjerna er {\bf mye} mer massiv enn planeten så må $v_p\gg v_*$, og dermed kan vi si at $v_*+v_p\approx v_p$ og vi har:
 \[
 m_p+m_*=\frac{P}{2\pi G}v_p^3
@@ -966,7 +965,7 @@ Dermed har vi jo faktisk et uttrykk for massen til planeten, gitt ved stjernemas
 \begin{frame}
 \label{red_mp5}
 \lastpagebutton{mp4} 
-\textcolor{yellow}{\Huge\bf Eller kan vi nå egentlig alltid det??????}
+\textcolor{yellow}{\Huge\bf \htmlcom{large}{Eller kan vi nå egentlig alltid det??????}}
 \hyperlink{pause}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -978,12 +977,12 @@ Dermed har vi jo faktisk et uttrykk for massen til planeten, gitt ved stjernemas
 \label{pause}
 \hyperlink{red_mp5}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{TID FOR KAFFEPAUSE!!!}
+\centerline{\htmlcom{huge}{TID FOR KAFFEPAUSE!!!}}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
-Ut å strekke på bena. Inn med litt koffein...\\
+{\htmlcom{large}{Ut å strekke på bena. Inn med litt koffein...}}\\
 \vspace*{0.5cm}
-Ihvertfall 10 min...
+{\htmlcom{large}{Ihvertfall 10 min...}
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema3}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
@@ -1039,7 +1038,7 @@ Tenk deg nøye om (1 min) for å se om du kan finne noen ideer!
 \begin{frame}
 \label{feil_mp8}
 \lastpagebutton{mp7}
-\textcolor{white}{Dårlige nyheter: Det finnes ingen kjente måter å finne inklinasjonsvinkelen på! Kun når inklinasjonsvinkelen er nær $90^\circ$ grader, så kan vi i noen tilfeller vite om det. Kan du tenke deg hvordan? }
+\textcolor{white}{\htmlcom{large}{Dårlige nyheter: Det finnes ingen kjente måter å finne inklinasjonsvinkelen på! Kun når inklinasjonsvinkelen er nær $90^\circ$ grader, så kan vi i noen tilfeller vite om det. Kan du tenke deg hvordan? }}
 \hyperlink{mp9}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -1064,7 +1063,7 @@ så ser vi da at hvis vi setter inn $i=90^\circ$ i uttrykket så vil massen $m_p
 \lastpagebutton{feil_mp8}
 \addtocounter{pageno}{-1}
 Hvis inklinasjonsvinkelen er $90^\circ$ så ligger synslinjen i baneplanet og da går planeten foran stjernen og formørker den med jevne mellomrom. Men det forutsetter at planeten er stor nok til å skape en synlig formørkelse av stjerna. Ser vi en slik formørkelse så vet vi at $i=90^\circ$. Men hvis vi ikke ser en slik formørkelse, kan vi likevel si noe om planetens masse?\\
-{\pagebutton{Trykk her når du har tenkt litt på det}}\\
+{\pagebuttonolink{Trykk her når du har tenkt litt på det}}\\
 
 Vi vet at $\sin{i}$ ikke kan være større enn 1. Hvis vi kikker på uttrykket:
 \[
@@ -1215,7 +1214,7 @@ Vi ser altså at hvis dataene er gode nok til å skjelne punktet fra formørkels
 \begin{columns}
 \column{0.5\textwidth}
 Hastigheten $v_p$ er i forhold til massesenteret. Det viser seg å være en god tilnærmelse, men kan du se hva vi egentlig skulle brukt?\\
-{\pagebutton{Trykk her når du har tenkt}}\\
+{\pagebuttonolink{Trykk her når du har tenkt}}\\
 Siden vi ser på planetens hastighet {\bf i forhold til stjerneskiven} (stjerna beveger seg jo også i forhold til massesenteret) så må vi bruke hastigheten $v=v_*+v_p$, men siden $v_*\ll v_p$ så er det en god tilnærmelse å bruke $v_p$.\\
 \column{0.5\textwidth}
 {\bf Vi oppsumerer:}\\
@@ -1278,7 +1277,7 @@ Da er du ferdig med første forelesning i del 1C. Vi har til nå sett på ideele
 \label{oppsummering2}
 \hyperlink{oppsummering}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
 \Large
-Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk.
+\htmlcom{large}{Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk.}
 \end{frame}
 
 

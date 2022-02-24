@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -570,7 +570,7 @@ Tenk deg nøye om før du går videre!\\
 }
 
 \choiceframe{gastat3}{gastat2}{0}{
-Har du tenkt ut en mulig måte å løse dette på?\\
+\htmlcom{large}{Har du tenkt ut en mulig måte å løse dette på?}\\
 \hyperlink{jepp}{\choicebutton{JEPP!}}\ \ \ \ \hyperlink{hakkepeiling}{\choicebutton{HA'KKE PEILING}}
 }
 
@@ -585,9 +585,9 @@ Ikke gå til neste side før du har prøvd alle disse tingene og ihvertfall har 
 }
 
 \fullframe{jepp}{gastat3}{gastat4}{-1}{
-Bra jobba!
+\htmlcom{large}{Bra jobba!
 Tenk gjerne en gang til for sikkerhetsskyld! 
-Og så kan du få svaret på neste side.
+Og så kan du få svaret på neste side.}
 }
 
 \fullframe{gastat4}{gastat3}{pause}{0}{
@@ -609,7 +609,7 @@ Se videoen igjen hvis du er usikker!
 \label{pause}
 \hyperlink{gastat4}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe?}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 \small Puhhhh, da kan du slappe godt av, finne frem kaffekoppen og helle din favorittdrikk (te, selvfølgelig) oppi. Legg deg strak ut på gulvet, pust med magan, lukk øynende og pust inn, ja, pust inn $O_2$-molekylene som har en hastighet på.....NEIIIII det var pause nå! Noen minutter før du fortsetter!
 }\\
@@ -681,8 +681,8 @@ Tenk deg godt om {\bf (maks 1 min!)} og si hva du mener passer best til din tolk
 
 \colfullframe{riktigsigma}{gastat7}{gastat8}{-1}{yellow}{
 \vspace*{2cm}
-HELT RIKTIG!
-Uttrykket gir deg både bredden til $P(v)$ og temperaturen til gassen, det er en sammenheng mellom disse to størrelsene!
+\htmlcom{large}{HELT RIKTIG!
+Uttrykket gir deg både bredden til $P(v)$ og temperaturen til gassen, det er en sammenheng mellom disse to størrelsene!}
 }
 
 \fullframe{gastat8}{gastat7}{blue_nytema3}{0}{
@@ -735,7 +735,7 @@ Avgjør om noen av disse er Gaussiske fordelingsfunksjoner:\\
 }
 
 \colchoiceframe{feilgauss}{stat2}{0}{black}{
-\textcolor{white}{Nei nå tror jeg egentlig ikke at du tenkte deg så veldig godt om!!!  Trykk på knappen for å gå tilbake til forrige side, se nøye på funksjonene en gang til: kan du skrive om noen av Maxwell-Boltzmannfordelingene på formen til en Gausskurve?}
+\textcolor{white}{\htmlcom{large}{Nei nå tror jeg egentlig ikke at du tenkte deg så veldig godt om!!!  Trykk på knappen for å gå tilbake til forrige side, se nøye på funksjonene en gang til: kan du skrive om noen av Maxwell-Boltzmannfordelingene på formen til en Gausskurve?}}
 }
 
 \colfullframe{riktiggauss}{stat2}{stat3}{-1}{yellow}{\large

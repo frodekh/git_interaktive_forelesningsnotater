@@ -74,9 +74,6 @@
 %body
 \setbeamercolor{block body}{fg=yellow,bg=bronze}
 
-
-
-
 \newcommand{\pagebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 5pt, draw = structure!90, fill = green(ryb), rounded corners = 8pt]{\color{amber}\Large\insertbuttontext};}\beamerbutton{#1}}
 
 \newcommand{\choicebutton}[1]{\setbeamertemplate{button}{\tikz\node[inner xsep = 8pt, draw = structure!90, fill = vegasgold, rounded corners = 5pt]{\color{vanilla}\Large\insertbuttontext};}\beamerbutton{#1}}
@@ -104,7 +101,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167466}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -375,7 +372,7 @@ AhA! Opplagt! Vi ser at 2 av protonene her blir omgjort til nøytroner som har m
 \label{feil_mass2f}
 \lastpagebutton{mass2}{\bf SIDE 4/13/47}\\
 {\Large
-\textcolor{yellow}{\Huge Er du såååå lettlurt enda? Har du ikke lært å ane fellene etter så mange interaktive forelesningsnotater? Nøytronene er jo selvfølgelig {\bf tyngre} enn protonene, de {\bf trenger} energi for å dannes!}
+\textcolor{yellow}{\Huge \htmlcom{large}{Er du såååå lettlurt enda? Har du ikke lært å ane fellene etter så mange interaktive forelesningsnotater? Nøytronene er jo selvfølgelig {\bf tyngre} enn protonene, de {\bf trenger} energi for å dannes!}}
 }
 \hyperlink{mass3}{\pagebutton{Neste side}}
 \end{frame}
@@ -432,7 +429,7 @@ Er det\\
 \begin{frame}
 \label{mass6}
 \lastpagebutton{mass5}{\bf SIDE 9/13/47}\\
-{\bf\Large OG svaret er:}
+{\bf\Large \htmlcom{large}{OG svaret er:}}
 \includegraphics[scale=0.4]{media/atom_scale2.png}\\
 Hæææææ! Vi har nøyaktig de samme partiklene på den midterste og siste vekt, likevel veier de forskjellig? Nøyaktig hvorfor skal vi komme tilbake til i relativitetsteorien i del 2. Men i relativitetsteori så er energi inkludert i masseregnskapet, energi som kinetisk og potensiell bidrar til masse. {\bf Dermed er masse ikke en additiv størrelse i relativitetsteori.}
 \hyperlink{mass7}{\pagebutton{Neste side}}
@@ -605,7 +602,7 @@ der vi summer over alle mulige kjernereaksjoner som kan foregå i stjernen. Dett
 \label{feil_fusj9f}
 \lastpagebutton{fusj9}{\bf SIDE 23/24/47}\\
 {\Large
-\textcolor{yellow}{\Huge Det ble galt! Hva er volumet av et infinitesimalt lite kuleskall i avstand $r$ med tykkelse $dr$? Og hva blir massen $dm$ av dette kuleskallet? Kan du sette inn for $dm$ i den ene formelen på forrige side?}
+\textcolor{yellow}{\Huge \htmlcom{large}{Det ble galt! Hva er volumet av et infinitesimalt lite kuleskall i avstand $r$ med tykkelse $dr$? Og hva blir massen $dm$ av dette kuleskallet? Kan du sette inn for $dm$ i den ene formelen på forrige side?}}
 }
 \end{frame}
 }
@@ -643,11 +640,11 @@ Dette er enda en av likningene som løses sammen med bl.a. likningen for hydrost
 \label{pause}
 \hyperlink{riktig_fusj9r}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{Kaffe?}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
-En strekk på beina! Litt frisk luft! Og er du heldig kan du nyte varmen fra solas fusjonsreaksjoner i ansiktet.
+\htmlcom{large}{En strekk på beina! Litt frisk luft! Og er du heldig kan du nyte varmen fra solas fusjonsreaksjoner i ansiktet.}
 \vspace*{0.5cm}
-Ikke lov å fortsette før du har tatt minst 15 min. pause!
+\htmlcom{large}{Ikke lov å fortsette før du har tatt minst 15 min. pause!}
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema3}{\pagebutton{La oss regne litt på fusjonsreaksjoner!}}
@@ -682,7 +679,7 @@ Disse reaksjonene har ganske forskjellige temperaturavhengighet og temperaturen 
 \label{reak2}
 \lastpagebutton{reak1}{\bf SIDE 26/38/47}\\
 {\Large
-I det følgende skal vi skrive fusjonsreaksjonslikninger med symboler \atom{A}{Z}{X} der $X$ er kjemisk symbol, $A$ er totalt antall nukleoner i kjernen (protoner + nøytroner) og $Z$ er antall protoner i kjernen. Dermed blir for eksempel deuterium som har et proton og et nøytron skrevet som \atom{2}{1}{H}.
+I det følgende skal vi skrive fusjonsreaksjonslikninger med symboler $\atom{A}{Z}{X}$ der $X$ er kjemisk symbol, $A$ er totalt antall nukleoner i kjernen (protoner + nøytroner) og $Z$ er antall protoner i kjernen. Dermed blir for eksempel deuterium som har et proton og et nøytron skrevet som $\atom{2}{1}{H}$.
 }
 \hyperlink{reak3}{\pagebutton{Neste side}}
 \end{frame}
@@ -798,8 +795,8 @@ Anta at kjernetemperaturen i en stjerne går fra 19 millioner grader til 21 mill
 \label{feil_reak6f}
 \lastpagebutton{reak6}{\bf SIDE 31/38/47}\\
 \textcolor{yellow}{\Large
-Det ble galt. Du er klar over at 19 millioner Kelvin betyr $T_6=19$? Prøv igjen, og spør hvis du ikke får det rett!
-}
+\htmlcom{large}{Det ble galt. Du er klar over at 19 millioner Kelvin betyr $T_6=19$? Prøv igjen, og spør hvis du ikke får det rett!
+}}
 \end{frame}
 }
 
@@ -810,8 +807,8 @@ Det ble galt. Du er klar over at 19 millioner Kelvin betyr $T_6=19$? Prøv igjen
 \label{riktig_reak6r}
 \clastpagebutton{reak6}{\bf SIDE 32/38/47}\\
 {\Huge
-Det ble riktig. en temperaturøkning på 10\% gjorde altså at stjerna produserer 7 ganger så mye energi per sekund!!!
-}
+\htmlcom{large}{Det ble riktig. en temperaturøkning på 10\% gjorde altså at stjerna produserer 7 ganger så mye energi per sekund!!!
+}}
 \hyperlink{reak7}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -856,7 +853,7 @@ La du nok en gang merke til den temperaturavhengigheten eller???
 \[
 \varepsilon_{3\alpha}=\varepsilon_{0,3\alpha}\rho^2X_{He}^3T_8^{41}.
 \]
-Altså $T_6^{41}$ i \textcolor{red}{\Large\bf enogførtiende potens!!!!}. En virkelig \textcolor{red}{\bf\Huge ekstrem} temperaturavhengighet. Her ser vi at bittesmå endringer i temperatur vil ha utrolig stor effekt på energiproduksjonen og dermed luminositeten til stjerna.
+Altså $T_6^{41}$ i \textcolor{red}{\Large\bf enogførtiende potens!!!!}. En virkelig \textcolor{red}{\bf\Huge \htmlcom{large}{ekstrem}} temperaturavhengighet. Her ser vi at bittesmå endringer i temperatur vil ha utrolig stor effekt på energiproduksjonen og dermed luminositeten til stjerna.
 Anta at kjernetemperaturen i en stjerne går fra 90 millioner grader til 110 millioner grader. Anta også at 3$\alpha$-prosess er eneste prosess som produserer energi. {\bf Hvor mye øker lumimnositeten til stjerna?} Du bør gjøre regningen så du får prøvd deg på å bruke uttrykket, mange sliter med dette!
 }
 \hyperlink{feil_reak8f}{\choicebutton{til det dobbelte}}\ \ \hyperlink{feil_reak8f}{\choicebutton{10 ganger}}\ \ \hyperlink{feil_reak8f}{\choicebutton{100 ganger}}\ \ \hyperlink{feil_reak8f}{\choicebutton{1000 ganger}}\ \ \hyperlink{riktig_reak8r}{\choicebutton{mer enn 1000 ganger}}\ \
@@ -868,8 +865,8 @@ Anta at kjernetemperaturen i en stjerne går fra 90 millioner grader til 110 mil
 \label{feil_reak8f}
 \lastpagebutton{reak8}{\bf SIDE 35/38/47}\\
 \textcolor{yellow}{\Large
-Det ble galt. Du er klar over at 90 millioner Kelvin betyr $T_8=0.9$? Prøv igjen, og spør hvis du ikke får det rett!
-}
+\htmlcom{large}{Det ble galt. Du er klar over at 90 millioner Kelvin betyr $T_8=0.9$? Prøv igjen, og spør hvis du ikke får det rett!
+}}
 \end{frame}
 }
 
@@ -880,7 +877,7 @@ Det ble galt. Du er klar over at 90 millioner Kelvin betyr $T_8=0.9$? Prøv igje
 \label{riktig_reak8r}
 \clastpagebutton{reak8}{\bf SIDE 36/38/47}\\
 {\Huge
-Det ble riktig. Nærmere bestemt 3700 ganger så stor luminositet ved en temperaturøkning på omkring 20\%!!!!! En utrolig sensitiv reaksjon.
+\htmlcom{large}{Det ble riktig. Nærmere bestemt 3700 ganger så stor luminositet ved en temperaturøkning på omkring 20\%!!!!! En utrolig sensitiv reaksjon.}
 }
 \hyperlink{reak9}{\pagebutton{Neste side}}
 \end{frame}
@@ -1000,7 +997,7 @@ Før vi skal avsløre hvordan det gikk, la oss først ta en titt på den vitensk
 \begin{frame}
 \label{snp6}
 \lastpagebutton{snp5}{\bf SIDE 44/47/47}\\
-{\Large I et par tiår så var svaret på dette spørsmålet \textcolor{red}{\Huge NEI!}}
+{\Large I et par tiår så var svaret på dette spørsmålet \textcolor{red}{\Huge \htmlcom{large}{NEI!}}}
 \hyperlink{snp7}{\pagebutton{Ante meg, bare tøv hele greia!}}
 \end{frame}
 

@@ -106,7 +106,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -635,7 +635,7 @@ Hvis vi definerer $t_0$ på denne måten, hvor på kurven er vi ved $t=t_0$??
 \begin{frame}
 \label{red_sikker}
 \hyperlink{riktigm2}{\pagebutton{\small Forrige side}}
-\textcolor{yellow}{\Huge\bf Er du helt sikker på at du tenkte deg godt om nå??? Ikke no' juks her! Hvis du ikke hadde tenkt deg om, gå tilbake til forrige side og tenk! Hvis du hadde tenkt: beklager så mye, det var absolutt ikke meningen å insinuere at du ikke følger instrukser.}
+\textcolor{yellow}{\Huge\bf \htmlcom{large}{Er du helt sikker på at du tenkte deg godt om nå??? Ikke no' juks her! Hvis du ikke hadde tenkt deg om, gå tilbake til forrige side og tenk! Hvis du hadde tenkt: beklager så mye, det var absolutt ikke meningen å insinuere at du ikke følger instrukser.}}
 \hyperlink{stat4}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -691,7 +691,7 @@ Hvis vi finner $v_*$ og $P$ så kan vi estimere massen til planeten slik som i f
 \label{stat6}
 \lastpagebutton{stat5}
 {\Huge
-Det var noen setninger på den forrige siden som er ganske så uforstålige hvis du ikke leser de flere ganger og tenker deg godt om. \textcolor{red}{Ta et skritt tilbake og se om du faktisk forstod hva som stod der, ok?} Når du har forstått hva som stod der, har du tenkt litt? Har du fått noen ideer? Tenk litt til før du går videre!
+\htmlcom{large}{Det var noen setninger på den forrige siden som er ganske så uforstålige hvis du ikke leser de flere ganger og tenker deg godt om. \textcolor{red}{Ta et skritt tilbake og se om du faktisk forstod hva som stod der, ok?} Når du har forstått hva som stod der, har du tenkt litt? Har du fått noen ideer? Tenk litt til før du går videre!}
 }
 \hyperlink{blue_nytema3}{\pagebutton{Neste side}}
 \end{frame}
@@ -775,12 +775,12 @@ der vi ser at $\Delta$ altså er en funksjon av de ukjente parameterene $P$, $v_
 \label{pause}
 \hyperlink{stat8b}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{TID FOR KAFFEPAUSE!!!}
+\centerline{\htmlcom{large}{TID FOR KAFFEPAUSE!!!}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
-Ut å strekke på bena. Inn med litt koffein...\\
+\htmlcom{large}{Ut å strekke på bena. Inn med litt koffein...}\\
 {\small Og kanskje kan du tillate deg en sjokoladebit? Men ikke si det høyt!}\\
 \vspace*{0.5cm}
-Ihvertfall 10 min...
+\htmlcom{large}{Ihvertfall 10 min...}
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema4}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
@@ -804,8 +804,8 @@ Ihvertfall 10 min...
 \begin{frame}
 \label{red_stat9}
 \lastpagebutton{stat8b}\label{stat}
-\large
-Men er dette virkelig det beste vi kan gjøre? Det blir jo noen unøyaktigheter i verdiene for $P$, $v_*$ og $t_0$ som vi får med denne metoden. Hvor presise resultatene våre er avhenger av hvor kraftig støy det er. Hvis vi nå skulle kjenne noen egenskaper til støyen, noe vi normalt gjør, kan vi da finne en mer sofistikert metode som gir oss bedre estimater? For å finne ut av dette, la oss dykke litt ned i {\Large \bf statistikken her...}
+\large\textcolor{yellow}{
+Men er dette virkelig det beste vi kan gjøre? Det blir jo noen unøyaktigheter i verdiene for $P$, $v_*$ og $t_0$ som vi får med denne metoden. Hvor presise resultatene våre er avhenger av hvor kraftig støy det er. Hvis vi nå skulle kjenne noen egenskaper til støyen, noe vi normalt gjør, kan vi da finne en mer sofistikert metode som gir oss bedre estimater? For å finne ut av dette, la oss dykke litt ned i {\Large \bf statistikken her...}}
 \includegraphics[scale=0.3]{media/diving.png}\\
 \hyperlink{stat10}{\pagebutton{Neste side}}
 \end{frame}
@@ -912,10 +912,10 @@ Enig? \hyperlink{riktig_ja}{\choicebutton{Ja}}\ \hyperlink{feil_nei}{\choicebutt
 \label{feil_nei}
 \lastpagebutton{stat13b}
 \textcolor{white}{
-\Large
+\Large\htmlcom{large}{
 Hvorfor ikke????
 Er du usikker, spør foreleser!
-}
+}}
 \hyperlink{riktig_ja}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -1068,7 +1068,7 @@ Hvor mange ganger klare du å løpe opp og ned trappene til inngangen i Fysikkby
 \label{red_loping}
 \hyperlink{pauseliten}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{Hvor mange ganger ble det???}\\
+\centerline{\htmlcom{large}{Hvor mange ganger ble det???}}\\
 \vspace*{1cm}
 \hyperlink{feil_lite}{\choicebutton{1/2 gang: kun ned trappa}}\ \hyperlink{feil_lite2}{\choicebutton{$<2$}}\ \hyperlink{feil_lite2}{\choicebutton{$<5$}}\ \hyperlink{feil_lite2}{\choicebutton{$<10$}}\ \hyperlink{riktig_bra}{\choicebutton{$\geq10$}}
 }
@@ -1081,7 +1081,7 @@ Hvor mange ganger klare du å løpe opp og ned trappene til inngangen i Fysikkby
 \label{feil_lite}
 \hyperlink{pauseliten}{\pagebutton{\small Forrige side}}
 {\Huge
-\textcolor{yellow}{Ærlig talt! Skjerp deg! Hardtrening, hver dag fra nå av: opp trappa 10 ganger om dagen!}
+\textcolor{yellow}{\htmlcom{large}{Ærlig talt! Skjerp deg! Hardtrening, hver dag fra nå av: opp trappa 10 ganger om dagen!}}
 }
 \hyperlink{pauseliten2}{\pagebutton{Neste side}}
 \end{frame}
@@ -1093,7 +1093,7 @@ Hvor mange ganger klare du å løpe opp og ned trappene til inngangen i Fysikkby
 \label{feil_lite2}
 \hyperlink{pauseliten}{\pagebutton{\small Forrige side}}
 {\Huge
-\textcolor{yellow}{Seriøst? Prøvde du skikkelig? Tror jeg ikke, et forsøk til, la oss se om du klarer flere denne gangen!}
+\textcolor{yellow}{\htmlcom{large}{Seriøst? Prøvde du skikkelig? Tror jeg ikke, et forsøk til, la oss se om du klarer flere denne gangen!}}
 }
 \hyperlink{pauseliten2}{\pagebutton{Jepp, nå fikk jeg 50 ganger...}}
 \end{frame}
@@ -1105,7 +1105,7 @@ Hvor mange ganger klare du å løpe opp og ned trappene til inngangen i Fysikkby
 \label{riktig_bra}
 \hyperlink{pauseliten}{\pagebutton{\small Forrige side}}
 {\Huge
-Det skulle bare mangle. Men hvis formen er så god, hvorfor prøver du ikke en gang til da, kanskje du får til dobbelt så mange denne gangen?
+\htmlcom{large}{Det skulle bare mangle. Men hvis formen er så god, hvorfor prøver du ikke en gang til da, kanskje du får til dobbelt så mange denne gangen?}
 }
 \hyperlink{pauseliten2}{\pagebutton{Jepp, nå fikk jeg 50 ganger...}}
 \end{frame}
@@ -1187,7 +1187,7 @@ Passer denne modellkurven godt med dataene? Ligger modellkurven midt inne i stø
 \begin{frame}
 \label{debug4b}
 \lastpagebutton{debug4}
-{\Large\bf NEI!} Er du enig i at det {\bf ikke} er tilfelle her? I noen deler av figuren så er støyen nesten hele tiden over eller under modellkurven, den opper ikke like mye over som under!
+{\Large\bf \htmlcom{large}{NEI!}} Er du enig i at det {\bf ikke} er tilfelle her? I noen deler av figuren så er støyen nesten hele tiden over eller under modellkurven, den opper ikke like mye over som under!
 \centerline{\includegraphics[scale=0.2]{media/vr_wrongmod.png}}
 \textcolor{red}{Her kan du være sikker på at noe er feil i koden!}.{\bf Men hvordan skal du finne feilen????}
 Her er det selvfølgelig to muligheter:

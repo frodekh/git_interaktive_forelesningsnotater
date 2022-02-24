@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160193}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -466,8 +466,8 @@ Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
 \begin{frame}
 \label{red_sblaw2}
 \lastpagebutton{sblaw}\label{sortleg}
-\textcolor{yellow}{\huge Men så var det dette sorte legemet da?\\
-Kan du huske hvordan et sort legeme er definert??\hyperlink{red_sblaw2_b}{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
+\textcolor{yellow}{\huge \htmlcom{large}{Men så var det dette sorte legemet da?}\\
+\htmlcom{large}{Kan du huske hvordan et sort legeme er definert??}\hyperlink{red_sblaw2_b}{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
 }
 \textcolor{red}{Husket du det omtrent? Et sort legeme er et legeme som absorberer all stråling som faller på det. Ingen stråling går gjennom legemet og ingen stråling reflekteres. {\bf MERK:} Det betyr {\bf ikke} at objektet ikke stråler!! Sorte legemer sender ut sort stråling som kommer fra bevegelsen til atomene og molekylene i legemet. En stjerne er en ok tilnærmelse til et sort legeme.}
 \textcolor{red}{Neste side}
@@ -479,8 +479,8 @@ Kan du huske hvordan et sort legeme er definert??\hyperlink{red_sblaw2_b}{\pageb
 \begin{frame}
 \label{red_sblaw2_b}
 \lastpagebutton{sblaw}\label{sortleg}
-\textcolor{yellow}{\huge Men så var det dette sorte legemet da?\\
-Kan du huske hvordan et sort legeme er definert??{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
+\textcolor{yellow}{\huge \htmlcom{large}{Men så var det dette sorte legemet da?}\\
+\htmlcom{large}{Kan du huske hvordan et sort legeme er definert??}{\pagebuttonolink{\small Trykk her når du har vridd hjernen rundt for å huske!}}
 }
 \textcolor{yellow}{Husket du det omtrent? Et sort legeme er et legeme som absorberer all stråling som faller på det. Ingen stråling går gjennom legemet og ingen stråling reflekteres. {\bf MERK:} Det betyr {\bf ikke} at objektet ikke stråler!! Sorte legemer sender ut sort stråling som kommer fra bevegelsen til atomene og molekylene i legemet. En stjerne er en ok tilnærmelse til et sort legeme.}
 \hyperlink{sblaw3}{\pagebutton{Neste side}}
@@ -525,8 +525,8 @@ Kan du se hvordan du kan gå frem for å utlede Wiens forskyvningslov?\\
 \begin{frame}
 \label{wien2}
 \lastpagebutton{wien}
-\Huge\textcolor{red}{Tenkte du deg virkelig godt om før du bladde om nå eller????????}
-Hvis ikke så får du en ny sjanse nå, tenk før du blar om!
+\Huge\textcolor{red}{\htmlcom{large}{Tenkte du deg virkelig godt om før du bladde om nå eller????????}}
+\htmlcom{large}{Hvis ikke så får du en ny sjanse nå, tenk før du blar om!}
 \hyperlink{wien3}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -594,58 +594,32 @@ Når du har gravd litt i gamle minner, så kan du.. \hyperlink{solidangle2}{\pag
 
 \begin{frame}
 \label{solidangle2}
-\begin{columns}
-\column{0.5\textwidth}
 \lastpagebuttoncr{solidangle}
 {\small
-Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:
-\includegraphics[scale=0.42]{media/angle.png}\\
+Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:\\
+\includegraphics[scale=0.42]{media/angle.png}
 Buelengden $\Delta s$ er størrelsen på vinkelen i radianer! Hvis det ikke er en enhetssrikel, så må du dele buelengden på $r$ for å reskalere til enhetssirkelen:
 \[
 \theta=\frac{\Delta s}{r}
 \]
-{\bf Kan du nå tenke deg hvordan generalisering til 3 dimensjoner blir?}
+{\bf Kanz du nå tenke deg hvordan generalisering til 3 dimensjoner blir?}\\
 }
-\hyperlink{solidangle2_b}{\pagebutton{Trykk her når du har tenkt}}
-\column{0.5\textwidth}
-\textcolor{white}{\small 
-Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:\\
-\vspace*{3cm}
-En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$ på overflaten av enhetskula som romvinkelen utspenner. Tenk deg f.eks. en bunt av lysstråler som strømmer ut fra sentrum og inn i romvinkelen $\Omega$. Et typisk bruksområde for romvinkler er å se på lysbunter som stråler ut i en gitt retning. Igjen, hvis vi ikke har enhetskula må vi reskalere:
-\[
-\Omega = \frac{\Delta A}{r^2}
-\]
-{Neste side}}
-\end{columns}
+\hyperlink{solidangle2b}{\pagebutton{Trykk her når du har tenkt}}
 \end{frame}
 
 
 \begin{frame}
-\label{solidangle2_b}
-\begin{columns}
-\column{0.5\textwidth}
-\lastpagebuttoncr{solidangle}
-{\small
-Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:
-\includegraphics[scale=0.42]{media/angle.png}\\
-Buelengden $\Delta s$ er størrelsen på vinkelen i radianer! Hvis det ikke er en enhetssrikel, så må du dele buelengden på $r$ for å reskalere til enhetssirkelen:
-\[
-\theta=\frac{\Delta s}{r}
-\]
-{\bf Kan du nå tenke deg hvordan generalisering til 3 dimensjoner blir?}
-}
-{\pagebutton{Trykk her når du har tenkt}}
-\column{0.5\textwidth}
+  \label{solidangle2b}
+\lastpagebuttoncr{solidangle2}
 {\small 
-Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:
-\includegraphics[scale=0.42]{media/solidangle.png}\\
+Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:\\
+\includegraphics[scale=0.42]{media/solidangle.png}
 En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$ på overflaten av enhetskula som romvinkelen utspenner. Tenk deg f.eks. en bunt av lysstråler som strømmer ut fra sentrum og inn i romvinkelen $\Omega$. Et typisk bruksområde for romvinkler er å se på lysbunter som stråler ut i en gitt retning. Igjen, hvis vi ikke har enhetskula må vi reskalere:
 \[
 \Omega = \frac{\Delta A}{r^2}
 \]
 }
 \hyperlink{pause}{\pagebutton{Neste side}}
-\end{columns}
 \end{frame}
 
 
@@ -655,12 +629,12 @@ En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$
 \label{pause}
 \hyperlink{solidangle2}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{Litt tidlig med kaffepause sier du???}
+\centerline{\htmlcom{large}{Litt tidlig med kaffepause sier du???}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
-ÅNEI, ta deg pausen du, for neste tema kommer du virkelig til å trenge det, lover!\\
+\htmlcom{large}{ÅNEI, ta deg pausen du, for neste tema kommer du virkelig til å trenge det, lover!}\\
 \vspace*{0.5cm}
-Ihvertfall 10 min...
+\htmlcom{large}{Ihvertfall 10 min...}
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema4}{\pagebutton{Jeg trekker pusten nå og er klar til ...}}
@@ -738,12 +712,14 @@ Ta et papir og gjør om slik at du uttrykker denne ved frekvens $B(\nu)$ isteden
 \begin{frame}
 \label{intensity3b}
 \lastpagebutton{intensity3}
-{\bf\Large Fikk du:}\\
+{\bf\Large \htmlcom{large}{Fikkz du:}}\\
+\htmlcom{large}{
 \[
 B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \]
-{\bf\Large ??}\\
-\hyperlink{feil_bnuja}{\choicebutton{JA!}}\ \ \ \ \hyperlink{riktig_bnunei}{\choicebutton{NEI!}}\
+?}
+{\bf\Large \htmlcom{huge}{??}}\\
+\hyperlink{feil_bnuja}{\choicebutton{JA!}}\ \ \ \ \hyperlink{riktig_bnunei}{\choicebutton{NEI!}}
 \end{frame}
 
 {
@@ -751,11 +727,11 @@ B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \begin{frame}
 \label{feil_bnuja}
 \lastpagebutton{intensity3b}
-\textcolor{white}{Det var synd for det ble FEIL:
+\textcolor{white}{\htmlcom{large}{Det var synd for det ble FEIL:
 \[
 \xcancel{B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}}
 \]
-}
+}}
 \hyperlink{intensity4}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -765,7 +741,7 @@ B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \begin{frame}
 \label{riktig_bnunei}
 \clastpagebutton{intensity3b}
-Det høres bra ut, for det uttrykket er nemlig feil...
+\htmlcom{large}{Det høres bra ut, for det uttrykket er nemlig feil...}
  \hyperlink{intensity4}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -824,12 +800,12 @@ Da er du klar til å løse oppgave 1D.1. Akkurat nå skal du kun diskutere hvord
 \label{pause2}
 \hyperlink{intensity6}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{Mer kaffe sier du???}
+\centerline{\htmlcom{large}{Mer kaffe sier du???}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
-Det har du fortjent nå.{\small Og så kan du jo se om du finner en kakebit som du kan fordøye sammen med intensitetbegrepet?}\\
+\htmlcom{large}{Det har du fortjent nå.}{\small Og så kan du jo se om du finner en kakebit som du kan fordøye sammen med intensitetbegrepet?}\\
 \vspace*{0.5cm}
-Ihvertfall 10 min...
+\htmlcom{large}{Ihvertfall 10 min...}
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema5}{\pagebutton{Gå videre...}}
@@ -866,7 +842,7 @@ La oss se på hver av disse...\\
 \label{straling_b}
 \lastpagebutton{intensity6}\label{info}
 Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?
-{\pagebutton{Trykk her når du har tenkt}}
+{\pagebuttonolink{Trykk her når du har tenkt}}
 \begin{itemize}
 \item kosmisk stråling
 \item nøytrinoer

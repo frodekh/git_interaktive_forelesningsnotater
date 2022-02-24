@@ -15,7 +15,8 @@
 \newcommand{\ddt}[1]{\dd{#1}{t}}
 \newcommand{\dddt}[1]{\dd{^2#1}{t^2}}
 \newcommand{\aver}[1]{\langle{#1}\rangle}
-\newcommand{\atom}[3]{\ifmmode^{#1}_{#2}{\rm{#3}}\else{$^{#1}_{#2}${#3}}\fi}
+%\newcommand{\atom}[3]{\ifmmode^{#1}_{#2}{\rm{#3}}\else{$^{#1}_{#2}${#3}}\fi}
+\newcommand{\atom}[3]{^{\small #1}_{\small #2}{\mathrm{#3}}}
 \newcommand{\electron}{\atom{~0}{-1}{e}}
 \newcommand{\positron}{\atom{0}{0}{\bar{e}}}
 \newcommand{\neutrino}{\atom{0}{0}{\nu_e}}
@@ -36,5 +37,5 @@
 \def\rsol{R$_{\odot}$} 
 \def\msol{M$_{\odot}$} 
 
-\newcommand{\htmlcom}[2]{^#1#2^} %tiny, footnotesize, small, normal, large, huge, ex \htmlcom{large}{Dette er stort}
-\newcommand{\pagebuttonolink}[1]{^pagebutton #1^}
+\newcommand{\htmlcom}[2]{@#1#2@} %tiny, footnotesize, small, normal, large, huge, ex \htmlcom{large}{Dette er stort}
+\newcommand{\pagebuttonolink}[1]{@pagebutton #1@}

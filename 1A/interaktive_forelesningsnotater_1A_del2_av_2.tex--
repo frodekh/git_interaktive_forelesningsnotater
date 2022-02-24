@@ -106,7 +106,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -481,7 +481,7 @@ Er du enda usikker på hvordan du skal gjøre dette, så kan du få noen hint i 
 \label{pause}
 \hyperlink{stat13}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe?}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 \small Tiden har kommet for en god strekk på bena! Og helle på med en mørk væske som har høye partikkelhastigheter. Ta deg en ekstra god pause nå, fordi du etter pausen for alvor skal begynne å se på konstruksjon av rakettmotoren din.
 }\\
@@ -553,7 +553,7 @@ I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\
 \addtocounter{pageno}{-1}
 I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
 \textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
-\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... \pagebutton{Trykk her}}
+\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... \pagebuttonolink{Trykk her}}
 \textcolor{black}{ ... også er den samme før og etter kollisjonen (ser du det???)}
 \textcolor{black}{\href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/animasjoner/particle_simulation_general.mov?vrtx=view-as-webpage}{Se på disse kollisjonene her mellom gasspartikler og vegg...}}\\
 
@@ -614,7 +614,7 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
 \hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
 {Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
 \hyperlink{ideelgass3_d}{\pagebutton{Trykk her når du er enig}}\\
 \textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
@@ -636,9 +636,9 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
 \hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
 {Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
 \hyperlink{ideelgass3_e}{\pagebutton{Trykk her når du er enig, ikke før!}}\\
 \textcolor{white}{Er du da også enig i at ...
@@ -658,11 +658,11 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
 \hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
 {Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
-\pagebutton{Trykk her når du er enig, ikke før!}\\
+\pagebuttonolink{Trykk her når du er enig, ikke før!}\\
 {Er du da også enig i at ...
 \begin{eqnarray}
 p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
@@ -955,7 +955,7 @@ Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du
 \begin{frame}
 \label{feildebug}
 \lastpagebutton{rakettmotor1b}
-\textcolor{white}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!\\}
+\textcolor{white}{\htmlcom{large}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!}\\}
 \hyperlink{riktigdebug}{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
 \end{frame}
 }

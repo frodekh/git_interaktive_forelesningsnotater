@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/158672}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -302,6 +302,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema4}{\headlinebutton{Energi og type kjeglesnitt}}
 \item \hyperlink{blue_nytema5}{\headlinebutton{Tips til koding}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -313,7 +314,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \label{intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
+\hyperlink{tableofcontents}{\pagebutton{Forrige side}}\\
 \includegraphics[scale=0.4]{media/landing.png}\\
 {
 \footnotesize
@@ -338,7 +339,7 @@ Kun når du har \textcolor{red}{\bf full kontroll} på alt dette kan du gå vide
 
 \begin{frame}
 \label{conic1}
-\lastpagebutton{intro}
+\lastpagebutton{intro}{\bf SIDE 1/3/45}\\
 Vi utledet at løsningen av tolegemeproblemet kan skrives som:
 \[
 r(f)=\frac{p}{1+e\cos{f}}
@@ -356,12 +357,12 @@ der det ene objektet er i brennpunktet:
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_conic1b}
-\lastpagebutton{conic1}
+\lastpagebutton{conic1}{\bf SIDE 2/3/45}\\
 {\Huge
-\textcolor{orange}{Men det store spørsmålet i forrige forelesning var:}\\
-\textcolor{orange}{Hva hvis $e\ge1$????}\\
-\textcolor{orange}{Da har vi ikke lenger en ellipsebane...}\\
-\textcolor{orange}{Men hva har vi da...???}
+\textcolor{orange}{\htmlcom{large}{Men det store spørsmålet i forrige forelesning var:}}\\
+\textcolor{orange}{\htmlcom{large}{Hva hvis $e\ge1$????}}\\
+\textcolor{orange}{\htmlcom{large}{Da har vi ikke lenger en ellipsebane...}}\\
+\textcolor{orange}{\htmlcom{large}{Men hva har vi da...???}}
 }
 \hyperlink{conic2}{\pagebutton{Neste side}}
 \end{frame}
@@ -372,7 +373,7 @@ der det ene objektet er i brennpunktet:
 
 \begin{frame}
 \label{conic2}
-\lastpagebutton{feil_conic1b}
+\lastpagebutton{feil_conic1b}{\bf SIDE 3/3/45}\\
 \addtocounter{pageno}{-1}
 Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesnitt (conic sections)} i polarkoordinater. Vet du hvilke 3 typer kurver som inngår i kjeglesnittene? Den ene er ellipser ja, men de andre to?\\
 \hyperlink{conic2_b}{\pagebutton{Trykk her når du har funnet ut av det}}\\
@@ -393,10 +394,10 @@ Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesni
 
 \begin{frame}
 \label{conic2_b}
-\lastpagebutton{feil_conic1b}
+\lastpagebutton{feil_conic1b}{\bf SIDE 3/3/45}\\
 \addtocounter{pageno}{-1}
 Likningen vi har kommet frem til er tilfeldigvis likningen for \textit{kjeglesnitt (conic sections)} i polarkoordinater. Vet du hvilke 3 typer kurver som inngår i kjeglesnittene? Den ene er ellipser ja, men de andre to?\\
-{\pagebutton{Trykk her når du har funnet ut av det}}\\
+{\pagebuttonolink{Trykk her når du har funnet ut av det}}\\
 Ganske riktig, {\it parabler} og {\it hyperbler}:
 \begin{columns}
   \column{0.5\textwidth}
@@ -433,7 +434,7 @@ De sorte linjene er ellipser, den blå er en parabel mens den røde og grønne e
 
 \begin{frame}
 \label{conic3}
-\dlastpagebutton{blue_nytema1}
+\dlastpagebutton{blue_nytema1}{\bf SIDE 4/7/45}\\
 \begin{columns}
   \column{0.5\textwidth}
   \centerline{
@@ -461,11 +462,11 @@ Merk at for ellipser og hyperbler så er det kun et minustegn som skiller uttryk
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_conic4}
-\lastpagebutton{conic3}
+\lastpagebutton{conic3}{\bf SIDE 5/7/45}\\
 {\huge
-\textcolor{orange}{Så ja, Kepler fant faktisk ikke hele sannheten! Hvorfor ikke?\\
-Fordi, som du ser fra figuren, objekter som går i parabelbaner og hyperbelbaner ikke er bundet til sola, de kommer bare innom men aldri tilbake igjen!\\
-Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra det interstellar rom.
+\textcolor{orange}{\htmlcom{large}{Så ja, Kepler fant faktisk ikke hele sannheten! Hvorfor ikke?}\\
+\htmlcom{large}{Fordi, som du ser fra figuren, objekter som går i parabelbaner og hyperbelbaner ikke er bundet til sola, de kommer bare innom men aldri tilbake igjen!}\\
+\htmlcom{large}{Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra det interstellar rom.}
 }}
 \hyperlink{feil_conic5}{\pagebutton{Neste side}}
 \end{frame}
@@ -477,7 +478,7 @@ Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra de
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_conic5}
-\lastpagebutton{feil_conic4}
+\lastpagebutton{feil_conic4}{\bf SIDE 6/7/45}\\
 {\large
 \textcolor{orange}{Det er først nå i det siste at man har oppdaget slike objekter. Det aller første ble oppdaget i 2017 og ble kalt {\it Oumuamua}. Her er en kunstrisk fremstilling av hvordan objektet kan se ut (credit: ESO/M. Kornmesser)\\
 \includegraphics[scale=0.3]{media/oumuamua.png}
@@ -489,9 +490,9 @@ Slike objekter vil dermed ikke være fra vårt solsystem men være besøk fra de
 
 \begin{frame}
 \label{conic6}
-\lastpagebutton{feil_conic5}
+\lastpagebutton{feil_conic5}{\bf SIDE 7/7/45}\\
 Vi skal snart se litt på hva betingelsene er for at et objekt får en elliptisk, parabel eller hyperbelbane. Dette er jo spesielt viktig for satelitter. Hvis vi ønsker å ha en satelitt i bane rundt jorda så bør vi helst sørge for at den går i en ellipsebane. Ellers vil vi jo miste satelitten! Men før vi gjør det la oss kikke litt på ukeoppgavene.\\
-Vi har her utledet Keplers 1.lov. Men hva med Keplers 2. og 3. lov? De skal du få lov til å utlede selv i oppgave 1B.1 og 1B.2.\\ 
+Vi har her utledet Keplers 1.lov. Men hva med Keplers 2. og 3. lov? De skal du få lov til å utlede selv i oppgave 1B.1 og 1B.2.\\
 \hyperlink{blue_nytema2}{\pagebutton{Neste side}}
 \end{frame}
 
@@ -513,7 +514,7 @@ Vi har her utledet Keplers 1.lov. Men hva med Keplers 2. og 3. lov? De skal du f
 \label{oppgaver1}
 \begin{columns}
 \column{0.4\textwidth}
-\lastpagebutton{conic6}
+\lastpagebutton{conic6}{\bf SIDE 8/12/45}\\
 \headlinebutton{\headline}\\
 {\scriptsize
 Tenk {\bf fort} gjennom hvordan du kan gå frem for å løse oppgave 1B.1 under her (prosjektstudenter har en liknende oppgave i utfording B1, del 2):
@@ -529,7 +530,7 @@ Tenk {\bf fort} gjennom hvordan du kan gå frem for å løse oppgave 1B.1 under 
 \label{oppgaver2}
 \begin{columns}
 \column{0.4\textwidth}
-\lastpagebutton{oppgaver1}
+\lastpagebutton{oppgaver1}{\bf SIDE 9/12/45}\\
 \headlinebutton{\headline}\\
 Tenk  {\bf fort} gjennom hvordan du kan gå frem for å løse deloppgave 1 og 3 fra oppgave 1B.2 under her (prosjektstudenter har en liknende oppgave i utfording B1, del 2): Etter at du har tenkt, ta gjerne en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_10.mp4}{denne videoen} for noen tips.\textcolor{red}{ Merk at det ikke er meningen at du skal løse oppgaven nå men finne din egen ide om hvordan du ville startet på hver av deloppgavene. Ikke se på videoen før du har egne forslag.}
 \column{0.45\textwidth}
@@ -541,7 +542,7 @@ Tenk  {\bf fort} gjennom hvordan du kan gå frem for å løse deloppgave 1 og 3 
 
 \begin{frame}
 \label{oppgaver3}
-\lastpagebutton{oppgaver2}
+\lastpagebutton{oppgaver2}{\bf SIDE 10/12/45}\\
 Spesielt den siste oppgaven her er {\bf svært} viktig!
 \begin{alertblock}{\bf Keplers 3.lov}
 Du utledet i oppgaven at Keplers versjon av sin 3.lov er noe gal. Det er svært viktig å bruke den riktige formelen i alt som vi gjør i dette kurset her. Den riktige formelen (som også er i SI-enheter) er gitt ved
@@ -555,7 +556,7 @@ Vi ser at begge massene er med på å bestemme forholdet mellom omløpsperiode o
 
 \begin{frame}
 \label{oppgaver4}
-\lastpagebutton{oppgaver3}
+\lastpagebutton{oppgaver3}{\bf SIDE 11/12/45}\\
 Før vi går videre, ta en nøye titt på første deloppgave av oppgave 1B.3:\\
 \includegraphics[scale=0.4]{media/1b3.png}\\
 Tenk i maks 2-3 minutter om du ser en måte å løse den på? Hvis ikke, ta det etter forelesningen.
@@ -566,7 +567,7 @@ Tenk i maks 2-3 minutter om du ser en måte å løse den på? Hvis ikke, ta det 
 
 \begin{frame}
 \label{cm1}
-\lastpagebutton{oppgaver4}
+\lastpagebutton{oppgaver4}{\bf SIDE 12/12/45}\\
 Men stopp en hal! Har vi egentlig løst 2-legemeproblemet? Vi har løst problemet i tilfellet hvor vi setter oss på $m_1$ og ser på bevegelsen til $m_2$ som da blir en ellipsebane med $m_1$ i det ene brennpunktet. Men hva hvis vi setter oss på $m_2$? Likningene vi får blir jo de samme, så løsningen blir den samme med massene byttet om, $m_2$ står i et brennpunkt til ellipsebanen som $m_1$ følger. Men hva hvis vi nå befinner oss et punkt langt vekk og ser legemene på avstand mens vi ikke befinner oss i referansesystemet til noen av dem? Hvordan vil da $m_1$ og $m_2$ bevege seg?\\
 Tenk deg godt om før du går til neste side...
 \hyperlink{blue_nytema3}{\pagebutton{Neste side}}
@@ -588,7 +589,7 @@ Tenk deg godt om før du går til neste side...
 
 \begin{frame}
 \label{cm2}
-\lastpagebutton{cm1}
+\lastpagebutton{cm1}{\bf SIDE 13/27/45}\\
 {\small For å finne svaret, må vi repetere et uttrykk som du allerede kjenner: {\it massesenter.}}\\
 \includegraphics[scale=0.35]{media/cm1.png}\\
 Hvis vi kjenner posisjonene $\vec{r_1}$ og $\vec{r_2}$ på figuren, hvordan kan vi da finne posisjonen $\vec{R}$ til massesenteret? Du kan bruke massene $m_1$ og $m_2$. Hva er formelen?\\
@@ -598,7 +599,7 @@ Hvis vi kjenner posisjonene $\vec{r_1}$ og $\vec{r_2}$ på figuren, hvordan kan 
 
 \begin{frame}
 \label{cm3}
-\lastpagebutton{cm2}
+\lastpagebutton{cm2}{\bf SIDE 14/27/45}\\
 \addtocounter{pageno}{-1}
 Stemmer! Vi må rett og slett ta midlet mellom de to posisjonene, vektet med massene:
 \[
@@ -617,7 +618,7 @@ Her er $M$ summen over alle massene. Pass på at du har denne friskt i minne vid
 
 \begin{frame}
 \label{cm3_b}
-\lastpagebutton{cm2}
+\lastpagebutton{cm2}{\bf SIDE 14/27/45}\\
 \addtocounter{pageno}{-1}
 Stemmer! Vi må rett og slett ta midlet mellom de to posisjonene, vektet med massene:
 \[
@@ -641,7 +642,7 @@ Her er $M$ summen over alle massene. Pass på at du har denne friskt i minne vid
 
 \begin{frame}
 \label{cm4}
-\dlastpagebutton{cm3}
+\dlastpagebutton{cm3}{\bf SIDE 15/27/45}\\
 For å kunne finne bevegelsen til både $m_1$ og $m_2$ skal vi nå utlede en utvidelse av Newtons 2.lov som gjelder for et mangelegemesystem. Anta igjen at vi har galaksen vår med N stjerner og at det mellom disse kun virker gravitasjonskrefter $\vec{f_{ij}}$ (krafta på legeme $i$ fra legeme $j$). I tillegg kan det virke en ekstern kraft $\vec{F}_\mathrm{ext}$ som virker likt på hele systemet, dvs. på alle objektene, f.eks. en annen galakse som trekker på galaksen. I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_11.mp4}{denne videoen} blir du satt igang med utledningen av Newtons 2.lov på mangelegemesystemer.\\
 Etter å ha sett videoen skal du nå se om du kan komme frem til et uttrykk av typen:
 \[
@@ -653,9 +654,9 @@ og sett inn riktige indekser på krefter, masser, posisjonsvektorer og tidsderiv
 
 \begin{frame}
 \label{cm5}
-\lastpagebutton{cm4}
+\lastpagebutton{cm4}{\bf SIDE 16/27/45}\\
 {\bf Vi skal nå forenkle dette uttrykket:}
-Ved å bruke 
+Ved å bruke
 \begin{itemize}
 \item en av Newtons lover som sier noe om krefter som er lik hverandre, dette skal gi deg at et av leddene er 0
 \item massesenterdefinisjonen $\vec{R}=\frac{1}{M}\sum_{i=1}^Nm_i\vec{r_i}$
@@ -675,9 +676,9 @@ Før du går til neste side, prøv å si til hverandre med ord hva denne likning
 
 \begin{frame}
 \label{cm6}
-\lastpagebutton{cm5}
+\lastpagebutton{cm5}{\bf SIDE 17/27/45}\\
 Hva hvis de eksterne kreftene på systemet er null?\\
-Da er $\ddot{\vec{R}}=0$ og massesenteret har ingen akselerasjon! Massesenteret vil da kun bevege seg med konstant hastighet. Vi kan da dele bevegelsen til en stjerne i galaksen opp i 
+Da er $\ddot{\vec{R}}=0$ og massesenteret har ingen akselerasjon! Massesenteret vil da kun bevege seg med konstant hastighet. Vi kan da dele bevegelsen til en stjerne i galaksen opp i
 \begin{itemize}
 \item bevegelsen til stjerna i forhold til massesenteret PLUSS
 \item bevegelsen til massesenteret
@@ -693,7 +694,7 @@ Hvis det ikke er noen ytre krefter så vil massesenterbevegelsen være enkel, ko
 \label{pause}
 \hyperlink{cm6}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{TID FOR KAFFEPAUSE!!!}
+\centerline{\htmlcom{large}{TID FOR KAFFEPAUSE!!!}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
 Ut å strekke på bena. Inn med litt koffein...\\
@@ -711,10 +712,10 @@ Ihvertfall 10 min...
 \label{cm7}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{cm6}
+\lastpagebutton{cm6}{\bf SIDE 18/27/45}\\
 Her har vi situasjonen:\\
 \includegraphics[scale=0.17]{media/cm3.png}\\
-Fra et gitt origo O utenfor systemet så har vi poisjonsvektorene $\vec{r_1}$ og $\vec{r_2}$ som peker på de to legemene, samt $\vec{R}$ som peker på massesenteret (CM, Center of Mass) til de to legemene. Vi er interessert i disse legemenes bevegelse i forhold til massesenteret (se forrige side hvis du er usikker på hvorfor!). 
+Fra et gitt origo O utenfor systemet så har vi poisjonsvektorene $\vec{r_1}$ og $\vec{r_2}$ som peker på de to legemene, samt $\vec{R}$ som peker på massesenteret (CM, Center of Mass) til de to legemene. Vi er interessert i disse legemenes bevegelse i forhold til massesenteret (se forrige side hvis du er usikker på hvorfor!).
 \column{0.5\textwidth}
 Da velger vi å flytte origo til massesenteret. Dette nye koordinatsystemet kaller vi massesentersystemet. Posisjonsvektorene $\vec{r_1}^{CM}$ og $\vec{r_2}^{CM}$ fra det nye origo er tegnet inn i figuren. Men hva med $\vec{R}^{CM}$. Hva er posisjonsvektoren til massesenteret fra dette nye origo?\\
 Diskuter og tenk deg nøye om (1-2 min) før du ser på svaret på neste side. Svaret er kanskje enklere enn du tror...
@@ -724,10 +725,10 @@ Diskuter og tenk deg nøye om (1-2 min) før du ser på svaret på neste side. S
 
 \begin{frame}
 \label{cm8}
-\lastpagebutton{cm7}
+\lastpagebutton{cm7}{\bf SIDE 19/27/45}\\
 \small
 Siden poisjonen til massesenteret i massesenteret er i origo selv: $\vec{R}^{CM}=0$!\\
-Nå til litt regning. Finn frem papir og blyant og forbered deg på å leke litt med likninger (ikke mye, gjør du det riktig så er dette fort gjort). 
+Nå til litt regning. Finn frem papir og blyant og forbered deg på å leke litt med likninger (ikke mye, gjør du det riktig så er dette fort gjort).
 \begin{block}{\bf Legemenes bevegelse om massesenteret}
 {\small
 Bruk nå massesentersystemet (sjekk forrige side hvis du har glemt ...), og {\bf sett inn i definisjonen av massesenteret for $\vec{R}$}. Gjør følgende substitusjoner:
@@ -745,7 +746,7 @@ MERK at vi har fjernet CM fra symbolene, i fortsettelsen så betyr $\vec{r}_1$ o
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilr1}
-\lastpagebutton{cm8}
+\lastpagebutton{cm8}{\bf SIDE 20/27/45}\\
 \textcolor{white}{Det ble galt! Prøv igjen. Husk at $\vec{R}=0$ i massesentersystemet. Og du kan bli kvitt $\vec{r_2}$ med uttrykket for $\vec{r}$. Da står du igjen med en likning med kun $\vec{r_1}$ og $\vec{r}$ som du løser for $\vec{r_1}$. Og til slutt erstatter du $m_1$ eller $m_2$ med $\hat\mu$, du vil nå ganske greit se hvordan $\hat\mu$ kommer inn her.\\
 Hjelper det deg? Prøv igjen med dette som utgangspunkt!\\
 (HUSK at vi nå har fjernet CM fra alle symbolene for å gjøre skrivingen lettere, alle vektorer har nå origo i massesenteret.)
@@ -757,7 +758,7 @@ Hjelper det deg? Prøv igjen med dette som utgangspunkt!\\
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigr1}
-\clastpagebutton{cm8}
+\clastpagebutton{cm8}{\bf SIDE 21/27/45}\\
 {\bf STEMMER!} Nå som du har funnet $\vec{r_1}$, så kan du se om du klarer å vise at
 \[
 \vec{r_2}=\frac{\hat\mu}{m_2}\vec{r}
@@ -776,7 +777,7 @@ Men vi ser enda ikke hva slags form banen har. La oss ta absoluttverdiene til di
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_nei}
-\lastpagebutton{riktigr1}
+\lastpagebutton{riktigr1}{\bf SIDE 22/27/45}\\
 \textcolor{white}{La oss først se hvordan likningene blir hvis vi tar absoluttverdi:
 \begin{align}
 |\vec{r_1}|&=r_1=\frac{\hat\mu}{m_1}|\vec{r}|=\frac{\hat\mu}{m_1}r\\
@@ -792,7 +793,7 @@ Her er $r_1$ og $r_2$ avstanden til de to legemene fra massesenteret, ser du det
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_ja}
-\clastpagebutton{riktigr1}
+\clastpagebutton{riktigr1}{\bf SIDE 23/27/45}\\
 {\small Fant du det? Innser du at begge legemene går i ellipser omkring massesenteret?}\\
 \begin{columns}
 \column{0.5\textwidth}
@@ -813,7 +814,7 @@ Her er $r_1$ og $r_2$ avstanden til de to legemene fra massesenteret, ser du det
 
 \begin{frame}
 \label{ja2}
-\lastpagebutton{riktig_ja}
+\lastpagebutton{riktig_ja}{\bf SIDE 24/27/45}\\
 Hva er de store halvaksene $a_1$ og $a_2$ til disse to ellipsene? Og hva er eksentrisiteten $e$?? Uttrykk svaret ved hjelp av massene og egenskapene til ellipsen som vi så på tidligere: nemlig ellipsebanen som det ene objektet har rundt det andre. Ved å sammenlikne uttrykkene for $r_1$ og $r_2$ som funksjon av $f$ som du nå har funnet, og sammenlikner med formelen for ellipse, så bør dette falle rett ut.\\
 \includegraphics[scale=0.4]{media/cm2.png}\\
 \hyperlink{cm9}{\pagebutton{Jeg har tenkt og tror jeg har svaret}}\\
@@ -824,7 +825,7 @@ Hvis du ikke har svaret, må du spørre foreleser/gruppelærer før du går vide
 
 \begin{frame}
 \label{cm9}
-\lastpagebutton{ja2}
+\lastpagebutton{ja2}{\bf SIDE 25/27/45}\\
 {\small
 La oss først klare opp i begreper her, viktig at du har oversikt:
 \begin{itemize}
@@ -838,7 +839,7 @@ La oss først klare opp i begreper her, viktig at du har oversikt:
 
 \begin{frame}
 \label{cm10}
-\lastpagebutton{cm9}
+\lastpagebutton{cm9}{\bf SIDE 26/27/45}\\
 Når vi setter inn for $r$ i uttrykket for $r_1$ fikk vi
 \[
 r_1=\frac{\hat\mu}{m_1}\frac{a(1-e^2)}{1+e\cos{f}}=\frac{\frac{\hat\mu a}{m_1}(1-e^2)}{1+e\cos{f}}
@@ -857,7 +858,7 @@ med $a_2=\frac{\hat\mu a}{m_2}$
 
 \begin{frame}
 \label{cm11}
-\lastpagebutton{cm10}
+\lastpagebutton{cm10}{\bf SIDE 27/27/45}\\
 En siste lite utfordring før vi går over til siste tema på del 1B. Klarer du å vise at
 \[
 a_1+a_2=a?
@@ -883,7 +884,7 @@ Før du går over til siste tema, ta en liten pause, jogg en tur rundt Blindern,
 
 \begin{frame}
 \label{energi1}
-\lastpagebutton{blue_nytema4}
+\lastpagebutton{blue_nytema4}{\bf SIDE 28/41/45}\\
 Så var vi kommet til siste tema her. Vi hintet allerede om det tidligere:\\
 \textcolor{blue}{Hva avgjør om et objekt følger en ellipsebane, parabelbane eller hyperbelbane? Og hva avgjør parameterene $a$ og $e$ til denne banen?}\\
 Vi har allerede innsett at ellipsebaner betyr at objektet er gravitasjonelt bundet siden det holder seg i bane rundt det andre objektet, mens for parabel- og hyperbelbaner så er det ikke lenger gravitasjonelt bundet, objektet bare 'sneier forbi'. Det må vel bety at totalenergien er viktig her: er den potensielle gravitasjonsenergien større eller mindre enn den kinetiske energien? La oss sette opp energien til systemet vårt. Vi tar igjen perspektivet fra $m_1$ og ser på banen som $m_2$ lager rundt $m_1$:
@@ -898,12 +899,13 @@ der $\vec{v}=\dot{\vec{r}}$, altså den relative hastigheten til $m_2$ i forhold
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_fenergi}
-\lastpagebutton{energi1}
-{\huge \textcolor{yellow}{Er du {\bf HELT} sikker på at dette er riktig uttrykk for energien?\\
+\lastpagebutton{energi1}{\bf SIDE 29/41/45}\\
+{\huge \textcolor{yellow}{\htmlcom{large}{Er du {\bf HELT} sikker på at dette er riktig uttrykk for energien?}\\
+\htmlcom{large}{
 \[
 E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}
 \]
-}}
+}}}
 \hyperlink{feilenergi}{\choicebutton{JA, jeg sa jo det jo!}}\ \ \ \ \ \hyperlink{riktigenergi}{\choicebutton{Njaaa, nå ble jeg litt i tvil her likevel}}
 \end{frame}
 }
@@ -913,13 +915,15 @@ E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilenergi}
-\clastpagebutton{energi1}
-{\huge \textcolor{yellow}{Det er {\bf FEIL}\\
+\clastpagebutton{energi1}{\bf SIDE 30/41/45}\\
+{\huge \textcolor{yellow}{\htmlcom{large}{Det er {\bf FEIL}}\\
+\htmlcom{large}{
 \[
 \xcancel{E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}}
 \]
-Tenk deg godt om her...kan du se hva som er feil?\\
-( du trenger ikke finne hva som er riktig, bare innse hva som er feil)\\
+}
+\htmlcom{large}{Tenk deg godt om her...kan du se hva som er feil?}\\
+\htmlcom{large}{( du trenger ikke finne hva som er riktig, bare innse hva som er feil)}\\
 }}
 \hyperlink{energi2}{\pagebutton{Neste side}}\\
 \end{frame}
@@ -930,13 +934,15 @@ Tenk deg godt om her...kan du se hva som er feil?\\
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigenergi}
-\clastpagebutton{energi1}
-{\huge Du hadde god grunn til å tvile, det er nemlig {\bf FEIL}\\
+\clastpagebutton{energi1}{\bf SIDE 31/41/45}\\
+{\huge \htmlcom{large}{Du hadde god grunn til å tvile, det er nemlig {\bf FEIL}}\\
+\htmlcom{large}{
 \[
 \xcancel{E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}}
 \]
-Tenk deg godt om her...kan du se hva som er feil?\\
-( du trenger ikke finne hva som er riktig, bare innse hva som er feil)\\
+}
+\htmlcom{large}{Tenk deg godt om her...kan du se hva som er feil?}\\
+\htmlcom{large}{( du trenger ikke finne hva som er riktig, bare innse hva som er feil)}\\
 }
 \hyperlink{energi2}{\pagebutton{Neste side}}\\
 \end{frame}
@@ -945,7 +951,7 @@ Tenk deg godt om her...kan du se hva som er feil?\\
 
 \begin{frame}
 \label{energi2}
-\lastpagebutton{energi1}
+\lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
 Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\ \ \ \hyperlink{energi2_b}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2_b}{\pagebutton{Tja}}\\
 \textcolor{white}{
@@ -959,9 +965,9 @@ Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eks
 
 \begin{frame}
 \label{energi2_b}
-\lastpagebutton{energi1}
+\lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
-Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebutton{Ja}}\ \ \ \ {\pagebutton{Tja}}\\
+Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebuttonolink{Ja}}\ \ \ \ {\pagebuttonolink{Tja}}\\
 I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
 \hyperlink{energi2_c}{\pagebutton{Trykk her når du har funnet svaret!}}\\
@@ -973,12 +979,12 @@ Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eks
 
 \begin{frame}
 \label{energi2_c}
-\lastpagebutton{energi1}
+\lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
-Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebutton{Ja}}\ \ \ \ {\pagebutton{Tja}}\\
+Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebuttonolink{Ja}}\ \ \ \ {\pagebuttonolink{Tja}}\\
 I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
-{\pagebutton{Trykk her når du har funnet svaret!}}\\
+{\pagebuttonolink{Trykk her når du har funnet svaret!}}\\
 Akkurat ja, massesentersystemet!\\
 Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eksterne krefter, så er massesenteret ikke akseleret, det er et intertialsystem.
 \hyperlink{energi3}{\pagebutton{Neste side}}
@@ -993,7 +999,7 @@ Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eks
 
 \begin{frame}
 \label{energi3}
-\dlastpagebutton{energi2}
+\dlastpagebutton{energi2}{\bf SIDE 33/41/45}\\
 \addtocounter{pageno}{-1}
 Skriv opp uttrykket for total energi i massesentersystemet.\\
 \hyperlink{energi3_b}{\pagebutton{Sånn, da var det gjort!}}\\
@@ -1008,10 +1014,10 @@ Isåfall var det riktig!
 
 \begin{frame}
 \label{energi3_b}
-\lastpagebutton{energi2}
+\lastpagebutton{energi2}{\bf SIDE 33/41/45}\\
 \addtocounter{pageno}{-2}
 Skriv opp uttrykket for total energi i massesentersystemet.\\
-{\pagebutton{Sånn, da var det gjort!}}\\
+{\pagebuttonolink{Sånn, da var det gjort!}}\\
 Var det dette du fikk:\\
 \[
 E=\frac{1}{2}m_1(\vec{v_1}^\mathrm{CM})^2+\frac{1}{2}m_2(\vec{v_2}^\mathrm{CM})^2-G\frac{m_1m_2}{r}
@@ -1029,7 +1035,7 @@ Isåfall var det riktig!
 \begin{columns}
 \column{0.5\textwidth}
 \addtocounter{pageno}{1}
-\dlastpagebutton{energi3}
+\dlastpagebutton{energi3}{\bf SIDE 34/41/45}\\
 Da har du allerede fått god hjelp til første deloppgave av oppgave 1B4:\\
 \includegraphics[scale=0.4]{media/1b4.png}\\
 Ser du hvordan den kan løses?
@@ -1046,7 +1052,7 @@ Hvis du sliter med å se hva som er svaret på tredje deloppgave, ta en titt på
 
 \begin{frame}
 \label{energi5}
-\lastpagebutton{energi4}
+\lastpagebutton{energi4}{\bf SIDE 35/41/45}\\
 \addtocounter{pageno}{-1}
 Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren $\vec{v}$? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra det ene legemet til det andre. Hastighetsvektoren $\vec{v}$ er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? \hyperlink{energi5_b}{\pagebutton{Jeg husker/har repetert hvordan det var}}
 \textcolor{white}{
@@ -1065,9 +1071,9 @@ hvor formen på $p$ og verdien på $e$ avgjør formen på banen.
 
 \begin{frame}
 \label{energi5_b}
-\lastpagebutton{energi4}
+\lastpagebutton{energi4}{\bf SIDE 35/41/45}\\
 \addtocounter{pageno}{-1}
-Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren $\vec{v}$? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra det ene legemet til det andre. Hastighetsvektoren $\vec{v}$ er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? {\pagebutton{Jeg husker/har repetert hvordan det var}}
+Men det vi var interessert i nå var å se hvordan energien kan avgjøre hvordan banen blir. For å gjøre det trenger vi først å repetere et par ting. Husker du hvordan vi fant hastighetsvektoren $\vec{v}$? Og husker du hva svaret var? (det bør du). Merk igjen, hastighetsvektoren $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra det ene legemet til det andre. Hastighetsvektoren $\vec{v}$ er dermed hastigheten til det ene legemet i forhold til det andre. Hvordan gjorde man nå det igjen? {\pagebuttonolink{Jeg husker/har repetert hvordan det var}}
 \[
 \vec{v}=\frac{d}{dt}\left(r\vec{e}_r\right)=\dot r\vec{e}_r+r\dot\theta\vec{e}_\theta
 \]
@@ -1087,7 +1093,7 @@ hvor formen på $p$ og verdien på $e$ avgjør formen på banen.
 
 \begin{frame}
 \label{energi6}
-\dlastpagebutton{energi5}
+\dlastpagebutton{energi5}{\bf SIDE 36/41/45}\\
 Kjapp repetisjon før vi setter igang med utledningen som gir oss sammenheng mellom energi og baneformen:\\
 Vi har
 \[
@@ -1104,7 +1110,7 @@ der
 
 \begin{frame}
 \label{energi7}
-\lastpagebutton{energi6}
+\lastpagebutton{energi6}{\bf SIDE 37/41/45}\\
 Da har du alt du trenger for neste utledning som du finner \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_14.mp4}{i denne videoen her}. I videoen så kommer vi frem til følgende sammenheng mellom energi og $p$-en i uttrykket for $r$:
 \[
 E=\frac{\hat\mu m}{2p}(e^2-1)
@@ -1121,7 +1127,7 @@ Tenk deg nøye om før du...
 
 \begin{frame}
 \label{energi8}
-\lastpagebutton{energi7}
+\lastpagebutton{energi7}{\bf SIDE 38/41/45}\\
 Vi hadde
 \[
 p=\frac{\hat\mu m}{2E}(e^2-1)
@@ -1136,7 +1142,7 @@ At energien bestemmer hvor stor ellipsen er, har mening. \textcolor{blue}{Men hv
 
 \begin{frame}
 \label{energi9}
-\lastpagebutton{energi8}
+\lastpagebutton{energi8}{\bf SIDE 39/41/45}\\
 I videoen på forrige side utledet vi et viktig mellomresultat:
 \[
 h=\sqrt{mp}
@@ -1149,7 +1155,7 @@ Da har vi kommet til veis enda i dette kapittelet. Hvis du nå har en satelitt s
 
 \begin{frame}
 \label{skjema}
-\clastpagebuttonx{energi9}
+\clastpagebuttonx{energi9}{\bf SIDE 40/41/45}\\
 {\Large
 Før vi avslutter med litt tips og hjelp til koding av innleveringsoppgaven, må du teste/repetere at du har forstått stoffet vi har gått gjennom. Det gjør du på \href{https://nettskjema.no/a/155531}{dette skjemaet her}.
 \hyperlink{koding}{\pagebutton{Ikke trykk her før skjemaet har blitt sendt inn}}
@@ -1162,7 +1168,7 @@ Før vi avslutter med litt tips og hjelp til koding av innleveringsoppgaven, må
 \begin{columns}
 \column{0.5\textwidth}
 {\small
-\lastpagebuttonx{skjema}
+\lastpagebuttonx{skjema}{\bf SIDE 41/41/45}\\
 \headlinebutton{\headline}\\
 Men det blir også mye \textcolor{red}{numerisk baneberegning} som vi snakket om helt i starten av forrige forelesning mens \textcolor{blue}{de analytiske uttrykkene vi har utledet skal hjelpe oss med det numeriske.} Vi går tilbake til utgangspunktet vårt:
 \includegraphics[scale=0.35]{media/landing.png}
@@ -1188,7 +1194,7 @@ Vi skal lande satelitten trygt. Her er det klart at du i den numeriske banebereg
 
 \begin{frame}
 \label{koding2}
-\lastpagebutton{koding}
+\lastpagebutton{koding}{\bf SIDE 42/45/45}\\
 \includegraphics[scale=0.3]{media/debugging1.png}
 {\small La oss helt til slutt snakke litt om debugging. Det kommer helt sikkert til å gå galt når du programmerer banen første gang. Her ser du et veldig typisk resultat (jordkloden indikerer startposisjon). \\{\bf Spørsmålet er, hva gjør du nå???}\\}
 \hyperlink{feildebug}{\choicebutton{{\small Stirrer på koden til du finner feilen}}}\ \ \ \ \ \hyperlink{feildebug}{\choicebutton{{\small Får noen andre til å stirre på koden}}}\ \ \ \ \ \hyperlink{riktigdebug}{\choicebutton{{\small Bruker fysikk til å finne i hvilken del av koden feilen befinner seg.}}}
@@ -1198,7 +1204,7 @@ Vi skal lande satelitten trygt. Her er det klart at du i den numeriske banebereg
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feildebug}
-\lastpagebutton{koding2}
+\lastpagebutton{koding2}{\bf SIDE 43/45/45}\\
 \textcolor{white}{Det er en veldig god ide hvis du har masse fritid og liker å bruke laaaaaaaaang tid til å løse oppgaver.\\
 Rådene på neste side er nok da ikke for deg, men \hyperlink{riktigdebug}{\pagebutton{Trykk her}} hvis du likevel har lyst til å få noen tips til hvordan du kan spare masse tid, så kan du jo bruke all tiden du har til overs på andre oppgaver?}
 \end{frame}
@@ -1210,11 +1216,12 @@ Rådene på neste side er nok da ikke for deg, men \hyperlink{riktigdebug}{\page
 \label{riktigdebug}
 \begin{columns}
 \column{0.5\textwidth}
-\clastpagebuttonx{koding2}
+\clastpagebuttonx{koding2}{\bf SIDE 44/45/45}\\
 \headlinebutton{\headline}\\
 {\small Det er en utmerket ide å bruke litt fysikk når man gjør debugging, husk dette også for de kommende delene i kurset. Du kan spare {\bf masse} tid på debugging hvis du bare finner ut hvor feilen ligger. La oss se på noen mulige strategier i dette tilfellet her.\\}
 \includegraphics[scale=0.3]{media/debugging2.png}\\
 \column{0.5\textwidth}
+\textcolor{yellow}{dwofhhhhhhhhhhhhhhhhhhhhhijooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo}
 \begin{enumerate}
 \item Hva er energien din i initialposisjonen? Er $E>0$? Da er det enten noe feil med initialhastigheten din, eller du skal ha en hyperbelbane.
 \item Lag en liste med energien i hvert tidssteg. Endrer energien seg? (det skal den ikke hvis du kun har gravitasjonskraft)
@@ -1230,10 +1237,10 @@ Rådene på neste side er nok da ikke for deg, men \hyperlink{riktigdebug}{\page
 \label{koding3}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{riktigdebug}
+\lastpagebutton{riktigdebug}{\bf SIDE 45/45/45}\\
 \includegraphics[scale=0.25]{media/debugging2.png}
 {\small
-{\bf Og sist, men ikke minst:} Sjekk størrelsen på kraftvektoren. {\bf Bruk kalkulator (dette er viktig slik at du bruker noe helt annet en koden din)} til å beregne totalkrafta i initialposisjonen. Beregn først lengden av initialposisjonsvektoren $\vec{r}$ {\bf (også med kalkulator)} og så størrelsen på krafta.} 
+{\bf Og sist, men ikke minst:} Sjekk størrelsen på kraftvektoren. {\bf Bruk kalkulator (dette er viktig slik at du bruker noe helt annet en koden din)} til å beregne totalkrafta i initialposisjonen. Beregn først lengden av initialposisjonsvektoren $\vec{r}$ {\bf (også med kalkulator)} og så størrelsen på krafta.}
 \column{0.5\textwidth}
 \\
 {\small Sammenlikn krafta med det du finner i koden (absoluttverdi av kraftvektoren). Er den feil, sjekk også om du har beregnet lengden av posisjonsvektoren riktig. Hvis alt er riktig, gjenta dette en del tidssteg senere, er krafta enda riktig? Her vil du veldig ofte finne at du beregner krafta feil i koden. Iblant kan det være vanskelig å ovrersette formler riktig til python, derfor er denne uavhengige kontrollen på papir/kalkulator veldig viktig.}\\
@@ -1251,7 +1258,7 @@ Gratulerer, da er del 1B overstått! Du bør nå kunne:
 \item beskrive de forskjellige banene som er løsninger av to-legeme-problemet
 \item kunne beregne slike baner både analytisk og numerisk
 \item vite hvilke parametere som beskriver slike baner og vite hvordan finne slike parametere
-\item kunne regne med Newtons lover på vektorform 
+\item kunne regne med Newtons lover på vektorform
 \item og dermed kunne regne med posisjosvektorer, hastighetsvektorer og kraftvektorer dekomponert både i kartesiske enhetsvektorer men også i radielle og tangensielle enhetsvektorer
 \item kunne beskrive og beregne på baner i et tolegemesystem sett fra massesentersystemet
 \item kunne beregne anguklærmoment og energi i et slikt to-legemesystem

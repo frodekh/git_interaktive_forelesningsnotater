@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/165598}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -312,7 +312,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 {\small
 \textcolor{yellow}{\bf Velkommen til del 3B! Vi skal i de følgende delene av kurset følge stjernenes livsløp. I denne delen starter vi med stjernenes fødsel. I den forbindelse trenger vi å bruke en viktig sammenheng for store systemer som kalles {\it virialteoremet}. Dette skal gi oss noen uttrykk som sier noe om en gass-sky vil kollapse under sin egen gravitasjon for å danne en stjerner eller ikke. Dette forelesningsnotatet går jeg normalt gjennom på ca. en klokketime med fysisk forelesning, ihvertfall mindre enn en dobbelttime.}\\
 
-\textcolor{yellow}{(Illustrasjon: En molekylsky i Orions belte, NASA/JPL-Caltech/UCLA)}}
+\textcolor{yellow}{(\htmlcom{footnotesize}{Illustrasjon: En molekylsky i Orions belte, NASA/JPL-Caltech/UCLA)}}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -385,7 +385,7 @@ Vi skal bruke virialteoremet på en molekylær gass-sky bl.a. for å se om en mo
 \begin{frame}
 \label{vir4}
 \lastpagebutton{vir3b}{\bf SIDE 6/6/26}\\
-{\Huge Fant du ut av det?}
+{\Huge \htmlcom{large}{Fant du ut av det?}}
 Fikk du at total potensiell energi i skya er gitt ved:
 \[
 U_\mathrm{TOT}=-\frac{3GM^2}{5R}
@@ -410,7 +410,7 @@ Hvis ikke, se på utledningen i \href{https://www.uio.no/studier/emner/matnat/as
 \begin{frame}
 \label{sol1}
 \lastpagebutton{vir4}\label{solasenergi}{\bf SIDE 7/14/26}\\
-{\Huge Vi skal nå se på et eksempel for hvordan virialteoremet har blitt brukt.}
+{\Huge \htmlcom{large}{Vi skal nå se på et eksempel for hvordan virialteoremet har blitt brukt.}}
 \textcolor{red}{\Large Det var en gang for lenge, lenge siden...}
 \hyperlink{sol2}{\pagebutton{Neste side}}
 \end{frame}
@@ -433,21 +433,21 @@ En måte man gjorde dette på var å tenke som følger:
 \item Energiregnskapet for en gass-sky som kollapser er vel at total kinetisk pluss potensiell energi i skya pluss energien av strålingen den sender ut må være bevart?
 \item Vi kjenner solas nåværende luminositet, altså energi per tid som den sender ut
 \end{itemize}
-{\Huge\bf Kan du nå tenke deg hvordan vi kan teste teorien?}
+{\Huge\bf \htmlcom{large}{Kan du nå tenke deg hvordan vi kan teste teorien?}}
 \hyperlink{sol4}{\pagebutton{Neste side}}
 \end{frame}
 
 \begin{frame}
 \label{sol4}
 \lastpagebutton{sol3}{\bf SIDE 10/14/26}\\
-{\Huge Hva med å bruke luminositeten til sola pluss energiregnskap til å beregne hvor lenge sola har eksistert, og så sammenlikne med den faktiske? Hvordan ville du beregnet solas totale levetid?}
-\hyperlink{red_sol4b}{\pagebutton{Jeg har tenkt gjennom hvordan dette kunne gjøres}}
+{\Huge \htmlcom{large}{Hva med å bruke luminositeten til sola pluss energiregnskap til å beregne hvor lenge sola har eksistert, og så sammenlikne med den faktiske? Hvordan ville du beregnet solas totale levetid?}}
+\hyperlink{red_sol4_b}{\pagebutton{Jeg har tenkt gjennom hvordan dette kunne gjøres}}
 \end{frame}
 
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{red_sol4b}
+\label{red_sol4_b}
 \lastpagebutton{sol4}{\bf SIDE 11/14/26}\\
 \textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
 \hyperlink{red_sol4_c}{\pagebutton{lover!}}\\
@@ -467,7 +467,7 @@ Jeg har tenkt gjennom hvordan dette kunne gjøres}
 \label{red_sol4_c}
 \lastpagebutton{sol4}{\bf SIDE 12/14/26}\\
 \textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
-{\pagebutton{lover!}}\\
+{\pagebuttonolink{lover!}}\\
 
 \textcolor{yellow}{Du kan få noen tips hvis du vil ha?}
 \hyperlink{red_sol4_d}{\pagebutton{Det hadde ikke vært dumt, nei!}}\\
@@ -484,10 +484,10 @@ Jeg har tenkt gjennom hvordan dette kunne gjøres}
 \label{red_sol4_d}
 \lastpagebutton{sol4}{\bf SIDE 13/14/26}\\
 \textcolor{yellow}{Er du sikker på at du har tenkt nøye etter?}
-{\pagebutton{lover!}}\\
+{\pagebuttonolink{lover!}}\\
 
 \textcolor{yellow}{Du kan få noen tips hvis du vil ha?}
-{\pagebutton{Det hadde ikke vært dumt, nei!}}\\
+{\pagebuttonolink{Det hadde ikke vært dumt, nei!}}\\
 
 \textcolor{yellow}{Kan du bruke virialteoremet til å finne solas totale energi mens den enda var en enormt stor gass-sky? Og kan du gjøre det samme for sola idag? (du kjenner solas radius og masse idag) Vil ikke forskjellen mellom disse to være total energi strålt ut i hele solas levetid? Og du kjenner hvor mye som stråles ut per tid? (solas luminositet er $L=3.83\times10^{26}\mathrm{W}$). Hvor lenge har sola da eksistert? (ta gjerne en kikk igjen på antakelsene for 2 sider siden)}
 \hyperlink{sol5}{\pagebutton{Jeg har tenkt gjennom hvordan dette kunne gjøres}}
@@ -505,7 +505,7 @@ Jeg har tenkt gjennom hvordan dette kunne gjøres}
 
 \begin{frame}
 \label{sol5}
-\dlastpagebutton{red_sol4b}{\bf SIDE 14/14/26}\\
+\dlastpagebutton{red_sol4_b}{\bf SIDE 14/14/26}\\
 {\Large Fikk du at solas levetid på denne måten blir omkring 8 millioner år? Og at vi dermed kan konkludere med, som de den gang gjorde, at solas energi ikke kan komme fra gravitasjonsinnfall men at sola må ha en annen energikilde?}
 Hvis du ikke fikk det til, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_2.mp4}{denne utledningen} som viser hvordan vi kan gjøre energiregnskapet med virialteoremet og dermed anslå solas alder. Denne typen resonnement og denne måten å bruke virialteoremet på bør du ha kontroll på.
 \hyperlink{blue_nytema3}{\pagebutton{Neste side}}
@@ -559,7 +559,7 @@ Hva mener du?
 \label{jeans3}
 \lastpagebutton{jeans2}{\bf SIDE 17/26/26}\\
 For å få laget stjerner ønsker vi vel at skya skal bli mer bundet? Altså mindre hastighet på gasspartiklene og gjerne nærmere sammen? {\bf Det betyr vel større potensiell energi? Og mindre kinetisk?}
-{\Huge Høres det riktig ut?}
+{\Huge \htmlcom{large}{Høres det riktig ut?}}
 \hyperlink{jeans4}{\pagebutton{Trykk her når du har gjort deg opp en mening!}}
 \end{frame}
 
@@ -611,7 +611,7 @@ Fikk du:\\
 \begin{frame}
 \label{feil_mjeansf}
 \lastpagebutton{jeans6}{\bf SIDE 21/26/26}\\
-\textcolor{yellow}{\Huge Det ble galt! Her gjelder det bare å holde tunga rett i munnen og gjøre regningen riktig. Hvis du har kommet hit for 2.gang uten å få det riktig, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_3.mp4}{denne videoen}.}
+\textcolor{yellow}{\Huge \htmlcom{large}{Det ble galt! Her gjelder det bare å holde tunga rett i munnen og gjøre regningen riktig. Hvis du har kommet hit for 2.gang uten å få det riktig, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_3.mp4}{denne videoen}.}}
 \end{frame}
 }
 
@@ -663,7 +663,7 @@ som kriterium for kollaps. \textcolor{red}{\bf Hvis du ikke fikk det til, gå f�
 \lastpagebutton{jeans7}{\bf SIDE 25/26/26}\\
 Ta en kikk på deloppgave 5 av oppgve 3B.3:
 \includegraphics[scale=0.6]{media/oppgave_3b_3.png}\\
-{\Huge Ser du svaret?}
+{\Huge \htmlcom{large}{Ser du svaret?}}
 Hvis du er usikker, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3b/videoer/video3b_4.mp4}{denne videoen her.}
 \hyperlink{jeans8}{\pagebutton{Neste side}}
 \end{frame}
