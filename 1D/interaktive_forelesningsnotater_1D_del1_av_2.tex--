@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -298,6 +298,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema4}{\headlinebutton{Intensitet}}
 \item \hyperlink{blue_nytema5}{\headlinebutton{Hvordan får vi informasjon om universet?}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -306,7 +307,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \label{intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
+\hyperlink{tableofcontents}{\pagebutton{Forrige side}}\\
 \vspace{1cm}
 \includegraphics[scale=0.25]{media/radiotelescopes.png}\\
 \column{0.5\textwidth}
@@ -319,7 +320,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 
 \begin{frame}
 \label{intro2}
-\lastpagebutton{intro}
+\lastpagebutton{intro}{\bf SIDE 1/1/38}\\
 \begin{alertblock}{Vi begynner som vanlig...}
 ...med litt brainstorming og repetisjon. Som det er {\bf svært viktig} at du gjør før du går videre. Du får allerede litt hjelp her til det som kommer på de neste sidene.
 \end{alertblock}
@@ -342,14 +343,14 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{1d3}
-\lastpagebutton{intro2}
-{\bf Vi skal fortsette der vi slapp i skjemaet.} 
-\begin{block}{Fluks $F$ er...}
+\lastpagebutton{intro2}{\bf SIDE 2/8/38}\\
+{\bf Vi skal fortsette der vi slapp i skjemaet.}
+\begin{block}{Fluks F er...}
 ... den lille energimengden $\Delta E$ som passerer gjennom en lite areal $\Delta A$ i løpet av et kort tidsrom $\Delta t$. Det kan f.eks. være energimengden som vi mottar på et lite areal $\Delta A$ av jordoverflaten fra sola, dette ville vært {\it mottatt} fluks. Det kunne også være energien som blir strålt ut per areal $\Delta A$ av soloverflaten, dette ville vært {\it utsendt} fluks.
 \end{block}
-\begin{block}{Luminositet $L$ er definert som...}
-den totale energimengde $\Delta E$ som stråles ut av et legeme per lite tidsintervall $\Delta t$. Luminositet måles i W som er Joule per sekund. En lyspære med luminositet på 40W, sender totalt ut 40 Joule per sekund, spredt utover i alle retninger. 
-\end{block} 
+\begin{block}{Luminositet L er definert som...}
+den totale energimengde $\Delta E$ som stråles ut av et legeme per lite tidsintervall $\Delta t$. Luminositet måles i W som er Joule per sekund. En lyspære med luminositet på 40W, sender totalt ut 40 Joule per sekund, spredt utover i alle retninger.
+\end{block}
 Hvis vi gjør disse intervallene uendelig små, kan de skrives som deriverte:
 \[
 F=\frac{\Delta E}{\Delta A\Delta t}=\frac{d^2E}{dAdt}\ \ \ \ \ L=\frac{\Delta E}{\Delta t}=\frac{dE}{dt}
@@ -359,7 +360,7 @@ F=\frac{\Delta E}{\Delta A\Delta t}=\frac{d^2E}{dAdt}\ \ \ \ \ L=\frac{\Delta E}
 
 \begin{frame}
 \label{1d3b}
-\lastpagebuttoncr{1d3}
+\lastpagebuttoncr{1d3}{\bf SIDE 3/8/38}\\
 La oss se på oppgaveteksten til oppgave 1D.3 (prosjektstudenter har et liknende problem i utfordring B i del 3). Vi begynner rett på 4. deloppgave, anta at du ser på sola og fluksen $F$ som sola stråler ut er kjent fra Stefan-Boltzmanns lov, $F=\sigma T^4$, denne har du kanskje sett før, men vi skal komme nærmere inn på denne senere. Det viktigste nå er at $F$ er et kjent tall, det samme er {\bf radiusen} til sola.
 \includegraphics[scale=0.4]{media/1d3_1.png}\\
 {\bf Du skal altså ikke bruke tall nå, kun diskutere \textcolor{red}{hvordan} du vil løse oppgaven (tenk maks 1 min)}.
@@ -371,7 +372,7 @@ La oss se på oppgaveteksten til oppgave 1D.3 (prosjektstudenter har et liknende
 \label{1d3-2}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{1d3b}
+\lastpagebutton{1d3b}{\bf SIDE 4/8/38}\\
 Hvis du får til denne oppgaven, så har du funnet luminositeten $L$ til sola. Da kan vi gå videre til neste deloppgave:\\
 \includegraphics[scale=0.4]{media/1d3_2.png}\\
 \column{0.5\textwidth}
@@ -385,12 +386,12 @@ Hvis du får til denne oppgaven, så har du funnet luminositeten $L$ til sola. D
 \label{1d3-3}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{1d3-2}
+\lastpagebutton{1d3-2}{\bf SIDE 5/8/38}\\
 Hvis du får til denne oppgaven, så har du funnet fluksen $F_\mathrm{Saturn}$ fra sola på Saturn (du skal altså ikke finne tall, men vite hvordan du kunne funnet dette tallet). Hvis du ikke fikk det til, bare anta at du har fått denne størrelsen. Da kan vi gå videre til neste deloppgave:\\
 \includegraphics[scale=0.4]{media/1d3_3.png}\\
 \column{0.5\textwidth}
 {\bf Igjen skal du kun diskutere hvordan oppgaven kan løses.}
-Tenk omkring et minutt og se om du ser hvordan du kan gå frem. Deretter, repeter hele prosessen for hvordan du nå kan finne hvor stort solpanel du trenger for at en satelitt ved Saturn skal få nok solenergi til å drive instrumentene ombord. 
+Tenk omkring et minutt og se om du ser hvordan du kan gå frem. Deretter, repeter hele prosessen for hvordan du nå kan finne hvor stort solpanel du trenger for at en satelitt ved Saturn skal få nok solenergi til å drive instrumentene ombord.
 \hyperlink{1d4-1}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -398,10 +399,10 @@ Tenk omkring et minutt og se om du ser hvordan du kan gå frem. Deretter, repete
 
 \begin{frame}
 \label{1d4-1}
-\lastpagebutton{1d3-3}
+\lastpagebutton{1d3-3}{\bf SIDE 6/8/38}\\
 \begin{columns}
 \column{0.5\textwidth}
-Hvis du slet med å få til oppgave 1D3, så kan du \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_1.mp4}{se på denne videoen for å få noen tips}. Hvis du er usikker på fremgangsmåte eller svaret, {\bf spør gruppelærer}. 
+Hvis du slet med å få til oppgave 1D3, så kan du \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_1.mp4}{se på denne videoen for å få noen tips}. Hvis du er usikker på fremgangsmåte eller svaret, {\bf spør gruppelærer}.
 Når du har forstått godt hvordan du løser 1D3, så er du klar til å ta fatt på å {\bf diskutere} 1D.4 (også i prosjektet må en liknende utfordring løses):
 \includegraphics[scale=0.4]{media/1d4_1.png}
 \column{0.5\textwidth}
@@ -415,14 +416,14 @@ Når du har forstått godt hvordan du løser 1D3, så er du klar til å ta fatt 
 \label{1d4-2}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebuttoncr{1d4-1}
+\lastpagebuttoncr{1d4-1}{\bf SIDE 7/8/38}\\
 Siste deloppgave av 1D.4:
 \includegraphics[scale=0.42]{media/1d4_3.png}\\
 \column{0.5\textwidth}
 {\small
-Du skal igjen kun diskutere fremgangsmåten, ikke nødvendigvis løse oppgaven med tall nå. 
+Du skal igjen kun diskutere fremgangsmåten, ikke nødvendigvis løse oppgaven med tall nå.
 \begin{itemize}
-\item Husk at for en planet å være i likevekt med stabil temperatur så må den motta like mye energi som den sender ut. 
+\item Husk at for en planet å være i likevekt med stabil temperatur så må den motta like mye energi som den sender ut.
 \item Du kommer du igjen til å trenge Stefan-Boltzmanns low, $F=\sigma T^4$ der $\sigma$ er et tall og $T$ er temperaturen til legemet. Stefan-Boltzmanns lov sier hvor stor fluks som stråles ut fra overflaten av sorte legemer (forklaring senere), vi skal her anta at Saturn er et sort legeme.
 \end{itemize}
 \textcolor{red}{Ikke gå videre før du har tenkt gjennom hva du kan gjøre (1 min maks for nå).}
@@ -434,12 +435,12 @@ Du skal igjen kun diskutere fremgangsmåten, ikke nødvendigvis løse oppgaven m
 
 \begin{frame}
 \label{sblaw}
-\lastpagebutton{1d4-2}
+\lastpagebutton{1d4-2}{\bf SIDE 8/8/38}\\
 Uttrykket $F$ for fluks som du har møtt så langt er den samlede fluksen over alle bølgelengder. Vi kan også definere en bølgelengdeavhengig fluks som altså er energien $\Delta E$ som passerer gjennom et areal $\Delta A$ hvert tidssteg $\Delta t$ med et lite bølgelengde intervall $\Delta\lambda$ for bølgelgende i intervallet mellom $\lambda$ og $\lambda+\Delta\lambda$:
 \[
 F(\lambda)=\frac{\Delta E}{\Delta A\Delta t\Delta\lambda}=\frac{d^3E}{dAdtd\lambda},
 \]
-den siste overgangen gjelder når vi gjør $\Delta$-ene uendelig små. 
+den siste overgangen gjelder når vi gjør $\Delta$-ene uendelig små.
 \begin{block}{\bf Stefan-Boltzmanns lov}
 For {\bf sorte legemer} (kommer vi straks til!), så er fluksen (den totale fluksen over alle bølgelengder) som sendes ut fra legemet gitt ved temperaturen $T$ til legemet som:
 \[
@@ -447,7 +448,7 @@ F=\sigma T^4
 \]
 Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
 \end{block}
-\hyperlink{red_sblaw2}{\pagebutton{\small Neste side}}
+\hyperlink{blue_nytema2}{\pagebutton{\small Neste side}}
 \end{frame}
 
 \renewcommand{\headline}{\small Sorte legemer}
@@ -465,7 +466,7 @@ Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_sblaw2}
-\lastpagebutton{sblaw}\label{sortleg}
+\lastpagebutton{sblaw}\label{sortleg}{\bf SIDE 9/14/38}\\
 \textcolor{yellow}{\huge \htmlcom{large}{Men så var det dette sorte legemet da?}\\
 \htmlcom{large}{Kan du huske hvordan et sort legeme er definert??}\hyperlink{red_sblaw2_b}{\pagebutton{\small Trykk her når du har vridd hjernen rundt for å huske!}}
 }
@@ -478,7 +479,7 @@ Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_sblaw2_b}
-\lastpagebutton{sblaw}\label{sortleg}
+\lastpagebutton{sblaw}{\bf SIDE 9/14/38}\\
 \textcolor{yellow}{\huge \htmlcom{large}{Men så var det dette sorte legemet da?}\\
 \htmlcom{large}{Kan du huske hvordan et sort legeme er definert??}{\pagebuttonolink{\small Trykk her når du har vridd hjernen rundt for å huske!}}
 }
@@ -491,7 +492,7 @@ Der $\sigma$ er et tall som du snart skal se hvordan man kan utlede.
 
 \begin{frame}
 \label{sblaw3}
-\dlastpagebutton{red_sblaw2}
+\dlastpagebutton{red_sblaw2}{\bf SIDE 10/14/38}\\
 For sorte legemer kan man utlede {\it Plancks strålingslov}. Denne utledningen kommer du til å gjøre i senere kurs, her bare aksepterer vi at for fluks $F(\lambda)$ så er den gitt ved''
 \[
 F(\lambda) = \frac{2\pi hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
@@ -505,7 +506,7 @@ F(\lambda) = \frac{2\pi hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
 
 \begin{frame}
 \label{wien}
-\lastpagebutton{sblaw3}
+\lastpagebutton{sblaw3}{\bf SIDE 11/14/38}\\
 {\bf Hadde du et forslag til hvordan utlede Stefan-Boltzmanns lov?} I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_2.mp4}{denne videoen} går vi gjennom det i detalj.\\
 \vspace*{0.5cm}
 Hva så med Wiens forskyvningslov:
@@ -524,7 +525,7 @@ Kan du se hvordan du kan gå frem for å utlede Wiens forskyvningslov?\\
 
 \begin{frame}
 \label{wien2}
-\lastpagebutton{wien}
+\lastpagebutton{wien}{\bf SIDE 12/14/38}\\
 \Huge\textcolor{red}{\htmlcom{large}{Tenkte du deg virkelig godt om før du bladde om nå eller????????}}
 \htmlcom{large}{Hvis ikke så får du en ny sjanse nå, tenk før du blar om!}
 \hyperlink{wien3}{\pagebutton{Neste side}}
@@ -533,7 +534,7 @@ Kan du se hvordan du kan gå frem for å utlede Wiens forskyvningslov?\\
 
 \begin{frame}
 \label{wien3}
-\lastpagebutton{wien2}
+\lastpagebutton{wien2}{\bf SIDE 13/14/38}\\
 Jepp, å finne bølgelengden med den største fluksen er jo ekvivalent med å finne toppen av kurven $F(\lambda)$. Å finne topp-punktet av en kurve gjør som kjent vi ved å sette den deriverte lik null
 \[
 \frac{dF(\lambda)}{d\lambda}=0
@@ -553,14 +554,14 @@ Før du går videre, lag nå en liten skisse for hvordan du vil gjøre dette num
 
 \begin{frame}
 \label{wien4}
-\lastpagebutton{wien3}
+\lastpagebutton{wien3}{\bf SIDE 14/14/38}\\
 I oppgave 1D.2 får du hjelp til å løse dette (hvis du skulle ønske å gjøre den nå, erstatt $B(\lambda)$ med $F(\lambda)$ overalt i oppgaveteksten, du får samme svar.)\\
-La oss gå tilbake til 
+La oss gå tilbake til
 \begin{block}{\bf oppgave 1D.3, første deloppgave:}
 Ved hvilken bølgelengde $\lambda$ stråler solen mest energi? Anta at solen er et sort legeme. Anta også at temperaturen på solens overflate er 5778K, og konstanten i Wiens forskyvningslov er
 \[
 \lambda_\mathrm{max}T=2.898\times10^{-3}\mathrm{m}\cdot\mathrm{K}
-\] 
+\]
 hvor enhetene her er meter ganger Kelvin.
 \end{block}
 Bruk \href{https://en.wikipedia.org/wiki/Color}{bølgelengdeoversikten her} for å finne hvilken farge det tilsvarer.{\bf Overrasket?} Kan du finne en forklaring hvis svaret ikke stemmer overens med dine forventninger?
@@ -582,7 +583,7 @@ Bruk \href{https://en.wikipedia.org/wiki/Color}{bølgelengdeoversikten her} for 
 
 \begin{frame}
 \label{solidangle}
-\lastpagebutton{wien4}\label{romvink}
+\lastpagebutton{wien4}\label{romvink}{\bf SIDE 15/17/38}\\
 Vi har så langt snakket om fluks og luminositet. Vi skal nå se på et relatert begrep som heter {\it intensitet}. Dette er et noe mer abstrakt begrep som vi skal bruke lite i dette kurset, men som du bør kunne og som du kommer til å se igjen i senere kurs. Før vi begynner med intensitetsbegrepet trenger vi først å diskutere et annen nytt begrep.
 \begin{block}{\bf Utvidelse av vinkelbegrepet}
 Hvis du skulle generalisere vinkelbegrepet fra 2 til 3 dimensjoner, hvordan ville du gå frem? Husker du hvordan vinkelbekgrepet er definert? Hva er definisjonen av en radian?
@@ -594,7 +595,7 @@ Når du har gravd litt i gamle minner, så kan du.. \hyperlink{solidangle2}{\pag
 
 \begin{frame}
 \label{solidangle2}
-\lastpagebuttoncr{solidangle}
+\lastpagebuttoncr{solidangle}{\bf SIDE 16/17/38}\\
 {\small
 Med enhetssirkelen som utgangspunkt, kan vi definere en vinkel slik:\\
 \includegraphics[scale=0.42]{media/angle.png}
@@ -610,8 +611,8 @@ Buelengden $\Delta s$ er størrelsen på vinkelen i radianer! Hvis det ikke er e
 
 \begin{frame}
   \label{solidangle2b}
-\lastpagebuttoncr{solidangle2}
-{\small 
+\lastpagebuttoncr{solidangle2}{\bf SIDE 17/17/38}\\
+{\small
 Hvis vi utvider enhetssirkel fra 2 til 3 dimensjoner får vi enhetskula:\\
 \includegraphics[scale=0.42]{media/solidangle.png}
 En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$ på overflaten av enhetskula som romvinkelen utspenner. Tenk deg f.eks. en bunt av lysstråler som strømmer ut fra sentrum og inn i romvinkelen $\Omega$. Et typisk bruksområde for romvinkler er å se på lysbunter som stråler ut i en gitt retning. Igjen, hvis vi ikke har enhetskula må vi reskalere:
@@ -656,7 +657,7 @@ En {\it romvinkel (solid angle)} målt i {\it steradianer} er arealet $\Delta A$
 
 \begin{frame}
 \label{intensity1}
-\dlastpagebutton{solidangle2}\label{intens}
+\dlastpagebutton{solidangle2}\label{intens}{\bf SIDE 18/28/38}\\
 Vi skal nå gå over til intensitetsbegrepet. {\it Intensiteten er energien per arealenhet, per tid, per bølgelgende og {\bf per romvinkel}} som går gjennom et areal og inn i en gitt retning $\theta$:
 \[
 I(\lambda)=\frac{\Delta E}{\cos{\theta}\Delta A\Delta t\Delta \lambda\Delta \Omega}
@@ -668,7 +669,7 @@ Nærmere forklaring finner du \href{https://www.uio.no/studier/emner/matnat/astr
 
 \begin{frame}
 \label{intensity2}
-\lastpagebutton{intensity1}
+\lastpagebutton{intensity1}{\bf SIDE 19/28/38}\\
 Intensiteten til sort stråling kan uttrykkes ved {\it Plancks strålingslov:}
 \[
 B(\lambda) = \frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
@@ -680,7 +681,7 @@ Som du ser likner dette uttrykket veldig mye på fluksen $F(\lambda)$ for sort s
 
 \begin{frame}
 \label{innei}
-\lastpagebutton{intensity2}
+\lastpagebutton{intensity2}{\bf SIDE 20/28/38}\\
 Kikk først \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_3.mp4}{en gang til på videoen} for å se definisjonen av intensitet,. Fluksen er {\bf all} strålingen som går gjennom dette arealet, dvs over alle retninger som går ut ifra arealet. Vi har allerede definert en vinkel $\theta$, vi trenger også en vinkel $\phi$ for å få med oss alle retningene. Kan du se hva slags romintegral du skal gjøre? Tenk deg at z-aksen går ut gjennom arealet. Hvordan hadde du normalt gjort en slikt integrasjons?
 Tenk deg om på nytt før du går videre...
 \hyperlink{inja}{\pagebutton{Neste side}}
@@ -688,7 +689,7 @@ Tenk deg om på nytt før du går videre...
 
 \begin{frame}
 \label{inja}
-\lastpagebutton{intensity2}
+\lastpagebutton{intensity2}{\bf SIDE 21/28/38}\\
 Innså du at du må integrere over halvkulen med sentrum i arealet som strålingen går gjennom? Du må integrere over vinkelen $\theta$ som gå fra 0 (rett frem) til $\pi/2$ (helt til siden), mens vinkelen $\phi$ går rundt z-aksen og derfor må integreres fra 0 til $2\pi$. Kan du se det? Får du til faktoren $\pi$ når du gjør integralet? Hvis du sliter med dette, spør foreleser!
 Se gjerne også \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_4.mp4}{denne videoen} for en kjapp illustrasjon av integrasjonen.
 \hyperlink{intensity3}{\pagebutton{Neste side}}
@@ -698,7 +699,7 @@ Se gjerne også \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/
 
 \begin{frame}
 \label{intensity3}
-\lastpagebutton{inja}
+\lastpagebutton{inja}{\bf SIDE 22/28/38}\\
 Vi har sett at intensiteten $I(\lambda)$ av Planckstråling er gitt ved funksjonen $B(\lambda)$:
 \[
 B(\lambda) = \frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{kT\lambda}-1}}
@@ -711,13 +712,13 @@ Ta et papir og gjør om slik at du uttrykker denne ved frekvens $B(\nu)$ isteden
 
 \begin{frame}
 \label{intensity3b}
-\lastpagebutton{intensity3}
-{\bf\Large \htmlcom{large}{Fikkz du:}}\\
+\lastpagebutton{intensity3}{\bf SIDE 23/28/38}\\
+{\bf\Large \htmlcom{large}{Fikk du:}}\\
 \htmlcom{large}{
 \[
 B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \]
-?}
+}
 {\bf\Large \htmlcom{huge}{??}}\\
 \hyperlink{feil_bnuja}{\choicebutton{JA!}}\ \ \ \ \hyperlink{riktig_bnunei}{\choicebutton{NEI!}}
 \end{frame}
@@ -726,7 +727,7 @@ B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_bnuja}
-\lastpagebutton{intensity3b}
+\lastpagebutton{intensity3b}{\bf SIDE 24/28/38}\\
 \textcolor{white}{\htmlcom{large}{Det var synd for det ble FEIL:
 \[
 \xcancel{B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}}
@@ -740,7 +741,7 @@ B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_bnunei}
-\clastpagebutton{intensity3b}
+\clastpagebutton{intensity3b}{\bf SIDE 25/28/38}\\
 \htmlcom{large}{Det høres bra ut, for det uttrykket er nemlig feil...}
  \hyperlink{intensity4}{\pagebutton{Neste side}}
 \end{frame}
@@ -749,7 +750,7 @@ B(\nu) = \frac{2h\nu^5}{c^3}\frac{1}{e^{\frac{h\nu}{kT}-1}}
 
 \begin{frame}
 \label{intensity4}
-\lastpagebutton{intensity3b}
+\lastpagebutton{intensity3b}{\bf SIDE 26/28/38}\\
 Vi må passe på at energien $\Delta E$ er den samme i begge tilfeller. Vi skriver om slik at:
 \[
 \Delta E = B(\lambda)\cos{\theta}\Delta A\Delta t\Delta\Omega\Delta\lambda=-B(\nu)\cos{\theta}\Delta A\Delta t\Delta\Omega\Delta\nu,
@@ -773,7 +774,7 @@ B(\nu) = \frac{2h\nu^3}{c^2}\frac{1}{e^{\frac{h\nu}{kT}}-1}
 
 \begin{frame}
 \label{intensity5}
-\lastpagebutton{intensity4}
+\lastpagebutton{intensity4}{\bf SIDE 27/28/38}\\
 Her ser du $B(\lambda)$:\\
 \includegraphics[scale=0.5]{media/blambda.png}\\
 Kan du forklare Stefan-Boltzmanns lov og Wiens forskyvningslov {\bf kun} ved å bruke denne figuren?
@@ -785,9 +786,9 @@ Prøv å bruke figuren til å forklare de to lovene til hverandre (eller til deg
 \label{intensity6}
 \begin{columns}
 \column{0.4\textwidth}
-\lastpagebuttoncr{intensity5}
+\lastpagebuttoncr{intensity5}{\bf SIDE 28/28/38}\\
 Hvis du hadde problemer med forklaringen, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1d/videoer/video1d_5.mp4}{denne videoen}.
-Da er du klar til å løse oppgave 1D.1. Akkurat nå skal du kun diskutere hvordan du vil gå frem for å løse denne oppgaven (maks 2 min). 
+Da er du klar til å løse oppgave 1D.1. Akkurat nå skal du kun diskutere hvordan du vil gå frem for å løse denne oppgaven (maks 2 min).
 \column{0.6\textwidth}
 \includegraphics[scale=0.45]{media/1d1.png}
 \end{columns}
@@ -826,8 +827,8 @@ Da er du klar til å løse oppgave 1D.1. Akkurat nå skal du kun diskutere hvord
 
 \begin{frame}
 \label{straling}
-\lastpagebutton{intensity6}\label{info}
-Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?
+\lastpagebutton{intensity6}\label{info}{\bf SIDE 29/33/38}\\
+Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?\\
 \hyperlink{straling_b}{\pagebutton{Trykk her når du har tenkt}}
 \textcolor{white}{
 kosmisk stråling\\
@@ -840,8 +841,8 @@ La oss se på hver av disse...\\
 
 \begin{frame}
 \label{straling_b}
-\lastpagebutton{intensity6}\label{info}
-Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?
+\lastpagebutton{intensity6}{\bf SIDE 29/33/38}\\
+Før vi avslutter første forelesning i del 1D vil jeg at du tenker gjennom hvilke kilder vi har til informasjon om universet. Vi har allerede begynt å snakke om elektromagnetisk stråling som er en slik kilde, men finnes det flere? Kan du tenkte deg 3 til som ikke er elektromagnetisk stråling?\\
 {\pagebuttonolink{Trykk her når du har tenkt}}
 \begin{itemize}
 \item kosmisk stråling
@@ -854,7 +855,7 @@ La oss se på hver av disse...
 
 \begin{frame}
 \label{straling2}
-\dlastpagebutton{straling}
+\dlastpagebutton{straling}{\bf SIDE 30/33/38}\\
 \begin{block}{Kosmisk stråling}
 Kosmisk stråling er høyenergetiske partikler fra verdensrommet, som regel protoner eller atomkjerner med svært høye hastigheter som kommer inn i jordens atomsfære der de blir omgjort til forskjellige typer elementrærpartikler. Disse har ofte oppstått i supernovaeksplosjoner eller i kraftige magnetfelt nær sorte hull og kan ha beveget seg over tusenvis at lysår. Et problem med kosmisk stråling er at når de detekteres på jorda så har de allerede blitt omgjort til andre partikler i jordas atmosfære. I tillegg vil interstellare/planetariske magnetfelt bøye av partiklenes bane slik at det er vanskelig å bestemme opprinnelseretningen. Disse faktorene gjør at det er begrenset med informasjon vi kan få om universet fra kosmisk stråling.
 \end{block}
@@ -864,7 +865,7 @@ Kosmisk stråling er høyenergetiske partikler fra verdensrommet, som regel prot
 
 \begin{frame}
 \label{straling3}
-\lastpagebutton{straling2}
+\lastpagebutton{straling2}{\bf SIDE 31/33/38}\\
 \begin{block}{Nøytrinoer}
 Vi skal senere i kurset snakke om de forskjellige typene elementærpartikler. Nøytrinoer er en klasse av slike elementærparikler. De kalles ofte spøkelsespartikler da de nesten ikke reagerer med andre partikler og dermed er svært vanskelig å måle på. Selv om milliarder av nøytrinoer som genereres i solas kjerne passerer gjennom hver kvadratmeter på jorda hvert sekund, klarer vi likevel bare å detekere noen få om dagen. Intil vi får bedre teknologi som kan detektere langt flere nøytrinoer, så er informasjonen vi kan få om universet fra nøytrinoer begrenset. Men nøytrinostråling kan potensielt gi svært viktig informasjon om prosesser i universet. For eksempel så går nøytrinoene stort sett uhindret fra kjernereaksjonene i solas kjerne og til jorda, de er derfor et potensielt vindu til direkte observasjoner av hva som foregår i sentrum av sola.
 \end{block}
@@ -874,7 +875,7 @@ Vi skal senere i kurset snakke om de forskjellige typene elementærpartikler. N�
 
 \begin{frame}
 \label{straling4}
-\lastpagebutton{straling3}
+\lastpagebutton{straling3}{\bf SIDE 32/33/38}\\
 \begin{block}{Gravitasjonsbølger}
 Eksistensen av gravitasjonsbølger har vært forutsagt fra Einsteins relativitetsteori i over 100 år, men det er først i 2015 at man for første gang klarte å måle slike. Gravitasjonsbølger er små endringer av tidromsstrukturen som brer seg utover i rommet som bølger. De endrer på rom og tidstrukturen når de passerer forbi. De detekteres ved å se på bittesmå endringer i lengden av en lysstråle. Gravitasjonsbølger oppstår i prosesser der store tunge objekter er involvert, typisk kollisjoner mellom sorte hull og/eller nøytronstjerner. Ettersom detektorteknologien nå stadig bedres er gravitasjonsbølger en svært lovende kilde til informasjon om de mest ekstreme prosessene i universet.
 \end{block}
@@ -884,7 +885,7 @@ Eksistensen av gravitasjonsbølger har vært forutsagt fra Einsteins relativitet
 
 \begin{frame}
 \label{straling5}
-\lastpagebutton{straling4}
+\lastpagebutton{straling4}{\bf SIDE 33/33/38}\\
 \begin{block}{Elektromagnetisk stråling}
 Ingen over, ingen ved siden! Elektromagnetisk stråling er den klare vinneren. Nesten alt vi vet om universet har vi fra observasjoner av elektromagnetisk stråling fra objekter. Elektromagnetisk stråling kan ha svært forsjellig bølgelengde fra radiobølger på flere meter til gammastråling med bølgelengder på billiontedels meter. \href{https://en.wikipedia.org/wiki/Electromagnetic\_spectrum}{Tabellen i denne Wikipedia-artikkelen} gir en god oversikt over de forskjellige typene stråling i det elektromagentiske spektret. Siden elektromagnetisk stråling er så viktig skal vi se på de viktigste prosessene som genererer elektromagnetisk stråling i universet:
 \end{block}
@@ -912,7 +913,7 @@ Ingen over, ingen ved siden! Elektromagnetisk stråling er den klare vinneren. N
 
 \begin{frame}
 \label{straling6}
-\lastpagebutton{straling5}\label{elmag}
+\lastpagebutton{straling5}\label{elmag}{\bf SIDE 34/38/38}\\
 Du kommer til å lære og utlede i senere fysikkemner at når en ladd partikkel akselereres så sender den ut elektromagnetisk stråling. Husk at akselrasjon er både endring i fart men også endring i retning. Dette fenomenet ligger bak flere av prosessene som genererer stråling.
 \begin{alertblock}{Synkrotronstråling}
 Synkrotronstråling oppstår typisk når elektroner blir akselerert i magnetiske felt. Et elektron i et homogent magnetisk felt vil begynne å gå i sirkel/spiralbevegelse pga. den magnetiske kraften. Da endrer elektronet retning og sender ut synkrotronstråling. Tilsvarende gjelder for ladde partikler som er i ferd med å bli oppslukt av et sort hull og sirkler rundt med ekstremt høye hastigheter. Bølgelengden til strålingen avhenger av energiene involvert i prosessen. F.eks. sender vår egen galakse ut synkrotronstråling som radiobølger på grunn av kosmisk stråling som blir akselerert i det galaktiske magnetiske feltet.
@@ -922,7 +923,7 @@ Synkrotronstråling oppstår typisk når elektroner blir akselerert i magnetiske
 
 \begin{frame}
 \label{straling7}
-\lastpagebutton{straling6}
+\lastpagebutton{straling6}{\bf SIDE 35/38/38}\\
 \includegraphics[scale=0.15]{media/bremss.png}{\tiny (Figur: Wikipedia)}
 \begin{alertblock}{Bremsstrahlung}
 \small
@@ -933,7 +934,7 @@ Strålingen med det tyske navnet ``Bremsstrahlung'' oppstår når raske elektron
 
 \begin{frame}
 \label{straling8}
-\lastpagebutton{straling7}
+\lastpagebutton{straling7}{\bf SIDE 36/38/38}\\
 \begin{alertblock}{Termisk stråling}
 Denne typen stråling har vi allerede vært borti: termisk stråling fra et sort legeme er det vi kaller Planck-stråling som altså følger Plancks strålingslov. Tilfeldige bevegelser og kollisjoner mellom partikler gir opphav til stråling fra alle legemer/væsker/gasser og blir sterkere med temperaturen som jo gir høyere hastighet på partiklene.
 \end{alertblock}
@@ -942,7 +943,7 @@ Denne typen stråling har vi allerede vært borti: termisk stråling fra et sort
 
 \begin{frame}
 \label{straling9}
-\lastpagebutton{straling8}
+\lastpagebutton{straling8}{\bf SIDE 37/38/38}\\
 \begin{alertblock}{21cm-stråling fra nøytralt hydrogen}
 I kvantemekanikken har elementærpartikler det vi kaller kvantespinn, det kan sammenliknes med egenrotasjon til partiklene. Elektroner og protoner kan ha spinnretning opp eller ned (kun 2 mulige tilstander). I et hydrogenatom med et proton og et elektron så kan enten begge partiklene har spinn opp, begge ha spinn ned eller et spinn opp og det andre spinn ned. Den siste tilstanden er den som har lavest energi. Et system prøver alltid å oppnå lavest mulig energi, så når atomet er i den tilstanden at både elektron og proton har spinn i samme retning så vil det etter en viss tid skje en ``spin-flip'', at de faller ned til den laveste tilstanden der de har spinn i hver sin retning. Energiforskjellen blir da sendt ut som stråling. Energien mellom de to tilstandene tilsvarer elektromagnetisk stråling med bølgelengde 21.2cm (mikrobølger).
 \end{alertblock}
@@ -951,7 +952,7 @@ I kvantemekanikken har elementærpartikler det vi kaller kvantespinn, det kan sa
 
 \begin{frame}
 \label{straling10}
-\lastpagebutton{straling9}
+\lastpagebutton{straling9}{\bf SIDE 38/38/38}\\
 Illustrasjon av spin-flip i hydrogenatomet:
 \includegraphics[scale=0.3]{media/21cm.png}{\tiny (Figur: Wikipedia)}
 \hyperlink{oppsummering}{\pagebutton{Neste side}}

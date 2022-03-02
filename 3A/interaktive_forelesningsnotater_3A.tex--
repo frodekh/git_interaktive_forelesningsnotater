@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -300,6 +300,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{feil_nytema4}{\headlinebutton{Tully-Fisher-relasjonen}}
 \item \hyperlink{feil_nytema5}{\headlinebutton{Hubbles lov}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{feil_intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -311,7 +312,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \label{feil_intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
+\hyperlink{tableofcontents}{\pagebutton{Forrige side}}\\
 \includegraphics[scale=0.4]{media/ladder1.png}
 \column{0.5\textwidth}
 {\small
@@ -324,7 +325,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 
 \begin{frame}
 \label{intro2}
-\lastpagebutton{feil_intro}
+\lastpagebutton{feil_intro}{\bf SIDE 1/1/83}\\
 Dette interaktive forelesningsnotatet tilsvarer omkring en og en halv dobbelttime forelesning. Du får beskjed når du har kommet til det punktet jeg pleier å komme til i den første forelesningen (avsnittet om avstandsindikatorer).
 \begin{alertblock}{Vi begynner som vanlig...}
 ...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
@@ -355,14 +356,14 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{paral1}
-\dlastpagebutton{intro2}
+\dlastpagebutton{intro2}{\bf SIDE 2/28/83}\\
 \includegraphics[scale=0.3]{media/fox_middle.png}\hspace*{-11.3cm}{\tiny\textcolor{white}{Bilde fra:https://all-free-download.com/free-photos/download/nz-landscape-from-the-van\_514273.html, author: Benurs}}\\
 {\footnotesize Du kikker utover et fjell-landskap. I det fjerne kan du se fjell, men plutselig ser du en rev rett foran deg! Hvis du nå {\bf lukker det høyre øyet ditt}, tror du at dette kommer til å se forskjellige ut på noen måte? {\bf Hva tror du endrer seg?} } \textcolor{red}{\footnotesize MERK: siden dette er en 2D-skjerm vil du ikke se effekten her, du må tenkte deg hva som ville skjedd hvis du virkelig stod der ute på fjellet!}\hyperlink{paral2}{\pagebutton{\footnotesize Tenk deg godt om før du blar om!}}
 \end{frame}
 
 \begin{frame}
 \label{paral2}
-\lastpagebutton{paral1}
+\lastpagebutton{paral1}{\bf SIDE 3/28/83}\\
 \includegraphics[scale=0.3]{media/fox_right.png}\hspace*{-11.3cm}{\tiny\textcolor{white}{Små figurer: fra hiclipart.com}}\\
 {\bf Ser du forskjellen?} Bla gjerne litt frem og tilbake mellom denne og forrige side for å se om du ser forskjellen! {\bf Hva skjedde? Hvorfor ble det slik?}
 \hyperlink{red_paral3}{\pagebutton{Tenk deg godt om før du blar om!}}
@@ -373,7 +374,7 @@ Er du klar og har sendt inn skjemaet?
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_paral3}
-\lastpagebutton{paral2}
+\lastpagebutton{paral2}{\bf SIDE 4/28/83}\\
 \textcolor{yellow}{\Large \htmlcom{large}{Fant du ut av det??}}
 \textcolor{yellow}{Hvis ikke, prøv å tegne alt ovenfra: begge øynene dine, reven og fjellene. Ser du det nå?}
 \hyperlink{paral4}{\pagebutton{Tenk deg godt om før du blar om!}}
@@ -383,7 +384,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{paral4}
-\lastpagebutton{red_paral3}
+\lastpagebutton{red_paral3}{\bf SIDE 5/28/83}\\
 \includegraphics[scale=0.3]{media/fox_middle.png}\\
 {\footnotesize Hvis du nå har en teori, la oss se om du tar denne testen først: Her ser vi situasjonen med begge øyne igjen. Hvis du nå isteden lukker {\bf det venstre} øyet ditt, {\bf hva tror du da skjer?} \textcolor{red}{ Hi, hi, tenker du nok, {\bf det er jo opplagt}, men nå blir du lurt, så sjekk tegningen din fra forrige side skikkelig før du} \hyperlink{paral5}{\pagebutton{\footnotesize blar om.}}}
 \end{frame}
@@ -392,7 +393,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{paral5}
-\lastpagebutton{paral4}
+\lastpagebutton{paral4}{\bf SIDE 6/28/83}\\
 \includegraphics[scale=0.36]{media/fox_left.png}\\
 {\bf Ok da,} du ble ikke lurt (dvs. du ble lurt til å tro at du ble lurt...). Reven ser du plutselig nå til venstre. {\bf Men hva er det som skjer?}
 \hyperlink{paral6}{\pagebutton{Tenk deg godt om før du blar om!}}
@@ -400,7 +401,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{paral6}
-\lastpagebutton{paral5}
+\lastpagebutton{paral5}{\bf SIDE 7/28/83}\\
 \centerline{\includegraphics[scale=0.2]{media/fox_middle.png}}
 {\footnotesize Ja, hvis du ikke ser det, så skal jeg holde deg på pinebenken litt til. Nå skal du få en praktisk øvelse: hold tommelen opp foran ansiktet ditt (omtrent i midten). Se på tommelen med begge øyne. Lukk det ene øyet og se hvor tommelen er i forhold til et eller annet langt borte i bakgrunnen. Så lukker du isteden det andre øyet og ser hvor tommelen er i forhold til den samme tingen. {\bf Flytter den seg på samme måte som reven? Hvorfor?}}
 \hyperlink{paral7}{\pagebutton{Tenk deg godt om før du blar om!}}
@@ -408,7 +409,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{paral7}
-\lastpagebutton{paral6}
+\lastpagebutton{paral6}{\bf SIDE 8/28/83}\\
 \includegraphics[scale=0.3]{media/fox_eyes.png}\hspace*{-9cm}{\tiny\textcolor{white}{Små figurer: fra hiclipart.com}}\\
 Her ser du situasjonen ovenfra. Merk at siden fjellene er veldig langt borte så vil linjene fra hver av øynene til fjellene være nesten parallelle (har du lagt merke til at hvis du kjører bil og har månen rett over deg, så vil månen enda være rett over deg etter at du har kjørt en god stund. Linja fra deg til månen er rett opp i begge tilfeller). {\bf Ser du at fra det ene øyet er reven en vinkel $p$ til venstre for fjellet, fra det andre øyet er reven en vinkel $p$ til høyre?}
 \hyperlink{paral8}{\pagebutton{Ja, ser det nå!}}
@@ -416,7 +417,7 @@ Her ser du situasjonen ovenfra. Merk at siden fjellene er veldig langt borte så
 
 \begin{frame}
 \label{paral8}
-\lastpagebutton{paral7}
+\lastpagebutton{paral7}{\bf SIDE 9/28/83}\\
 \includegraphics[scale=0.36]{media/all_foxes.png}\\
 {\small Ser du at reven har flyttet seg en vinkel $2p$ fra det ene øyet til det andre? Hvis du peker på reven i det ene tilfellet og så flytter armen til å peke på reven i det andre tilfellet, vil du ha beveget armen en vinkel $2p$. Vi kaller $p$ {\bf parallaksevinkelen}. \textcolor{red}{ Men stopp en hal, er vinkelen $p$ her den samme som på forrige figur??}}
 \hyperlink{paral8b}{\pagebutton{Tjaaaaa}}
@@ -424,7 +425,7 @@ Her ser du situasjonen ovenfra. Merk at siden fjellene er veldig langt borte så
 
 \begin{frame}
 \label{paral8b}
-\lastpagebutton{paral8}
+\lastpagebutton{paral8}{\bf SIDE 10/28/83}\\
 \includegraphics[scale=0.19]{media/all_foxes.png}\includegraphics[scale=0.19]{media/fox_eyes.png}\\
 {\bf Ser du det??} Hvis ikke, spør! Men hva tror du vinkelen $p$ avhenger av? Hvordan kunne du fått denne vinkelen til å bli større eller mindre? Kanskje du kan prøve deg frem med tommelen og se om du ser det?
 \hyperlink{paral9}{\pagebutton{Neste side}}
@@ -432,7 +433,7 @@ Her ser du situasjonen ovenfra. Merk at siden fjellene er veldig langt borte så
 
 \begin{frame}
 \label{paral9}
-\lastpagebutton{paral8b}
+\lastpagebutton{paral8b}{\bf SIDE 11/28/83}\\
 \includegraphics[scale=0.19]{media/all_foxes.png}\includegraphics[scale=0.19]{media/fox_eyes.png}\\
 Hva vil skje med vinkelen $p$ hvis reven kommer lenger og lenger bort, og etterhvert nærmer seg fjellene?
 \hyperlink{paral10}{\pagebutton{Nå tror jeg at jeg ser det!}}
@@ -440,7 +441,7 @@ Hva vil skje med vinkelen $p$ hvis reven kommer lenger og lenger bort, og etterh
 
 \begin{frame}
 \label{paral10}
-\lastpagebutton{paral9}
+\lastpagebutton{paral9}{\bf SIDE 12/28/83}\\
 \includegraphics[scale=0.36]{media/fox_eyes_distance.png}\\
 Her er $B$ avstand fra nese til øye, vi kaller det {\bf baseline} på engelsk, og $d$ er avstanden til reven. Kan du finne en sammenheng mellom disse 3 størrelsene? {\bf Hint:} du kan anta at parallaksevinkelen er liten, det er den nesten alltid i sammenhenger der parallakse brukes.
 \hyperlink{paral11}{\pagebutton{\small Jeg har kommet frem til en formel, eller ihvertfall prøvd hardt!}}
@@ -448,7 +449,7 @@ Her er $B$ avstand fra nese til øye, vi kaller det {\bf baseline} på engelsk, 
 
 \begin{frame}
 \label{paral11}
-\lastpagebutton{paral10}
+\lastpagebutton{paral10}{\bf SIDE 13/28/83}\\
 \includegraphics[scale=0.36]{media/fox_eyes_distance.png}\\
 Husker du liten-vinkel-formelen? Den bør du kunne utlede selv uten hjelp. Hvis du ikke allerede har et svar, prøv igjen nå med liten-vinkel-formel...
 \hyperlink{paral12}{\pagebutton{\small Nå ser jeg det!}}
@@ -456,7 +457,7 @@ Husker du liten-vinkel-formelen? Den bør du kunne utlede selv uten hjelp. Hvis 
 
 \begin{frame}
 \label{paral12}
-\lastpagebutton{paral11}
+\lastpagebutton{paral11}{\bf SIDE 14/28/83}\\
 \includegraphics[scale=0.36]{media/fox_eyes_distance.png}\\
 Liten-vinkel-formel gir:
 \[
@@ -468,7 +469,7 @@ B=dp\ \ \ \textrm{(hvor\ p\ må\ være\ i\ radianer)}
 
 \begin{frame}
 \label{paral13}
-\lastpagebutton{paral12}
+\lastpagebutton{paral12}{\bf SIDE 15/28/83}\\
 \includegraphics[scale=0.36]{media/fox_eyes_distance.png}\\
 Er avstanden til reven:\hyperlink{feil_paral13a}{\choicebutton{229m}}\ \ \ \hyperlink{feil_paral13a}{\choicebutton{57m}}\ \ \ \ \hyperlink{feil_paral13a}{\choicebutton{286m}}\ \ \ \ \hyperlink{riktig_paral13b}{\choicebutton{115m}}
 \end{frame}
@@ -477,7 +478,7 @@ Er avstanden til reven:\hyperlink{feil_paral13a}{\choicebutton{229m}}\ \ \ \hype
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_paral13a}
-\lastpagebutton{paral13}
+\lastpagebutton{paral13}{\bf SIDE 16/28/83}\\
 \centerline{\includegraphics[scale=0.3]{media/fox_eyes_distance.png}}
 \textcolor{yellow}{\Large Det ble galt! Ble du kanskje lurte av en faktor 2 her? Husk at {\bf $B$ er avstanden fra nese til øye}, $2B$ er avstand fra øye til øye. Og {\bf parallaksevinkelen $p$ er definert som vinkelen fra to øyer (altså midten) til et øye} mens $2p$ er vinkelen fra øye til øye! Ser du det på figuren? Dette er en veldig typisk feil på eksamen, veldig bra at du gjorde den her og ikke på eksamen. Nå gjør du ikke denne feilen igjen!}
 \end{frame}
@@ -487,7 +488,7 @@ Er avstanden til reven:\hyperlink{feil_paral13a}{\choicebutton{229m}}\ \ \ \hype
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_paral13b}
-\clastpagebutton{paral13}
+\clastpagebutton{paral13}{\bf SIDE 17/28/83}\\
 \centerline{\includegraphics[scale=0.3]{media/fox_eyes_distance.png}}
 Helt riktig! Her er det fort gjort å trå feil: Husk at {\bf $B$ er avstanden fra nese til øye}, $2B$ er avstand fra øye til øye. Og {\bf parallaksevinkelen $p$ er definert som vinkelen fra to øyer (altså midten) til et øye} mens $2p$ er vinkelen fra øye til øye! Ser du det på figuren? Dette er en veldig typisk feil på eksamen, pass på at du alltid tegner figur og er klar over hva definisjonene av baseline $B$ og parallaksevinkel $p$ er.
 \hyperlink{paral14}{\pagebutton{Neste side}}
@@ -497,7 +498,7 @@ Helt riktig! Her er det fort gjort å trå feil: Husk at {\bf $B$ er avstanden f
 
 \begin{frame}
 \label{paral14}
-\lastpagebutton{riktig_paral13b}
+\lastpagebutton{riktig_paral13b}{\bf SIDE 18/28/83}\\
 Vi ser at parallaksemålinger kan brukes til å bestemme avstander! Nettopp det vi trengte! {\bf Men hvordan kan vi nå bruke dette i astrofysisk sammenheng?} Tenk deg at du har en stjerne i Melkeveien, og så ser du den i forhold til en fjern, fjern galakse! \textcolor{red}{Hvis du nå tar bilde med to teleksoper som har en stor avstand fra hverandre, så vil du vel få samme effekt som med reven?} {\bf MEN, hvis parallaksevinkelen $p$ er liten, mindre enn oppløsningsevnen til teleskopet, ja da vil du vel ikke kunne se stjernas ``bevegelse'' i forhold til den fjerne galaksen?} Hvis du husker fra diskusjonen om ekstrasolare planeter, så vil en parallaksevinkel som er mindre en oppløsningsvinkelen til teleskopet bety at stjerna da vil se ut til å være på samme plass på bildet og vi kan ikke måle parallaksevinkel!. \textcolor{red}{\bf For at vi skal kunne bruke parallakse for å måle avstander til astronomiske objekter, må vi derfor sørge for en stor parallaksevinkel $p$}. Men hvordan kan vi få til det?? La oss se på formelen igjen:
 \[
 B=dp\ \ \ \textrm{(hvor\ p\ må\ være\ i\ radianer)}
@@ -510,7 +511,7 @@ B=dp\ \ \ \textrm{(hvor\ p\ må\ være\ i\ radianer)}
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_paral15}
-\lastpagebutton{paral14}
+\lastpagebutton{paral14}{\bf SIDE 19/28/83}\\
 \centerline{\includegraphics[scale=0.2]{media/galaxy_left.png}}
 \textcolor{yellow}{La oss først se på et eksempel. Ovenfor ser du et bilde tatt fra et teleskop med en fjern galakse i bakgrunnen og en ``nær'' stjerne nederst til venstre. Hvis nå et annet teleskop som står et annet sted tar et bilde i samme retning, hvordan vil det set ut?}\hyperlink{feil_paral15b}{\pagebutton{\small Jeg vet det!}}\\
 {\footnotesize\textcolor{yellow}{Bilde: NASA/JPL-Caltech/ESA/Harvard-Smithsonian CfA }}
@@ -523,7 +524,7 @@ B=dp\ \ \ \textrm{(hvor\ p\ må\ være\ i\ radianer)}
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_paral15b}
-\lastpagebutton{feil_paral15}
+\lastpagebutton{feil_paral15}{\bf SIDE 20/28/83}\\
 %\centerline{\includegraphics[scale=0.2]{media/galaxy_left.png}\ \includegraphics[scale=0.2]{media/galaxy_right.png}}
 \centerline{\includegraphics[scale=0.2]{media/galaxy_comb.png}}
 \textcolor{yellow}{Nettopp ja! Her ser du bildene fra begge teleskopene! {\bf Ser du hvordan stjerna står på et annet sted i forhold til den fjerne galaksen, på samme måte som reven?}. Men hvis parallaksevinkelen $p$ hadde vært mye mindre så ville ikke stjerna flyttet på seg like mye, og kanskje ville den tilsynelatende (innenfor oppløsningsevnen til teleskopet) stått på samme sted. Derfor er det viktig å få denne vinkel (forflytningen) stor nok. Så da spør jeg en gang til, hva kan man gjøre for å få størst mulig $p$ for et objekt slik at parallakseeffekten blir synlig?
@@ -537,7 +538,7 @@ B=dp\ \ \ \textrm{(hvor\ p\ må\ være\ i\ radianer)}
 
 \begin{frame}
 \label{paral16}
-\lastpagebutton{feil_paral15}
+\lastpagebutton{feil_paral15}{\bf SIDE 21/28/83}\\
 {\small
 Hvis vi skriver om formelen
 \[
@@ -551,7 +552,7 @@ ser vi at {\bf stor $B$} eller {\bf liten $d$} vil gjør parallaksevinkelen $p$ 
 
 \begin{frame}
 \label{paral17}
-\lastpagebutton{paral16}
+\lastpagebutton{paral16}{\bf SIDE 22/28/83}\\
 Fikk du omkring 0.0003 lysår??
 \[
 d=\frac{B}{p}=\frac{12000\,\mathrm{km}}{\frac{0.4}{3600}\frac{\pi}{180}}=\frac{6187944187412\mathrm{m}}{3\times10^8\,\mathrm{m/s}\times365\times24\times3600\,\mathrm{s}}\mathrm{ly}=0.00065\,\mathrm{ly}
@@ -563,7 +564,7 @@ Den nærmeste stjerna til sola er omkring 4 lysår unna, men med parallakse kan 
 
 \begin{frame}
 \label{paral18}
-\lastpagebutton{paral17}
+\lastpagebutton{paral17}{\bf SIDE 23/28/83}\\
 \centerline{\includegraphics[scale=0.8]{media/fig_11-2.png}}
 
 {\Large {\bf GENIALT!} Hvis vi tar bildet med 6 måneders mellomrom, så få vi en baseline på 1AU!}
@@ -575,15 +576,15 @@ Den nærmeste stjerna til sola er omkring 4 lysår unna, men med parallakse kan 
 
 \begin{frame}
 \label{paral19}
-\lastpagebutton{paral18}
+\lastpagebutton{paral18}{\bf SIDE 24/28/83}\\
 \centerline{\includegraphics[scale=0.3]{media/galaxy_both.png}}
 Her ser vi stjerna med galaksen i bakgrunnen igjen, der bildene nå er lagt over hverandre slik at vi ser stjerna i begge posisjoner. Dette bildet er tatt med det samme teleskopet med 6 måneders mellomrom. Vinkelavstanden mellom de to stjernene på det sammensatte bildet her er 0.1''. Hvor langt unna er stjerna?
-\hyperlink{paral19a}{\choicebutton{ca. 32\,ly}}\ \ \ \hyperlink{riktig_paral19b}{\choicebutton{ca. 65\,ly}}\ \ \ \hyperlink{paral19a}{\choicebutton{ca. 130\,ly}}\ \ \ \hyperlink{paral19a}{\choicebutton{ca. 260\,ly}}\ \ \ \hyperlink{paral19a}{\choicebutton{ca. 520\,ly}}\ \ \ 
+\hyperlink{paral19a}{\choicebutton{ca. 32\,ly}}\ \ \ \hyperlink{riktig_paral19b}{\choicebutton{ca. 65\,ly}}\ \ \ \hyperlink{paral19a}{\choicebutton{ca. 130\,ly}}\ \ \ \hyperlink{paral19a}{\choicebutton{ca. 260\,ly}}\ \ \ \hyperlink{paral19a}{\choicebutton{ca. 520\,ly}}\ \ \
 \end{frame}
 
 \begin{frame}
 \label{paral19a}
-\lastpagebutton{paral19}
+\lastpagebutton{paral19}{\bf SIDE 25/28/83}\\
 \centerline{\includegraphics[scale=0.8]{media/fig_11-2.png}}
 \Large Har du glemt en faktor 2 et eller annet sted??? Eller hvordan var det med omregning fra buesekunder til grader til radianer? Eller omregning til lysår?
 \end{frame}
@@ -592,7 +593,7 @@ Her ser vi stjerna med galaksen i bakgrunnen igjen, der bildene nå er lagt over
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_paral19b}
-\clastpagebutton{paral19}
+\clastpagebutton{paral19}{\bf SIDE 26/28/83}\\
 Det er helt riktig! Da fikk du faktorene 2 rett! Og du fikk regnet riktig om til radianer. Gratulerer du har tatt det første steget ut i verdensrommet.
 \hyperlink{paral19c}{\pagebutton{Neste side}}
 \end{frame}
@@ -601,7 +602,7 @@ Det er helt riktig! Da fikk du faktorene 2 rett! Og du fikk regnet riktig om til
 
 \begin{frame}
 \label{paral19c}
-\lastpagebutton{riktig_paral19b}
+\lastpagebutton{riktig_paral19b}{\bf SIDE 27/28/83}\\
 Da er du klar for å se hvor definisjonen av {\bf parsec} kommer fra. Smak litt på ordet...{\bf par} og {\bf sec}. Hva med {\bf par}allakse per bue{\bf sek}und. Nettopp! Hvis en stjerne har \textcolor{red}{en parallakse på et buesekund, så er avstanden til stjernen en parsec!}. Og da går vi utifra en baseline B=1AU. La oss se:
 \[
 d=\frac{B}{p}=\frac{1AU}{p}=\frac{1AU}{p''\frac{1}{3600}\frac{\pi}{180}}=\frac{206265}{p''}AU
@@ -615,7 +616,7 @@ Neste side}
 
 \begin{frame}
 \label{paral19_d}
-\lastpagebutton{riktig_paral19b}
+\lastpagebutton{riktig_paral19b}{\bf SIDE 28/28/83}\\
 Da er du klar for å se hvor definisjonen av {\bf parsec} kommer fra. Smak litt på ordet...{\bf par} og {\bf sec}. Hva med {\bf par}allakse per bue{\bf sek}und. Nettopp! Hvis en stjerne har \textcolor{red}{en parallakse på et buesekund, så er avstanden til stjernen en parsec!}. Og da går vi utifra en baseline B=1AU. La oss se:
 \[
 d=\frac{B}{p}=\frac{1AU}{p}=\frac{1AU}{p''\frac{1}{3600}\frac{\pi}{180}}=\frac{206265}{p''}AU
@@ -649,7 +650,7 @@ Fikk du 10pc? Det skulle du!
 
 \begin{frame}
 \label{msfit1}
-\dlastpagebutton{riktig_paral19b}\label{hrfit}
+\dlastpagebutton{riktig_paral19b}\label{hrfit}{\bf SIDE 29/54/83}\\
 {\Huge \htmlcom{large}{Hovedserietilpasning????}}
 La oss dele opp ordet:{\bf Hovedserie}-tilpasning.
 Dette med tilpasning kan man kanskje få noe ut av men for å forstå hva hovedserien er, så trenger vi å bruke Hertzspring-Russel-diagrammet!
@@ -658,7 +659,7 @@ Dette med tilpasning kan man kanskje få noe ut av men for å forstå hva hoveds
 
 \begin{frame}
 \label{msfit2}
-\lastpagebutton{msfit1}
+\lastpagebutton{msfit1}{\bf SIDE 30/54/83}\\
 {\Huge \htmlcom{large}{Hertzsprung-Russel-diagrammet????}}
 Jepp, tida har kommet til å introdusere dere til et av de viktigste redskaper for å studere stjerners liv og virke. Men for å forstå hva et Hertzsprung-Russel-diagram, eller bare {\bf HR-diagram}, er så trenger du å vite hva en stjernehop er, eller rettere sagt hva en åpen hop og en kulehop er.
 \hyperlink{msfit3}{\pagebutton{Hvafforno'???}}
@@ -666,7 +667,7 @@ Jepp, tida har kommet til å introdusere dere til et av de viktigste redskaper f
 
 \begin{frame}
 \label{msfit3}
-\lastpagebutton{msfit2}
+\lastpagebutton{msfit2}{\bf SIDE 31/54/83}\\
 {\Huge \htmlcom{large}{Stjernehop????}}
 Hva i alle dager er det...
 \hyperlink{msfit4}{\pagebutton{...for noe???}}
@@ -675,7 +676,7 @@ Hva i alle dager er det...
 
 \begin{frame}
 \label{msfit4}
-\lastpagebutton{msfit3}
+\lastpagebutton{msfit3}{\bf SIDE 32/54/83}\\
 En {\bf stjernehop} er en samling av noen hundre eller noen tusen stjerner som alle ble født omtrent samtidig av den samme gass-skya. En stor kuleformet gassky med masse på flere tusen solmasser kollapset under sin egen gravitasjon og ble fragmentert i mindre kuleformede skyer som dannet stjerner. Stjernehoper kan deles inn i to grupper:
 \begin{itemize}
 \item {\bf Kulehoper (``globular clusters'' på engelsk):} Disse går i bane rundt en galakse, ofte langt fra galaksens sentrum og ofte har de baner utenfor galakseplanet. De har beholdt sin opprinnlige kuleform og er derfor en kuleformet ansamling av stjerner, derav navnet.
@@ -689,7 +690,7 @@ En {\bf stjernehop} er en samling av noen hundre eller noen tusen stjerner som a
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_msfit5}
-\lastpagebutton{msfit4}
+\lastpagebutton{msfit4}{\bf SIDE 33/54/83}\\
 \centerline{\includegraphics[scale=0.09]{media/open_cluster_NGC265.jpg}}
 \textcolor{yellow}{Her ser vi en åpen hop, kalt NGC265. Denne åpne hopen ligger faktisk ikke i Melkeveien men i en liten satelitt-galakse til Melkeveien (en galakse som går i bane rundt Melkeveien som en ``måne'') som heter SMC (Small Magellanic Clound, lille Magellanske sky). Du kjenner kanskje til en annen slik åpen hop allerede: \href{https://en.wikipedia.org/wiki/Pleiades}{Pleiadene} eller ``de syv søstre'' er en åpen hop der de sterkeste stjernene er godt synlig uten teleskop.}\hyperlink{feil_msfit6}{\pagebutton{Neste side}}\\
 {\footnotesize\textcolor{yellow}{Bilde: HST/NASA/ESA }}
@@ -700,7 +701,7 @@ En {\bf stjernehop} er en samling av noen hundre eller noen tusen stjerner som a
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_msfit6}
-\lastpagebutton{feil_msfit5}
+\lastpagebutton{feil_msfit5}{\bf SIDE 34/54/83}\\
 \centerline{\includegraphics[scale=0.13]{media/globular_cluster_NGC362.jpg}}
 \textcolor{yellow}{Her ser vi en kulehop NGC362. Det er omkring 150 kjente av disse som går i bane rundt Melkeveien. De er et flott skue også i et lite amatørteleskop.}\hyperlink{msfit7}{\pagebutton{Neste side}}\\
 {\footnotesize\textcolor{yellow}{Bilde: ESA/Hubble\& NASA}}
@@ -709,7 +710,7 @@ En {\bf stjernehop} er en samling av noen hundre eller noen tusen stjerner som a
 
 \begin{frame}
 \label{msfit7}
-\lastpagebutton{feil_msfit6}
+\lastpagebutton{feil_msfit6}{\bf SIDE 35/54/83}\\
 Siden stjernene i slike hoper er født omtrent samtidig, blir de brukt til å studere stjerners livsløp da du som regel vil finne stjerner på alle mulige forskjellige stadier i livsløpet. Et viktig redskap for å studere en slik hop er {\bf HR-diagrammet}. Her ser du et slikt:
 \centerline{\includegraphics[scale=0.4]{media/fig_11-3.png}}
 På x-aksen har vi altså stjernas overflatetemperatur, økende mot venstre. På y-aksen har vi stjernas luminositet eller absolutt størrelseklasse. For å lage et slikt diagram for en stjernehop, må du altså finne temperaturen og luminositeten til alle stjernene og plotte de inn her.
@@ -718,7 +719,7 @@ På x-aksen har vi altså stjernas overflatetemperatur, økende mot venstre. På
 
 \begin{frame}
 \label{msfit8}
-\lastpagebutton{msfit7}
+\lastpagebutton{msfit7}{\bf SIDE 36/54/83}\\
 \centerline{\includegraphics[scale=0.4]{media/fig_11-3.png}}
 {\small
 Når du gjør dette for en stjernehop vil du få et HR-diagram som det du ser her. De aller fleste stjernene ligger langs et bånd som går fra øverst til venstre (høy T og L) til nederst til høyre (lav T og L). Dette båndet kalles {\bf hovedserien (engelsk: main sequence)} og består av stjerner som enda fusjonerer hydrogen i kjernen (dette kommer vi tilbake til). Når stjernene blir eldre eser de ut og blir kjempestjerner (markert øverst til høyre i diagrammet, lav T og høy L). Til slutt vil stjerner med lav masse dø og bli til hvite dverger (nederst til venstre, høy T, lav L). \textcolor{red}{Det vi skal interessere oss for i del 3A er hovedserien}.
@@ -728,7 +729,7 @@ Når du gjør dette for en stjernehop vil du få et HR-diagram som det du ser he
 
 \begin{frame}
 \label{msfit9}
-\lastpagebutton{msfit8}
+\lastpagebutton{msfit8}{\bf SIDE 37/54/83}\\
 \centerline{\includegraphics[scale=0.38]{media/fig_11-3.png}}
 {\footnotesize
 {\bf Men hvordan har man fått laget dette diagrammet?} Overflatetemperaturen er vel ikke så vanskelig, her kan man f.eks. bruke Wiens forskyvningslov (husker du?) {\bf Men hva med luminositeten??}. Vel, luminositet og absolutt størrelseklasse var jo bare to forskjellige enheter å måle samme fysiske størrelse med, kjenner du en kan du regne ut den andre. Vi hadde en sammenheng:
@@ -742,7 +743,7 @@ Altså: kjenner du tilsynelatende størrelseklasse $m$ (det gjør du alltid så 
 
 \begin{frame}
 \label{msfit10}
-\lastpagebutton{msfit9}
+\lastpagebutton{msfit9}{\bf SIDE 38/54/83}\\
 \centerline{\includegraphics[scale=0.38]{media/fig_11-3.png}}
 Stjernene i hopen ligger veldig tett sammen. {\bf Avstanden mellom stjernene er forsvinnende liten i forhold til avstanden fra oss til hopen.} Kjenner vi avstanden til hopen, så er det en \textcolor{red}{god antakelse å si at alle stjernene i hopen har samme avstand $r$ fra oss.} Hvis vi da f.eks. måler avstanden til hopen med {\bf parallaksemetoden}, så har vi alt vi trenger for å lage oss et slikt diagram! {\bf Har du nå klart for deg hvordan du kunne gå frem for å lage et slikt diagram?} Hvis ikke, gå gjennom de forrige sidene en gang til og spør hvis noe er uklart.
 \hyperlink{msfit11}{\pagebutton{Jeg forstår og er klar for neste side}}
@@ -751,7 +752,7 @@ Stjernene i hopen ligger veldig tett sammen. {\bf Avstanden mellom stjernene er 
 
 \begin{frame}
 \label{msfit11}
-\lastpagebutton{msfit10}
+\lastpagebutton{msfit10}{\bf SIDE 39/54/83}\\
 \centerline{\includegraphics[scale=0.38]{media/fig_11-3.png}}
 De fysiske prosessene som danner stjerner er alltid de samme, og vil være den samme for alle hoper. Fordelingen av stjerner i HR-diagrammet forventer vi derfor vil være ganske lik mellom hopene. Dette er bekreftet av observasjoner av mange forskjellige hoper. Vi får alltid et HR-diagram, og da spesielt en hovedserie, som er akkurat slik som på denne figuren med samme forhold mellom $L$ og $T$ for hovedseriestjernene.
 \hyperlink{feil_msfit12}{\pagebutton{Neste side}}
@@ -762,7 +763,7 @@ De fysiske prosessene som danner stjerner er alltid de samme, og vil være den s
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_msfit12}
-\lastpagebutton{msfit11}
+\lastpagebutton{msfit11}{\bf SIDE 40/54/83}\\
 \centerline{\includegraphics[scale=0.09]{media/open_cluster_NGC265.jpg}}
 \textcolor{yellow}{Hva nå med vår åpne hop NGC265 som ligger i den Store Magellanske Sky? Den ligger for langt unna til at vi kan måle avstanden med parallakse! Vi kan altså kun måle {\bf tilsynelatende størrelseklasse} $m$ og {\bf ikke absolutt størrelseklasse} $M$ for stjernene i denne hopen. Overflatetemperaturen kan vi enda måle, da vi kun trenger spektret fra stjernen for å måle den.}
 \hyperlink{msfit13}{\pagebutton{Neste side}}
@@ -771,7 +772,7 @@ De fysiske prosessene som danner stjerner er alltid de samme, og vil være den s
 
 \begin{frame}
 \label{msfit13}
-\lastpagebutton{feil_msfit12}
+\lastpagebutton{feil_msfit12}{\bf SIDE 41/54/83}\\
 \centerline{\includegraphics[scale=0.38]{media/fig_11-3.png}}
 Dermed kunne vi jo forsøke å lage oss et HR-diagram som det over, men med $m$ istedenfor $M$ på y-aksen. Da vil vi ikke lenger ha luminositet på y-aksen. Men hvordan vil dette HR-diagrammet se ut? Hva vil være forskjellen med det vanlige HR-diagrammet som har absolutt størrelseklasse og dermed $M$ på y-aksen?
 \hyperlink{red_msfit14}{\pagebutton{Tenk det godt om før du blar om!}}
@@ -781,7 +782,7 @@ Dermed kunne vi jo forsøke å lage oss et HR-diagram som det over, men med $m$ 
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_msfit14}
-\lastpagebutton{msfit13}
+\lastpagebutton{msfit13}{\bf SIDE 42/54/83}\\
 {\Large\htmlcom{large}{
 \textcolor{yellow}{Her bør du faktisk stoppe opp og tenke litt! Gi deg noen minutter til å tenke godt gjennom problemstillingen: hvordan tror du dette diagrammet blir seende ut? Du har all kunnskap du trenger for å vite det!}
 }}
@@ -793,7 +794,7 @@ Dermed kunne vi jo forsøke å lage oss et HR-diagram som det over, men med $m$ 
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_msfit15}
-\lastpagebutton{red_msfit14}
+\lastpagebutton{red_msfit14}{\bf SIDE 43/54/83}\\
 {\Large\htmlcom{large}{
 \textcolor{yellow}{OK da, du skal få et hint: formelen
 \[
@@ -808,7 +809,7 @@ gir deg svaret!}
 
 \begin{frame}
 \label{msfit16}
-\lastpagebutton{red_msfit15}
+\lastpagebutton{red_msfit15}{\bf SIDE 44/54/83}\\
 La oss skrive om formelen:
 \[
 m=M+5\log{\frac{r}{10\mathrm{pc}}}
@@ -820,7 +821,7 @@ Ser du at hvis vi nå plotter $m$ på y-aksen isteden for $M$, så blir $m$-verd
 
 \begin{frame}
 \label{msfit17}
-\lastpagebutton{msfit16}
+\lastpagebutton{msfit16}{\bf SIDE 45/54/83}\\
 {\small\bf Får vi ikke da noe slik som dette?}
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
@@ -834,7 +835,7 @@ Ser du at hvis vi nå plotter $m$ på y-aksen isteden for $M$, så blir $m$-verd
 
 \begin{frame}
 \label{msfit17x}
-\lastpagebutton{msfit17}
+\lastpagebutton{msfit17}{\bf SIDE 46/54/83}\\
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
 {\Large For det første: er hopen til høyre nærmere eller lenger vekk enn 10pc? (og hvordan kan du se det uten noe regning?)}
@@ -843,7 +844,7 @@ Ser du at hvis vi nå plotter $m$ på y-aksen isteden for $M$, så blir $m$-verd
 
 \begin{frame}
 \label{msfit17a}
-\lastpagebutton{msfit17x}
+\lastpagebutton{msfit17x}{\bf SIDE 47/54/83}\\
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
 {\Large Det ble nok galt! Vi vet at de absolutte størrelseklassene i en stjernehop er fordelt som på figuren til venstre. Er den tilsynelatende størrelseklassen for stjernene i hopen til høyre større eller mindre enn den absolutte? Og betyr større eller mindre tilsyndelatende størrelseklasse at stjernene er lettere eller vanskeligere å se på himmelen?}
@@ -852,17 +853,17 @@ Ser du at hvis vi nå plotter $m$ på y-aksen isteden for $M$, så blir $m$-verd
 
 \begin{frame}
 \label{msfit17b}
-\lastpagebutton{msfit17x}
+\lastpagebutton{msfit17x}{\bf SIDE 48/54/83}\\
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
 {\Large\htmlcom{large}{ Flott! Stemmer!}}
-{\bf Er du enig i at figuren til venstre viser fordelingen av absolutte størrelseklasser for en (hvilken som helst) stjernehop?} (hvis ikke, bla tilbake og les på nytt). Hvis du går tilbake til 1D og definisjonen av {\bf absolutt størrelseklasse så var det den tilsynelatende størrelseklassen som en stjerne ville hatt hvis den ble flyttet til en avstand av 10 pc.} 
+{\bf Er du enig i at figuren til venstre viser fordelingen av absolutte størrelseklasser for en (hvilken som helst) stjernehop?} (hvis ikke, bla tilbake og les på nytt). Hvis du går tilbake til 1D og definisjonen av {\bf absolutt størrelseklasse så var det den tilsynelatende størrelseklassen som en stjerne ville hatt hvis den ble flyttet til en avstand av 10 pc.}
 \hyperlink{msfit18}{\pagebutton{OK! Skjønner!}}
 \end{frame}
 
 \begin{frame}
 \label{msfit18}
-\lastpagebutton{msfit17b}
+\lastpagebutton{msfit17b}{\bf SIDE 49/54/83}\\
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
 La oss velge ut en gitt temperatur, f.eks. den markert med A på x-aksen. Hvis vi ser på stjernene med denne temperaturen for hopen vår på figuren til høyre så ser vi at {\bf stjerner med denne temperaturen har en tilsynelatende størrelseklasse på omkring 4, enig?} Samtidig ser vi på diagrammet til venstre at {\bf stjerner med denne temperaturen skal ha en absolutt størrelseklasse på ca.2?} Dvs. stjerner i denne hopen med størrelseklasse 4 får størrelseklasse 2 (altså blir sterkere!) hvis de flyttes til 10 pc. \textcolor{red}{Det må vel bety at de er lenger unna enn 10 pc?}
@@ -872,7 +873,7 @@ La oss velge ut en gitt temperatur, f.eks. den markert med A på x-aksen. Hvis v
 
 \begin{frame}
 \label{msfit19}
-\lastpagebutton{msfit18}
+\lastpagebutton{msfit18}{\bf SIDE 50/54/83}\\
 %\centerline{\includegraphics[scale=0.38]{media/fig_11-4a.pdf}\includegraphics[scale=0.38]{media/fig_11-4b.pdf}}
 \centerline{\includegraphics[scale=0.2]{media/fig_11-4comb.png}}
 Tilbake til hovedspørsmålet:\\
@@ -882,7 +883,7 @@ m-M=5\log{\frac{r}{10\mathrm{pc}}}
 \]
 til å finne avstanden til stjernehopen i diagrammet til høyre?} Er den ...\\
 
-\hyperlink{feil_msfit19a}{\choicebutton{8pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{10pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{12pc}}\ \ \ \hyperlink{riktig_msfit19b}{\choicebutton{25pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{50pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{100pc}}\ \ \ 
+\hyperlink{feil_msfit19a}{\choicebutton{8pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{10pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{12pc}}\ \ \ \hyperlink{riktig_msfit19b}{\choicebutton{25pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{50pc}}\ \ \ \hyperlink{feil_msfit19a}{\choicebutton{100pc}}\ \ \
 \end{frame}
 
 
@@ -890,7 +891,7 @@ til å finne avstanden til stjernehopen i diagrammet til høyre?} Er den ...\\
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_msfit19a}
-\lastpagebutton{msfit19}
+\lastpagebutton{msfit19}{\bf SIDE 51/54/83}\\
 \textcolor{yellow}{\Large\htmlcom{large}{Det ble nok galt! Hvorfor tar du ikke utgangspunkt i stjernene med temperatur A slik som vi gjorde på de forrige sidene? Vi vet jo at diagrammet har blitt skiftet opp/ned med en konstant størrelse (gå tilbake igjen hvis du er usikker på hvorfor), så da skulle vi få samme resultat uansett hvilken temperatur vi ser på. Da har du $m$ og $M$...}}
 \end{frame}
 }
@@ -899,12 +900,12 @@ til å finne avstanden til stjernehopen i diagrammet til høyre?} Er den ...\\
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_msfit19b}
-\clastpagebutton{msfit19}
+\clastpagebutton{msfit19}{\bf SIDE 52/54/83}\\
 Det er helt riktig! Hvis vi ser på f.eks. temperaturen A så ser vi at diagrammet har blitt skiftet opp med $m-M=2$. Siden avstanden $r$ er omtrent den samme for alle stjerner så er jo dette skiftet fra $m$ til $M$ en konstant størrelse for alle stjernene i hopen (og dermed for alle temperaturer):
 \[
 m-M=5\log{\frac{r}{10\mathrm{pc}}}
 \]
-Prøv gjerne med en annen temperatur og du vil enda finne $m-M=2$. Det vi har gjort er å {\bf tilpasse} hovedserien fra HR-diagrammet med $m$ på y-aksen til hovedserien i HR-diagrammet med $M$ på y-aksen. Vi finner at hvis vi flytter hovedserien i HR-diagrammet for hopen med ukjent avstand med $m-M=2$ så vil de to diagrammene ligge nøyaktig på hverandre. Når vi har funnet det konstante skiftet $m-M$, så kan vi bare putte inn i formelen og finne avstanden. 
+Prøv gjerne med en annen temperatur og du vil enda finne $m-M=2$. Det vi har gjort er å {\bf tilpasse} hovedserien fra HR-diagrammet med $m$ på y-aksen til hovedserien i HR-diagrammet med $M$ på y-aksen. Vi finner at hvis vi flytter hovedserien i HR-diagrammet for hopen med ukjent avstand med $m-M=2$ så vil de to diagrammene ligge nøyaktig på hverandre. Når vi har funnet det konstante skiftet $m-M$, så kan vi bare putte inn i formelen og finne avstanden.
 \hyperlink{msfit20}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -912,7 +913,7 @@ Prøv gjerne med en annen temperatur og du vil enda finne $m-M=2$. Det vi har gj
 
 \begin{frame}
 \label{msfit20}
-\lastpagebutton{riktig_msfit19b}
+\lastpagebutton{riktig_msfit19b}{\bf SIDE 53/54/83}\\
 Du har altså gjort en {\bf hovedserietilpasning} for å finne avstanden til stjernehopen. Prinsippet er jo at du kjenner hvordan fordelingene av luminositeter (absolutte størrelseklasser) som funksjon av temperatur (HR-diagram) {\bf skal} være for en slik hop. Og så ser du på fordelingen av mottatt fluks som funksjon av temperatur for stjernene i en hop med ukjent avstand. Siden du vet hvilke luminositeter disse stjernene egentlig har, så justerer du avstanden helt til du finner en avstand som gir det den målte mottatte fluksen gitt at du kjenner luminositeten. Dette var en annen måte å forklare hovedserietilpasning på.\\
 \vspace*{0.4cm}
 {\bf Har du lagt merke til at dette virkelig er en avstandsstige: vi måtte først ta det første steget og finne avstander til hoper med hjelp av parallakse. Kun etter at vi hadde avstanden til noen hoper, kunne vi lage HR-diagrammet med $M$ på y-aksen. Og med denne kunne vi nå finne avstanden til hoper så langt unna at parallakse ikke funker.}\\
@@ -926,7 +927,7 @@ Du har altså gjort en {\bf hovedserietilpasning} for å finne avstanden til stj
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_msfit21}
-\lastpagebutton{msfit20}
+\lastpagebutton{msfit20}{\bf SIDE 54/54/83}\\
 \centerline{\includegraphics[scale=0.09]{media/open_cluster_NGC265.jpg}}
 \textcolor{yellow}{Tilbake til vår åpne hop NGC265 som ligger i den Store Magellanske Sky. Når vi gjør hovedserietilpasning til denne åpne hopa, så finner vi jo faktisk også ut omtrent hvor langt unna den Store Magellanske Sky ligger! Men hovedserietilpasning har begrenset rekkevidde. Vi klarer ikke å se enkeltstjerner i galaksehoper i galakser utenfor vårt eget nabolag av satelittgalakser. Dermed trenger vi andre metoder for å finne avstander til andre galakser.}
 \hyperlink{feil_pause}{\pagebutton{Neste side}}
@@ -978,7 +979,7 @@ Ihvertfall 15 min pause...
 
 \begin{frame}
 \label{di1}
-\lastpagebutton{feil_msfit21}\label{cepheider}
+\lastpagebutton{feil_msfit21}\label{cepheider}{\bf SIDE 55/69/83}\\
 {\footnotesize
 For å kunne måle avstander lenger utover i universet, trenger vi en av de aller viktigste metodene for avstandsmålinger: {\bf avstandsindikatorer}. Avstandsindikatorer er objekter som på en eller annen måte avslører egenskaper ved seg selv som gjør at de kan brukes til avstandsmålinger. Det er to typer:
 \begin{itemize}
@@ -1000,7 +1001,7 @@ Det finnes mange slike avstandsindikatorer, \textcolor{red}{i AST2000 skal vi ku
 
 \begin{frame}
 \label{di2}
-\lastpagebutton{di1}
+\lastpagebutton{di1}{\bf SIDE 56/69/83}\\
 \begin{block}{\bf Kefeider eller Kefeidestjerner (engelsk: Cepheids)...}
 ...er pulserende stjerner. Dette er aldrende stjerner som har begynt den sakte veien mot slutten av livsløpet sitt. Noen aldrende stjerner vil gå gjennom perioder der stjernen pulserer, dvs. at de endrer radiusen sin regelmessig, ofte med periode på noen dager. Noen av de første pulserende stjernene av denne typen som ble studert var stjernen $\delta$ Cephei i stjernebildet \href{https://snl.no/Kefeus}{Kefeus}, derav navnet.
 \end{block}
@@ -1012,7 +1013,7 @@ Det som gjør Kefeidene spesielle er at pulsasjonsperioden sterkt avhenger av lu
 
 \begin{frame}
 \label{di2b}
-\lastpagebutton{di2}
+\lastpagebutton{di2}{\bf SIDE 57/69/83}\\
 Ved hjelp av målinger på Kefeider med {\bf kjent avstand}, har man funnet følgende sammenheng mellom pulsasjonsperiode $P_d$ i {\it dager} og absolutt størrelseklasse $M_V$. Merk at den absolutte størrelseklassen her har en indeks $V$ som står for visuell. Dvs. at størrelseklassen er basert på fluks i den visuelle delen av det elektromagnetiske spektret, dette skal vi straks se litt på, men vi snakker om en absolutt størrelseklasse (som er et mål på luminositet). {\bf Periode-Luminositets-relasjonen for Kefeider er (empirisk):}
 \[
 M_V=-2.81\log_{10}P_d-1.43
@@ -1024,7 +1025,7 @@ M_V=-2.81\log_{10}P_d-1.43
 
 \begin{frame}
 \label{di3}
-\lastpagebutton{di2b}
+\lastpagebutton{di2b}{\bf SIDE 58/69/83}\\
 Edwin Hubble var en av de første som prøvde å måle avstanden til nabogalaksen vår Andromeda. Han fant flere pulserende stjerner i den og brukte periode-luminositets-relasjonen til disse til å måle avstanden. Han fant at avstanden til Andromeda-galaksen er omkring en million lysår. Idag vet vi at den faktiske avstanden er to og en halv gang så stor. {\bf Hvordan fikk han så feil tall?} Man har i ettertid oppdaget at pulserende stjerner deler seg inn i 3 typer, hver med sin egen periode-luminositets-relasjonen. \textcolor{red}{Man må altså vite hvilken av disse 3 typene stjerne man har før man kan bruke den respektive periode-luminositets-relasjonen for å finne avstanden!}. {\bf De 3 typene er:}
 \begin{itemize}
 \item \textcolor{blue}{De klassiske Kefeidene} som vi akkurat snakket om. Fordelen med disse er at de er svært lyssterke og lett kan sees i fjerne galakser.
@@ -1037,7 +1038,7 @@ Edwin Hubble var en av de første som prøvde å måle avstanden til nabogalakse
 
 \begin{frame}
 \label{di4}
-\lastpagebutton{di3}
+\lastpagebutton{di3}{\bf SIDE 59/69/83}\\
 La oss gå tilbake til periode-luminositets-relasjonen:
 \[
 M_V=-2.81\log_{10}P_d-1.43
@@ -1055,19 +1056,19 @@ m=m_\mathrm{ref}-2.5\log{\frac{F}{F_\mathrm{ref}}}
 
 \begin{frame}
 \label{di5}
-\lastpagebutton{di4}
+\lastpagebutton{di4}{\bf SIDE 60/69/83}\\
 Men nå skulle vel vi snakke om {\bf absolutt} størrelseklasse? Ikke tilsynelatende? \textcolor{red}{OK, men det var jo bare a flytte objektet til en avstand av 10pc, var det ikke? Altså skal vi bruke mottatt fluks fra objektet, hvis dette objektet hadde befunnet seg i en avstand av 10pc.} Vi kaller $F(10\mathrm{pc})$ for mottatt fluks fra objektet hvis det blir flyttet til en avstand av 10pc. Da får vi for absolutt størrelseklasse at
 \[
 M=M^\mathrm{ref}-2.5\log{\frac{F(10\mathrm{pc})}{F^\mathrm{ref}(10\mathrm{pc})}}
 \]
 (denne kommer fra likningen på forrige side, etter at vi har flyttet objektene til avstand 10 pc, eller beregnet hvilken fluks {\it de ville hatt} i den avstanden, henger du med?)
-Men uten å ha tenkt så mye over det før, så er jo $F$ her total fluks over alle mulige bølgelengder, fra radio til gammastråling. En slik total {\bf bolometrisk} fluks med tilhørende {\bf bolometrisk størrelseklasse} er vanskelig å måle. 
+Men uten å ha tenkt så mye over det før, så er jo $F$ her total fluks over alle mulige bølgelengder, fra radio til gammastråling. En slik total {\bf bolometrisk} fluks med tilhørende {\bf bolometrisk størrelseklasse} er vanskelig å måle.
 \hyperlink{di6}{\pagebutton{Neste side}}
 \end{frame}
 
 \begin{frame}
 \label{di6}
-\lastpagebutton{di5}
+\lastpagebutton{di5}{\bf SIDE 61/69/83}\\
 {\small
 Når man måler fluksen fra et objekt så kan {\bf detektoren normalt kun måle fluks i et begrenset bølgelengdeområde.} Den fluksen som blir målt fra \textcolor{red}{en detektor som er sensitiv til synlig lys (og ikke andre bølgelender) gir oss ut en målt fluks $F_V$ (mens hvis du hadde observert absolutt alle bølgelengder, så hadde du målt fluks $F$).} Den fluksen vi måler med en detektor som er sensitiv til synlig lys er dermed en {\it filtrert fluks}:
 \[
@@ -1086,7 +1087,7 @@ M_V=M_V^\mathrm{ref}-2.5\log{\frac{F_V(10\mathrm{pc})}{F_V^\mathrm{ref}(10\mathr
 
 \begin{frame}
 \label{di7}
-\lastpagebutton{di6}
+\lastpagebutton{di6}{\bf SIDE 62/69/83}\\
 Helt tilsvarende finnes det blå (B) og ultrafiolette (U) filtre med topper i de respektive bølgelgendeområder.
 \begin{itemize}
 \item V-filtret er et gaussisk filter med topp på $\lambda_0=550$nm og FWHM=89nm.
@@ -1099,7 +1100,7 @@ Helt tilsvarende finnes det blå (B) og ultrafiolette (U) filtre med topper i de
 
 \begin{frame}
 \label{di7b}
-\lastpagebutton{di7}
+\lastpagebutton{di7}{\bf SIDE 63/69/83}\\
 {\bf Eksempel: Avsluttende eksamen fra 2009.}
 \includegraphics[scale=0.35]{media/cepheide_kurve.png}\\
 Kurven viser visuell tilsynelatende størrelseklasse $m_v$ for en Kefeidestjerne. Anslå avstanden til stjerna? Husk sammenhengen
@@ -1113,7 +1114,7 @@ M_V=-2.81\log_{10}P_d-1.43\ \ \ \mathrm{og}\ \ \ m-M=5\log{\frac{r}{10\mathrm{pc
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_di7c}
-\lastpagebutton{di7b}
+\lastpagebutton{di7b}{\bf SIDE 64/69/83}\\
 \textcolor{yellow}{\Huge Det ble nok galt! Husker du at perioden $P_d$ skal være i {\bf dager}? Eller har du fått minustegnene riktig? Eller la du merke til at svaret var i {\bf lysår} og ikke i parsec? Hvis du ikke har gjor noen av disse feilene, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3a/videoer/video3a_2.mp4}{denne videoen} for å få noen tips.}
 \end{frame}
 }
@@ -1123,7 +1124,7 @@ M_V=-2.81\log_{10}P_d-1.43\ \ \ \mathrm{og}\ \ \ m-M=5\log{\frac{r}{10\mathrm{pc
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_di7d}
-\clastpagebutton{di7b}
+\clastpagebutton{di7b}{\bf SIDE 65/69/83}\\
 Helt riktig! På eksamen, pass på ikke å glemme at $P_d$ er i {\bf dager}!. Hvis du fikk dette til uten problemer, gå videre til neste side. Hvis du er litt usikker kan du se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3a/videoer/video3a_2.mp4}{denne videoen}.
 \hyperlink{di8}{\pagebutton{Neste side}}
 \end{frame}
@@ -1134,7 +1135,7 @@ Helt riktig! På eksamen, pass på ikke å glemme at $P_d$ er i {\bf dager}!. Hv
 
 \begin{frame}
 \label{di8}
-\lastpagebutton{di7b}
+\lastpagebutton{di7b}{\bf SIDE 66/69/83}\\
 {\bf Kefeider er svært lyssterke stjerner og kan sees i galakser så langt som 30Mpc unna! Det vil si at de kan brukes til å finne avstander til galakser som ligger millioner av lysår borte. Men for galakser som ligger enda lenger borte trenger vi standard-lyskilder som er enda mer lyssterke.} En slik standard-lyskilde kan være...
 \begin{block}{\bf supernovaeksplosjoner}
 Dette er kraftige eksplosjoner, så kraftig at når det har skjedd i vår egen Melkevei (skjer ca. en gang hvert 400. år) så har man iblant kunnet lese om natten i lyset fra supernovaen. En slik eksplosjon gir et ekstremt kraftig lys som varer i en dag eller to og er ofte klart synlig også om dagen. De deles opp i to typer:
@@ -1149,7 +1150,7 @@ Dette er kraftige eksplosjoner, så kraftig at når det har skjedd i vår egen M
 
 \begin{frame}
 \label{di9}
-\lastpagebutton{di8}
+\lastpagebutton{di8}{\bf SIDE 67/69/83}\\
 Vi vet idag at
 \begin{itemize}
 \item ...supernovaer av type Ib, Ic og type II er såkalte kjernekollaps-supernovaer, altså stjerner som dør i en kraftig eksplosjon. Nøyaktiv hvordan og hvorfor kommer vi tilbake til om et par forelesninger.
@@ -1164,7 +1165,7 @@ Siden denne kritiske massegrensen alltid er den samme, så vil luminositeten, en
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_di10}
-\lastpagebutton{di9}
+\lastpagebutton{di9}{\bf SIDE 68/69/83}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.1]{media/SNIa.jpg}
@@ -1183,7 +1184,7 @@ Siden denne kritiske massegrensen alltid er den samme, så vil luminositeten, en
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_di11}
-\lastpagebutton{feil_di10}
+\lastpagebutton{feil_di10}{\bf SIDE 69/69/83}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.1]{media/SNIa.jpg}
@@ -1221,7 +1222,7 @@ Supernovaer av type Ia er svært lyssterke og kan observeres i galakser som er o
 
 \begin{frame}
 \label{tf1}
-\lastpagebutton{feil_di11}\label{tf}
+\lastpagebutton{feil_di11}\label{tf}{\bf SIDE 70/81/83}\\
 {\bf Tully-Fisher-relasjonen er en sammenheng mellom bredden av 21cm-emisjonslinja fra en galakse og absolutt størrelseklasse (luminositet) til denne galaksen.} Hvis vi fra bredden av 21cm-linja kan finne luminositeten til galaksen, ja da har vi egentlig nok en standard-lyskilde, dvs. et objekt (en galakse) som forteller hva luminositeten her. Og vi kan bruke samme likning som tidligere for å finne avstanden.\\
 \vspace*{1cm}
 {\bf Men hva var nå 21cm-linja igjen?} Husker du fra del 1D at nøytralt hydrogen sender ut stråling med bølgelengde 21cm fra en såkalt spin-flip? (hvis ikke, ta en \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture\_notes/part1d.pdf}{kikk tilbake igjen} nå). \textcolor{red}{En spiralgalakse inneholder mange skyer av nøytralt hydrogen. Disse går i baner rundt galaksesenteret på samme måte som stjernene i mange forskjellige avstander fra galaksesenteret.}\\
@@ -1234,7 +1235,7 @@ Supernovaer av type Ia er svært lyssterke og kan observeres i galakser som er o
 
 \begin{frame}
 \label{tf2}
-\lastpagebutton{tf1}
+\lastpagebutton{tf1}{\bf SIDE 71/81/83}\\
 {\huge\htmlcom{large}{ På de neste sidene skal du få gjøre litt detektivarbeid. Du skal se rett og slett se hvor mange tips du trenger før du innser {\bf hvorfor} det er en sammenheng mellom bredden av 21cm-linja og luminositeten til galaksen. {\bf MERK at det ikke er meningen at du skal finne denne sammenhengen, den er komplisert, men du skal innse hvorfor det finnes en sammenheng her.}}}
 \textcolor{red}{Første forsøk kommer nå: klarer du å se {\bf hvorfor} det er en slik sammenheng uten noe tips? Tegn galaksen med hydrogenskyene i bane, det kan være til hjelp.}
 \hyperlink{tf3}{\pagebutton{Tenk deg godt om før du går til første tips!}}
@@ -1242,7 +1243,7 @@ Supernovaer av type Ia er svært lyssterke og kan observeres i galakser som er o
 
 \begin{frame}
 \label{tf3}
-\lastpagebutton{tf2}
+\lastpagebutton{tf2}{\bf SIDE 72/81/83}\\
 \begin{alertblock}{Tips 1:}
 Emisjonslinjen på 21cm fra en galakse har en meget spesiell form. Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3a/videoer/video3a_3.mp4}{denne videoen} for å se formen på linja. Kan du tenke deg hvorfor linja har denne formen? Og hjelper det deg til å forstå hvorfor vi har en sammenheng mellom bredden av 21cm-linja og luminositeten til galaksen?
 \end{alertblock}
@@ -1251,7 +1252,7 @@ Emisjonslinjen på 21cm fra en galakse har en meget spesiell form. Ta en kikk p�
 
 \begin{frame}
 \label{tf4}
-\lastpagebutton{tf3}
+\lastpagebutton{tf3}{\bf SIDE 73/81/83}\\
 \begin{alertblock}{Tips 2:}
 {\Huge \htmlcom{large}{Dopplereffekten! Kom du på sporet nå?}}
 \end{alertblock}
@@ -1260,7 +1261,7 @@ Emisjonslinjen på 21cm fra en galakse har en meget spesiell form. Ta en kikk p�
 
 \begin{frame}
 \label{tf5}
-\lastpagebutton{tf4}
+\lastpagebutton{tf4}{\bf SIDE 74/81/83}\\
 \begin{alertblock}{Tips 3:}
 Forrige tips fortalte deg at Dopplereffekten gir opphave til den spesielle formen på linja. I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3a/videoer/video3a_4.mp4}{denne videoen} får du se hvordan! {\bf MEN det som ikke kommer frem i videoen er hvorfor de to toppene på siden er høyere enn i sentrum av linja.} Akkurat dette er nøkkelen til hvorfor vi har en sammenheng mellom bredden av 21cm-linja og luminositeten til galaksen. Ser du det nå?
 \end{alertblock}
@@ -1269,7 +1270,7 @@ Forrige tips fortalte deg at Dopplereffekten gir opphave til den spesielle forme
 
 \begin{frame}
 \label{tf6}
-\lastpagebutton{tf5}
+\lastpagebutton{tf5}{\bf SIDE 75/81/83}\\
 \begin{alertblock}{Tips 4:}
 {\Huge\htmlcom{large}{ Mørk materie og galaktiske rotasjonskurver! Ser du nå hvorfor de to toppene på siden er høyere enn i sentrum av linja?}}
 \end{alertblock}
@@ -1278,7 +1279,7 @@ Forrige tips fortalte deg at Dopplereffekten gir opphave til den spesielle forme
 
 \begin{frame}
 \label{tf7}
-\lastpagebutton{tf6}
+\lastpagebutton{tf6}{\bf SIDE 76/81/83}\\
 \begin{alertblock}{Tips 5:}
 I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3a/videoer/video3a_5.mp4}{denne videoen} får du se hvorfor vi har to topper. Vi vet altså at rotasjonskurven til galaksen flater ut og at alle hydrogenskyer i de ytre delene av galaksen har omtrent samme banehastighet og dermed omtrengt samme Dopplereffekt. Men hva avjør hvor langt $\Delta\lambda$ fra sentrum av linja denne toppen befinner seg? Ser du nå opphavet til sammenhengen?
 \end{alertblock}
@@ -1287,7 +1288,7 @@ I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsm
 
 \begin{frame}
 \label{tf8}
-\lastpagebutton{tf7}
+\lastpagebutton{tf7}{\bf SIDE 77/81/83}\\
 \begin{alertblock}{Tips 6:}
 Fra Dopplereffekten har vi at $\Delta\lambda=\lambda_0\frac{v}{c}$. Det er altså banehastigheten $v$ til gass-skyene ytterst i galaksen som avgjør hvor langt ut $\Delta\lambda$ fra sentrum $\lambda_0$ av 21cm-linja at disse toppene befinner seg. Det er dermed også disse som avgjør bredden til linja. Men hva avhenger denne hastigheten $v$ av?
 \end{alertblock}
@@ -1297,7 +1298,7 @@ Fra Dopplereffekten har vi at $\Delta\lambda=\lambda_0\frac{v}{c}$. Det er alts�
 
 \begin{frame}
 \label{tf9}
-\lastpagebutton{tf8}
+\lastpagebutton{tf8}{\bf SIDE 78/81/83}\\
 \begin{alertblock}{Tips 7:}
 Fra Keplers lover så må det vel være massen til galaksen som avgjør banehastigheten. Nå er vel omkring 85\% av denne massen mørk materie....Kom du litt nærmere løsningen på gåten nå?
 \end{alertblock}
@@ -1306,7 +1307,7 @@ Fra Keplers lover så må det vel være massen til galaksen som avgjør banehast
 
 \begin{frame}
 \label{tf10}
-\lastpagebutton{tf9}
+\lastpagebutton{tf9}{\bf SIDE 79/81/83}\\
 \begin{alertblock}{Tips 8:}
 Høy banehastighet for de ytterste gass-skyene betyr høy galaksemasse, altså mye mørk materie. Men omkring 15\% av denne materien er jo også lysende materie i form av stjerner. Altså jo høyere hastighet, jo mer lysende materie og stjerner har vi også. Nå ser du det kanskje?
 \end{alertblock}
@@ -1317,7 +1318,7 @@ Høy banehastighet for de ytterste gass-skyene betyr høy galaksemasse, altså m
 
 \begin{frame}
 \label{tf11}
-\lastpagebutton{tf10}
+\lastpagebutton{tf10}{\bf SIDE 80/81/83}\\
 \begin{alertblock}{Løsningen på mysteriet}
 Jo høyere hastighet på gass-skyene i de ytre delene av galaksen, jo høyere forskyvning av toppen i 21cm-linja, og dermed jo bredere 21cm-linje. Høyere hastighet betyr større masse, både mørk og lysende. Jo flere stjerner, jo større total luminositet på galaksen. Hvis du ikke helt henger med enda, ta en kikk på oppsummeringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3a/videoer/video3a_6.mp4}{denne videoen}
 \end{alertblock}
@@ -1331,7 +1332,7 @@ der $v_\mathrm{max}$ er Dopplerhastigheten som tilsvarer de to toppene i linja m
 
 \begin{frame}
 \label{tf12}
-\lastpagebutton{tf11}
+\lastpagebutton{tf11}{\bf SIDE 81/81/83}\\
 {\Large Vi kan observere 21cm-linja til galakser i avstander opp til omkring 100Mpc. Denne metoden overlapper altså med både galakser der man kan se Kefeider og der man kan bruke supernova av type Ia, MEN fordelen med Tully-Fisher fremfor supernovaer er at Tully-Fisher alltid kan brukes, mens for supernovaer må man være heldig at det faktisk går av en supernova i en galakse. Det er i tillegg veldig viktig med overlappende metoder slik at de kan kontrolleres mot hverandre.}
 \hyperlink{feil_nytema5}{\pagebutton{Neste side}}
 \end{frame}
@@ -1361,7 +1362,7 @@ der $v_\mathrm{max}$ er Dopplerhastigheten som tilsvarer de to toppene i linja m
 
 \begin{frame}
 \label{hl1}
-\lastpagebutton{tf12}\label{hl}
+\lastpagebutton{tf12}\label{hl}{\bf SIDE 82/83/83}\\
 Vi skal bare såvidt komme innom Hubbles lov i dette kurset. Edwin Hubble oppdaget på 1920-tallet at alle fjerne galakser hadde en rødforskyvning. Dvs. at de alle hadde en hastighet bort fra oss. Og ikke bare det, {\bf jo lenger borte galaksen var, jo større var rødforskyvningen, altså jo større hastighet hadde galaksen bort fra oss.} Dette formulerte han i Hubbles lov:
 \[
 v=H_0r
@@ -1374,7 +1375,7 @@ hvor $v$ er hastigheten som galaksen fjerner seg fra oss med, $r$ er avstanden t
 
 \begin{frame}
 \label{hl2}
-\lastpagebutton{hl1}
+\lastpagebutton{hl1}{\bf SIDE 83/83/83}\\
 {\small
 Hubbles lov er et resultat av {\bf universets ekspansjon}. Fra Einsteins generelle relativitetsteori kan man vise at målestokkene i universet utvider seg med tiden. Resultatet av dette er Hubbles lov. Den samme effekten ville blitt observert fra en hvilken som helst galakse i universet. {\bf Alle vil oppleve at alle fjerne galakser fjerner seg fra dem.} Hastigheten som måles med Dopplereffekten i dette tilfelle er ikke en vanlig hastighet men heller {\bf et mål på hvor fort rommet mellom oss og den fjerne galaksen utvider seg}.\\
 \vspace*{1cm}

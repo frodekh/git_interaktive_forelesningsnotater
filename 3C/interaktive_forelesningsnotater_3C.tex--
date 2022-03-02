@@ -294,6 +294,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema3}{\headlinebutton{Fusjonsreaksjonene}}
 \item \hyperlink{blue_nytema4}{\headlinebutton{Solnøytrinoproblemet}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{feil_intro}{\choicebutton{Neste side}}
 \end{frame}
 

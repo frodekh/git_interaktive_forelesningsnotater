@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160340}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -296,6 +296,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema2}{\headlinebutton{Utledning: hydrostatisk likevekt}}
 \item \hyperlink{hydrostat15}{\headlinebutton{Likningen for hydrostatisk likevekt}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{blue_intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -307,7 +308,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \label{blue_intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
+\hyperlink{tableofcontents}{\pagebutton{Forrige side}}\\
 %\vspace{1cm}
 \includegraphics[scale=0.3]{media/atmosphere.jpg}\\
 \column{0.5\textwidth}
@@ -321,7 +322,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 
 \begin{frame}
 \label{intro2}
-\lastpagebutton{blue_intro}
+\lastpagebutton{blue_intro}{\bf SIDE 1/1/28}\\
 \begin{alertblock}{Vi begynner som vanlig...}
 ...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
 \end{alertblock}
@@ -344,8 +345,8 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{hydrostat1}
-\dlastpagebutton{intro2}
-{\bf Fant du svar på spørsmålene på skjemaet?} 
+\dlastpagebutton{intro2}{\bf SIDE 2/7/28}\\
+{\bf Fant du svar på spørsmålene på skjemaet?}
 Innså du at trykket kan ha en rolle i å gi motkraft til gravitasjon?\\
 \includegraphics[scale=0.5]{media/star_dm.png}\\
 Her ser vi et bittelite element av gassen med masse $dm$. Gravitasjonskrafta prøver å trekke gasselementet nedover mens trykket virker oppover og motvirker krafta? Er det slik det funker? Altså siden
@@ -358,7 +359,7 @@ så får vi en bitteliten kraft $dF=PdA$ der $dA$ er arealet av det bittelille g
 
 \begin{frame}
 \label{hydrostat2}
-\lastpagebutton{hydrostat1}
+\lastpagebutton{hydrostat1}{\bf SIDE 3/7/28}\\
 Vi zoomer nå inn på dette gasselementet som vi har valgt her til å være sylindrisk med sideflateareal $dA$ og høyde $dr$.\\
 \includegraphics[scale=0.6]{media/dm_no_r.png}\\
 Her ser vi kreftene tegnet inn. \textcolor{red}{ Enig i at gravitasjon virker kun nedover?}\textcolor{blue}{ Også enig i at trykket ikke kun virker oppover, gasstrykk virker jo fra alle kanter, ikke sant?}{\bf \ Dermed vil vel gasstrykket ovenfra kanselere gasstrykket nedenfra?}\textcolor{red}{ Og vi er like langt...?}{\bf \ Gravitasjon vinner igjen fordi kreftene fra gass-trykket kanselerer hverandre?} Og dermed faller solen sammen til et sort hull og atmosfæren vår faller ned! {\bf Ikke det som skjer i virkeligheten sier du?} \textcolor{red}{Hvorfor ikke det da???}
@@ -367,7 +368,7 @@ Her ser vi kreftene tegnet inn. \textcolor{red}{ Enig i at gravitasjon virker ku
 
 \begin{frame}
 \label{hydrostat3}
-\lastpagebutton{hydrostat2}
+\lastpagebutton{hydrostat2}{\bf SIDE 4/7/28}\\
 \hyperlink{hydrostat4}{\pagebutton{Jeg vet svaret!!!}}\\
 \vspace*{1cm}
 \hyperlink{hydrostat4}{\pagebutton{Jeg klarer ikke å se det}}\\
@@ -377,7 +378,7 @@ Her ser vi kreftene tegnet inn. \textcolor{red}{ Enig i at gravitasjon virker ku
 
 \begin{frame}
 \label{hydrostat4}
-\lastpagebutton{hydrostat3}
+\lastpagebutton{hydrostat3}{\bf SIDE 5/7/28}\\
 OK da! Så kanskje gasstrykket ikke er det samme i alle høyder $r$? Jammen det stemmer jo i atmosfæren vår ihvertfall. Der minker jo trykket med høyden slik at trykket er en funksjon av avstand $r$ fra jordas sentrum. Siden gass-elementet vårt er infinitesimalt lite så er høydeforskjellen over og under infinitesimalt liten, den er $dr$, men da blir vel også trykkforskjellen $dP$ mellom trykket ovenfra og trykket nedenfra infinitesimalt liten? La oss illustrere det her:\\
 \includegraphics[scale=0.25]{media/dm.png}\\
 \hyperlink{hydrostat4b}{\pagebutton{Neste side}}
@@ -386,7 +387,7 @@ OK da! Så kanskje gasstrykket ikke er det samme i alle høyder $r$? Jammen det 
 
 \begin{frame}
 \label{hydrostat4b}
-\lastpagebutton{hydrostat4}
+\lastpagebutton{hydrostat4}{\bf SIDE 6/7/28}\\
 Javel! Den bittelitte trykkforskjellen $dP$ må altså være slik at trykk-krafta er større undenfra enn ovenfra. Men en en infinitesimal liten trykkforsjell $dP$ må vel gi opphav til en infinitesimal liten kraft undenfra. {\bf Hvordan kan denne infinitesimalt lille krafta klare å veie opp mot tyngdekrafta som trekker nedover???}\\
 \includegraphics[scale=0.25]{media/dm.png}\\
 \hyperlink{hydrostat4c}{\pagebutton{Jeg tror kanskje jeg vet det...}}\\
@@ -395,7 +396,7 @@ Javel! Den bittelitte trykkforskjellen $dP$ må altså være slik at trykk-kraft
 
 \begin{frame}
 \label{hydrostat4c}
-\lastpagebutton{hydrostat4b}
+\lastpagebutton{hydrostat4b}{\bf SIDE 7/7/28}\\
 {\bf AHA!} Javisst ja, massen $dm$ er jo også infinitesimalt lite. Og tyngdekrafta er proporsjonalt med massen, dermed blir også tyngdekrafta infinitesimalt liten. Og da er det ikke så rart at en bitteliten trykk-kraft kan stå imot.
 \begin{alertblock}{Hydrostatisk likevekt}
 Hvis trykkendringene oppover i atmosfæren eller oppover i stjerna er slik at trykk-krafta undenfra på ethvert område inne i gassen nøyaktig oppveier tyngdekrafta, så vil stjerna eller atmosfæren være stabil. Dette kaller vi {\bf hydrostatisk likevekt}. Når en stjerne  (eller atmosfære) dannes så er den i begynnelsen ikke i en slik likevekt, men siden dette er en energetisk fordelaktig tilstand så vil stjerna med tiden nå en slik likevekt.
@@ -420,7 +421,7 @@ Vi skal nå bruke Newtons 2.lov på et slikt masseelement inne i gassen til å u
 
 \begin{frame}
 \label{hydrostat5}
-\lastpagebutton{hydrostat4c}\label{likningen}
+\lastpagebutton{hydrostat4c}\label{likningen}{\bf SIDE 8/28/28}\\
 \includegraphics[scale=0.25]{media/dm.png}\\
 Så lenge trykk er $P=F/A$ og krafta undenfra er gitt ved gasstrykket $P(r)$ i denne høyden, så blir vel kraften undenfra gitt ved
 \[
@@ -439,8 +440,8 @@ dF_\mathrm{nedover}=P(r+dr)dA
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_stemmerikke}
-\lastpagebutton{hydrostat5}
-\textcolor{white}{Hva er det du ikke synes stemmer? Mistenker at du kanskje ikke henger helt med. Ta kontakt med foreleser!}
+\lastpagebutton{hydrostat5}{\bf SIDE 9/28/28}\\
+\textcolor{white}{\htmlcom{large}{Hva er det du ikke synes stemmer? Mistenker at du kanskje ikke henger helt med. Ta kontakt med foreleser!}}
 \hyperlink{hydrostat6}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -449,8 +450,8 @@ dF_\mathrm{nedover}=P(r+dr)dA
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_stemmer}
-\clastpagebutton{hydrostat5}
-Det er bra vi er enig!
+\clastpagebutton{hydrostat5}{\bf SIDE 10/28/28}\\
+\htmlcom{large}{Det er bra vi er enige!}
  \hyperlink{hydrostat6}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -458,7 +459,7 @@ Det er bra vi er enig!
 
 \begin{frame}
 \label{hydrostat6}
-\lastpagebutton{hydrostat5}
+\lastpagebutton{hydrostat5}{\bf SIDE 11/28/28}\\
 Hva så med gravitasjonskrafta da? Hvis massen av gasselementet er $dm$, så bli vel det...
 \hyperlink{hydrostat6_b}{\pagebutton{Trykk her når du har skrevet ned et forslag!}}\\
 
@@ -473,9 +474,9 @@ MEN, situasjonen er derimot en helt annen hvis...}
 
 \begin{frame}
 \label{hydrostat6_b}
-\lastpagebutton{hydrostat5}
+\lastpagebutton{hydrostat5}{\bf SIDE 11/28/28}\\
 Hva så med gravitasjonskrafta da? Hvis massen av gasselementet er $dm$, så bli vel det...
-{\pagebutton{Trykk her når du har skrevet ned et forslag!}}\\
+{\pagebuttonolink{Trykk her når du har skrevet ned et forslag!}}\\
 
 \[
 dF=-G\frac{M(r)dm}{r^2}
@@ -490,7 +491,7 @@ der $M(r)$ er massen av alt som er under høyden $r$. Når vi modellerer en atmo
 
 \begin{frame}
 \label{hydrostat7}
-\dlastpagebutton{hydrostat6}
+\dlastpagebutton{hydrostat6}{\bf SIDE 12/28/28}\\
 \begin{columns}
 \column{0.5\textwidth}
 {\small
@@ -501,8 +502,8 @@ Her blir den totale massen under posisjonen $r$ tydelig større og større fra $
 \column{0.5\textwidth}
 \hyperlink{hydrostat7_b}{\pagebutton{\small Trykk her når du har et forslag!}}\\
 \textcolor{white}{
-{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???
-small Tenk 2 ganger før du trykker her!}\\
+{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???\\
+\small Tenk 2 ganger før du trykker her!}\\
 \textcolor{white}{
 Du tenkte bare 1 gang! Tenk en gang til!
 \small Trykk her når du er ferdigtenkt}
@@ -511,7 +512,7 @@ Du tenkte bare 1 gang! Tenk en gang til!
 
 \begin{frame}
 \label{hydrostat7_b}
-\dlastpagebutton{hydrostat6}
+\dlastpagebutton{hydrostat6}{\bf SIDE 12/28/28}\\
 \begin{columns}
 \column{0.5\textwidth}
 {\small
@@ -520,8 +521,8 @@ Du tenkte bare 1 gang! Tenk en gang til!
 Her blir den totale massen under posisjonen $r$ tydelig større og større fra $r=0$ i sentrum til $r=R$ på overflaten av stjerna. Her må vi ta med $r$-variasjonen av $M(r)$. Men hvis du ser på figuren, nøyaktig hvilken del av denne stjerna bidrar til massen $M(r)$ som virker med tyngdekraft på $dm$??
 }
 \column{0.5\textwidth}
-\pagebutton{\small Trykk her når du har et forslag!}\\
-{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???
+\pagebuttonolink{\small Trykk her når du har et forslag!}\\
+{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???\\
 \hyperlink{hydrostat7_c}{\pagebutton{\small Tenk 2 ganger før du trykker her!}}\\
 
 \textcolor{white}{
@@ -532,7 +533,7 @@ Du tenkte bare 1 gang! Tenk en gang til!
 
 \begin{frame}
 \label{hydrostat7_c}
-\dlastpagebutton{hydrostat6}
+\dlastpagebutton{hydrostat6}{\bf SIDE 12/28/28}\\
 \begin{columns}
 \column{0.5\textwidth}
 {\small
@@ -541,11 +542,11 @@ Du tenkte bare 1 gang! Tenk en gang til!
 Her blir den totale massen under posisjonen $r$ tydelig større og større fra $r=0$ i sentrum til $r=R$ på overflaten av stjerna. Her må vi ta med $r$-variasjonen av $M(r)$. Men hvis du ser på figuren, nøyaktig hvilken del av denne stjerna bidrar til massen $M(r)$ som virker med tyngdekraft på $dm$??
 }
 \column{0.5\textwidth}
-\pagebutton{\small Trykk her når du har et forslag!}\\
+\pagebuttonolink{\small Trykk her når du har et forslag!}\\
 
 
-{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???
-{\pagebutton{\small Tenk 2 ganger før du trykker her!}}\\
+{\bf Svaret er at kun massen innenfor sirkelen som er avtegnet rett under elementet $dm$ bidrar!}. Altså all masse innenfor radiusen $r$ i figuren bidrar til tyngdekraften på $dm$, men ingenting mer! Hva så med all massen som ligger i skallet rundt denne sirkelen? Hvorfor bidrar det ikke???\\
+{\pagebuttonolink{\small Tenk 2 ganger før du trykker her!}}\\
 
 Du tenkte bare 1 gang! Tenk en gang til!
 \hyperlink{hydrostat8}{\pagebutton{\small Trykk her når du er ferdigtenkt}}
@@ -557,7 +558,7 @@ Du tenkte bare 1 gang! Tenk en gang til!
 \begin{frame}
 \label{hydrostat8}
 \addtocounter{pageno}{1}
-\dlastpagebutton{hydrostat7}
+\dlastpagebutton{hydrostat7}{\bf SIDE 13/28/28}\\
 \includegraphics[scale=0.5]{media/star_dm.png}\\
 Man kan vise at hvis du har et skall med kulesymmetrisk massefordeling så vil den totale gravitasjonskrafta på alt det som er innenfor skallet være 0! Vi skal ikke vise det her, men det finnes en helt analog utledning i elektromagnetisme: den elektriske krafta innenfor et elektrisk ladd kuleskall er 0. Gravitasjonskreftene fra de forskjellige sidene av skallet nuller hverandre ut. {\bf Dermed får vi ingen gravitasjonskrefter på $dm$ fra alt som ligger i avstand større enn $r$ fra sentrum.}
 \hyperlink{hydrostat9}{\pagebutton{Neste side}}
@@ -565,15 +566,15 @@ Man kan vise at hvis du har et skall med kulesymmetrisk massefordeling så vil d
 
 \begin{frame}
 \label{hydrostat9}
-\lastpagebutton{hydrostat8}
+\lastpagebutton{hydrostat8}{\bf SIDE 14/28/28}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.5]{media/star_dm.png}\\
-Vi får altså en total tyngdekraft 
+Vi får altså en total tyngdekraft
 \[
 dF=-G\frac{M(r)dm}{r^2}
 \]
-på gasselementet med masse $dm$ der {\bf $M(r)$ altså er den totale massen av stjerna innenfor radius $r$}. 
+på gasselementet med masse $dm$ der {\bf $M(r)$ altså er den totale massen av stjerna innenfor radius $r$}.
 \column{0.5\textwidth}
 Nå er det vel slik at tyngdeakselrasjonen ved overflaten av en planet med masse $M$ er gitt ved
 \[
@@ -594,7 +595,7 @@ dF=g(r)dm
 
 \begin{frame}
 \label{hydrostat10}
-\lastpagebutton{hydrostat9}
+\lastpagebutton{hydrostat9}{\bf SIDE 15/28/28}\\
 \includegraphics[scale=0.25]{media/dm.png}\\
 Oppsummert så har vi vel kommet frem til at vi har en tyngdekraft $F=g(r)dm$ som virker nedover, en trykk-kraft $P(r)dA$ som virker oppover og en trykk-kraft $P(r+dr)dA$ som virker nedover. La oss da skrive ned Newtons 2.lov på gass-elementet $dF_\mathrm{tot}=dm\,a$ som gir oss
 \[
@@ -607,9 +608,9 @@ Hvor vi har skrevet posisjonen (høyden) av gasselementet som $r$ og dermed akse
 
 \begin{frame}
 \label{hydrostat11}
-\lastpagebutton{hydrostat10}
+\lastpagebutton{hydrostat10}{\bf SIDE 16/28/28}\\
 \includegraphics[scale=0.25]{media/dm.png}\\
-Vi setter nå inn det som vi kjenner i 
+Vi setter nå inn det som vi kjenner i
 \[
 -dF^\mathrm{grav}-dF^\mathrm{pressure}(r+dr)+dF^\mathrm{pressure}(r)=dm\frac{d^2r}{dt^2}
 \]
@@ -625,9 +626,9 @@ Det neste vi skal gjøre nå er å skrive ut massen av $dm$ ved hjelp av tetthet
 
 \begin{frame}
 \label{hydrostat12}
-\lastpagebutton{hydrostat11}
-Kan du se hvordan vi kan skrive $dm$ uttrykt ved hjelp av $dr$, $dA$ og $\rho(r)$??
-\hyperlink{hydrostat12_b}{\pagebutton{Ja, det er rett frem}}\hyperlink{hydrostat12_b}{\pagebutton{Nei, det var ikke helt rett frem...}}\\
+\lastpagebutton{hydrostat11}{\bf SIDE 17/28/28}\\
+Kan du se hvordan vi kan skrive $dm$ uttrykt ved hjelp av $dr$, $dA$ og $\rho(r)$??\\
+\hyperlink{hydrostat12_b}{\pagebutton{Ja, det er rett frem}}\\ \hyperlink{hydrostat12_b}{\pagebutton{Nei, det var ikke helt rett frem...}}\\
 \textcolor{white}{
 {\bf Det bør være rett frem! Du kjenner tetthet og du kan finne volum, hva blir da massen?}
 Vi hadde kommet til:
@@ -640,9 +641,9 @@ Ta et stykke papir, skriv ned denne likningen, sett inn for uttrykket ditt for $
 
 \begin{frame}
 \label{hydrostat12_b}
-\lastpagebutton{hydrostat11}
-Kan du se hvordan vi kan skrive $dm$ uttrykt ved hjelp av $dr$, $dA$ og $\rho(r)$??
-{\pagebutton{Ja, det er rett frem}}\hyperlink{hydrostat12_b}{\pagebutton{Nei, det var ikke helt rett frem...}}\\
+\lastpagebutton{hydrostat11}{\bf SIDE 17/28/28}\\
+Kan du se hvordan vi kan skrive $dm$ uttrykt ved hjelp av $dr$, $dA$ og $\rho(r)$??\\
+{\pagebuttonolink{Ja, det er rett frem}}\\ \hyperlink{hydrostat12_b}{\pagebutton{Nei, det var ikke helt rett frem...}}\\
 
 {\bf Det bør være rett frem! Du kjenner tetthet og du kan finne volum, hva blir da massen?}
 Vi hadde kommet til:
@@ -655,15 +656,12 @@ Ta et stykke papir, skriv ned denne likningen, sett inn for uttrykket ditt for $
 
 
 
-
-
-
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_hydrostat13}
 \hyperlink{hydrostat12}{\pagebutton{\small Forrige side}}
-\textcolor{yellow}{\Huge\bf Beklager du kan ikke gå videre før du faktisk har gjort jobben. Frem med papir og blyant! Hvis du ikke fullførte utledningen på forrige side, gå tilbake nå. Dette er regning som du bør kunne!}
+\textcolor{yellow}{\Huge\bf \htmlcom{large}{Beklager du kan ikke gå videre før du faktisk har gjort jobben. Frem med papir og blyant! Hvis du ikke fullførte utledningen på forrige side, gå tilbake nå. Dette er regning som du bør kunne!}}
 \hyperlink{hydrostat14}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -671,7 +669,7 @@ Ta et stykke papir, skriv ned denne likningen, sett inn for uttrykket ditt for $
 
 \begin{frame}
 \label{hydrostat14}
-\dlastpagebutton{red_hydrostat13}
+\dlastpagebutton{red_hydrostat13}{\bf SIDE 18/28/28}\\
 Er du helt sikker på at du har kommet frem til noe?
 \hyperlink{hydrostat14_b}{\pagebutton{Slutt å mase!}}\\
 \textcolor{white}{
@@ -687,9 +685,9 @@ Neste side}
 
 \begin{frame}
 \label{hydrostat14_b}
-\dlastpagebutton{red_hydrostat13}
+\dlastpagebutton{red_hydrostat13}{\bf SIDE 18/28/28}\\
 Er du helt sikker på at du har kommet frem til noe?
-{\pagebutton{Slutt å mase!}}\\
+{\pagebuttonolink{Slutt å mase!}}\\
 
 Fikk du:
 \[
@@ -708,7 +706,7 @@ Hvis du ikke får til å komme frem til dette uttrykket, spør foreleser!\\
 \begin{frame}
 \label{hydrostat15}
 \addtocounter{pageno}{1}
-\dlastpagebutton{hydrostat14}
+\dlastpagebutton{hydrostat14}{\bf SIDE 19/28/28}\\
 Nettopp ja! Setter vi den tidsderiverte til 0, så få vi
 \begin{block}{\bf likningen for hydrostatisk likevekt...}
 \[
@@ -722,7 +720,7 @@ Dette er en meget kraftfull likning! {\bf Det veldig enkle faktum at en atmosfæ
 
 \begin{frame}
 \label{hydrostat16}
-\lastpagebutton{hydrostat15}
+\lastpagebutton{hydrostat15}{\bf SIDE 20/28/28}\\
 Vi hadde:
 \[
 \frac{dP}{dr}=-\rho(r)g(r)
@@ -734,7 +732,7 @@ På venstre side har vi trykkendring $dP$ per skritt $dr$ som du tar oppover i a
 
 \begin{frame}
 \label{hydrostat17}
-\lastpagebutton{hydrostat16}
+\lastpagebutton{hydrostat16}{\bf SIDE 21/28/28}\\
 Vi hadde:
 \[
 \frac{dP}{dr}=-\rho(r)g(r)
@@ -751,7 +749,7 @@ Altså hvis du kjenner trykket $P_0$ på f.eks overflaten av planeten, så kan d
 
 \begin{frame}
 \label{hydrostat18}
-\lastpagebutton{hydrostat17}
+\lastpagebutton{hydrostat17}{\bf SIDE 22/28/28}\\
 I del 1E skal du løse en oppgave som går ut på å modellere en atmosfære. Husk at likningen for ideel gass
 \[
 P=nkT
@@ -772,7 +770,7 @@ der $\mu$ er det vi kaller {\bf midlere molekylvekt} og $m_H$ er massen til hydr
 
 \begin{frame}
 \label{hydrostat19}
-\lastpagebutton{hydrostat18}
+\lastpagebutton{hydrostat18}{\bf SIDE 23/28/28}\\
 \begin{block}{\bf Midlere molekylvekt $\mu$ er...}
 {\small den gjennomsnittlige vekta til atomene/molekylene i en gass delt på massen til hydrogenatomet. Det er altså gjennomsnittlig/midlere vekt av et molekyl i gassen målt i hydrogenmasser!
 \[
@@ -791,7 +789,7 @@ der summen går over alle {\it typer} molekyler i gassen, $m_i$ er massen til de
 
 \begin{frame}
 \label{hydrostat20}
-\lastpagebutton{hydrostat19}
+\lastpagebutton{hydrostat19}{\bf SIDE 24/28/28}\\
 Vi kan altså skrive ideel gasslov som
 \[
 P(r)=\frac{\rho(r)kT(r)}{\mu m_H}
@@ -807,9 +805,9 @@ Du skal f.eks. løse for et tilfelle der atmosfæren er isoterm, dvs. vi antar a
 
 \begin{frame}
 \label{hydrostat20b}
-\lastpagebutton{hydrostat20}
+\lastpagebutton{hydrostat20}{\bf SIDE 25/28/28}\\
 \textcolor{blue}{Når vi kommer til del 3 der vi skal se på stjernenes indre, kommer du også til å se på {\bf strålingstrykket}. Inne i stjernene er det så mye stråling at fotonene oppfører seg som partikler i en gass og dermed gir opphave til et ``gasstrykk'' fra fotonene. Trykket fra en slik fotongass er $P=\frac{1}{3}aT^4$ der $a$ er {\it strålingskonstanten} $a=7.56\times10^{-16}\mathrm{J}/\mathrm{m}^3\mathrm{K}^4$. Dette kommer du til å utlede i senere kurs. For å se på hydrostatisk likevekt i tilfeller der strålingstrykket dominerer over gasstrykket, så kan man altså trenge å kombinere denne likningen  (isteden for ideel gasslov) med likningen for hydrostatisk likevekt.}\\
-{\Large\bf Forresten...}
+{\Large\bf \htmlcom{large}{Forresten...}}
 Hvorfor er det riktig å skrive at
 \[
 n(r)=\frac{\rho(r)}{\mu m_H}
@@ -821,7 +819,7 @@ n(r)=\frac{\rho(r)}{\mu m_H}
 
 \begin{frame}
 \label{hydrostat21}
-\lastpagebutton{hydrostat20}
+\lastpagebutton{hydrostat20}{\bf SIDE 26/28/28}\\
 Vi avslutter denne delen med en liten test:
 \begin{alertblock}{Hva er...}
 den midlere molekylvekta i en gass som består av $50\%$ hydrogen og $50\%$ helium (typisk i en aldrende stjerne)? Klarer du å svare i løpet av 30 sekunder?
@@ -833,8 +831,8 @@ den midlere molekylvekta i en gass som består av $50\%$ hydrogen og $50\%$ heli
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil}
-\lastpagebutton{hydrostat21}
-\textcolor{white}{Det ble nok galt. Ta deg litt mer tid til å tenke, kanskje det gikk litt for fort? Hvis du sliter, gå tilbake til eksemplet! Prøv igjen!
+\lastpagebutton{hydrostat21}{\bf SIDE 27/28/28}\\
+\textcolor{white}{\htmlcom{large}{Det ble nok galt. Ta deg litt mer tid til å tenke, kanskje det gikk litt for fort? Hvis du sliter, gå tilbake til eksemplet! Prøv igjen!}
 }
 \end{frame}
 }
@@ -843,8 +841,8 @@ den midlere molekylvekta i en gass som består av $50\%$ hydrogen og $50\%$ heli
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig}
-\clastpagebutton{hydrostat21}
-Flott, du forstår det! Skulle du likevel tvile, gå tilbake til eksemplet!
+\clastpagebutton{hydrostat21}{\bf SIDE 28/28/28}\\
+\htmlcom{large}{Flott, du forstår det! Skulle du likevel tvile, gå tilbake til eksemplet!}
 \hyperlink{oppsummering}{\pagebutton{Neste side}}
 \end{frame}
 }

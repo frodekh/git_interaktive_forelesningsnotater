@@ -296,6 +296,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema2}{\headlinebutton{Hvor kommer solas energi fra?}}
 \item \hyperlink{blue_nytema3}{\headlinebutton{Jeans-grensene}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{feil_intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -306,7 +307,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \label{feil_intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
+\hyperlink{tableofcontents}{\pagebutton{Forrige side}}\\
 \includegraphics[scale=0.4]{media/gmc.jpg}
 \column{0.5\textwidth}
 {\small

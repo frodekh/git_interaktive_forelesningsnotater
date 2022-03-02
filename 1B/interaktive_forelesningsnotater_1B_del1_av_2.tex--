@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -302,6 +302,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema5}{\headlinebutton{Keplers lover}}
 \item \hyperlink{blue_nytema6}{\headlinebutton{Løse 2-legemeproblemet}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -310,7 +311,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \label{intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front}{\pagebutton{Forrige side}}\\
+\hyperlink{tableofcontents}{\pagebutton{Forrige side}}\\
 \vspace{1cm}
 \includegraphics[scale=0.4]{media/landing.png}\\
 \column{0.5\textwidth}
@@ -328,7 +329,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \begin{columns}
 \column{0.5\textwidth}
 %\hyperlink{intro}{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage \\
-\lastpagebutton{intro}
+\lastpagebutton{intro}{\bf SIDE 1/1/50}\\
 \addtocounter{pageno}{-1}
 \vspace{0.5cm}
 \includegraphics[scale=0.4]{media/landing.png}\\
@@ -361,7 +362,7 @@ Har du varmet opp? Er du svett og klar til å starte kampen? ...og sendt inn skj
 
 \begin{frame}
 \label{basicfysikk1a}
-\dlastpagebutton{intro2}
+\dlastpagebutton{intro2}{\bf SIDE 2/8/50}\\
 La oss begynne med beina godt plantet på jorda. Og med litt {\bf veldig} grunnleggende videregåendeskole-fysikk (sorry!).
 \includegraphics[scale=0.2]{media/car_move_1.png}\\
 I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avstand $\Delta x$ har denne bilen beveget seg i løpet av tiden $\Delta t$?\\
@@ -371,7 +372,7 @@ I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avst
 
 \begin{frame}
 \label{basicfysikk1b}
-\clastpagebutton{intro2}
+\clastpagebutton{intro2}{\bf SIDE 3/8/50}\\
 La oss begynne med beina godt plantet på jorda. Og med litt {\bf veldig} grunnleggende videregåendeskole-fysikk (sorry!).
 \includegraphics[scale=0.2]{media/car_move_2.png}\\
 I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avstand $\Delta x$ har denne bilen beveget seg i løpet av tiden $\Delta t$?\\
@@ -384,7 +385,7 @@ I figuren ser du en bil som beveger seg med konstant hastighet $v$. Hvilken avst
 \label{basicfysikk2a}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{basicfysikk1a}
+\lastpagebutton{basicfysikk1a}{\bf SIDE 4/8/50}\\
 Nå har vi samme situasjon en gang til, men med vektorer. En romskip har posisjonsvektor $\vec{r}$. Vi skal i resten av dette emnet bruke konseptet {\it posisjonsvektor} ganske mye.
 \includegraphics[scale=0.3]{media/spaceship_move_1.png}\\
 \column{0.5\textwidth}
@@ -401,7 +402,7 @@ I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet ha
 \label{basicfysikk2b}
 \begin{columns}
 \column{0.5\textwidth}
-\clastpagebutton{basicfysikk1a}
+\clastpagebutton{basicfysikk1a}{\bf SIDE 5/8/50}\\
 Nå har vi samme situasjon en gang til, men med vektorer. En romskip har posisjonsvektor $\vec{r}$. Vi skal i resten av dette emnet bruke konseptet {\it posisjonsvektor} ganske mye.
 \includegraphics[scale=0.3]{media/spaceship_move_2.png}\\
 \column{0.5\textwidth}
@@ -420,13 +421,13 @@ I figuren ser du dermed at vi har satt origo i sentrum av planeten. Romskipet ha
 \label{euler1}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{basicfysikk2a}
+\lastpagebutton{basicfysikk2a}{\bf SIDE 6/8/50}\\
 \includegraphics[scale=0.2]{media/spaceship_move_2.png}\\
 Vi fant at forflytningen er $\Delta\vec{r}=\vec{v}\Delta t$. Hvis vi kaller opprinnelig posisjon for $\vec{r}_0$ og ny poisjon for $\vec{r}_1$, så har vi altså:
 \[
 \vec{r}_1  = \vec{r}_0 + \vec{v}\Delta t
 \]
-noe du sikkert kjenner som Eulers metode? Du har i tidligere emner brukt Eulers metode numerisk. 
+noe du sikkert kjenner som Eulers metode? Du har i tidligere emner brukt Eulers metode numerisk.
 \column{0.5\textwidth}
 La oss se på hastighetsendring på samme måte:\\
 Vi vet at akselerasjon er endring i hastighet per tid, slik at hvis du har en konstant akselerasjon $\vec{a}$, så vil endring i hastighet i løpet av tid $\Delta t$ per definisjon være gitt ved
@@ -444,8 +445,8 @@ Hvis opprinnelig hastighet var $\vec{v}_0$ og ny hastighet er $\vec{v}_1$ så ha
 
 \begin{frame}
 \label{euler2}
-\lastpagebutton{euler1}
-Dette var repetisjon, men kanskje en mer fysisk måte å utlede det på enn du er vant til? Det er viktig å forstå de fysiske prinsippene bak når vi nå etterhvert skal ta dette videre. 
+\lastpagebutton{euler1}{\bf SIDE 7/8/50}\\
+Dette var repetisjon, men kanskje en mer fysisk måte å utlede det på enn du er vant til? Det er viktig å forstå de fysiske prinsippene bak når vi nå etterhvert skal ta dette videre.
 \begin{block}{\bf Numerisk beregning av forflytning og hastighetsendring...}
 Når du gjør dette numerisk, husk også at det er mer nøyaktig å bruke Euler-Cromers metode, dvs. at du oppdaterer posisjonen med den nye hastigheten, dvs.
 \begin{align}
@@ -458,8 +459,8 @@ Når du gjør dette numerisk, husk også at det er mer nøyaktig å bruke Euler-
 
 \begin{frame}
 \label{euler3}
-\lastpagebutton{euler2}
-Merk at det du har gjort her matematisk er jo å løse likningssystemene 
+\lastpagebutton{euler2}{\bf SIDE 8/8/50}\\
+Merk at det du har gjort her matematisk er jo å løse likningssystemene
 \[
 \frac{d\vec{r}}{dt}=\vec{v}\ \ \ \ \ \frac{d\vec{v}}{dt}=\vec{a}
 \]
@@ -488,7 +489,7 @@ Hvis du ganger opp med $\Delta t$ på begge sider av likningene her, så ender d
 
 \begin{frame}
 \label{euler4}
-\lastpagebutton{euler3}
+\lastpagebutton{euler3}{\bf SIDE 9/18/50}\\
 Det vi har gjort så langt er å se hvordan vi kan finne romskipets bevegelse numerisk, steg for steg. Nå skal vi se på hvordan dette kan gjøres analytisk. Det er viktig å gjøre ting analytisk der det kan gjøres analytisk fordi du da kan gjøre ting mye raskere på datamaskin og samtidig få en mye dypere innsikt i fysikken bak. Og ikke minst, det er jo litt kult å faktisk ha utledet at planeter har ellipsebaner helt fra scratch?\\
 \vspace*{0.5cm}
 Utledningen av løsningen på dette {\bf 2-legemeproblemet} (og det er kun for 2 legemer at vi kan løse dette analytisk) er en ganske omfattende utledning, men på veien dit kommer vi innom mange temaer som vi skal bruke igjen og igjen i løpet av kurset, så det er viktig å forstå detaljene her.\\
@@ -501,7 +502,7 @@ Trenger du en pause, så ta den nå! Trekk pusten godt!\\
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_pyse}
-\lastpagebutton{euler4}
+\lastpagebutton{euler4}{\bf SIDE 10/18/50}\\
 \vspace*{2cm}
 \textcolor{white}{\Huge \htmlcom{huge}{PYSE!}}\\
 \end{frame}
@@ -511,7 +512,7 @@ Trenger du en pause, så ta den nå! Trekk pusten godt!\\
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_klar}
-\clastpagebutton{euler4}
+\clastpagebutton{euler4}{\bf SIDE 11/18/50}\\
 \vspace*{2cm}
 \htmlcom{large}{Se det, det var riktig innstilling ja!
 Moroa begynner på ...}
@@ -524,7 +525,7 @@ Moroa begynner på ...}
 \label{enhetsvektorer1}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebuttonx{euler4}
+\lastpagebuttonx{euler4}{\bf SIDE 12/18/50}\\
 \hspace*{-0.5cm}\headlinebutton{\headline}\\
 Før vi begynner på selve utledningen så må vi innom et par småting som forberedelse til utledningen, la oss begynne med koordinatsystemer og enhetsvektorer.\\
 \includegraphics[scale=0.3]{media/unity_vectors.png}\\
@@ -544,7 +545,7 @@ Hva er $a$ og $b$ her?\\
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilxy}
-\lastpagebutton{enhetsvektorer1}
+\lastpagebutton{enhetsvektorer1}{\bf SIDE 13/18/50}\\
 \textcolor{white}{Det ble galt! Er du sikker på at du forstår hva det spørres om? Innser du at $a$ og $b$ her er x- og y-komponentene til vektoren $\vec{r}$? Det er helt essensielt at du forstår dette før du går videre. Spør gruppelærer eller foreleser hvis du har den minste tvil. Gå tilbake og forsikre deg om at du forstår før du går videre!}
 \end{frame}
 }
@@ -555,11 +556,11 @@ Hva er $a$ og $b$ her?\\
 \label{riktigxy}
 \begin{columns}
 \column{0.5\textwidth}
-\clastpagebutton{enhetsvektorer1}
+\clastpagebutton{enhetsvektorer1}{\bf SIDE 14/18/50}\\
 {\bf STEMMER!}.Vi ser på figuren igjen:
 \includegraphics[scale=0.26]{media/unity_vectors.png}\\
 
-Ser du at det er tegnet inn to andre enhetsvektorer $\vec{e}_r$ og $\vec{e}_\theta$? Dette er enhetsvektorer som fortsatt har lengde 1, men som peker {\bf langs} $\vec{r}$ og {\bf ortogonalt} med $\vec{r}$. 
+Ser du at det er tegnet inn to andre enhetsvektorer $\vec{e}_r$ og $\vec{e}_\theta$? Dette er enhetsvektorer som fortsatt har lengde 1, men som peker {\bf langs} $\vec{r}$ og {\bf ortogonalt} med $\vec{r}$.
 
 {\small Merk at hvis f.eks. romskipet har en positiv hastighetskomponent langs $\vec{e}_\theta$ så vil vinkelen $\theta$ øke med tiden.}\\
 \column{0.5\textwidth}
@@ -575,7 +576,7 @@ Du kan dermed representere en vektor enten med komponentene langs x-y enhetsvekt
 
 \begin{frame}
 \label{enhetsvektorer2}
-\lastpagebutton{riktigxy}
+\lastpagebutton{riktigxy}{\bf SIDE 15/18/50}\\
 \addtocounter{pageno}{-1}
 Et lite hint før du får svaret: Hva skjer med enhetsvektorene dersom romskipet beveger seg? Er det en grunnleggende forskjell mellom x-y-enhetsvektorene og r-$\theta$-enhetsvektorene da? \textcolor{red}{Tenk deg om (1 min) og ...} \hyperlink{enhetsvektorer2_b}{\choicebutton{trykk her}}\\
 \textcolor{white}{Ganske riktig! r-$\theta$-enhetsvektorene endrer seg med tiden når objektet de peker på endrer posisjon! De er tidsavhengige enhetsvektorer, mens x-y-enhetsvektorene ikke endrer seg.
@@ -587,9 +588,9 @@ Men dette gjør det vel mer komplisert å bruke r-$\theta$-enhetsvektorene? Hva 
 
 \begin{frame}
 \label{enhetsvektorer2_b}
-\lastpagebutton{riktigxy}
+\lastpagebutton{riktigxy}{\bf SIDE 15/18/50}\\
 \addtocounter{pageno}{-1}
-Et lite hint før du får svaret: Hva skjer med enhetsvektorene dersom romskipet beveger seg? Er det en grunnleggende forskjell mellom x-y-enhetsvektorene og r-$\theta$-enhetsvektorene da? \textcolor{red}{Tenk deg om (1 min) og ...} {\choicebutton{trykk her}}\\
+Et lite hint før du får svaret: Hva skjer med enhetsvektorene dersom romskipet beveger seg? Er det en grunnleggende forskjell mellom x-y-enhetsvektorene og r-$\theta$-enhetsvektorene da? \textcolor{red}{Tenk deg om (1 min) og ...} {\pagebuttonolink{trykk her}}\\
 Ganske riktig! r-$\theta$-enhetsvektorene endrer seg med tiden når objektet de peker på endrer posisjon! De er tidsavhengige enhetsvektorer, mens x-y-enhetsvektorene ikke endrer seg.
 Men dette gjør det vel mer komplisert å bruke r-$\theta$-enhetsvektorene? Hva iallverden skal vi med disse da? Kan du tenkte deg noen fordeler med dem?\\
 \textcolor{red}{Tenk deg godt om (maks 1 min) før du går til ... }
@@ -598,7 +599,7 @@ Men dette gjør det vel mer komplisert å bruke r-$\theta$-enhetsvektorene? Hva 
 
 \begin{frame}
 \label{enhetsvektorer3}
-\lastpagebutton{enhetsvektorer2}
+\lastpagebutton{enhetsvektorer2}{\bf SIDE 16/18/50}\\
 Vi skal se på fordelene etterhvert, men la oss prøve å bruke dem:
 \includegraphics[scale=0.28]{media/unity_vectors.png}\\
 Hvis vi nå skal skrive poisjonsvektoren $\vec{r}$ uttrykt ved de nye enhetsvektorne:
@@ -614,7 +615,7 @@ hva blir da $a$ og $b$?
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilrt}
-\lastpagebutton{enhetsvektorer3}
+\lastpagebutton{enhetsvektorer3}{\bf SIDE 17/18/50}\\
 \textcolor{white}{Det ble galt! Husk at r-$\theta$-koordinatsystemet funker helt på samme måte som x-y, altså du dekomponerer vektoren i de to enhetsvektorene. Dvs.
 \begin{align}
 a &= \vec{r}\cdot\vec{e}_r\\
@@ -629,7 +630,7 @@ Hjelper det deg? Prøv igjen med dette som utgangspunkt!
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigrt}
-\clastpagebutton{enhetsvektorer3}
+\clastpagebutton{enhetsvektorer3}{\bf SIDE 18/18/50}\\
 {\bf STEMMER!}.Vi ser på figuren igjen:\\
 \includegraphics[scale=0.26]{media/unity_vectors.png}\\
 Poisjonsvektoren har altså kun en komponent som går langs $\vec{e}_r$, ingen som går ortogonalt. Hvis vi tenker litt på det så er det egentlig opplagt siden $\vec{e}_r$ er definert fra $\vec{r}$.
@@ -653,8 +654,8 @@ Poisjonsvektoren har altså kun en komponent som går langs $\vec{e}_r$, ingen s
 
 \begin{frame}
 \label{hastighet1}
-\lastpagebutton{blue_nytema3}
-Det vi fant er altså at posisjonsvektoren kan skrives som 
+\lastpagebutton{blue_nytema3}{\bf SIDE 19/27/50}\\
+Det vi fant er altså at posisjonsvektoren kan skrives som
 \[
 \vec{r}=r\vec{e}_r
 \]
@@ -671,7 +672,7 @@ Har du tenkt nøye gjennom hvordan du kunne tenke deg å gjøre det? Har du en i
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_hintv}
-\lastpagebutton{hastighet1}
+\lastpagebutton{hastighet1}{\bf SIDE 20/27/50}\\
 \textcolor{yellow}{\htmlcom{large}{
 Hint skal bli:}\\
 \htmlcom{large}{Hva er definisjonen av hastighet? Den med en derivert?}}
@@ -682,7 +683,7 @@ Hint skal bli:}\\
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_nohintv}
-\lastpagebutton{hastighet1}
+\lastpagebutton{hastighet1}{\bf SIDE 21/27/50}\\
 \addtocounter{pageno}{-1}
 Var det noe alla:
 \[
@@ -711,14 +712,14 @@ Dette skal vi bruke mye i resten av kurset, så lær deg dette med en gang!
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_nohintv_b}
-\lastpagebutton{hastighet1}
+\lastpagebutton{hastighet1}{\bf SIDE 21/27/50}\\
 Var det noe alla:
 \[
 \vec{v}=\frac{d\vec{r}}{dt}
 \]
 du tenkte på?\\
  Hvordan går du videre her? (vi lærte vel akkurat hvordan uttrykke $\vec{r}$ med enhetsvektorer...)\\
-{\choicebutton{Har du en ide?}}\\
+{\pagebuttonolink{Har du en ide?}}\\
 Jepp, kjerneregel selvfølgelig. Da blir det vel:
 \[
 \vec{v}=\frac{d}{dt}(r\vec{e}_r)=\dot r\vec{e}_r+r\frac{d}{dt}\vec{e}_r
@@ -738,7 +739,7 @@ Dette skal vi bruke mye i resten av kurset, så lær deg dette med en gang!
 
 \begin{frame}
 \label{hastighet2}
-\lastpagebutton{riktig_nohintv}
+\lastpagebutton{riktig_nohintv}{\bf SIDE 22/27/50}\\
 Vi har altså:
 \[
 \vec{v}=\frac{d}{dt}(r\vec{e}_r)=\dot r\vec{e}_r+r\frac{d}{dt}\vec{e}_r
@@ -752,7 +753,7 @@ Hvordan kan du går frem for å finne den tidsderiverte av enhetsvektoren $\vec{
 
 \begin{frame}
 \label{hastighet3}
-\lastpagebutton{hastighet2}
+\lastpagebutton{hastighet2}{\bf SIDE 23/27/50}\\
 \addtocounter{pageno}{-1}
 Første steg kan være å uttrykke $\vec{e}_r$ med faste enhetsvektorer som $\vec{e}_x$ og $\vec{e}_y$. La oss bruke denne figuren:
 \includegraphics[scale=0.5]{media/unity_vector_decomp.png}\\
@@ -761,7 +762,7 @@ Hvis vi nå skal skrive
 \vec{e}_r=a\vec{e}_x+b\vec{e}_y
 \]
 Hva er $a$ og $b$?
-Tenk deg litt om, før du ...
+Tenk deg litt om, før du ...\\
 \hyperlink{hastighet3_b}{\choicebutton{... trykker her for noen alternativer}}\\
 \textcolor{white}{
 Er det:\\
@@ -770,7 +771,7 @@ Er det:\\
 
 \begin{frame}
 \label{hastighet3_b}
-\lastpagebutton{hastighet2}
+\lastpagebutton{hastighet2}{\bf SIDE 23/27/50}\\
 \addtocounter{pageno}{-1}
 Første steg kan være å uttrykke $\vec{e}_r$ med faste enhetsvektorer som $\vec{e}_x$ og $\vec{e}_y$. La oss bruke denne figuren:
 \includegraphics[scale=0.5]{media/unity_vector_decomp.png}\\
@@ -779,8 +780,8 @@ Hvis vi nå skal skrive
 \vec{e}_r=a\vec{e}_x+b\vec{e}_y
 \]
 Hva er $a$ og $b$?
-Tenk deg litt om, før du ...
-{\choicebutton{... trykker her for noen alternativer}}\\
+Tenk deg litt om, før du ...\\
+{\pagebuttonolink{... trykker her for noen alternativer}}\\
 Er det:\\
 \hyperlink{feilerfeil}{\choicebutton{$a=\theta\  b = 0$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=\sin{\theta}\  b = 0$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=\cos{\theta}\ b=0$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=\sin{\theta}\  b = \cos{\theta}$}}\ \ \ \ \hyperlink{riktigerrett}{\choicebutton{$a=\cos{\theta}\ b=\sin{\theta}$}}\ \ \ \ \hyperlink{feilerfeil}{\choicebutton{$a=1\ b=\sin{\theta}$}}
 \end{frame}
@@ -790,7 +791,7 @@ Er det:\\
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilerfeil}
-\dlastpagebutton{hastighet3_b}
+\dlastpagebutton{hastighet3_b}{\bf SIDE 24/27/50}\\
 \textcolor{white}{Det ble galt! Husk at alt du gjør er å dekomponere $\vec{e}_r$ ned på x- og y-aksene. Husk også at lengden av $\vec{e}_r$ er 1. Hvis du har en hvilken som helst vektor med kjent lengde og du skal finne x- og y-komponentene, hva gjør du vanligvis?\\
 Prøv å ha dette i tankene når du nå går tilbake og gjør et nytt forsøk.\\
 Hvis du ikke forstår dette, ta kontakt med gruppelærer eller foreleser!}
@@ -801,7 +802,7 @@ Hvis du ikke forstår dette, ta kontakt med gruppelærer eller foreleser!}
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigerrett}
-\clastpagebutton{hastighet3}
+\clastpagebutton{hastighet3}{\bf SIDE 25/27/50}\\
 {\bf STEMMER!}. Når vi dekomponerer $\vec{e}_r$ ned på x- og y-aksen så er x- og y-komponentene av en vektor med lengde 1 lik cosinus og sinus til vinkelen, akkurat slik vi er vant til, dermed
 \[
 \vec{e}_r = \cos{\theta}\vec{e}_x+\sin{\theta}\vec{e}_y
@@ -821,7 +822,7 @@ Nå har du fått god hjelp til å derivere $\vec{e}_r$ med hensyn på tiden. Gj�
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilderfeil}
-\lastpagebutton{riktigerrett}
+\lastpagebutton{riktigerrett}{\bf SIDE 26/27/50}\\
 \textcolor{white}{Det ble galt! Hint:
 \[
 \frac{d}{dt}(\cos{\theta}) = -\dot\theta\sin{\theta}
@@ -836,9 +837,9 @@ Gå tilbake og prøv igjen, hvis du sliter med å forstå, kontakt foreleser/gru
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigderrett}
-\clastpagebutton{riktigerrett}
+\clastpagebutton{riktigerrett}{\bf SIDE 27/27/50}\\
 {\bf Det er helt riktig}.
-Vi har altså 
+Vi har altså
 \[
 \dot{\vec{e}}_r = \dot\theta\vec{e}_\theta
 \]
@@ -891,7 +892,7 @@ Ihvertfall 5 min...
 
 \begin{frame}
 \label{hastighet4}
-\lastpagebutton{riktigderrett}
+\lastpagebutton{riktigderrett}{\bf SIDE 28/30/50}\\
 La oss prøve å tolke uttrykket for hastighet
 \[
 \vec{v} = \dot{r}\vec{e}_r + r\dot\theta\vec{e}_\theta
@@ -902,7 +903,7 @@ I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsr
 
 \begin{frame}
 \label{hastighet5}
-\lastpagebutton{hastighet4}
+\lastpagebutton{hastighet4}{\bf SIDE 29/30/50}\\
 {\small Har du nå klart for deg hva {\it radiell} og {\it tangensiell} hastighet er for noe?\\
 La oss se om vi kan utlede uttrykket for tangensiell hastighet, altså $v_\theta = r\dot\theta$, en gang til, men nå med litt geometri og rent fysiske argumenter isteden. Vi skal bruke denne figuren her}
 \includegraphics[scale=0.5]{media/tangential_vel.png}\\
@@ -913,7 +914,7 @@ La oss se om vi kan utlede uttrykket for tangensiell hastighet, altså $v_\theta
 
 \begin{frame}
 \label{hastighet6}
-\lastpagebutton{hastighet5}
+\lastpagebutton{hastighet5}{\bf SIDE 30/30/50}\\
 Hvis du har tenkt deg om, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_3.mp4}{denne videoen her} for en forklaring.\\
 {\bf Bruk nå uttrykket du har funnet for $v_\theta$ til å vise at spinn (angulærmoment) per masse for romskipet, $h$, er gitt ved $h=r^2\dot\theta$.} Spinn per masse er definert som
 \[
@@ -938,7 +939,7 @@ der $\vec{p}=m\vec{v}$ er bevegelsesmengden til romskipet og $m$ er massen. Denn
 
 \begin{frame}
 \label{kepler}
-\lastpagebutton{hastighet6}
+\lastpagebutton{hastighet6}{\bf SIDE 31/38/50}\\
 \addtocounter{pageno}{-1}
 Nå begynner vi å nærme oss \textcolor{red}{den analytiske utledning av baner} her, men før i setter igang, har du hørt om Keplers lover?
 \hyperlink{kepler_b}{\pagebutton{JA!}}\ \ \ \ \ \hyperlink{kepler_c}{\pagebutton{NEI!}}
@@ -956,7 +957,7 @@ Se gjerne {denne videoen} hvis du er usikker på hva lovene sier. {\bf Hvis du a
 
 \begin{frame}
 \label{kepler_b}
-\lastpagebutton{hastighet6}
+\lastpagebutton{hastighet6}{\bf SIDE 31/38/50}\\
 \addtocounter{pageno}{-1}
 Nå begynner vi å nærme oss \textcolor{red}{den analytiske utledning av baner} her, men før i setter igang, har du hørt om Keplers lover?
 {\pagebuttonolink{JA!}}\ \ \ \ \ {\pagebuttonolink{NEI!}}\\
@@ -973,7 +974,7 @@ Se gjerne {denne videoen} hvis du er usikker på hva lovene sier. {\bf Hvis du a
 
 \begin{frame}
 \label{kepler_c}
-\lastpagebutton{hastighet6}
+\lastpagebutton{hastighet6}{\bf SIDE 31/38/50}\\
 \addtocounter{pageno}{-1}
 Nå begynner vi å nærme oss \textcolor{red}{den analytiske utledning av baner} her, men før i setter igang, har du hørt om Keplers lover?
 {\pagebuttonolink{JA!}}\ \ \ \ \ {\pagebuttonolink{NEI!}}\\
@@ -990,7 +991,7 @@ Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/underv
 
 \begin{frame}
 \label{kepler0b}
-\dlastpagebutton{kepler}
+\dlastpagebutton{kepler}{\bf SIDE 32/38/50}\\
 {\Large
 Merket du deg forresten en viktig ting på forrige side og i videoen? I astrofysikken bruker vi enheten AU (Astronomial Unit), astronomiske enheter, veldig mye så lær deg med en gang hva denne betyr:}
 \begin{block}{\bf Astronomisk enhet (AU)}
@@ -1003,7 +1004,7 @@ Merket du deg forresten en viktig ting på forrige side og i videoen? I astrofys
 
 \begin{frame}
 \label{kepler1}
-\lastpagebutton{kepler0b}
+\lastpagebutton{kepler0b}{\bf SIDE 33/38/50}\\
 \addtocounter{pageno}{-1}
 Når vi snakker om ellipsebaner, husker du forresten formelen for en ellipse...?
 \hyperlink{kepler1_b}{\pagebutton{Trykk her når du har tenkt deg om...}}\\
@@ -1019,7 +1020,7 @@ der $a$ er \textcolor{white}{store halvakse (semi major axis)} og $b$ er \textco
 
 \begin{frame}
 \label{kepler1_b}
-\lastpagebutton{kepler0b}
+\lastpagebutton{kepler0b}{\bf SIDE 33/38/50}\\
 \addtocounter{pageno}{-1}
 Når vi snakker om ellipsebaner, husker du forresten formelen for en ellipse...?
 {\pagebuttonolink{Trykk her når du har tenkt deg om...}}\\
@@ -1039,7 +1040,7 @@ der $a$ er \textcolor{red}{store halvakse (semi major axis)} og $b$ er \textcolo
 
 \begin{frame}
 \label{kepler2}
-\dlastpagebutton{kepler1}
+\dlastpagebutton{kepler1}{\bf SIDE 34/38/50}\\
 \includegraphics[scale=0.4]{media/ellipse.png}\\
 I tillegg til halvaksene bør du kjenne til begrepet \textcolor{red}{brennpunkt}. Denne er markert med massen $m_1$ på figuren. En ellipse har to brennpunkter, begge ligger i en avstand $ae$ fra sentrum langs store halvakse. Størrelsen $e$ kaller vi \textcolor{red}{eksentrisiteten} og sier noe om hvor avlang ellipsen er.
 \hyperlink{kepler3}{\pagebutton{Neste side}}
@@ -1048,7 +1049,7 @@ I tillegg til halvaksene bør du kjenne til begrepet \textcolor{red}{brennpunkt}
 
 \begin{frame}
 \label{kepler3}
-\lastpagebutton{kepler2}
+\lastpagebutton{kepler2}{\bf SIDE 35/38/50}\\
 \includegraphics[scale=0.4]{media/ellipse.png}\\
 {
 \small
@@ -1063,7 +1064,7 @@ Vi ser at hvis vi har en sirkel så må store og lille halvakse være like store
 
 \begin{frame}
 \label{kepler4}
-\lastpagebutton{kepler3}
+\lastpagebutton{kepler3}{\bf SIDE 36/38/50}\\
 \includegraphics[scale=0.4]{media/ellipse.png}\\
 Når vi snakker om ellipsebanene i Keplers første lov, enten det gjelder planetenes baner rundt sola eller en satelitts bane rundt en planet, så ligger altså den ene massen $m_1$ i brennpunktet og den andre massen $m_2$ går i ellipsebane rundt. Det er noen ord til som du må lære her: \textcolor{red}{periapsis} er punktet i ellipsebanen der objektene er nærmest hverandre og \textcolor{red}{apoapsis} er punktet i ellipsebanen der de er lengst fra hverandre. For en planets bane rund sola så brukes ordene \textcolor{red}{perihel} og \textcolor{red}{aphel} isteden.
 
@@ -1072,7 +1073,7 @@ Når vi snakker om ellipsebanene i Keplers første lov, enten det gjelder planet
 
 \begin{frame}
 \label{kepler4b}
-\lastpagebutton{kepler4}
+\lastpagebutton{kepler4}{\bf SIDE 37/38/50}\\
 \includegraphics[scale=0.3]{media/ellipse.png}\\
 {
 \small
@@ -1113,7 +1114,7 @@ Kommer omtrent hit (kanskje 4 slides til) på en fysisk forelesning (en dobbeltt
 
 \begin{frame}
 \label{kepler5}
-\lastpagebutton{kepler4b}
+\lastpagebutton{kepler4b}{\bf SIDE 38/38/50}\\
 \addtocounter{pageno}{-1}
 Da er vi klare til å begynne utledningen av Keplers første lov! Eller???\\
 {
@@ -1136,7 +1137,7 @@ En rask sjekk om du har oversikt over det som trengs
 
 \begin{frame}
 \label{kepler5_b}
-\lastpagebutton{kepler4b}
+\lastpagebutton{kepler4b}{\bf SIDE 38/38/50}\\
 \addtocounter{pageno}{-1}
 Da er vi klare til å begynne utledningen av Keplers første lov! Eller???\\
 {
@@ -1175,7 +1176,7 @@ En rask sjekk om du har oversikt over det som trengs
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_kepler5b}
-\dlastpagebutton{kepler5}
+\dlastpagebutton{kepler5}{\bf SIDE 39/50/50}\\
 \textcolor{yellow}{
 Vi skal i det følgende løse det som vi kaller {\bf 2-legeme-problemet}:\\
 \includegraphics[scale=0.4]{media/forces.png}\\
@@ -1188,7 +1189,7 @@ På figuren ser du at vektoren $\vec{r}$ peker fra $m_1$ til $m_2$. {\bf Når vi
 
 \begin{frame}
 \label{kepler6}
-\lastpagebutton{red_kepler5b}
+\lastpagebutton{red_kepler5b}{\bf SIDE 40/50/50}\\
 I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_5.mp4}{denne videoen} begynner vi utledningen av løsningen på 2-legemeproblemt. Vi diskuterer krefter på objektene og bruker Newtons lover inkludert gravitasjonsloven til å komme frem til
 \[
 \ddot{\vec{r}}+m\frac{\vec{r}}{r^3}=0
@@ -1201,13 +1202,13 @@ Dette {\bf bevegelseslikningen} for systemet vårt. Det er en differensialliknin
 
 \begin{frame}
 \label{kepler7}
-\lastpagebutton{kepler6}
+\lastpagebutton{kepler6}{\bf SIDE 41/50/50}\\
 {\small For å kunne løse denne likningen, så trenger vi å innføre enhetsvektorer. Det viser seg at det er lettere å jobbe med $\vec{e}_r$ og $\vec{e}_\theta$ her! Ta en titt på denne figuren:}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.37]{media/unityvectors_on_m1m2.png}
 \column{0.5\textwidth}
-{\Large 
+{\Large
 \[
 {-4cm}\ddot{\vec{r}}+m\frac{\vec{r}}{r^3}=0
 \]
@@ -1223,7 +1224,7 @@ Flere hint: start fra uttryket for $\dot{\vec{r}}$ og husk at $\dot{\vec{e}}_r =
 
 \begin{frame}
 \label{kepler8}
-\lastpagebutton{kepler7}
+\lastpagebutton{kepler7}{\bf SIDE 42/50/50}\\
 \[
 (\ddot{r}-r\dot{\theta}^2)\vec{e}_r+\frac{1}{r}\frac{d}{dt}(r^2\dot{\theta})\vec{e}_\theta=-\frac{m}{r^2}\vec{e}_r.
 \]
@@ -1242,7 +1243,7 @@ Hvis du ikke ser hvordan vi kommer frem til dette, så \href{https://www.uio.no/
 
 \begin{frame}
 \label{kepler9}
-\lastpagebutton{kepler8}
+\lastpagebutton{kepler8}{\bf SIDE 43/50/50}\\
 Nå nærmer vi oss slutten her!\\
 Vi skal nå gjøre to steg:
 \begin{enumerate}
@@ -1255,7 +1256,7 @@ Du skal nå få prøve deg litt selv, før du får svaret...
 
 \begin{frame}
 \label{kepler10}
-\lastpagebutton{kepler9}
+\lastpagebutton{kepler9}{\bf SIDE 44/50/50}\\
 {\bf Den delen av utledningen som står på denne siden er ikke superviktig, du kommer ikke til å bli spurt om dette i oppgavene eller på eksamen. Men det er kult å ha sett det en gang. Gå gjerne fort gjennom hvis du ikke er interessert.}
 Deriver $u$ med hensyn på $\theta$, bruk kjerneregel til å forbinde denne med $\dot r$ og se om du klarer å få:
 \[
@@ -1268,7 +1269,7 @@ der $h$ er spinn per masse. Og deriverer du en gang til skal du få:
 Hvis du nå setter inn $\ddot r$ fra likningen vi fant over ($\ddot{r}-r\dot{\theta}^2=-\frac{m}{r^2}$), klarer du å få
 \[
 \frac{d^2u(\theta)}{d\theta^2}+u=\frac{m}{h^2}
-\] 
+\]
 Var disse stegene litt vanskelige? Det var meningen! Ikke bruk mye tid på dette, her er det mer matematisk triksing enn det er fysikk. \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1b/videoer/video1b_8.mp4}{HER} finner du en video som forklarer det.
 \hyperlink{kepler11}{\pagebutton{Neste side}}
 \end{frame}
@@ -1277,7 +1278,7 @@ Var disse stegene litt vanskelige? Det var meningen! Ikke bruk mye tid på dette
 \label{kepler11}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebuttonx{kepler10}
+\lastpagebuttonx{kepler10}{\bf SIDE 45/50/50}\\
 \headlinebutton{\headline}\\
 Før vi går videre, la oss snakke om noe helt annet. Har du hørt om {\it harmonisk oscillator?}. Se på denne situasjonen:\\
 \includegraphics[scale=0.4]{media/harmosc.png}
@@ -1303,7 +1304,7 @@ Dette er også en harmonisk oscillator.
 
 \begin{frame}
 \label{kepler12}
-\lastpagebutton{kepler11}
+\lastpagebutton{kepler11}{\bf SIDE 46/50/50}\\
 Vi forstår at løsningen er oscillerende: loddet kommer til å svinge opp og ned ettersom tyngden drar det nedover og fjæren oppover så få vi en svingene bevegelse. Det samme må altså skje med $u(\theta$), ettersom $\theta$ endrer seg så må $u$ (og dermed $r$) bli større og mindre. Dette stemmer jo med en ellipse: planeten går fra perihel til aphel og dermed svinger $r$ (avstanden til brenpunktet) mellom minste og største verdi, akkurat som loddet. Men kan du se en analytisk løsning av denne likningen?\\
 Hvis du først setter konstanten lik 0 og flytter over på høyre side så står det:
 \[
@@ -1315,7 +1316,7 @@ Ser du en løsning av denne likningen? Her har vi jo en funksjon $u$ som er slik
 
 \begin{frame}
 \label{kepler13}
-\lastpagebutton{kepler12}
+\lastpagebutton{kepler12}{\bf SIDE 47/50/50}\\
 Ganske riktig ja! En cosinus eller sinus er jo akkurat slik at hvis du deriverer den to ganger så få du tilbake minus funksjonen selv. Hva hvis vi nå tar med konstantleddet da. Hva blir løsningen av denne likningen?
 \begin{block}{\bf Likningen for harmonisk oscillator for tolegemeproblemet}
 \[
@@ -1331,7 +1332,7 @@ Prøv deg litt frem på papir, maks 2-3 minutter, se hvor langt du kommer...
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_kepler14}
-\lastpagebutton{kepler13}
+\lastpagebutton{kepler13}{\bf SIDE 48/50/50}\\
 \textcolor{yellow}{
 Hvis du har funnet en løsning, er du {\bf helt} sikker på at du har funnet riktig løsning?. Før du går videre nå, ta din løsning $u(\theta)$ og dobbeltderiver den!
 Er svaret du får lik:
@@ -1346,7 +1347,7 @@ Helt sikker?}
 
 \begin{frame}
 \label{kepler15}
-\lastpagebutton{red_kepler14}
+\lastpagebutton{red_kepler14}{\bf SIDE 49/50/50}\\
 \addtocounter{pageno}{-1}
 Da skulle du ha fått følgende svar:
 \[
@@ -1365,7 +1366,7 @@ Ser du noe kjent med dette uttrykket? Kan du skrive det litt om for å få noe k
 
 \begin{frame}
 \label{kepler15_2}
-\lastpagebutton{kepler15}
+\lastpagebutton{kepler15}{\bf SIDE 49/50/50}\\
 \textcolor{red}{{\bf HØØØØ!!DU!! Nå duppet du av litt, vi tar denne sliden EN gang til:} her var det mange konstanter og greier, og lett å gå surr. Du trenger ikke huske alle disse konstantene, men du bør forstå hva som foregår her. {\bf Så les gjennom EN gang til og smak litt på ordene...}}\\
 Da skulle du ha fått følgende svar:
 \[
@@ -1385,7 +1386,7 @@ Ser du noe kjent med dette uttrykket? Kan du skrive det litt om for å få noe k
 
 \begin{frame}
 \label{kepler16}
-\lastpagebutton{kepler15_2}
+\lastpagebutton{kepler15_2}{\bf SIDE 50/50/50}\\
 Ganske riktig ja! Hvis vi definerer en størrelse $a$ slik at $p=a(1-e^2)$ så har vi jammen
 \begin{block}{\bf Keplers første lov utledet fra Newtons lover}
 Planetene går i ellipsebaner

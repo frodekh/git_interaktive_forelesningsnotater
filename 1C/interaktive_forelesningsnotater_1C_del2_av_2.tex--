@@ -57,7 +57,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -304,6 +304,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema4}{\headlinebutton{Støy i data:statistikk}}
 \item \hyperlink{blue_nytema5}{\headlinebutton{Tips til parameterestimering}}
 \end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
 \hyperlink{intro}{\choicebutton{Neste side}}
 \end{frame}
 
@@ -323,7 +324,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 
 \begin{frame}
 \label{intro2}
-\lastpagebutton{intro}
+\lastpagebutton{intro}{\bf SIDE 1/1/52}\\
 {\small
 Vi utledet i forrige forelesning sammenhengen mellom stjernas banehastighet og massen til planeten som går i bane rundt stjerna
 \[
@@ -348,7 +349,7 @@ der $P$ er omløpsperioden, $i$ er inklinasjonen ({\bf husker du hvordan den er 
 
 \begin{frame}
 \label{eks1}
-\lastpagebutton{intro2}
+\lastpagebutton{intro2}{\bf SIDE 2/14/52}\\
 Vi skal gjøre deler av oppgave 1C.3 her. Vi skal se på en realistisk hastighetskurve med støy. Vi skal snart lære mer om støy, men den gir et tilfeldig ekstra utslag på hastighetskurven i hvert tidssted. {\bf Støyen gir et tilfeldig hastighetsbidrag i hvert tidssteg som i middel skal gå like mye opp som ned slik at den underliggende kurven uten støy ligger midt inne i støyen.}\\
 \vspace*{0.5cm}
 \begin{columns}
@@ -357,7 +358,7 @@ Vi skal gjøre deler av oppgave 1C.3 her. Vi skal se på en realistisk hastighet
 Her ser vi radialhastighetskurven til en stjerne.
 \column{0.5\textwidth}
 Anslå egenhastigheten til stjerna {\bf hvis du ikke husker hva egenhastighet var, gå tilbake til forrige forelesning, dette er et svært viktig konsept!}. Er den:\\
-\hyperlink{feilv}{\choicebutton{0m/s}}\ \hyperlink{feilv}{\choicebutton{2500m/s}}\ \hyperlink{feilv}{\choicebutton{2475m/s}}\ \hyperlink{riktigv}{\choicebutton{2300m/s}}\ \hyperlink{feilv}{\choicebutton{2125m/s}}\ \hyperlink{feilv}{\choicebutton{2100m/s}}\ \hyperlink{feilv}{\choicebutton{400m/s}}\ \hyperlink{feilv}{\choicebutton{175m/s}}\ 
+\hyperlink{feilv}{\choicebutton{0m/s}}\ \hyperlink{feilv}{\choicebutton{2500m/s}}\ \hyperlink{feilv}{\choicebutton{2475m/s}}\ \hyperlink{riktigv}{\choicebutton{2300m/s}}\ \hyperlink{feilv}{\choicebutton{2125m/s}}\ \hyperlink{feilv}{\choicebutton{2100m/s}}\ \hyperlink{feilv}{\choicebutton{400m/s}}\ \hyperlink{feilv}{\choicebutton{175m/s}}\
 \end{columns}
 \end{frame}
 
@@ -365,7 +366,7 @@ Anslå egenhastigheten til stjerna {\bf hvis du ikke husker hva egenhastighet va
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilv}
-\lastpagebutton{eks1}
+\lastpagebutton{eks1}{\bf SIDE 3/14/52}\\
 \textcolor{white}{Det ble galt. Er du sikker på at du forstår hva egenhastighet er for noe? Egenhastigheten er hastigheten til massesenteret. Stjerna har hastigheten til massesenteret pluss banehastighet omkring massesenteret. Gå tilbake til forrige forelesning og kontroller at du forstår godt hvorfor hastighetskurven ser ut slik som den ser ut. Hvis du ikke forstår dette må du ikke gå videre da vil du ikke få noe ut av denne forelesningen. Tenk og gjør et nytt forsøk. Hvis du etter det enda ikke forstår, kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_6.mp4}{denne videoen}.}
 \end{frame}
 }
@@ -374,7 +375,7 @@ Anslå egenhastigheten til stjerna {\bf hvis du ikke husker hva egenhastighet va
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigv}
-\clastpagebutton{eks1}
+\clastpagebutton{eks1}{\bf SIDE 4/14/52}\\
 Bra! Du ser ut til å ha forstått hastighetskurven og at egenhastigheten er massesenterets hastighet. Hvis du likevel skulle være litt i tvil, så kikk gjerne på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_6.mp4}{denne videoen} som forklarer det i litt detalj.
 \hyperlink{eks2}{\pagebutton{Neste side}}
 \end{frame}
@@ -384,7 +385,7 @@ Bra! Du ser ut til å ha forstått hastighetskurven og at egenhastigheten er mas
 
 \begin{frame}
 \label{eks2}
-\lastpagebutton{eks1}
+\lastpagebutton{eks1}{\bf SIDE 5/14/52}\\
 Vi fortsetter med deler av oppgave 1C.3 her:\\
 \vspace*{1cm}
 \begin{columns}
@@ -393,7 +394,7 @@ Vi fortsetter med deler av oppgave 1C.3 her:\\
 Her ser vi radialhastighetskurven til en stjerne.
 \column{0.5\textwidth}
 Hvis vi antar at inklinasjonen er $90^\circ$, anslå den fulle banehastigheten til stjerna i bane om massesenteret. Er den:\\
-\hyperlink{feilv2}{\choicebutton{0m/s}}\ \hyperlink{feilv2}{\choicebutton{2500m/s}}\ \hyperlink{feilv2}{\choicebutton{2475m/s}}\ \hyperlink{feilv2}{\choicebutton{2300m/s}}\ \hyperlink{feilv2}{\choicebutton{2125m/s}}\ \hyperlink{feilv2}{\choicebutton{2100m/s}}\ \hyperlink{feilv2}{\choicebutton{400m/s}}\ \hyperlink{riktigv2}{\choicebutton{175m/s}}\ 
+\hyperlink{feilv2}{\choicebutton{0m/s}}\ \hyperlink{feilv2}{\choicebutton{2500m/s}}\ \hyperlink{feilv2}{\choicebutton{2475m/s}}\ \hyperlink{feilv2}{\choicebutton{2300m/s}}\ \hyperlink{feilv2}{\choicebutton{2125m/s}}\ \hyperlink{feilv2}{\choicebutton{2100m/s}}\ \hyperlink{feilv2}{\choicebutton{400m/s}}\ \hyperlink{riktigv2}{\choicebutton{175m/s}}\
 \end{columns}
 \end{frame}
 
@@ -402,7 +403,7 @@ Hvis vi antar at inklinasjonen er $90^\circ$, anslå den fulle banehastigheten t
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilv2}
-\lastpagebutton{eks2}
+\lastpagebutton{eks2}{\bf SIDE 6/14/52}\\
 \textcolor{white}{Det ble ikke helt riktig. Kan det være at du har glemt at støyen gir like mye utslag opp som ned og at den virkelige hastighetskurven som vi er ute etter ligger midt inne i den støyete kurven? Eller kan det være at du har glemt at banehastigheten er hastigheten {\bf i forhold til massesenteret}? Tenk litt til, og prøv igjen!}
 \end{frame}
 }
@@ -411,10 +412,10 @@ Hvis vi antar at inklinasjonen er $90^\circ$, anslå den fulle banehastigheten t
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigv2}
-\clastpagebutton{eks2}
+\clastpagebutton{eks2}{\bf SIDE 7/14/52}\\
 \begin{columns}
 \column{0.5\textwidth}
-Det er helt riktig! Siden banehastigheten er hastigheten {\bf i forhold til massesenteret}, så må vi se på det maksimale utslaget fra massesenterhastigheten. 
+Det er helt riktig! Siden banehastigheten er hastigheten {\bf i forhold til massesenteret}, så må vi se på det maksimale utslaget fra massesenterhastigheten.
 \includegraphics[scale=0.32]{media/vr.png}\\
 \column{0.5\textwidth}
 \parbox{\linewidth}{\textcolor{red}{Vi ser på det maksimale utslaget siden $v_r$-komponenten har den fulle hastigheten i punkt B på figuren (se forrige forelesning)}. Massesenter\-hastigheten er 2300m/s og det maksimale utslaget på toppen av kurven er ca. 2475m/s. {\bf MERK at det ikke er 2500 m/s siden dette er det maksimale utslaget {\bf med} støy.} Hvis den virkelige glatte kurven ligger midt inne i støyen slik at det er like mye støyutslag opp som ned, så må den vel ligge på ca. 2475m/s? Dermed har vi at 2475m/s-2300m/s = 175m/s (vi trekker altså fra massesenter\-hastigheten for å få hastighet i forhold til massesenteret).}
@@ -426,7 +427,7 @@ Det er helt riktig! Siden banehastigheten er hastigheten {\bf i forhold til mass
 
 \begin{frame}
 \label{eks3}
-\lastpagebutton{riktigv2}
+\lastpagebutton{riktigv2}{\bf SIDE 8/14/52}\\
 Hvis vi nå antar at inklinasjonen er ukjent, gjør et estimat av den minste mulige massen som denne planeten må ha. Anta at man ved spektroskopi har anslått stjernas masse til å være $0.3\mathrm{m}_\odot$ (merk at vi bruker $\mathrm{m}_\odot$ til å markere solmasser), altså en liten rød dvergstjerne. {\bf Her trenger du formelen fra forelesning 1 som er repetert i starten her av forelesning 2}
 \begin{columns}
 \column{0.5\textwidth}
@@ -442,7 +443,7 @@ Er den minste mulige massen:
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilp}
-\lastpagebutton{eks3}
+\lastpagebutton{eks3}{\bf SIDE 9/14/52}\\
 \textcolor{white}{Det ble nok ikke helt riktig. Usikkerheter i avlesninger gir litt slingringsmonn, men dette var litt for langt unna! Har du brukt $P=300$ timer, $v_*=175$m/s og $m_*=0.3m_\odot$? Hva får du hvis du bruker disse tallene? Blir det veldig forskjellig fra ditt tall? Gjør et nytt forsøk og spør gruppelærer hvis du ikke får det til.}
 \end{frame}
 }
@@ -451,7 +452,7 @@ Er den minste mulige massen:
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigp}
-\clastpagebutton{eks3}
+\clastpagebutton{eks3}{\bf SIDE 10/14/52}\\
 Flott, du fikk det til! Kanskje du ikke fikk helt dette tallet? Det kan komme an på unøyaktigheter i avlesningen. Med $P=300$ timer, $v_*=175$m/s og $m_*=0.3m_\odot$ skulle du få et tall i nærheten av 0.9 jupitermasser.
 \hyperlink{eks4}{\pagebutton{Neste side}}
 \end{frame}
@@ -460,7 +461,7 @@ Flott, du fikk det til! Kanskje du ikke fikk helt dette tallet? Det kan komme an
 
 \begin{frame}
 \label{eks4}
-\lastpagebutton{riktigp}
+\lastpagebutton{riktigp}{\bf SIDE 11/14/52}\\
 Som du ser blir det ganske høy usikkerhet da det er vanskelig å lese av $P$ og $v_*$ nøyaktig med støy på kurven. Dette skal vi se nærmere på om et par sider. Men først skal vi jobbe litt mer med oppgave 1C.3. Vi fortsetter med den samme stjerna, men observasjoner av lyskurven viser at planeten formørker stjerna. Her ser vi utdrag av lyskurven fra en formørkelse:
 \begin{columns}
 \column{0.5\textwidth}
@@ -477,7 +478,7 @@ Her blir det stor usikkerhet avhengig av hvordan du leser av den støyete kurven
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilp2}
-\lastpagebutton{eks4}
+\lastpagebutton{eks4}{\bf SIDE 12/14/52}\\
 \textcolor{white}{Det ble nok ikke helt riktig. Usikkerheter i avlesninger gir litt slingringsmonn, men dette var litt for langt unna! Har du brukt at tiden fra planeten begynner å formørke stjernen til planeten formørker stjernen fullstendig er ca. 0.8 timer? Og at planethastigheten $v_p\approx 60$km/s? Hva får du hvis du bruker disse tallene? Blir det veldig forskjellig fra ditt tall? Gjør et nytt forsøk og spør gruppelærer hvis du ikke får det til.}
 \end{frame}
 }
@@ -486,7 +487,7 @@ Her blir det stor usikkerhet avhengig av hvordan du leser av den støyete kurven
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigp2}
-\clastpagebutton{eks4}
+\clastpagebutton{eks4}{\bf SIDE 13/14/52}\\
 Flott, du fikk det til! Kanskje du ikke fikk helt dette tallet? Det kan komme an på unøyaktigheter i avlesningen. Med $v_p\approx 60$km/s og $t_1-t_0\approx0.8$ timer skulle du få et tall i nærheten av 1.3 jupiterradier. Vi ser altså at vi har en planet som er litt mindre massiv en jupiter men med noe større radius. Da får vi ca. 0.6 ganger tettheten til vann, litt mindre enn Saturn som har 0.7 ganger vannets tetthet. Dette er altså helt klart en gassplanet.
 \[
 \rho = \frac{0.9\times1.9\times10^{27}\mathrm{kg}}{\frac{4}{3}\pi(1.3\times70\times10^6\mathrm{m})^3}
@@ -501,7 +502,7 @@ Flott, du fikk det til! Kanskje du ikke fikk helt dette tallet? Det kan komme an
 
 \begin{frame}
 \label{eks5}
-\lastpagebutton{riktigp2}
+\lastpagebutton{riktigp2}{\bf SIDE 14/14/52}\\
 {\bf Forstår du alle stegene? Hvis ikke, ta kontakt med foreleser eller gruppelærer!}\\
 Husk at når vi karaktersetter prosjektet eller eksamen så er det forklaring av metoden som vi ser etter, ikke svaret. Når det gjelder estimering av planetmasser/radier, så er det fort gjort å venne seg til hvor man skal lese av på kurven og så sette disse tallene inn i en formel. Men da er det fort gjort å glemme {\bf hvorfor} man skal lese av på den måten og hvorfor formelen ser ut som den gjør. Det er \textcolor{red}{disse tingene} du blir testes i, {\bf ikke} om du kan lese av fra en kurve og sette inn i en formel, det forutsetter vi at du kan.\\
 \vspace*{0.5cm}
@@ -523,7 +524,7 @@ Da har tiden kommet til å teste forståelsen din litt mer i \href{https://netts
 
 \begin{frame}
 \label{stat1}
-\lastpagebutton{eks5}\label{stoy}
+\lastpagebutton{eks5}\label{stoy}{\bf SIDE 15/24/52}\\
 \includegraphics[scale=0.35]{media/vr_noisy.png}\\
 {\small
 I figuren ser vi en radialhastighetskurve tatt fra en spektrallinje i spektret fra en stjerne. Den røde linjen viser hvordan kurven hadde sett ut hvis det ikke var støy i måleinstrumentene. Den sorte kurven viser hva som faktisk måles og som gjør det vanskelig å trekke nøyaktige hastigheter ut av kurven.
@@ -537,17 +538,19 @@ I figuren ser vi en radialhastighetskurve tatt fra en spektrallinje i spektret f
 \label{stat2}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebuttonx{stat1}
+\lastpagebuttonx{stat1}{\bf SIDE 16/24/52}\\
 \headlinebutton{\headline}
 \includegraphics[scale=0.3]{media/vrmod.png}\\
 {\small
-Figuren viser stjerna i banen om massesenter med en vinkel $\theta$ som sier hvor i banen stjerna er. På figuren ser vi at $\theta$ også er vinkelen mellom $\vec{v}$ og synslinja.  Ser du hvorfor det er samme vinkel $\theta$ begge steder? ({\bf hint: en forlengelse av linja fra sentrum av sirkelen og radielt utover ved $\theta$).}.  
+Figuren viser stjerna i banen om massesenter med en vinkel $\theta$ som sier hvor i banen stjerna er. På figuren ser vi at $\theta$ også er vinkelen mellom $\vec{v}$ og synslinja.  Ser du hvorfor det er samme vinkel $\theta$ begge steder? ({\bf hint: en forlengelse av linja fra sentrum av sirkelen og radielt utover ved $\theta$).}.
 }
 \column{0.5\textwidth}
 {\small
 For å kunne bruke kurven med støy til å finne mest mulig nøyaktige tall, trenger vi å lage en modell for den glatte 'virkelige' kurven som vi hadde observert hvis vi ikke hadde hatt støy. \textcolor{red}{Bruk figuren til å se om du kan utlede en analytisk modell for observert radialhastighet som funksjon av vinkelen $\theta(t)$ som er vist på figuren, samt den faktiske banehastigheten $v_*$ til banen (som er den vi er interessert i).}
 }
-\hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\sin{\frac{2\pi}{\theta(t)}}$}}\ \hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\cos{\frac{2\pi}{\theta(t)}}$}}\ \hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\sin{\theta(t)}$}}\ \hyperlink{riktigm}{\choicebutton{ $v_r(t)=v_*\cos{\theta(t)}$}}\ \hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\cos{\theta(t)}\sin{\theta}$}}\ \hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\tan{\theta(t)}$}}
+\hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\sin{\frac{2\pi}{\theta(t)}}$}}\ \hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\cos{\frac{2\pi}{\theta(t)}}$}}\\
+\hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\sin{\theta(t)}$}}\ \hyperlink{riktigm}{\choicebutton{ $v_r(t)=v_*\cos{\theta(t)}$}}\\
+\hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\cos{\theta(t)}\sin{\theta}$}}\ \hyperlink{feilm}{\choicebutton{ $v_r(t)=v_*\tan{\theta(t)}$}}
 \end{columns}
 \end{frame}
 
@@ -556,7 +559,7 @@ For å kunne bruke kurven med støy til å finne mest mulig nøyaktige tall, tre
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilm}
-\lastpagebutton{stat2}
+\lastpagebutton{stat2}{\bf SIDE 17/24/52}\\
 \textcolor{white}{Det ble feil, kansje du ikke kikket nøye nok på figuren? Innser du hvorfor $\theta$ som er vinkelen mellom $\vec{v}$ og $v_r$ må være samme vinkel som den $\theta$ som angir hvor på sirkelen stjernen er? Hvis du gjør det så ser du at $\theta$ er vinkelen mellom $\vec{v}$ og $v_r$ som betyr, som du jo vet, at $v_r$ er x-komponenten av $\vec{v}$? Dermed er $v_r$ projeksjonen av $\vec{v}$ med vinkelen $\theta$. Hjalp det? Gå tilbake og prøv igjen.}\\
 \includegraphics[scale=0.3]{media/vrmod.png}
 \end{frame}
@@ -566,7 +569,7 @@ For å kunne bruke kurven med støy til å finne mest mulig nøyaktige tall, tre
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigm}
-\clastpagebutton{stat2}
+\clastpagebutton{stat2}{\bf SIDE 18/24/52}\\
 Helt riktig.  Innser du hvorfor $\theta$ som er vinkelen mellom $\vec{v}$ og $v_r$ må være samme vinkel som den $\theta$ som angir hvor på sirkelen stjernen er? Hvis du gjør det, så har du innsett at $v_r$ er x-komponenten til $\vec{v}$ med vinkel $\theta$ imellom og dermed er altså
 \[
 v_r(t)=v_*\cos{\theta(t)}
@@ -579,17 +582,19 @@ v_r(t)=v_*\cos{\theta(t)}
 
 \begin{frame}
 \label{stat3}
-\lastpagebutton{riktigm}
+\lastpagebutton{riktigm}{\bf SIDE 19/24/52}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.3]{media/vrmod.png}\\
-Vi ble enige om at 
+Vi ble enige om at
 \[
 v_r(t)=v_*\cos{\theta(t)}
 \]
 \column{0.5\textwidth}
 Men for å ha en komplett modell, trenger vi også tidsavhengigheten til $\theta(t)$. Vi skal uttrykke den med omløpsperioden $P$. Anta at ved $t=0$ så er $\theta=0$ Er $\theta(t)$ lik:\\
-\hyperlink{feilm2}{\choicebutton{ $\theta(t)=2\pi Pt$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=\frac{P}{t}$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=P\cos{2\pi t}$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=\frac{2\pi P}{t}$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=\frac{t}{P}$}}\ \hyperlink{riktigm2}{\choicebutton{ $\theta(t)=\frac{2\pi t}{P}$}}
+\textcolor{white}{fevfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee}\\
+\hyperlink{feilm2}{\choicebutton{ $\theta(t)=2\pi Pt$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=\frac{P}{t}$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=P\cos{2\pi t}$}}\\
+\hyperlink{feilm2}{\choicebutton{ $\theta(t)=\frac{2\pi P}{t}$}}\ \hyperlink{feilm2}{\choicebutton{ $\theta(t)=\frac{t}{P}$}}\ \hyperlink{riktigm2}{\choicebutton{ $\theta(t)=\frac{2\pi t}{P}$}}
 \end{columns}
 \end{frame}
 
@@ -599,7 +604,7 @@ Men for å ha en komplett modell, trenger vi også tidsavhengigheten til $\theta
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilm2}
-\lastpagebutton{stat3}
+\lastpagebutton{stat3}{\bf SIDE 20/24/52}\\
 \textcolor{white}{Njaaaa, det ble nok ikke helt riktig! Er du enig i at banehastigheten til stjerna er konstant siden det er sirkelbane? (hvis ikke, sjekk del 1B) Det betyr at vinkelhastigheten er konstant. Men hva er vinkelhastigheten? Stjerna skal gå rundt hele sirkelen i løpet av en periode $P$. Når du har vinkelhastigheten, altså endring i $\theta$ per tidsenehet, så kan du finne vi $\theta$ når du har den totale tiden. Hjalp det? Gå tilbake og prøv igjen. Sliter du med dette, spør foreleser eller gruppelærer.}\\
 \includegraphics[scale=0.3]{media/vrmod.png}
 \end{frame}
@@ -611,7 +616,7 @@ Men for å ha en komplett modell, trenger vi også tidsavhengigheten til $\theta
 \label{riktigm2}
 \begin{columns}
 \column{0.5\textwidth}
-\clastpagebutton{stat3}
+\clastpagebutton{stat3}{\bf SIDE 21/24/52}\\
 Helt riktig. Stjerna skal gå en hel rundt på $2\pi$ i løpet av perioden $P$, dermed er vinkelhastigheten $\frac{2\pi}{P}$. Ganger vi dette med tiden $t$ som har gått så får vi vinkelen. Setter vi dette inn i vårt forrige resultat så har vi
 \[
 v_r(t)=v_*\cos{\frac{2\pi}{P}t}
@@ -645,7 +650,7 @@ Hvis vi definerer $t_0$ på denne måten, hvor på kurven er vi ved $t=t_0$??
 \label{stat4}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{riktigm2}
+\lastpagebutton{riktigm2}{\bf SIDE 22/24/52}\\
 \includegraphics[scale=0.25]{media/vr_noisy.png}\\
 Hvis vi ser på uttrykket:
 \[
@@ -655,7 +660,7 @@ så ser vi at ved $t=t_0$ så er $v_r=v_*$, altså radialhastigheten er lik den 
 \column{0.5\textwidth}
 
  Da er radialhastigheten maksimal, altså er vi på toppen av kurven.
- Dette skulle du huske fra diskusjonen i forrige forelesning: dette er punktet hvor stjernen er på vei bort fra oss langs vår synslinje og hele banehastigheten er i radialhastigheten uten noen tangensialkomponent (hvis vi antar at inklinasjonen er $90^\circ$!). Dette var punktet B på figuren i forrige forelesning. Repeter litt hvis du er usikker. 
+ Dette skulle du huske fra diskusjonen i forrige forelesning: dette er punktet hvor stjernen er på vei bort fra oss langs vår synslinje og hele banehastigheten er i radialhastigheten uten noen tangensialkomponent (hvis vi antar at inklinasjonen er $90^\circ$!). Dette var punktet B på figuren i forrige forelesning. Repeter litt hvis du er usikker.
 \hyperlink{stat5}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -667,7 +672,7 @@ så ser vi at ved $t=t_0$ så er $v_r=v_*$, altså radialhastigheten er lik den 
 \label{stat5}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{stat4}
+\lastpagebutton{stat4}{\bf SIDE 23/24/52}\\
 \includegraphics[scale=0.25]{media/vr_noisy.png}\\
 {\small
 \[
@@ -675,7 +680,7 @@ v_r(t)=v_*\cos{\frac{2\pi}{P}(t-t_0)}
 \]
 
 Vi har nå et uttrykk for hvordan kurven skal se ut hvis vi ikke har støy, uttrykt ved banehastigheten $v_*$, omløpsperioden $P$ og tidspunktet $t_0$ når kurven har første topp-punkt. Problemet er bare at vi ikke kjenner noen av disse 3 parameterene.
-} 
+}
 \column{0.5\textwidth}
 {\small
  \textcolor{red}{\bf Det er akkurat disse størrelsene vi ønsker å finne!!}.
@@ -689,7 +694,7 @@ Hvis vi finner $v_*$ og $P$ så kan vi estimere massen til planeten slik som i f
 
 \begin{frame}
 \label{stat6}
-\lastpagebutton{stat5}
+\lastpagebutton{stat5}{\bf SIDE 24/24/52}\\
 {\Huge
 \htmlcom{large}{Det var noen setninger på den forrige siden som er ganske så uforstålige hvis du ikke leser de flere ganger og tenker deg godt om. \textcolor{red}{Ta et skritt tilbake og se om du faktisk forstod hva som stod der, ok?} Når du har forstått hva som stod der, har du tenkt litt? Har du fått noen ideer? Tenk litt til før du går videre!}
 }
@@ -710,7 +715,7 @@ Hvis vi finner $v_*$ og $P$ så kan vi estimere massen til planeten slik som i f
 
 \begin{frame}
 \label{stat7}
-\lastpagebutton{stat6}\label{minstekvad}
+\lastpagebutton{stat6}\label{minstekvad}{\bf SIDE 25/27/52}\\
 \begin{columns}
 \column{0.5\textwidth}
 Har du hørt om {\it minste kvadraters metode?}. Metoden som går ut på å {\bf minimalisere forskjellen mellom modellen og dataene?}
@@ -729,7 +734,7 @@ Vi kan endre på den røde linja ved å endre på verdiene for $v_*$, $P$ og $t_
 
 \begin{frame}
 \label{stat8}
-\lastpagebutton{stat7}
+\lastpagebutton{stat7}{\bf SIDE 26/27/52}\\
 \begin{columns}
 \column{0.5\textwidth}
 {\it Minste kvadraters metode} går altså ut på å {\bf minimalisere forskjellen mellom modellen og dataene:}
@@ -747,7 +752,7 @@ Men hvordan defineres {\bf den minste forsjellen?}. Det er rett og slett {\bf fo
 
 \begin{frame}
 \label{stat8b}
-\lastpagebutton{stat8}
+\lastpagebutton{stat8}{\bf SIDE 27/27/52}\\
 \begin{columns}
 \column{0.5\textwidth}
 \small
@@ -803,7 +808,7 @@ der vi ser at $\Delta$ altså er en funksjon av de ukjente parameterene $P$, $v_
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_stat9}
-\lastpagebutton{stat8b}\label{stat}
+\lastpagebutton{stat8b}\label{stat}{\bf SIDE 28/44/52}\\
 \large\textcolor{yellow}{
 Men er dette virkelig det beste vi kan gjøre? Det blir jo noen unøyaktigheter i verdiene for $P$, $v_*$ og $t_0$ som vi får med denne metoden. Hvor presise resultatene våre er avhenger av hvor kraftig støy det er. Hvis vi nå skulle kjenne noen egenskaper til støyen, noe vi normalt gjør, kan vi da finne en mer sofistikert metode som gir oss bedre estimater? For å finne ut av dette, la oss dykke litt ned i {\Large \bf statistikken her...}}
 \includegraphics[scale=0.3]{media/diving.png}\\
@@ -817,7 +822,7 @@ Men er dette virkelig det beste vi kan gjøre? Det blir jo noen unøyaktigheter 
 
 \begin{frame}
 \label{stat10}
-\lastpagebutton{red_stat9}
+\lastpagebutton{red_stat9}{\bf SIDE 29/44/52}\\
 Normalt kan vi anta Gaussisk støy. Dvs at vi kan skrive hastigheten $v_r$ i observasjon nr. $i$ som
 \[
 v_r^\mathrm{obs}(t_i)=v_r^\mathrm{real}(t_i)+\delta v_i
@@ -830,7 +835,7 @@ der \textcolor{blue}{$v_r^\mathrm{real}$ er det faktiske hastighetskurven} som d
 
 \begin{frame}
 \label{stat11}
-\lastpagebutton{stat10}
+\lastpagebutton{stat10}{\bf SIDE 30/44/52}\\
 I del 1A lært vi at en Gaussisk sannsynlighetsfordeling for en stokastisk variabel $x$ med gjennomsnittsverdi $\mu$ og standardavvik $\sigma$ er gitt ved
 \[
 P(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}}
@@ -845,7 +850,7 @@ som igjen er en {\it sannsynlighetstetthet}, dvs at vi må gange med et interval
 
 \begin{frame}
 \label{stat12}
-\lastpagebutton{stat11}
+\lastpagebutton{stat11}{\bf SIDE 31/44/52}\\
 \includegraphics[scale=0.3]{media/twosigma.png}\\
 På figuren ser du observasjoner av en hastighetskurve med to forskjellige teleskoper, et med betydelig høyere støynivå enn det andre. Dermed er standardavviket $\sigma_n$ for støyen også forskjellig. Omtrent hva er $\sigma_n$ for hver av disse instrumentene? La oss kalle observasjonene til venstre med minst støy for A og de til høyre med mest støy for B.\\
 \hyperlink{feiln}{\choicebutton{\small $\sigma_n^A\approx 1930$m/s og $\sigma_n^B\approx 1900$m/s}}\ \hyperlink{feiln}{\choicebutton{\small $\sigma_n^A\approx 140$m/s og $\sigma_n^B\approx 200$m/s}}\ \hyperlink{feiln}{\choicebutton{\small $\sigma_n^A\approx 30$m/s og $\sigma_n^B\approx 80$m/s}}\ \hyperlink{feiln}{\choicebutton{\small $\sigma_n^A\approx 15$m/s og $\sigma_n^B\approx 40$m/s}}\ \hyperlink{riktign}{\choicebutton{\small $\sigma_n^A\approx 7$ m/s og $\sigma_n^B\approx 20$m/s}}
@@ -857,7 +862,7 @@ På figuren ser du observasjoner av en hastighetskurve med to forskjellige teles
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feiln}
-\lastpagebutton{stat12}
+\lastpagebutton{stat12}{\bf SIDE 32/44/52}\\
 \textcolor{white}{\small Det var ikke helt riktig. Under ser du en zoom av området rundt toppen av kurven til venstre (vi kunne ha tatt hvor som helst på kurven). Den røde linjen er observasjonen du hadde hatt uten støy, dvs. når støyen er 0. Utsalgene over og under er når du får positive eller negative verdier for støyen $\delta v_i$. Husker du at 95\% av verdiene for en Gaussisk fordeling skal ligge innenfor $2\sigma$? {\bf Hvis ikke, så er det svært viktig at du går tilbake til del 1A da du har glemt viktig kunnskap som du trenger videre}. Ta nå et papir, tegn en Gaussisk sannsynlighetsfordeling med forskjellige verdier for $\delta v_i$ på x-aksen, med da 0 i midten siden gjennomsnittsverdien for denne Gaussiske fordelingen er 0. Tegn inn $1\sigma$ og $2\sigma$ (gjerne med hjelp av kurver fra del 1A) og sammenlikn med figuren under. Gå nå tilbake og gjør et nytt forsøk.}\\
 \centerline{\includegraphics[scale=0.3]{media/noise_zoom.png}}
 \end{frame}
@@ -867,7 +872,7 @@ På figuren ser du observasjoner av en hastighetskurve med to forskjellige teles
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktign}
-\clastpagebutton{stat12}
+\clastpagebutton{stat12}{\bf SIDE 33/44/52}\\
 Flott! Du fikk det til. Det betyr at du forstår hva det betyr at støyen er Gaussisk fordelt og hva en Gaussisk fordeling er. Hvis du nå likevel er litt usikker, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_7.mp4}{denne videoen}.
 \hyperlink{stat13}{\pagebutton{Neste side}}
 \end{frame}
@@ -875,9 +880,9 @@ Flott! Du fikk det til. Det betyr at du forstår hva det betyr at støyen er Gau
 
 \begin{frame}
 \label{stat13}
-\lastpagebutton{riktign}
+\lastpagebutton{riktign}{\bf SIDE 34/44/52}\\
 \includegraphics[scale=0.25]{media/twosigma.png}\\
-{\small 
+{\small
 Men hva skal vi gjøre i en slik situasjon når støyen varierer med tiden? Hvis vi bruker vanlig minste kvadraters metode her, så behandler vi dataene av dårlig kvalitet på samme måte som dataene av god kvalitet, kan det være riktig? Vi kan vel ikke få et optimalt godt estimat av modellen vår på den måten? Kan du tenkte deg hvordan vi kan gjøre en liten modifikasjon av minste kvadraters metode
 \[
 \Delta(v_*, P, t_0) = \sum_{i=1}^N\left(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i, v_*, P, t_0)\right)^2
@@ -891,7 +896,7 @@ for å ta hensyn til at standardavviket til støyen ikke alltid er den samme?
 
 \begin{frame}
 \label{stat13b}
-\lastpagebutton{stat13}
+\lastpagebutton{stat13}{\bf SIDE 35/44/52}\\
 La oss se om vi kan utlede hva som er den beste måten å gjøre dette på!\\
 La oss fortsette med statitsikken. Vi fant at sannsynligheten for støyen i observasjon $i$ er gitt ved
 \[
@@ -910,7 +915,7 @@ Enig? \hyperlink{riktig_ja}{\choicebutton{Ja}}\ \hyperlink{feil_nei}{\choicebutt
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_nei}
-\lastpagebutton{stat13b}
+\lastpagebutton{stat13b}{\bf SIDE 36/44/52}\\
 \textcolor{white}{
 \Large\htmlcom{large}{
 Hvorfor ikke????
@@ -924,7 +929,7 @@ Er du usikker, spør foreleser!
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_ja}
-\clastpagebutton{stat13b}
+\clastpagebutton{stat13b}{\bf SIDE 37/44/52}\\
 Flott, da kan vi gå videre. Vi har altså
 \[
 P(\delta v_i) = \frac{1}{\sqrt{2\pi}\sigma_i}e^{-\frac{1}{2}\frac{\delta v_i^2}{\sigma_i^2}}
@@ -939,7 +944,7 @@ for sannsynligheten i et gitt tidspunkt $i$. Men hva er sannsynligheten for at v
 
 \begin{frame}
 \label{stat14}
-\lastpagebutton{riktig_ja}
+\lastpagebutton{riktig_ja}{\bf SIDE 38/44/52}\\
 Nettopp ja, loven om multiplikasjon av sannsynligheter, vi ganger sammen sannsynligheten for støyen hvert tidspunkt $i$ for å få den totale sannsynligheten for alle støyverdiene i alle N observasjonstidspunkter (hvis vi går tilbake til eksemplet vårt i del 1A så kan du jo tenke deg at den første støyverdien er høyden til en tilfeldig person, den andre er IQ-en til en tilfeldig person, den tredje er vekta til en tilfeldig person, etc. Ved å gange sammen sannsynlighetene kan du finne sannsynligheten for at en person har et gitt sett med verdier for disse 3 egenskapene, akkurat som vi nå kan finne sannsynligheten for at støyen i hvert observasjonspunkt har et gitt sett med verdier).
 \[
 P(\delta v_0, \delta v_1, \delta v_2, ..., \delta v_N)) = \prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma_i}e^{-\frac{1}{2}\frac{\delta v_i^2}{\sigma_i^2}}
@@ -950,7 +955,7 @@ P(\delta v_0, \delta v_1, \delta v_2, ..., \delta v_N)) = \prod_{i=1}^N\frac{1}{
 
 \begin{frame}
 \label{stat15}
-\lastpagebutton{stat14}
+\lastpagebutton{stat14}{\bf SIDE 39/44/52}\\
 Ser du at vi kan skrive om på følgende måte...dette var uttrykket vår:
 \[
 P(\delta v_0, \delta v_1, \delta v_2, ..., \delta v_N)) = \prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma_i}e^{-\frac{1}{2}\frac{\delta v_i^2}{\sigma_i^2}}
@@ -967,7 +972,7 @@ Kan du se at det stemmer? Hvis ikke, skriv dette ut på papir og bruk loven om a
 
 \begin{frame}
 \label{stat16}
-\lastpagebutton{stat15}
+\lastpagebutton{stat15}{\bf SIDE 40/44/52}\\
 Hvis du går noen sider tilbake vil du se at vi skrev:
 \[
 v_r^\mathrm{obs}(t_i)=v_r^\mathrm{real}(t_i)+\delta v_i
@@ -987,7 +992,7 @@ Målet vår er å finne en modell for $v_r^\mathrm{real}(t_i)$, dvs. en modell $
 
 \begin{frame}
 \label{stat17}
-\lastpagebutton{stat16}
+\lastpagebutton{stat16}{\bf SIDE 41/44/52}\\
 Hvis vi setter inn modellen vår som den virkelige kurven så blir det:
 \[
 P(\delta v_0, \delta v_1, \delta v_2, ..., \delta v_N) = \left(\frac{1}{\sqrt{2\pi}}\right)^N\frac{1}{\prod_{i=1}^N\sigma_i}e^{-\frac{1}{2}\sum_{i=1}^N\frac{(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i))^2}{\sigma_i^2}}
@@ -998,7 +1003,7 @@ hvor vi vet at $v_r^\mathrm{mod}(t_i)$ inneholder de ukjente parameterene $v_*$,
 
 \begin{frame}
 \label{stat18}
-\lastpagebutton{stat17}
+\lastpagebutton{stat17}{\bf SIDE 42/44/52}\\
 Vi har
 \[
 P(\delta v_0, \delta v_1, \delta v_2, ..., \delta v_N) = \left(\frac{1}{\sqrt{2\pi}}\right)^N\frac{1}{\prod_{i=1}^N\sigma_i}e^{-\frac{1}{2}\sum_{i=1}^N\frac{(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i))^2}{\sigma_i^2}}
@@ -1010,7 +1015,7 @@ som skal maksimaliseres. Er du enig i at dette er identisk med å maksimalisere 
 
 \begin{frame}
 \label{stat19}
-\lastpagebutton{stat18}
+\lastpagebutton{stat18}{\bf SIDE 43/44/52}\\
 Er vi dermed enige om at for å maksimalisere sannsynligheten, så må vi {\bf minimalisere}
 \[
 \sum_{i=1}^N\frac{(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i))^2}{\sigma_i^2}
@@ -1036,7 +1041,7 @@ Denne størrelsen pleier vi å kalle $\chi^2$, dvs.
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktig_puh}
-\lastpagebutton{stat19}
+\lastpagebutton{stat19}{\bf SIDE 44/44/52}\\
 Flott! Helt riktig, tar vi ut $\sigma_i$ som en konstant så får vi nøyaktig likningen for minste kvadraters metode som vi hadde tidligere. Vi har altså utledet minste kvadraters metode. Ser du nå også hvilken modifikasjon vi får når standardavviket til støyen endrer seg med observasjonser?
 \[
 \chi^2 = \sum_{i=1}^N\frac{(v_r^\mathrm{obs}(t_i)-v_r^\mathrm{mod}(t_i))^2}{\sigma_i^2}
@@ -1146,7 +1151,7 @@ Svarene kan du finne på de foregående sidene. Men før du leter der, se hvor m
 
 \begin{frame}
 \label{debug1}
-\lastpagebutton{riktig_puh}\label{tips}
+\lastpagebutton{riktig_puh}\label{tips}{\bf SIDE 45/52/52}\\
 Da har vi kommet til veis ende i dette kapittelet. Av god gammel vane, avslutter vi med noen tips til programmering og til slutt til debugging. I innleveringsoppgavene/prosjekt skal du analysere noen radialhastighetskurver med støy for å finne massen til en ekstrasolar planet. Da trenger du å bruke minste kvadraters metode eller $\chi^2$ avhengig av om standardavviket til støyen varierer eller ikke. Tenk deg at du skal finne den beste mulige modellen (og dermed de beste mulige parameterene $v_*$, $P$ og $t_0$) til følgende kurve:\\
 \includegraphics[scale=0.25]{media/vr_nomod.png}\\
 \hyperlink{debug2}{\pagebutton{Trykk her!}}
@@ -1155,17 +1160,17 @@ Da har vi kommet til veis ende i dette kapittelet. Av god gammel vane, avslutter
 
 \begin{frame}
 \label{debug2}
-\lastpagebutton{debug1}
+\lastpagebutton{debug1}{\bf SIDE 46/52/52}\\
 Du skal altså prøve deg frem med kombinasjoner av verdier for $v_*$, $P$ og $t_0$. Hver kombinasjon gir en modell $v_r^\mathrm{mod}(t_i)$ som du så skal beregne kvadratet av forskjellen til de observerte dataene for. Sånn skal du holde på helt til du finner den kombinasjonen som gir minst mulig forskjell. Hvordan går vi frem? En mulighet er å finne et intervall av mulige parametere for hver av de 3 parameterene. Du kan f.eks. finne den verdien av $t_0$ som passer best ved å se i hvilket intervall denne verdien må ligge. På figuren\\
 \centerline{\includegraphics[scale=0.5]{media/vr_t0_int.png}}
-ser vi et mulig sånt intervall. Er du enig i at $t_0$ helt sikkert må ligge innenfor dette intervallet? Den kan vel ikke ligge utenfor? (hvis du har glemt hva $t_0$ står for, gå noen sider tilbake, det er viktig at du har dette helt klart for deg!). Del så dette intervallet opp i 20 like steg, og vips du har 20 mulige verdier å prøve for $t_0$. 
+ser vi et mulig sånt intervall. Er du enig i at $t_0$ helt sikkert må ligge innenfor dette intervallet? Den kan vel ikke ligge utenfor? (hvis du har glemt hva $t_0$ står for, gå noen sider tilbake, det er viktig at du har dette helt klart for deg!). Del så dette intervallet opp i 20 like steg, og vips du har 20 mulige verdier å prøve for $t_0$.
 \hyperlink{debug3}{\pagebutton{Trykk her!}}
 \end{frame}
 
 
 \begin{frame}
 \label{debug3}
-\lastpagebutton{debug2}
+\lastpagebutton{debug2}{\bf SIDE 47/52/52}\\
 Vi kan nå gjøre helt det samme for perioden $P$. Er du enig i at perioden (avstanden fra topp til topp) ihvertfall må være større enn avstanden mellom de røde linjene, og ihvertfall mindre enn avstanden mellom de blå linjene. Da har du en minste periode og en største periode som du kan lage f.eks. 20 mulige verdier mellom, akkurat som for $t_0$. Og til slutt gjør du det samme for $v_*$. Da har du til slutt $20^3$ mulige kombinasjoner.\\
 \centerline{\includegraphics[scale=0.25]{media/vr_p_int.png}}
 \hyperlink{debug4}{\pagebutton{Trykk her!}}
@@ -1176,7 +1181,7 @@ Vi kan nå gjøre helt det samme for perioden $P$. Er du enig i at perioden (avs
 
 \begin{frame}
 \label{debug4}
-\lastpagebutton{debug3}
+\lastpagebutton{debug3}{\bf SIDE 48/52/52}\\
 Når du så har funnet den av de $20^3$ kombinasjonene som gir de beste estimatene av $v_*$, $P$ og $t_0$, så kan du tegne modellen $v_r^\mathrm{mod}(t_i)$ og sammenlikne med de observerte dataene. Stemmer det godt overens? Det du spesielt skal tenke på her er om modellen din går midt inne i støyen, husk at støyen er Gaussisk slik at du forventer like mye utslag over som under kurven. Hva gjør du hvis du får et slikt resultat:
 \centerline{\includegraphics[scale=0.25]{media/vr_wrongmod.png}}
 Passer denne modellkurven godt med dataene? Ligger modellkurven midt inne i støyen overalt? Hopper støyen like mye opp som ned overalt på kurven?
@@ -1186,7 +1191,7 @@ Passer denne modellkurven godt med dataene? Ligger modellkurven midt inne i stø
 
 \begin{frame}
 \label{debug4b}
-\lastpagebutton{debug4}
+\lastpagebutton{debug4}{\bf SIDE 49/52/52}\\
 {\Large\bf \htmlcom{large}{NEI!}} Er du enig i at det {\bf ikke} er tilfelle her? I noen deler av figuren så er støyen nesten hele tiden over eller under modellkurven, den opper ikke like mye over som under!
 \centerline{\includegraphics[scale=0.2]{media/vr_wrongmod.png}}
 \textcolor{red}{Her kan du være sikker på at noe er feil i koden!}.{\bf Men hvordan skal du finne feilen????}
@@ -1201,7 +1206,7 @@ Aller først bør du dobbeltsjekke at du leste av riktig da du lagde prøve-inte
 
 \begin{frame}
 \label{debug5}
-\lastpagebutton{debug4b}
+\lastpagebutton{debug4b}{\bf SIDE 50/52/52}\\
 \begin{enumerate}
 \item Normalt når kurven er så feil at du ser det tydelig slik som her, så er det ganske lett å finne en kurve som passer bedre på øyemål. Gjør så godt du kan for å lese av på figuren og finne en kombinasjon av  $v_*$, $P$ og $t_0$ som du mener passer godt og ihvertfall bedre enn det koden ga deg.
 \item Legg til et par linjer i koden som i tillegg til dine $20^3$ kombinasjoner, også tester modellen som du fant ved øyemål. print ut verdien for minste kvadrat (eller $\chi^2$) og sammenlikn med verdien du får for modellen din. Gir modellen din et enda mindre kvadrat?
@@ -1213,11 +1218,11 @@ Aller først bør du dobbeltsjekke at du leste av riktig da du lagde prøve-inte
 
 \begin{frame}
 \label{debug6}
-\lastpagebutton{debug5}
+\lastpagebutton{debug5}{\bf SIDE 51/52/52}\\
 \begin{enumerate}
 \setItemnumber{4}
 \item Hvis øyemål-modellen din passer ganske bra, ga den en verdi for $\Delta$ eller $\chi^2$ som er mindre enn minste kvadrat-verdien fra de $20^3$ kombinasjonene? Hvis ikke, så er noe galt med måten du beregner  $\Delta$ eller $\chi^2$ på. Husk at disse størrelsene er forskjellen mellom data og modell. Hvis modellen din helt tydelig er bedre, så {\bf må} den også ha en mindre forskjell, enig? Da må du sjekke hvordan du beregner denne forskjellen, hvorfor får du ikke mindre forskjell?
-\item Hvis du får mindre forskjell for din modell, så er spørsmålet hvorfor ikke en minst like god modell ble funnet blandt de $20^3$ kombinasjonene. Finn ut hvilken av de $20^3$ kombinasjonene som er nærmest øyemålmodellen din. En enkel måte å gjøre det på er som følger: anta at du hadde 20 prøveverdier for $v_*$, fra $v_*(0)$ som minste prøveverdi og steglengde $\Delta v_*$ slik at største prøveverdi var $v_*(0)+19\times\Delta v_*$. Ta nå din øyemålverdi for $v_*$, del denne på $\Delta v_*$ og rund av til nærmeste heltall. Da har du indeksen blant de 20 prøveverdiene som passer best til din øyemålmodell. 
+\item Hvis du får mindre forskjell for din modell, så er spørsmålet hvorfor ikke en minst like god modell ble funnet blandt de $20^3$ kombinasjonene. Finn ut hvilken av de $20^3$ kombinasjonene som er nærmest øyemålmodellen din. En enkel måte å gjøre det på er som følger: anta at du hadde 20 prøveverdier for $v_*$, fra $v_*(0)$ som minste prøveverdi og steglengde $\Delta v_*$ slik at største prøveverdi var $v_*(0)+19\times\Delta v_*$. Ta nå din øyemålverdi for $v_*$, del denne på $\Delta v_*$ og rund av til nærmeste heltall. Da har du indeksen blant de 20 prøveverdiene som passer best til din øyemålmodell.
 \end{enumerate}
 \hyperlink{debug7}{\pagebutton{Neste side}}
 \end{frame}
@@ -1225,7 +1230,7 @@ Aller først bør du dobbeltsjekke at du leste av riktig da du lagde prøve-inte
 
 \begin{frame}
 \label{debug7}
-\lastpagebutton{debug6}
+\lastpagebutton{debug6}{\bf SIDE 52/52/52}\\
 \begin{enumerate}
 \setItemnumber{6}
 \item {\bf Pass på: hvis din øyemålmodell er blant de aller første eller alle siste indeksene, altså at den er nær eller under $v_*(0)$, eller nær eller over $v_*(0)+19\times\Delta v_*$, så betyr det at du har valgt intervallet ditt galt slik at den beste løsningen ikke ligger omtrent midt inne i intervallet. Da er feilen rett og slett at du har lest av intervallet galt. Dette er en typisk feil!}
@@ -1254,9 +1259,11 @@ Da er vi ferdige med del 1C. Vi har i dette kapittelet sett hvordan vi kan bruke
 
 \begin{frame}
 \label{oppsummering2}
-\hyperlink{oppsummering}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
-{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1c.pdf}{kortsvarsoppgavene} til del 1C for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}\\
-\vspace*{1cm}  
+\hyperlink{oppsummering}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\\
+
+{\bf
+Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1c.pdf}{kortsvarsoppgavene} til del 1C for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}\\
+\vspace*{1cm}
 Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk for å vite om alt arbeidet med å lage disse interaktive slidene er verd det, om jeg bør fortsette med det og om det er noe jeg bør endre.
 \end{frame}
 

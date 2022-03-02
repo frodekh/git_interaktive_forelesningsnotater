@@ -289,7 +289,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Klassisk relativitet}}
@@ -299,7 +299,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{tog20}{\headlinebutton{Relativitetsprinsippet}}
 \end{itemize}
 Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
-\hyperlink{intro}{\choicebutton{Neste side}}
+\hyperlink{intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 %%%%% intro
@@ -307,7 +307,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 \label{intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 \includegraphics[scale=0.25]{media/clock.png}
 \column{0.5\textwidth}
 {\small
@@ -767,4 +767,511 @@ Du skulle nå ha lært at:
 
 
 
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2A\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part2a.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Klassisk relativitet}}
+\item {\headlinebutton{Michelson-Morley-eksperimentet}}
+\item {\headlinebutton{Et tankeeksperiment}}
+\item {\headlinebutton{Etter pausen: Passasjeren sitt synspunkt}}
+\item {\headlinebutton{Relativitetsprinsippet}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+%%%%% intro
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.25]{media/clock.png}
+\column{0.5\textwidth}
+{\small
+{\bf Velkommen til forelesning 1 av 2 i del 2A! Denne tilsvarer omtrent en dobbelttime forelesning (kommer normalt ca. halvveis ut i den aller siste videoen på en forelesning). Vi begynner med den spesielle relativitetsteorien. Hovedfokuset her er å prøve å få en viss forståelse for hva som skjer. Matematikken i del 2A blir holdt på et veldig enkelt nivå mens forståelsen og intuisjonen for hovedprinsippene i relativitetsteorien skal spille hovedrollen. Dette blir også det som forventes av deg i rapport/bloggskriving (prosjekt) og på eksamen (standardløp). Vi begynner forsiktig med den klassiske relativitetsteorien...}\\
+\textcolor{red}{Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken ``Spacetime Physics'' av E. Taylor og J. Wheeler, gratis tilgjengelig \href{http://www.eftaylor.com/spacetimephysics/}{her}. Anbefales på det sterkeste for den som er interessert.}
+{(\tiny \htmlcom{footnotesize}{Illustrasjon fra pngegg.com)}}}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+
+{
+
+\lastpagebutton{intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/170169}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/170169}{\choicebutton{Nei}}\ \ \ \ {\choicebutton{Ja}}\\
+}
+
+\renewcommand{\headline}{Klassisk relativitet}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{tog}
+{\pagebutton{En tur tilbake til videregående...}}
+}
+}
+
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel1.png}}
+{\small
+Her ser vi en blå bil som står rolig i forhold til (ift) bakken ({\bf merk} hastigheter må alltid angies {\bf i forhold til} noe). Den oransje bilen beveger seg med 100 km/t i forhold til bakken og den blå bilen.\\
+{\tiny\it (Figurene i dette dokumentet er png-er fra hiclipart.com som har blitt satt sammen og mikset)}
+}
+\hyperlink{kr1}{\pagebutton{SIDE 1/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel2.png}}
+{\small
+Nå har den blå bilen starten motoren slik at den har en fart på 50 km/t i forhold til bakken. Den oransje bilen har enda 100 km/t i forhold til bakken. \textcolor{red}{Hvilken hastighet har den oransje bilen i den blå bilens referansesystem? {\bf Et referansesystem er et sett av observatører som alle er i ro i forhold til hverandre og derfor vil være enige om hastighetsmålinger av objekter}.}\\
+{\choicebutton{-100 km/t}}{\choicebutton{-50 km/t}}{\choicebutton{0 km/t}}{\choicebutton{50 km/t}}{\choicebutton{100 km/t}}
+}
+\hyperlink{kr2}{\pagebutton{SIDE 2/23/61}}}
+
+{
+\textcolor{yellow}{\htmlcom{large}{Det ble galt! Er du sikker på at du kikket skikkelig på figuren? Hvordan var klassisk relativitet? Hva må du gjøre for å finne den oransje bilens hastighet i forhold til den blå? Tenk en gang til og prøv igjen!}}
+\hyperlink{feil_kr2a}{\pagebutton{SIDE 3/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel3.png}}
+\htmlcom{large}{Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene?}
+\hyperlink{riktig_kr2b}{\pagebutton{SIDE 4/23/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel4.png}}
+{\small
+Hva nå hvis den blå bilen øker til 100 km/t? Den oransje bilen har enda 100 km/t i forhold til bakken. Hvilken hastighet har den oransje bilen i den blå bilens referansesystem? {\bf Et referansesystem er et sett av observatører som alle er i ro i forhold til hverandre og derfor vil være enige om hastighetsmålinger av objekter}.\\
+{\choicebutton{-100 km/t}}{\choicebutton{-50 km/t}}{\choicebutton{0 km/t}}{\choicebutton{50 km/t}}{\choicebutton{100 km/t}}
+}
+\hyperlink{kr3}{\pagebutton{SIDE 5/23/61}}}
+
+
+{
+\textcolor{yellow}{\htmlcom{large}{Det ble galt! Er du sikker på at du kikket skikkelig på figuren? Går ikke begge bilene her med samme fart i forhold til bakken? Tenk en gang til og prøv igjen!}}
+\hyperlink{feil_kr3a}{\pagebutton{SIDE 6/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel5.png}}
+Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene? Var det samme sammenheng som i forrige spørsmål?
+\hyperlink{riktig_kr3b}{\pagebutton{SIDE 7/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel6.png}}
+{\small
+Hva nå hvis den blå bilen øker til 150 km/t? Den oransje bilen har enda 100 km/t i forhold til bakken. Hvilken hastighet har den oransje bilen i den blå bilens referansesystem? \textcolor{red}{\bf Et referansesystem er et sett av observatører som alle er i ro i forhold til hverandre og derfor vil være enige om hastighetsmålinger av objekter}.\\
+{\choicebutton{-150 km/t}}{\choicebutton{-50 km/t}}{\choicebutton{0 km/t}}{\choicebutton{50 km/t}}{\choicebutton{150 km/t}}
+}
+\hyperlink{kr4}{\pagebutton{SIDE 8/23/61}}}
+
+{
+\textcolor{yellow}{\htmlcom{large}{Er du heeeelt sikker!Har  du kikket skikkelig på figuren? Går ikke blå fortere enn oransje? Hvis du sitter i en bil og kjører fortere enn bilen ved siden av, hvis du betrakter deg selv om i ro, hva er farten til den andre bilen? Tenk en gang til og prøv igjen!}}
+\hyperlink{feil_kr4a}{\pagebutton{SIDE 9/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel7.png}}
+Det er helt riktig! Brukte du intuisjon eller fant du en formel/sammenheng mellom de to hastighetene? Var det samme sammenheng som i forrige spørsmål?
+\hyperlink{riktig_kr4b}{\pagebutton{SIDE 10/23/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel7.png}}
+{\small
+Kom du frem til formelen for klassisk relativitet? Ble de noe sånt som:
+\[
+v'_\mathrm{oransje}=v_\mathrm{oransje}-v_\mathrm{rel}
+\]
+der merkede hastigheter er hastigheter målt i blått bil sitt referansesystem, umerkede hastigheter er målt i bakken sitt referansesystem og $v_\mathrm{rel}$ er den relative hastigheten mellom de to referansesystemene? Positiv hastighet måles til høyre.Stemmer det med det du fant?
+}
+\hyperlink{kr5}{\pagebutton{SIDE 11/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel7.png}}
+{\small
+La oss prøve:
+\[
+v'_\mathrm{oransje}=v_\mathrm{oransje}-v_\mathrm{rel}
+\]
+Farta til blå bils referansesysteme i forhold til bakkesystem er 150 km/t til høyre, altså er $v_\mathrm{rel}=150$ km/t. Farta til oransje bil i bakkesystem er $v_\mathrm{oransje}=100$ km/t. Setter vi inn, så får vi at oransje bil sin fart i blå bils referansesystem er  $v'_\mathrm{oransje}=-50$ km/t.
+}
+\hyperlink{kr6}{\pagebutton{SIDE 12/23/61}}}
+
+
+{
+{\bf La oss prøve den på lys:}
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.png}}
+Dette er det klassiske {\bf Michelson-Morley-eksperimentet.} Der ble farta til lys i forhold til jorda sitt referansesystem målt. Lys blir sendt ut fra en fjern stjerne mot jorda. Vi antar at stjerna er i samme referansesystem som sola. Det ble sendt ut med lyshastighet $c=300 000$ km/s. Anta at farta til dette lyset så blir målt på jorda i forhold til jordas referansesystem, først den 1.januar når jorda er på vei {\bf bort fra} lysstrålen, og så 1.juli når jorda er på vei {\bf mot} lysstrålen.
+
+\hyperlink{kr7}{\pagebutton{SIDE 13/23/61}}}
+
+
+
+{
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.png}}
+
+Hvis vi bruker klassisk relativitet og glemmer Einstein litt, hvilken fart måler man for lyset i jordas referansesystem den 1.januar? Jordas banehastighet er ca. 30 km/s i forhold til solas (og stjernas) referansesystem.
+{\choicebutton{c - 30km/s}}{\choicebutton{\ \ c\ \ }}{\choicebutton{c + 30km/s}}
+\hyperlink{kr8}{\pagebutton{SIDE 14/23/61}}}
+
+{
+\textcolor{yellow}{Kan det blir riktig? Vi beveger oss i samme retning som lyset! Hvordan var det når den blå bilen beveget seg i samme retning som den oransje men med lavere fart?}
+\hyperlink{feil_kr8a}{\pagebutton{SIDE 15/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.png}}
+Det er helt riktig!
+\[
+v'_\mathrm{lys}=v_\mathrm{lys}-v_\mathrm{rel}
+\]
+Hvis vi nå bruker positiv hastighet nedover: referansesystemet til jorda beveger seg i positiv retning med 30 km/s i forhold til sola/stjernas referansesystem, da er relativ hastighet mellom systemer $v_\mathrm{rel}=30$km/s. Jorda sitt referansesystem er merket, sola sitt er umerket. I sola sitt system er lysets hastighet $c$. Da får vi at $v'_\mathrm{lys}=c-30$km/s i jorda sitt system.
+\hyperlink{riktig_kr8b}{\pagebutton{SIDE 16/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.png}}
+\[
+v'_\mathrm{lys}=v_\mathrm{lys}-v_\mathrm{rel}
+\]
+Vi kan bruke akkurat samme resonnement for 1.juli, men da er hastigheten til jorda sitt referansesystem negativ, altså $v_\mathrm{rel}=-30$km/s som gir $v'_\mathrm{lys}=c+30$km/s. Mens vi den 1.januar skulle målt  $v'_\mathrm{lys}=c-30$km/s. Dvs. at hvis klassisk relativitet er riktig, skulle vi målt forskjellig hastighet for lyset på de to forskjellige datoene. Det Micheleson og Morley fant var at lyshastigheten var den samme.
+\hyperlink{kr9}{\pagebutton{SIDE 17/23/61}}}
+
+
+
+{
+\centerline{\includegraphics[scale=0.55]{media/fig_7-3.png}}
+{\bf Akkurat dette var Einsteins utgangspunkt da han oppdaget relativitetsteorien. Han spurte seg hva konsekvensene for de fysiske lovene blir hvis lyshastigheten er den samme for alle observatører, noe Michelson og Morleys eksperiment tydet på.} \textcolor{red}{Men tygg litt på den: alle observatører måler lys til å ha den samme hastigheten $c=300000$ km/s?.} Da kan ikke lenger
+\[
+v'=v-v_\mathrm{rel}
+\]
+gjelde for lys. Men gjelder det likevel for alle andre objekter? Einstein lagde flere tankeeksperimenter for å finn konsekvensene av lyshastighetens {\bf invarians}. Merk at vi kaller noe {\bf invariant} når det måles til å ha samme verdi fra alle referansesystemer.
+\hyperlink{kr10}{\pagebutton{SIDE 18/23/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel8.png}}
+\htmlcom{large}{La oss se på situasjonen med bilen men nå et foton eller lysbølge isteden for den oransje bilen.}
+\hyperlink{kr11}{\pagebutton{SIDE 19/23/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel9.png}}
+Her har vi en superraskt bil som har nådd 1/3 av lyshastigheten. Men hvilken hastighet måler observatøren i bilen lyset til å ha?
+\hyperlink{kr12}{\pagebutton{SIDE 20/23/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel10.png}}
+Nettopp ja! Vi vet nå at hastigheten til lys er den samme målt fra alle referansesystemer, så da blir det vel slik?
+\hyperlink{kr13}{\pagebutton{SIDE 21/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel11.png}}
+{\bf Men nå begynner det vel å bli absurd??} Bilen har praktisk talt lyshastighet (den kan aldri få lyshastighet siden den har masse: det trengs uendelig med energi for å få noe som har masse til å nå lyshastighet. Fotoner er masseløse og kan derfor gå med lysets hastighet, dette kommer vi nærmere tilbake til). \textcolor{red}{Enda måler den lyset til å ha lyshastighet i forhold til seg selv?}
+\hyperlink{kr14}{\pagebutton{SIDE 22/23/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/klassrel11.png}}
+Nettopp disse absurditetene var det Einstein ville se nærmere på for å få en bedre forståelse for det som skjer. Han oppdaget raskt at vi da fikk selvmotsigelser. Einstein utledet relativitetsteorien basert på disse selvmotsigelsene. Vi skal nå følge et av Einsteins egne tankeeksperimenter. Et av de som satte ham på sporet av relativitetsteorien...
+\hyperlink{kr15}{\pagebutton{SIDE 23/23/61}}}
+
+
+\renewcommand{\headline}{Et tankeeksperiment}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+En strekk på bena, og kanskje en klementin? Er jo tida for det nå! (men pepperkakene må du vente med!)
+Vi skal ta en pause halvveis ut i dette lange tankeeksperimentet.
+{\pagebutton{La oss bli med inn i Einsteins tankeverden...}}
+}
+}
+
+
+{
+\large
+I det følgende skal vi se på og regne på et tankeeksperiment. La oss først innføre et begrep til: {\bf et event}. Dette er jo det engelske ordet for hendelse, likevel er det så godt innarbeidet som begrep i relativitetsteorien at vi beholder det engelske ordet her. Et event er rett og slett et punkt i tid og rom, akkurat som en hendelse jo er. Rett og slett et 4-dimensjonalt koordinat, en 3-dimensjonal posisjon og et tidspunkt for hendelsen.
+\hyperlink{tog1}{\pagebutton{SIDE 24/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.3]{media/tog1.png}}
+Et tog ruller bortover mot høyre med fart $v$. Midt inne i toget har vi passasjer P med to store øyne. På bakken står professor O. Vi har en stor x-akse på bakken der professor O står i origo. Lengden av toget er $L$. På dette øyeblikksbildet er midten av toget, og dermed også passasjer P, i origo på x-aksen. Akkurat i dette øyeblikket slår to lyn ned samtidig, et foran i toget (event A) og et bak (event B). Lysstrålene fra de to lynnedslagene begynner å bre seg utover mot passasjer P (markert med lysbølger og blå piler)
+\hyperlink{tog2}{\pagebutton{SIDE 25/61/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Vi skal enda anta at vi ikke vet noe om Einsteins relativitetsteori. Vi skal nå prøve å tenke slik som Einstein gjorde før han hadde oppdaget relativitetsteorien. Når vi jobber med problemer i relativitetsteori, er det viktig å skrive ned posisjons- og tidskoordinater for eventer. Vi sier at i det dette øyeblikksbildet ble tatt så starter vi en stoppeklokke slik at $t=0$ i dette øyeblikket. Da blir koordinatene til event A og B som følger:
+\[
+x_A=L/2,\ \ \ \ t_A=0, \ \ \ \ x_B=-L/2,\ \ \ \ t_B=0
+\]
+{\bf Enig?}
+\hyperlink{tog3}{\pagebutton{SIDE 26/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Vi skal innføre et event til her, nemlig event P som er at professoren og passasjeren har samme x-koordinat (vi regner kun på x-posisjoner her siden all bevegelse er i x-retning, det er ingen bevegelse i y-retning). Det betyr at i dette øyeblikket så kan de to håndhilse og utveksle informasjon. Posisjon og koordinat til dette eventet må vel være:
+\[
+x_P=0,\ \ \ \ t_P=0
+\]
+{\bf Fortsatt enig?}
+\hyperlink{tog3b}{\pagebutton{SIDE 27/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Er du også enig i at professoren vil se lysglimtene fra de to lynnedslagene samtidig? Professoren står på bakken i en avstand $L/2$ fra både event A og B. De to eventene er samtidige, lyset går med samme fart fra begge lynnedslagene, dermed vil professoren se at lynnedslagene er samtidige. Men hva med passasjer P?
+\hyperlink{tog3c}{\pagebutton{SIDE 28/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Tenk på hvordan toget beveger seg, passasjeren beveger seg og lysbølgene fra lynnedslagene. Hva vil passasjer P se?
+{\choicebutton{P ser begge samtidig}}{\choicebutton{P ser A før B}}{\choicebutton{P ser B før A}}
+\hyperlink{tog4}{\pagebutton{SIDE 29/61/61}}}
+
+{
+\textcolor{yellow}{Neeeei, ikke helt! Hvordan beveger passasjer P seg i forhold til hver av lysstrålene? Går en av lysstrålene fortere enn den andre eller går de like fort? (hint: dette er lys!)}
+\hyperlink{feil_tog4a}{\pagebutton{SIDE 30/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Det stemmer. Må det ikke bli slik da: toget (og dermed passasjer P) beveger seg {\bf mot} lysstrålen fra A men vekk fra lysstrålen fra B. Vi har lært at lys alltid går med lyshastighet uansett referansesystem, så lysstrålene går like fort. Men hvis passasjeren da beveger seg mot lysstrålen fra A så vil vel den treffe passasjeren sitt ansikt først. Og siden passasjeren beveger seg vekk fra B, vil B treffe øynene til P senere? Og dermed må vel passasjeren se A for B?
+\hyperlink{riktig_tog4b}{\pagebutton{SIDE 31/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog2.png}}
+Her ser vi {\bf event C} illustrert. Event C er når lysstrålen fra lynnedslag A treffer øyet til passasjer P slik at passasjeren ser at lynet har slått ned foran. Toget har beveget seg litt til høyre (med hastighet $v$), lysstrålen fra A her beveget seg mot venstre. Siden P har beveget seg bort fra lysstrålen fra B, så har denne lysstrålen enda ikke truffet og passasjer P vet dermed enda ikke at det skjedde et lynnedslag bak.
+\hyperlink{tog5}{\pagebutton{SIDE 32/61/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog3.png}}
+Her ser vi {\bf event D} illustrert. Event D er når lysstrålen fra lynnedslag B treffer øyet til passasjer P slik at passasjeren ser at lynet har slått ned bak også. Toget har beveget seg enda litt lenger til høyre (med hastighet $v$).
+\hyperlink{tog6}{\pagebutton{SIDE 33/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Din oppgave nå er å finne tidspunktene når event C og event D skjer. Uttrykk svarene med togets lengde $L$ og lyshastigheten $c$.
+\hyperlink{tog7}{\pagebutton{SIDE 34/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Hva stemmer? {\choicebutton{\small $t_c=L/2, \ \ t_D=L/2$}} {\choicebutton{\small $t_c=L/(2v) - v/c, \ \ t_D=L/(2v) + v/c$}}\\
+{\choicebutton{\small $t_c=L\sqrt{1-(v/c)^2}/v,\ \ t_D=L/\sqrt{1-(v/c)^2}/v$}}\\
+{\choicebutton{\small $t_c=L/2/(c+v), \ \ t_D=L/2/(c-v)$}}{\choicebutton{\small $t_c=L/2/c, \ \ t_D=L/2/v$}}\\
+{\choicebutton{\small $t_c=(L-v)/2/c, \ \ t_D=(L+v)/2/c$}}
+\hyperlink{tog8}{\pagebutton{SIDE 35/61/61}}}
+
+{
+\textcolor{yellow}{Det ble galt! Gjorde du et skikkelig forsøk? Kanskje du kan skrive en funksjon for posisjonen til strålen fra A? Og så en funksjon for strålen fra B? Og når denne funksjonen er lik posisjonen til passasjer P (som du også trenger en funksjon for), da skjer event C og D? Hvis du kommer hit for andre gang, ta en titt på denne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_1.mp4}{videoen}}
+\hyperlink{feil_tog8a}{\pagebutton{SIDE 36/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Det er helt riktig! Hvis du enda er usikker,  ta en titt på denne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_1.mp4}{videoen}
+\hyperlink{riktig_tog8b}{\pagebutton{SIDE 37/61/61}}}
+
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{\htmlcom{large}{Kaffe?}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+Litt frisk luft nå! Ikke lov å bli inne. Vekk fra alle skjermer.
+Ikke lov å fortsette før du har tatt minst 15 min. pause!
+Og forbered hjernen på et sjokk: nå kommer selvmotsigelsen her...
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Ok, jeg er klar...}}
+}
+}
+
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Så vi fant at siden toget og passasjeren beveger seg mot lysstrålen fra A så vil passasjeren se lynnedslag A før lynnedslag B, selv om begge skjedde samtidig, ok? Og tidspunktet for event C og D som er passasjerens observasjoner av henholdsvis lynnedslag A og B er
+\[
+t_C=\frac{L/2}{c+v},\ \ t_D=\frac{L/2}{c-v}
+\]
+\hyperlink{tog9}{\pagebutton{SIDE 38/61/61}}}
+
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog4.png}}
+La oss regne på situasjonen {\bf en gang til}. Men nå flytter vi oss til passasjer P sitt referansesystem. I dette referansesystemet står toget stille mens bakken, professor O og x-aksen (som står fast på bakken) beveger seg bakover. Vi har innført en egen merket $x'$-akse som står fast på toget og måler alle posisjoner i forhold til toget. Passasjer P står på origo på denne aksen.
+\hyperlink{tog10}{\pagebutton{SIDE 39/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog4.png}}
+Hvordan blir det nå? Vi har jo nøyaktig den samme situasjonen, vi bare regner fra et annet referansesystem. Da bør vi få samme svar. Gjør vi det? Toget står altså stille, bakken beveger seg med hastighet $v$ bakover, lysstrålene fra lynnedslagene beveger seg med lysets hastighet. Hva skjer?
+{\choicebutton{P ser begge samtidig}}{\choicebutton{P ser A før B}}{\choicebutton{P ser B før A}}
+\hyperlink{tog11}{\pagebutton{SIDE 40/61/61}}}
+
+
+{
+\textcolor{yellow}{Neeeei, ikke helt! Beveger passasjer P seg nå i forhold til lysstrålene? Går en av lysstrålene fortere enn den andre eller går de like fort? (hint: dette er lys!) Hvor lang avstand har hver av lysstrålene å tilbakelegge frem til passasjer P?}
+\hyperlink{feil_tog11a}{\pagebutton{SIDE 41/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog1.png}}
+Det stemmer. Må det ikke bli slik da: toget (og dermed passasjer P) står i ro. Begge lysstrålene har en avstand $L/2$ å tilbakelegge med samme hastighet $c$. Vil de ikke treffe passasjeren samtidig? Vil ikke passasjeren se begge lynnedslag samtidig?
+\hyperlink{riktig_tog11b}{\pagebutton{SIDE 42/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog5.png}}
+Når skjer event C og D? Hvor lang tid tar det for strålene å nå passasjer P?\\
+{\choicebutton{\small $t_c=t_D=L\sqrt{1-(v/c)^2}/v$}}\\
+{\choicebutton{\small $t_c=t_D=L/2/(c+v)$}}{\choicebutton{\small $t_c=t_D=L/2/c$}}\\
+{\choicebutton{\small $t_c=t_D=(L-v)/2/c$}}
+\hyperlink{tog12}{\pagebutton{SIDE 43/61/61}}}
+
+
+{
+\textcolor{yellow}{Det ble galt! Gjorde du et skikkelig forsøk? Hvor lang avstand skal lysstrålene tilbakelegge? Med hvilken hastighet? Hvis du kommer hit for andre gang, ta en titt på denne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_2.mp4}{videoen}}
+\hyperlink{feil_tog12a}{\pagebutton{SIDE 44/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.26]{media/tog5.png}}
+Det er helt riktig! Hvis du enda er usikker, ta en titt på denne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_2.mp4}{videoen}
+\hyperlink{riktig_tog12b}{\pagebutton{SIDE 45/61/61}}}
+
+{
+\htmlcom{large}{Men hva iallverden er rett da??? Ser passasjer P lysglimtene {\bf samtidig} eller {\bf A før B?}. Har vi gjort noe galt i noen av regningene?}
+\hyperlink{tog13}{\pagebutton{SIDE 46/61/61}}}
+
+{
+\htmlcom{large}{La oss spørre passasjer P selv hva hun så da! Og også professor P...}
+\hyperlink{tog14}{\pagebutton{SIDE 47/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.4]{media/samtale1.png}}
+\hyperlink{tog15}{\pagebutton{SIDE 48/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.4]{media/samtale2.png}}
+\hyperlink{tog16}{\pagebutton{SIDE 49/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.4]{media/samtale3.png}}
+\hyperlink{tog17}{\pagebutton{SIDE 50/61/61}}}
+
+{
+\centerline{\includegraphics[scale=0.4]{media/samtale4.png}}
+\hyperlink{tog18}{\pagebutton{SIDE 51/61/61}}}
+
+{
+\htmlcom{large}{Hvem har rett??? Hva skjedde egentlig??? Diskuter i 5-10 minutter.}
+\hyperlink{tog19}{\pagebutton{SIDE 52/61/61}}}
+
+{
+\htmlcom{large}{Einstein så kun to mulige løsninger på dilemmaet. Gjør du?}
+\hyperlink{tog20}{\pagebutton{SIDE 53/61/61}}}
+
+{
+\htmlcom{large}{{\bf 1)} De fysiske lovene er forskjellige i de forskjellige referansesystemene. Vi får feil svar, fordi vi har brukt de samme fysiske lovene i begge referansesystem når vi har regnet. Men hvordan skal vi vite hvilke fysiske lover gjelder i hvilket referansesystem? Hvis det ikke finnes et absolutt referansesystem som vi kan definere alle andre fra, da er dette en umulig løsning.}
+\hyperlink{tog21}{\pagebutton{SIDE 54/61/61}}}
+
+{
+Einstein gjorde det helt klart at dette ikke var en løsning gjennom å postulere
+\begin{block}{Relativitetsprinsippet}
+De fysiske lovene er de samme i alle referansesystemer i {\bf fri flyt.} Vi skal senere komme mer nøyaktig tilbake til hva fri flyt betyr. For nå så betyr det alle referansesystemer som det ikke virker krefter på og som dermed har konstant hastighet. Det vil si at alle fysiske lover som man finner ved eksperimenter i et referansesystem i fri flyt, vil være like gyldige i ethvert annet referansesystem i fri flyt selv om det ikke har samme hastighet som referansesystemet der. Alle referansesystemer i fri flyt er ekvivalente.
+\end{block}
+Vi kjenner allerede til at de fysiske lovene {\bf ikke} er like for referansesystemer som er akselererte: da får du plutselig fiktive krefter.
+\hyperlink{tog22}{\pagebutton{SIDE 55/61/61}}}
+
+{
+Med bakgrunn i relativitetsprinsippet, sto Einstein igjen med kun en tenklig løsning på dilemmaet:
+\begin{block}{2: Samtidighet er et relativt begrep}
+Noe som er samtidig i et referansesystem er ikke samtidig i et annet. Dermed kunne begge observatørene ha rett: lynnedslagene var samtidig for referansesystemet til professor O. Men i passasjer P sitt referansesystem, skjedde lynnedslaget foran først! \textcolor{white}{Og vi snakker ikke om en tilsynelatende effekt: I togsystemet så {\bf slo lynet ned foran først}, punktum! Det ene er ikke riktigere enn det andre, {\bf samtidighet er relativt.}} Samtidighet er dermed like relativt som hastighet: Akkurat på samme måte som den observerte hastigheten til et objekt avhenger av hvilket referansesystem den måles fra, så er samtidighet også noe som avhenger av referansesystmet.
+\end{block}
+\hyperlink{tog23}{\pagebutton{SIDE 56/61/61}}}
+
+
+{
+Einsteins to postulater her, relativitetsprinsippet og det at samtidighet er relativt var på den tiden kun {\bf postulater}. Det Einstein gjorde var å utrede konsekvensene av disse postulatene. Dette ga oss relativitetstteorien. {\bf Kun gjennom verifikasjon i eksperimenter kan vi vite om disse postulatene er riktige.} I dag, over 100 år og utallige eksperimenter senere {\bf har Einsteins relativitetsteori fått kraftig støtte} i empiriske data fra eksperimenter. \textcolor{red}{\bf Husk at en vitenskaplig teori aldri kan bevises, den kan kun motbevises (falsifiseres).} Men en teori slik som relativitetsteorien som har blitt bekreftet gang på gang og aldri blitt falsifisert blir etterhvert en etablert teori selv om vi aldri kan vite 100\% sikkert om den er helt gyldig. Vi vet idag at Newtons tyngdelov kun er en enormt god tilnærmelse i svake tyngdefelt, men Einsteins generelle relativitetsteori er en tyngdelov som passer bedre med eksperimenter. Det betyr ikke at vi betrakter Newtons lover som gale, kun at de er gyldig bare for svake gravitasjonsfelt.
+\hyperlink{tog24}{\pagebutton{SIDE 57/61/61}}}
+
+
+{
+\htmlcom{large}{Merk videre at postulatet om at samtidighet er relativt kun er en følge av postulatet (med sterk empirisk støtte) om at lyshastigheten er den samme for alle observatører kombinert med relativitetsprinsippet: Hvis disse to samtidig skal være oppfylt, så må samtidighet være relativt for å unngå selvmotsigelser slik som det med lynnedslagene i toget.}
+\hyperlink{tog25}{\pagebutton{SIDE 58/61/61}}}
+
+{
+I eksemplet vårt med toget så oppsto dilemmaet fordi vi ikke spesifiserte {\bf for hvilken observatør de to lynnedslagene var samtidige}. \textcolor{red}{Konsekvensen av at samtidighet er relativt er at du {\bf alltid} når du bruker ordet ``samtidighet'' samtidig {\bf må si i hvilket referansesystem noe er samtidig!}}. Vi får vite at passasjer P ser først det ene lynnedslaget og dermed det andre. Da må det betyr at lynnedslagene var samtidig i labsystemet og dermed ikke i togsystemet. De regningene vi gjorde i labsystemet var dermed riktige siden lynnedlagene der faktisk var samtidige. I togsystemet var de ikke det, og regningene og resultatene vi fant der var dermed gale.
+\hyperlink{tog25b}{\pagebutton{SIDE 59/61/61}}}
+
+
+{
+Det at samtidighet er relativt her en rekke dyptgripende konsekvenser. Du kan nå velge, avhengig av preferanse om du vil ENTEN (1) lese om dette i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part2a.pdf}{de vanlige forelesningsnotatene for del 2A}, det er avsnitt 2 ``Invariance of the spacetime interval`` som er aktuelt
+
+ELLER (2) se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2a/videoer/video2a_3.mp4}{denne videoen} som presenterer det samme stoffet. {\bf Merk at videoen tar en halvtime, sett deg godt til rette i godstolen, forbered en kopp te og gjør deg klar for hårreisende stoff...livet ditt blir ikke det samme etter dette!}
+\hyperlink{tog26}{\pagebutton{SIDE 60/61/61}}}
+
+{
+Du skulle nå ha lært at:
+\begin{itemize}
+\item et event som skjer i posisjon og tid (x,t) i et referansesystem vil skje på en annen posisjon og et annet tidspunkt (x',t') i det andre referansesystemet.
+\item den romlige avstanden $\Delta x$ og tidsintervallet $\Delta t$ mellom de to samme eventene er forskjellige i forskjellige referansesystemer, MEN tidromsintervallet $\Delta s=\sqrt{\Delta t^2-\Delta x^2}$ er den samme.
+\item for å kunne regne med tidromsintervall så må avstander i både rom og tid måles i samme enheter, enten meter for begge eller sekunder for begge. Omregningsfaktoren er lyshastigheten $c$.
+\end{itemize}
+\hyperlink{tog27}{\pagebutton{SIDE 61/61/61}}}
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/170171}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+{\bf Du er ferdig med forelesning 1 av 2 i del 2A.}. Du bør nå:
+\begin{itemize}
+\item kunne transformere hastigheter mellom referansesystemer i den klassiske relativitetsteorien
+\item kjenne til Michelson-Morley-eksperimentet
+\item kjenne til relativitetsprinsippet
+\item kunne forklare at lyshastighetens invarians kombinert med relativitetsprinsippet gir oss at samtidighet er relativt
+\item kunne forklare at det at samtidighet er relativt gjør at både rom og tidkoordinater til eventer avhenger av referansesystemet
+\item kunne forklare hva det betyr at tidromsintervallet er invariant
+\item kunne regne om romlige avstander til sekunder eller tidsintervaller til meter
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+}
+
+
+
+\end{frame}
 \end{document}
