@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  6 SEP 2021 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  2 MAR 2022 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -753,7 +753,7 @@ y
 \beamer@dimb=\dimen283
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.st
-y))) (./usercommands.tex)
+y))) (../usercommands_pdf.tex)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.st
@@ -1097,21 +1097,21 @@ Dictionary: translator-theorem-dictionary, Language: English
 <media/landing.png, id=70, 360.34625pt x 329.23pt>
 File: media/landing.png Graphic file (type png)
 <use media/landing.png>
-Package pdftex.def Info: media/landing.png  used on input line 336.
+Package pdftex.def Info: media/landing.png  used on input line 337.
 (pdftex.def)             Requested size: 144.13594pt x 131.68965pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 336
+LaTeX Font Info:    Trying to load font information for U+msa on input line 337
 .
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 336
+LaTeX Font Info:    Trying to load font information for U+msb on input line 337
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 336.
+ut line 337.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1122,7 +1122,7 @@ thkerncmss.
 <media/ellipse.png, id=85, 729.72626pt x 325.215pt>
 File: media/ellipse.png Graphic file (type png)
 <use media/ellipse.png>
-Package pdftex.def Info: media/ellipse.png  used on input line 352.
+Package pdftex.def Info: media/ellipse.png  used on input line 353.
 (pdftex.def)             Requested size: 218.91957pt x 97.56525pt.
  [5
 
@@ -1134,20 +1134,20 @@ Package pdftex.def Info: media/ellipse.png  used on input line 352.
 <media/conicsections0.png, id=124, 550.055pt x 440.64626pt>
 File: media/conicsections0.png Graphic file (type png)
 <use media/conicsections0.png>
-Package pdftex.def Info: media/conicsections0.png  used on input line 410.
+Package pdftex.def Info: media/conicsections0.png  used on input line 411.
 (pdftex.def)             Requested size: 128.35648pt x 134.56836pt.
  [8
 
  <./media/conicsections0.png>]
 
-LaTeX Warning: Reference `euler4' on page 9 undefined on input line 428.
+LaTeX Warning: Reference `euler4' on page 9 undefined on input line 429.
 
 [9
 
 ]
 File: media/conicsections0.png Graphic file (type png)
 <use media/conicsections0.png>
-Package pdftex.def Info: media/conicsections0.png  used on input line 456.
+Package pdftex.def Info: media/conicsections0.png  used on input line 457.
 (pdftex.def)             Requested size: 128.35648pt x 134.56836pt.
  [10
 
@@ -1157,7 +1157,7 @@ Package pdftex.def Info: media/conicsections0.png  used on input line 456.
 <media/oumuamua.png, id=166, 684.5575pt x 427.5975pt>
 File: media/oumuamua.png Graphic file (type png)
 <use media/oumuamua.png>
-Package pdftex.def Info: media/oumuamua.png  used on input line 486.
+Package pdftex.def Info: media/oumuamua.png  used on input line 487.
 (pdftex.def)             Requested size: 205.36882pt x 128.28023pt.
  [12
 
@@ -1165,40 +1165,48 @@ Package pdftex.def Info: media/oumuamua.png  used on input line 486.
 
 ]
 
-LaTeX Warning: Reference `xxx' on page 14 undefined on input line 508.
+LaTeX Warning: Reference `xxx' on page 14 undefined on input line 509.
 
 [14
 
 ]
-Overfull \hbox (159.82698pt too wide) in paragraph at lines 525--525
+Overfull \hbox (159.82698pt too wide) in paragraph at lines 526--526
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/1b1.png, id=200, 434.62375pt x 564.1075pt>
 File: media/1b1.png Graphic file (type png)
 <use media/1b1.png>
-Package pdftex.def Info: media/1b1.png  used on input line 525.
+Package pdftex.def Info: media/1b1.png  used on input line 526.
 (pdftex.def)             Requested size: 186.88457pt x 242.5615pt.
 
-Overfull \hbox (1.51056pt too wide) in paragraph at lines 525--525
+Overfull \hbox (1.51056pt too wide) in paragraph at lines 526--526
 []| [] 
+ []
+
+
+Overfull \vbox (9.0235pt too high) detected at line 526
  []
 
 [15
 
  <./media/1b1.png>]
-Overfull \hbox (159.82698pt too wide) in paragraph at lines 539--539
+Overfull \hbox (159.82698pt too wide) in paragraph at lines 540--540
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/1b2.png, id=213, 425.59pt x 506.89375pt>
 File: media/1b2.png Graphic file (type png)
 <use media/1b2.png>
-Package pdftex.def Info: media/1b2.png  used on input line 539.
+Package pdftex.def Info: media/1b2.png  used on input line 540.
 (pdftex.def)             Requested size: 183.00012pt x 217.96007pt.
 
-Overfull \hbox (14.74193pt too wide) in paragraph at lines 539--539
+Overfull \hbox (14.74193pt too wide) in paragraph at lines 540--540
 []| [] 
+ []
+
+
+Overfull \vbox (9.5971pt too high) detected at line 540
  []
 
 [16
@@ -1209,7 +1217,7 @@ Overfull \hbox (14.74193pt too wide) in paragraph at lines 539--539
 <media/1b3.png, id=249, 434.62375pt x 247.92625pt>
 File: media/1b3.png Graphic file (type png)
 <use media/1b3.png>
-Package pdftex.def Info: media/1b3.png  used on input line 563.
+Package pdftex.def Info: media/1b3.png  used on input line 564.
 (pdftex.def)             Requested size: 173.8464pt x 99.16873pt.
  [18
 
@@ -1217,7 +1225,7 @@ Package pdftex.def Info: media/1b3.png  used on input line 563.
 
 ]
 
-LaTeX Warning: Reference `xxx' on page 20 undefined on input line 585.
+LaTeX Warning: Reference `xxx' on page 20 undefined on input line 586.
 
 [20
 
@@ -1225,10 +1233,10 @@ LaTeX Warning: Reference `xxx' on page 20 undefined on input line 585.
 <media/cm1.png, id=280, 568.1225pt x 457.71pt>
 File: media/cm1.png Graphic file (type png)
 <use media/cm1.png>
-Package pdftex.def Info: media/cm1.png  used on input line 596.
+Package pdftex.def Info: media/cm1.png  used on input line 597.
 (pdftex.def)             Requested size: 198.84584pt x 160.2009pt.
 
-Overfull \hbox (4.42528pt too wide) in paragraph at lines 596--596
+Overfull \hbox (4.42528pt too wide) in paragraph at lines 597--597
 [][][][][][][][][][]  
  []
 
@@ -1243,7 +1251,7 @@ Overfull \hbox (4.42528pt too wide) in paragraph at lines 596--596
 ] [25
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 688--688
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 689--689
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -1253,93 +1261,105 @@ Overfull \hbox (36.94771pt too wide) in paragraph at lines 688--688
 <media/drink-coffee.png, id=349, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 707.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 708.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
 
-Overfull \vbox (19.7pt too high) detected at line 707
+Overfull \vbox (19.7pt too high) detected at line 708
  []
 
 [27
 
  <./media/drink-coffee.png>]
-Overfull \hbox (208.09537pt too wide) in paragraph at lines 723--723
+Overfull \hbox (208.09537pt too wide) in paragraph at lines 724--724
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/cm3.png, id=361, 994.71625pt x 611.28375pt>
 File: media/cm3.png Graphic file (type png)
 <use media/cm3.png>
-Package pdftex.def Info: media/cm3.png  used on input line 723.
+Package pdftex.def Info: media/cm3.png  used on input line 724.
 (pdftex.def)             Requested size: 169.09952pt x 103.91685pt.
+
+Overfull \vbox (4.77544pt too high) detected at line 724
+ []
+
 [28
 
  <./media/cm3.png>]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 741--741
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 742--742
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \vbox (15.13579pt too high) detected at line 742
  []
 
 [29
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 753--753
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 754--754
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [30
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 772--772
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 773--773
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [31
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 788--788
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 789--789
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 810--810
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 811--811
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 File: media/cm3.png Graphic file (type png)
 <use media/cm3.png>
-Package pdftex.def Info: media/cm3.png  used on input line 810.
+Package pdftex.def Info: media/cm3.png  used on input line 811.
 (pdftex.def)             Requested size: 169.09952pt x 103.91685pt.
+
+Overfull \vbox (2.81448pt too high) detected at line 811
+ []
+
 [33
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 821--821
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 822--822
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 <media/cm2.png, id=445, 440.64626pt x 273.02pt>
 File: media/cm2.png Graphic file (type png)
 <use media/cm2.png>
-Package pdftex.def Info: media/cm2.png  used on input line 821.
+Package pdftex.def Info: media/cm2.png  used on input line 822.
 (pdftex.def)             Requested size: 176.25537pt x 109.20605pt.
 [34
 
  <./media/cm2.png>]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 837--837
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 838--838
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [35
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 856--856
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 857--857
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [36
 
 ]
-Overfull \hbox (36.94771pt too wide) in paragraph at lines 868--868
+Overfull \hbox (36.94771pt too wide) in paragraph at lines 869--869
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -1347,7 +1367,7 @@ Overfull \hbox (36.94771pt too wide) in paragraph at lines 868--868
 
 ]
 
-LaTeX Warning: Reference `xxx' on page 38 undefined on input line 880.
+LaTeX Warning: Reference `xxx' on page 38 undefined on input line 881.
 
 [38
 
@@ -1359,143 +1379,36 @@ LaTeX Warning: Reference `xxx' on page 38 undefined on input line 880.
 
 ] [42
 
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
 ]
-Overfull \hbox (157.95645pt too wide) in paragraph at lines 1044--1044
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-<media/1b4.png, id=594, 453.695pt x 345.29pt>
-File: media/1b4.png Graphic file (type png)
-<use media/1b4.png>
-Package pdftex.def Info: media/1b4.png  used on input line 1044.
-(pdftex.def)             Requested size: 181.47478pt x 138.11354pt.
-
-Overfull \hbox (10.32713pt too wide) in paragraph at lines 1044--1044
-[][]  
- []
-
-<media/1b4_2.png, id=595, 415.5525pt x 210.7875pt>
-File: media/1b4_2.png Graphic file (type png)
-<use media/1b4_2.png>
-Package pdftex.def Info: media/1b4_2.png  used on input line 1044.
-(pdftex.def)             Requested size: 166.21805pt x 84.3135pt.
-<media/1b4_3.png, id=596, 396.48125pt x 212.795pt>
-File: media/1b4_3.png Graphic file (type png)
-<use media/1b4_3.png>
-Package pdftex.def Info: media/1b4_3.png  used on input line 1044.
-(pdftex.def)             Requested size: 158.58968pt x 85.11649pt.
-[48
-
- <./media/1b4.png> <./media/1b4_2.png> <./media/1b4_3.png>] [49
-
-] [50
-
-]
-[51
-
-] [52
-
-] [53
-
-] [54
-
-] [55
-
-]
-\g__tikzsymbols_savebox_F_0 0 1 rg 0 0 1 RG_10_Changey_1_yellow_2_box=\box82
-\g__tikzsymbols_savebox_F_0 0 1 rg 0 0 1 RG_10_Changey_1_yellow_-2_box=\box83
-File: media/landing.png Graphic file (type png)
-<use media/landing.png>
-Package pdftex.def Info: media/landing.png  used on input line 1174.
-(pdftex.def)             Requested size: 126.12308pt x 115.23222pt.
- [56
-
-]
-
-LaTeX Warning: Reference `xxx' on page 57 undefined on input line 1186.
-
-[57
-
-]
-<media/debugging1.png, id=703, 650.43pt x 511.9125pt>
-File: media/debugging1.png Graphic file (type png)
-<use media/debugging1.png>
-Package pdftex.def Info: media/debugging1.png  used on input line 1195.
-(pdftex.def)             Requested size: 195.1305pt x 153.57494pt.
- [58
-
- <./media/debugging1.png>] [59
-
-]
-<media/debugging2.png, id=726, 634.37pt x 499.8675pt>
-File: media/debugging2.png Graphic file (type png)
-<use media/debugging2.png>
-Package pdftex.def Info: media/debugging2.png  used on input line 1226.
-(pdftex.def)             Requested size: 190.31245pt x 149.9614pt.
-
-Overfull \hbox (19.16481pt too wide) in paragraph at lines 1226--1226
-[][]  
- []
-
-[60
-
- <./media/debugging2.png>]
-Overfull \hbox (112.15085pt too wide) in paragraph at lines 1243--1243
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-File: media/debugging2.png Graphic file (type png)
-<use media/debugging2.png>
-Package pdftex.def Info: media/debugging2.png  used on input line 1243.
-(pdftex.def)             Requested size: 158.5921pt x 124.96657pt.
-[61
-
-] [62
-
-]
-\tf@nav=\write6
-\openout6 = `interaktive_forelesningsnotater_1B_del2_av_2.nav'.
-
-\tf@toc=\write7
-\openout7 = `interaktive_forelesningsnotater_1B_del2_av_2.toc'.
-
-\tf@snm=\write8
-\openout8 = `interaktive_forelesningsnotater_1B_del2_av_2.snm'.
-
- (./interaktive_forelesningsnotater_1B_del2_av_2.aux)
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1B_del2_av_2
-.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.962 \end{frame}
+                 
+? x
+ 
 Here is how much of TeX's memory you used:
- 25983 strings out of 478994
- 510533 string characters out of 5858185
- 860830 words of memory out of 5000000
- 42697 multiletter control sequences out of 15000+600000
+ 25872 strings out of 478994
+ 509050 string characters out of 5858185
+ 860502 words of memory out of 5000000
+ 42652 multiletter control sequences out of 15000+600000
  428376 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,14n,132p,1002b,1218s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cm3a} has been referenced but does not exist, rep
-laced by a fixed one
+ 131i,14n,132p,1004b,1218s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{energi2} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cm3a} has been referenced but does not exist, repla
+ced by a fixed one
 
 pdfTeX warning (dest): name{xxx} has been referenced but does not exist, replac
 ed by a fixed one
 
 pdfTeX warning (dest): name{euler4} has been referenced but does not exist, rep
 laced by a fixed one
+
+pdfTeX warning (dest): name{blue_nytema5} has been referenced but does not exis
+t, replaced by a fixed one
 
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1516,11 +1429,11 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/local/texliv
 e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive
 /2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2021/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on interaktive_forelesningsnotater_1B_del2_av_2.pdf (62 pages, 2
-826961 bytes).
+Output written on interaktive_forelesningsnotater_1B_del2_av_2.pdf (42 pages, 2
+360148 bytes).
 PDF statistics:
- 859 PDF objects out of 1000 (max. 8388607)
- 709 compressed objects within 8 object streams
- 190 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

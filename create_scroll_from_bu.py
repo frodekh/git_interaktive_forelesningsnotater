@@ -19,6 +19,7 @@ for i in range(len(chapters_1)):
     print('cp '+bu_1[i]+' '+chapters_1[i])
     os.system('cp '+bu_1[i]+' '+chapters_1[i])
     if i > 0:
+        #print('python make_scroll.py '+ chapters_1[i])
         os.system('python make_scroll.py '+ chapters_1[i])
     else:
         os.system('python make_scroll_advanced.py '+ chapters_1[i])

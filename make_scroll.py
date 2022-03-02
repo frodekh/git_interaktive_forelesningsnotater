@@ -67,8 +67,6 @@ pgnytemas = []
 lastlabel = ''
 lineind = 0
 
-print
-
 for line in lines:
     if ('\label' in line): lastlabel = lineind
     if ('lastpagebutton' in line) and (not ('newcommand' in line)) and (not ('#' in line)) and not (bool(re.match(multistr,lines[lastlabel])) and not bool(re.match(multistr2,lines[lastlabel]))): pg += 1 #; print(pg,line,lines[lastlabel])
@@ -105,7 +103,6 @@ for line in lines:
     lines[lineind] = line# + '\r'
     lineind += 1
 
-
 addlnk = "\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\\\"+r"\\"
 checklnk = '\hyperlink{front3}{\pagebutton{Forrige side}'
 repl = r"\\\\"
@@ -114,7 +111,6 @@ addlnk2 = "\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet
 checklnk2 = '\hyperlink{intro}{\choicebutton{Neste side}}'
 checklnk2b = '\hyperlink{blue_intro}{\choicebutton{Neste side}}'
 checklnk2c = '\hyperlink{feil_intro}{\choicebutton{Neste side}}'
-
 
 with open(filename, 'w') as f:
     for item in lines0:

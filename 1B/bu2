@@ -954,7 +954,7 @@ E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}
 \lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
 Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\\
-hyperlink{energi2_b}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2_b}{\pagebutton{Tja}}\\
+\hyperlink{energi2_b}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2_b}{\pagebutton{Tja}}\\
 \textcolor{white}{
 I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\

@@ -289,7 +289,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Elementærpartikler}}
@@ -299,7 +299,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema5}{\headlinebutton{Hva er mørk materie?}}
 \end{itemize}
 Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
-\hyperlink{blue_intro}{\choicebutton{Neste side}}
+\hyperlink{blue_intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 %%%%% intro
@@ -1004,7 +1004,7 @@ v(r)=\sqrt{\frac{GM}{r}}
 \begin{frame}
 \label{hvamm4}
 \lastpagebutton{red_hvamm3b}{\bf SIDE 43/46/46}\\
-{\Huge \htmlcom{large}{Så flott at du har et forslag! Det vil jeg gjerne høre om...}
+{\Huge \htmlcom{large}{Så flott at du har et forslag! Det vil jeg gjerne høre om...}}
 \hyperlink{hvamm5}{\pagebutton{Jo, nå skal du høre...}}
 \end{frame}
 
@@ -1051,4 +1051,795 @@ Gratulerer, del 1F er overstått. Du bør nå:
 
 
 
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1F\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1f.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Elementærpartikler}}
+\item {\headlinebutton{Galaktiske rotasjonskurver}}
+\item {\headlinebutton{Mørk materie}}
+\item {\headlinebutton{Modellering av mørk materie-haloer}}
+\item {\headlinebutton{Hva er mørk materie?}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+%%%%% intro
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+{\pagebutton{Forrige side}}\\
+%\vspace{1cm}
+\includegraphics[scale=0.5]{media/dark_matter.jpg}\\
+\column{0.5\textwidth}
+\small \textcolor{yellow}{\bf Velkommen til del 1F! Her skal vi ta en gjennomgang av alle de kjente elementærpartiklene som bygger opp universet vårt og så skal vi spekulere litt i om det finnes noen ukjente. Vi skal se på 'mørk materie'-begrepet, hvor det kommer fra, hva som gjør at vi trenger det og hva slags materie det kan være snakk om. Dette forelesningsnotatet tilsvarer omkring en dobbelttime fysisk forelesning.}
+ \\ \textcolor{yellow}{\bf Er du klar?}\\\vspace*{1cm}{\pagebutton{Neste side}}
+%\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
+\end{columns}
+}
+}
+
+
+{
+
+\hyperlink{intro2}{\pagebutton{\bf SIDE 1/1/46}}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/160496}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/160496}{\choicebutton{Nei}}\ \ \ \ {\choicebutton{Ja}}\\
+%{\choicebutton{Nei}}\ \ \ \ {\choicebutton{Ja}}\\
+}
+
+\renewcommand{\headline}{\small Elementærpartikler}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{rotakurv}
+{\pagebutton{Opplys meg! (om den mørke materien)}}
+}
+}
+
+
+{
+
+\hyperlink{partikler1}{\pagebutton{\bf SIDE 2/13/46}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.2]{media/std_model_Wiki.png}\\
+I oversikten over ser du alle kjente elementærpartikler i den såkalte \href{https://en.wikipedia.org/wiki/Standard_Model}{standardmodellen} i partikkelfysikk untatt den såkalte Higgspartikkelen.
+\column{0.5\textwidth}
+ Før du går videre bør du nå gå inn i de vanlige \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1f.pdf}{forelesningsnotatene} for del 1F og lese avsnitt 1 ``Some particle physics''. Det har ikke meningen at alt dette blir repetert her, så bedre at du leser denne godt. På de neste sidene skal du bli testet i det du har lest. {\bf Prøv å pugge dette stoffet nå slik at du klarer å ta testen uten å slå opp!} \textcolor{red}{ Dette har dukket opp flere ganger på eksamen og i prosjektet kan du få bruk for å beskrive dette med egne ord. Har du pugget dette en gang vil det sitte mye fortere neste gang.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+
+{
+
+\hyperlink{partikler2}{\pagebutton{\bf SIDE 3/13/46}}
+Kun et av disse utsagnene er riktig, trykk på det rikige!\\
+{\choicebutton{protoner er bosoner}}\\
+{\choicebutton{fotoner er fermioner}}\\
+{\choicebutton{Higgspartikkelen er et fermion}}\\
+{\choicebutton{nøytronet er et boson}}\\
+{\choicebutton{nøytrinoet er et fermion}}\\
+{\choicebutton{gravitonet er et fermion}}\\
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil1}{\pagebutton{\bf SIDE 4/13/46}}
+\textcolor{white}{Det var feil! Sjekk at du har kontroll på forskjellen mellom fermioner og bosoner, og hvilke partikler som tilhører hver gruppe. Det letteste er å lære hvilke partikler som er kraft-overførende, de pluss Higgspartikkelen er de eneste bosonene blant alementærpartiklene
+}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktig1}{\pagebutton{\bf SIDE 5/13/46}}
+{\Huge\bf \htmlcom{large}{Flott, bra jobba!}}
+ {\pagebutton{Neste side}}
+}
+}
+
+{
+
+\hyperlink{partikler3}{\pagebutton{\bf SIDE 6/13/46}}
+Kun et av disse utsagnene er riktig, trykk på det rikige!\\
+{\choicebutton{nøytroner er mesoner}}\\
+{\choicebutton{protoner er leptoner}}\\
+{\choicebutton{nøytrinoer er hadroner}}\\
+{\choicebutton{kvarker er baryoner}}\\
+{\choicebutton{protoner er mesoner}}\\
+{\choicebutton{nøytroner er hadroner}}\\
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil2}{\pagebutton{\bf SIDE 7/13/46}}
+\textcolor{white}{Det var feil! Sjekk at du har kontroll på forskjellen mellom leptoner og hadroner på den ene siden, og hadronene som deles opp i mesoner og baryoner på den andre. Du må også vite hvor mange kvarker protoner og nøytronene består av og dermed hva slags type partikler disse er.
+}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktig2}{\pagebutton{\bf SIDE 8/13/46}}
+{\Huge\bf \htmlcom{large}{Flott, bra jobba!}}
+ {\pagebutton{Neste side}}
+}
+}
+
+{
+
+\hyperlink{partikler4}{\pagebutton{\bf SIDE 9/13/46}}
+Kun et av disse utsagnene er riktig, trykk på det rikige!\\
+{\choicebutton{protoner har leptonnummer +1}}\\
+{\choicebutton{elektronnøytrinoet har elektrisk ladning -1}}\\
+{\choicebutton{oppkvarken har elektrisk ladning +1}}\\
+{\choicebutton{nedkvarken har leptonnumer +1}}\\
+{\choicebutton{fotoner kan ha spinn +1}}\\
+{\choicebutton{positronet(antipartikkelen til elektronet) har el. ladning -1}}\\
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil3}{\pagebutton{\bf SIDE 10/13/46}}
+\textcolor{white}{Det var feil! Sjekk at du har kontroll på leptonnummer, spinn og elektrisk ladning. Det er ikke forventet at du skal huske nøyaktig elektrisk ladning til alle kvarkene, men vite at ladningene er i 1/3-deler eller 2/3-deler.
+}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktig3}{\pagebutton{\bf SIDE 11/13/46}}
+{\Huge\bf \htmlcom{large}{Flott, bra jobba!}}
+Merk at du er forventet å ha kontroll på leptonnummer, spinn og elektrisk ladning. Det er ikke forventet at du skal huske nøyaktig elektrisk ladning til alle kvarkene, men vite at ladningene er i 1/3-deler eller 2/3-deler.
+ {\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{partikler5}{\pagebutton{\bf SIDE 12/13/46}}
+Ta nå frem et papir, skriv ned de 4 grunnleggende kreftene vi har i naturen samt bosonene som hører til hver kraft.
+{\pagebutton{Jeg har skrevet det ned og er klar til å gå videre!}}
+}
+
+{
+
+\hyperlink{partikler6}{\pagebutton{\bf SIDE 13/13/46}}
+ {\Huge\bf \htmlcom{large}{Fikk du det riktig?}} Hvis ikke, ta en runde til med repetisjon om elementærpartikler så det sitter skikkelig!
+{\pagebutton{Neste side}}
+}
+
+
+\renewcommand{\headline}{\small Galaktiske rotasjonskurver}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{morkmat}
+{\pagebutton{Sett igang!}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_rotkurv0}{\pagebutton{\bf SIDE 14/21/46}}
+\textcolor{yellow}{
+{\small
+Før vi skal se på galaktiske rotasjonskurver (hva nå enn det er ...) så skal vi se hvordan en typisk galakse ser ut. Vi skal nærmere bestemt se på en spiralgalakse slik som vår egen Melkevei som et eksempel:\\
+\includegraphics[scale=0.45]{media/fig_4-1.png}\\
+Dimensjonene som er tegnet inn gjelder for Melkeveien som er en typisk spiralgalakse. Den består av en {\bf rund tynn skive} ($\sim$1000 lysår tykkelse) med stjerner som vi kaller {\bf galakseskiven}. Den er omkring 100.000 - 200.000 lysår i diameter. I sentrum er det en kuleformet ansamling av stjerner som kalles {\bf galakseutbulingen} med diameter omkring 10.000 lysår. Stjernene går i bane i galakseplanet omkring det supermassive sorte hullet i sentrum av galaksen. Det er noen hundre milliarder stjerner i Melkeveien og stjernetettheten i en typisk galakse faller kraftig av med avstand $r$ fra sentrum som $\rho_\mathrm{star}(r)\propto r^{-3.5}$.
+}}
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{rotkurv1}{\pagebutton{\bf SIDE 15/21/46}}
+\begin{columns}
+\column{0.5\textwidth}
+Tilbake til spørsmålet på skjemaet. Under ser du en galakse:
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+Det er ikke helt urimelig å anta at alle stjernene i denne spiralgalaksen befinner seg i det samme planet, galakseplanet, og at de går i bane rundt det sorte hullet i sentrum. Anta videre at {\bf alle stjerner går i sirkelbaner} som alle ligger {\bf i dette galakseplanet}. Vi antar altså at all materie i galaksen ligger i en tynn skive.
+\column{0.5\textwidth}
+Vi skal ta for oss en stjerne i avstand $r$ fra sentrum av galaksen. Hva blir gravitasjonskraften på denne stjerna fra resten av galaksen?\\
+{\pagebutton{Trykk her når du har forslag!}}\\
+\textcolor{white}{
+Husker du fra utledningen av likningen for hydrostatisk likevekt? Gravitasjonskreftene fra et kulesymmetrisk skall er 0 innenfor skallet. Det samme gjelder i 2 dimensjoner, altså for en skive, så lenge objektet vi ser på beveger seg kun i skiven. {\bf Vi får altså ingen tyngdekraft fra stjernene på utsiden av radius $r$.}
+{Neste side}}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{rotkurv1_b}{\pagebutton{\bf SIDE 15/21/46}}
+\begin{columns}
+\column{0.5\textwidth}
+Tilbake til spørsmålet på skjemaet. Under ser du en galakse:
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+Det er ikke helt urimelig å anta at alle stjernene i denne spiralgalaksen befinner seg i det samme planet, galakseplanet, og at de går i bane rundt det sorte hullet i sentrum. Anta videre at {\bf alle stjerner går i sirkelbaner} som alle ligger {\bf i dette galakseplanet}. Vi antar altså at all materie i galaksen ligger i en tynn skive.
+\column{0.5\textwidth}
+Vi skal ta for oss en stjerne i avstand $r$ fra sentrum av galaksen. Hva blir gravitasjonskraften på denne stjerna fra resten av galaksen?\\
+{{Trykk her når du har forslag!}}\\
+
+Husker du fra utledningen av likningen for hydrostatisk likevekt? Gravitasjonskreftene fra et kulesymmetrisk skall er 0 innenfor skallet. Det samme gjelder i 2 dimensjoner, altså for en skive, så lenge objektet vi ser på beveger seg kun i skiven. {\bf Vi får altså ingen tyngdekraft fra stjernene på utsiden av radius $r$.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{rotkurv2}{\pagebutton{\bf SIDE 16/21/46}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+Helt på samme måte, så får vi vanlig Newtonsk gravitasjonskraft
+\[
+F=G\frac{M(r)m}{r^2}
+\]
+hvor igjen $M(r)$ er den totale massen til galaksen på innsiden av radius $r$ og $m$ er massen til stjerna vi ser på. Dermed har vi for denne stjerna tilnærmet det klassiske 2-legeme-problemet, hvor massen på legemene er $M(r)$ og $m$.
+\column{0.5\textwidth}
+Da vet vi at resultatet gir oss Keplers lover, \textcolor{red}{MEN} de må anvendes individuelt for hver avstand $r$ fra sentrum. {\bf Jo lenger utover i galaksen du kommer, jo større blir massen $M(r)$.} Dette er en stor forskjell fra planetsystemer der massen $M$ av stjerna er den samme for alle planeter. I tillegg vil stjernene nær sentrum kunne være sterkt påvirket av andre objekter i nærheten.
+
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{rotkurv3}{\pagebutton{\bf SIDE 17/21/46}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+ Men hvis vi nå ser på de få stjernene som befinner seg helt i utkanten av galaksen, så er situasjonen en annen. {\bf Her er det få stjerner og totalmassen innenfor $r$ endrer seg svært lite ettersom vi går videre utover fra galaksen ($r$ øker videre).} For stjernene i utkanten av galaksen så vil massen $M(r)=M$ der $M$ er massen til hele galaksen være en svært god tilnærmelse.
+\column{0.5\textwidth}
+Da kommer vi til et annet spørsmål fra skjemaet. {\bf Hvilken banehastighet har disse stjernene??} Husk at vi antar sirkelbaner, og husk at tyngdekrafta er den vanlige Newtonske med en masse $M$ (hele galaksens masse) i sentrum. Hva må den bli?
+{\pagebutton{Trykk her når du har forslag!}}\\
+\textcolor{white}{
+Ganske riktig ja, da kan vi bruke god gammeldags {\it sentripetalakselrasjon} som gir
+\[
+v=\sqrt{\frac{GM}{r}}
+\]
+for alle stjerner i de ytre delene av galaksen.
+{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{rotkurv3_b}{\pagebutton{\bf SIDE 17/21/46}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.15]{media/dark_matter.jpg}\\
+ Men hvis vi nå ser på de få stjernene som befinner seg helt i utkanten av galaksen, så er situasjonen en annen. {\bf Her er det få stjerner og totalmassen innenfor $r$ endrer seg svært lite ettersom vi går videre utover fra galaksen ($r$ øker videre).} For stjernene i utkanten av galaksen så vil massen $M(r)=M$ der $M$ er massen til hele galaksen være en svært god tilnærmelse.
+\column{0.5\textwidth}
+Da kommer vi til et annet spørsmål fra skjemaet. {\bf Hvilken banehastighet har disse stjernene??} Husk at vi antar sirkelbaner, og husk at tyngdekrafta er den vanlige Newtonske med en masse $M$ (hele galaksens masse) i sentrum. Hva må den bli?
+{{Trykk her når du har forslag!}}\\
+Ganske riktig ja, da kan vi bruke god gammeldags {\it sentripetalakselrasjon} som gir
+\[
+v=\sqrt{\frac{GM}{r}}
+\]
+for alle stjerner i de ytre delene av galaksen.
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{rotkurv4}{\pagebutton{\bf SIDE 18/21/46}}
+Hvis vi nå observerer stjernehastigheter på forskjellige avstander $r$ fra sentrum, der $r$ er så stor at vi er sikker på at nesten hele galaksens masse er innenfor (i de ytterste delene er det svært få stjerner som kan bidra til totalmassen), så skulle vi for disse  få en kurve som følger modellen
+\[
+v(r)=\sqrt{\frac{GM}{r}}\ \ \ \ \mathrm{for\ r\ stor\ nok}
+\]
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.45]{media/fig_4-2.png}\\
+\column{0.5\textwidth}
+I figuren til venstre ser du denne modellen tegnet inn (nederste kurve). {\bf Den øverste kurven derimot, er typisk for faktiske observasjoner av stjerne hastigheter!} \textcolor{red}{Helt forskjellig fra den teoretiske modellen!} Vi ser at den faktiske kurven er nesten flat og ikke følger en $\sqrt{1/r}$ modell.
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+\hyperlink{red_rotkurv5}{\pagebutton{\bf SIDE 19/21/46}}
+\textcolor{yellow}{\Huge \htmlcom{large}{Hva kan forårsake et så stort avvik mellom teori og observasjon?}}
+\textcolor{yellow}{Det er helt klart at noe er galt med modellen, men hva? Hvilken antakelse har gått galt?}\\
+{\bf Før du går videre: Tenk gjennom alle antakelser vi har gjorde da vi kom frem til det teoretiske uttrykket. Hvilken tror du kan være gal og som kan gi oss en slik feil?}
+{\pagebutton{Jeg har gått gjennom alle antakelsene og tenkt}}
+}
+}
+
+{
+
+\hyperlink{rotkurv6}{\pagebutton{\bf SIDE 20/21/46}}
+I modellen vår
+\[
+v(r)=\sqrt{\frac{GM}{r}}\ \ \ \ \mathrm{for\ r\ stor\ nok}
+\]
+så avtar hastigheten med $\sqrt{1/r}$ fordi stjernene kommer lenger og lenger unna massesenteret til galaksen. Siden $M$ ikke øker (nevneverdig) så må gravitasjonskrafta avta med avstanden! Dermed blir hastigheten lavere med $r$ (Keplers 2. lov). {\bf Men observasjonene viser altså at hastigheten ikke avtar med avstanden.} Tyngdekreftene på stjernene lenger ut må dermed være større enn vi trodde. {\bf Hvis vi ser på Newtons tyngdelov så er det kun massen $M$ som her evt. kan øke slik at tyngdekraften blir større og vi dermed får større sentripetalakselrasjon!}
+\textcolor{red}{Hvis totalmassen $M(r)$ innenfor en radius $r$ øker kraftig med $r$ også i de ytre delene av galaksen så kan dette forklare at den observerte {\bf rotasjonskurven} (lær til dette order, det brukes mye: stjernehastighet som funksjon av avstand $r$ fra galaksesenter) ikke stemmer overens med den teoretiske. {\bf MEN} det er bare det at vi ikke ser noen stjerner eller annen form for synlig materie i ytterkantene som kan forklare at $M(r)$ skal øke.}
+{\pagebutton{Neste side}}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\textcolor{yellow}{\Huge \htmlcom{large}{Hang du med nå eller?}}
+\textcolor{yellow}{Hvis ikke, gå en side eller to tilbake til du er helt sikker på at du forstår!}
+{\pagebutton{Jeg henger godt med!}}
+}
+}
+
+
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktig_rotkurv7}{\pagebutton{\bf SIDE 21/21/46}}
+\textcolor{red}{\Huge \htmlcom{large}{Det er her hypotesen om \textcolor{black}{\bf mørk materie} kommer inn. For at $M(r)$ skal kunne øke nevneverdig med $r$ i de ytre delene av galaksen, sa må det finnes materie der som ikke er synlig, som ikke avgir lys, derav \textcolor{black}{\bf mørk materie}}}
+Du kan se det hele animert \href{https://commons.wikimedia.org/w/index.php?title=File\%3AGalaxy_rotation_under_the_influence_of_dark_matter.ogv}{her,} hvor du ser en galakse roterer med og uten mørk materie (se rotasjonskurvene under galaksen). Legg merke til stjernehastigheten ytterst!
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\Huge
+\centerline{\htmlcom{large}{Kaffe???  Yes!!}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+\htmlcom{large}{Dette var mørkt stoff, og mørkere skal det bli! Dermed trenger du en tur ut i dagslys nå!!}
+\vspace*{0.5cm}
+\htmlcom{large}{Ihvertfall 10 min...}
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Har klarnet tankene nå!}}
+}
+}
+
+\renewcommand{\headline}{\small Mørk materie}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{modmat}
+{\pagebutton{Endelig kom vi til saken her!}}
+}
+}
+
+
+{
+
+\hyperlink{mm0}{\pagebutton{\bf SIDE 22/31/46}}
+{\Huge \htmlcom{large}{Skulle du ha bittelitt tid til overs og lyst til å se en repetisjon av hva vi akkurat snakket om, med litt andre ord og med litt info om hvordan målinger gjøres for å måle rotasjonskurven til Melkeveien, ta en titt på \href{https://www.youtube.com/watch?v=1aZ0Vujb08o}{denne 3 minutters Youtube-videoen.}}}
+{\pagebutton{Neste side}}
+}
+
+
+
+{
+
+\hyperlink{mm1}{\pagebutton{\bf SIDE 23/31/46}}
+\begin{columns}
+\column{0.5\textwidth}
+Vi begynner med å kikke på en av ukeoppgavene:
+\includegraphics[width=\linewidth]{media/oppgave1f1_1.png}\\
+\column{0.5\textwidth}
+Finner du massen til galaksene? Kikk deretter på deloppgave 2:
+\includegraphics[width=0.97\linewidth]{media/oppgave1f1_2.png}\\
+{\small
+Gjør du dette riktig så skal du få omkring $9\times10^{11}$ solmasser i deloppgave 1 når du kun beregner massen fra kun fra gravitasjonskraften mens du får $2\times10^{11}$ solmasser når du bruker den synlige massen. Hvis du er usikker på hvordan disse oppgavene løses, ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1f/videoer/video1f.mp4}{denne videoen}.\textcolor{red}{\bf MERK feil i videoen: det er $1.9\times10^{17}$ sekunder ikke år! Men slutt-resultatet blir riktig!}
+{\pagebutton{Neste side}}}
+\end{columns}
+}
+
+{
+
+\hyperlink{mm2}{\pagebutton{\bf SIDE 24/31/46}}
+{\bf Hva betyr dette?} Du fant en mye større masse til 2-galaksesystemet hvis du brukte tyngdekraften til å måle massen enn hvis du telte massen til de synlige stjernene. Igjen så er dette et typisk resultat. Når man ser på galaksers bevegelse omkring hverandre i en galaksehop så finner man samme resultat som når vi ser på rotasjonskurven til enkeltgalakser! {\bf Husker du forresten hva en galaksehop er???} Det er noen 100 eller noen 1000 galasker som går i bane omkring et felles massesenter. Dette er de største strukturene i universet.
+{\pagebutton{Neste side}}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm3}{\pagebutton{\bf SIDE 25/31/46}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.75]{media/lenses.jpg}
+\column{0.5\textwidth}
+\textcolor{yellow}{\small Man har også en helt uavhengig måte å måle massen til en galaksehop på ved å se på lysavbøyning av lys fra meget fjerne objekter som ligger langt bak galaksehopen. \textcolor{red}{I bildet her er prikkene galakser i en galaksehop mens buene er det avbøyde lyset fra fjerne objekter.} Lyset fra det fjerne objektet passerer gjennom hopen, men blir avbøyd på grunn av tyngdekrafta i galaksehopa. Ved å se på avbøyninga til lyset kan man 'veie' galaksehopa og på den måten finne massen til hopa. Denne typen målinger bekrefter det som man finner ved andre metoder: {\bf Akkurat som enkeltgalaksene så innholder også galaksehopene mye mer masse enn den synlige massen.}}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm4}{\pagebutton{\bf SIDE 26/31/46}}
+\textcolor{yellow}{Observasjoner av galakser og galaksehoper viser at omkring $85\%$  av massen i universet er mørk materie.}\\
+\textcolor{yellow}{\Huge \htmlcom{large}{Men hva er nå denne mørke materien???}}\\
+\textcolor{yellow}{Kan det være døde stjerner/planeter, andre mørke objekter??}
+\textcolor{yellow}{Observasjoner av den kosmiske bakgrunnsstrålingen viser at den mørke materien mest sannsynlig ikke består av partikler fra standardmodellen men sannsynligvis er nye og ukjente partikler utenfor standardmodellen for partikkelfysikk. Partikler som aldri eller svært sjeldent reagerer med de kjente partiklene på noen annen måte enn gjennom gravitasjon!}
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm5}{\pagebutton{\bf SIDE 27/31/46}}
+\textcolor{yellow}{\tiny \htmlcom{footnotesize}{Bilde: ESA/Planck}}
+\includegraphics[scale=0.15]{media/cmb.jpg}\\
+\vspace*{-6cm}
+shcjjjjkjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaccccccccccccccccccccccccccccccccccc\\
+\begin{itemize}
+\item \textcolor{blue}{\bf Størrelsen på fluktuasjonene i den kosmiske bakgrunnsstrålingen bekrefter at det trengs omkring $85\%$ mørk materie for å danne de strukturene vi idag ser i universet.}
+\item \textcolor{red}{\bf Samtidig så setter nukleosyntesen, perioden i universets tidlige historie da de første atomkjernene ble dannet, en grense for hvor mye 'vanlig materie' som kan eksistere. Hvis det hadde eksistert betydelig mer vanlig materie (som reagerer med partikler i standardmodellen gjennom andre krefter enn gravitasjon), så hadde vi hatt en helt annen sammensetning av grunnstoffer i universet idag.}
+\item \textcolor{blue}{\bf Dette forteller oss at den mørke materien må bestå av partikler som reagerer svært svakt med andre partikler, unntatt gjennom gravitasjon da vi jo 'ser' den mørke materien gjennom gravitasjonspåvirkning av andre legemer. Hvis en partikkel skal sende ut/absorbere fotoner, må den kunne virke med elektromagnetiske krefter, gjør den ikke det, så blir den 'mørk'. I standardmodellen har vi kun en slik partikkel som virker svært svakt gjennom andre krefter enn gravitasjon: nøytrinoet. \textcolor{red}{Kan mørk materie være nøytrinoer???}{\pagebutton{Neste side}}}
+\end{itemize}
+}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm6}{\pagebutton{\bf SIDE 28/31/46}}
+\textcolor{yellow}{Mørk materie kan kategoriseres bl.a. som:}
+\begin{itemize}
+\item \textcolor{yellow}{{\bf Varm mørk materie (Warm Dark Matter WDM):} Dette er lette mørk materiepartikler med hastigheter nær lyshastigheten. Denne typen partikler vil oppføre seg tilnærmet som lys pga. sin høye hastighet. Nettopp nøytrinoer er en slik mulig WDM-kandidat.}
+\item \textcolor{yellow}{{\bf Kald mørk materie (Cold Darm Matter CDM):} Dette er tyngre partikler med lavere hastigheter og vil dermed oppføre seg mer som bl.a. protoner, elektroner og atomkjerner, bortsett fra at de da svært sjelden/ikke på noen måte reagerer med disse eller andre partikler i standardmodellen.}
+\end{itemize}
+\textcolor{yellow}{
+...og så finnes selvfølgelig mellomtingen LWDM (Luke Warm Dark Matter). \\
+{\Large Men hvordan kan vi skille mellom disse to teoriene? Gitt at de kun vekselvirker med gravitasjon og i svært liten/ingen grad med de andre fundamentale kreftene, hvordan kan vi gjennom observasjoner avgjøre f.eks. om vi har WDM eller CDM?
+Tenk deg godt om før du blar om!}}
+{\pagebutton{Neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm7}{\pagebutton{\bf SIDE 29/31/46}}
+\textcolor{yellow}{
+Kunne man f.eks. bruke observasjonene vi har av galaktiske rotasjonskurver? Eller observasjonene av galaksenes hastighet i galaksehoper? {\bf Isåfall, på hvilken måte ville disse observasjonene være forskjellige avhengig av typen mørk materie?}\\
+\vspace*{2cm}
+{\Large Diskuter og se om dere får noen ideer før du går videre til ...}
+}
+{\pagebutton{... neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm8}{\pagebutton{\bf SIDE 30/31/46}}
+\includegraphics[scale=0.25]{media/dark_matter.jpg}
+\textcolor{yellow}{
+På bildet av galaksen ser du også en blå 'sky' inntegnet. Denne illustrerer hvordan den mørke materien har klumpet seg rundt galaksen. Ved å kartlegge fordelingen av mørk materie i en galakse har man funnet ut av den mørke materien ligger i det vi kaller en {\bf halo} omkring galaksen. Det er en tilnærmet kulesymmetrisk sky av mørk materie med radius som er flere ganger større enn radiusen til galaksen som man finner ved å observere fordelingen av stjerner og gass. Den synlige delen av galaksen ligger i sentrum av denne haloen.}\\
+{\pagebutton{... neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mm9}{\pagebutton{\bf SIDE 31/31/46}}
+\includegraphics[scale=0.25]{media/dark_matter.jpg}
+\textcolor{yellow}{
+{\bf Vil ikke tetthet og tetthetsvariasjoner av mørk materie i en slik halo være forskjellig avhengig av hvilken type mørk materie man har? Hvordan tror du WDM med partikler nær lyshastighet ville klumpet seg slik?}
+Hvis vi nå kan lage en modell av tetthet av mørk materie som funksjon av $r$, altså $\rho(r)$, utifra hastighetsmålingene vi har i galaksen, så vil det være et viktig redskap i å kunne forstå hva slags mørk materie vi har ved å se hvordan den mørke materien kan klumpe seg ifølge modellen $\rho(r)$ vi finner.
+}
+{\pagebutton{Det skal vi se litt på nå...}}
+}
+}
+
+\renewcommand{\headline}{\small Modellering av mørk materie-haloer}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{hvaer}
+{\pagebutton{La oss gjøre litt utledning igjen...}}
+}
+}
+
+
+{
+
+\hyperlink{mod1}{\pagebutton{\bf SIDE 32/38/46}}
+Vi ønsker altså å finne et uttrykk for $\rho(r)$ utifra hastighetsfunksjonen $v(r)$. Vi antar altså kulesymmetri siden tettheten kun er en funksjon av $r$. Dette er rimelig siden vi har observert at den mørke materien ligger i en kulesymmetrisk halo og ikke i en skive slik som den vanlige materien gjør i en spiralgalakse. Den mørke materien dominerer, så det er en god antakelse og kun se på den mørke materien her. Tettheten i avstanden $r$ fra sentrum av galaksen er vel egentlig:
+\[
+\rho(r)=\frac{\mathrm{masse\ av\ infinitesimalt\ kuleskall}}{\mathrm{volum \ av\ infinitesimalt\ kuleskall}}=\frac{dM}{4\pi r^2\,dr}=\frac{1}{4\pi r^2}\frac{dM}{dr}
+\]
+der vi altså ser på et infinitesimalt kuleskall omkring sentrum av galaksen i avstand $r$ med tykkelse $dr$. Massen til kuleskallet betegner vi $dM$ og tykkelsen $dr$.  Kan du set at $dM/dr$ her egentlig er den deriverte av funksjonen $M(r)$ som var den totale massen innenfor en radius $r$? Altså at
+\[
+\frac{dM}{dr}=\frac{dM(r)}{dr}
+\]
+{\pagebutton{Ja, det ser jeg!}}{\pagebutton{Blir det sånn da?}}
+}
+
+
+{
+
+\hyperlink{mod2}{\pagebutton{\bf SIDE 33/38/46}}
+{\small
+Det er vel sånn at massen $dM$ av det tynne kuleskallet må være forskjellen mellom massen $M(r+dr)$ og massen $M(r)$? Dermed har vi vel altså at $dM=M(r+r)-M(r)$ og fra definisjonen av derivert har vi da at
+\[
+\frac{dM}{dr}=\frac{dM(r)}{dr}
+\]
+Vi fant for en del sider siden en sammenheng mellom observert hastighet $v(r)$ og total masse $M(r)$ på innsiden av $r$ ved hjelp av sentripetalakselrasjon. Stokker vi om på det uttrykket får vi
+\[
+M(r)=\frac{1}{G}v^2(r)r
+\]
+Vi trengte $dM/dr$ for å finne tettheten, så da deriverer vi ivei med produktregel og kjerneregel:
+\[
+\frac{dM(r)}{dr}=\frac{1}{G}\left(2v(r)r\frac{dv}{dr}+v^2(r)\right)
+\]
+Insatt i uttrykket for $\rho(r)$ fra forrige side så har vi da:
+\[
+\rho(r)=\frac{1}{4\pi r^2}\frac{dM}{dr}=\frac{1}{4\pi r^2G}\left(2v(r)r\frac{dv}{dr}+v^2(r)\right)
+\]
+}
+{\bf Enig?} \textcolor{red}{Hvis du er usikker på det vi har gjort så langt, spør foreleser!}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\hyperlink{mod3}{\pagebutton{\bf SIDE 34/38/46}}
+Vi fikk:
+\[
+\rho(r)=\frac{1}{4\pi r^2G}\left(2v(r)r\frac{dv}{dr}+v^2(r)\right)
+\]
+Ser du at hvis du nå har observert stjernehastighet i en avstand $r$ og dermed fått observert funksjonen $v(r)$, så kan du nå finne tetthetsprofiel $\rho(r)$ av mørk materie (pluss lysende, vi ser jo på total masse, men den mørke dominerer) i galaksen? Du trenger kun å sette inn observert hastighet som funksjon av $r$ samt den deriverte av denne.\\
+Nå så vi jo at $v(r)$ blir nesten flat i ytre deler av galaksen. Dermed blir den deriverte av hastigheten 0 i disse delene av galaksen og vi får:
+\[
+\rho(r)=\frac{v^2(r)}{4\pi r^2G}
+\]
+som er enklere å regne med. {\bf I oppgavene i dette kurset skal du bruke dette uttrykket også i de sentrale delene selv om det blir veldig omtrentlig.}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\hyperlink{mod4}{\pagebutton{\bf SIDE 35/38/46}}
+Vi har for de ytre delene av galaksen at
+\[
+\rho(r)=\frac{v^2(r)}{4\pi G r^2}
+\]
+Ser du at tettheten faller som $\rho(r)\propto 1/r^2$ her? (husk at $v(r)$ er tilnærmet en konstant i disse delene av galaksen)
+Tettheten av stjerner i en galakse faller omtrent som $\rho_\mathrm{star}(r)\propto 1/r^{3.5}$, altså mye raskere en den mørke materien. {\bf Det forklarer resultatet vårt fra tidligere: fordelingen av mørk materie er mye mer utbredt enn fordelingen av lysende materie!}. Det er fortsatt mye mørk materie igjen i de ytre delene av den synlige delen av galaksen. Dermed øker $M(r)$ enda kraftig når man går videre utover og det ble feil å anta at $M$ var en konstant størrelse.\\
+\textcolor{red}{Men hva skjer med tettheten i sentrum utifra dette uttrykket? Divergerer det ikke? Observasjoner viser at hastigheten $v(r)$ er omtrent proporsjonal med $r$ i sentrale deler, altså $v(r)\propto r$. Da gir formelen oss at tettheten i sentrum er tilnærmet konstant. {(\bf ser du det?)}}
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{mod5}{\pagebutton{\bf SIDE 36/38/46}}
+Ved å bruke denne metoden samt bl.a. gravitasjonslensing som vi snakket om tidligere har man kommet frem til en generell tetthetsprofil som passer for de fleste galakser:
+\[
+\rho(r)=\frac{\rho_0}{1+(r/R)^2}
+\]
+der $\rho_0$ og $R$ er konstante størrelser som varierer fra galakse til galakse, Disse størrelsene må man tilpasse fra dataene for en gitt galakse, dette skal du få prøve i ukeoppgavene. \textcolor{red}{Men kan du gi en tolkning av $\rho_0$ og $R$? Lek litt med uttrykket og se om du finner hva $\rho_0$ og $R$ egentlig betyr...}
+{\pagebutton{Når du har en ide om hva $\rho_0$ og $R$ er, trykk her}}
+}
+
+{
+
+\hyperlink{mod6}{\pagebutton{\bf SIDE 37/38/46}}
+Hvis du ikke fikk det helt til, et par hint:
+\begin{itemize}
+\item Kan du finne en verdi for $r$, altså en avstand fra sentrum av galaksen som gir en enkel sammenheng mellom $\rho(r)$ og $\rho_0$? Dette skulle gi deg tolkningen av $\rho_0$
+\item Det kan virke som $R$ er en eller annen avstand, spesielt når vi ser hva slags enheter den må ha. Hva er $\rho(r)$ når avstanden $r=R$? Fant du en tolkning av avstanden $R$?
+\end{itemize}
+{\pagebutton{Når du har en ide om hva $\rho_0$ og $R$ er, trykk her}}
+}
+
+
+
+{
+
+\hyperlink{mod7}{\pagebutton{\bf SIDE 38/38/46}}
+Ser du at
+\begin{itemize}
+\item $\rho_0$ er tettheten i sentrum?
+\item $R$ er avstanden fra sentrum der tettheten har falt til halvparten av tettheten i sentrum?
+\end{itemize}
+Hvis du ikke ser det, spør foreleser! Ser du dermed at når $r\rightarrow0$ så går $\rho$ mot den konstante tettheten $\rho_0$? Og når $r$ blir veldig stor så får vi tilbake $\rho(r)\propto1/r^2$ som vi fant over?
+\textcolor{red}{Men hva betyr nå disse resultatene for forståelsen av hva den mørke materien er??}
+{\pagebutton{Neste side}}
+}
+
+\renewcommand{\headline}{\small Hva er mørk materie?}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+{\pagebutton{Og svaret er ...}}
+}
+}
+
+{
+
+\hyperlink{hvamm1}{\pagebutton{\bf SIDE 39/46/46}}
+\centerline{\Huge\bf \htmlcom{large}{Ingen vet!!!}}
+Men det finnes mange teorier.
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{hvamm2}{\pagebutton{\bf SIDE 40/46/46}}
+Vi nevnte tidligere at det finnes en partikkel i stnandardmodellen som kunne passe som mørkt materie: \textcolor{red}{nøytrinoene vekselvirker veldig svakt med annen materie på annen måte enn gjennom gravitasjon.} Men nøytrinoene er lette og ville dermed ha høy hastighet og være WDM. Alle tester så langt, og da blant annet av klumpingen til den mørke materien slik som vi akkurat diskuterte, viser at {\bf mørk materie mest sannsynlig er CDM}, kald mørk materie. Ofte kjører man store partikkelsimuleringer (alla den du gjorde med partikkel i boks, men med en stor andel av universet) og ser hvordan forskjellige typer simulert mørk materie klumper seg og sammenlikner med profilen til f.eks. en galakse slik som vi akkurat utledet. På den måten kan vi teste forskjellige typer teorien. {\bf Men hvis nøytrinoene er den eneste partikkelen i standardmodellen i partikkelfysikk som kunne passe, \textcolor{blue}{men som da ikke passer likevel...}}
+{\pagebutton{...så betyr det at...}}
+}
+
+
+{
+
+\hyperlink{hvamm3}{\pagebutton{\bf SIDE 41/46/46}}
+{\bf ...mørk materie må være en ny og enda ukjent partikkel.} En partikkel som enda ikke er en del av standardmodellen. Teoretisk partikkelfysikk har i mange tiår allerede forutsagt eksistensen av mange forskjellige typer slike partikler ved å se på symmetrier i de matematiske teoriene. En av de mange mulige teoretiske utvideleser av standardmodellen er den såkalte {\bf supersymmetriske modellen}. I den modellen har ethvert fermion en supersymmetrisk partnerpartikkel som er et boson, og hvert boson en supersymmetrisk partnerpartikkel som er et fermion (litt på samme måte som alle partikler har en antipartikkel med motsatt ladning og leptonnummer). Partneren til protonet ville vært et {\bf sproton}, partneren til elektronet et {\bf selektron} og parteneren til fotonet et {\bf fotino}. Selv om denne teorien har eksistert i veldig lang tid, så har man så langt \textcolor{red}{ikke lykkes i å bekrefte at disse partiklene faktisk eksisterer. Men hvis de eksisterer så er mange av disse forutsagt å ha de egenskapene som vi ser at CDM har.} I tilleg til supersymmetri finnes det også en rekke andre teorier som forutsier utvidelser av standardmodellen med partikler som passer til å være CDM, men så langt er altså ingen av disse teoriene bekreftet.
+{\pagebutton{MEN...}}
+}
+
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+\hyperlink{red_hvamm3b}{\pagebutton{\bf SIDE 42/46/46}}
+\textcolor{yellow}{\Huge \htmlcom{large}{kanskje det finnes en annen mulighet???}}\\
+\textcolor{yellow}{\large tenk tilbake på utledningen av rotasjonskurvene:
+\[
+v(r)=\sqrt{\frac{GM}{r}}
+\]
+}
+\textcolor{yellow}{Som tydelig er feil ifølge observasjoner, men hvilke antakelser gjorde du her?}
+\textcolor{yellow}{En mulig løsning var at antakelsen om at $M$ er konstant ettersom du går utover er feil. Men hvis denne ikke er feil? La oss anta at $M$ virkelig ikke endrer seg når du går utover, altså at vi ikke har noe usynlig mørk materie der. Hva annet kan være galt og som kunne gi en flat rotasjonskurve?}
+{\pagebutton{Jeg har kanskje et forslag...}}
+}
+}
+
+{
+
+\hyperlink{hvamm4}{\pagebutton{\bf SIDE 43/46/46}}
+{\Huge \htmlcom{large}{Så flott at du har et forslag! Det vil jeg gjerne høre om...}}
+{\pagebutton{Jo, nå skal du høre...}}
+}
+
+{
+
+\hyperlink{hvamm5}{\pagebutton{\bf SIDE 44/46/46}}
+Hva om Newtons gravitasjonslov er feil? Newtons gravitasjon kommer jo bare fra Einsteins gravitasjonslov (den skal vi høre om senere i kurset) for svake gravitasjonsfelt. {\bf Så hva som Einsteins gravitasjonslov (også kjent som den generelle relativitetsteorien) er feil???}. \textcolor{red}{Vi har jo strengt tatt bare testet gravitasjonsloven grundig over korte avstander, dvs. solsystem-størrelse. Vi har aldri direkte testet gravitasjonsloven over virkelig store avstander}. Kan det være at det vis er er at gravitasjonsloven ser forskjellige ut for store avstander?
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{hvamm6}{\pagebutton{\bf SIDE 45/46/46}}
+Det finnes også en annen grunn til at man studerer muligheten for at Einsteins gravitasjonslov må utvides. Det finnes nemlig en annen usynlig komponent i universets sammensetning som heter {\bf mørk energi}. Vi skal ikke snakke om den i dette kurset, men den får universet til å utvide seg fortere og fortere. For å forklare denne så ser det virkelig ut som man kanskje trenger en modifisert gravitasjonslov. {\bf Men hva om en slik modifisert gravitasjonslov også kan forklare galaktiske rotasjonskurver og andre observasjoer som indikerer eksistensen av mørk materie?} Ja da hadde vi ikke trengt den mørke materien. \textcolor{red}{Problemet er bare at ingen heller ikke har klart å lage en overbevisende modifisert gravitasjonsteori som gir oss både mørk materie og mørk energi}.\\
+\textcolor{blue}{Hvis du er interessert og har lyst til å kikke på et av de mest populære modifiserte gravitasjonsteoriene, ta en kikke på \href{https://www.eso.org/sci/meetings/santiago/abs05/Sep2005/Scarpa.pdf}{denne introduksjonen} om teorien MOND (MOdified Newtonian Dynamics) hvor du også får se en modifisert versjon av Newtons gravitasjonslov som gir flate rotasjonskurver for galakser.}
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{hvamm7}{\pagebutton{\bf SIDE 46/46/46}}
+{\Huge \htmlcom{large}{Der står forskningen! \textcolor{red}{Mørk materie? (de fleste forskere heller nok til denne teorien)}\textcolor{blue}{eller modifisert gravitasjon?}Eller noe annet?}}
+Fremtidens forskere kan kanskje gi oss et svar. Kommer en av dem til å bli deg??\\
+Hvis du synes dette er spennende og vil vite litt mer utenfor pensum, så finnes det en meget god 15-minutters TED-talk \href{https://www.youtube.com/watch?v=LQMLFryA_7k}{på youtube her.}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160341}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+Gratulerer, del 1F er overstått. Du bør nå:
+\begin{itemize}
+\item ha en god oversikt over elementærpartiklene i standardmodellen
+\item ha nok argumenter til å kunne overbevise naboen din om at det finnes mørk materie
+\item kunne forklare hva som er rart med galaktiske rotasjonskurver
+\item vite hvordan du kan kartlegge mørk materie i en galakse
+\item ha en anelse om hva mørk materie kan være og hvilke kategorier vi deler den opp i
+\item ... og at det spekuleres i at gravitasjonsloven kan være feil...
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}\\
+{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1f.pdf}{kortsvarsoppgavene} til del 1F for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+}
+
+
+
+\end{frame}
 \end{document}

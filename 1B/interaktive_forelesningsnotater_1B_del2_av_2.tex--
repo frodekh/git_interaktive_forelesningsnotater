@@ -888,9 +888,6 @@ Før du går over til siste tema, ta en liten pause, jogg en tur rundt Blindern,
 Så var vi kommet til siste tema her. Vi hintet allerede om det tidligere:\\
 \textcolor{blue}{Hva avgjør om et objekt følger en ellipsebane, parabelbane eller hyperbelbane? Og hva avgjør parameterene $a$ og $e$ til denne banen?}\\
 Vi har allerede innsett at ellipsebaner betyr at objektet er gravitasjonelt bundet siden det holder seg i bane rundt det andre objektet, mens for parabel- og hyperbelbaner så er det ikke lenger gravitasjonelt bundet, objektet bare 'sneier forbi'. Det må vel bety at totalenergien er viktig her: er den potensielle gravitasjonsenergien større eller mindre enn den kinetiske energien? La oss sette opp energien til systemet vårt. Vi tar igjen perspektivet fra $m_1$ og ser på banen som $m_2$ lager rundt $m_1$:
-\[
-E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}
-\]
 der $\vec{v}=\dot{\vec{r}}$, altså den relative hastigheten til $m_2$ i forhold til $m_1$ siden $\vec{v}$ er den deriverte av posisjonsvektoren $\vec{r}$ som peker fra $m_1$ til $m_2$. Er du enig i at dette er uttrykket for energien til systemet?
 \hyperlink{red_fenergi}{\choicebutton{YES, absolutt, sånn må det være!}}\ \ \ \ \ \hyperlink{riktigenergi}{\choicebutton{Njaaa, jeg er litt usikker}}
 \end{frame}
@@ -953,7 +950,8 @@ E=\frac{1}{2}m_2\vec{v}^2-G\frac{m_1m_2}{r}
 \label{energi2}
 \lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
-Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\ \ \ \hyperlink{energi2_b}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2_b}{\pagebutton{Tja}}\\
+Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\\
+hyperlink{energi2_b}{\pagebutton{Ja}}\ \ \ \ \hyperlink{energi2_b}{\pagebutton{Tja}}\\
 \textcolor{white}{
 I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
@@ -967,7 +965,8 @@ Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eks
 \label{energi2_b}
 \lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
-Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebuttonolink{Ja}}\ \ \ \ {\pagebuttonolink{Tja}}\\
+Har du virkelig tenkt deg godt om (2 min) og innsett hva som er feilen med uttrykket vårt?\\
+{\pagebuttonolink{Ja}}\ \ \ \ {\pagebuttonolink{Tja}}\\
 I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
 \hyperlink{energi2_c}{\pagebutton{Trykk her når du har funnet svaret!}}\\
@@ -981,7 +980,8 @@ Hvis vi bruker Newtons 2.lov på mangelegemesystemer og antar at vi ikke har eks
 \label{energi2_c}
 \lastpagebutton{energi1}{\bf SIDE 32/41/45}\\
 \addtocounter{pageno}{-1}
-Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\ \ \ {\pagebuttonolink{Ja}}\ \ \ \ {\pagebuttonolink{Tja}}\\
+Har du virkelig tenkt deg godt om og innsett hva som er feilen med uttrykket vårt?\\
+{\pagebuttonolink{Ja}}\ \ \ \ {\pagebuttonolink{Tja}}\\
 I uttrykket på forrige side, brukte vi referansesystemet til legeme $m_1$.\\
 Vi kunne dermed (ganske riktig) anta at $m_1$ står i ro og kun se på hastigheten til $m_2$ i forhold til $m_1$.{\bf MEN} legeme $m_1$ er ikke et inertialsystem! Systemet er akselerert (pga. gravitasjonspåvirkning fra $m_2$). Vi vet jo at $m_1$ går i ellipsebane omkring massesenteret og dermed blir akselerert. Uttrykket vårt for energi er dermed ikke en bevart størrelse! Dette gjelder kun i intertialsystemer. Vi må derfor finne oss et intertialsystem å regne fra. {\bf Hvilket refereansesystem bør vi bruke når vi beregner energien? (svaret står noen sider tilbake)}\\
 {\pagebuttonolink{Trykk her når du har funnet svaret!}}\\

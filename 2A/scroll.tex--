@@ -3,7 +3,7 @@
 %convert -coalesce launch.gif launch_%d.png
 \documentclass{beamer}
 
-\input{usercommands_html}
+\input{../usercommands_pdf}
 
 \usetheme{Boadilla}
 %\usepackage{multimedia}
@@ -291,7 +291,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{scroll}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom dokumentet for å finne side}}\\
 Hvisx du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Klassisk relativitet}}
@@ -767,6 +767,31 @@ Du skulle nå ha lært at:
 \textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
 \end{frame}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \begin{frame}
   \label{scroll}
 \center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2A\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
@@ -1024,7 +1049,7 @@ I det følgende skal vi se på og regne på et tankeeksperiment. La oss først i
   \footnotesize
 \centerline{\includegraphics[scale=0.3]{media/tog1.png}}
 Et tog ruller bortover mot høyre med fart $v$. Midt inne i toget har vi passasjer P med to store øyne. På bakken står professor O. Vi har en stor x-akse på bakken der professor O står i origo. Lengden av toget er $L$. På dette øyeblikksbildet er midten av toget, og dermed også passasjer P, i origo på x-aksen. Akkurat i dette øyeblikket slår to lyn ned samtidig, et foran i toget (event A) og et bak (event B). Lysstrålene fra de to lynnedslagene begynner å bre seg utover mot passasjer P (markert med lysbølger og blå piler)
-}{SIDE 25/61/61}
+}\hyperlink{tog1}{SIDE 25/61/61}
 
 
 {
