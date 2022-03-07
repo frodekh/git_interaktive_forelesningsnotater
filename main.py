@@ -32,6 +32,12 @@ FONT_SIZES = {
     "huge": 40,
 }
 
+IMG_SIZES = {
+    "small" : 200,
+    "large" : 500,
+    "huge": 800,
+}
+
 
 def find_buttons(string):
     return re.findall(buttons, string)
@@ -492,6 +498,9 @@ def main():
             size_subs = [(fr'@{size}(.*?)@', f'<span style="font-size:{int(pt*1.3333)}px;">\\1</span>') for size, pt in FONT_SIZES.items()]
             html_substitutions += size_subs
             html_substitutions += [(r'@pagebutton(.*?)@', f'<span class="pagebtn-inactive">\\1</span>')]
+
+            image_subs = [(fr'@{size}\s*(<img.*?)\/>', f'\\1 style="max-width:{width}px;height:100%;"') for size, width in IMG_SIZES.items()]
+            html_substitutions += image_subs
 
             for subpair in html_substitutions:
                 frame = re.sub(subpair[0], subpair[1], frame)
