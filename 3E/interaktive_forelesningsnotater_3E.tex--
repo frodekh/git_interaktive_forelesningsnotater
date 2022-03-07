@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/168692}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -313,7 +313,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Stjerner med lav masse}}
@@ -323,7 +323,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema4}{\headlinebutton{Sluttbetrakninger}}
 \end{itemize}
 Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
-\hyperlink{feil_intro}{\choicebutton{Neste side}}
+\hyperlink{feil_intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 %%%%% intro
@@ -333,12 +333,12 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 \label{feil_intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 \includegraphics[scale=0.2]{media/supernova.jpg}
 \column{0.5\textwidth}
 {\small
 \textcolor{green}{\bf Velkommen til del 3E! Vi har allerede sett hva som skjer med aldrende stjerner. Nå skal vi se hva som skjer i dødsøyeblikket og etterpå. Hvordan ender en stjerne sitt liv? Og hvorfor slik? Hva slags rester får vi igjen etterpå? Og spesielt, hva kommer til å skje med solen? I den fysiske forelesningen bruker jeg normalt omkring en dobbelttime på dette.}}\\
-\textcolor{green}{(Illustrasjon: Røntgenbilde av supernovarest G292.0+1.8  i Melkeveien (NASA/Chandra)}
+\textcolor{green}{\htmlcom{footnotesize}{(Illustrasjon: Røntgenbilde av supernovarest G292.0+1.8  i Melkeveien (NASA/Chandra)}}
 \hyperlink{intro2}{\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
@@ -411,7 +411,7 @@ I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsm
 }
 {
 \textcolor{yellow}{\bf\small Etter flere etterfølgende helium-skallflash blir altså de yttre delene av stjernen kastet av, bit for bit, helt til vi sitter igjen kun med den elektrondegenererte CO-kjernen. Dette kaller vi en hvit dvergstjerne. Solen kommer til å bli en slik hvit dvergstjerne. Rundt denne hvite dvergen har vi en stor kuleformet gassky som består av all gassen som ble kastet av stjerna. Dette kaller vi en planetarisk tåke. Men hvor på HR-diagrammet finner du nå denne hvite dvergen?}\\
-\textcolor{green}{(\tiny Illustrasjon: Helixtåken som er omkring 215pc unna er en av våre nærmeste planetariske tåker. Ringen spenner ut omkring 1pc og har en vinkelutstrekning på himmelen på rundt halvparten av fullmånen. NASA/ESA)}
+\textcolor{green}{(\tiny \htmlcom{footnotesize}{Illustrasjon: Helixtåken som er omkring 215pc unna er en av våre nærmeste planetariske tåker. Ringen spenner ut omkring 1pc og har en vinkelutstrekning på himmelen på rundt halvparten av fullmånen. NASA/ESA)}}
 }{SIDE 8/12/54}
 
 \fullframetxt{low8}{feil_low7}{low9}{0}{Jeg har tegnet HR-diagrammet!}{\Large
@@ -429,7 +429,7 @@ Den har ikke lenger en energikilde. Dermed vil den vel miste energi kontinuerlig
 }{SIDE 11/12/54}
 
 \fullframe{low11}{low10}{blue_nytema2}{0}{\Huge
-Vi skal snart lage oss en forenklet matematisk modell av en hvit dverg, men før det, la oss se hva som skjer med de massive stjernene...
+\htmlcom{large}{Vi skal snart lage oss en forenklet matematisk modell av en hvit dverg, men før det, la oss se hva som skjer med de massive stjernene...}
 }{SIDE 12/12/54}
 
 
@@ -446,7 +446,8 @@ Vi skal snart lage oss en forenklet matematisk modell av en hvit dverg, men før
 }
 
 
-\fullframetxt{high1}{low11}{high2}{0}{Tygd og fordøyd!}{\label{hoymasse}\Large
+\fullframetxt{high1}{low11}{high2}{0}{Tygd og fordøyd!}{
+\label{hoymasse}\Large
 Tilbake igjen til slutten av forelesningen i del 3D der vi fulgte en stjernes livsløp helt til asymptotisk kjempe. Vi skal nå se på stjerner med høyere masse ($M>8M_\odot$) Hva tror du nå skjer som er forskjellige fra det som skjer i stjerner med lav masse? Og hvorfor? Tygg litt på den før du går videre!
 }{SIDE 13/25/54}
 
@@ -487,13 +488,13 @@ Men for virkelig massive stjerner $M>25M_\odot$ slik at den gjenværende kjernen
 
 \colfullframe{feil_high9a}{high9}{high10}{0}{black}{\Large
 \textcolor{yellow}{\Huge
-Gratulerer! Du er en hot kandidat til Nobelsprisen i fysikk til neste år! Pass på å få en vitenskaplig artikkel om dette ut fort før noen knabber ideen din!
+\htmlcom{large}{Gratulerer! Du er en hot kandidat til Nobelsprisen i fysikk til neste år! Pass på å få en vitenskaplig artikkel om dette ut fort før noen knabber ideen din!}
 }
 }{SIDE 22/25/54}
 
 \colfullframe{riktig_high9b}{high9}{high10}{-1}{yellow}{\Large
 {\Huge
-Det er ikke så rart, for det er det ingen andre som har heller. Her står forskningsfronten!
+\htmlcom{large}{Det er ikke så rart, for det er det ingen andre som har heller. Her står forskningsfronten!}
 }
 }{SIDE 23/25/54}
 
@@ -516,7 +517,7 @@ Vi har altså 3 mulige utfall her:
 \label{pause}
 \hyperlink{fusj9r}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{Jepp, {\bf nå} er det tid for kaffe}}
+\centerline{\htmlcom{large}{Jepp, {\bf nå} er det tid for kaffe}}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 {\large Og du trenger den for nå skal vi gjøre litt regning med kvantegasser. Hvordan var løpeturen? En til frem og tilbake før kaffen! Så er du frisk og klar for regningen...}\\
 \vspace{0.5cm}
@@ -537,7 +538,9 @@ Vi har altså 3 mulige utfall her:
 \end{frame}
 }
 
-\colfullframe{red_komp0}{high11}{komp1}{0}{red}{\label{regning}\textcolor{yellow}{\Large
+\colfullframe{red_komp0}{high11}{komp1}{0}{red}{
+\label{regning}
+\textcolor{yellow}{\Large
 Vi skal på de følgende sidene gjøre noe av det samme som vi gjorde {\bf for hovedseriestjerner da vi fant en sammenheng mellom luminositet, levetid og masse}, men nå {\bf for degenererte kompakte objekter} som hvite dvergstjerner og nøytronstjerner. Ved å ta utgangspunkt i en kraftig forenkling av uttrykket for hydrostatisk likevekt og bruke at trykket nå tilsvarer degenerasjonstrykket, så {\bf kan vi finne en relasjon mellom radiusen til dette kompakte objektet og massen. På den måten kan vi også finne tettheten} til disse eksotiske og svært tettpakkede objektene.}
 }{SIDE 26/50/54}
 
@@ -581,7 +584,7 @@ Ja i en vanlig stjerne så var dette det trykket fra en ideel gass $P=nkT$. I ek
 }{SIDE 31/50/54}
 
 \fullframe{komp6}{red_komp5}{komp7}{0}{\Huge
-Så trykket i en degenerert gass avhenger altså ikke av temperaturen? Det avhenger kun av tettheten?
+\htmlcom{large}{Så trykket i en degenerert gass avhenger altså ikke av temperaturen? Det avhenger kun av tettheten?}
 }{SIDE 32/50/54}
 
 \fullframe{komp7}{komp6}{komp8}{0}{\large
@@ -627,7 +630,7 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframenotxt{komp10_b}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
 Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?\hyperlink{komp10_c}{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}\textcolor{white}{Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\small Kan være med på den ja...}
 Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
@@ -637,8 +640,8 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframenotxt{komp10_c}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
-Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebuttonolink{\small Jaaaaa...høres rimlig ut det og}}
 Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?\hyperlink{komp10_d}{\pagebutton{\small Kan være med på den ja...}}\textcolor{white}{
 Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
@@ -648,9 +651,9 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframenotxt{komp10_d}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
-Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}
-Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebutton{\small Kan være med på den ja...}}
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebuttonolink{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebuttonolink{\small Kan være med på den ja...}}
 Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?\hyperlink{komp10_e}{\pagebutton{\small Jaaaaa...}}\textcolor{white}{ Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
 n_p=\frac{Z}{A}\frac{\rho}{m_H}
@@ -659,10 +662,10 @@ som altså er lik $n_e$ (se forrige side!).}
 }{SIDE 37/50/54}
 
 \fullframe{komp10_e}{komp9}{komp11}{0}{\footnotesize
-Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}
-Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}
-Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebutton{\small Kan være med på den ja...}}
-Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\pagebutton{\small Jaaaaa...}} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebuttonolink{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebuttonolink{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebuttonolink{\small Kan være med på den ja...}}
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\pagebuttonolink{\small Jaaaaa...}} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
 \[
 n_p=\frac{Z}{A}\frac{\rho}{m_H}
 \]
@@ -694,7 +697,7 @@ så får vi...
 }{SIDE 38/50/54}
 
 \fullframetxt{komp12}{komp11}{komp13}{0}{da får jeg ...}{\huge
-...et uttrykk som består av $R$, $M$, $Z$, $A$ og ellers naturkonstanter??? Skal vi prøve å bruke dette til å finne radien til en hvit dvergstjerne? Prøv å få radien alene på den ene siden. Hva får du?
+\htmlcom{large}{...et uttrykk som består av $R$, $M$, $Z$, $A$ og ellers naturkonstanter??? Skal vi prøve å bruke dette til å finne radien til en hvit dvergstjerne? Prøv å få radien alene på den ene siden. Hva får du?}
 }{SIDE 39/50/54}
 
 \fullframe{komp13}{komp12}{komp14}{0}{\large
@@ -706,7 +709,7 @@ Merk at det står omtrent lik her, vi har gjort mange grove antakelser. Dette er
 }{SIDE 40/50/54}
 
 \fullframe{komp14}{komp13}{komp15}{0}{\huge
-Fikk du at en hvit dvergstjerne har en radius med størrelseorden omtrent som jordas? Altså en hvit dverg er en stjerne på størrelse med jorda, men med solas masse! Et uhyre kompakt objekt med andre ord. Hvor mye veier da en milliliter av materiale fra en hvit dverg? Du får ikke svaret her, du må regne det ut selv.
+\htmlcom{large}{Fikk du at en hvit dvergstjerne har en radius med størrelseorden omtrent som jordas? Altså en hvit dverg er en stjerne på størrelse med jorda, men med solas masse! Et uhyre kompakt objekt med andre ord. Hvor mye veier da en milliliter av materiale fra en hvit dverg? Du får ikke svaret her, du må regne det ut selv.}
 }{SIDE 41/50/54}
 
 \fullframe{komp15}{komp14}{komp16}{0}{
@@ -730,21 +733,21 @@ og vi antar uniform massetetthet og at $Z/A=1/2$. \textcolor{red}{\bf Du bør n�
 }{SIDE 43/50/54}
 
 \colfullframe{red_komp17}{komp16}{red_komp18}{0}{red}{\Huge
-\textcolor{yellow}{Ser du det?? Skjedde det noe rart i utledningen? Fant du en radius $R$?
-Ikke gå videre før du oppdager det rare!}
+\textcolor{yellow}{\htmlcom{large}{Ser du det?? Skjedde det noe rart i utledningen? Fant du en radius $R$?
+Ikke gå videre før du oppdager det rare!}}
 }{SIDE 44/50/54}
 
 
 \colfullframe{red_komp18}{red_komp17}{red_komp19}{0}{red}{\Huge
-\textcolor{yellow}{OK da, kan du regne ut $M$ isteden?}
+\textcolor{yellow}{\htmlcom{large}{OK da, kan du regne ut $M$ isteden?}}
 }{SIDE 45/50/54}
 
 \colfullframe{red_komp19}{red_komp18}{komp20}{0}{red}{\Huge
-\textcolor{yellow}{Hva fikk du for $M$? Gi svaret i solmasser!}
+\textcolor{yellow}{\htmlcom{large}{Hva fikk du for $M$? Gi svaret i solmasser!}}
 }{SIDE 46/50/54}
 
 \fullframe{komp20}{red_komp19}{komp21}{0}{\Huge
-Klarte du å utlede {\bf Chandrasekharmassen} på omkring 1.4 solmasser?
+\htmlcom{large}{Klarte du å utlede {\bf Chandrasekharmassen} på omkring 1.4 solmasser?}
 }{SIDE 47/50/54}
 
 \fullframe{komp21}{komp20}{komp22}{0}{
@@ -779,14 +782,16 @@ De magnetiske polene til en nøytronstjerne er oftest ikke plassert på rotasjon
 }
 
 
-\fullframenotxt{nd1}{komp23}{nd2}{0}{\label{avslutning}\small
+\fullframenotxt{nd1}{komp23}{nd2}{0}{
+\label{avslutning}\small
 Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}\hyperlink{nd1_b}{\pagebutton{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
 \textcolor{white}{
 Vi har sett hvordan man i supernovaeksplosjoner har en så energetisk gass at kjernereaksjoner som {\bf bruker energi} kan foregå: lettere grunnstoffer blir fisjonert til enda lettere grunnstoffer. En slik prosess er normalt ikke mulig da den trenger energi, men i en supernovaeksplosjon har vi enorme energimengder tilgjengelig. Også det motsatte vil da skje: jern kan fusjonere til tyngde grunnstoffer. {\bf Grunnstoffene tyngre enn jern i universet kommer fra supernovaeksplosjoner, men ikke bare: de siste årenes utvikling i gravitasjonsbølgedeteksjon har også avslørt at kollisjoner mellom nøytronstjerner, igjen svært energirike hendelser, også er ansvarlig for en stor andel av de tyngre grunnstoffene.}}
 }{SIDE 51/54/54}
 
-\fullframe{nd1_b}{komp23}{nd2}{0}{\label{avslutning}\small
-Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}{\pagebutton{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
+\fullframe{nd1_b}{komp23}{nd2}{0}{
+\label{avslutning}\small
+Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}{\pagebuttonolink{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
 
 Vi har sett hvordan man i supernovaeksplosjoner har en så energetisk gass at kjernereaksjoner som {\bf bruker energi} kan foregå: lettere grunnstoffer blir fusjonert til enda lettere grunnstoffer. En slik prosess er normalt ikke mulig da den trenger energi, men i en supernovaeksplosjon har vi enorme energimengder tilgjengelig. Også det motsatte vil da skje: jern kan fusjonere til tyngde grunnstoffer. {\bf Grunnstoffene tyngre enn jern i universet kommer fra supernovaeksplosjoner, men ikke bare: de siste årenes utvikling i gravitasjonsbølgedeteksjon har også avslørt at kollisjoner mellom nøytronstjerner, igjen svært energirike hendelser, også er ansvarlig for en stor andel av de tyngre grunnstoffene.}
 }{SIDE 51/54/54}
@@ -855,4 +860,580 @@ La oss til slutt snakke litt mer om {\bf supernovaeksplosjoner.} Vi snakket i  \
 
 
 
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3E\\Interaktive forelesningsnotater}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part3e.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/168692}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Stjerner med lav masse}}
+\item {\headlinebutton{Stjerner med høy masse}}
+\item {\headlinebutton{Kompakte objekter}}
+\item {\headlinebutton{Chandrasekharmassen og nøytronstjerner}}
+\item {\headlinebutton{Sluttbetrakninger}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+%%%%% intro
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.2]{media/supernova.jpg}
+\column{0.5\textwidth}
+{\small
+\textcolor{green}{\bf Velkommen til del 3E! Vi har allerede sett hva som skjer med aldrende stjerner. Nå skal vi se hva som skjer i dødsøyeblikket og etterpå. Hvordan ender en stjerne sitt liv? Og hvorfor slik? Hva slags rester får vi igjen etterpå? Og spesielt, hva kommer til å skje med solen? I den fysiske forelesningen bruker jeg normalt omkring en dobbelttime på dette.}}\\
+\textcolor{green}{\htmlcom{footnotesize}{(Illustrasjon: Røntgenbilde av supernovarest G292.0+1.8  i Melkeveien (NASA/Chandra)}}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+}
+
+
+{
+
+\lastpagebutton{feil_intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/168693}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/168693}{\choicebutton{Nei}}\ \ \ \ {\choicebutton{Ja}}\\
+}
+
+{
+Store deler av del 3E bygger på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{del 1G} om kvantegasser. Du bør ta en rask repitisjon, enten i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{vanlige forelesningsnotatene} eller i de interaktive. Du bør:
+\begin{itemize}
+\item vite hva en degenerert gass er og kunne forklare dette med analogien om bokser i $\vec{p}$-rommet.
+\item vite hva som gjør en gass degenerert og forstå hvorfor den blir degenerert i disse tilfellene.
+\item vite hva degenerasjonstrykket er, hva den fysiske prosessen som setter opp dette trykket er.
+\end{itemize}
+Bare når du har full kontroll på dette, har det noen mening å gå videre i denne forelesningen.
+\hyperlink{intro3}{\pagebutton{SIDE 1/1/54}}}
+
+
+
+\renewcommand{\headline}{Stjerner med lav masse}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{hoymasse}
+{\pagebutton{Vi fortsetter der vi slapp...}}
+}
+}
+
+
+{
+På slutten av forelesningen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D} fulgte vi en stjernes livsløp helt til asymptotisk kjempe. For en stjerne med lav masse ($M<8M_\odot$), hvordan ser strukturen til stjerna ut nå? Gå tilbake og repter! Tegn stjerna med skall, forklar hvilket grunnstoff som dominerer hvert skall og hvor det foregår fusjonsreaksjoner og hvilken type.
+\hyperlink{low1}{\pagebutton{SIDE 2/12/54}}}
+
+
+{
+Da er du klar til å \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_1.mp4}{se denne videoen} for å få noen hint til hva som skjer videre.
+\hyperlink{low2}{\pagebutton{SIDE 3/12/54}}}
+
+
+{
+Så vi har en degenerert karbon-oksygen-kjerne i midten av stjerna. Rundt har vi et skall med helium som fusjonerer til karbon og oksygen. Deretter et skall med degenerert helium som er for kaldt til å fusjonere. Rundt det et skall med hydrogen som fusjonerer til helium. Og rundt det et skall med hydrogen som ikke fusjonerer. Hva tror du skjer videre nå?? Diskuter og tenk hva du tror kommer til å bli neste forandring. Du har sett dette allerede et sted før i en stjernes utvikling...
+\hyperlink{low3}{\pagebutton{SIDE 4/12/54}}}
+
+{
+Se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_2.mp4}{denne videoen} for å se hva som skjer videre!
+\hyperlink{low4}{\pagebutton{SIDE 5/12/54}}}
+
+{
+Hva tror du skjer videre etter denne eksplosjonen? Prøv og tegn og bruk fysikk til å se for deg hva du tror kan skje!
+\hyperlink{low5}{\pagebutton{SIDE 6/12/54}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_3.mp4}{denne videoen} får du svaret.
+\hyperlink{low6}{\pagebutton{SIDE 7/12/54}}}
+
+{
+\includegraphics[scale=0.1]{media/Helix_neb_HST.png}
+}
+{
+\textcolor{yellow}{\bf\small Etter flere etterfølgende helium-skallflash blir altså de yttre delene av stjernen kastet av, bit for bit, helt til vi sitter igjen kun med den elektrondegenererte CO-kjernen. Dette kaller vi en hvit dvergstjerne. Solen kommer til å bli en slik hvit dvergstjerne. Rundt denne hvite dvergen har vi en stor kuleformet gassky som består av all gassen som ble kastet av stjerna. Dette kaller vi en planetarisk tåke. Men hvor på HR-diagrammet finner du nå denne hvite dvergen?}\\
+\textcolor{green}{(\tiny \htmlcom{footnotesize}{Illustrasjon: Helixtåken som er omkring 215pc unna er en av våre nærmeste planetariske tåker. Ringen spenner ut omkring 1pc og har en vinkelutstrekning på himmelen på rundt halvparten av fullmånen. NASA/ESA)}}
+\hyperlink{feil_low7}{\pagebutton{SIDE 8/12/54}}}
+
+{
+Ettersom de ytre lagene blir kastet av, så ser blir jo overflaten av stjerna et sted lenger og lenger inn nærmere kjernen i stjerna. Hva betyr det for temperaturen? Og hva skjer etterhvert med luminositeten. Ikke gå videre før du har tegnet stjernas vei fra den asymptotiske grenen til hvit dverg.
+\hyperlink{low8}{\pagebutton{SIDE 9/12/54}}}
+
+{
+\includegraphics[scale=0.3]{media/fig_22-1.png}
+Var det slik du tenkte? Vi kommer nærmere og nærmere kjernen, der er temperaturen høyere så vi går mot venstre i HR-diagrammet. Etterhvert krymper radiusen kraftig slik at luminositeten også minsker (husk $L=4\pi R^2\sigma T^4$). Enig? Men hva skjer så videre med den hvite dvergen? Hva tror du skjer med den de neste millioner av år?
+\hyperlink{low9}{\pagebutton{SIDE 10/12/54}}}
+
+{
+\includegraphics[scale=0.3]{media/fig_22-1.png}
+Den har ikke lenger en energikilde. Dermed vil den vel miste energi kontinuerlig? Og mister den energi, ja, så går vel temperaturen ned? Men dette vi vel ikke påvirke stjerna ellers: den hydrostatiske likevekten mellom degenerasjonstrykket og gravitasjon påvirkes ikke av temperaturen (husker du at trykket i en degenerert gass ikke påvirkes av temperaturen? Repeter i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{del 1G} hvis nødvendig). Den hvit dvergen blir altså langsomt kaldere og kaldere samtidig som luminositeten også faller. Den blir etterhvert usynlig på grunn av svak stråling og vi har fått en {\bf svart dverg}.
+\hyperlink{low10}{\pagebutton{SIDE 11/12/54}}}
+
+{
+\htmlcom{large}{Vi skal snart lage oss en forenklet matematisk modell av en hvit dverg, men før det, la oss se hva som skjer med de massive stjernene...}
+\hyperlink{low11}{\pagebutton{SIDE 12/12/54}}}
+
+
+\renewcommand{\headline}{Stjerner med høy masse}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{regning}
+\textcolor{yellow}{Vi nærmer oss halveis her. Du bør nå ta deg 5 minutter pause. Løp fra fysikkbygningen og opp til HF (helt frem til en inngangsdør) og tilbake igjen uten pause. Oi, det ble kanskje litt mer enn 5 min... Spar kaffen litt enda er du snill...}
+{\pagebutton{Sett igang!}}
+}
+}
+
+
+{
+
+Tilbake igjen til slutten av forelesningen i del 3D der vi fulgte en stjernes livsløp helt til asymptotisk kjempe. Vi skal nå se på stjerner med høyere masse ($M>8M_\odot$) Hva tror du nå skjer som er forskjellige fra det som skjer i stjerner med lav masse? Og hvorfor? Tygg litt på den før du går videre!
+\hyperlink{high1}{\pagebutton{SIDE 13/25/54}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_4.mp4}{denne videoen} får du svaret.
+\hyperlink{high2}{\pagebutton{SIDE 14/25/54}}}
+
+{
+\includegraphics[scale=0.25]{media/fig_22-2.png}
+Vi har altså en slik stjerne. Jern kan ikke fusjonere videre. Vi har ingen fusjonsreaksjoner som kan gi nok trykk til a stå imot tyngdekrafta fra denne massive stjerna. Hva tror du skjer da? Bruk fysisk tenking, hva er de mulige utfallene tror du? Hva må skje videre?
+\hyperlink{high3}{\pagebutton{SIDE 15/25/54}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_5.mp4}{denne videoen} får du se hva som skjer videre.
+\hyperlink{high4}{\pagebutton{SIDE 16/25/54}}}
+
+
+{
+Elektrondegenerasjonstrykket er altså ikke stort nok til å stå imot gravitasjon. \textcolor{red}{Men hva iallverden kan da skje videre? Kvantefysikken forbyr absolutt at vi har fler enn 2 elektroner i hver av disse boksene i $\vec{p}$-rommet (se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{del 1G}). Men de blir nå presset tettere sammen på grunn av gravitasjon??? Det går ikke??? Hvilke mulige eller umulige utfall har denne vanskelige situasjonen???} {\bf Tenk etter alle mulige og umulige løsninger? Hva kan naturen nå finne på?}
+\hyperlink{high5}{\pagebutton{SIDE 17/25/54}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_6.mp4}{denne videoen} får du se hva som skjer videre.
+\hyperlink{high6}{\pagebutton{SIDE 18/25/54}}}
+
+{
+Så det ser ut til at sjokkbølga fra rekylen fra dannelsen av nøytronkjernen blir stoppet av jernskallet. Og så blir det ingen supernovaeksplosjon som vi nå vet at det skal bli. Vi har glemt en viktig faktor her som gjør at vi ikke får noen eksplosjon. Kan du tenke deg hva det er? Her må du virkelig legge hjernen i bløt!
+\hyperlink{high7}{\pagebutton{SIDE 19/25/54}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_7.mp4}{denne videoen} får du se hva som gjør at vi likevel får en supernovaeksplosjon.
+\hyperlink{high8}{\pagebutton{SIDE 20/25/54}}}
+
+{
+Men for virkelig massive stjerner $M>25M_\odot$ slik at den gjenværende kjernen i stjerna er større enn 2-3$M_\odot$ (den såkalte Tolman–Oppenheimer–Volkoff-grensen tilsvarende Chandrasekhargrensen for hvite dverger) så blir gravitasjonen i kjernen stor nok til å overvinne nøytrondegenerasjonstrykket! Da begynner gravitasjon å presse kjernen videre sammen, selv om kvantefysikken ikke tillater at nøytronene blir presset tettere sammen. Det er virkelig ikke plass til mer enn 2 nøytroner i hver boks i $\vec{p}$-rommet! Har du noen ide om hva naturens løsning blir denne gangen? Hvordan kan vi overkomme dette problemet? Har du en ide?
+{\choicebutton{Ja, det tror jeg!}}{\choicebutton{Neeeei, dette var en virkelig hard nøtt!}}
+\hyperlink{high9}{\pagebutton{SIDE 21/25/54}}}
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{Gratulerer! Du er en hot kandidat til Nobelsprisen i fysikk til neste år! Pass på å få en vitenskaplig artikkel om dette ut fort før noen knabber ideen din!}
+}
+\hyperlink{feil_high9a}{\pagebutton{SIDE 22/25/54}}}
+
+{
+{\Huge
+\htmlcom{large}{Det er ikke så rart, for det er det ingen andre som har heller. Her står forskningsfronten!}
+}
+\hyperlink{riktig_high9b}{\pagebutton{SIDE 23/25/54}}}
+
+{
+  På en eller annen måte presses kjernen videre sammen. Nøytronene må på en eller annen måte bli borte. Men hvor mye presses kjernen sammen? Til et uendelig lite punkt? Eller til en bitteliten men endelig utstrekning? {\bf Ingen vet!}. Men sannsynligvis får vi dannet et sort hull, et punkt i rommet med så mye gravitasjon at ikke engang lys slipper ut. Dette skal vi snakke mer om senere i kurset.
+\hyperlink{high10}{\pagebutton{SIDE 24/25/54}}}
+
+{
+Vi har altså 3 mulige utfall her:
+\begin{itemize}
+\item For stjerner med masse $M<8M_\odot$ og dermed kjernemasse mindre enn Chandrasekhargrensen på $1.4M_\odot$, får vi en hvit dvergstjerne.
+\item For stjerner med masse $M>8M_\odot$ og $M<25M_\odot$ og dermed kjernemasse større enn Chandrasekhargrensen på $1.4M_\odot$ men mindre enn Tolman–Oppenheimer–Volkoff-grensen på 2-3$M_\odot$ får vi en nøytronstjerne.
+\item For stjerner med masse $M>25M_\odot$ og dermed kjernemasse større enn Tolman–Oppenheimer–Volkoff-grensen på 2-3$M_\odot$ får vi et sort hull.
+\end{itemize}
+\hyperlink{high11}{\pagebutton{SIDE 25/25/54}}}
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\Huge
+\centerline{\htmlcom{large}{Jepp, {\bf nå} er det tid for kaffe}}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+{\large Og du trenger den for nå skal vi gjøre litt regning med kvantegasser. Hvordan var løpeturen? En til frem og tilbake før kaffen! Så er du frisk og klar for regningen...}\\
+\vspace{0.5cm}
+{\Large Ikke lov å fortsette før du har tatt minst 15 min. pause! {\bf OG} en løpetur.}
+{\pagebutton{Hold deg fast, nå setter vi igang!}}
+}
+}
+
+\renewcommand{\headline}{Kompakte objekter}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{avslutning}
+\textcolor{yellow}{Vi skal nå lage noen forenklede modeller av de kompakte objektene, hvite dverger og nøytronstjerner. Vi skal se noen rare egengskaper med disse eksotiske objektene.}
+{\pagebutton{Spennende!}}
+}
+}
+
+{
+
+\textcolor{yellow}{\Large
+Vi skal på de følgende sidene gjøre noe av det samme som vi gjorde {\bf for hovedseriestjerner da vi fant en sammenheng mellom luminositet, levetid og masse}, men nå {\bf for degenererte kompakte objekter} som hvite dvergstjerner og nøytronstjerner. Ved å ta utgangspunkt i en kraftig forenkling av uttrykket for hydrostatisk likevekt og bruke at trykket nå tilsvarer degenerasjonstrykket, så {\bf kan vi finne en relasjon mellom radiusen til dette kompakte objektet og massen. På den måten kan vi også finne tettheten} til disse eksotiske og svært tettpakkede objektene.}
+\hyperlink{red_komp0}{\pagebutton{SIDE 26/50/54}}}
+
+{
+Det er nå du virkelig får brukt for delen om kvantegasser. Men først må vi reptere litt av de ville antakelsene vi gjorde i del 3D. Husker du da vi prøvde å finne en sammeneheng mellom luminositeten, levetiden og masse til en stjerne ved å gjøre noen helt groteske forenklinger? En av de verste var den vi gjorde med likningen for hydrostatisk likevekt. Kan du huske hvordan vi forenklet og trikset for å gå fra
+\[
+\frac{dP}{dr}=-\rho g
+\]
+til
+\[
+\frac{P_c}{R}=-\rho G\frac{M}{R^2}
+\]
+???? Her er $P_c$ trykket i kjernen til stjerna, $R$ er radien til stjerna og $M$ er massen.
+{\choicebutton{Ja, det gjør jeg (og jeg grøsser enda)}}{\choicebutton{Njaaaa, kanskje?}}
+\hyperlink{komp1}{\pagebutton{SIDE 27/50/54}}}
+
+
+{
+Var det ikke noe med at vi tar forskjellen $dP$ og $dr$ og gjør disse til veeeeeeldig store deltaer, $\Delta P$ og $\Delta R$, men disse er denne gangen ikke små intervaller, men store! Det er noe man normalt kan gjøre hvis egenskapene er lineære, dvs. hvis f.eks. trykket endrer seg lineært utover. Det er ikke en god antakelse, men viste seg å være god nok til å finne en fungerende relasjon. Så vi bruker den igjen:
+\[
+\frac{\Delta P}{\Delta R}=\frac{P_c-P(R)}{0-R}=-\rho G\frac{M}{R^2}
+\]
+der vi altså bruker forskjellen i trykk $P$ og avstand $R$ fra sentrum og opp til overflaten. Trykket $P(R)$ ved overflaten er veldig mye mindre enn trykket i kjernen så vi kan tilnærme det med 0 her. Det gir oss veldig omtrentlig at
+\[
+\frac{P_c}{R}=\rho G\frac{M}{R^2}
+\]
+Men hvilket uttrykk skal vi sette inn for trykket $P$ her da?
+\hyperlink{riktig_komp2}{\pagebutton{SIDE 28/50/54}}}
+
+
+{
+Ja i en vanlig stjerne så var dette det trykket fra en ideel gass $P=nkT$. I ekstra store og varme stjerner er også strålingstrykket $P=\frac{1}{3}aT^4$ viktig. Men en hvit dverstjerne og en nøytronstjerne består av degenerert gass. La oss bruk hvit dvergstjerne som eksempel. Hvordan ser trykket ut inne i en slik stjerne?
+\hyperlink{komp3}{\pagebutton{SIDE 29/50/54}}}
+
+{
+\textcolor{yellow}{Ja, utledet ikke vi uttrykket for trykk i en degenerert gass?? Du husker sikkert ikke nøyaktig hvordan det uttrykket så ut, men hva avhenger uttrykket av? Hvilke egenskaper til en degenerert gass bestemmer trykket?}
+\hyperlink{red_komp4}{\pagebutton{SIDE 30/50/54}}}
+
+{
+\textcolor{yellow}{Husker du det? Eller trenger du å \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{jukse litt??}}
+\hyperlink{red_komp5}{\pagebutton{SIDE 31/50/54}}}
+
+{
+\htmlcom{large}{Så trykket i en degenerert gass avhenger altså ikke av temperaturen? Det avhenger kun av tettheten?}
+\hyperlink{komp6}{\pagebutton{SIDE 32/50/54}}}
+
+{
+Var det ikke:
+\[
+P_e=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_e^{5/3}
+\]
+???? Her er $P_e$ trykket i en elektrondegenerert gass (der det er elektronene som er degenerert), $m_e$ er elektronmassen og $n_e$ er antalltettheten av elektroner (antall elektroner per volum). Men hvorfor er det degenerasjonstrykket til elektroner vi snakker om når det gjelder hvite dvergstjerner? Det er like mange protoner og nøytroner omkring som det er elektroner! Hvorfor snakker vi ikke om protondegenerasjonstrykket eller nøytrondegenerasjonstrykket? Svaret kan du se fra uttrykket her! {\bf Ikke gå videre før du ser det! Eller ihvertfall har gjort et ærlig forsøk!}.
+\hyperlink{komp7}{\pagebutton{SIDE 33/50/54}}}
+
+{
+Hvis du ikke ser det, se en gang til før du trykker videre til neste side!
+\[
+P_e=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_e^{5/3}
+\]
+\hyperlink{komp8}{\pagebutton{SIDE 34/50/54}}}
+
+
+{
+\[
+P_e=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_e^{5/3}
+\]
+Ser du at degenerasjonstrykket avhenger av massen til partikkelen som er degenerert? Jo mindre masse, jo større degenerasjonstrykk! Massen til elektronene er mye mindre enn massene til protonene og nøytronene. Dermed vil elektrondegenerasjonstrykket være fullstendig dominerende. I tillegg er de fleste protoner og nøytroner i en hvit dverg bundet opp i atomkjerner, og mange av disse er ikke lenger fermioner (for a være det må atomkjernen ha halvtallig spinn), og kan dermed ikke bli degenerert. Det er derfor {\bf elektrondegenerasjonstrykket} som holder en hvit dvergstjerne oppe!
+\hyperlink{komp8b}{\pagebutton{SIDE 35/50/54}}}
+
+{
+Før vi går videre, la oss prøve å skrive et uttrykk for $n_e$ (som vi har i uttrykket for $P$) uttrykt ved massen og radien til dvergen. Da vil vi kanskje relatere antalltetthet til massetetthet og så anta uniform massetetthet som vi har gjort så mange ganger? {\bf Ganske riktig ja!}. \textcolor{red}{Først en grublis: Kan du se hvilke antakelser vi må gjøre og hvordan vi kommer frem til at}
+\[
+n_e=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+der $Z$ er midlere antall protoner i en atomkjerne i gassen, $A$ er midlere antall nukleoner, $\rho$ er total massetetthet til gassen og $m_H$ er massen til et hydrogenatom (eller et proton om du vil, er nesten det samme). {\bf Hvilke (enkle) antakelser kan du ta for å vise dette? \textcolor{red}{Gjør et skikkelig forsøk før du går til neste side der svaret står!}}
+\hyperlink{komp9}{\pagebutton{SIDE 36/50/54}}}
+
+{
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){\pagebutton{\small Jaaaaa...høres rimlig ut}}\textcolor{white}{
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\small Jaaaaa...høres rimlig ut det og}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\small Kan være med på den ja...}
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+\[
+n_p=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+som altså er lik $n_e$ (se forrige side!).}
+\hyperlink{komp10}{\pagebutton{SIDE 37/50/54}}}
+
+{
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{\pagebutton{\small Jaaaaa...høres rimlig ut det og}}\textcolor{white}{Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\small Kan være med på den ja...}
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+\[
+n_p=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+som altså er lik $n_e$ (se forrige side!).}
+\hyperlink{komp10_b}{\pagebutton{SIDE 37/50/54}}}
+
+{
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{\pagebutton{\small Kan være med på den ja...}}\textcolor{white}{
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\small Jaaaaa...} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+\[
+n_p=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+som altså er lik $n_e$ (se forrige side!).}
+\hyperlink{komp10_c}{\pagebutton{SIDE 37/50/54}}}
+
+{
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{{\small Kan være med på den ja...}}
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{\pagebutton{\small Jaaaaa...}}\textcolor{white}{ Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+\[
+n_p=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+som altså er lik $n_e$ (se forrige side!).}
+\hyperlink{komp10_d}{\pagebutton{SIDE 37/50/54}}}
+
+{
+Er du enig i at totalt så er det like mange elektroner som protoner i gassen? (gassen er nøytral, det var den vel i utgangspunktet? Og stjerna har vel ikke mistet ladning i løpet av levetida?){{\small Jaaaaa...høres rimlig ut}}
+Har vi ikke da at $n_e=n_p$ der $n_p$ er antalltettheten av protoner?{{\small Jaaaaa...høres rimlig ut det og}}
+Hva blir antalltettheten av protoner... skal vi se... Det er $A$ nukleoner og $Z$ protoner i hver atomkjerne. Andelen nukleoner som er protoner blir vel da $Z/A$?? Altså har vi 60 nukleoner og en typisk atomkjerne har $Z=6$ og $A=12$, ja da er vel andelen protoner $6/12=1/2$. Altså halvparten av nukleonene er protoner. Altså 30 protoner hvis vi har 60 nukleoner. Ok? Hvis vi da kjenner totalt antall nukleoner totalt per volum i gassen så kan vi finne antalltettheten av protoner?{{\small Kan være med på den ja...}}
+Hvis gassen har massetetthet $\rho$, og vi sier at både protoner og nøytroner (altså alle nukleoner) har massen til et hydrogenatom $m_H$ (er jo ikke så gal tilnærmelse det!). Da blir vel totalt antall nukleoner per volum i gassen $\rho/m_H$. Er du med?{{\small Jaaaaa...}} Så hvis vi har $\rho/m_H$ nukleoner per volum av gassen og en andel $Z/A$ av disse er protoner, da har vi at
+\[
+n_p=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+som altså er lik $n_e$ (se forrige side!).
+\hyperlink{komp10_e}{\pagebutton{SIDE 37/50/54}}}
+
+
+
+
+
+
+
+
+
+{
+Vi får vel dermed at
+\[
+P_e=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_e^{5/3}=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}n_p^{5/3}=\left(\frac{3}{\pi}\right)^{2/3}\frac{h^2}{20m_e}\left(\frac{Z}{A}\frac{\rho}{m_H}\right)^{5/3}
+\]
+Og setter vi inn for uniform massetetthet
+\[
+\rho=\frac{M}{\frac{4}{3}\pi R^3}
+\]
+og setter inn i tilnærmelsen vår for hydrostatisk likevekt,
+\[
+\frac{P_c}{R}=\rho G\frac{M}{R^2}
+\]
+så får vi...
+\hyperlink{komp11}{\pagebutton{SIDE 38/50/54}}}
+
+{
+\htmlcom{large}{...et uttrykk som består av $R$, $M$, $Z$, $A$ og ellers naturkonstanter??? Skal vi prøve å bruke dette til å finne radien til en hvit dvergstjerne? Prøv å få radien alene på den ene siden. Hva får du?}
+\hyperlink{komp12}{\pagebutton{SIDE 39/50/54}}}
+
+{
+...at radien til en hvit dvegstjerne kan skrives som
+\[
+R_\mathrm{WD}\approx\left(\frac{3}{2\pi}\right)^{4/3}\frac{h^2}{20m_eG}\left(\frac{Z}{Am_H}\right)^{5/3}M^{-1/3}.
+\]
+Merk at det står omtrent lik her, vi har gjort mange grove antakelser. Dette er ofte greiere når vi kun skal finne proporsjonaliteter. Her har vi faktisk prøvd å finne tall på samme måten. Da gir svaret vårt kun størrelseordenen omtrent riktig. Det faktiske tallet kan fort være et par ganger mindre eller større. omtrent hvor stor blir en hvit dverg med en solmasse? De fleste atomkjerner har omtrent like manger protoner som nøytroner, så bruk den antakelsen...
+\hyperlink{komp13}{\pagebutton{SIDE 40/50/54}}}
+
+{
+\htmlcom{large}{Fikk du at en hvit dvergstjerne har en radius med størrelseorden omtrent som jordas? Altså en hvit dverg er en stjerne på størrelse med jorda, men med solas masse! Et uhyre kompakt objekt med andre ord. Hvor mye veier da en milliliter av materiale fra en hvit dverg? Du får ikke svaret her, du må regne det ut selv.}
+\hyperlink{komp14}{\pagebutton{SIDE 41/50/54}}}
+
+{
+Men hva hvis massen til den hvite dvergen blir veldig stor. Da vil etterhvert alle boksene i $\vec{p}$-rommet bli helt fylt. Alle partikler må finne seg i å legge seg i en boks langt vekk fra origo i $\vec{p}$-rommet siden dette er det eneste som er ledig. Langt vekk fra origo i $\vec{p}$-rommet betyr stor bevegelsesmengde og dermed stor hastighet. Til slutt vil hastigheten for partiklene nærme seg lyshastigheten. Hvis du slet med å forstå dette, se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3e/videoer/video3e_8.mp4}{denne videoen}. {\bf Det betyr at vi får en relativistisk degenerert gass!}
+\hyperlink{komp15}{\pagebutton{SIDE 42/50/54}}}
+
+{
+I relativistisk degenerert gass går trykket som $P\propto\rho^{4/3}$ isteden for $P\propto\rho^{5/3}$ (se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{del 1G}). Vi fant at det kan skrives som:
+\[
+P_e=\frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3}n_e^{4/3}.
+\]
+{\bf Hva skjer hvis vi nå setter inn trykket fra en relativistisk degenerert gass isteden i uttrykket for hydrostatisk likevekt:}
+\[
+\frac{P_c}{R}=\rho G\frac{M}{R^2}
+\]
+Husk at elektrontetthet kan skrives som:
+\[
+n_e=n_p=\frac{Z}{A}\frac{\rho}{m_H}
+\]
+og vi antar uniform massetetthet og at $Z/A=1/2$. \textcolor{red}{\bf Du bør nå virkelig gjøre denne regningen, repeter hva vi akkurat gjorde men med relativistisk degenerert trykk isteden for vanlig degenerert trykk!}. Prøv igjen å finne radien til en slik hvit dvergstjerne. \textcolor{red}{\bf Noe rart kommer til å skje når du gjør denne regningen. Ikke fortvil, det er meningen!}
+\hyperlink{komp16}{\pagebutton{SIDE 43/50/54}}}
+
+{
+\textcolor{yellow}{\htmlcom{large}{Ser du det?? Skjedde det noe rart i utledningen? Fant du en radius $R$?
+Ikke gå videre før du oppdager det rare!}}
+\hyperlink{red_komp17}{\pagebutton{SIDE 44/50/54}}}
+
+
+{
+\textcolor{yellow}{\htmlcom{large}{OK da, kan du regne ut $M$ isteden?}}
+\hyperlink{red_komp18}{\pagebutton{SIDE 45/50/54}}}
+
+{
+\textcolor{yellow}{\htmlcom{large}{Hva fikk du for $M$? Gi svaret i solmasser!}}
+\hyperlink{red_komp19}{\pagebutton{SIDE 46/50/54}}}
+
+{
+\htmlcom{large}{Klarte du å utlede {\bf Chandrasekharmassen} på omkring 1.4 solmasser?}
+\hyperlink{komp20}{\pagebutton{SIDE 47/50/54}}}
+
+{
+Så du at radien forsvant? Du fikk kun en masse ut? Dette er grensemassen for hva degenerasjonstrykket kan tåle. Når elektronene begynner å få hastigheter nær lyshastigheten og gravitasjonskreftene fortsetter å trykke, da kan ikke lenger degenerasjonsgtrykket stå imot, og vi får en nøytronstjerne. Og for nøytronstjerner kan vi gjøre nøyaktig samme regning som vi har gjort her, bare for {\bf nøytrondegenerasjonstrykket}. Dette er en oppgave som har blitt gitt på eksamen mange ganger. Du finner at en nøytronstjerner som da har en masse i området mellom $1.4M_\odot$ og $3M_\odot$, har en radius på bare noen få kilometer! Så hvor mye veier nå millilitern for et slikt superkompakt objekt? Anta 2 solmasser og 10km i radius.
+\hyperlink{komp21}{\pagebutton{SIDE 48/50/54}}}
+
+
+{
+I de sentrale delene av en nøytronstjerne er tettheten så høy at man må gjøre avanserte kvantemekaniske beregninger med den sterke kjernekraften. Dette er alt for tunge beregninger til at det lar seg gjøre med dagens superdatamaskiner. Man må gjøre kraftige antakelser som betyr at man ikke helt vet hva som skjer i sentrum av en slik nøytronstjerne. Det finnes bl.a. teorier for at det finnes kvark-gluon-plasma, en ``væske'' av kvarker og gluoner. Nøytronene er pakket like tett sammen som i en atomkjerne, dermed kan man betrakte en nøytronstjerne som en enormt stor atomkjerne. Nøytronstjerner er makroskopiske objekter som kan brukes til å studere mikroskopiske fenomener i partikkelfysikk på energier høyere enn vi kan oppnå i laboratorier på jorda.
+\hyperlink{komp22}{\pagebutton{SIDE 49/50/54}}}
+
+
+{
+Gjenlevningene av den opprinnlige stjernas magnetfelt ``henger enda fast'' i nøytronstjerna. Meget sterke og kompliserte elektriske og magnetiske felt følger med nøytronstjernas meget raske rotasjon og gir blant annet opphav til fenomenet ``pulsarer''. \href{https://www.nature.com/articles/d41586-020-00590-8}{Denne meget gode artikkelen} i Nature har en flott animasjon av dette og forklarer meget godt hvor forskningsfronten står for nøytronstjerner og hva slags observasjoner man gjør for å komme videre.\\
+\vspace*{0.5cm}
+De magnetiske polene til en nøytronstjerne er oftest ikke plassert på rotasjonspolene (akkurat som på jorda). \textcolor{red}{Slik at når en nøytronstjerne spinner rundt, ofte hundre eller tusen ganger i sekundet, så tegner den magnetiske aksen ut en kjegle.} De magnetiske feltene akselererer elektrisk ladde partikler og gir opphva til {\bf sykrotronstråling} som vi har snakket om tidligere. Disse strålene følger rotasjonsjastigheten til nøytronstjernen. \textcolor{red}{Hvis vi befinner oss i strålingsretningen så vil vi se pulserende sykrotronstråling med periode lik nøytronstjernens omløpshastighet.} Slike objekter har man observert flere av og de kalles {\bf pulsarer}. \href{https://www.youtube.com/watch?v=mXzwtp-KaoI}{Denne animasjonen} illustrerer fenomenet godt.
+\hyperlink{komp23}{\pagebutton{SIDE 50/50/54}}}
+
+
+
+
+\renewcommand{\headline}{Til slutt...}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\textcolor{yellow}{Vi skal avslutte delen om stjerners utvikling med noen små betrakninger...}
+{\pagebutton{Ok!}}
+}
+}
+
+
+{
+
+Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}{\pagebutton{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
+\textcolor{white}{
+Vi har sett hvordan man i supernovaeksplosjoner har en så energetisk gass at kjernereaksjoner som {\bf bruker energi} kan foregå: lettere grunnstoffer blir fisjonert til enda lettere grunnstoffer. En slik prosess er normalt ikke mulig da den trenger energi, men i en supernovaeksplosjon har vi enorme energimengder tilgjengelig. Også det motsatte vil da skje: jern kan fusjonere til tyngde grunnstoffer. {\bf Grunnstoffene tyngre enn jern i universet kommer fra supernovaeksplosjoner, men ikke bare: de siste årenes utvikling i gravitasjonsbølgedeteksjon har også avslørt at kollisjoner mellom nøytronstjerner, igjen svært energirike hendelser, også er ansvarlig for en stor andel av de tyngre grunnstoffene.}}
+\hyperlink{nd1}{\pagebutton{SIDE 51/54/54}}}
+
+{
+
+Under nukleosyntesen i Big Bang ble kun hydrogen, helium og bittelitt litium dannet. Ingen andre grunnstoffer. {\bf Hvor kommer de tyngre grunnstoffene i Universet fra?} Vi har sett at de dannes i stjerner. Stjerner som dør og kaster av seg de ytre lagene eller til og med i en supernovaeksplosjon gir den interstellare gassen tilførsel av tyngre grunnstoffer. Denne gassen er en del av gass-skyene som så danner nye stjerner med tyngre grunnstoffer. {\bf Men jern kan ikke fusjoneres videre til tyngre grunnstoffer! Hvordan kan det da ha seg at vi har tyngre grunnstoffer som gull eller uran?}{{\small Den som visste det... ELLER, når jeg tenker meg om så har jeg kanskje en ide?}}
+
+Vi har sett hvordan man i supernovaeksplosjoner har en så energetisk gass at kjernereaksjoner som {\bf bruker energi} kan foregå: lettere grunnstoffer blir fusjonert til enda lettere grunnstoffer. En slik prosess er normalt ikke mulig da den trenger energi, men i en supernovaeksplosjon har vi enorme energimengder tilgjengelig. Også det motsatte vil da skje: jern kan fusjonere til tyngde grunnstoffer. {\bf Grunnstoffene tyngre enn jern i universet kommer fra supernovaeksplosjoner, men ikke bare: de siste årenes utvikling i gravitasjonsbølgedeteksjon har også avslørt at kollisjoner mellom nøytronstjerner, igjen svært energirike hendelser, også er ansvarlig for en stor andel av de tyngre grunnstoffene.}
+\hyperlink{nd1_b}{\pagebutton{SIDE 51/54/54}}}
+
+
+
+
+
+
+{
+Dette gjør også at vi får flere {\bf generasjoner med stjerner}.
+\begin{enumerate}
+\item Den aller første generasjonen som kalles {\bf Populasjon III}-stjerner er stjerner helt uten {\bf metaller}. Merk at når man snakker om grunnstoffer i stjerneutvikling så kalles alle tyngre grunnstoffer for ``metaller'' selv om de ikke strengt tatt er metaller. Disse stjernene startet kun med helium og hydrogen samt bittelitt litium. Simuleringer viser at disse første stjernene var enormt massive og dermed døde i løpet av noen millioner år. Det er ingen av disse igjen idag.
+\item Den neste generasjonen som har litt metaller i seg kalles {\bf Populasjon II}-stjerner. Disse har vi enda en del igjen av i universet.
+\item Stjernene som har blitt født av restene til Populasjon II-stjerner og dermed har enda flere metaller kalles {\bf Populasjon I}-stjerner. Sola er en slik stjerne.
+\end{enumerate}
+I stjernesimuleringer ser man at metallene spiller en viktig rolle i stjernenes utvikling, selve utviklingsforløpet som vi har snakket om tidligere vil være litt forskjellig i de forskjellige generasjonene.
+\hyperlink{nd2}{\pagebutton{SIDE 52/54/54}}}
+
+{
+La oss til slutt snakke litt mer om {\bf supernovaeksplosjoner.} Vi snakket i  \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part1g.pdf}{del 3A} om de forskjellige typene supernovaeksplosjoner. Typene Ib, Ic og type II er alle kjernekollaps-supernovaer som er de vi har snakket om i denne delen. Forskjellen mellom Ib, Ic og type II er at Ib og Ic ikke har hydrogenlinjer siden de ytterste lagene av stjernen har blitt blåst av før eksplosjonen. {\bf Men så har vi supernovaer av type Ia som er de som brukes som standardlyskilder.}
+\hyperlink{nd3}{\pagebutton{SIDE 53/54/54}}}
+
+
+{
+\textcolor{yellow}{{\Large\bf Supernova type Ia }}
+\begin{columns}
+\column{0.3\textwidth}
+\centerline{\includegraphics[scale=0.07]{media/SNIa.jpg}}
+\column{0.7\textwidth}
+{\small
+\begin{itemize}
+\item \textcolor{yellow}{I dobbeltstjernesystemer der den ene stjernen er en hvit dverg og den andre har blitt en kjempestjerne så kan materiale fra kjempestjernen bli sugd over til overflaten av den hvite dvergen hvis stjernene er nærme nok. }
+\end{itemize}
+}
+\end{columns}
+%\vspace*{-0.7cm}
+{\small
+\begin{itemize}
+\item \textcolor{yellow}{Ettersom lag på lag med glovarm gass legger seg rundt overflaten til den degenererte hvite dvergen, blir denne hvite dvergen varmere og varmere samtidig som den nærmer seg Chandrasekhar grensen.}
+\item \textcolor{yellow}{Til slutt nåes temperaturen der karbon og oksygen begynner å fusjonere videre til tyngre grunnstoffer. Men akkurat som i et heliumflash så starter fusjoner i hele stjernen omtrent samtidig på grunn av degenererte gassers enorme varmeledningsevne. Hele stjernen blir sprengt i stykker.}
+\item \textcolor{yellow}{Siden stjernen har en masse nær Chandrasekhargrensen når dette skjer, så vil energien som frigjøres alltid være omtrent den samme. Dette gjør at denne type supernova kan brukes som standardlyskilde.}
+\end{itemize}
+}
+\hyperlink{feil_nd4}{\pagebutton{SIDE 54/54/54}}}
+
+
+
+
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/168692}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+{\bf  Du er ferdig med del 3E.} Du bør nå:
+\begin{itemize}
+\item  vite hvordan både lettere og tyngre stjerner avslutter sine liv og de fysiske prosessene som er viktige.
+\item  vite hva en hvit dvergstjerne og nøytronstjerne er og kunne utlede hvordan man kan regne ut radien til slike stjerner.
+\item  vite hva Chandrasekhar-grensen og Tolman–Oppenheimer–Volkoff-grensen er.
+\item  vite hvor de tyngre grunnstoffene i universet kommer fra.
+\item  kjenne til de forskjellige typene supernovaeksplosjoner.
+\item  kjenne forskjellen mellom de tre stjernepopulasjonene.
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del3e.pdf}{kortsvarsoppgavene} til del 3E for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+}
+
+
+
+\end{frame}
 \end{document}

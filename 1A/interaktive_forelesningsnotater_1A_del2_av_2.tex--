@@ -56,7 +56,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -106,7 +106,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -297,17 +297,18 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{stat9}{\headlinebutton{Multiplikasjon av sannsynlighet}}
 \item \hyperlink{blue_nytema2}{\headlinebutton{Gasstrykk}}
-  
+
 \item \hyperlink{riktigp}{\headlinebutton{Trykkutledning: bevegelsemengden}}
 \item \hyperlink{trykk5}{\headlinebutton{Trykkintegralet}}
 \item \hyperlink{blue_nytema3}{\headlinebutton{Tips til feilsøking i koden}}
 \end{itemize}
-\hyperlink{intro}{\choicebutton{Neste side}}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+\hyperlink{intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 %%%%% intro
@@ -343,7 +344,7 @@ Kun når du har \textcolor{red}{\bf full kontroll} på alt dette kan du gå vide
 \label{stat7}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{intro}
+\lastpagebutton{intro}{\bf SIDE 1/10/32}\\
 \includegraphics[scale=0.4]{media/screenshot_1a1.png}\\
 \column{0.5\textwidth}
 Tenk gjennom og diskuter hvordan du vil løse oppgavene. Du trenger ikke nødvendigvis løse de nå, men ha en klar ide om hvordan de kan løses...
@@ -355,7 +356,7 @@ Når du har det kan du gå til \hyperlink{stat8}{\pagebutton{Neste side}} {\bf B
 \label{stat8}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{stat7}
+\lastpagebutton{stat7}{\bf SIDE 2/10/32}\\
 Hvis du er usikker på hvordan oppgavene løses, så kan du få et par hint i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_11.mp4}{denne videoen}. Her er neste utfordring:
 \includegraphics[scale=0.4]{media/screenshot_1a2_1.png}\\
 \column{0.5\textwidth}
@@ -368,7 +369,7 @@ Tenk igjen nøye gjennom hvordan du vil gå frem å løse dette. Det er viktig a
 
 \begin{frame}
 \label{stat9}
-\lastpagebutton{stat8}
+\lastpagebutton{stat8}{\bf SIDE 3/10/32}\\
 Vi gir oss ikke med utfordringer her. Nå skal du prøve å oppdage en svært viktig statistisk regel gjennom å tenke deg frem til løsningen på denne utfordringen:
 \begin{block}{\bf Hva iallverden har dette med astrofysikk å gjøre???}
 Anta at $P(h$) er sannsynlighetsfordelingen for kroppshøyden $h$ til en person, anta også at $P(IQ)$ er sannsynlighetsfordelingen for IQ til en person. Anta at disse er Gaussike fordelinger (noe som stemmer rimelig godt). Ved å bruke disse fordelingene, hvordan kunne du regne ut sannsynligheten for at en tilfeldig valgt person har både høyde og IQ over gjennomsnittet? (anta at det ikke er noen sammenheng mellom å være høy og å være intelligent). Hvis du kjenner en spesiell statistisk regel for å gjøre dette, glem den regelen nå og bruk kun logisk resonnement for å finne svaret.\\
@@ -385,7 +386,7 @@ På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men 
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilprob}
-\lastpagebutton{stat9}
+\lastpagebutton{stat9}{\bf SIDE 4/10/32}\\
 \textcolor{white}{Det var nok ikke helt riktig! Trykk på tilbakeknappen og prøv igjen men ta med deg et hint på veien: anta at du har en gruppe på f.eks. 100 personer, hvor mange av disse har høyde over gjennomsnittet? Og hvor mange av disse har IQ over gjennomsnittet?}
 \end{frame}
 }
@@ -394,7 +395,7 @@ På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men 
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigprob}
-\clastpagebutton{stat9}
+\clastpagebutton{stat9}{\bf SIDE 5/10/32}\\
 HELT RIKTIG!
 Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_12.mp4}{denne videoen} nå for å lære en svært viktig regel for sannsynligheter og for å se hvordan du kan tenke for å komme frem til svaret på utfordringen. Ikke gå videre før du har forstått hva videoen prøver å forklare.
 \hyperlink{centlimit}{\pagebutton{Neste side}}
@@ -404,7 +405,7 @@ Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/u
 
 \begin{frame}
 \label{centlimit}
-\lastpagebutton{stat9}
+\lastpagebutton{stat9}{\bf SIDE 6/10/32}\\
 {\small Du lurere kanskje på hvorfor vi antar Gaussisk fordeling for så mange forskjellige tilfeldige størrelser, fra hastigheter, til høyde og IQ? Svaret ligger blant annet i}
 \begin{block}{\small Sentralgrenseteoremet (\small central limit theorem)}
 {\small
@@ -418,7 +419,7 @@ Anta at du har $M$ sett av N uavhengige tilfeldige tall, dvs. du har M sett der 
 
 \begin{frame}
 \label{stat10}
-\lastpagebutton{centlimit}
+\lastpagebutton{centlimit}{\bf SIDE 7/10/32}\\
 Nå skal du øve deg på å bruke multiplikasjonsregelen for sannsynlighet. Vi begynner med gasser:
 \begin{block}{\bf Maxwell-Boltzmannfordelingen for hastighetsvektor $\vec{v}$}
 Hvordan kan du finne sannsynlighetsfordelingen for at en tilfeldig partikkel i en gass har hastighetsvektor $\vec{v}$? Du kan bruke de kjente fordelingene for $P(v_x)$, $P(v_y)$ og $P(v_z)$ samt multiplikasjonsregelen til å vise at
@@ -435,7 +436,7 @@ Tenk i maks 2-3 minutter. Hvis du ikke ser hvordan det kan gjøres, ta en titt p
 \label{stat11}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{stat10}
+\lastpagebutton{stat10}{\bf SIDE 8/10/32}\\
 La oss ta en titt på utdraget av resten av oppgave 1A.1:\\
 \includegraphics[scale=0.4]{media/screenshot_1a1_4.png}\\
 \column{0.5\textwidth}
@@ -447,7 +448,7 @@ Diskuter med medstudenter hvordan du kan løse disse oppgavene. For øyeblikket 
 
 \begin{frame}
 \label{stat12}
-\lastpagebutton{stat11}
+\lastpagebutton{stat11}{\bf SIDE 9/10/32}\\
 Hvis du ikke så hvordan oppgaven på forrige side skulle løses, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_14.mp4}{denne korte videoen} for litt hint.\\
 Du har allerede (tidligere) brynet deg på den første deloppgaven av 1A.4. Ta en kikk nå på den andre:\\
 \includegraphics[scale=0.4]{media/screenshot_1a4_all.png}\\
@@ -459,7 +460,7 @@ Denne gangen får du ikke hjelp, spør gruppelærer hvis du er i tvil.\\
 \label{stat13}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{stat12}
+\lastpagebutton{stat12}{\bf SIDE 10/10/32}\\
 La oss nå gå tilbake til rakettmotoren vår i oppgave 1A6 (innleveringsoppgave).
  Utdrag fra oppgave 1A6:\\
  \vspace{0.5cm}
@@ -481,7 +482,7 @@ Er du enda usikker på hvordan du skal gjøre dette, så kan du få noen hint i 
 \label{pause}
 \hyperlink{stat13}{\pagebutton{\small Forrige side}}
 {\huge
-\centerline{Kaffe?}
+\centerline{\htmlcom{large}{Kaffe?}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 \small Tiden har kommet for en god strekk på bena! Og helle på med en mørk væske som har høye partikkelhastigheter. Ta deg en ekstra god pause nå, fordi du etter pausen for alvor skal begynne å se på konstruksjon av rakettmotoren din.
 }\\
@@ -506,7 +507,7 @@ Er du enda usikker på hvordan du skal gjøre dette, så kan du få noen hint i 
 
 \begin{frame}
 \label{ideelgass1}
-\lastpagebutton{stat13}
+\lastpagebutton{stat13}{\bf SIDE 11/26/32}\\
 Nå som vi vet hvordan lage gasspartiklene i rakettmotoren vår, så gjenstår noen få men svært viktige temaer før vi kan sette igang å bevege partiklene slik at det faktisk blir en virtuell gass. Vi kjenner nå hastighetene til partiklene våre, og mens partiklene ikke støter på noen vegg eller på andre partikler så forblir denne hastigheten uforandret. Dermed er det i første omgang ganske greit å bevege partiklene i løpet av et lite tidssteg. Men etterhvert kommer de til å kollidere, og det er da vi trenger \textcolor{red}{antakelsen om ideel gass} (litt forenklet):
 \begin{itemize}
 \item det er ingen interaksjon mellom partiklene
@@ -519,7 +520,7 @@ Men hva innebærer \textcolor{red}{elastiske kollisjoner}? Kan du huske det fra 
 
 \begin{frame}
 \label{ideelgass2_a}
-\lastpagebutton{ideelgass1}
+\lastpagebutton{ideelgass1}{\bf SIDE 12/26/32}\\
 \addtocounter{pageno}{-1}
 I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
 \textcolor{white}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
@@ -534,7 +535,7 @@ I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\
 
 \begin{frame}
 \label{ideelgass2_b}
-\lastpagebutton{ideelgass1}
+\lastpagebutton{ideelgass1}{\bf SIDE 12/26/32}\\
 \addtocounter{pageno}{-1}
 I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
 \textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
@@ -549,11 +550,11 @@ I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\
 
 \begin{frame}
 \label{ideelgass2_c}
-\lastpagebutton{ideelgass1}
+\lastpagebutton{ideelgass1}{\bf SIDE 12/26/32}\\
 \addtocounter{pageno}{-1}
 I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\pagebutton{Trykk her}}
 \textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
-\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... \pagebutton{Trykk her}}
+\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... \pagebuttonolink{Trykk her}}
 \textcolor{black}{ ... også er den samme før og etter kollisjonen (ser du det???)}
 \textcolor{black}{\href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/animasjoner/particle_simulation_general.mov?vrtx=view-as-webpage}{Se på disse kollisjonene her mellom gasspartikler og vegg...}}\\
 
@@ -564,7 +565,7 @@ I en \textcolor{red}{elastiske kollisjon}, så er ... \hyperlink{ideelgass2_b}{\
 
 \begin{frame}
 \label{ideelgass3_a}
-\dlastpagebutton{ideelgass2_a}
+\dlastpagebutton{ideelgass2_a}{\bf SIDE 13/26/32}\\
 \addtocounter{pageno}{-1}
 {\small
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
@@ -586,7 +587,7 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 
 \begin{frame}
 \label{ideelgass3_b}
-\lastpagebutton{ideelgass2_a}
+\lastpagebutton{ideelgass2_a}{\bf SIDE 13/26/32}\\
 \addtocounter{pageno}{-1}
 {\small
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
@@ -608,13 +609,13 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 
 \begin{frame}
 \label{ideelgass3_c}
-\lastpagebutton{ideelgass2_a}
+\lastpagebutton{ideelgass2_a}{\bf SIDE 13/26/32}\\
 \addtocounter{pageno}{-1}
 {\small
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
 \hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
 {Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
 \hyperlink{ideelgass3_d}{\pagebutton{Trykk her når du er enig}}\\
 \textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
@@ -630,15 +631,15 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 
 \begin{frame}
 \label{ideelgass3_d}
-\lastpagebutton{ideelgass2_a}
+\lastpagebutton{ideelgass2_a}{\bf SIDE 13/26/32}\\
 \addtocounter{pageno}{-1}
 {\small
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
 \hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
 {Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
 \hyperlink{ideelgass3_e}{\pagebutton{Trykk her når du er enig, ikke før!}}\\
 \textcolor{white}{Er du da også enig i at ...
@@ -652,17 +653,17 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
 
 \begin{frame}
 \label{ideelgass3_e}
-\lastpagebutton{ideelgass2_a}
+\lastpagebutton{ideelgass2_a}{\bf SIDE 13/26/32}\\
 \addtocounter{pageno}{-1}
 {\small
 {\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
 \hyperlink{ideelgass3_b}{\pagebutton{Trykk her når du er enig}}\\
 {Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
-\pagebutton{Trykk her når du er enig}\\
+\pagebuttonolink{Trykk her når du er enig}\\
 {Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
-\pagebutton{Trykk her når du er enig, ikke før!}\\
+\pagebuttonolink{Trykk her når du er enig, ikke før!}\\
 {Er du da også enig i at ...
 \begin{eqnarray}
 p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
@@ -674,7 +675,7 @@ Hvis du er uenig i noe av det over, spør foreleser/gruppelærer \hyperlink{idee
 
 \begin{frame}
 \label{ideelgass3b}
-\dlastpagebutton{ideelgass3_a}
+\dlastpagebutton{ideelgass3_a}{\bf SIDE 14/26/32}\\
 Her ser vi situasjonen illustrert:\\
 \includegraphics[scale=0.6]{media/elcol.png}\\
 \hyperlink{trykk1_a}{\pagebutton{Neste side}}
@@ -682,7 +683,7 @@ Her ser vi situasjonen illustrert:\\
 
 \begin{frame}
 \label{trykk1_a}
-\lastpagebutton{ideelgass3b}
+\lastpagebutton{ideelgass3b}{\bf SIDE 15/26/32}\\
 \addtocounter{pageno}{-1}
 Kan du definere gasstrykk?
 Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
@@ -704,7 +705,7 @@ der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{Neste side}}
 
 \begin{frame}
 \label{trykk1_b}
-\lastpagebutton{ideelgass3b}
+\lastpagebutton{ideelgass3b}{\bf SIDE 15/26/32}\\
 \addtocounter{pageno}{-1}
 Kan du definere gasstrykk?
 Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
@@ -726,7 +727,7 @@ der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{Neste side}}
 
 \begin{frame}
 \label{trykk1_c}
-\lastpagebutton{ideelgass3b}
+\lastpagebutton{ideelgass3b}{\bf SIDE 15/26/32}\\
 \addtocounter{pageno}{-1}
 Kan du definere gasstrykk?
 Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
@@ -746,9 +747,9 @@ der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).\hyperlink{tryk
 
 \begin{frame}
 \label{trykk2}
-\dlastpagebutton{trykk1_a}
+\dlastpagebutton{trykk1_a}{\bf SIDE 16/26/32}\\
 \textcolor{red}{\underline{La oss se om vi kan finne et uttrykk for gasstrykket:}}\\
-Kraft kan skrives som 
+Kraft kan skrives som
 \[
 F = \frac{\Delta p}{\Delta t}
 \]
@@ -761,7 +762,7 @@ altså endring i bevegelsesmengde per tid. Hvilken endring $\Delta p$ i bevegels
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilp}
-\lastpagebutton{trykk2}
+\lastpagebutton{trykk2}{\bf SIDE 17/26/32}\\
 \textcolor{white}{Det var nok ikke helt riktig! Trykk på tilbakeknappen og prøv igjen men ta med deg et hint på veien: Endring i bevegelsesmengde er lik bevegelsesmengden etter minus bevegelsesmengde før, enig? Altså:
 \[
 \Delta p = p\mathrm{(etter)} - p\mathrm{(før)}
@@ -774,7 +775,7 @@ Men hva er bevegelsesmengde før og etter kollisjon? (husk fortegn her!)}
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigp}
-\clastpagebutton{trykk2}
+\clastpagebutton{trykk2}{\bf SIDE 18/26/32}\\
 HELT RIKTIG!
 Du har sikkert tenkt slik:
 Endring i bevegelsesmengde er lik bevegelsesmengden etter minus bevegelsesmengde før, enig? Altså:
@@ -794,7 +795,7 @@ På neste side skal vi se nærmere på boksen...
 
 \begin{frame}
 \label{trykk3}
-\lastpagebutton{trykk2}
+\lastpagebutton{trykk2}{\bf SIDE 19/26/32}\\
 Her er den:\\
 \includegraphics[scale=0.5]{media/cylinder.png}\\
 Vi skal nå beregne den totale tiden det tar for alle partiklene i denne boksen å ha truffet veggen som ligger på høyre side av boksen.
@@ -805,7 +806,7 @@ De røde partiklene er de med hastighet $v_x$ på vei mot veggen på høyre side
 
 \begin{frame}
 \label{trykk4}
-\lastpagebutton{trykk3}
+\lastpagebutton{trykk3}{\bf SIDE 20/26/32}\\
 Hvor lang tid tar det før alle de røde partiklene har truffet veggen? (husk $\Delta x$ er lengden av boksen, $v_x$ er absoluttverdi av hastighetskomponent i x-retning som er lik for alle partikler og $A$ er arealet av endesideflatene)\\
 Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_integral.mov?vrtx=view-as-webpage}{videoen igjen}. {\bf (Bruk maks 2 min. til å tenke!)}\\
 \hyperlink{feilt}{\choicebutton{$\Delta t = v_x \Delta t$}}\ \ \ \ \hyperlink{feilt}{\choicebutton{$\Delta t = \frac{v_x}{A}$}}\ \ \ \ \hyperlink{feilt}{\choicebutton{$\Delta t = \frac{v_x}{\Delta x}$}}\ \ \ \ \hyperlink{riktigt}{\choicebutton{$\Delta t = \frac{\Delta x}{v_x}$}}\ \ \ \ \hyperlink{feilt}{\choicebutton{$\Delta t = 2v_x\Delta x$}}
@@ -816,7 +817,7 @@ Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/underv
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilt}
-\lastpagebutton{trykk4}
+\lastpagebutton{trykk4}{\bf SIDE 21/26/32}\\
 \textcolor{white}{Det var nok ikke helt riktig! Trykk på tilbakeknappen og prøv igjen men ta med deg et hint på veien: Er du enig i at den røde partikkelen helt til venstre er den siste som treffer veggen? Den trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$. }
 \end{frame}
 }
@@ -825,7 +826,7 @@ Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/underv
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigt}
-\clastpagebutton{trykk4}
+\clastpagebutton{trykk4}{\bf SIDE 22/26/32}\\
 \addtocounter{pageno}{-1}
 HELT RIKTIG!\\
 Når den røde partikkelen helt til venstre har truffet veggen, så har alle røde partikler truffet veggen. Partikkelen trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$, dermed tar det den tid $\Delta x/v_x$. Men vi må også se hvor lang tid de blå partiklene har brukt for å treffe veggen! Disse er på vei bort fra veggen og har dermed truffet veggen tidligere, men hvor lang tid tok det for alle de blå partiklene å treffe veggen? Kan du bruke samme type resonnement?
@@ -841,7 +842,7 @@ Ikke gå til neste side før du har svaret!
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigt_b}
-\lastpagebutton{trykk4}
+\lastpagebutton{trykk4}{\bf SIDE 22/26/32}\\
 HELT RIKTIG!\\
 Når den røde partikkelen helt til venstre har truffet veggen, så har alle røde partikler truffet veggen. Partikkelen trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$, dermed tar det den tid $\Delta x/v_x$. Men vi må også se hvor lang tid de blå partiklene har brukt for å treffe veggen! Disse er på vei bort fra veggen og har dermed truffet veggen tidligere, men hvor lang tid tok det for alle de blå partiklene å treffe veggen? Kan du bruke samme type resonnement?
 Hvis du ikke ser det, \hyperlink{riktigt_b}{\pagebutton{trykk her for et tips}}
@@ -855,7 +856,7 @@ Ikke gå til neste side før du har svaret!
 
 \begin{frame}
 \label{trykk5}
-\lastpagebutton{trykk4}
+\lastpagebutton{trykk4}{\bf SIDE 23/26/32}\\
 Den blå ballen til venstre har beveget seg en strekning i negativ x-retning på $\Delta x$ siden den traff veggen med hastighet $v_x$, den traff dermed veggen en tid $\Delta x/v_x$ før videoen starter. Alle andre blå baller traff senere, altså kortere tid siden, fordi disse enda er nærmere veggen.\\
  Konklusjonen vår er at alle ballene i boksen traff veggen i løpet av totalt tiden $2\Delta x/v_x$. Og de 'la igjen' en bevegelsemengde $N\times2p_x$ der $N$ er antall partikler, Total kraft på veggen er dermed
 \[
@@ -873,14 +874,14 @@ der $v$ er hastigheten som tilsvarer bevegelsesmengden $p$ (som er $p=mv$ hvis i
 
 \begin{frame}
 \label{pnkt}
-\lastpagebutton{trykk5}
+\lastpagebutton{trykk5}{\bf SIDE 24/26/32}\\
 I deloppgave 2 i 1A.4 skal du analytisk integrere opp trykklintegralet for ideel gass med $p=mv$ og $n(p)$ som Maxwell-Boltzmann. Resultatet du får er svært viktig i termodynamikk:
 \begin{alertblock}{\bf Tilstandslikningen for ideel gass}
 Tilstandslikningen (equation of state) til en gass er en sammenheng mellom trykk, temperatur og tetthet. For en ideel gass er denne:
 \[
 P = nkT
 \]
-der $n$ er antalltettheten av gassen, altså totalt antall gasspartikler per volum, $k$ er \href{https://no.wikipedia.org/wiki/Boltzmanns_konstant}{Boltzmannkonstanten} og $T$ er temperaturen til gassen. 
+der $n$ er antalltettheten av gassen, altså totalt antall gasspartikler per volum, $k$ er \href{https://no.wikipedia.org/wiki/Boltzmanns_konstant}{Boltzmannkonstanten} og $T$ er temperaturen til gassen.
 \end{alertblock}
 Denne sammenhengen kommer vi til å bruke igjen og igjen, så lær den med en gang.
 \hyperlink{rakettmotor1}{\pagebutton{Neste side}}
@@ -888,7 +889,7 @@ Denne sammenhengen kommer vi til å bruke igjen og igjen, så lær den med en ga
 
 \begin{frame}
 \label{rakettmotor1}
-\lastpagebutton{pnkt}
+\lastpagebutton{pnkt}{\bf SIDE 25/26/32}\\
 Så tilbake til rakettmotoren vår. Nå har vi alt vi trenger. Du har allerede laget partiklene med posisjoner og hastigheter, da må du
 \begin{enumerate}
 \item bevege hver partikkel fremover i hvert tidssteg
@@ -903,7 +904,7 @@ Siden vi holder temperatur og tetthet i boksen konstant, kan du beregne raketten
 
 \begin{frame}
 \label{rakettmotor1b0}
-\lastpagebutton{rakettmotor1}
+\lastpagebutton{rakettmotor1}{\bf SIDE 26/26/32}\\
 \addtocounter{pageno}{-1}
 I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?\hyperlink{rakettmotor1b0_b}{\pagebutton{Trykk her når du har tenkt!}}\\
 \textcolor{white}{
@@ -917,7 +918,7 @@ der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og
 
 \begin{frame}
 \label{rakettmotor1b0_b}
-\lastpagebutton{rakettmotor1}
+\lastpagebutton{rakettmotor1}{\bf SIDE 26/26/32}\\
 I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?\hyperlink{rakettmotor1b0_b}{\pagebutton{Trykk her når du har tenkt!}}\\
 
 Svaret du skal få er
@@ -944,7 +945,7 @@ der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og
 
 \begin{frame}
 \label{rakettmotor1b}
-\lastpagebutton{blue_nytema3}
+\lastpagebutton{blue_nytema3}{\bf SIDE 27/32/32}\\
 {\bf\large Men hva gjør du hvis koden ikke funker som den skal?\\
 Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du da?}
 \hyperlink{feildebug}{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ \hyperlink{riktigdebug}{\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
@@ -954,8 +955,8 @@ Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feildebug}
-\lastpagebutton{rakettmotor1b}
-\textcolor{white}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!\\}
+\lastpagebutton{rakettmotor1b}{\bf SIDE 28/32/32}\\
+\textcolor{white}{\htmlcom{large}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!}\\}
 \hyperlink{riktigdebug}{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
 \end{frame}
 }
@@ -964,7 +965,7 @@ Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigdebug}
-\clastpagebutton{rakettmotor1b}
+\clastpagebutton{rakettmotor1b}{\bf SIDE 29/32/32}\\
 Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til å debugge en kode. Her er noen tips hvis gassboksen og/eller rakettmotoren ikke gir de resultater som du forventer. Vi begynner med gassboks {\bf uten hull}.
 {\small
 \begin{enumerate}
@@ -980,7 +981,7 @@ Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til �
 
 \begin{frame}
 \label{rakettmotor2}
-\lastpagebutton{riktigdebug}
+\lastpagebutton{riktigdebug}{\bf SIDE 30/32/32}\\
 Og det bringer oss tilbake til spørsmålet vi hadde helt i starten!
 \begin{enumerate}
 \item Hvor mye bevegelsesmengde slipper ut av hullet for hver partikkel som slipper ut?
@@ -994,7 +995,7 @@ Svarene får du ikke her! Hvis du ikke finner ut av det, få hjelp på gruppene!
 
 \begin{frame}
 \label{rakettmotor2b}
-\clastpagebutton{rakettmotor2}
+\clastpagebutton{rakettmotor2}{\bf SIDE 31/32/32}\\
 Hvis nå motoren uten hull gir fornuftig trykk, midlere partikkelenergi etc., da kan vi sjekke motoren med hull: hvis du får for lite/for mye fremdrift eller ingen i det hele tatt, så kan du f.eks.
 {\small
 \begin{enumerate}
@@ -1007,7 +1008,7 @@ Hvis nå motoren uten hull gir fornuftig trykk, midlere partikkelenergi etc., da
 
 \begin{frame}
 \label{sammendrag}
-\lastpagebutton{rakettmotor2b}
+\lastpagebutton{rakettmotor2b}{\bf SIDE 32/32/32}\\
 {\scriptsize
 Gratulerer, du er ferdig med Del 1A av AST2000. Dette bør du nå kunne svare på før du går videre:
 \begin{enumerate}
@@ -1024,5 +1025,769 @@ Gratulerer, du er ferdig med Del 1A av AST2000. Dette bør du nå kunne svare p�
     }
 \end{frame}
 
+
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+
+%%%%% front
+
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1A\\Interaktive forelesningsnotater: forelesning 2 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet. } \textcolor{yellow}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1a.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. En god ide kan være å bli enige om å treffes til den faste forelesningstiden og bruke forelesningslokalet som kommer til å være resevert til dette. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/157828}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+
+{
+
+{\large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Normalt gir jeg enda kortere tid enn dette til å tenke under den fysiske forelesningen. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær! Det er ikke nederlag, dette er ikke noe dere er forventet å kunne men en del av læringsprosessen.
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Multiplikasjon av sannsynlighet}}
+\item {\headlinebutton{Gasstrykk}}
+
+\item {\headlinebutton{Trykkutledning: bevegelsemengden}}
+\item {\headlinebutton{Trykkintegralet}}
+\item {\headlinebutton{Tips til feilsøking i koden}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+%%%%% intro
+{
+
+{\pagebutton{Forrige side}}\\
+Velkommen til forelesning 2 i del 1A! Dette forelesningsnotatet tilsvarer omtrent en dobbelttime forelesning. Vi fortsetter nå der vi slapp med noen eksempler fra ukeoppgavene. Men før du setter igang, sjekk om du har kontroll på temaene fra første forelesning i del 1A:
+\begin{enumerate}
+\item Hva er Maxwell-Boltzmannfordelingen, hvilke varianter av den finnes, hva sier den oss og hvordan brukes den?
+\item Hva sier bredden av Maxwell-Boltzmannfordelingen deg om gassen?
+\item Hvordan finner du gjennomsnittet (middelverdien) til en tilfeldig størrelse hvis du kjenner sannsynlighetsfordelingen?
+\item Hva er en Gaussfordeling og hva er sannsynligheten for å trekke en verdi innenfor $1\sigma$, $2\sigma$ og $3\sigma$ fra gjennomsnittet?
+\item Hva er standardavvik, varianse og FWHM?
+\end{enumerate}
+Kun når du har \textcolor{red}{\bf full kontroll} på alt dette kan du gå videre. Hvis ikke, gå tilbake til første forelesning for å reptere litt eller spør foreleser og/eller gruppelærer hvis det er ting som er uklare.\\
+{\bf Er du klar?}\ \ \ \ \ {\pagebutton{Neste side}}
+}
+
+\renewcommand{\headline}{Mer om sannsynlighet}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{ideelgass1}
+\textcolor{yellow}{Vi skal nå se på noen eksempler og regneregler for sannsynlighet.}\\
+\vspace*{0.5cm}
+{\pagebutton{Sett igang...}}
+}
+}
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{stat7}{\pagebutton{\bf SIDE 1/10/32}}
+\includegraphics[scale=0.4]{media/screenshot_1a1.png}\\
+\column{0.5\textwidth}
+Tenk gjennom og diskuter hvordan du vil løse oppgavene. Du trenger ikke nødvendigvis løse de nå, men ha en klar ide om hvordan de kan løses...
+Når du har det kan du gå til {\pagebutton{Neste side}} {\bf Bruk maks 3 minutter til å tenke, finner du ikke ut av det, ta en kikk på hintet på neste side!}
+\end{columns}
+}
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{stat8}{\pagebutton{\bf SIDE 2/10/32}}
+Hvis du er usikker på hvordan oppgavene løses, så kan du få et par hint i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_11.mp4}{denne videoen}. Her er neste utfordring:
+\includegraphics[scale=0.4]{media/screenshot_1a2_1.png}\\
+\column{0.5\textwidth}
+\includegraphics[scale=0.4]{media/screenshot_1a2_2.png}\\
+Tenk igjen nøye gjennom hvordan du vil gå frem å løse dette. Det er viktig at du diskuterer denne med medstudenter. Her får du ikke noe svar, hvis du er veldig usikker, spør gruppelærer! {\bf Bergens tenketiden din til 3-4 minutter nå, fortsett senere når du skal gjøre oppgaven.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{stat9}{\pagebutton{\bf SIDE 3/10/32}}
+Vi gir oss ikke med utfordringer her. Nå skal du prøve å oppdage en svært viktig statistisk regel gjennom å tenke deg frem til løsningen på denne utfordringen:
+\begin{block}{\bf Hva iallverden har dette med astrofysikk å gjøre???}
+Anta at $P(h$) er sannsynlighetsfordelingen for kroppshøyden $h$ til en person, anta også at $P(IQ)$ er sannsynlighetsfordelingen for IQ til en person. Anta at disse er Gaussike fordelinger (noe som stemmer rimelig godt). Ved å bruke disse fordelingene, hvordan kunne du regne ut sannsynligheten for at en tilfeldig valgt person har både høyde og IQ over gjennomsnittet? (anta at det ikke er noen sammenheng mellom å være høy og å være intelligent). Hvis du kjenner en spesiell statistisk regel for å gjøre dette, glem den regelen nå og bruk kun logisk resonnement for å finne svaret.\\
+\end{block}
+På de neste sidene skal du få se hva dette har med astrofysikk å gjøre, men først, tror du svaret er:\\
+{\choicebutton{0\%}}\ \ \ \ {\choicebutton{20\%}}\ \ \ \ {\choicebutton{25\%}}\ \ \ \ {\choicebutton{50\%}}\\
+{\choicebutton{60\%}}\ \ \ \ {\choicebutton{75\%}}\ \ \ \ {\choicebutton{90\%}}\ \ \ \ {\choicebutton{100\%}}\\
+}
+
+
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilprob}{\pagebutton{\bf SIDE 4/10/32}}
+\textcolor{white}{Det var nok ikke helt riktig! Trykk på tilbakeknappen og prøv igjen men ta med deg et hint på veien: anta at du har en gruppe på f.eks. 100 personer, hvor mange av disse har høyde over gjennomsnittet? Og hvor mange av disse har IQ over gjennomsnittet?}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigprob}{\pagebutton{\bf SIDE 5/10/32}}
+HELT RIKTIG!
+Ta en kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_12.mp4}{denne videoen} nå for å lære en svært viktig regel for sannsynligheter og for å se hvordan du kan tenke for å komme frem til svaret på utfordringen. Ikke gå videre før du har forstått hva videoen prøver å forklare.
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{centlimit}{\pagebutton{\bf SIDE 6/10/32}}
+{\small Du lurere kanskje på hvorfor vi antar Gaussisk fordeling for så mange forskjellige tilfeldige størrelser, fra hastigheter, til høyde og IQ? Svaret ligger blant annet i}
+\begin{block}{\small Sentralgrenseteoremet (\small central limit theorem)}
+{\small
+Anta at du har $M$ sett av N uavhengige tilfeldige tall, dvs. du har M sett der hvert sett består at tilfeldige tall $x_1, x_2, ..., x_N$ som er trukket fra en nesten hvilken som helst foredelingsfunksjon, men alle tallene i alle M settene må være trukket fra den samme fordelingen. For hvert av de $M$ settene, ta midlet over de $N$ tallene i hvert sett og kall midlet $a_j$ ($j=[1,M]$). Gitt noen betingelser på fordelingsfunksjonen samt at $N$ er stor nok, så kan man vise matematisk at fordelingen til $a_j$ vil være tilnærmet Gaussisk. Under noen betingelser vil dette til og med være riktig hvis $x_1, x_2, ..., x_N$ er trukket fra forskjellige fordelinger. Du trenger ikke kjenne til detaljene og vi skal ikke diskutere disse betingelsene i AST2000.
+}
+\end{block}
+{\small I veldig mange naturlige prosesser så tar man slike midler over mange tall implisitt, f.eks. hvis du måler temperaturen så tar du i realiteten midlet over temperaturene i løpet av et kort tidsrom. Dette gjør at mange tilfeldige tall fra naturlige og kompliserte prosesser har tilnærmet en enkel Gaussisk fordelingsfunksjon.}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\hyperlink{stat10}{\pagebutton{\bf SIDE 7/10/32}}
+Nå skal du øve deg på å bruke multiplikasjonsregelen for sannsynlighet. Vi begynner med gasser:
+\begin{block}{\bf Maxwell-Boltzmannfordelingen for hastighetsvektor $\vec{v}$}
+Hvordan kan du finne sannsynlighetsfordelingen for at en tilfeldig partikkel i en gass har hastighetsvektor $\vec{v}$? Du kan bruke de kjente fordelingene for $P(v_x)$, $P(v_y)$ og $P(v_z)$ samt multiplikasjonsregelen til å vise at
+\[
+P(\vec{v}) = \left(\frac{m}{2\pi kT}\right)^{3/2}e^{-\frac{1}{2}\frac{mv^2}{kT}}
+\]
+der $v=|\vec{v}|$.
+\end{block}
+Tenk i maks 2-3 minutter. Hvis du ikke ser hvordan det kan gjøres, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_13.mp4}{denne videoen}.
+{\pagebutton{Neste side}}
+}
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{stat11}{\pagebutton{\bf SIDE 8/10/32}}
+La oss ta en titt på utdraget av resten av oppgave 1A.1:\\
+\includegraphics[scale=0.4]{media/screenshot_1a1_4.png}\\
+\column{0.5\textwidth}
+\includegraphics[scale=0.4]{media/screenshot_1a1_3.png}\\
+Diskuter med medstudenter hvordan du kan løse disse oppgavene. For øyeblikket er det viktigste at du ser {\bf hvordan} du skal gå frem for å løse dette. {\bf Tenk i maks 1 minutt på hver deloppgave.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{stat12}{\pagebutton{\bf SIDE 9/10/32}}
+Hvis du ikke så hvordan oppgaven på forrige side skulle løses, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_14.mp4}{denne korte videoen} for litt hint.\\
+Du har allerede (tidligere) brynet deg på den første deloppgaven av 1A.4. Ta en kikk nå på den andre:\\
+\includegraphics[scale=0.4]{media/screenshot_1a4_all.png}\\
+Denne gangen får du ikke hjelp, spør gruppelærer hvis du er i tvil.\\
+{\pagebutton{Neste side}}
+}
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{stat13}{\pagebutton{\bf SIDE 10/10/32}}
+La oss nå gå tilbake til rakettmotoren vår i oppgave 1A6 (innleveringsoppgave).
+ Utdrag fra oppgave 1A6:\\
+ \vspace{0.5cm}
+\includegraphics[scale=0.35]{media/1a6_1.png}
+\includegraphics[scale=0.35]{media/1a6_2.png}\\
+\column{0.5\textwidth}
+Vi skal nå se på andre deloppgave:\\
+\vspace{0.5cm}
+\includegraphics[scale=0.35]{media/1a6_3.png}\\
+Her kan du få bruk for \href{https://docs.python.org/2/library/random.html}{random-klassen (link)} i python. Spesielt bør du lese om \href{https://pynative.com/python-random-seed/}{\tt random.seed}, \href{https://kite.com/python/docs/random.gauss}{\tt random.gauss} og \href{https://kite.com/python/docs/random.uniform}{\tt random.uniform}.
+Er du enda usikker på hvordan du skal gjøre dette, så kan du få noen hint i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_15.mp4}{denne videoen}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{\htmlcom{large}{Kaffe?}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+\small Tiden har kommet for en god strekk på bena! Og helle på med en mørk væske som har høye partikkelhastigheter. Ta deg en ekstra god pause nå, fordi du etter pausen for alvor skal begynne å se på konstruksjon av rakettmotoren din.
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Ok, jeg begynner å bli klar for romreise...}}
+}
+}
+
+\renewcommand{\headline}{Gasstrykk}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{rakettmotor1b}
+\textcolor{yellow}{Vi skal nå se på hvordan partikler i en gass kolliderer med veggene i beholderen. Vi bruker det til å definere gasstrykk og skal til slutt utlede {\bf trykkintegralet} som gjør at vi kan beregne trykket i en gass når vi kjenner fordelingsfunksjonen for hastighet.}\\
+\vspace*{0.5cm}
+{\pagebutton{\small Vi begynner med å se på gasspartiklene i rakettmotoren vår...}}
+}
+}
+
+
+{
+
+\hyperlink{ideelgass1}{\pagebutton{\bf SIDE 11/26/32}}
+Nå som vi vet hvordan lage gasspartiklene i rakettmotoren vår, så gjenstår noen få men svært viktige temaer før vi kan sette igang å bevege partiklene slik at det faktisk blir en virtuell gass. Vi kjenner nå hastighetene til partiklene våre, og mens partiklene ikke støter på noen vegg eller på andre partikler så forblir denne hastigheten uforandret. Dermed er det i første omgang ganske greit å bevege partiklene i løpet av et lite tidssteg. Men etterhvert kommer de til å kollidere, og det er da vi trenger \textcolor{red}{antakelsen om ideel gass} (litt forenklet):
+\begin{itemize}
+\item det er ingen interaksjon mellom partiklene
+\item kollisjonen med veggene er {\it elastisk}
+\end{itemize}
+De aller fleste gasser der temperaturen ikke er veldig høy eller veldig lav er gode tilnærmelser til ideele gasser.
+Men hva innebærer \textcolor{red}{elastiske kollisjoner}? Kan du huske det fra mekanikken? Tenk nøye gjennom det før du går videre!
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{ideelgass2_a}{\pagebutton{\bf SIDE 12/26/32}}
+\addtocounter{pageno}{-1}
+I en \textcolor{red}{elastiske kollisjon}, så er ... {\pagebutton{Trykk her}}
+\textcolor{white}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
+\textcolor{white}{Det betyr at absoluttverdien av bevegelsesmengden ... {Trykk her}}
+\textcolor{white}{ ... også er den samme før og etter kollisjonen (ser du det???)}
+\textcolor{white}{Se på disse kollisjonene her mellom gasspartikler og vegg...}\\
+
+\textcolor{white}{Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?}\\
+
+\textcolor{white}{Når du vet svaret, gå til {Neste side}}
+}
+
+{
+
+\hyperlink{ideelgass2_b}{\pagebutton{\bf SIDE 12/26/32}}
+\addtocounter{pageno}{-1}
+I en \textcolor{red}{elastiske kollisjon}, så er ... {\pagebutton{Trykk her}}
+\textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
+\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... {\pagebutton{Trykk her}}}
+\textcolor{white}{ ... også er den samme før og etter kollisjonen (ser du det???)}
+\textcolor{white}{Se på disse kollisjonene her mellom gasspartikler og vegg...}\\
+
+\textcolor{white}{Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?}\\
+
+\textcolor{white}{Når du vet svaret, gå til {Neste side}}
+}
+
+{
+
+\hyperlink{ideelgass2_c}{\pagebutton{\bf SIDE 12/26/32}}
+\addtocounter{pageno}{-1}
+I en \textcolor{red}{elastiske kollisjon}, så er ... {\pagebutton{Trykk her}}
+\textcolor{black}{ ... den kinetiske energien til partiklene den samme før og etter kollisjonen ...}
+\textcolor{black}{Det betyr at absoluttverdien av bevegelsesmengden ... {Trykk her}}
+\textcolor{black}{ ... også er den samme før og etter kollisjonen (ser du det???)}
+\textcolor{black}{\href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/animasjoner/particle_simulation_general.mov?vrtx=view-as-webpage}{Se på disse kollisjonene her mellom gasspartikler og vegg...}}\\
+
+\textcolor{black}{Hva skjer med bevegelsesmengdene $p_x$ og $p_y$ i x- og y-retning her hvis kollisjonene er ellastiske?}\\
+
+\textcolor{black}{Når du vet svaret, gå til {\pagebutton{Neste side}}}
+}
+
+{
+
+\hyperlink{ideelgass3_a}{\pagebutton{\bf SIDE 13/26/32}}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+{\pagebutton{Trykk her når du er enig}}\\
+\textcolor{white}{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+\textcolor{white}{Trykk her når du er enig}\\
+\textcolor{white}{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\textcolor{white}{Trykk her når du er enig}\\
+\textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\textcolor{white}{Trykk her når du er enig, ikke før!}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+}
+
+{
+
+\hyperlink{ideelgass3_b}{\pagebutton{\bf SIDE 13/26/32}}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+{\pagebutton{Trykk her når du er enig}}\\
+\textcolor{white}{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+\textcolor{white}{Trykk her når du er enig}\\
+\textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\textcolor{white}{Trykk her når du er enig, ikke før!}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+}
+
+{
+
+\hyperlink{ideelgass3_c}{\pagebutton{\bf SIDE 13/26/32}}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+{Trykk her når du er enig}\\
+{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+{\pagebutton{Trykk her når du er enig}}\\
+\textcolor{white}{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+\textcolor{white}{Trykk her når du er enig, ikke før!}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+}
+
+{
+
+\hyperlink{ideelgass3_d}{\pagebutton{\bf SIDE 13/26/32}}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+{Trykk her når du er enig}\\
+{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+{Trykk her når du er enig}\\
+{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+{\pagebutton{Trykk her når du er enig, ikke før!}}\\
+\textcolor{white}{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {Neste side}
+}}
+}
+
+{
+
+\hyperlink{ideelgass3_e}{\pagebutton{\bf SIDE 13/26/32}}
+\addtocounter{pageno}{-1}
+{\small
+{\bf La oss se på en partikkel som kolliderer med veggen på høyre side slik at hastigheten i x-retning bytter retning.} Er du enig i at det i y-retning (opp-ned-retning) ikke virker noen krefter i denne kollisjonen?\\
+{\pagebutton{Trykk her når du er enig}}\\
+{Er du dermed enig i at bevegelsesmengde i y-retning, $p_y$, er uendret?}\\
+{Trykk her når du er enig}\\
+{Er du også enig i at absoluttverdien av bevegelsesmengden i x-retning må være uendret pga. elastisk kollisjon?}\\
+{Trykk her når du er enig}\\
+{Er du også enig i at fortegnet til bevegelsesmengde i x-retning er endret?}\\
+{Trykk her når du er enig, ikke før!}\\
+{Er du da også enig i at ...
+\begin{eqnarray}
+p_x\mathrm{(etter\  kollisjon)} &= \textcolor{red}{\textbf{-}} p_x\mathrm{(før\  kollisjon)}\\
+p_y\mathrm{(etter\  kollisjon)} &= p_y\mathrm{(før\  kollisjon)}
+\end{eqnarray}
+Hvis du er uenig i noe av det over, spør foreleser/gruppelærer {\pagebutton{Neste side}}
+}}
+}
+
+{
+
+\hyperlink{ideelgass3b}{\pagebutton{\bf SIDE 14/26/32}}
+Her ser vi situasjonen illustrert:\\
+\includegraphics[scale=0.6]{media/elcol.png}\\
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{trykk1_a}{\pagebutton{\bf SIDE 15/26/32}}
+\addtocounter{pageno}{-1}
+Kan du definere gasstrykk?
+Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
+Tenk deg om før du {\pagebutton{trykker på denne knappen}}\\
+\textcolor{white}{Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?}\\
+\textcolor{white}{Kan det hjelpe deg litt med definisjonen?}
+\textcolor{white}{Tenk deg om igjen og {trykk på denne knappen}}\\
+\textcolor{white}{Definisjon:\\
+%\begin{alertblock}{\bf Gasstrykk er ...}
+{\bf Gasstrykk er ...}
+Den totale kraften fra partiklene per areal, altså:
+\[
+P = \frac{F}{A}
+\]
+der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{Neste side}}
+%\end{alertblock}
+}
+
+
+{
+
+\hyperlink{trykk1_b}{\pagebutton{\bf SIDE 15/26/32}}
+\addtocounter{pageno}{-1}
+Kan du definere gasstrykk?
+Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
+Tenk deg om før du {\pagebutton{trykker på denne knappen}}\\
+{Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?}\\
+{Kan det hjelpe deg litt med definisjonen?}
+Tenk deg om igjen og {\pagebutton{trykk på denne knappen}}\\
+\textcolor{white}{Definisjon:\\
+%\begin{alertblock}{\bf Gasstrykk er ...}
+{\bf Gasstrykk er ...}
+Den totale kraften fra partiklene per areal, altså:
+\[
+P = \frac{F}{A}
+\]
+der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{Neste side}}
+%\end{alertblock}
+}
+
+
+{
+
+\hyperlink{trykk1_c}{\pagebutton{\bf SIDE 15/26/32}}
+\addtocounter{pageno}{-1}
+Kan du definere gasstrykk?
+Kikk på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_forces.mov?vrtx=view-as-webpage}{denne videoen} for å se om den kan hjelpe deg med å finne en definisjon.
+Tenk deg om før du {\pagebutton{trykker på denne knappen}}\\
+{Er du enig i at partiklene utøver en kraft på veggen hver gang de treffer?}\\
+{Kan det hjelpe deg litt med definisjonen?}
+Tenk deg om igjen og {\pagebutton{trykk på denne knappen}}\\
+{Definisjon:}\\
+\begin{alertblock}{\bf Gasstrykk er ...}
+Den totale kraften fra partiklene per areal, altså:
+\[
+P = \frac{F}{A}
+\]
+der $P$ er gasstrykk som måles i N/m$^2$ også kalt Pa (Pascal).{\pagebutton{Neste side}}
+\end{alertblock}
+}
+
+{
+
+\hyperlink{trykk2}{\pagebutton{\bf SIDE 16/26/32}}
+\textcolor{red}{\underline{La oss se om vi kan finne et uttrykk for gasstrykket:}}\\
+Kraft kan skrives som
+\[
+F = \frac{\Delta p}{\Delta t}
+\]
+altså endring i bevegelsesmengde per tid. Hvilken endring $\Delta p$ i bevegelsesmengde får en gasspartikkel med masse $m$ og x-hastighet $v_x$ på veggen ved kollisjon (anta ideel gass og dermed elastisk kollisjon)? {\bf (Bruk maks 2 min. til å tenke!)} \\
+{\choicebutton{$|\Delta p| = mv_x$}}\ \ \ \ {\choicebutton{$|\Delta p| = mv_x^2$}}\ \ \ \ {\choicebutton{$|\Delta p| = 2mv_x$}}\ \ \ \ {\choicebutton{$|\Delta p| = \frac{1}{2}mv_x^2$}}\ \ \ \ {\choicebutton{$|\Delta p| = 4mv_x$}}\\
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilp}{\pagebutton{\bf SIDE 17/26/32}}
+\textcolor{white}{Det var nok ikke helt riktig! Trykk på tilbakeknappen og prøv igjen men ta med deg et hint på veien: Endring i bevegelsesmengde er lik bevegelsesmengden etter minus bevegelsesmengde før, enig? Altså:
+\[
+\Delta p = p\mathrm{(etter)} - p\mathrm{(før)}
+\]
+Men hva er bevegelsesmengde før og etter kollisjon? (husk fortegn her!)}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigp}{\pagebutton{\bf SIDE 18/26/32}}
+HELT RIKTIG!
+Du har sikkert tenkt slik:
+Endring i bevegelsesmengde er lik bevegelsesmengden etter minus bevegelsesmengde før, enig? Altså:
+\[
+\Delta p = p\mathrm{(etter)} - p\mathrm{(før)} = -mv_x - mv_x = -2mv_x=-2p_x
+\]
+Kraften som en partikkel utøver på veggen ved kollisjoner altså
+\[
+f = \frac{\Delta p}{\Delta t} = \frac{2p_x}{\Delta t}
+\]
+Men hva skal vi bruke som tiden her??? For å komme videre slik at vi kan finne et uttrykk for gasstrykket så trenger vi denne.
+For å finne ut av dette og dermed kunne utlede gasstrykket, så skal vi se på et bittelite volum $dV$ av gass rett ved en vegg. Vi antar at det lille volumet vårt har form som en sylinder eller som en rektangulær boks med lengde $\Delta x$ og endesideflater med areal $A$. \\
+På neste side skal vi se nærmere på boksen...
+{\pagebutton{Neste side}}
+}
+}
+
+{
+
+\hyperlink{trykk3}{\pagebutton{\bf SIDE 19/26/32}}
+Her er den:\\
+\includegraphics[scale=0.5]{media/cylinder.png}\\
+Vi skal nå beregne den totale tiden det tar for alle partiklene i denne boksen å ha truffet veggen som ligger på høyre side av boksen.
+Først skal vi kun se på partiklene som har en gitt absoluttverdi $v_x$ av hastigheten. Du kan se disse partiklene i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_integral.mov?vrtx=view-as-webpage}{denne videoen}.
+De røde partiklene er de med hastighet $v_x$ på vei mot veggen på høyre side, de blå partiklene har hastighet $-v_x$ og er på vei vekk fra veggen (dvs. de har allerede kollidert med veggen tidligere.
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{trykk4}{\pagebutton{\bf SIDE 20/26/32}}
+Hvor lang tid tar det før alle de røde partiklene har truffet veggen? (husk $\Delta x$ er lengden av boksen, $v_x$ er absoluttverdi av hastighetskomponent i x-retning som er lik for alle partikler og $A$ er arealet av endesideflatene)\\
+Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/animasjoner/particle_simulation_pressure_integral.mov?vrtx=view-as-webpage}{videoen igjen}. {\bf (Bruk maks 2 min. til å tenke!)}\\
+{\choicebutton{$\Delta t = v_x \Delta t$}}\ \ \ \ {\choicebutton{$\Delta t = \frac{v_x}{A}$}}\ \ \ \ {\choicebutton{$\Delta t = \frac{v_x}{\Delta x}$}}\ \ \ \ {\choicebutton{$\Delta t = \frac{\Delta x}{v_x}$}}\ \ \ \ {\choicebutton{$\Delta t = 2v_x\Delta x$}}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilt}{\pagebutton{\bf SIDE 21/26/32}}
+\textcolor{white}{Det var nok ikke helt riktig! Trykk på tilbakeknappen og prøv igjen men ta med deg et hint på veien: Er du enig i at den røde partikkelen helt til venstre er den siste som treffer veggen? Den trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$. }
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigt}{\pagebutton{\bf SIDE 22/26/32}}
+\addtocounter{pageno}{-1}
+HELT RIKTIG!\\
+Når den røde partikkelen helt til venstre har truffet veggen, så har alle røde partikler truffet veggen. Partikkelen trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$, dermed tar det den tid $\Delta x/v_x$. Men vi må også se hvor lang tid de blå partiklene har brukt for å treffe veggen! Disse er på vei bort fra veggen og har dermed truffet veggen tidligere, men hvor lang tid tok det for alle de blå partiklene å treffe veggen? Kan du bruke samme type resonnement?
+Hvis du ikke ser det, {\pagebutton{trykk her for et tips}}
+\textcolor{yellow}{Den blå ballen helt til venstre er vel den første som traff veggen?\\
+Hvor lang tid er det siden i det videoen starter?
+Ikke gå til neste side før du har svaret!
+{Neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigt_b}{\pagebutton{\bf SIDE 22/26/32}}
+HELT RIKTIG!\\
+Når den røde partikkelen helt til venstre har truffet veggen, så har alle røde partikler truffet veggen. Partikkelen trenger å gå en avstand $\Delta x$ i x-retning med en hastighet $v_x$, dermed tar det den tid $\Delta x/v_x$. Men vi må også se hvor lang tid de blå partiklene har brukt for å treffe veggen! Disse er på vei bort fra veggen og har dermed truffet veggen tidligere, men hvor lang tid tok det for alle de blå partiklene å treffe veggen? Kan du bruke samme type resonnement?
+Hvis du ikke ser det, {\pagebutton{trykk her for et tips}}
+Den blå ballen helt til venstre er vel den første som traff veggen?\\
+Hvor lang tid er det siden i det videoen starter?
+Ikke gå til neste side før du har svaret!
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{trykk5}{\pagebutton{\bf SIDE 23/26/32}}
+Den blå ballen til venstre har beveget seg en strekning i negativ x-retning på $\Delta x$ siden den traff veggen med hastighet $v_x$, den traff dermed veggen en tid $\Delta x/v_x$ før videoen starter. Alle andre blå baller traff senere, altså kortere tid siden, fordi disse enda er nærmere veggen.\\
+ Konklusjonen vår er at alle ballene i boksen traff veggen i løpet av totalt tiden $2\Delta x/v_x$. Og de 'la igjen' en bevegelsemengde $N\times2p_x$ der $N$ er antall partikler, Total kraft på veggen er dermed
+\[
+F = \frac{\Delta p}{\Delta t} = N\times\frac{2p_x}{2\Delta x/v_x} = \frac{Nv_xp_x}{\Delta x}
+\]
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1a/videoer/video1a_16.mp4}{denne videoen} tar vi dette uttrykket videre og utleder trykkintegralet:
+\[
+P = \frac{1}{3}\int_0^\infty vp\;n(p)dp,
+\]
+der $v$ er hastigheten som tilsvarer bevegelsesmengden $p$ (som er $p=mv$ hvis ikke-relativistisk) og $n(p)$ er fordelingsfunksjonen som sier hvor mange partikler per volum som har bevegelsesmengde i intervallet $[p,p+dp]$, for ideel gass tilsvarer dette Maxwell-Boltzmann.
+{\pagebutton{Neste side}}
+}
+
+
+
+{
+
+\hyperlink{pnkt}{\pagebutton{\bf SIDE 24/26/32}}
+I deloppgave 2 i 1A.4 skal du analytisk integrere opp trykklintegralet for ideel gass med $p=mv$ og $n(p)$ som Maxwell-Boltzmann. Resultatet du får er svært viktig i termodynamikk:
+\begin{alertblock}{\bf Tilstandslikningen for ideel gass}
+Tilstandslikningen (equation of state) til en gass er en sammenheng mellom trykk, temperatur og tetthet. For en ideel gass er denne:
+\[
+P = nkT
+\]
+der $n$ er antalltettheten av gassen, altså totalt antall gasspartikler per volum, $k$ er \href{https://no.wikipedia.org/wiki/Boltzmanns_konstant}{Boltzmannkonstanten} og $T$ er temperaturen til gassen.
+\end{alertblock}
+Denne sammenhengen kommer vi til å bruke igjen og igjen, så lær den med en gang.
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{rakettmotor1}{\pagebutton{\bf SIDE 25/26/32}}
+Så tilbake til rakettmotoren vår. Nå har vi alt vi trenger. Du har allerede laget partiklene med posisjoner og hastigheter, da må du
+\begin{enumerate}
+\item bevege hver partikkel fremover i hvert tidssteg
+\item sjekke om du treffer en vegg
+\item nå har du sett hva du kan gjøre når du får en ellastisk kollisjon
+\item sjekk om du treffer hullet i boksen, da går partikkelen ut, men du må få en ny partikkel inn i boksen igjen for å passe på å holde tetthet og temperatur konstant.
+\item beregne rakettens akselrasjon for hver partikkel som går ut av hullet
+\end{enumerate}
+Siden vi holder temperatur og tetthet i boksen konstant, kan du beregne rakettens akselrasjon for et veldig kort tidsrom, og så bruke denne akseprasjonen videre i beregningene. Du trenger dermed kun å simulere boksen for et kort tidsrom for å finne ut hvor mye akselrasjon raketten får per tid. Merk at boksen også er {\bf alt} for liten til å drive en hel rakett, du trenger et {\bf meget stort} antall slike bokser, du trenger altså å gange opp akselrasjonen fra en boks med antall bokser.
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{rakettmotor1b0}{\pagebutton{\bf SIDE 26/26/32}}
+\addtocounter{pageno}{-1}
+I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?{\pagebutton{Trykk her når du har tenkt!}}\\
+\textcolor{white}{
+Svaret du skal få er
+\[
+v_\mathrm{esc}=\sqrt{\frac{2GM}{R}}
+\]
+der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og $M$ er jordas masse. Fikk du det? Hvis ikke, spør foreleser/gruppelærer!
+{Neste side}}
+}
+
+{
+
+\hyperlink{rakettmotor1b0_b}{\pagebutton{\bf SIDE 26/26/32}}
+I oppgaven skal du få raketten opp i {\bf unnslippingshastighet (escape velocity)}. Men hva er unnslippingshastighet? Det er hastigheten der rakettens kinetiske energi er større en jordas potensielle slik at den ikke lenger faller tilbake til jorda. Ser du hvordan du kan beregne den?{\pagebutton{Trykk her når du har tenkt!}}\\
+
+Svaret du skal få er
+\[
+v_\mathrm{esc}=\sqrt{\frac{2GM}{R}}
+\]
+der $R$ er avstanden fra jordas sentrum der hastigheten når $v_\mathrm{esc}$ og $M$ er jordas masse. Fikk du det? Hvis ikke, spør foreleser/gruppelærer!
+{\pagebutton{Neste side}}
+}
+
+\renewcommand{\headline}{Bug-fiksing}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\textcolor{yellow}{Du får helt sikkert flere feil i koden når du begynner å programmere innleveringsoppgaven/prosjektdelen. Her skal du få noen tips til hvordan feilsøke.}\\
+\vspace*{0.5cm}
+{\pagebutton{Jeg??? Feil???? Ok, la meg se på det likevel da...}}
+}
+}
+
+
+{
+
+\hyperlink{rakettmotor1b}{\pagebutton{\bf SIDE 27/32/32}}
+{\bf\large Men hva gjør du hvis koden ikke funker som den skal?\\
+Hva hvis den gir rare resultater for fremdrift, trykk, energi etc.? Hva gjør du da?}
+{\choicebutton{\small Kikker gjennom koden noen ganger for å se om jeg ser noe feil}}\ \ \ \ {\choicebutton{\small Bruker litt grunnleggende fysikk for å finne hvor feilen ligger}}\
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feildebug}{\pagebutton{\bf SIDE 28/32/32}}
+\textcolor{white}{\htmlcom{large}{Lykke til! Det kan du trenge, for dette kan ta laaaaaaaaaaaaaang tid!}\\}
+{\pagebutton{\small Trykk her for noen tips til hvodan dette kan ta mye kortere tid}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigdebug}{\pagebutton{\bf SIDE 29/32/32}}
+Det er veldig lurt å lære noen tips til hvordan du kan bruke litt fysikk til å debugge en kode. Her er noen tips hvis gassboksen og/eller rakettmotoren ikke gir de resultater som du forventer. Vi begynner med gassboks {\bf uten hull}.
+{\small
+\begin{enumerate}
+\item lag histogram av hastigheten til partiklene og plott Maxwell-Boltzmann over, stemmer det sånn omtrent?
+\item Hvordan vil hastighetskomponentene til partiklene se ut som funksjon av tiden? Det vet du med litt fysikk. Velg deg ut en av partiklene i gassen og lag 3 lister med  $v_x$, $v_y$ og $v_z$-komponenten i hvert tidssteg gjennom hele simuleringen. Plott disse. Er de slik som de skal være?
+\item Hvis ikke, hvor begynner hastighetskomponenten(e) å oppføre seg rart? Er det f.eks. etter første kollisjon med vegg? Hva er det ellers som kan endre hastighetskomponentene?
+\item Hvis alt stemmer med hastighetskomponentene, lag 3 lister med x, y og z-posisjonene for en valgt partikkel for alle tidssteg. Plot posisjonene som funksjon av tiden. Er posisjonene slik du forventer? Er posisjonsendringer ved veggtreff synkronisert med hastighetsendringer? Går posisjonene utenfor boksen?
+\end{enumerate}
+}
+{\pagebutton{Neste side}}
+}
+}
+
+{
+
+\hyperlink{rakettmotor2}{\pagebutton{\bf SIDE 30/32/32}}
+Og det bringer oss tilbake til spørsmålet vi hadde helt i starten!
+\begin{enumerate}
+\item Hvor mye bevegelsesmengde slipper ut av hullet for hver partikkel som slipper ut?
+\item Hvordan kan den bevegelsesmengden som slipper ut hjelpe deg til å finne rakettens akselrasjon? (finnes det en sammenheng mellom kraft og endring i bevegelsesmengde?)
+\item Pass på retningen til bevegelsesmengden for hver partikkel som kommer ut og retningen til raketten.
+\item Når du har akselrasjonen, hvordan går du så frem for å finne rakettens posisjon som funksjon av tid etter oppskyting?
+\end{enumerate}
+Svarene får du ikke her! Hvis du ikke finner ut av det, få hjelp på gruppene!
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{rakettmotor2b}{\pagebutton{\bf SIDE 31/32/32}}
+Hvis nå motoren uten hull gir fornuftig trykk, midlere partikkelenergi etc., da kan vi sjekke motoren med hull: hvis du får for lite/for mye fremdrift eller ingen i det hele tatt, så kan du f.eks.
+{\small
+\begin{enumerate}
+\item lage histogram av x,y og z-komponentene for alle partikkelposisjonene og hastighetene i første og siste tidssteg. Er hastightene enda omtrent Maxwell-boltzmann fordelt? Kan være litt avvik her avhengig av hvordan du regenererer partikler, men hvis du har veldig mange partikler med veldig liten/stor hastighet, så er noe galt med måten du gir hastighet til de nye partiklene som erstatter de som forsvinner ut. Er posisjonene enda uniformt fordelt? Hvis ikke er noe galt med måten du gir posisjon/hastighet til nygenererte partikler.
+\item slipper noen/nok/for mange partikler ut av hullet? Kan det være en feil i hvordan du sjekker om partiklene slipper ut av hullet? Etter å ha generert partikkelposisjoner og hastigheter helt i starten, forandre posisjon og hastighet til en valgt partikkel slik at den står rett ved utgangen av hullet med hastighet ut av hullet. Sjekk så om partikkelen med dette indeksnummeret faktisk slipper ut av boksen. Hvis ikke: lag lister med posisjoner/hastigheter i alle tidssteg og sjekk hva som skjer mens den egentlig skulle slippe ut av hullet (som på forrige side). Er betingelsen din for at den har gått ut av hullet faktisk blitt oppfylt?{\pagebutton{\small Neste side}}
+\end{enumerate}
+}
+}
+
+
+{
+
+\hyperlink{sammendrag}{\pagebutton{\bf SIDE 32/32/32}}
+{\scriptsize
+Gratulerer, du er ferdig med Del 1A av AST2000. Dette bør du nå kunne svare på før du går videre:
+\begin{enumerate}
+\item Hva er, og hvordan bruker man, en statistisk fordelingsfunksjon? (eller sannsynlighetstetthet)
+\item Hva er, og hvordan beregner man, gjennomsnitt, standardavvik, varianse, FWHM?
+\item Hva er en Gaussisk sannsynlighetsfordeling og hva er sannsynligheten for å trekke en verdi innenfor $1\sigma$, $2\sigma$ og $3\sigma$ fra gjennomsnittet?
+\item Hva er en ideel gass?
+\item Hvordan kan du finne fordelingen av partikkelhastigheter i en ideel gass?
+\item Hva er trykk, hvordan kan du beregne trykk analytisk og numerisk og hva er tilstandslikning for ideel gass?
+\item Hva gjør at en rakett akselererer?
+\item Hvordan går du frem for å beregne egenskapene en gass trenger i en rakettmotor for å få en gitt akselrasjon?
+\end{enumerate}
+    {\bf Det anbefales nå at du sjekke \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del1a.pdf}{kortsvarsoppgavene} til del 1A for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+    }
+}
+
+\end{frame}
 \end{document}
 

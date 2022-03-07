@@ -57,7 +57,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=yellow,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 
@@ -105,7 +105,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -290,7 +290,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Vinkeloppløsning}}
@@ -299,7 +299,8 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema3}{\headlinebutton{Inklinasjon}}
 \item \hyperlink{blue_nytema4}{\headlinebutton{Formørkelser}}
 \end{itemize}
-\hyperlink{intro}{\choicebutton{Neste side}}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+\hyperlink{intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 %%%%% intro
@@ -323,10 +324,10 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \begin{columns}
 \column{0.5\textwidth}
 %\hyperlink{intro}{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage \\
-\lastpagebutton{intro}
+\lastpagebutton{intro}{\bf SIDE 1/1/47}\\
 \includegraphics[scale=0.4]{media/1c4_1.png}\\
 \includegraphics[scale=0.4]{media/1c4_2.png}\\
-Innleveringsppgave 1C4 går ut på å bruke stjerneobservasjoner (som i figurene) til å finne ut av planetens egenskaper. 
+Innleveringsppgave 1C4 går ut på å bruke stjerneobservasjoner (som i figurene) til å finne ut av planetens egenskaper.
 \column{0.5\textwidth}
 
 Bl.a. kan du finne størrelse, masse og sammensetningen av en planet i bane rundt en fjern stjerne, uten å noengang se planeten direkte. Til dette trenger vi å bruke en del av det som du lærte i de forrige forelesningene samt at du trenger å lære litt om analyse av data. Men før vi setter igang så skal vi varme opp litt med å fort sjekke at vi har kunnskapen fra del 1A og 1B på plass, samt se hva du allerede kan om temaene i del 1C.
@@ -352,7 +353,7 @@ Er du klar og har sendt inn skjemaet?
 
 \begin{frame}
 \label{litenvinkel1}
-\dlastpagebutton{intro2}
+\dlastpagebutton{intro2}{\bf SIDE 2/8/47}\\
 \includegraphics[scale=0.4]{media/angular_distance.png}\\
 {\small
 I figuren ser du en observatør som kikker på en stjerne og en planet (observatøren ser faktisk ut til å ha funnet et stjerne-planet system som likner på sola og jorda). Avstanden til systemet er $r$ og avstanden mellom stjerne og planet er $\Delta r$. Vinkelen mellom de to objektene er $\theta$. I dette emnet skal vi ofte bruke liten-vinkel-formelen:
@@ -366,7 +367,7 @@ der $\theta$ må være i radianer! Dette er en svært god tilnærming for store 
 
 \begin{frame}
 \label{litenvinkel2}
-\lastpagebutton{litenvinkel1}
+\lastpagebutton{litenvinkel1}{\bf SIDE 3/8/47}\\
 \includegraphics[scale=0.4]{media/angular_distance.png}\\
 Altså
 \[
@@ -386,7 +387,7 @@ Har du innsett hvordan formelen utledes? Hvis ikke, her er et par {\bf hint:}\\
 
 \begin{frame}
 \label{litenvinkel3}
-\lastpagebutton{litenvinkel2}
+\lastpagebutton{litenvinkel2}{\bf SIDE 4/8/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.25]{media/angular_distance.png}\\
@@ -412,7 +413,7 @@ Hvis du ikke husker resonnementet fra 1B, ta gjerne en titt på \href{https://ww
 \label{feil_litenvinkel4}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{litenvinkel3}
+\lastpagebutton{litenvinkel3}{\bf SIDE 5/8/47}\\
 \hspace*{1cm}\includegraphics[scale=0.23]{media/resolution.png}\\
 \textcolor{white}{Når et teleskop observerer et objekt på himmelen, blir dette objektet 'smørt utover' pga. optikken samt forstyrrelser i atmosfæren. Dette gjør at et veldig lite punkt blir til en stor skive (se bildet). Når to objekter kommer for nær hverandre, vil de til slutt se ut som et enkelt objekt.}
 \column{0.5\textwidth}
@@ -429,7 +430,7 @@ Hvis du ikke husker resonnementet fra 1B, ta gjerne en titt på \href{https://ww
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_litenvinkel5}
-\lastpagebutton{feil_litenvinkel4} 
+\lastpagebutton{feil_litenvinkel4}{\bf SIDE 6/8/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 \hspace*{1cm}\includegraphics[scale=0.2]{media/resolution.png}\\
@@ -444,7 +445,7 @@ Hvis du ikke husker resonnementet fra 1B, ta gjerne en titt på \href{https://ww
 
 \begin{frame}
 \label{litenvinkel6}
-\lastpagebutton{feil_litenvinkel5}
+\lastpagebutton{feil_litenvinkel5}{\bf SIDE 7/8/47}\\
 \includegraphics[scale=0.4]{media/angular_distance.png}\\
 Anta at stjerna i figuren er Sirius i en avstand av 8.6 ly (light year = lysår, avstanden lyset tilbakelegger i løpet av et år). Hvis Sirius hadde en planet i bane rundt seg. Hva er den minste avstanden $\Delta r$ (på bildet) denne planeten kunne hatt fra Sirius for at man skulle kunne skille planeten fra stjerna i et teleskop fra bakken med oppløsning $0.4''$? ({\bf hint:} liten-vinkel-formel). Angi svaret i astronomiske enheter (AU). Og hva hvis man brukte HST med oppløsningsevne $0.1''$ isteden?\\
 Ikke gå videre før du har regnet ut svaret og har tenkt litt gjennom hva svaret betyr. Merk at Sirius er en av våre aller nærmeste stjerner, de fleste er lenger unna. Kan du nå forklare hvorfor så få ekstrasolare planeter har blitt avbildet?
@@ -456,8 +457,8 @@ Ikke gå videre før du har regnet ut svaret og har tenkt litt gjennom hva svare
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_litenvinkel6b}
-\lastpagebutton{litenvinkel6}
-{\Huge\centerline{Hva fikk du??}}
+\lastpagebutton{litenvinkel6}{\bf SIDE 8/8/47}\\
+{\Huge\centerline{\htmlcom{large}{Hva fikk du??}}}
 \centerline{\bf Ble avstanden større eller mindre enn 1 AU? (avstanden sol-jord)}
 \vspace*{0.5cm}
 Ville du kunne avbilde en planet i avstand 1AU fra en av våre nærmeste stjerner? Hva med en planet i samme avstand som Jupiter i vårt solsystem?\\
@@ -481,7 +482,7 @@ Hvis du sliter med å få dette til spør på \forumbutton
 
 \begin{frame}
 \label{vr1}
-\lastpagebutton{litenvinkel6b}\label{radhast}
+\lastpagebutton{litenvinkel6b}\label{radhast}{\bf SIDE 9/33/47}\\
 Hvis du ikke helt fikk grepet på spørsmålene på forrige side, {\bf spør gruppelærer eller foreleser!}.\\
 \begin{columns}
 \column{0.5\textwidth}
@@ -497,12 +498,12 @@ Det at spektrallinjen går frem og tilbake ($\lambda$ for linjen blir større og
 
 \begin{frame}
 \label{vr2}
-\lastpagebutton{vr1}
+\lastpagebutton{vr1}{\bf SIDE 10/33/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 {\bf Du får ikke helt svaret enda. Her kommer litt mer info:}\\
 \includegraphics[scale=0.3]{media/halpha_sinus.png}\\
-Her ser vi bølgelengden til absorpsjonslinja $H\alpha$, en typisk linje for hydrogenatomet, målt fra en stjerne. \textcolor{red}{I laboratoriet så måler man bølgelengden til $H\alpha$ til å være 656.28nm.} 
+Her ser vi bølgelengden til absorpsjonslinja $H\alpha$, en typisk linje for hydrogenatomet, målt fra en stjerne. \textcolor{red}{I laboratoriet så måler man bølgelengden til $H\alpha$ til å være 656.28nm.}
 \column{0.5\textwidth}
 \textcolor{blue}{Men i spektret fra denne stjernen så endrer bølgelengden for spektrallinjen seg frem og tilbake slik som vi så på forrige side slik at den ikke er på nøyktig 656.28nm som i laboratoriet.} X-aksen i figuren viser tidspunktet for observasjon, y-aksen viser avviket i bølgelengde fra 656.28nm. Vi ser at den er veldig nær 656.28nm, men ikke helt på, {\bf den har små avvik frem og tilbake som følger en sinus-kurve.} Hjelper dette deg med å forstå hvorfor denne stjerna kan ha en planet i bane rundt seg? Tenk deg nøye om før du går til neste side! {\bf Hint:} Hva kan få bølgelengden til lys til å endre seg?
 \hyperlink{vr3}{\pagebutton{Neste side}}
@@ -511,7 +512,7 @@ Her ser vi bølgelengden til absorpsjonslinja $H\alpha$, en typisk linje for hyd
 
 \begin{frame}
 \label{vr3}
-\lastpagebutton{vr2}
+\lastpagebutton{vr2}{\bf SIDE 11/33/47}\\
 \addtocounter{pageno}{-1}
 {\bf Et lite hint til før du går videre...}\\
 {\bf ... Dopplereffekten!}\\
@@ -529,12 +530,12 @@ Formelen gir oss endringen $\Delta\lambda$ i bølgelengden for lys som opprinnel
 
 \begin{frame}
 \label{vr3_b}
-\lastpagebutton{vr2}
+\lastpagebutton{vr2}{\bf SIDE 11/33/47}\\
 \addtocounter{pageno}{-1}
 {\bf Et lite hint til før du går videre...}\\
 {\bf ... Dopplereffekten!}\\
 Husker du hva den går ut på???\\
-Husker du formelen for endring i bølgelengde pga. Dopplereffekten?\pagebutton{Trykk her når du har tenkt...}\\
+Husker du formelen for endring i bølgelengde pga. Dopplereffekten?\pagebuttonolink{Trykk her når du har tenkt...}\\
 Ganske riktig
 \[
 \frac{\Delta\lambda}{\lambda}=\frac{v}{c}
@@ -547,7 +548,7 @@ Formelen gir oss endringen $\Delta\lambda$ i bølgelengden for lys som opprinnel
 
 \begin{frame}
 \label{vr4}
-\dlastpagebutton{vr3}
+\dlastpagebutton{vr3}{\bf SIDE 12/33/47}\\
 {\large\bf Nå ser du kanskje at denne endringen av bølgelengden til spektrallinja betyr at stjerna beveger seg i forhold til oss?}\\
 For å videre undersøke hvordan stjerna beveger seg, trenger vi å 'oversette' figuren med bølgelengdeendringer til stjernehastigheter. For å gjøre det må vi bli enige om en konvensjon som vi skal bruke i hele resten av dette kurset, så følg nøye med:
 \begin{alertblock}{\bf Fortegn på hastigheter}
@@ -562,7 +563,7 @@ Dette er svært viktig å ha klart for seg i hele resten av kurset, merk deg det
 \label{vr5}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{vr4}
+\lastpagebutton{vr4}{\bf SIDE 13/33/47}\\
 \addtocounter{pageno}{-1}
 {\large\bf Det er viktig at du gjør denne øvelsen:}\\
 \includegraphics[scale=0.28]{media/halpha_sinus.png}\\
@@ -582,7 +583,7 @@ der $v_r$ er radialkomponenten, hastighetskomponenten rett mot/fra observatøren
 \label{vr5_b}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{vr4}
+\lastpagebutton{vr4}{\bf SIDE 13/33/47}\\
 \addtocounter{pageno}{-1}
 {\bf Dette er viktig:} Dopplereffekten oppstår kun fra radialkomponenten (komponenten langs synsretningen). Vi må derfor presisere Dopplerformelen:
 \[
@@ -599,7 +600,7 @@ Ta et papir, tegn akser og bruk figuren samt Dopplerformelen til å tegn hastigh
 
 \begin{frame}
 \label{vr6}
-\dlastpagebutton{vr5}
+\dlastpagebutton{vr5}{\bf SIDE 14/33/47}\\
 \addtocounter{pageno}{-1}
 \begin{columns}
 \column{0.5\textwidth}
@@ -609,27 +610,26 @@ Fikk du at også hastigheten er en sinuskurve? Kan du nå se for deg hvordan stj
 Vi lærte i del 1B at når en planet går i bane omkring en stjerne, så går jo både stjerna og planeten i bane omkring et felles massesenter. Hvis stjerna har en planet i bane rundt seg, så vil altså stjerna gå i bane om massesenteret med planeten. {\bf Vi skal i hele del 1C alltid anta sirkelbaner for å gjøre det lettere å regne.}}
 \column{0.5\textwidth}
 \textcolor{white}{
-De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane. 
-Her har stjernas bane om massesenter(CM):
+De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane.
+Her har stjernas bane om massesenter(CM):}
 %\includegraphics[scale=0.38]{media/star_orbit.png}\\
 \vspace*{5cm}
 \textcolor{white}{Før du går videre: merk av punktene A, B, C og D i hastighetsplottet ditt!}
-\pagebutton{Neste side}}
 \end{columns}
 \end{frame}
 
 
 \begin{frame}
 \label{vr6_b}
-\lastpagebutton{vr5}
+\lastpagebutton{vr5}{\bf SIDE 14/33/47}\\
 \addtocounter{pageno}{-1}
 \begin{columns}
 \column{0.5\textwidth}
 Fikk du at også hastigheten er en sinuskurve? Kan du nå se for deg hvordan stjerna beveger seg? Og hvorfor? {\bf Det er viktig at du faktisk har laget teningen da vi skal bruke den videre!}\\
-\pagebutton{Tenk før du trykker her}\\
+\pagebuttonolink{Tenk før du trykker her}\\
 Vi lærte i del 1B at når en planet går i bane omkring en stjerne, så går jo både stjerna og planeten i bane omkring et felles massesenter. Hvis stjerna har en planet i bane rundt seg, så vil altså stjerna gå i bane om massesenteret med planeten. {\bf Vi skal i hele del 1C alltid anta sirkelbaner for å gjøre det lettere å regne.}
 \column{0.5\textwidth}
-De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane. 
+De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane.
 Her har stjernas bane om massesenter:
 \includegraphics[scale=0.38]{media/star_orbit.png}\\
 \textcolor{red}{Før du går videre: merk av punktene A, B, C og D i hastighetsplottet ditt!}
@@ -641,8 +641,8 @@ Her har stjernas bane om massesenter:
 {
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
-\label{red_vr7}]
-\dlastpagebutton{vr6}
+\label{red_vr7}
+\dlastpagebutton{vr6}{\bf SIDE 15/33/47}\\
 \addtocounter{pageno}{-1}
 \textcolor{yellow}{\Large Men har du lagt merke til at hastigheten $v_r$ i plottet ditt ikke oscillerer omkring 0??? Fra figuren på forrige side, skulle man vel tro at radialhastigheten (altså hastigheten langs synslinja) skal være 0 i punktene A og C. Dermed skulle vi vel ikke hatt noen Dopplereffekt og dermed ingen bølgelengdeforskyvning i disse to punktene. Kan du tenke deg en forklaring på hvorfor kurven din ikke oscillerer omkring $v_r=0$ i punktene A og C?}\\
 \hyperlink{red_vr7_b}{\pagebutton{Diskuter 2 min før du går videre!}}\\
@@ -655,20 +655,20 @@ Her har stjernas bane om massesenter:
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_vr7_b}]
-\lastpagebutton{vr6}
+\lastpagebutton{vr6}{\bf SIDE 15/33/47}\\
 \addtocounter{pageno}{-1}
 \textcolor{yellow}{\Large Men har du lagt merke til at hastigheten $v_r$ i plottet ditt ikke oscillerer omkring 0??? Fra figuren på forrige side, skulle man vel tro at radialhastigheten (altså hastigheten langs synslinja) skal være 0 i punktene A og C. Dermed skulle vi vel ikke hatt noen Dopplereffekt og dermed ingen bølgelengdeforskyvning i disse to punktene. Kan du tenke deg en forklaring på hvorfor kurven din ikke oscillerer omkring $v_r=0$ i punktene A og C?}\\
-{\pagebutton{Diskuter 2 min før du går videre!}}\\
+{\pagebuttonolink{Diskuter 2 min før du går videre!}}\\
 \textcolor{yellow}{Ganske riktig! Hastigheten til i punktene A og C viser massesenterets hastighet i forhold til oss: massesenteret beveger seg med en konstant hastighet i forhold til oss, i tillegg beveger stjernen seg i en sirkelbane omkring massesenteret. Den konstante hastigheten som en stjerne (eller massesenteret planet-stjerne) har i forhold til oss kalles {\it egenhastigheten (engelsk: peculiar velocity)}. Merk deg ordet som blir mye brukt videre.}
 \hyperlink{vr8}{\pagebutton{Neste side}}
 \end{frame}
 }
 
-  
+
 \begin{frame}
 \label{vr8}
-\dlastpagebutton{red_vr7}
-Her ser vi situasjonen illusterert med observatøren og de radielle og tangensielle hastighetskomponentene (radielt og tangensielt på synsretningen til observatøren) i de forskjellige posisjonene {\bf til stjerna} samt de tilhørende punktene på hastighetsplottet. 
+\dlastpagebutton{red_vr7}{\bf SIDE 16/33/47}\\
+Her ser vi situasjonen illusterert med observatøren og de radielle og tangensielle hastighetskomponentene (radielt og tangensielt på synsretningen til observatøren) i de forskjellige posisjonene {\bf til stjerna} samt de tilhørende punktene på hastighetsplottet.
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.38]{media/vr.png}\\
@@ -682,7 +682,7 @@ Her er $v$ den konstante banehastigheten til stjerna (banehastigheten er konstan
 
 \begin{frame}
 \label{vr8b}
-\lastpagebutton{vr8}
+\lastpagebutton{vr8}{\bf SIDE 17/33/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.38]{media/vr.png}\\
@@ -698,7 +698,7 @@ Ta gjerne også en kikk på \href{https://commons.wikimedia.org/wiki/File:Radial
 \begin{frame}
 \label{pause_vr8c}
 \hyperlink{vr8b}{\pagebutton{\small Forrige side}}
-{\Huge Det er litt regning igjen før det blir pause! Det kan være greit å klarne tankene litt før du går videre}\\
+{\Huge \htmlcom{large}{Det er litt regning igjen før det blir pause! Det kan være greit å klarne tankene litt før du går videre}}\\
 Finn en vegg (hvis du trenger det), og stå på hodet nå. Alt pleier å bli mye klarere hvis du bare ser det fra en annen vinkel! Kikk ut av vinduet! Hvis det mot formodning er sol, kan du se for deg sola som raser omkring massesenteret med jorda? Og formen på banen var...?\\
 \hyperlink{vr9}{\pagebutton{Jeg har tatt 10 push-ups og 10 sit-ups, så la oss fortsette}}
 \end{frame}
@@ -710,7 +710,7 @@ Finn en vegg (hvis du trenger det), og stå på hodet nå. Alt pleier å bli mye
 \label{vr9}
 \begin{columns}
 \column{0.5\textwidth}
-\lastpagebutton{pause_vr8c}\label{regning}
+\lastpagebutton{pause_vr8c}\label{regning}{\bf SIDE 18/33/47}\\
 \includegraphics[scale=0.32]{media/vr.png}\\
 Men hvis vi nå faktisk kjenner stjernas bane gjennom Dopplereffekten, kan vi bruke dette til å finne ut noe om planeten, kun ved å se på stjernas bevegelse?
 \column{0.5\textwidth}
@@ -724,7 +724,7 @@ Sjekk hva symbolene her betyr, spesielt viktig at du tenker gjennom nøyaktig hv
 
 \begin{frame}
 \label{vr10}
-\lastpagebutton{vr9}
+\lastpagebutton{vr9}{\bf SIDE 19/33/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.2]{media/vr.png}\\
@@ -742,7 +742,7 @@ Er du enig i at hvis vi kjenner $a$ og $P$, så kan vi beregne planetmassen? (hu
 
 \begin{frame}
 \label{vr10b}
-\lastpagebutton{vr10}
+\lastpagebutton{vr10}{\bf SIDE 20/33/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 Stemmer, hvis du går tilbake til del 1B så vil du se at perioden $P$ er felles for alle banebevegelsene, både objektenes bane omkring massesenteret og det ene objektets bane omkring det andre. Vi kan altså lese av perioden til stjernebanen fra Dopplereffekten! Da mangler vi bare $a$ som, husker vi fra 1B, er store halvakse til ...\\\hspace*{0.5cm}
@@ -755,7 +755,7 @@ Stemmer, hvis du går tilbake til del 1B så vil du se at perioden $P$ er felles
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilbane}
-\lastpagebutton{vr10b}
+\lastpagebutton{vr10b}{\bf SIDE 21/33/47}\\
 \textcolor{white}{Det var nok ikke helt riktig! $a$ i Keplers lov er {\bf ikke} store halvakse til noen av objektenes bane omkring massesenteret. Anbefaler sterkt at du NÅ går tilbake til 1B og repeterer, det er svært viktig at du har forskjellene/sammenhengene i baneparametere mellom de forskjellige banene klart for deg! }
 \end{frame}
 }
@@ -764,7 +764,7 @@ Stemmer, hvis du går tilbake til del 1B så vil du se at perioden $P$ er felles
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigbane}
-\clastpagebutton{vr10b}
+\clastpagebutton{vr10b}{\bf SIDE 22/33/47}\\
 HELT RIKTIG!\\
 Dette er store halvakse i planetens bane omkring stjerna (som ved symmetri jo er nøyaktig den samme som stjernas bane omkring planeten) siden vi utledet denne når vi hadde origo i det ene legemet med poisjonsvektoren $\vec{r}$ som pekte fra det ene legemet til det andre. {\bf For å være helt korrekt, siden vi nå kun ser på sirkelbaner, så er $a$ da faktisk radiusen i sirkelbanen.} Vi ser nå at når vi kjenner $P$ i Keplers lov og mangler kun $a$ for å kunne estimere planetmassen! Men vi har ingen enkel måte å finne $a$ på. Men nå som vi kjenner $P$, {\bf kan du tenkte deg en måte vi kan få inn den konstante banehastigheten $v$ til planeten i forhold til stjerna isteden for $a$?}
 Tenk deg godt om før du går til... \hyperlink{vr11}{\pagebutton{... neste side}}
@@ -776,7 +776,7 @@ Tenk deg godt om før du går til... \hyperlink{vr11}{\pagebutton{... neste side
 
 \begin{frame}
 \label{vr11}
-\lastpagebutton{riktigbane}
+\lastpagebutton{riktigbane}{\bf SIDE 23/33/47}\\
 \addtocounter{pageno}{-1}
 Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\\hyperlink{vr11_b}{\pagebutton{...trykk her når du har svaret...}}\\
 \textcolor{white}{
@@ -791,9 +791,9 @@ Merk at siden $a$ er radien i banen til planeten om stjerna (eller omvendt), så
 
 \begin{frame}
 \label{vr11_b}
-\lastpagebutton{riktigbane}
+\lastpagebutton{riktigbane}{\bf SIDE 23/33/47}\\
 \addtocounter{pageno}{-1}
-Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\\pagebutton{...trykk her når du har svaret...}\\
+Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\\pagebuttonolink{...trykk her når du har svaret...}\\
 Siden banehastigheten er konstant (pga. sirkelbane), så må vel
 \[
 v=\frac{2\pi a}{P}
@@ -806,7 +806,7 @@ Merk at siden $a$ er radien i banen til planeten om stjerna (eller omvendt), så
 
 \begin{frame}
 \label{vr11b}
-\dlastpagebutton{vr11}
+\dlastpagebutton{vr11}{\bf SIDE 24/33/47}\\
 \addtocounter{pageno}{-1}
 {\small
 Men hvordan hjelper dette oss? Vi ønsker å få inne kjent størrelser i Keplers lov slik at vi kan estimere planetmassen. Vi ble kvitt $a$, men vi kjenner jo heller ikke $v$, gjør vi? Kan du nå klare å skrive om Keplers lov fra
@@ -828,7 +828,7 @@ der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehas
 
 \begin{frame}
 \label{vr11b_b}
-\lastpagebutton{vr11}
+\lastpagebutton{vr11}{\bf SIDE 24/33/47}\\
 \addtocounter{pageno}{-1}
 {\small
 Men hvordan hjelper dette oss? Vi ønsker å få inne kjent størrelser i Keplers lov slik at vi kan estimere planetmassen. Vi ble kvitt $a$, men vi kjenner jo heller ikke $v$, gjør vi? Kan du nå klare å skrive om Keplers lov fra
@@ -839,7 +839,7 @@ til
 \[
 m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
 \]
-der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehastighet omkring massesenteret og $v_p$ er planetens banehastighet om massesenteret. Når du har regnet litt og tenkt litt, ... {\pagebutton{... trykk her}}\\
+der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehastighet omkring massesenteret og $v_p$ er planetens banehastighet om massesenteret. Når du har regnet litt og tenkt litt, ... {\pagebuttonolink{... trykk her}}\\
 {\bf Hvis du fikk dette til og forstår hvordan det blir slik, gå videre til ...}
 \hyperlink{vr12}{\pagebutton{... neste side,}}
 \textcolor{red}{\bf hvis ikke ta en titt på forklaringene i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_1.mp4}{denne videoen} først}
@@ -849,7 +849,7 @@ der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehas
 \begin{frame}
 \label{vr12}
 \addtocounter{pageno}{1}
-\lastpagebutton{vr11b}
+\lastpagebutton{vr11b}{\bf SIDE 25/33/47}\\
 Men hvilken hastighet er det egentlig du måler når du observerer stjernas Dopplereffekt???\\
 \includegraphics[scale=0.32]{media/vr.png}\\
 Er det...
@@ -861,7 +861,7 @@ Er det...
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilv}
-\lastpagebutton{vr12}
+\lastpagebutton{vr12}{\bf SIDE 26/33/47}\\
 \textcolor{white}{Det var nok ikke helt riktig! Anbefaler sterkt at du NÅ går tilbake til 1B og repeterer, det er svært viktig at du har forskjellene/sammenhengene i baneparametere mellom de forskjellige banene klart for deg! $v_*$ er stjernas banehastighet om massesenteret, $v_p$ er planetens banehastighet om massesenteret og $v$ er planetens hastighet om stjerna (eller omvendt), som vi kan skrive (se videoen på forrige side) som $v=v_*+v_p$. Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.}
 \hyperlink{vr13}{\pagebutton{Neste side}}
 \end{frame}
@@ -871,9 +871,9 @@ Er det...
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigv}
-\clastpagebutton{vr12}
-HELT RIKTIG!
-Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.\\
+\clastpagebutton{vr12}{\bf SIDE 27/33/47}\\
+\htmlcom{large}{HELT RIKTIG!
+Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.}\\
  \hyperlink{vr13}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -881,7 +881,7 @@ Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bev
 
 \begin{frame}
 \label{vr13}
-\lastpagebutton{vr12}
+\lastpagebutton{vr12}{\bf SIDE 28/33/47}\\
 \addtocounter{pageno}{-1}
 Men {\bf nøyaktig hvordan} leser du nå av hastigheten $v_*$ fra kurven i figuren? Dvs. hvor på plottet bør du lese av for å få $v_*$?
 \includegraphics[scale=0.32]{media/vr.png}\\
@@ -891,7 +891,7 @@ Tenk deg godt om, og hvis du ikke ser det, så ta en titt på forklaringen i \hr
 
 \begin{frame}
 \label{mp1}
-\dlastpagebutton{vr13}
+\dlastpagebutton{vr13}{\bf SIDE 29/33/47}\\
 \addtocounter{pageno}{-1}
 Men vi hadde jo at
 \[
@@ -910,13 +910,13 @@ m_p+m_*=\frac{P}{2\pi G}v_p^3
 
 \begin{frame}
 \label{mp1_b}
-\lastpagebutton{vr13}
+\lastpagebutton{vr13}{\bf SIDE 29/33/47}\\
 Men vi hadde jo at
 \[
 m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
 \]
 der vi trenger summen av $v_*$ og $v_p$, mens det eneste vi leser av er $v_*$. Men hvilken må være er størst, $v_*$ eller $v_p$? Bruk kun fysisk resonnement uten matematikk.
-{\pagebutton{Trykk her når du har svaret!}}\\
+{\pagebuttonolink{Trykk her når du har svaret!}}\\
 Nettopp, fra Newtons 3.lov vet vi at kraften på begge legemer er lik, men fra Newtons annen lov vet vi at det mest minst massive objektet får størst akselrasjon og dermed må ha størst hastighet. Siden stjerna er {\bf mye} mer massiv enn planeten så må $v_p\gg v_*$, og dermed kan vi si at $v_*+v_p\approx v_p$ og vi har:
 \[
 m_p+m_*=\frac{P}{2\pi G}v_p^3
@@ -928,7 +928,7 @@ m_p+m_*=\frac{P}{2\pi G}v_p^3
 
 \begin{frame}
 \label{mp2}
-\lastpagebutton{mp1}
+\lastpagebutton{mp1}{\bf SIDE 30/33/47}\\
 Eller kanskje ikke?? Nå trenger du kanskje å kikke tilbake til slutten av del 1B for å finne to likninger som gir en sammenheng mellom $\vec{r}$ og $\vec{r}_p$ og mellom $\vec{r}$ og $\vec{r}_*$. Ser du hvilke likninger det er snakk om? Ta den tidsderiverte av begge likningene slik at du får inn hastighetsvektorene istedenfor poisjonsvektorene. Ta så absoluttverdien av begge likningene og del likningene på hverandre. Kommer du da frem til
 \begin{block}{\bf den viktige sammenhengen...}
 \[
@@ -941,7 +941,7 @@ Hvis du ikke ser det, kikke igjen tilbake til 1B, dette er samtidig en viktig re
 
 \begin{frame}
 \label{mp3}
-\lastpagebutton{mp2}
+\lastpagebutton{mp2}{\bf SIDE 31/33/47}\\
 Bruk sammenhengen sammen med Keplers lov til å vise at:
 \[
 m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}v_*
@@ -952,7 +952,7 @@ der vi har brukt en antakelse om massene $m_*$ og $m_p$. Du trenger litt regning
 
 \begin{frame}
 \label{mp4}
-\lastpagebutton{mp3}
+\lastpagebutton{mp3}{\bf SIDE 32/33/47}\\
 Hvis du sliter med å få det til, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_3.mp4}{denne videoen}.
 \[
 m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}v_*
@@ -965,8 +965,8 @@ Dermed har vi jo faktisk et uttrykk for massen til planeten, gitt ved stjernemas
 \setbeamercolor{background canvas}{bg=red}
 \begin{frame}
 \label{red_mp5}
-\lastpagebutton{mp4} 
-\textcolor{yellow}{\Huge\bf Eller kan vi nå egentlig alltid det??????}
+\lastpagebutton{mp4}{\bf SIDE 33/33/47}\\
+\textcolor{yellow}{\Huge\bf \htmlcom{large}{Eller kan vi nå egentlig alltid det??????}}
 \hyperlink{pause}{\pagebutton{Neste side}}
 \end{frame}
 }
@@ -978,12 +978,12 @@ Dermed har vi jo faktisk et uttrykk for massen til planeten, gitt ved stjernemas
 \label{pause}
 \hyperlink{red_mp5}{\pagebutton{\small Forrige side}}
 {\Huge
-\centerline{TID FOR KAFFEPAUSE!!!}
+\centerline{\htmlcom{huge}{TID FOR KAFFEPAUSE!!!}}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 
-Ut å strekke på bena. Inn med litt koffein...\\
+{\htmlcom{large}{Ut å strekke på bena. Inn med litt koffein...}}\\
 \vspace*{0.5cm}
-Ihvertfall 10 min...
+{\htmlcom{large}{Ihvertfall 10 min...}
 }\\
 \vspace*{0.5cm}
 \hyperlink{blue_nytema3}{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
@@ -1004,13 +1004,13 @@ Ihvertfall 10 min...
 
 \begin{frame}
 \label{mp6}
-\lastpagebutton{red_mp5}\label{inklinasjon}
+\lastpagebutton{red_mp5}\label{inklinasjon}{\bf SIDE 34/39/47}\\
 Vi har så langt antatt at stjernas baneplan ligger langs med synsretningen vår slik at hele synslinja (som går fra observatøren og gjennom et av legemene) ligger i baneplanet som stjernas bane utspenner. Det er normalt {\bf ikke} tilfelle:
 \begin{columns}
 \column{0.6\textwidth}
 \includegraphics[scale=0.6]{media/inklinasjon.png}\\
 \column{0.4\textwidth}
-I figuren har vi definert 
+I figuren har vi definert
 \begin{block}{\bf inklinasjonen}
 \textcolor{yellow}{som er vinkelen $i$ mellom {\bf normalen} til baneplanet og synslinja!}
 \end{block}
@@ -1022,7 +1022,7 @@ Men da må vi endre formelen vår slik at vi får inn inklinasjonen $i$! Hvordan
 
 \begin{frame}
 \label{mp7}
-\lastpagebutton{mp6}
+\lastpagebutton{mp6}{\bf SIDE 35/39/47}\\
 Du bør ha kommet frem til at
 \[
 m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
@@ -1038,15 +1038,15 @@ Tenk deg nøye om (1 min) for å se om du kan finne noen ideer!
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feil_mp8}
-\lastpagebutton{mp7}
-\textcolor{white}{Dårlige nyheter: Det finnes ingen kjente måter å finne inklinasjonsvinkelen på! Kun når inklinasjonsvinkelen er nær $90^\circ$ grader, så kan vi i noen tilfeller vite om det. Kan du tenke deg hvordan? }
+\lastpagebutton{mp7}{\bf SIDE 36/39/47}\\
+\textcolor{white}{\htmlcom{large}{Dårlige nyheter: Det finnes ingen kjente måter å finne inklinasjonsvinkelen på! Kun når inklinasjonsvinkelen er nær $90^\circ$ grader, så kan vi i noen tilfeller vite om det. Kan du tenke deg hvordan? }}
 \hyperlink{mp9}{\pagebutton{Neste side}}
 \end{frame}
 }
 
 \begin{frame}
 \label{mp9}
-\lastpagebutton{feil_mp8}
+\lastpagebutton{feil_mp8}{\bf SIDE 37/39/47}\\
 \addtocounter{pageno}{-1}
 Hvis inklinasjonsvinkelen er $90^\circ$ så ligger synslinjen i baneplanet og da går planeten foran stjernen og formørker den med jevne mellomrom. Men det forutsetter at planeten er stor nok til å skape en synlig formørkelse av stjerna. Ser vi en slik formørkelse så vet vi at $i=90^\circ$. Men hvis vi ikke ser en slik formørkelse, kan vi likevel si noe om planetens masse?\\
 \hyperlink{mp9_b}{\pagebutton{Trykk her når du har tenkt litt på det}}\\
@@ -1061,10 +1061,10 @@ så ser vi da at hvis vi setter inn $i=90^\circ$ i uttrykket så vil massen $m_p
 
 \begin{frame}
 \label{mp9_b}
-\lastpagebutton{feil_mp8}
+\lastpagebutton{feil_mp8}{\bf SIDE 37/39/47}\\
 \addtocounter{pageno}{-1}
 Hvis inklinasjonsvinkelen er $90^\circ$ så ligger synslinjen i baneplanet og da går planeten foran stjernen og formørker den med jevne mellomrom. Men det forutsetter at planeten er stor nok til å skape en synlig formørkelse av stjerna. Ser vi en slik formørkelse så vet vi at $i=90^\circ$. Men hvis vi ikke ser en slik formørkelse, kan vi likevel si noe om planetens masse?\\
-{\pagebutton{Trykk her når du har tenkt litt på det}}\\
+{\pagebuttonolink{Trykk her når du har tenkt litt på det}}\\
 
 Vi vet at $\sin{i}$ ikke kan være større enn 1. Hvis vi kikker på uttrykket:
 \[
@@ -1078,7 +1078,7 @@ så ser vi da at hvis vi setter inn $i=90^\circ$ i uttrykket så vil massen $m_p
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilmm}
-\dlastpagebutton{mp9}
+\dlastpagebutton{mp9}{\bf SIDE 38/39/47}\\
 \textcolor{white}{Det ble nok galt.
 \[
 m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
@@ -1093,7 +1093,7 @@ hvis $\sin{i}$ faktisk er mindre enn 1, selv om vi setter den til 1, så betyr d
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigmm}
-\clastpagebutton{mp9}
+\clastpagebutton{mp9}{\bf SIDE 39/39/47}\\
 HELT RIKTIG!
 \[
 m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
@@ -1119,7 +1119,7 @@ hvis $\sin{i}$ faktisk er mindre enn 1, selv om vi setter den til 1, så betyr d
 
 \begin{frame}
 \label{mp10}
-\lastpagebutton{mp9}\label{formorkelser}
+\lastpagebutton{mp9}\label{formorkelser}{\bf SIDE 40/47/47}\\
 Hvis vi ser formørkelser så vet vi at $\sin{i}=1$ og dermed vet vi massen:
 \[
 m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}v_*
@@ -1129,14 +1129,14 @@ Men hvis $i=90^\circ$, så får vi også en bonus. Vi kan nemlig i noen tilfelle
 \column{0.6\textwidth}
 \includegraphics[scale=0.5]{media/eclipse.png}\\
 \column{0.4\textwidth}
-På figuren ser vi en typisk lyskurve (den hopper opp og ned på grunn av støy). Vi ser hvordan lysstyrken synker og øker igjen når planetskiva går foran stjerneskiva. Lysstyrken er normalisert til 1 når det ikke er formørkelse. 
+På figuren ser vi en typisk lyskurve (den hopper opp og ned på grunn av støy). Vi ser hvordan lysstyrken synker og øker igjen når planetskiva går foran stjerneskiva. Lysstyrken er normalisert til 1 når det ikke er formørkelse.
 \end{columns}
 {\bf Kan du tenke deg hvorfor kurven har denne formen?} \hyperlink{mp11}{\pagebutton{Neste side}}
 \end{frame}
 
 \begin{frame}
 \label{mp11}
-\lastpagebutton{mp10}
+\lastpagebutton{mp10}{\bf SIDE 41/47/47}\\
 På figuren under ser du hvordan planetskiven steg for steg kommer foran stjerneskiven og formørker.
 \begin{columns}
 \column{0.6\textwidth}
@@ -1159,7 +1159,7 @@ hvor $R_p$ er planetradiusen og $v_p$ er planetens hastighet. Hvilke tider $t_a$
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 \label{feilt}
-\lastpagebutton{mp11}
+\lastpagebutton{mp11}{\bf SIDE 42/47/47}\\
 \textcolor{white}{Det ble galt. Prøv å tenke gjennom situasjonen en gang til. Husk at planeten beveger seg en avstand $2R_p$ fra den først treffer stjerneskiva til den har kommet helt inn på stjerneskiva. Gå tilbake og gjør et nytt forsøk. Hvis du enda ikke ser det og har kommet hit for 2.gang, se forklaringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_5.mp4}{denne videoen}. Ta gjerne også en kikk på \href{http://www.pitt.edu/~stepup/Images/transit.gif}{denne animasjonen}.}
 \end{frame}
 }
@@ -1168,7 +1168,7 @@ hvor $R_p$ er planetradiusen og $v_p$ er planetens hastighet. Hvilke tider $t_a$
 \setbeamercolor{background canvas}{bg=yellow}
 \begin{frame}
 \label{riktigt}
-\clastpagebutton{mp11}
+\clastpagebutton{mp11}{\bf SIDE 43/47/47}\\
 KORREKT! Paneten beveger seg en avstand $2R_p$ fra den først treffer stjerneskiva til den har kommet helt inn på stjerneskiva. Når den først treffer stjerneskiva er der kurven begynner å gå nedover ($t_0$). Når den har kommet helt inn på stjerneskiva ($t_1$) så blir ikke stjernen mer formørket og kurven er flat helt til planeten begynner å gå ut av stjerneskiva. Planeten har altså beveget seg en avstand $2R_p$ fra tiden $t_0$ til tiden $t_1$. Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_5.mp4}{denne videoen} hvis du er usikker.  Ta gjerne også en kikk på \href{http://www.pitt.edu/~stepup/Images/transit.gif}{denne animasjonen}.
  \hyperlink{mp12}{\pagebutton{Neste side}}
 \end{frame}
@@ -1177,7 +1177,7 @@ KORREKT! Paneten beveger seg en avstand $2R_p$ fra den først treffer stjerneski
 
 \begin{frame}
 \label{mp12}
-\lastpagebutton{riktigt}
+\lastpagebutton{riktigt}{\bf SIDE 44/47/47}\\
 \begin{columns}
 \column{0.5\textwidth}
 \includegraphics[scale=0.4]{media/eclipse2.png}\\
@@ -1190,7 +1190,7 @@ Planeten beveger seg da en strekning $2R_p$ i løpet av tiden $t_1-t_0$ med hast
 
 \begin{frame}
 \label{mp12b}
-\lastpagebutton{riktigt}
+\lastpagebutton{riktigt}{\bf SIDE 45/47/47}\\
 \addtocounter{pageno}{-1}
 \begin{columns}
 \column{0.5\textwidth}
@@ -1210,12 +1210,12 @@ Vi ser altså at hvis dataene er gode nok til å skjelne punktet fra formørkels
 
 \begin{frame}
 \label{mp12b_b}
-\lastpagebutton{riktigt}
+\lastpagebutton{riktigt}{\bf SIDE 45/47/47}\\
 \addtocounter{pageno}{-1}
 \begin{columns}
 \column{0.5\textwidth}
 Hastigheten $v_p$ er i forhold til massesenteret. Det viser seg å være en god tilnærmelse, men kan du se hva vi egentlig skulle brukt?\\
-{\pagebutton{Trykk her når du har tenkt}}\\
+{\pagebuttonolink{Trykk her når du har tenkt}}\\
 Siden vi ser på planetens hastighet {\bf i forhold til stjerneskiven} (stjerna beveger seg jo også i forhold til massesenteret) så må vi bruke hastigheten $v=v_*+v_p$, men siden $v_*\ll v_p$ så er det en god tilnærmelse å bruke $v_p$.\\
 \column{0.5\textwidth}
 {\bf Vi oppsumerer:}\\
@@ -1230,7 +1230,7 @@ Siden vi ser på planetens hastighet {\bf i forhold til stjerneskiven} (stjerna 
 
 \begin{frame}
 \label{mp13}
-\dlastpagebutton{mp12}
+\dlastpagebutton{mp12}{\bf SIDE 46/47/47}\\
 \begin{block}{\bf Hva med planetens tetthet?}
 \small \textcolor{yellow}{Hvis du har både masse og radius til planeten, kan du også finne tetthet}
 \[
@@ -1247,7 +1247,7 @@ Planeter med tetthet omkring 0.7 - 1.7 ganger tettheten til vann (ca. 1000 kg/m$
 
 \begin{frame}
 \label{oppsummering0}
-\lastpagebutton{mp13}
+\lastpagebutton{mp13}{\bf SIDE 47/47/47}\\
 \begin{block}{Hvor mange planeter har så blitt oppdaget med disse metodene?}
  \small \textcolor{yellow}{Normalt omtaler man et planetoppdagelse som bekreftet hvis den er observet med minst to forskjellige metoder som f.eks. både radialhastighetsmetoden og formørkelsesmetoden. For en oversikt over hvor mange planeter som har blitt oppdaget, så ta en titt \href{http://exoplanet.eu/diagrams/}{her}. Du kan f.eks. sette planetmasse på x-aksen og omløpstid på y-aksen. Hvor mange ekstrasolar planeter med omkring jordas masse og med omløpstid omkring 1 år har blitt oppdaget? (ved å trykke på aksetekstene kan du endre enheter til jordmasse og år). Øverst kan du endre å ta med planeter som her blitt enten oppdaget med en metode (planetkandidat) eller som er bekreftet. Nederst på siden kan du lese av hvor mange det er.}
 \end{block}
@@ -1278,9 +1278,1031 @@ Da er du ferdig med første forelesning i del 1C. Vi har til nå sett på ideele
 \label{oppsummering2}
 \hyperlink{oppsummering}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
 \Large
-Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk.
+\htmlcom{large}{Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk.}
 \end{frame}
 
 
 
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 1C\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{yellow}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part1c.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Vinkeloppløsning}}
+\item {\headlinebutton{Radiell-hastighetsmetoden}}
+\item {\headlinebutton{Radiell-hastighetsmetoden: utledningen}}
+\item {\headlinebutton{Inklinasjon}}
+\item {\headlinebutton{Formørkelser}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+%%%%% intro
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+{\pagebutton{Forrige side}}\\
+\vspace{1cm}
+\includegraphics[scale=0.22]{media/extrasolarplanets.png}\\
+\column{0.5\textwidth}
+\small Velkommen til del 1C! Dette forelesningsnotatet tilsvarer omtrent en fysisk dobbelttime forelesning, kanskje bittelitt mer. I denne delen skal vi ta det du har lært om celestmekanikk litt videre. Vi skal bruke det du kan om planetbaner til å se på planeter i bane rundt fjerne stjerner. Vi skal se hvordan du kan observere disse planetene indirekte gjennom å se på stjernen. Her skal vi bruke litt av statistikken fra del 1A til å finne ut hvordan analysere data med støy (og ekte data har alltid støy). \\{\bf Er du klar?}\\\vspace*{1cm}{\pagebutton{Neste side}}
+%\movie[autostart]{testmovie}{launch.gif}%bate2.mpg
+\end{columns}
+}
+
+
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+%{\pagebutton{Forrige side}}\ \ \ \ \ \nextpage \\
+\hyperlink{intro2}{\pagebutton{\bf SIDE 1/1/47}}
+\includegraphics[scale=0.4]{media/1c4_1.png}\\
+\includegraphics[scale=0.4]{media/1c4_2.png}\\
+Innleveringsppgave 1C4 går ut på å bruke stjerneobservasjoner (som i figurene) til å finne ut av planetens egenskaper.
+\column{0.5\textwidth}
+
+Bl.a. kan du finne størrelse, masse og sammensetningen av en planet i bane rundt en fjern stjerne, uten å noengang se planeten direkte. Til dette trenger vi å bruke en del av det som du lærte i de forrige forelesningene samt at du trenger å lære litt om analyse av data. Men før vi setter igang så skal vi varme opp litt med å fort sjekke at vi har kunnskapen fra del 1A og 1B på plass, samt se hva du allerede kan om temaene i del 1C.
+\href{https://nettskjema.no/a/155568}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/155568}{\choicebutton{Nei}}\ \ \ \ {\choicebutton{Ja}}\\
+\end{columns}
+}
+
+\renewcommand{\headline}{Vinkeloppløsning}
+
+
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{radhast}
+{\pagebutton{Sett igang med nytt tema!}}
+}
+}
+
+
+{
+
+\hyperlink{litenvinkel1}{\pagebutton{\bf SIDE 2/8/47}}
+\includegraphics[scale=0.4]{media/angular_distance.png}\\
+{\small
+I figuren ser du en observatør som kikker på en stjerne og en planet (observatøren ser faktisk ut til å ha funnet et stjerne-planet system som likner på sola og jorda). Avstanden til systemet er $r$ og avstanden mellom stjerne og planet er $\Delta r$. Vinkelen mellom de to objektene er $\theta$. I dette emnet skal vi ofte bruke liten-vinkel-formelen:
+\[
+\Delta r\approx r\theta
+\]
+der $\theta$ må være i radianer! Dette er en svært god tilnærming for store avstander $r$ og små vinkler $\theta$ noe vi nesten alltid har i astrofysikken. Denne sammenhengen bør du lære deg med en gang og huske, eller alternativt, hvis du kan utlede den så er det veldig fort gjort å komme frem til den uten å måtte pugge. Kan du se hvordan den kan utledes? (tenk i maks 1 min)
+}
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{litenvinkel2}{\pagebutton{\bf SIDE 3/8/47}}
+\includegraphics[scale=0.4]{media/angular_distance.png}\\
+Altså
+\[
+\Delta r\approx r\theta
+\]
+Har du innsett hvordan formelen utledes? Hvis ikke, her er et par {\bf hint:}\\
+\begin{itemize}
+\item Kan du lage noe som er tilnærmet en rettvinklet trekant her? (dette er en mulig måte å tenke på)
+\item Avstanden $\Delta r$ er veldig liten (dette er en annen mulig måte å tenke på)
+\item Vinkelen $\theta$ er veldig liten!
+\item Hva kan man gjøre når man skal gjøre tilnærminger med veldig små størrelser?
+\end{itemize}
+{\small Bruk den nye informasjonen til å tenke i 1 min til før du... }{\pagebutton{\small ...trykker her}}
+}
+
+
+
+{
+
+\hyperlink{litenvinkel3}{\pagebutton{\bf SIDE 4/8/47}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.25]{media/angular_distance.png}\\
+Hvis $\theta$ er veldig liten, så har trekanten tilnærmet $90^\circ$ på begge de gjenværende vinklene. Da kan vi anta at en av dem er nøyaktig $90^\circ$ og at vi dermed har en rettvinkelt trekant. Hvis $\theta$ er liten kan vi også anta at begge de andre sidene har lengden $r$. Da har vi:
+\[
+\Delta r = r\sin{\theta}\approx r\theta
+\]
+fordi rekkeutviklingen i $\theta$ er $\sin{\theta}\approx \theta - \frac{1}{6}\theta^3+O(\theta^5)$. Til første orden blir det kun $\theta$.\\
+\column{0.5\textwidth}
+\includegraphics[scale = 0.3]{media/tangential_vel.png}\\
+En annen måte å tenke på er den samme vi brukte for å finne tangensialhastighet i 1B. Buen $\Delta s$ og avstanden $\Delta r$ blir omtrent den samme når denne avstanden er veldig liten (en bitteliten del av av bue blir omtrent som en rett lite linjestykke):
+\[
+\Delta r\approx\Delta s = r\theta
+\]
+Hvis du ikke husker resonnementet fra 1B, ta gjerne en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/1b/videoer/video1b_3.mp4}{denne videoen} igjen.
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{feil_litenvinkel4}{\pagebutton{\bf SIDE 5/8/47}}
+\hspace*{1cm}\includegraphics[scale=0.23]{media/resolution.png}\\
+\textcolor{white}{Når et teleskop observerer et objekt på himmelen, blir dette objektet 'smørt utover' pga. optikken samt forstyrrelser i atmosfæren. Dette gjør at et veldig lite punkt blir til en stor skive (se bildet). Når to objekter kommer for nær hverandre, vil de til slutt se ut som et enkelt objekt.}
+\column{0.5\textwidth}
+
+\textcolor{white}{ {\it Oppløsningsevnen} til et teleskop avgjør hvor nær objektene kan være før man ikke lenger kan skille de fra hverandre som to separate objekter.} \textcolor{red}{Vinkeloppløsningen (angular resolution) angies som den minste vinkelen som disse objektene kan være fra hverandre for å kunne skille de. Vinkelen det snakkes om her er vinkelen $\theta$ på de foregåede sidene.} \textcolor{blue}{Når astronomer jobber med bilder av stjernehimmelen så er det vanlig å betegne avstanden mellom to objekter på bildet med angulæravstanden som igjen er den samme vinkelen definert i figuren på de foregående sidene.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+}
+
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_litenvinkel5}{\pagebutton{\bf SIDE 6/8/47}}
+\begin{columns}
+\column{0.5\textwidth}
+\hspace*{1cm}\includegraphics[scale=0.2]{media/resolution.png}\\
+\textcolor{white}{\small Fra bakken er det en grensen for den beste mulige oppløsningsevnen ved perfekte værforhold (minimal fuktighet i lufta) på $\theta=0.4''$. Vinkler i astronomien blir ofte regnet i bueminutter $'$ ($\frac{1}{60}$ grad) og buesekunder $''$ ($\frac{1}{60}$ bueminutt). Kan du se hvordan vi kan regne om fre bueminutter og buesekunder til grader og radier?}
+\column{0.5\textwidth}
+\textcolor{white}{\small  Gjør deg trygg på dette med en gang, {\bf du kommer til å få mye bruk for dette i hele resten av kurset!}. Grunnen til denne grensen på $0.4''$ kommer av atmosfæriske forstyrrelser. For bedre oppløsning kan man bruke {\it romteleskop} som Hubble Space Telescope (HST) med en oppløsningsevne på rundt $0.1''$. Fra bakken finnes det nå også tekniske løsninger for å overkomme grensen på $0.4''$. Ved å bruke {\it adaptiv optikk}, les \href{https://snl.no/adaptiv_optikk}{mer her i Store Norske Leksikon}, med en laserstråle for å modellere de atmosfæriske forstyrrelsene og på den måten deformerer man speilet i teleskopet til å korrigere for dette. Dermed kan man ved gode værforhold konkurrere med HST i oppløsningsevne også fra bakken.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+}
+
+
+{
+
+\hyperlink{litenvinkel6}{\pagebutton{\bf SIDE 7/8/47}}
+\includegraphics[scale=0.4]{media/angular_distance.png}\\
+Anta at stjerna i figuren er Sirius i en avstand av 8.6 ly (light year = lysår, avstanden lyset tilbakelegger i løpet av et år). Hvis Sirius hadde en planet i bane rundt seg. Hva er den minste avstanden $\Delta r$ (på bildet) denne planeten kunne hatt fra Sirius for at man skulle kunne skille planeten fra stjerna i et teleskop fra bakken med oppløsning $0.4''$? ({\bf hint:} liten-vinkel-formel). Angi svaret i astronomiske enheter (AU). Og hva hvis man brukte HST med oppløsningsevne $0.1''$ isteden?\\
+Ikke gå videre før du har regnet ut svaret og har tenkt litt gjennom hva svaret betyr. Merk at Sirius er en av våre aller nærmeste stjerner, de fleste er lenger unna. Kan du nå forklare hvorfor så få ekstrasolare planeter har blitt avbildet?
+{\pagebutton{Neste side}}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+\hyperlink{red_litenvinkel6b}{\pagebutton{\bf SIDE 8/8/47}}
+{\Huge\centerline{\htmlcom{large}{Hva fikk du??}}}
+\centerline{\bf Ble avstanden større eller mindre enn 1 AU? (avstanden sol-jord)}
+\vspace*{0.5cm}
+Ville du kunne avbilde en planet i avstand 1AU fra en av våre nærmeste stjerner? Hva med en planet i samme avstand som Jupiter i vårt solsystem?\\
+Hvis du sliter med å få dette til spør på \forumbutton
+\vspace*{2cm}
+{\pagebutton{Ikke gå videre før du har svaret!}}
+}
+}
+
+\renewcommand{\headline}{Radiell-hastighetsmetoden}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{inklinasjon}
+{\pagebutton{En liten strekk på bena før du trykker her kanskje?}}\\
+\textcolor{yellow}{Nå kommer et laaaangt avsnitt. Etter at du er ferdig med dette temaet er det kaffepause! Men vi tar en liten pause underveis også.}
+}
+}
+
+{
+
+\hyperlink{vr1}{\pagebutton{\bf SIDE 9/33/47}}
+Hvis du ikke helt fikk grepet på spørsmålene på forrige side, {\bf spør gruppelærer eller foreleser!}.\\
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.2]{media/spectrum.png}\\
+I figuren ser du spektret av synlig lys. Helt til venstre er rød med bølgelgenden fra $\lambda=600$nm til fiolett på høyreside ned til bølgelende $\lambda=450$nm. (merk størst $\lambda$ til venstre)
+\column{0.5\textwidth}
+Vi ser spektret tatt av en stjerne over 6 dager. Den mørke linjen er en absorpsjonsline, lys som blir tatt opp i atmosfæren til stjernen selv. Vi ser at posisjonen til absorpsjonslinjen endrer seg fra rød til oransje og tilbake mot rød. Dvs. bølgelengden som absorpsjonsliner er på endrer seg.\\
+Det at spektrallinjen går frem og tilbake ($\lambda$ for linjen blir større og mindre) med tiden er et typisk tegn på at stjerna har en planet i bane rundt seg. {\bf Kan du tenke deg hvorfor det er slik?}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{vr2}{\pagebutton{\bf SIDE 10/33/47}}
+\begin{columns}
+\column{0.5\textwidth}
+{\bf Du får ikke helt svaret enda. Her kommer litt mer info:}\\
+\includegraphics[scale=0.3]{media/halpha_sinus.png}\\
+Her ser vi bølgelengden til absorpsjonslinja $H\alpha$, en typisk linje for hydrogenatomet, målt fra en stjerne. \textcolor{red}{I laboratoriet så måler man bølgelengden til $H\alpha$ til å være 656.28nm.}
+\column{0.5\textwidth}
+\textcolor{blue}{Men i spektret fra denne stjernen så endrer bølgelengden for spektrallinjen seg frem og tilbake slik som vi så på forrige side slik at den ikke er på nøyktig 656.28nm som i laboratoriet.} X-aksen i figuren viser tidspunktet for observasjon, y-aksen viser avviket i bølgelengde fra 656.28nm. Vi ser at den er veldig nær 656.28nm, men ikke helt på, {\bf den har små avvik frem og tilbake som følger en sinus-kurve.} Hjelper dette deg med å forstå hvorfor denne stjerna kan ha en planet i bane rundt seg? Tenk deg nøye om før du går til neste side! {\bf Hint:} Hva kan få bølgelengden til lys til å endre seg?
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{vr3}{\pagebutton{\bf SIDE 11/33/47}}
+\addtocounter{pageno}{-1}
+{\bf Et lite hint til før du går videre...}\\
+{\bf ... Dopplereffekten!}\\
+Husker du hva den går ut på???\\
+Husker du formelen for endring i bølgelengde pga. Dopplereffekten?{\pagebutton{Trykk her når du har tenkt...}}\\
+\textcolor{white}{
+Ganske riktig
+\[
+\frac{\Delta\lambda}{\lambda}=\frac{v}{c}
+\]
+Hvis du trenger en oppfrisking av Dopplereffekten, {se på denne linken fra SNL}.
+Formelen gir oss endringen $\Delta\lambda$ i bølgelengden for lys som opprinnelig har bølgelengde $\lambda$, når lyskilden har hastighet $v$. Lysfarten er gitt ved $c$. {\bf Lyset som blir sendt ut fra stjernen med bølgelengde $\lambda$, vil for oss ha bølgelengden $\lambda+\Delta\lambda$ hvis stjerna har hastigheten $v$ i forhold til oss.} \textcolor{white}{Det samme gjelder dermed for bølgelengden til spektrallinja.}
+{Neste side}}
+}
+
+{
+
+\hyperlink{vr3_b}{\pagebutton{\bf SIDE 11/33/47}}
+\addtocounter{pageno}{-1}
+{\bf Et lite hint til før du går videre...}\\
+{\bf ... Dopplereffekten!}\\
+Husker du hva den går ut på???\\
+Husker du formelen for endring i bølgelengde pga. Dopplereffekten?{Trykk her når du har tenkt...}\\
+Ganske riktig
+\[
+\frac{\Delta\lambda}{\lambda}=\frac{v}{c}
+\]
+Hvis du trenger en oppfrisking av Dopplereffekten, \href{https://snl.no/dopplereffekt}{se på denne linken fra SNL}.
+Formelen gir oss endringen $\Delta\lambda$ i bølgelengden for lys som opprinnelig har bølgelengde $\lambda$, når lyskilden har hastighet $v$. Lysfarten er gitt ved $c$. {\bf Lyset som blir sendt ut fra stjernen med bølgelengde $\lambda$, vil for oss ha bølgelengden $\lambda+\Delta\lambda$ hvis stjerna har hastigheten $v$ i forhold til oss.} \textcolor{red}{Det samme gjelder dermed for bølgelengden til spektrallinja.}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\hyperlink{vr4}{\pagebutton{\bf SIDE 12/33/47}}
+{\large\bf Nå ser du kanskje at denne endringen av bølgelengden til spektrallinja betyr at stjerna beveger seg i forhold til oss?}\\
+For å videre undersøke hvordan stjerna beveger seg, trenger vi å 'oversette' figuren med bølgelengdeendringer til stjernehastigheter. For å gjøre det må vi bli enige om en konvensjon som vi skal bruke i hele resten av dette kurset, så følg nøye med:
+\begin{alertblock}{\bf Fortegn på hastigheter}
+\textcolor{black}{Vi definerer observatøren til å være i {\bf origo}. Posisjonsvektoren til objektet går da fra observatøren til objektet.} \textcolor{red}{Hvis objektet beveger seg bort fra observatøren}, så blir posisjonsvektoren {\bf lengre}. Det betyr at $\Delta r$ er positiv, og dermed er \textcolor{red}{radialhastigheten} (hastighetskomponenten rett fra/mot origo (altså observatøren), dvs. \textcolor{red}{langs synsretningen} til observatøren) \textcolor{red}{positiv}. Hvis \textcolor{blue}{objektet kommer mot observatøren} så blir posisjonsvektoren, og da spesielt den radielle komponenten (\textcolor{blue}{langs synslinja}), kortere og vi har \textcolor{blue}{negativ hastighetskomponent}.
+\end{alertblock}
+Dette er svært viktig å ha klart for seg i hele resten av kurset, merk deg dette skikkelig nå!
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{vr5}{\pagebutton{\bf SIDE 13/33/47}}
+\addtocounter{pageno}{-1}
+{\large\bf Det er viktig at du gjør denne øvelsen:}\\
+\includegraphics[scale=0.28]{media/halpha_sinus.png}\\
+Ta et papir, tegn akser og bruk figuren samt Dopplerformelen til å tegn hastighetskurven til stjerna som funksjon av tiden. Altså tid på x-aksen og hastighetskomponent $v_r$ på y-aksen. Forresten hvorfor kun hastighetskomponenten $v_r$? {\pagebutton{Tenk før du trykker her}}\\
+\column{0.5\textwidth}
+\textcolor{white}{
+{\bf Dette er viktig:} Dopplereffekten oppstår kun fra radialkomponenten (komponenten langs synsretningen). Vi må derfor presisere Dopplerformelen:
+\[
+\frac{\Delta\lambda}{\lambda}=\frac{{v_r}}{c}
+\]
+der $v_r$ er radialkomponenten, hastighetskomponenten rett mot/fra observatøren. \textcolor{white}{Tangensialhastigheten (hastighet vinkelrett på synsretningen til observatøren) bidrar ikke til Dopplereffekt.} {\bf Da er alt klart til å tegne hastighetsplottet for $v_r$. Ikke gå videre før du har et omtrentlig plott!}
+{Neste side}}
+\end{columns}
+}
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{vr5_b}{\pagebutton{\bf SIDE 13/33/47}}
+\addtocounter{pageno}{-1}
+{\bf Dette er viktig:} Dopplereffekten oppstår kun fra radialkomponenten (komponenten langs synsretningen). Vi må derfor presisere Dopplerformelen:
+\[
+\frac{\Delta\lambda}{\lambda}=\frac{\textcolor{red}{v_r}}{c}
+\]
+der $v_r$ er radialkomponenten, hastighetskomponenten rett mot/fra observatøren. \textcolor{red}{Tangensialhastigheten (hastighet vinkelrett på synsretningen til observatøren) bidrar ikke til Dopplereffekt.} {\bf Da er alt klart til å tegne hastighetsplottet for $v_r$. Ikke gå videre før du har et omtrentlig plott! Vi repeterer hva oppgaven var:}
+\column{0.5\textwidth}
+{\large\bf Det er viktig at du gjør denne øvelsen:}\\
+\includegraphics[scale=0.28]{media/halpha_sinus.png}\\
+Ta et papir, tegn akser og bruk figuren samt Dopplerformelen til å tegn hastighetskurven til stjerna som funksjon av tiden. Altså tid på x-aksen og hastighetskomponent $v_r$ på y-aksen.
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{vr6}{\pagebutton{\bf SIDE 14/33/47}}
+\addtocounter{pageno}{-1}
+\begin{columns}
+\column{0.5\textwidth}
+Fikk du at også hastigheten er en sinuskurve? Kan du nå se for deg hvordan stjerna beveger seg? Og hvorfor? {\bf Det er viktig at du faktisk har laget teningen da vi skal bruke den videre!}\\
+{\pagebutton{Tenk før du trykker her}}\\
+\textcolor{white}{
+Vi lærte i del 1B at når en planet går i bane omkring en stjerne, så går jo både stjerna og planeten i bane omkring et felles massesenter. Hvis stjerna har en planet i bane rundt seg, så vil altså stjerna gå i bane om massesenteret med planeten. {\bf Vi skal i hele del 1C alltid anta sirkelbaner for å gjøre det lettere å regne.}}
+\column{0.5\textwidth}
+\textcolor{white}{
+De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane.
+Her har stjernas bane om massesenter(CM):}
+%\includegraphics[scale=0.38]{media/star_orbit.png}\\
+\vspace*{5cm}
+\textcolor{white}{Før du går videre: merk av punktene A, B, C og D i hastighetsplottet ditt!}
+\end{columns}
+}
+
+
+{
+
+\hyperlink{vr6_b}{\pagebutton{\bf SIDE 14/33/47}}
+\addtocounter{pageno}{-1}
+\begin{columns}
+\column{0.5\textwidth}
+Fikk du at også hastigheten er en sinuskurve? Kan du nå se for deg hvordan stjerna beveger seg? Og hvorfor? {\bf Det er viktig at du faktisk har laget teningen da vi skal bruke den videre!}\\
+{Tenk før du trykker her}\\
+Vi lærte i del 1B at når en planet går i bane omkring en stjerne, så går jo både stjerna og planeten i bane omkring et felles massesenter. Hvis stjerna har en planet i bane rundt seg, så vil altså stjerna gå i bane om massesenteret med planeten. {\bf Vi skal i hele del 1C alltid anta sirkelbaner for å gjøre det lettere å regne.}
+\column{0.5\textwidth}
+De fleste planetbaner (og dermed stjernebaner) har lav eksentrisitet og er tilnærmet sirkulære, dette er derfor en god antakelse. Vi ser altså Doppler-effekten fra lyset til stjerna fordi stjerna går i en sirkelbane.
+Her har stjernas bane om massesenter:
+\includegraphics[scale=0.38]{media/star_orbit.png}\\
+\textcolor{red}{Før du går videre: merk av punktene A, B, C og D i hastighetsplottet ditt!}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+\hyperlink{red_vr7}{\pagebutton{\bf SIDE 15/33/47}}
+\addtocounter{pageno}{-1}
+\textcolor{yellow}{\Large Men har du lagt merke til at hastigheten $v_r$ i plottet ditt ikke oscillerer omkring 0??? Fra figuren på forrige side, skulle man vel tro at radialhastigheten (altså hastigheten langs synslinja) skal være 0 i punktene A og C. Dermed skulle vi vel ikke hatt noen Dopplereffekt og dermed ingen bølgelengdeforskyvning i disse to punktene. Kan du tenke deg en forklaring på hvorfor kurven din ikke oscillerer omkring $v_r=0$ i punktene A og C?}\\
+{\pagebutton{Diskuter 2 min før du går videre!}}\\
+\textcolor{red}{Ganske riktig! Hastigheten til i punktene A og C viser massesenterets hastighet i forhold til oss: massesenteret beveger seg med en konstant hastighet i forhold til oss, i tillegg beveger stjernen seg i en sirkelbane omkring massesenteret. Den konstante hastigheten som en stjerne (eller massesenteret planet-stjerne) har i forhold til oss kalles {\it egenhastigheten (engelsk: peculiar velocity)}. Merk deg ordet som blir mye brukt videre.\\
+{Neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+\hyperlink{red_vr7_b}{\pagebutton{\bf SIDE 15/33/47}}
+\addtocounter{pageno}{-1}
+\textcolor{yellow}{\Large Men har du lagt merke til at hastigheten $v_r$ i plottet ditt ikke oscillerer omkring 0??? Fra figuren på forrige side, skulle man vel tro at radialhastigheten (altså hastigheten langs synslinja) skal være 0 i punktene A og C. Dermed skulle vi vel ikke hatt noen Dopplereffekt og dermed ingen bølgelengdeforskyvning i disse to punktene. Kan du tenke deg en forklaring på hvorfor kurven din ikke oscillerer omkring $v_r=0$ i punktene A og C?}\\
+{{Diskuter 2 min før du går videre!}}\\
+\textcolor{yellow}{Ganske riktig! Hastigheten til i punktene A og C viser massesenterets hastighet i forhold til oss: massesenteret beveger seg med en konstant hastighet i forhold til oss, i tillegg beveger stjernen seg i en sirkelbane omkring massesenteret. Den konstante hastigheten som en stjerne (eller massesenteret planet-stjerne) har i forhold til oss kalles {\it egenhastigheten (engelsk: peculiar velocity)}. Merk deg ordet som blir mye brukt videre.}
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{vr8}{\pagebutton{\bf SIDE 16/33/47}}
+Her ser vi situasjonen illusterert med observatøren og de radielle og tangensielle hastighetskomponentene (radielt og tangensielt på synsretningen til observatøren) i de forskjellige posisjonene {\bf til stjerna} samt de tilhørende punktene på hastighetsplottet.
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.38]{media/vr.png}\\
+\column{0.5\textwidth}
+Her er $v$ den konstante banehastigheten til stjerna (banehastigheten er konstant fordi vi har sirkelbane og ikke ellipsebane)\\
+{\Large\bf Stemmer alt på denne figuren overens med det du har funnet ut så langt?}\\
+\textcolor{red}{Hvis det er noe du ikke forstår her så {\bf må} du kontakte foreleser eller gruppelærer.}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{vr8b}{\pagebutton{\bf SIDE 17/33/47}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.38]{media/vr.png}\\
+\column{0.5\textwidth}
+{\bf Er du helt sikker på at du forstår alt på disse figurene???} \textcolor{red}{Du må ikke finne på å gå videre hvis du ikke gjør det, da blir alt bare så mye vanskeligere. {\bf Be om hjelp nå!}}
+Ta gjerne også en kikk på \href{https://commons.wikimedia.org/wiki/File:Radial\_velocity\_doppler\_spectroscopy.gif\#/media/File:Radial\_velocity\_doppler\_spectroscopy.gif}{denne} animasjonen på wikimedia.
+\end{columns}
+{\pagebutton{Denne knappen er til for å brukes når du er heeeelt klar}}
+}
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\Huge \htmlcom{large}{Det er litt regning igjen før det blir pause! Det kan være greit å klarne tankene litt før du går videre}}\\
+Finn en vegg (hvis du trenger det), og stå på hodet nå. Alt pleier å bli mye klarere hvis du bare ser det fra en annen vinkel! Kikk ut av vinduet! Hvis det mot formodning er sol, kan du se for deg sola som raser omkring massesenteret med jorda? Og formen på banen var...?\\
+{\pagebutton{Jeg har tatt 10 push-ups og 10 sit-ups, så la oss fortsette}}
+}
+}
+
+
+
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+\hyperlink{vr9}{\pagebutton{\bf SIDE 18/33/47}}
+\includegraphics[scale=0.32]{media/vr.png}\\
+Men hvis vi nå faktisk kjenner stjernas bane gjennom Dopplereffekten, kan vi bruke dette til å finne ut noe om planeten, kun ved å se på stjernas bevegelse?
+\column{0.5\textwidth}
+Hva med f.eks. massen til planeten? ({\bf viktig info: vi skal senere lære at stjernas masse greit kan estimeres fra strålingen, regn derfor med at den er kjent}) Kunne Keplers lov komme til hjelp her:
+\[
+P^2=\frac{4\pi^2a^3}{G(m_1+m_2)}
+\]
+Sjekk hva symbolene her betyr, spesielt viktig at du tenker gjennom nøyaktig hva $a$ betyr her.{\pagebutton{Trykk her}} når du har en ide om hvordan du kanskje kan bruke Keplers lov til å finne ut noe om planeten! Tenk i maks 1-2 min.
+\end{columns}
+}
+
+{
+
+\hyperlink{vr10}{\pagebutton{\bf SIDE 19/33/47}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.2]{media/vr.png}\\
+\[
+P^2=\frac{4\pi^2a^3}{G(m_1+m_2)}
+\]
+Er du enig i at hvis vi kjenner $a$ og $P$, så kan vi beregne planetmassen? (husk: stjernemassen er kjent, se over)
+{\bf Kan du se hvordan vi kan finne $P$ (altså planetens omløpsperiode om stjerna) fra observasjon av stjerna?}
+\column{0.5\textwidth}
+{\pagebutton{Trykk her}} når du har funnet det ut, ikke før!
+\end{columns}
+}
+
+
+
+{
+
+\hyperlink{vr10b}{\pagebutton{\bf SIDE 20/33/47}}
+\begin{columns}
+\column{0.5\textwidth}
+Stemmer, hvis du går tilbake til del 1B så vil du se at perioden $P$ er felles for alle banebevegelsene, både objektenes bane omkring massesenteret og det ene objektets bane omkring det andre. Vi kan altså lese av perioden til stjernebanen fra Dopplereffekten! Da mangler vi bare $a$ som, husker vi fra 1B, er store halvakse til ...\\\hspace*{0.5cm}
+
+{\choicebutton{\small ... stjernas bane om massesenteret}}\ \ \ \ {\choicebutton{\small ... planetens bane om massesenteret}}\ \ \ \ {\choicebutton{\small ... planetens bane om stjerna}}\ \ \ \ {\choicebutton{\small ... stjernas bane om planeten}}
+\end{columns}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilbane}{\pagebutton{\bf SIDE 21/33/47}}
+\textcolor{white}{Det var nok ikke helt riktig! $a$ i Keplers lov er {\bf ikke} store halvakse til noen av objektenes bane omkring massesenteret. Anbefaler sterkt at du NÅ går tilbake til 1B og repeterer, det er svært viktig at du har forskjellene/sammenhengene i baneparametere mellom de forskjellige banene klart for deg! }
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigbane}{\pagebutton{\bf SIDE 22/33/47}}
+HELT RIKTIG!\\
+Dette er store halvakse i planetens bane omkring stjerna (som ved symmetri jo er nøyaktig den samme som stjernas bane omkring planeten) siden vi utledet denne når vi hadde origo i det ene legemet med poisjonsvektoren $\vec{r}$ som pekte fra det ene legemet til det andre. {\bf For å være helt korrekt, siden vi nå kun ser på sirkelbaner, så er $a$ da faktisk radiusen i sirkelbanen.} Vi ser nå at når vi kjenner $P$ i Keplers lov og mangler kun $a$ for å kunne estimere planetmassen! Men vi har ingen enkel måte å finne $a$ på. Men nå som vi kjenner $P$, {\bf kan du tenkte deg en måte vi kan få inn den konstante banehastigheten $v$ til planeten i forhold til stjerna isteden for $a$?}
+Tenk deg godt om før du går til... {\pagebutton{... neste side}}
+}
+}
+
+
+
+
+{
+
+\hyperlink{vr11}{\pagebutton{\bf SIDE 23/33/47}}
+\addtocounter{pageno}{-1}
+Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\{\pagebutton{...trykk her når du har svaret...}}\\
+\textcolor{white}{
+Siden banehastigheten er konstant (pga. sirkelbane), så må vel
+\[
+v=\frac{2\pi a}{P}
+\]
+Merk at siden $a$ er radien i banen til planeten om stjerna (eller omvendt), så må $v$ være hastigheten til planeten i forhold til stjerna (eller omvendt). Husk at radien til stjerna om massesenteret blir betegnet med $a_*$ og radien til planeten om massesenteret med $a_p$. Helt tilsvarende med hastighetene til stjerna og planeten om massesenteret som blir betegnet med $v_*$ og $v_p$.\\
+{\bf Vi har nå funnet et uttrykk for $a$ gitt $v$ og $P$, dvs. vi kan eliminere $a$ i Keplers 3.lov og få inn $v$ og $P$ isteden, hvis vi ønsker det da...}
+{... neste side,}}
+}
+
+{
+
+\hyperlink{vr11_b}{\pagebutton{\bf SIDE 23/33/47}}
+\addtocounter{pageno}{-1}
+Fant du det ut??? Planeten går i en sirkelbane med lengde $2\pi a$, og tar en tid $P$ på å komme rundt. Da blir farta...\\{...trykk her når du har svaret...}\\
+Siden banehastigheten er konstant (pga. sirkelbane), så må vel
+\[
+v=\frac{2\pi a}{P}
+\]
+Merk at siden $a$ er radien i banen til planeten om stjerna (eller omvendt), så må $v$ være hastigheten til planeten i forhold til stjerna (eller omvendt). Husk at radien til stjerna om massesenteret blir betegnet med $a_*$ og radien til planeten om massesenteret med $a_p$. Helt tilsvarende med hastighetene til stjerna og planeten om massesenteret som blir betegnet med $v_*$ og $v_p$.\\
+{\bf Vi har nå funnet et uttrykk for $a$ gitt $v$ og $P$, dvs. vi kan eliminere $a$ i Keplers 3.lov og få inn $v$ og $P$ isteden, hvis vi ønsker det da...}
+{\pagebutton{... neste side,}}
+}
+
+
+{
+
+\hyperlink{vr11b}{\pagebutton{\bf SIDE 24/33/47}}
+\addtocounter{pageno}{-1}
+{\small
+Men hvordan hjelper dette oss? Vi ønsker å få inne kjent størrelser i Keplers lov slik at vi kan estimere planetmassen. Vi ble kvitt $a$, men vi kjenner jo heller ikke $v$, gjør vi? Kan du nå klare å skrive om Keplers lov fra
+\[
+P^2=\frac{4\pi^2a^3}{G(m_1+m_2)}
+\]
+til
+\[
+m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
+\]
+der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehastighet omkring massesenteret og $v_p$ er planetens banehastighet om massesenteret. Når du har regnet litt og tenkt litt, ... {\pagebutton{... trykk her}}\\
+\textcolor{white}{
+{\bf Hvis du fikk dette til og forstår hvordan det blir slik, gå videre til ...}
+{... neste side,}}
+\textcolor{white}{\bf hvis ikke ta en titt på forklaringene i {denne videoen} først}
+}
+}
+
+
+{
+
+\hyperlink{vr11b_b}{\pagebutton{\bf SIDE 24/33/47}}
+\addtocounter{pageno}{-1}
+{\small
+Men hvordan hjelper dette oss? Vi ønsker å få inne kjent størrelser i Keplers lov slik at vi kan estimere planetmassen. Vi ble kvitt $a$, men vi kjenner jo heller ikke $v$, gjør vi? Kan du nå klare å skrive om Keplers lov fra
+\[
+P^2=\frac{4\pi^2a^3}{G(m_1+m_2)}
+\]
+til
+\[
+m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
+\]
+der $m_p$ er planetens masse, $m_*$ er stjernas masse, $v_*$ er stjernas banehastighet omkring massesenteret og $v_p$ er planetens banehastighet om massesenteret. Når du har regnet litt og tenkt litt, ... {{... trykk her}}\\
+{\bf Hvis du fikk dette til og forstår hvordan det blir slik, gå videre til ...}
+{\pagebutton{... neste side,}}
+\textcolor{red}{\bf hvis ikke ta en titt på forklaringene i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_1.mp4}{denne videoen} først}
+}
+}
+
+{
+
+\addtocounter{pageno}{1}
+\hyperlink{vr12}{\pagebutton{\bf SIDE 25/33/47}}
+Men hvilken hastighet er det egentlig du måler når du observerer stjernas Dopplereffekt???\\
+\includegraphics[scale=0.32]{media/vr.png}\\
+Er det...
+{\choicebutton{$v$}}\ \ \ \ {\choicebutton{$v_*$}}\ \ \ \ {\choicebutton{$v_p$}}\ \ \ \ {\choicebutton{$v_*+v_p$}}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilv}{\pagebutton{\bf SIDE 26/33/47}}
+\textcolor{white}{Det var nok ikke helt riktig! Anbefaler sterkt at du NÅ går tilbake til 1B og repeterer, det er svært viktig at du har forskjellene/sammenhengene i baneparametere mellom de forskjellige banene klart for deg! $v_*$ er stjernas banehastighet om massesenteret, $v_p$ er planetens banehastighet om massesenteret og $v$ er planetens hastighet om stjerna (eller omvendt), som vi kan skrive (se videoen på forrige side) som $v=v_*+v_p$. Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.}
+{\pagebutton{Neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigv}{\pagebutton{\bf SIDE 27/33/47}}
+\htmlcom{large}{HELT RIKTIG!
+Vi observerer stjernas bevegelse omkring massesenteret, {\bf ikke} planetens bevegelse. Dermed er det $v_*$ som vi observerer.}\\
+ {\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{vr13}{\pagebutton{\bf SIDE 28/33/47}}
+\addtocounter{pageno}{-1}
+Men {\bf nøyaktig hvordan} leser du nå av hastigheten $v_*$ fra kurven i figuren? Dvs. hvor på plottet bør du lese av for å få $v_*$?
+\includegraphics[scale=0.32]{media/vr.png}\\
+Tenk deg godt om, og hvis du ikke ser det, så ta en titt på forklaringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_2.mp4}{denne videoen}.
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{mp1}{\pagebutton{\bf SIDE 29/33/47}}
+\addtocounter{pageno}{-1}
+Men vi hadde jo at
+\[
+m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
+\]
+der vi trenger summen av $v_*$ og $v_p$, mens det eneste vi leser av er $v_*$. Men hvilken må være er størst, $v_*$ eller $v_p$? Bruk kun fysisk resonnement uten matematikk.
+{\pagebutton{Trykk her når du har svaret!}}\\
+\textcolor{white}{
+Nettopp, fra Newtons 3.lov vet vi at kraften på begge legemer er lik, men fra Newtons annen lov vet vi at det mest minst massive objektet får størst akselrasjon og dermed må ha størst hastighet. Siden stjerna er {\bf mye} mer massiv enn planeten så må $v_p\gg v_*$, og dermed kan vi si at $v_*+v_p\approx v_p$ og vi har:
+\[
+m_p+m_*=\frac{P}{2\pi G}v_p^3
+\]
+  {\bf MEN DA MISTET VI JO DEN STØRRELSEN SOM VI OBSERVERER, NEMLIG $v_*$!!!!!}
+{Neste side}}
+}
+
+{
+
+\hyperlink{mp1_b}{\pagebutton{\bf SIDE 29/33/47}}
+Men vi hadde jo at
+\[
+m_p+m_*=\frac{P}{2\pi G}(v_*+v_p)^3
+\]
+der vi trenger summen av $v_*$ og $v_p$, mens det eneste vi leser av er $v_*$. Men hvilken må være er størst, $v_*$ eller $v_p$? Bruk kun fysisk resonnement uten matematikk.
+{{Trykk her når du har svaret!}}\\
+Nettopp, fra Newtons 3.lov vet vi at kraften på begge legemer er lik, men fra Newtons annen lov vet vi at det mest minst massive objektet får størst akselrasjon og dermed må ha størst hastighet. Siden stjerna er {\bf mye} mer massiv enn planeten så må $v_p\gg v_*$, og dermed kan vi si at $v_*+v_p\approx v_p$ og vi har:
+\[
+m_p+m_*=\frac{P}{2\pi G}v_p^3
+\]
+  {\bf MEN DA MISTET VI JO DEN STØRRELSEN SOM VI OBSERVERER, NEMLIG $v_*$!!!!!}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\hyperlink{mp2}{\pagebutton{\bf SIDE 30/33/47}}
+Eller kanskje ikke?? Nå trenger du kanskje å kikke tilbake til slutten av del 1B for å finne to likninger som gir en sammenheng mellom $\vec{r}$ og $\vec{r}_p$ og mellom $\vec{r}$ og $\vec{r}_*$. Ser du hvilke likninger det er snakk om? Ta den tidsderiverte av begge likningene slik at du får inn hastighetsvektorene istedenfor poisjonsvektorene. Ta så absoluttverdien av begge likningene og del likningene på hverandre. Kommer du da frem til
+\begin{block}{\bf den viktige sammenhengen...}
+\[
+\frac{v_*}{v_p}=\frac{m_p}{m_*}
+\]
+\end{block}
+Hvis du ikke ser det, kikke igjen tilbake til 1B, dette er samtidig en viktig repetisjon av noen veldig viktige sammenhenger. Kun når du ser det, kan du gå videre. Hvis du sliter med å se sammenhengen, spør foreleser eller gruppelærer!
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{mp3}{\pagebutton{\bf SIDE 31/33/47}}
+Bruk sammenhengen sammen med Keplers lov til å vise at:
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}v_*
+\]
+der vi har brukt en antakelse om massene $m_*$ og $m_p$. Du trenger litt regning for å komme frem, men ikke gå videre før du har fått dette til. Ikke gi deg på første forsøk!
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{mp4}{\pagebutton{\bf SIDE 32/33/47}}
+Hvis du sliter med å få det til, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_3.mp4}{denne videoen}.
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}v_*
+\]
+Dermed har vi jo faktisk et uttrykk for massen til planeten, gitt ved stjernemassen $m_*$ (kan vi beregne fra strålingen som vi kommer tilbake til i del 3 av kurset), omløpsperioden $P$ (kan vi måle fra observasjon av Dopplereffekten til stjerna) og stjernas banehastighet $v_*$ (kan også måles fra hastighetskurva til stjerna). Vi kan altså finne massen til en planet som vi ikke ser, kun ved å se på stjernas banebevegelse.
+{\pagebutton{Neste side}}
+}
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+\hyperlink{red_mp5}{\pagebutton{\bf SIDE 33/33/47}}
+\textcolor{yellow}{\Huge\bf \htmlcom{large}{Eller kan vi nå egentlig alltid det??????}}
+{\pagebutton{Neste side}}
+}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\Huge
+\centerline{\htmlcom{huge}{TID FOR KAFFEPAUSE!!!}}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+
+{\htmlcom{large}{Ut å strekke på bena. Inn med litt koffein...}}\\
+\vspace*{0.5cm}
+{\htmlcom{large}{Ihvertfall 10 min...}
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Jeg lover, jeg har tatt pause og er klart til å fortsette}}
+}
+}
+
+\renewcommand{\headline}{Inklinasjon}
+
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{formorkelser}
+{\pagebutton{Neste side}}
+}
+}
+
+{
+
+\hyperlink{mp6}{\pagebutton{\bf SIDE 34/39/47}}
+Vi har så langt antatt at stjernas baneplan ligger langs med synsretningen vår slik at hele synslinja (som går fra observatøren og gjennom et av legemene) ligger i baneplanet som stjernas bane utspenner. Det er normalt {\bf ikke} tilfelle:
+\begin{columns}
+\column{0.6\textwidth}
+\includegraphics[scale=0.6]{media/inklinasjon.png}\\
+\column{0.4\textwidth}
+I figuren har vi definert
+\begin{block}{\bf inklinasjonen}
+\textcolor{yellow}{som er vinkelen $i$ mellom {\bf normalen} til baneplanet og synslinja!}
+\end{block}
+\textcolor{red}{Denne definisjonen bør du kunne og huske!}
+\end{columns}
+Men da må vi endre formelen vår slik at vi får inn inklinasjonen $i$! Hvordan blir formelen seende ut med inklinasjonsvinkelen $i$??? {\bf Ikke gå videre før du har forsøkt å se det fra figurene (1-2 min).}
+{\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{mp7}{\pagebutton{\bf SIDE 35/39/47}}
+Du bør ha kommet frem til at
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
+\]
+der $v_{*r}$ er den observerte radielle (langs synslinjen) hastighetskomponenten til stjernas banehastighet. Den radielle hastigheten vi observerer er nå ikke lenger den fulle banehastigheten på grunn av inklinasjonen.
+Hvis du ikke kom frem til dette uttrykket og ikke ser hvordan det blir sånn, kikk på forklaring i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_4.mp4}{denne videoen}.\\
+{\bf Men hvordan kan vi finne inklinasjonsvinkelen $i$ ???}
+Tenk deg nøye om (1 min) for å se om du kan finne noen ideer!
+{\pagebutton{Neste side}}
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feil_mp8}{\pagebutton{\bf SIDE 36/39/47}}
+\textcolor{white}{\htmlcom{large}{Dårlige nyheter: Det finnes ingen kjente måter å finne inklinasjonsvinkelen på! Kun når inklinasjonsvinkelen er nær $90^\circ$ grader, så kan vi i noen tilfeller vite om det. Kan du tenke deg hvordan? }}
+{\pagebutton{Neste side}}
+}
+}
+
+{
+
+\hyperlink{mp9}{\pagebutton{\bf SIDE 37/39/47}}
+\addtocounter{pageno}{-1}
+Hvis inklinasjonsvinkelen er $90^\circ$ så ligger synslinjen i baneplanet og da går planeten foran stjernen og formørker den med jevne mellomrom. Men det forutsetter at planeten er stor nok til å skape en synlig formørkelse av stjerna. Ser vi en slik formørkelse så vet vi at $i=90^\circ$. Men hvis vi ikke ser en slik formørkelse, kan vi likevel si noe om planetens masse?\\
+{\pagebutton{Trykk her når du har tenkt litt på det}}\\
+\textcolor{white}{
+Vi vet at $\sin{i}$ ikke kan være større enn 1. Hvis vi kikker på uttrykket:
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
+\]
+så ser vi da at hvis vi setter inn $i=90^\circ$ i uttrykket så vil massen $m_p$ som vi får være et uttrykk for
+{den minste mulige massen} eller {den største mulige massen} til planeten.}
+}
+
+{
+
+\hyperlink{mp9_b}{\pagebutton{\bf SIDE 37/39/47}}
+\addtocounter{pageno}{-1}
+Hvis inklinasjonsvinkelen er $90^\circ$ så ligger synslinjen i baneplanet og da går planeten foran stjernen og formørker den med jevne mellomrom. Men det forutsetter at planeten er stor nok til å skape en synlig formørkelse av stjerna. Ser vi en slik formørkelse så vet vi at $i=90^\circ$. Men hvis vi ikke ser en slik formørkelse, kan vi likevel si noe om planetens masse?\\
+{{Trykk her når du har tenkt litt på det}}\\
+
+Vi vet at $\sin{i}$ ikke kan være større enn 1. Hvis vi kikker på uttrykket:
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
+\]
+så ser vi da at hvis vi setter inn $i=90^\circ$ i uttrykket så vil massen $m_p$ som vi får være et uttrykk for
+{\choicebutton{den minste mulige massen}} eller {\choicebutton{den største mulige massen}} til planeten.
+}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilmm}{\pagebutton{\bf SIDE 38/39/47}}
+\textcolor{white}{Det ble nok galt.
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
+\]
+hvis $\sin{i}$ faktisk er mindre enn 1, selv om vi setter den til 1, så betyr det at nevneren faktisk er mindre enn det vi setter inn, dermed må hele tallet i virkeligheten være større enn når vi setter inn 1 for $\sin{i}$. Dermed er $m_p$ beregnet på denne måten, den minste mulige massen når inklinasjonen er ukjent.
+}
+{\pagebutton{Neste side}}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigmm}{\pagebutton{\bf SIDE 39/39/47}}
+HELT RIKTIG!
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}\frac{v_{*r}}{\sin{i}}
+\]
+hvis $\sin{i}$ faktisk er mindre enn 1, selv om vi setter den til 1, så betyr det at nevneren faktisk er mindre enn det vi setter inn, dermed må hele tallet i virkeligheten være større enn når vi setter inn 1 for $\sin{i}$. Dermed er $m_p$ beregnet på denne måten, den minste mulige massen når inklinasjonen er ukjent.
+{\pagebutton{Neste side}}
+}
+}
+
+
+\renewcommand{\headline}{Formørkelser}
+
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\textcolor{yellow}{På fysisk forelesning kommer jeg omtrent hit etter en dobbelt-time, noen ganger litt lenger. Kanskje du kan vente med resten og ta det sammen med del2 av 1C? Eller er du klar nok i hodet enda til bittelitt til?}\\
+{\pagebutton{Klar?}}
+}
+}
+
+{
+
+\hyperlink{mp10}{\pagebutton{\bf SIDE 40/47/47}}
+Hvis vi ser formørkelser så vet vi at $\sin{i}=1$ og dermed vet vi massen:
+\[
+m_p=\left(\frac{P}{2\pi G}\right)^{1/3}m_*^{2/3}v_*
+\]
+Men hvis $i=90^\circ$, så får vi også en bonus. Vi kan nemlig i noen tilfeller finne radiusen til planeten ved å se på lyskurven ved formørkelsen.
+\begin{columns}
+\column{0.6\textwidth}
+\includegraphics[scale=0.5]{media/eclipse.png}\\
+\column{0.4\textwidth}
+På figuren ser vi en typisk lyskurve (den hopper opp og ned på grunn av støy). Vi ser hvordan lysstyrken synker og øker igjen når planetskiva går foran stjerneskiva. Lysstyrken er normalisert til 1 når det ikke er formørkelse.
+\end{columns}
+{\bf Kan du tenke deg hvorfor kurven har denne formen?} {\pagebutton{Neste side}}
+}
+
+{
+
+\hyperlink{mp11}{\pagebutton{\bf SIDE 41/47/47}}
+På figuren under ser du hvordan planetskiven steg for steg kommer foran stjerneskiven og formørker.
+\begin{columns}
+\column{0.6\textwidth}
+\includegraphics[scale=0.45]{media/eclipse2.png}\\
+\column{0.4\textwidth}
+Vi kan finne planetradiusen ved å bruke at strekning er lik hastighet ganger tid:
+\[
+2R_p=v_p(t_b-t_a)
+\]
+hvor $R_p$ er planetradiusen og $v_p$ er planetens hastighet. Hvilke tider $t_a$ og $t_b$ skal vi bruke for at formelen blir riktig? Er det $t_0$, $t_1$, $t_2$ eller $t_3$ fra figuren?\\
+\hspace*{-1.3cm} {\choicebutton{\small$t_a=t_0,\ t_b=t_1$}}\ {\choicebutton{\small$t_a=t_0,\ t_b=t_2$}}\\
+\hspace*{-1.3cm} {\choicebutton{\small$t_a=t_0,\ t_b=t_3$}}\ {\choicebutton{\small$t_a=t_1,\ t_b=t_2$}}\\
+\hspace*{-1.3cm} {\choicebutton{\small$t_a=t_1,\ t_b=t_3$}}\ {\choicebutton{\small$t_a=t_2,\ t_b=t_3$}}
+\end{columns}
+}
+
+
+
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\hyperlink{feilt}{\pagebutton{\bf SIDE 42/47/47}}
+\textcolor{white}{Det ble galt. Prøv å tenke gjennom situasjonen en gang til. Husk at planeten beveger seg en avstand $2R_p$ fra den først treffer stjerneskiva til den har kommet helt inn på stjerneskiva. Gå tilbake og gjør et nytt forsøk. Hvis du enda ikke ser det og har kommet hit for 2.gang, se forklaringen i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_5.mp4}{denne videoen}. Ta gjerne også en kikk på \href{http://www.pitt.edu/~stepup/Images/transit.gif}{denne animasjonen}.}
+}
+}
+
+{
+\setbeamercolor{background canvas}{bg=yellow}
+{
+
+\hyperlink{riktigt}{\pagebutton{\bf SIDE 43/47/47}}
+KORREKT! Paneten beveger seg en avstand $2R_p$ fra den først treffer stjerneskiva til den har kommet helt inn på stjerneskiva. Når den først treffer stjerneskiva er der kurven begynner å gå nedover ($t_0$). Når den har kommet helt inn på stjerneskiva ($t_1$) så blir ikke stjernen mer formørket og kurven er flat helt til planeten begynner å gå ut av stjerneskiva. Planeten har altså beveget seg en avstand $2R_p$ fra tiden $t_0$ til tiden $t_1$. Se gjerne \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsressurser/interaktive-forelesningsnotater/1c/videoer/video1c_5.mp4}{denne videoen} hvis du er usikker.  Ta gjerne også en kikk på \href{http://www.pitt.edu/~stepup/Images/transit.gif}{denne animasjonen}.
+ {\pagebutton{Neste side}}
+}
+}
+
+
+{
+
+\hyperlink{mp12}{\pagebutton{\bf SIDE 44/47/47}}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[scale=0.4]{media/eclipse2.png}\\
+Vi ser altså at hvis dataene er gode nok til å skjelne punktet fra formørkelsen begynner til formørkelsen er total, så kan vi finne planetens radius ved å lese av tidsperioden $t_1-t_0$
+\column{0.5\textwidth}
+Planeten beveger seg da en strekning $2R_p$ i løpet av tiden $t_1-t_0$ med hastighet $v_p$, {\bf eller er det nå egentlig riktig å bruke hastigheten $v_p$??? (tenk i maks 1 min)}.
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{mp12b}{\pagebutton{\bf SIDE 45/47/47}}
+\addtocounter{pageno}{-1}
+\begin{columns}
+\column{0.5\textwidth}
+Hastigheten $v_p$ er i forhold til massesenteret. Det viser seg å være en god tilnærmelse, men kan du se hva vi egentlig skulle brukt?\\
+{\pagebutton{Trykk her når du har tenkt}}\\
+\textcolor{white}{
+Siden vi ser på planetens hastighet {\bf i forhold til stjerneskiven} (stjerna beveger seg jo også i forhold til massesenteret) så må vi bruke hastigheten $v=v_*+v_p$, men siden $v_*\ll v_p$ så er det en god tilnærmelse å bruke $v_p$.}\\
+\column{0.5\textwidth}
+\textcolor{white}{
+{\bf Vi oppsumerer:}}
+\vspace*{5cm}
+\textcolor{white}{
+Vi ser altså at hvis dataene er gode nok til å skjelne punktet fra formørkelsen begynner til formørkelsen er total, så kan vi finne planetens radius ved å lese av tidsperioden $t_1-t_0$. Planeten beveger seg da en strekning $2R_p$ i løpet av tiden $t_1-t_0$ med hastighet på ca. $v_p$
+{Neste side}}
+\end{columns}
+}
+
+{
+
+\hyperlink{mp12b_b}{\pagebutton{\bf SIDE 45/47/47}}
+\addtocounter{pageno}{-1}
+\begin{columns}
+\column{0.5\textwidth}
+Hastigheten $v_p$ er i forhold til massesenteret. Det viser seg å være en god tilnærmelse, men kan du se hva vi egentlig skulle brukt?\\
+{{Trykk her når du har tenkt}}\\
+Siden vi ser på planetens hastighet {\bf i forhold til stjerneskiven} (stjerna beveger seg jo også i forhold til massesenteret) så må vi bruke hastigheten $v=v_*+v_p$, men siden $v_*\ll v_p$ så er det en god tilnærmelse å bruke $v_p$.\\
+\column{0.5\textwidth}
+{\bf Vi oppsumerer:}\\
+\includegraphics[scale=0.3]{media/eclipse2.png}\\
+{\small Vi ser altså at hvis dataene er gode nok til å skjelne punktet fra formørkelsen begynner til formørkelsen er total, så kan vi finne planetens radius ved å lese av tidsperioden $t_1-t_0$. Planeten beveger seg da en strekning $2R_p$ i løpet av tiden $t_1-t_0$ med hastighet på ca. $v_p$}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+
+
+{
+
+\hyperlink{mp13}{\pagebutton{\bf SIDE 46/47/47}}
+\begin{block}{\bf Hva med planetens tetthet?}
+\small \textcolor{yellow}{Hvis du har både masse og radius til planeten, kan du også finne tetthet}
+\[
+\rho=\frac{M}{V}=\frac{m_p}{\frac{4}{3}\pi R_p^3}
+\]
+Planeter med tetthet omkring 0.7 - 1.7 ganger tettheten til vann (ca. 1000 kg/m$^3$) regnes som gassplaneter (de 4 ytterste i vårt solsystem) mens de med 4-5 ganger tettheten til vann regnes som steinplaneter (de 4 innerste i solsystemet)
+\end{block}
+\begin{block}{\bf Hva hvis planeten har atmosfære?}
+\small \textcolor{yellow}{Hvis en planet har vanndamp i atmosfæren, får vi absorpsjonslinjer i vanndamp når atmosfæren kommer foran stjernen. Hvis atmosfæren ikke absorberer andre bølgelengder, vil vi måle en større radius for planeten med spektrallinja til vanndamp siden skiven som absorberer vanndamp omfatter planeten med atmosfæren rundt. Når du måler radiusen med andre deler av spektret som ikke absorberes av vanndamp vil du da måle en mindre radiuse som kun omfatter selve planeten uten atmosfæren.}
+\end{block}
+{\pagebutton{Neste side}}
+}
+
+
+{
+
+\hyperlink{oppsummering0}{\pagebutton{\bf SIDE 47/47/47}}
+\begin{block}{Hvor mange planeter har så blitt oppdaget med disse metodene?}
+ \small \textcolor{yellow}{Normalt omtaler man et planetoppdagelse som bekreftet hvis den er observet med minst to forskjellige metoder som f.eks. både radialhastighetsmetoden og formørkelsesmetoden. For en oversikt over hvor mange planeter som har blitt oppdaget, så ta en titt \href{http://exoplanet.eu/diagrams/}{her}. Du kan f.eks. sette planetmasse på x-aksen og omløpstid på y-aksen. Hvor mange ekstrasolar planeter med omkring jordas masse og med omløpstid omkring 1 år har blitt oppdaget? (ved å trykke på aksetekstene kan du endre enheter til jordmasse og år). Øverst kan du endre å ta med planeter som her blitt enten oppdaget med en metode (planetkandidat) eller som er bekreftet. Nederst på siden kan du lese av hvor mange det er.}
+\end{block}
+{\small
+{\bf En av de viktigste eksperimentene for å oppdage eksoplaneter var satelitten Kepler, den kan du lese mer om \href{https://www.nasa.gov/mission_pages/kepler/overview/index.html}{her.}} Her har vi snakket om de to viktigste metodene for å oppdage eksoplaneter. Det finnes flere, blant annet kan eksoplaneter oppdages ved såkalt mikrolensing. Når et planetsystem kommer foran en fjern stjerne (som ikke har noe med planetsystemet å gjøre), vil lys fra stjerna bøyes mot oss fra gravitasjonskrefter til det passerende systemet. Dermed vil lyset fra den fjerne stjerna plutselig blusse opp. Hvis det er planeter i systemet og ikke kun en enkelt stjerne, vil man kunne se flere lystopper.\\
+}
+{\pagebutton{\small Neste side}}
+}
+
+
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+{\Large
+Da er du ferdig med første forelesning i del 1C. Vi har til nå sett på ideele data uten støy. I neste forelesning skal vi se hvordan vi kan estimere massen til ekstrasolare planeter fra data med støy og lære litt generelle dataanalyseteknikker som du kommer til å bruke igjen flere ganger i dette kurset og i mange andre kurs fremover. Hvis du skal ta en master der du skal bruke data fra eksperimenter, kommer du også til å trenge disse teknikkene. Du bør nå:
+}
+\begin{itemize}
+\item forstå hvordan en stjernes bevegelse påvirkes av en planet i bane
+\item vite hvordan vi kan oppdage en slik bevegelse ved å bruke observasjoner av stjernen
+\item kunne tolke slike observasjoner og bruke de til å få informasjon om planeten
+\item kunne estimere masser og/eller radiuser til ekstrasolare planeter der dataene er gode nok
+\end{itemize}
+{\pagebutton{\small Neste side}}
+}
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/160191}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+\Large
+\htmlcom{large}{Trykk nå gjerne på smilefjesene og si meninga di om dette interaktive forelesningsnotatet. Spesielt er jeg interessert i å vite hvor lang tid du brukte og da hva du brukte mest tid på! All ris og ros mottaes med takk.}
+}
+
+
+
+\end{frame}
 \end{document}

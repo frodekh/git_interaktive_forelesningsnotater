@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  12 OCT 2021 22:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  1 MAR 2022 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**interaktive_forelesningsnotater_2A_del1_av_2
+**interaktive_forelesningsnotater_2A_del1_av_2.tex
 (./interaktive_forelesningsnotater_2A_del1_av_2.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
@@ -753,7 +753,7 @@ y
 \beamer@dimb=\dimen283
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.st
-y))) (./usercommands.tex)
+y))) (../usercommands_pdf.tex)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.st
@@ -900,31 +900,31 @@ File: tikzlibrarytrees.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 61.
+Package hyperref Info: Option `colorlinks' set `true' on input line 62.
 \c@pageno=\count333
 \c@nopages=\count334
 
 (./interaktive_forelesningsnotater_2A_del1_av_2.aux)
 \openout1 = `interaktive_forelesningsnotater_2A_del1_av_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -982,7 +982,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 266.
+Package hyperref Info: Link coloring ON on input line 267.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -996,66 +996,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 266.
-LaTeX Info: Redefining \pageref on input line 266.
-LaTeX Info: Redefining \nameref on input line 266.
+LaTeX Info: Redefining \ref on input line 267.
+LaTeX Info: Redefining \pageref on input line 267.
+LaTeX Info: Redefining \nameref on input line 267.
  (./interaktive_forelesningsnotater_2A_del1_av_2.out)
 (./interaktive_forelesningsnotater_2A_del1_av_2.out)
 \@outlinefile=\write5
 \openout5 = `interaktive_forelesningsnotater_2A_del1_av_2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 266.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 267.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 267.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 267.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 266.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 267.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 266.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 267.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 266.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 266.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 266.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 267.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 266.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 266.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 267.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 267.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 266.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 266.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 266.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 266.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 266.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 266.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 267.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 267.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
-66.
+67.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 2
-66.
+67.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 266.
+ut line 267.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1097,32 +1097,32 @@ Dictionary: translator-theorem-dictionary, Language: English
 <media/clock.png, id=70, 745.8264pt x 734.2632pt>
 File: media/clock.png Graphic file (type png)
 <use media/clock.png>
-Package pdftex.def Info: media/clock.png  used on input line 319.
+Package pdftex.def Info: media/clock.png  used on input line 320.
 (pdftex.def)             Requested size: 186.45615pt x 183.56534pt.
 
-Overfull \hbox (15.3085pt too wide) in paragraph at lines 319--319
+Overfull \hbox (15.3085pt too wide) in paragraph at lines 320--320
 [][]  
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 319
+LaTeX Font Info:    Trying to load font information for U+msa on input line 320
 .
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 319
+LaTeX Font Info:    Trying to load font information for U+msb on input line 320
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 319.
+ut line 320.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \vbox (42.54742pt too high) detected at line 319
+Overfull \vbox (42.54742pt too high) detected at line 320
  []
 
 [4
@@ -1132,20 +1132,20 @@ Overfull \vbox (42.54742pt too high) detected at line 319
 ] [6
 
 ]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 352--352
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 353--353
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/klassrel1.png, id=123, 769.87625pt x 507.8975pt>
+<media/klassrel1.png, id=122, 769.87625pt x 507.8975pt>
 File: media/klassrel1.png Graphic file (type png)
 <use media/klassrel1.png>
-Package pdftex.def Info: media/klassrel1.png  used on input line 352.
+Package pdftex.def Info: media/klassrel1.png  used on input line 353.
 (pdftex.def)             Requested size: 230.96466pt x 152.37042pt.
 [7
 
  <./media/klassrel1.png>]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 360--360
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 361--361
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1153,22 +1153,22 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 360--360
 <media/klassrel2.png, id=136, 764.8575pt x 532.99126pt>
 File: media/klassrel2.png Graphic file (type png)
 <use media/klassrel2.png>
-Package pdftex.def Info: media/klassrel2.png  used on input line 360.
+Package pdftex.def Info: media/klassrel2.png  used on input line 361.
 (pdftex.def)             Requested size: 229.45901pt x 159.8986pt.
 
-Overfull \hbox (0.81789pt too wide) in paragraph at lines 360--360
+Overfull \hbox (0.81789pt too wide) in paragraph at lines 361--361
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
 
 
-Overfull \vbox (19.33305pt too high) detected at line 360
+Overfull \vbox (19.33305pt too high) detected at line 361
  []
 
 [8
 
  <./media/klassrel2.png>]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 364--364
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 365--365
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1176,7 +1176,7 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 364--364
 [9
 
 ]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 369--369
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 370--370
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1184,16 +1184,16 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 369--369
 <media/klassrel3.png, id=162, 773.89125pt x 530.98375pt>
 File: media/klassrel3.png Graphic file (type png)
 <use media/klassrel3.png>
-Package pdftex.def Info: media/klassrel3.png  used on input line 369.
+Package pdftex.def Info: media/klassrel3.png  used on input line 370.
 (pdftex.def)             Requested size: 232.16916pt x 159.29634pt.
 
-Overfull \vbox (2.17088pt too high) detected at line 369
+Overfull \vbox (2.17088pt too high) detected at line 370
  []
 
 [10
 
  <./media/klassrel3.png>]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 378--378
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 379--379
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1201,22 +1201,22 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 378--378
 <media/klassrel4.png, id=174, 774.895pt x 545.03625pt>
 File: media/klassrel4.png Graphic file (type png)
 <use media/klassrel4.png>
-Package pdftex.def Info: media/klassrel4.png  used on input line 378.
+Package pdftex.def Info: media/klassrel4.png  used on input line 379.
 (pdftex.def)             Requested size: 232.47029pt x 163.51213pt.
 
-Overfull \hbox (0.81789pt too wide) in paragraph at lines 378--378
+Overfull \hbox (0.81789pt too wide) in paragraph at lines 379--379
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
 
 
-Overfull \vbox (22.94658pt too high) detected at line 378
+Overfull \vbox (22.94658pt too high) detected at line 379
  []
 
 [11
 
  <./media/klassrel4.png>]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 383--383
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 384--384
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1224,7 +1224,7 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 383--383
 [12
 
 ]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 388--388
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 389--389
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1232,12 +1232,12 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 388--388
 <media/klassrel5.png, id=199, 769.87625pt x 534.99875pt>
 File: media/klassrel5.png Graphic file (type png)
 <use media/klassrel5.png>
-Package pdftex.def Info: media/klassrel5.png  used on input line 388.
+Package pdftex.def Info: media/klassrel5.png  used on input line 389.
 (pdftex.def)             Requested size: 230.96466pt x 160.50085pt.
 [13
 
  <./media/klassrel5.png>]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 396--396
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 397--397
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1245,22 +1245,22 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 396--396
 <media/klassrel6.png, id=212, 764.8575pt x 544.0325pt>
 File: media/klassrel6.png Graphic file (type png)
 <use media/klassrel6.png>
-Package pdftex.def Info: media/klassrel6.png  used on input line 396.
+Package pdftex.def Info: media/klassrel6.png  used on input line 397.
 (pdftex.def)             Requested size: 229.45901pt x 163.211pt.
 
-Overfull \hbox (0.81789pt too wide) in paragraph at lines 396--396
+Overfull \hbox (0.81789pt too wide) in paragraph at lines 397--397
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
 
 
-Overfull \vbox (22.64545pt too high) detected at line 396
+Overfull \vbox (22.64545pt too high) detected at line 397
  []
 
 [14
 
  <./media/klassrel6.png>]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 400--400
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 401--401
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1268,7 +1268,7 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 400--400
 [15
 
 ]
-Overfull \hbox (7.77573pt too wide) in paragraph at lines 405--405
+Overfull \hbox (7.77573pt too wide) in paragraph at lines 406--406
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1276,73 +1276,77 @@ Overfull \hbox (7.77573pt too wide) in paragraph at lines 405--405
 <media/klassrel7.png, id=237, 766.865pt x 532.99126pt>
 File: media/klassrel7.png Graphic file (type png)
 <use media/klassrel7.png>
-Package pdftex.def Info: media/klassrel7.png  used on input line 405.
+Package pdftex.def Info: media/klassrel7.png  used on input line 406.
 (pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
 [16
 
  <./media/klassrel7.png>]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 417--417
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 418--418
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/klassrel7.png Graphic file (type png)
 <use media/klassrel7.png>
-Package pdftex.def Info: media/klassrel7.png  used on input line 417.
+Package pdftex.def Info: media/klassrel7.png  used on input line 418.
 (pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
 
-Overfull \vbox (18.07751pt too high) detected at line 417
+Overfull \vbox (18.07751pt too high) detected at line 418
  []
 
 [17
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 428--428
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 429--429
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/klassrel7.png Graphic file (type png)
 <use media/klassrel7.png>
-Package pdftex.def Info: media/klassrel7.png  used on input line 428.
+Package pdftex.def Info: media/klassrel7.png  used on input line 429.
 (pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
 
-Overfull \vbox (13.72906pt too high) detected at line 428
+Overfull \vbox (13.72906pt too high) detected at line 429
  []
 
 [18
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 436--436
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 437--437
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/fig_7-3.pdf, id=272, 375.57637pt x 217.57822pt>
-File: media/fig_7-3.pdf Graphic file (type pdf)
-<use media/fig_7-3.pdf>
-Package pdftex.def Info: media/fig_7-3.pdf  used on input line 436.
-(pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
+<media/fig_7-3.png, id=272, 1028.84375pt x 593.21625pt>
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 437.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
 
-Overfull \vbox (9.47928pt too high) detected at line 436
+Overfull \vbox (216.08084pt too high) detected at line 437
  []
 
 [19
 
- <./media/fig_7-3.pdf>]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 445--445
+ <./media/fig_7-3.png>]
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 446--446
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-File: media/fig_7-3.pdf Graphic file (type pdf)
-<use media/fig_7-3.pdf>
-Package pdftex.def Info: media/fig_7-3.pdf  used on input line 445.
-(pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 446.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
+
+Overfull \vbox (155.82661pt too high) detected at line 446
+ []
+
 [20
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 449--449
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 450--450
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1350,129 +1354,129 @@ Overfull \hbox (12.77573pt too wide) in paragraph at lines 449--449
 [21
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 458--458
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 459--459
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-File: media/fig_7-3.pdf Graphic file (type pdf)
-<use media/fig_7-3.pdf>
-Package pdftex.def Info: media/fig_7-3.pdf  used on input line 458.
-(pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 459.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
 
-Overfull \vbox (4.877pt too high) detected at line 458
+Overfull \vbox (211.47856pt too high) detected at line 459
  []
 
 [22
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 466--466
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 467--467
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-File: media/fig_7-3.pdf Graphic file (type pdf)
-<use media/fig_7-3.pdf>
-Package pdftex.def Info: media/fig_7-3.pdf  used on input line 466.
-(pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 467.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
 
-Overfull \vbox (2.11676pt too high) detected at line 466
+Overfull \vbox (208.71832pt too high) detected at line 467
  []
 
 [23
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 477--477
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 478--478
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-File: media/fig_7-3.pdf Graphic file (type pdf)
-<use media/fig_7-3.pdf>
-Package pdftex.def Info: media/fig_7-3.pdf  used on input line 477.
-(pdftex.def)             Requested size: 206.56763pt x 119.66838pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 478.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
 
-Overfull \vbox (19.10283pt too high) detected at line 477
+Overfull \vbox (225.70439pt too high) detected at line 478
  []
 
 [24
 
 ]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 483--483
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 484--484
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/klassrel8.png, id=344, 772.8875pt x 545.03625pt>
+<media/klassrel8.png, id=339, 772.8875pt x 545.03625pt>
 File: media/klassrel8.png Graphic file (type png)
 <use media/klassrel8.png>
-Package pdftex.def Info: media/klassrel8.png  used on input line 483.
+Package pdftex.def Info: media/klassrel8.png  used on input line 484.
 (pdftex.def)             Requested size: 231.86803pt x 163.51213pt.
 
-Overfull \vbox (6.38667pt too high) detected at line 483
+Overfull \vbox (6.38667pt too high) detected at line 484
  []
 
 [25
 
  <./media/klassrel8.png>]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 489--489
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 490--490
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/klassrel9.png, id=357, 762.85pt x 526.96875pt>
+<media/klassrel9.png, id=352, 762.85pt x 526.96875pt>
 File: media/klassrel9.png Graphic file (type png)
 <use media/klassrel9.png>
-Package pdftex.def Info: media/klassrel9.png  used on input line 489.
+Package pdftex.def Info: media/klassrel9.png  used on input line 490.
 (pdftex.def)             Requested size: 228.85677pt x 158.09184pt.
 [26
 
  <./media/klassrel9.png>]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 495--495
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 496--496
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/klassrel10.png, id=369, 765.86125pt x 529.98pt>
+<media/klassrel10.png, id=364, 765.86125pt x 529.98pt>
 File: media/klassrel10.png Graphic file (type png)
 <use media/klassrel10.png>
-Package pdftex.def Info: media/klassrel10.png  used on input line 495.
+Package pdftex.def Info: media/klassrel10.png  used on input line 496.
 (pdftex.def)             Requested size: 229.76015pt x 158.99521pt.
 [27
 
  <./media/klassrel10.png>]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 500--500
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 501--501
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/klassrel11.png, id=381, 761.84625pt x 518.93875pt>
+<media/klassrel11.png, id=376, 761.84625pt x 518.93875pt>
 File: media/klassrel11.png Graphic file (type png)
 <use media/klassrel11.png>
-Package pdftex.def Info: media/klassrel11.png  used on input line 500.
+Package pdftex.def Info: media/klassrel11.png  used on input line 501.
 (pdftex.def)             Requested size: 228.55563pt x 155.68282pt.
 
-Overfull \vbox (8.0395pt too high) detected at line 500
+Overfull \vbox (8.0395pt too high) detected at line 501
  []
 
 [28
 
  <./media/klassrel11.png>]
-Overfull \hbox (12.77573pt too wide) in paragraph at lines 505--505
+Overfull \hbox (12.77573pt too wide) in paragraph at lines 506--506
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/klassrel11.png Graphic file (type png)
 <use media/klassrel11.png>
-Package pdftex.def Info: media/klassrel11.png  used on input line 505.
+Package pdftex.def Info: media/klassrel11.png  used on input line 506.
 (pdftex.def)             Requested size: 228.55563pt x 155.68282pt.
 [29
 
 ] [30
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 525--525
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 526--526
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1480,76 +1484,76 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 525--525
 [31
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 530--530
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 531--531
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/tog1.png, id=422, 1009.7725pt x 551.05875pt>
+<media/tog1.png, id=417, 1009.7725pt x 551.05875pt>
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 530.
+Package pdftex.def Info: media/tog1.png  used on input line 531.
 (pdftex.def)             Requested size: 302.93408pt x 165.3189pt.
 
-Overfull \vbox (18.10889pt too high) detected at line 530
+Overfull \vbox (18.10889pt too high) detected at line 531
  []
 
 [32
 
  <./media/tog1.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 540--540
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 541--541
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 540.
+Package pdftex.def Info: media/tog1.png  used on input line 541.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 
-Overfull \vbox (3.56187pt too high) detected at line 540
+Overfull \vbox (3.56187pt too high) detected at line 541
  []
 
 [33
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 549--549
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 550--550
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 549.
+Package pdftex.def Info: media/tog1.png  used on input line 550.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [34
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 554--554
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 555--555
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 554.
+Package pdftex.def Info: media/tog1.png  used on input line 555.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [35
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 560--560
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 561--561
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 560.
+Package pdftex.def Info: media/tog1.png  used on input line 561.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [36
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 564--564
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 565--565
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1557,73 +1561,73 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 564--564
 [37
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 569--569
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 570--570
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 569.
+Package pdftex.def Info: media/tog1.png  used on input line 570.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 
-Overfull \vbox (13.22023pt too high) detected at line 569
+Overfull \vbox (13.22023pt too high) detected at line 570
  []
 
 [38
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 574--574
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 575--575
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/tog2.png, id=500, 1009.7725pt x 550.055pt>
+<media/tog2.png, id=495, 1009.7725pt x 550.055pt>
 File: media/tog2.png Graphic file (type png)
 <use media/tog2.png>
-Package pdftex.def Info: media/tog2.png  used on input line 574.
+Package pdftex.def Info: media/tog2.png  used on input line 575.
 (pdftex.def)             Requested size: 262.53465pt x 143.01093pt.
 [39
 
  <./media/tog2.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 580--580
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 581--581
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/tog3.png, id=512, 1008.76875pt x 551.05875pt>
+<media/tog3.png, id=507, 1008.76875pt x 551.05875pt>
 File: media/tog3.png Graphic file (type png)
 <use media/tog3.png>
-Package pdftex.def Info: media/tog3.png  used on input line 580.
+Package pdftex.def Info: media/tog3.png  used on input line 581.
 (pdftex.def)             Requested size: 262.27368pt x 143.27188pt.
 [40
 
  <./media/tog3.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 585--585
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 586--586
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 585.
+Package pdftex.def Info: media/tog1.png  used on input line 586.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [41
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 593--593
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 594--594
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 593.
+Package pdftex.def Info: media/tog1.png  used on input line 594.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [42
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 597--597
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 598--598
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1631,72 +1635,72 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 597--597
 [43
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 602--602
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 603--603
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 602.
+Package pdftex.def Info: media/tog1.png  used on input line 603.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [44
 
 ]
-<media/drink-coffee.png, id=572, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=567, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 619.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 620.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [45
 
  <./media/drink-coffee.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 629--629
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 630--630
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 629.
+Package pdftex.def Info: media/tog1.png  used on input line 630.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 
-Overfull \vbox (17.13496pt too high) detected at line 629
+Overfull \vbox (17.13496pt too high) detected at line 630
  []
 
 [46
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 635--635
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 636--636
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/tog4.png, id=593, 1010.77625pt x 552.0625pt>
+<media/tog4.png, id=588, 1010.77625pt x 552.0625pt>
 File: media/tog4.png Graphic file (type png)
 <use media/tog4.png>
-Package pdftex.def Info: media/tog4.png  used on input line 635.
+Package pdftex.def Info: media/tog4.png  used on input line 636.
 (pdftex.def)             Requested size: 262.79562pt x 143.53285pt.
 [47
 
  <./media/tog4.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 641--641
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 642--642
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog4.png Graphic file (type png)
 <use media/tog4.png>
-Package pdftex.def Info: media/tog4.png  used on input line 641.
+Package pdftex.def Info: media/tog4.png  used on input line 642.
 (pdftex.def)             Requested size: 262.79562pt x 143.53285pt.
 
-Overfull \vbox (0.80159pt too high) detected at line 641
+Overfull \vbox (0.80159pt too high) detected at line 642
  []
 
 [48
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 646--646
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 647--647
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1704,32 +1708,32 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 646--646
 [49
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 651--651
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 652--652
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog1.png Graphic file (type png)
 <use media/tog1.png>
-Package pdftex.def Info: media/tog1.png  used on input line 651.
+Package pdftex.def Info: media/tog1.png  used on input line 652.
 (pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
 [50
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 659--659
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 660--660
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/tog5.png, id=638, 1015.795pt x 551.05875pt>
+<media/tog5.png, id=633, 1015.795pt x 551.05875pt>
 File: media/tog5.png Graphic file (type png)
 <use media/tog5.png>
-Package pdftex.def Info: media/tog5.png  used on input line 659.
+Package pdftex.def Info: media/tog5.png  used on input line 660.
 (pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
 [51
 
  <./media/tog5.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 664--664
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 665--665
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1737,19 +1741,19 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 664--664
 [52
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 669--669
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 670--670
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 File: media/tog5.png Graphic file (type png)
 <use media/tog5.png>
-Package pdftex.def Info: media/tog5.png  used on input line 669.
+Package pdftex.def Info: media/tog5.png  used on input line 670.
 (pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
 [53
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 673--673
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 674--674
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1757,7 +1761,7 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 673--673
 [54
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 677--677
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 678--678
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1765,75 +1769,75 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 677--677
 [55
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 681--681
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 682--682
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/samtale1.png, id=696, 1027.84pt x 550.055pt>
+<media/samtale1.png, id=691, 1027.84pt x 550.055pt>
 File: media/samtale1.png Graphic file (type png)
 <use media/samtale1.png>
-Package pdftex.def Info: media/samtale1.png  used on input line 681.
+Package pdftex.def Info: media/samtale1.png  used on input line 682.
 (pdftex.def)             Requested size: 411.12872pt x 220.0181pt.
 
-Overfull \vbox (2.30809pt too high) detected at line 681
+Overfull \vbox (2.30809pt too high) detected at line 682
  []
 
 [56
 
  <./media/samtale1.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 685--685
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 686--686
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/samtale2.png, id=708, 1027.84pt x 551.05875pt>
+<media/samtale2.png, id=703, 1027.84pt x 551.05875pt>
 File: media/samtale2.png Graphic file (type png)
 <use media/samtale2.png>
-Package pdftex.def Info: media/samtale2.png  used on input line 685.
+Package pdftex.def Info: media/samtale2.png  used on input line 686.
 (pdftex.def)             Requested size: 411.12872pt x 220.41959pt.
 
-Overfull \vbox (2.70958pt too high) detected at line 685
+Overfull \vbox (2.70958pt too high) detected at line 686
  []
 
 [57
 
  <./media/samtale2.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 689--689
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 690--690
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/samtale3.png, id=720, 1026.83624pt x 546.04pt>
+<media/samtale3.png, id=715, 1026.83624pt x 546.04pt>
 File: media/samtale3.png Graphic file (type png)
 <use media/samtale3.png>
-Package pdftex.def Info: media/samtale3.png  used on input line 689.
+Package pdftex.def Info: media/samtale3.png  used on input line 690.
 (pdftex.def)             Requested size: 410.72722pt x 218.41212pt.
 
-Overfull \vbox (0.70212pt too high) detected at line 689
+Overfull \vbox (0.70212pt too high) detected at line 690
  []
 
 [58
 
  <./media/samtale3.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 693--693
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 694--694
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
-<media/samtale4.png, id=732, 1022.82124pt x 547.04375pt>
+<media/samtale4.png, id=727, 1022.82124pt x 547.04375pt>
 File: media/samtale4.png Graphic file (type png)
 <use media/samtale4.png>
-Package pdftex.def Info: media/samtale4.png  used on input line 693.
+Package pdftex.def Info: media/samtale4.png  used on input line 694.
 (pdftex.def)             Requested size: 409.12125pt x 218.81361pt.
 
-Overfull \vbox (1.1036pt too high) detected at line 693
+Overfull \vbox (1.1036pt too high) detected at line 694
  []
 
 [59
 
  <./media/samtale4.png>]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 697--697
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 698--698
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1841,7 +1845,7 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 697--697
 [60
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 701--701
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 702--702
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1849,19 +1853,19 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 701--701
 [61
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 705--705
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 706--706
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 
-Overfull \vbox (16.93704pt too high) detected at line 705
+Overfull \vbox (16.93704pt too high) detected at line 706
  []
 
 [62
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 713--713
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 714--714
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1869,7 +1873,7 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 713--713
 [63
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 720--720
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 721--721
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1877,7 +1881,7 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 720--720
 [64
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 725--725
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 726--726
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1885,19 +1889,19 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 725--725
 [65
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 730--730
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 731--731
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
 
 
-Overfull \vbox (16.93704pt too high) detected at line 730
+Overfull \vbox (16.93704pt too high) detected at line 731
  []
 
 [66
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 734--734
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 735--735
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1905,7 +1909,7 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 734--734
 [67
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 739--739
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 742--742
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1913,7 +1917,7 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 739--739
 [68
 
 ]
-Overfull \hbox (26.41547pt too wide) in paragraph at lines 748--748
+Overfull \hbox (26.41547pt too wide) in paragraph at lines 751--751
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmss/bx/n/
 10.95 SIDE 
  []
@@ -1921,6 +1925,206 @@ Overfull \hbox (26.41547pt too wide) in paragraph at lines 748--748
 [69
 
 ] [70
+
+]
+File: media/clock.png Graphic file (type png)
+<use media/clock.png>
+Package pdftex.def Info: media/clock.png  used on input line 1276.
+(pdftex.def)             Requested size: 186.45615pt x 183.56534pt.
+
+Overfull \hbox (15.3085pt too wide) in paragraph at lines 1276--1276
+[][]  
+ []
+
+
+Overfull \hbox (0.37871pt too wide) in paragraph at lines 1276--1276
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+File: media/klassrel1.png Graphic file (type png)
+<use media/klassrel1.png>
+Package pdftex.def Info: media/klassrel1.png  used on input line 1276.
+(pdftex.def)             Requested size: 230.96466pt x 152.37042pt.
+File: media/klassrel2.png Graphic file (type png)
+<use media/klassrel2.png>
+Package pdftex.def Info: media/klassrel2.png  used on input line 1276.
+(pdftex.def)             Requested size: 229.45901pt x 159.8986pt.
+
+Overfull \hbox (0.81789pt too wide) in paragraph at lines 1276--1276
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: media/klassrel3.png Graphic file (type png)
+<use media/klassrel3.png>
+Package pdftex.def Info: media/klassrel3.png  used on input line 1276.
+(pdftex.def)             Requested size: 232.16916pt x 159.29634pt.
+File: media/klassrel4.png Graphic file (type png)
+<use media/klassrel4.png>
+Package pdftex.def Info: media/klassrel4.png  used on input line 1276.
+(pdftex.def)             Requested size: 232.47029pt x 163.51213pt.
+
+Overfull \hbox (0.81789pt too wide) in paragraph at lines 1276--1276
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: media/klassrel5.png Graphic file (type png)
+<use media/klassrel5.png>
+Package pdftex.def Info: media/klassrel5.png  used on input line 1276.
+(pdftex.def)             Requested size: 230.96466pt x 160.50085pt.
+File: media/klassrel6.png Graphic file (type png)
+<use media/klassrel6.png>
+Package pdftex.def Info: media/klassrel6.png  used on input line 1276.
+(pdftex.def)             Requested size: 229.45901pt x 163.211pt.
+
+Overfull \hbox (0.81789pt too wide) in paragraph at lines 1276--1276
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: media/klassrel7.png Graphic file (type png)
+<use media/klassrel7.png>
+Package pdftex.def Info: media/klassrel7.png  used on input line 1276.
+(pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
+File: media/klassrel7.png Graphic file (type png)
+<use media/klassrel7.png>
+Package pdftex.def Info: media/klassrel7.png  used on input line 1276.
+(pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
+File: media/klassrel7.png Graphic file (type png)
+<use media/klassrel7.png>
+Package pdftex.def Info: media/klassrel7.png  used on input line 1276.
+(pdftex.def)             Requested size: 230.06128pt x 159.8986pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 1276.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 1276.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 1276.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 1276.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
+File: media/fig_7-3.png Graphic file (type png)
+<use media/fig_7-3.png>
+Package pdftex.def Info: media/fig_7-3.png  used on input line 1276.
+(pdftex.def)             Requested size: 565.86581pt x 326.26994pt.
+File: media/klassrel8.png Graphic file (type png)
+<use media/klassrel8.png>
+Package pdftex.def Info: media/klassrel8.png  used on input line 1276.
+(pdftex.def)             Requested size: 231.86803pt x 163.51213pt.
+File: media/klassrel9.png Graphic file (type png)
+<use media/klassrel9.png>
+Package pdftex.def Info: media/klassrel9.png  used on input line 1276.
+(pdftex.def)             Requested size: 228.85677pt x 158.09184pt.
+File: media/klassrel10.png Graphic file (type png)
+<use media/klassrel10.png>
+Package pdftex.def Info: media/klassrel10.png  used on input line 1276.
+(pdftex.def)             Requested size: 229.76015pt x 158.99521pt.
+File: media/klassrel11.png Graphic file (type png)
+<use media/klassrel11.png>
+Package pdftex.def Info: media/klassrel11.png  used on input line 1276.
+(pdftex.def)             Requested size: 228.55563pt x 155.68282pt.
+File: media/klassrel11.png Graphic file (type png)
+<use media/klassrel11.png>
+Package pdftex.def Info: media/klassrel11.png  used on input line 1276.
+(pdftex.def)             Requested size: 228.55563pt x 155.68282pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 302.93408pt x 165.3189pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog2.png Graphic file (type png)
+<use media/tog2.png>
+Package pdftex.def Info: media/tog2.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.01093pt.
+File: media/tog3.png Graphic file (type png)
+<use media/tog3.png>
+Package pdftex.def Info: media/tog3.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.27368pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/drink-coffee.png Graphic file (type png)
+<use media/drink-coffee.png>
+Package pdftex.def Info: media/drink-coffee.png  used on input line 1276.
+(pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog4.png Graphic file (type png)
+<use media/tog4.png>
+Package pdftex.def Info: media/tog4.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.79562pt x 143.53285pt.
+File: media/tog4.png Graphic file (type png)
+<use media/tog4.png>
+Package pdftex.def Info: media/tog4.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.79562pt x 143.53285pt.
+File: media/tog1.png Graphic file (type png)
+<use media/tog1.png>
+Package pdftex.def Info: media/tog1.png  used on input line 1276.
+(pdftex.def)             Requested size: 262.53465pt x 143.27188pt.
+File: media/tog5.png Graphic file (type png)
+<use media/tog5.png>
+Package pdftex.def Info: media/tog5.png  used on input line 1276.
+(pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
+File: media/tog5.png Graphic file (type png)
+<use media/tog5.png>
+Package pdftex.def Info: media/tog5.png  used on input line 1276.
+(pdftex.def)             Requested size: 264.10046pt x 143.27188pt.
+File: media/samtale1.png Graphic file (type png)
+<use media/samtale1.png>
+Package pdftex.def Info: media/samtale1.png  used on input line 1276.
+(pdftex.def)             Requested size: 411.12872pt x 220.0181pt.
+File: media/samtale2.png Graphic file (type png)
+<use media/samtale2.png>
+Package pdftex.def Info: media/samtale2.png  used on input line 1276.
+(pdftex.def)             Requested size: 411.12872pt x 220.41959pt.
+File: media/samtale3.png Graphic file (type png)
+<use media/samtale3.png>
+Package pdftex.def Info: media/samtale3.png  used on input line 1276.
+(pdftex.def)             Requested size: 410.72722pt x 218.41212pt.
+File: media/samtale4.png Graphic file (type png)
+<use media/samtale4.png>
+Package pdftex.def Info: media/samtale4.png  used on input line 1276.
+(pdftex.def)             Requested size: 409.12125pt x 218.81361pt.
+
+Overfull \vbox (13986.88396pt too high) detected at line 1276
+ []
+
+[71
 
 ]
 \tf@nav=\write6
@@ -1938,40 +2142,37 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_2A_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26035 strings out of 478994
- 510999 string characters out of 5858185
- 845443 words of memory out of 5000000
- 42720 multiletter control sequences out of 15000+600000
- 421751 words of font info for 92 fonts, out of 8000000 for 9000
+ 26059 strings out of 478994
+ 511648 string characters out of 5858185
+ 1367797 words of memory out of 5000000
+ 42740 multiletter control sequences out of 15000+600000
+ 422102 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,11n,132p,1120b,1148s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{front} has been referenced but does not exist, re
-placed by a fixed one
-
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on interaktive_forelesningsnotater_2A_del1_av_2.pdf (70 pages, 6
-3107339 bytes).
+ 131i,11n,132p,1124b,1148s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on interaktive_forelesningsnotater_2A_del1_av_2.pdf (71 pages, 6
+3331901 bytes).
 PDF statistics:
- 985 PDF objects out of 1000 (max. 8388607)
- 807 compressed objects within 9 object streams
- 213 named destinations out of 1000 (max. 500000)
- 320 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1108 PDF objects out of 1200 (max. 8388607)
+ 905 compressed objects within 10 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

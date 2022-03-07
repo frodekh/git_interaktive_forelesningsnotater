@@ -311,7 +311,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Tidromdiagram}}
@@ -321,7 +321,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema3}{\headlinebutton{4-vektorer}}
 \end{itemize}
 Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
-\hyperlink{intro}{\choicebutton{Neste side}}
+\hyperlink{intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 
@@ -330,7 +330,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 \label{intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 \includegraphics[scale=0.25]{media/clock.png}
 \column{0.5\textwidth}
 {\small
@@ -859,4 +859,581 @@ Ser du nå hvorfor skalarproduktet i 4D-tidrom er definert med et minus mellom t
 
 
 
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 2B\\Interaktive forelesningsnotater: forelesning 1 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part2b.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/171403}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Tidromdiagram}}
+\item {\headlinebutton{Eksempler med tidromdiagram}}
+\item {\headlinebutton{Maksimal aldring}}
+\item {\headlinebutton{Newtons 1.lov fra maksimal aldring}}
+\item {\headlinebutton{4-vektorer}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+
+%%%%% intro
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.25]{media/clock.png}
+\column{0.5\textwidth}
+{\small
+{\bf Velkommen til forelesning 1 av 2 i del 2B! I denne første forelesningen skal vi se nærmere på fremstilling av eventer i tid og rom og avstander mellom slike i et tidromdiagram. Vi skal forsøke å forstå litt mer av hva tidromsavstanden $\Delta s$ sier oss. Til slutt skal vi introdusere 4-vektorer som er 4-dimensjonale vektorer i tidrommet.} I den fysiske forelesningen kommer jeg normalt gjennom alt i dette notatet i løpet av en dobbelttime. Ofte begynner jeg såvidt litt på det neste også.\\
+\textcolor{red}{Fremstillingen av spesiell relativitetsteori i AST2000 er basert på den fantastiske boken ``Spacetime Physics'' av E. Taylor og J. Wheeler, gratis tilgjengelig \href{http://www.eftaylor.com/spacetimephysics/}{her}. Anbefales på det sterkeste for den som er interessert.}
+{(\tiny \htmlcom{footnotesize}{Illustrasjon fra pngegg.com})}}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+
+
+
+{
+
+\lastpagebutton{intro}
+\begin{alertblock}{Vi begynner som vanlig...}
+...med litt brainstorming. Som det er {\bf svært viktig} at du gjør før du går videre.
+\end{alertblock}
+\href{https://nettskjema.no/a/171333}{\begin{minipage}{5cm}Trykk her for å varme opp\end{minipage}}\\
+Er du klar og har sendt inn skjemaet?
+\href{https://nettskjema.no/a/171333}{\choicebutton{Nei}}\ \ \ \ {\choicebutton{Ja}}\\
+}
+
+
+
+
+
+\renewcommand{\headline}{Tidromdiagram}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{maksaldring}
+\textcolor{yellow}{\Large Og vi skal ta en pause før vi kommer helt frem til neste tema!}
+{\pagebutton{La oss starte reisen i tid og rom...}}
+}
+}
+
+
+{
+
+Vi skal begynne med å lære om {\bf verdenslinjer}. Se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_1.mp4}{denne videoen} for å se hva verdenslinjer er for noe...
+\hyperlink{td1}{\pagebutton{SIDE 1/21/44}}}
+
+{
+\centerline{\includegraphics[scale=0.17]{media/hellning.png}}
+Vi sluttet videoen med denne figuren. Og med spørsmålet om hva helningen/stigningen til verdenslinjene betyr fysisk. Merk at vi definerer stigningen her som økning langs x-akse delt på endring langs y-akse. Vi ser her to rette linjer, rød og blå, som er verdenslinjene til to forskjellige observatører. Hva er forskjellig for disse observatørene? Hva betyr det at helningen til linjene deres er forskjellig? Tenk deg godt om før du går videre!
+\hyperlink{td2}{\pagebutton{SIDE 2/21/44}}}
+
+
+{
+Er du med på at {\bf farta} til objektet som verdenslinja representerer er avgjørende for helninga? Endring langs x-aksen, altså $\Delta x$, delt på endring langs t-aksen $\Delta t$ blir vel $v$?
+\[
+v=\frac{\Delta x}{\Delta t}
+\]
+Det kan men vel se for seg: hvis verdenslinja går rett opp, så er det ingen endring i $x$ med tiden, da må vi ha $v=0$. Og hvis verdenslinja svinger litt slik at $x$-posisjon endres, så må det være en hastighet. Hvilken helning har da verdenslinja til lys?\\
+{\choicebutton{det er en horisontal linje}}
+{\choicebutton{det er en vertikal linje}}
+{\choicebutton{linja danner 22.5 grader med x-aksen}}
+{\choicebutton{linja danner 30 grader med x-aksen}}
+{\choicebutton{linja danner 45 grader med x-aksen}}
+{\choicebutton{linja danner 67.5 grader med x-aksen}}
+\hyperlink{td3}{\pagebutton{SIDE 3/21/44}}}
+
+
+{
+\textcolor{yellow}{Hmmmmmm...tenk igjen! Husk hvordan man omgjør et tidsintervall målt i sekunder til meter! Hvis du nå har meter for avstander i både tid og rom, hvor langt $\Delta x$ beveger lys seg i løpet av en tid $\Delta t$? Si at $\Delta x$ er 1 meter?}
+\hyperlink{feil_td3a}{\pagebutton{SIDE 4/21/44}}}
+
+{
+Det er helt riktig! Når vi bruker samme enheter i både tid og rom så er jo $v$ et tall mellom 0 og 1 (gå tilbake til forrige forelesning hvis du ikke husker hvorfor, dette er {\bf svært} viktig å ha kontroll over for å kunne forstå resten av denne forelesningen! Vi fant der at lyshastigheten tilsvarer $v=1$. Hvis $v=1$ så må dermed $\Delta x = \Delta t$ (utifra definisjonen av $v$ på forrige side). Det betyr at lys alltid beveger seg like langt i rom som i tid. Og da får vi en helning på 45 grader.
+\hyperlink{riktig_td3b}{\pagebutton{SIDE 5/21/44}}}
+
+
+{
+\centerline{\includegraphics[scale=0.6]{media/cowboy.png}}
+Så til en litt voldlig episode i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_2.mp4}{denne videoen}...
+\hyperlink{td4}{\pagebutton{SIDE 6/21/44}}}
+
+{
+%\centerline{\includegraphics[scale=0.3]{media/}}
+Så i hvilke(t) event kan det være at personen faller om som følge av skuddet? Du har lov til å sette betingelser på våpnet her, innenfor hva som er tillatt i fysikk.\\
+{\choicebutton{Bare B}}
+{\choicebutton{Bare C}}
+{\choicebutton{Bare D}}
+{\choicebutton{B og C}}
+{\choicebutton{B og D}}
+{\choicebutton{C og D}}
+{\choicebutton{alle tre}}
+\hyperlink{td5}{\pagebutton{SIDE 7/21/44}}}
+
+{
+\textcolor{yellow}{Det ble nok galt! Prøv å trekke en linje fra event A til hver av de andre eventene. Hva slags helning er det på linja? Kan et prosjektil følge en slik verdenslinje? (lasterpistol er jo også en mulighet...) Hvis du kommer hit for andre gang, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_3.mp4}{denne videoen}}
+\hyperlink{feil_td5a}{\pagebutton{SIDE 8/21/44}}}
+
+{
+Det var riktig. Er du likevel i tvil kan du se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_3.mp4}{denne videoen}
+\hyperlink{riktig_td5b}{\pagebutton{SIDE 9/21/44}}}
+
+
+
+{
+Event A og de tre andre eventene er ekesmpler på det vi kaller {\bf tidlike}, {\bf lyslike} og {\bf romlike} eventer. Vi skal nå se på betydningen av hver av disse, en av gangen...
+\hyperlink{td6}{\pagebutton{SIDE 10/21/44}}}
+
+{
+\begin{block}{Tidlike eventer...}
+... er eventer som kan være {\bf kausalt forbundet}, dvs. at det ene eventet kan ha forårsaket det andre. For at det skal være mulig så må et objekt (f.eks. et prosjektil) kunne ha beveget seg fra det ene eventet til det andre i tide for at det andre eventet skal kunne skje. Dvs. at man må kunne trekke en rett linje, som i teorien tilsvarer verdenslinjen til et objekt, fra det ene eventet til det andre som har en helning slik at hastigheten $v<1$. Event A og B i eksemplet var dermed slike {\bf tidlike eventer}.
+\end{block}
+Hvis linjen vi trekker fra det ene eventet til den andre er en rett linje som i teorien tilsvarer $v<1$ så betyr det at x-avstanden $\Delta x$ mellom eventene må være mindre enn tidsavstanden $\Delta t$ (forstår du dette? Se på helningen til linja!) Dermed får vi et tidromsintervall
+\[
+\Delta s^2 = \Delta t^2 - \Delta x^2>0
+\]
+som er reelt, altså at $\Delta s^2>0$ er positivt og større enn null.
+\hyperlink{td7}{\pagebutton{SIDE 11/21/44}}}
+
+
+
+{
+\begin{block}{Lyslike eventer...}
+... er eventer som kan være {\bf kausalt forbundet}, dvs. at det ene eventet kan ha forårsaket det andre, men kun noe som beveger seg med lysets hastighet kan ha beveget seg fra det ene eventet og forårsaket det andre. Dvs. at man må kunne trekke en rett linje, som i teorien tilsvarer verdenslinjen til et objekt, fra det ene eventet til det andre som har en helning som tilsvarer lyshastigheten $v=1$, altså en linje som danner $45^\circ$ med x-aksen. Event A og C i eksemplet var dermed slike {\bf lyslike eventer}.
+\end{block}
+Hvis linjen vi trekker fra det ene eventet til den andre er en rett linje som i teorien tilsvarer $v=1$ så betyr det at x-avstanden $\Delta x$ mellom eventene må være lik tidsavstanden $\Delta t$. Dermed får vi et tidromsintervall
+\[
+\Delta s^2 = \Delta t^2 - \Delta x^2=0.
+\]
+Lys beveger seg slik at avstanden det tilbakelegger i det 4-dimensjonale tidrommet er 0.
+\hyperlink{td8}{\pagebutton{SIDE 12/21/44}}}
+
+{
+\begin{block}{Romlike eventer...}
+... er eventer som {\bf ikke} kan være {\bf kausalt forbundet}, dvs. at det ene eventet {\bf ikke} kan ha forårsaket det andre. Hvis man dermed trekker en rett linje, som i teorien tilsvarer verdenslinjen til et objekt, fra det ene eventet til det andre, så vil denne verdenslinja tilsvare en hastighet som er større en lysets $v>1$. Altså en helning med x-aksen som er mindre enn $45^\circ$. Ingen objekter kan bevege seg fortere enn lyset og dermed finnes det heller ingen objekter som kan følge denne verdenslinja og kausalt forbinde disse to eventene. Event A og D i eksemplet var dermed slike {\bf romlike eventer}.
+\end{block}
+Hvis linjen vi trekker fra det ene eventet til den andre er en rett linje som i teorien tilsvarer $v>1$ så betyr det at x-avstanden $\Delta x$ mellom eventene er {\bf større} enn tidsavstanden $\Delta t$. Dermed får vi et tidromsintervall
+\[
+\Delta s^2 = \Delta t^2 - \Delta x^2<0.
+\]
+Tidromsavstanden blir i dette tilfellet et imaginært tall. Det betyr at to romlike eventer ikke kan ligge på en og samme verdenslinje.
+\hyperlink{td9}{\pagebutton{SIDE 13/21/44}}}
+
+
+{
+\textcolor{red}{Nå skal du få en ny problemstilling her i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_4.mp4}{denne videoen}.} Videoen avslutter slik:
+\centerline{\includegraphics[scale=0.22]{media/cars.png}}
+\hyperlink{td10}{\pagebutton{SIDE 14/21/44}}}
+
+
+{
+%\centerline{\includegraphics[scale=0.3]{media/}}
+Hva ble riktig her? Med ``akselererer mest så menes ``har aller størst akselrasjon i løpet av et kort tidsrom, dvs. har den største akselrasjonsverdien i løpet av kjøreturen. Vi sier at bil 1 er den blå linjen, bil 2 er den sorte og bil 3 er den røde.
+{\choicebutton{1=konstant fart, 2=akselererte mest,3=skiftet retning}}
+{\choicebutton{2=konstant fart, 3=akselererte mest,1=skiftet retning}}
+{\choicebutton{3=konstant fart, 1=akselererte mest,2=skiftet retning}}
+{\choicebutton{2=konstant fart, 1=akselererte mest,3=skiftet retning}}
+{\choicebutton{3=konstant fart, 2=akselererte mest,1=skiftet retning}}
+{\choicebutton{1=konstant fart, 3=akselererte mest,2=skiftet retning}}
+{\choicebutton{1=konstant fart, 2=akselererte mest og skiftet retning}}
+{\choicebutton{2=konstant fart, 1=akselererte mest og skiftet retning}}
+{\choicebutton{3=konstant fart, 1=akselererte mest og skiftet retning}}
+\hyperlink{td11}{\pagebutton{SIDE 15/21/44}}}
+
+
+{
+\textcolor{yellow}{Det ble nok galt! Hvis du kommer hit for andre gang, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_5.mp4}{denne videoen}}
+\hyperlink{feil_td11a}{\pagebutton{SIDE 16/21/44}}}
+
+{
+Det var riktig. Er du likevel i tvil kan du se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_5.mp4}{denne videoen}
+\hyperlink{riktig_td11b}{\pagebutton{SIDE 17/21/44}}}
+
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{\htmlcom{large}{Kaffe?}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+Vi er ikke helt ferdig med dette temaet enda, men jeg ble litt rastløs her, vi skal gjennom en eksempeloppgave til før neste tema, men jeg tror vi trenger litt frisk luft og en dose koffein nå!
+Ikke lov å fortsette før du har tatt minst 15 min. pause {\bf og en skikkelig strekk på bena!}
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Ok, et eksempel til...}}
+}
+}
+
+
+{
+\begin{alertblock}{La oss prøve oss på en del av oppgave 2B.1.}
+ Se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h19/undervisningsmateriell_h2019/standardlop/relativitetsoppgaver/mp4high-filer-til-relativitet/part2b_1_frame1_high.mp4?vrtx=view-as-webpage}{denne animasjonen}. I denne animasjonen kan de se en romstasjon samt 3 romskip. Med unntak av det grønne romskipet som akselererer, beveger de andre seg med konstant hastighet. Animasjonen viser referansesystemet til romstasjonen.
+\end{alertblock}
+ {\Large Tegn et tidromdiagram der du tegner verdenslinjer for romstasjonen og alle romskipene inn i diagrammet i tidsperioden fra starten til slutten av videoen. Merk at det kun trenger å være kvalitativt riktig, trenger ikke ikke å ha tall på aksene.}
+\hyperlink{td12}{\pagebutton{SIDE 18/21/44}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_6.mp4}{denne videoen kan du se svaret}, \textcolor{red}{\bf men du lærer absolutt ingenting av å se på den hvis du ikke har tegnet tidromdiagrammet først! Etter at du har tegnet, kan du se videoen!}
+\hyperlink{td13}{\pagebutton{SIDE 19/21/44}}}
+
+{
+\begin{alertblock}{En oppgave til...}
+ Du skal nå tegne tidromsdiagrammet en gang til, men nå fra referansesystemet til {\bf det røde romnskipet}. Dvs. tenk deg at du er i referansesystemet til {\bf det røde romnskipet}, tegn inn verdenslinjene til romstasjonen og alle 3 romskipene (inkludert ditt eget) i ditt nye referansesystem!
+\end{alertblock}
+\hyperlink{td14}{\pagebutton{SIDE 20/21/44}}}
+
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_7.mp4}{denne videoen kan du se svaret}, \textcolor{red}{\bf men du lærer absolutt ingenting av å se på den hvis du ikke har tegnet tidromdiagrammet først! Etter at du har tegnet, kan du se videoen!}
+\hyperlink{td15}{\pagebutton{SIDE 21/21/44}}}
+
+
+\renewcommand{\headline}{Maksimal aldring}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{vektorer}
+{\pagebutton{Maksimal aldring?? Aldri i livet!}}
+}
+}
+
+
+
+{
+Vi har tidligere lært at for å finne tidromsintervallet mellom to eventer i tidrommet kan vi ta
+\[
+\Delta s=\sqrt{\Delta t^2-\Delta x^2}
+\]
+Men hva nå hvis du vil finne tidromsavstanden som et objekt har tilbakelagt i løpet av en tiden fra $t_0$ til $t_1$? Anta at du kjenner hastigheten til dette objektet til enhvertid, $v(t)$, og skal finne den totale tidromsavstanden tilbakelagt i løpet av tiden fra  $t_0$ til $t_1$. Kan du skrive opp et integral for å finne total tidromsavstand $s$ tilbakelagt? Ikke gå videre før du har et forslag.
+\hyperlink{td16}{\pagebutton{SIDE 22/38/44}}}
+
+
+{
+DU må gjøre et forsøk før du går videre her! Tenk deg at du har en kurve i planet som kan skrives som en funksjon $f(x)$. Hvor lang er lengden av kurven? Hvilket integral kan du dette opp for å finne kurven fra $x_0$ til $x_1$ hvis du kjenner $f(x)$? Ikke gå videre før du har svaret.
+\hyperlink{red_td16b}{\pagebutton{SIDE 23/38/44}}}
+
+{
+Fikk du:
+\[
+s=\int_{t_0}^{t_1}\sqrt{1-v^2(t)}dt
+\]
+Hvis du ikke fikk det til, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_8.mp4}{denne videoen}.
+\hyperlink{td17}{\pagebutton{SIDE 24/38/44}}}
+
+
+{
+Men hva {\bf betyr} denne tidromsavstanden $s$ som du måler langs en verdenslinje???
+Kan du huske fra del 2A en av tolkningene av tidromsavstanden $\Delta s$???
+\hyperlink{td18}{\pagebutton{SIDE 25/38/44}}}
+
+{
+La oss bruke det røde romskipet i forrige animasjon som eksempel. Du har tegnet verdenslinja til denne i romstasjonens referansesystem som en rød linje. \\
+\centerline{\includegraphics[scale=0.15]{media/romskipene1.png}}
+Hvis du på dette tidromdiagrammet måler eller integrerer opp tidromsavstanden $s$ fra starten til slutten av animasjonen (tidroms-lengden av hele den røde linjen) så får du altså ut nettopp tidromsavstanden $s$ som er den samme i alle referansesystemer.
+\hyperlink{td19}{\pagebutton{SIDE 26/38/44}}}
+
+{
+Det betyr at hvis du nå går til rødt romskip sitt referansesystem og ser på verdenslinja som du der tegnet for rødt romskip sett fra sitt eget referansesystem:\\
+\centerline{\includegraphics[scale=0.13]{media/romskipene2.png}}
+...{\bf så er den like lang.} \textcolor{red}{Tidromsavstanden $s$ for den røde linjen her og i det foregående diagrammet er den samme siden tidromsavstanden er uavhengig av referansesystem.} {\bf Men merk deg noe mer:} i rødt romskip sitt referansesystem så ser vi her at linja bare går rett opp langs tidsaksen. {\bf Det betyr at tidromsavstanden $s$ er et mål på egentida $\tau$. Husk at \textcolor{red}{egentida $\tau$} er et tidsbegrep som er bundet opp til et legeme: Egentiden er tiden målt på klokka i legemets eget referansesystem. Egentiden $\tau$ som har gått mellom to eventer er en tolkning av tidromsavstanden $s$. I eksemplet vårt her så snakker vi da om egentida/tidromsavstanden mellom to eventer som skjer i rødt romskip, et ved starten av animasjonen og et ved slutten.}
+\hyperlink{td19b}{\pagebutton{SIDE 27/38/44}}}
+
+{
+På eksemplet vårt med toget i del 2A så var egentiden til toget den tiden som ble målt med klokka i toget. Og denne tilsvarer altså tidromsavstanden som toget tilbakelegger, altså lengden av verdenslinja i et hvilket som helst referansesystem. Egentiden kalles ofte for {\bf armbåndsurtid} siden det er tiden som måles når man setter et armbåndsur fast på objektet eller personen man skal måle egentiden til.\\
+\textcolor{red}{Det som står her er det svært viktig at du får grepet på! Les en gang til gjennom de 3 siste sidene. Hvis du ikke forstår helt, ta kontakt med foreleser (eller forumet).}
+\hyperlink{td19c}{\pagebutton{SIDE 28/38/44}}}
+
+
+{
+Vi skal nå se på et svært viktig fysisk prinsipp, {\bf prinsippet om maksimal aldring.} I generell relativitetsteori, del 2C, 2D og 2E, kommer dette prinsippet til å bli svært viktig. Følg derfor nøye med og spør {\bf nå} hvis du ikke forstår! Vi begynner med en problemstilling:
+\begin{block}{Event A er at...}
+... vi slipper et legeme som har hastighet $v$ og lar det bevege seg fritt uten påvirkning fra noen krefter. Legemet er i {\bf fri flyt} som vi snakket om i del 2A. Hva skjer så videre med dette legemet? La oss si at legemet en tid $\Delta t$ etterpå eksploderer i et event B i en posisjon $\Delta x$ lenger bort langs x-aksen. Hvilken vei i tidrommet har dette legemet tatt fra eventa A til event B? Og hvordan vet vi det?
+\end{block}
+Altså, hvordan blir verdenslinja til dette legemet fra event A til event B? Og hvorfor slik? Tenk før du blar om!
+\hyperlink{td20}{\pagebutton{SIDE 29/38/44}}}
+
+
+{
+\htmlcom{large}{Blir det en rett linje fra A til B i tidrommet? Hvordan visste du det?}
+\hyperlink{td21}{\pagebutton{SIDE 30/38/44}}}
+
+
+{
+\htmlcom{large}{Rett linje betyr konstant hastighet, ikke sant? Hvorfor konstant hastighet?}
+\hyperlink{td22}{\pagebutton{SIDE 31/38/44}}}
+
+{
+\htmlcom{large}{Var det Newtons første lov du brukte?}
+\hyperlink{td23}{\pagebutton{SIDE 32/38/44}}}
+
+{
+Einsteins generaliserte (og mye kraftigere) versjon av Newtons første lov, maksimal aldringsprinsippet, lyder
+\begin{block}{Prinsippet om maksimal aldring:}
+Et legeme i fri fly følger den verdenslinja i tidrommet som gjør at det eldes mest mulig på sin vei. Det vil si at det følger den verdenslinja i tidrommet som gjør at det blir flest mulig tikk på armbåndsuret som står fast på legemet. Altså at {\bf egentida $\tau$} blir størst mulig. Men vi har lært at egentid $\tau$ og tidromsavstand $s$ er en og samme størrelse (dette {\bf må} du ha kontroll på nå!) Det betyr at legemet tar den veien i tidrommet som gjør at tidromsavstanden $s$ blir størst mulig.
+\end{block}
+\hyperlink{td24}{\pagebutton{SIDE 33/38/44}}}
+
+
+{
+  \textcolor{red}{I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_9.mp4}{denne videoen} diskuterer vi maksimal aldringsprinsippet litt mer og forklarer detaljert hvordan det gir oss Newtons første lov. Se gjerne videoen to ganger slik at du er helt sikker på at du forstår.} {\bf Synes du det er vanskelig å se for seg hvordan den rette linja kan være den lengste mulige? Den første delen av \href{https://www.youtube.com/watch?v=kEB11PQ9Eo8}{denne animasjonen} kan hjele litt på forståelsen.}
+\hyperlink{td25}{\pagebutton{SIDE 34/38/44}}}
+
+
+{
+Vi går et øyeblikk tilbake til eksemplet med de 3 bilene som var samlet på et sted i et event A, deretter kjørte med forskjellige hastigheter til de igjen møttes i et event B. Her ser du det igjen i tidrommet:
+\centerline{\includegraphics[scale=0.15]{media/cars.png}}
+La oss si at det tok 10 sekunder fra A til B i bilen som kjørte med konstant hastighet. Kan du tegne inn en liten prikk på linja med konstant hastighet for hver gang klokka i denne bilen tikker? (regn med at den tikker en gang i sekundet). Tegn deretter også inn tilsvarende prikker på de andre to verdenslinjene. Trenger kun å være kvalitativt rett, altså omtrentlig riktig relativ avstand og antall prikker.
+\hyperlink{td25b}{\pagebutton{SIDE 35/38/44}}}
+
+{
+\textcolor{yellow}{\htmlcom{large}{Har du tegnet tidromsdiagrammet med de 3 verdenslinjene og med prikker på? Dette likner på en av ukeoppgavene og flere eksamensoppgaver, så sjansen er stor for at du kommer til å trenge dette. Bedre å lære og forstå det nå!}}
+\hyperlink{red_td25c}{\pagebutton{SIDE 36/38/44}}}
+
+{
+Når du har gjort et skikkelig forsøk, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_10.mp4}{denne videoen}\\
+Hvis du vil se et konkret eksempel og litt mer detaljert tolkning av disse strekene på verdenslinja som representerer tikk på egentidsklokka, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_10b.mp4}{denne videoen}.
+\hyperlink{td25d}{\pagebutton{SIDE 37/38/44}}}
+
+{
+For å oppsummere:
+\begin{itemize}
+\item Et legeme i fri flyt som beveger seg en romlig avstand $\Delta x$ i løpet av en tid $\Delta t$ fra et event A til et event B, følger den veien i tidrommet som gir størst mulig egentid, altså flest mulig tikk på armbåndsuret fra event A til event B.
+\item Størst mulig egentid betyr størst mulig tidromsavstand $s$ fra event A til event B.
+\item I et 4-dimensjonalt tidrom med Lorentzgeometri, er den rette linja den lengste mulige avstanden mellom to punkt. Da følger legemet altså en rett linje i tidrommet.
+\item Den rette linja tilsvarer konstant hastighet. Altså må legemet bevege seg fra A til B med konstant hastighet.
+\item Dette er samme konklusjon som i Newtons 1.lov. Men i 2C skal vi se hva som skjer når vi ikke lenger har Lorentz-geometri.
+\end{itemize}
+\hyperlink{td26}{\pagebutton{SIDE 38/38/44}}}
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\huge
+\centerline{\htmlcom{large}{Kaffe igjen?}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+Dette var mye abstrakt tenkning, da trenger vi litt koffein og litt adrenalin: En løpetur ut først, 3 ganger rundt fysikkbygningen så fort du kan! Ikke lov å fortsette før du har løpt alle 3 rundene!
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Ok, jeg er klar for 4D(X?)-matematikk... }}
+}
+}
+
+\renewcommand{\headline}{4-vektorer}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+{\pagebutton{La oss begynne med litt 4D-matematikk...}}
+}
+}
+
+{
+Vi begynner med en introduksjon til 4-vektorer i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_11.mp4}{denne videoen}. Se gjerne videoen to ganger til du har full kontroll!
+\hyperlink{vv1}{\pagebutton{SIDE 39/44/44}}}
+
+{
+{\bf Anta at vi har en 4-vektor $x_\mu=(t,x,y,z)$ i et umerket referansesystem} og \textcolor{red}{den samme vektoren i et merket referansesystem $x'_\mu=(t',x',y',z')$.} Det kan være en 4-vektor som peker på et event som skjer i posisjon $(t,x,y,z)$ i det umerkede systemet og i posisjon $(t',x',y',z')$ i det merkede systemet. \textcolor{blue}{Det merkede systemet beveger seg med en hastighet $v_\mathrm{rel}$ i forhold til det umerkede.} Transformasjonen beskrives ved \textcolor{red}{Lorentzmatrisen $C_{\mu\nu}$} der $\mu$ og $\nu$ som vanlig er indekser over alle 4 dimensjoner, tid og rom. {\bf Kan du skrive opp Lorentztransformasjonen med $C_{\mu\nu}$ som en likning med summetegn?} Altså en matematisk relasjon mellom $x_\mu$ og $x'_\mu$? Ikke gå videre før du har en sammenheng.
+\hyperlink{vv2}{\pagebutton{SIDE 40/44/44}}}
+
+{
+Fikk du...
+{\pagebutton{ja, fikk du...}}
+\textcolor{white}{
+\[
+x_\mu'=\sum_{\nu=0}^3C_{\mu\nu}x_\nu
+\]
+der $\nu$ er summevariabel som summes over 0 (tid) og rom (1, 2, 3)??\\
+Einstein ble litt lei av å skrive summer slik at han innførte
+{\bf Einsteins summekonvensjon.}\\
+Hvis det i et produkt er to like indekser så skal det egentlig stå et summetegn der, men vi dropper å skrive det. Hvis de to like indeksene er greske, er summen over både tid og rom. Hvis indeksene er latinske er summen over kun romlige indekser.\\
+Da kan likningen vår forenkles til
+\[
+x_\mu'=C_{\mu\nu}x_\nu
+\]
+der det altså egentlig er en sum over $\nu$ som vi ikke skriver.}
+\hyperlink{vv3}{\pagebutton{SIDE 41/44/44}}}
+
+{
+Fikk du...
+{ja fikk du...}
+
+\[
+x_\mu'=\sum_{\nu=0}^3C_{\mu\nu}x_\nu
+\]
+der $\nu$ er summevariabel som summes over 0 (tid) og rom (1, 2, 3)??\\
+Einstein ble litt lei av å skrive summer slik at han innførte
+\begin{block}{\bf Einsteins summekonvensjon.}
+Hvis det i et produkt er to like indekser så skal det egentlig stå et summetegn der, men vi dropper å skrive det. Hvis de to like indeksene er greske, er summen over både tid og rom. Hvis indeksene er latinske er summen over kun romlige indekser.
+\end{block}
+Da kan likningen vår forenkles til
+\[
+x_\mu'=C_{\mu\nu}x_\nu
+\]
+der det altså egentlig er en sum over $\nu$ som vi ikke skriver.
+\hyperlink{vv3_b}{\pagebutton{SIDE 41/44/44}}}
+
+
+{
+Kan du nå skrive det vanlige vektorskalarproduktet
+\[
+\vec{x}\cdot\vec{y}=
+\]
+ved hjelp av Einsteinkonvensjonen?
+{\pagebutton{ja, det blir...}}
+\textcolor{white}{
+\[
+\vec{x}\cdot\vec{y}=x_iy_i
+\]
+Her skriver vi komponentene til vektorene, $x_i$ og $y_i$ med latinske indekser for å markere at de er vanlige romlige 3D-vektorer. Og siden det er produkt med to like indekser (begge er $i$) så er det egentlig en sum.}
+\hyperlink{vv4}{\pagebutton{SIDE 42/44/44}}}
+
+{
+Kan du nå skrive det vanlige vektorskalarproduktet
+\[
+\vec{x}\cdot\vec{y}=
+\]
+ved hjelp av Einsteinkonvensjonen?
+{{ja, det blir...}}
+\[
+\vec{x}\cdot\vec{y}=x_iy_i
+\]
+Her skriver vi komponentene til vektorene, $x_i$ og $y_i$ med latinske indekser for å markere at de er vanlige romlige 3D-vektorer. Og siden det er produkt med to like indekser (begge er $i$) så er det egentlig en sum.
+\hyperlink{vv4_b}{\pagebutton{SIDE 42/44/44}}}
+
+
+
+
+
+
+{
+Når vi først er igang med nye konvensjoner, så skal vi se på {\bf det 4-dimensjonale skalarproduktet i tidrommet}. For å markere at man tar et skalarprodukt i tidrommet, skriver man det som en sum med Einsteinkonvensjonen, men en indeks setter man oppe og en nede: $x_\mu y^\mu$ er skalarproduktet i det 4-dimensjonale tidrommet med 4-vektorene $x_\mu$ og $y_\mu$. Merk at det er samme indeks, så det er en sum, men siden det er et 4D-skalarprodukt (en indeks oppe og en nede), skal summen gjøres på følgende måte:
+\[
+x_\mu y^\mu=x_0y_0-x_iy_i=x_0y_0-\sum_{i=1}^3x_iy_i
+\]
+der $x_0$ og $y_0$ er tidskomponentene til 4-vektorene mens $x_i$ og $y_i$ er de romlige vektorene. {\bf MERK deg minustegnet mellom tid- og romdelen!} Det er dette som skiller skalarproduktet i 4D-tidrom fra vanlig skalarprodukt!
+\hyperlink{vv5}{\pagebutton{SIDE 43/44/44}}}
+
+{
+{\bf Det er også minustegnet som er årsaken til at vi skriver en indeks oppe og en nede for å markere skalarprodukt med Einsteins summekonvensjon!}. Anta nå at du har to eventer A og B. 4-vektoren $x_\mu$ peker på event A og 4-vektoren $y_\mu$ peker på event B. Avstandensvektoren $\Delta x_\mu$ (tilsvarende $\Delta\vec{x}$ i vanlig 3D-rom) mellom disse to eventene
+\[
+\Delta x_\mu=x_\mu-y_\mu
+\]
+Kan du nå skrive tidromsavstanden $\Delta s^2$ mellom de to eventene uttrykt ved $\Delta x_\mu$?
+{\pagebutton{ja, det blir...}}\\
+\textcolor{white}{
+Er du sikker på at du har forsøkt?\\
+{jada, jada, få se da!}\\
+\[
+\Delta s^2=\Delta x_\mu\Delta x^\mu
+\]
+Ser du nå hvorfor skalarproduktet i 4D-tidrom er definert med et minus mellom tid og rom? Hvis du sliter med å forstå, se om {denne videoen} kan hjelpe deg.}
+\hyperlink{vv6}{\pagebutton{SIDE 44/44/44}}}
+
+{
+{\bf Det er også minustegnet som er årsaken til at vi skriver en indeks oppe og en nede for å markere skalarprodukt med Einsteins summekonvensjon!}. Anta nå at du har to eventer A og B. 4-vektoren $x_\mu$ peker på event A og 4-vektoren $y_\mu$ peker på event B. Avstandensvektoren $\Delta x_\mu$ (tilsvarende $\Delta\vec{x}$ i vanlig 3D-rom) mellom disse to eventene
+\[
+\Delta x_\mu=x_\mu-y_\mu
+\]
+Kan du nå skrive tidromsavstanden $\Delta s^2$ mellom de to eventene uttrykt ved $\Delta x_\mu$?
+{ja, det blir...}\\
+Er du sikker på at du har forsøkt?\\
+{\pagebutton{jada, jada, få se da!}}
+\textcolor{white}{
+\[
+\Delta s^2=\Delta x_\mu\Delta x^\mu
+\]
+Ser du nå hvorfor skalarproduktet i 4D-tidrom er definert med et minus mellom tid og rom? Hvis du sliter med å forstå, se om {denne videoen} kan hjelpe deg.}
+\hyperlink{vv6_b}{\pagebutton{SIDE 44/44/44}}}
+
+{
+{\bf Det er også minustegnet som er årsaken til at vi skriver en indeks oppe og en nede for å markere skalarprodukt med Einsteins summekonvensjon!}. Anta nå at du har to eventer A og B. 4-vektoren $x_\mu$ peker på event A og 4-vektoren $y_\mu$ peker på event B. Avstandensvektoren $\Delta x_\mu$ (tilsvarende $\Delta\vec{x}$ i vanlig 3D-rom) mellom disse to eventene
+\[
+\Delta x_\mu=x_\mu-y_\mu
+\]
+Kan du nå skrive tidromsavstanden $\Delta s^2$ mellom de to eventene uttrykt ved $\Delta x_\mu$?
+{ja, det blir...}\\
+Er du sikker på at du har forsøkt?\\
+{jada, jada, få se da!}
+\[
+\Delta s^2=\Delta x_\mu\Delta x^\mu
+\]
+Ser du nå hvorfor skalarproduktet i 4D-tidrom er definert med et minus mellom tid og rom? Hvis du sliter med å forstå, se om \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/2b/videoer/video2b_12.mp4}{denne videoen} kan hjelpe deg.
+\hyperlink{vv6_c}{\pagebutton{SIDE 44/44/44}}}
+
+
+
+
+
+
+
+{
+\setbeamercolor{background canvas}{bg=red}
+{
+
+{\pagebutton{\small Forrige side}}
+\textcolor{yellow}{\Large
+{\bf Du er ferdig med forelesning 1 av 2 i del 2B.}. I den fysiske forelesningen rekker jeg av og til også gjennom det første temaet i neste forelesning (som omhandler regneregler for 4-vektorer) på den første fysiske forelesningen. Hvis du føler deg frisk og rask og opplagt nå, hopp gjerne over på forelesning 2 for å gå gjennom akkurat det temaet om regneregler nå (ca. 10 sider). Hvis du derimot har fått nok for idag, vent med det til du skal gå gjennom neste forelesning.
+}
+{\pagebutton{Til oppsummeringen}}
+}
+}
+
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/171403}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+{\bf Du er ferdig med forelesning 1 av 2 i del 2B.}. Du bør nå:
+\begin{itemize}
+\item vite hva en verdenslinje er og forstå hva verdenslinjas helning betyr
+\item kunne tolke bevegelsen til et legeme fra å se på verdenslinja
+\item vite forsjellen mellom tidlike, lyslike og romlike eventer og kunne kjenne igjen slike eventer i et tidromdiagram
+\item vite hvordan man kan utlede et integral for å beregne veilengden av en verdenslinje i tidrommet og vite hva slags verdenslinje som er den lengste mulige mellom to eventer
+\item kjenne prinsippet om maksimal aldring og hva det betyr
+\item kunne utlede Newtons 1.lov fra prinsippet om maksimal aldring
+\item vite hva en 4-vektor er og hvordan disse transformerer mellom referansesystemer
+\item kjenne Einsteins summekonvensjon og skalarprodukt for 4-vektorer
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+}
+
+
+
+\end{frame}
 \end{document}

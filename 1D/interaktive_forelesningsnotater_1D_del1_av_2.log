@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  21 SEP 2021 22:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  23 FEB 2022 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -753,7 +753,7 @@ y
 \beamer@dimb=\dimen283
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.st
-y))) (./usercommands.tex)
+y))) (../usercommands_pdf.tex)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.st
@@ -1101,7 +1101,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<media/radiotelescopes.png, id=69, 676.5275pt x 446.66875pt>
+<media/radiotelescopes.png, id=70, 676.5275pt x 446.66875pt>
 File: media/radiotelescopes.png Graphic file (type png)
 <use media/radiotelescopes.png>
 Package pdftex.def Info: media/radiotelescopes.png  used on input line 316.
@@ -1136,7 +1136,7 @@ Overfull \vbox (4.33675pt too high) detected at line 358
 [7
 
 ]
-<media/1d3_1.png, id=159, 430.60875pt x 57.21375pt>
+<media/1d3_1.png, id=160, 430.60875pt x 57.21375pt>
 File: media/1d3_1.png Graphic file (type png)
 <use media/1d3_1.png>
 Package pdftex.def Info: media/1d3_1.png  used on input line 367.
@@ -1148,7 +1148,7 @@ Overfull \hbox (130.87311pt too wide) in paragraph at lines 381--381
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1d3_2.png, id=173, 450.68375pt x 492.84125pt>
+<media/1d3_2.png, id=174, 450.68375pt x 492.84125pt>
 File: media/1d3_2.png Graphic file (type png)
 <use media/1d3_2.png>
 Package pdftex.def Info: media/1d3_2.png  used on input line 381.
@@ -1165,7 +1165,7 @@ Overfull \hbox (130.87311pt too wide) in paragraph at lines 396--396
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1d3_3.png, id=185, 416.55624pt x 257.96375pt>
+<media/1d3_3.png, id=186, 416.55624pt x 257.96375pt>
 File: media/1d3_3.png Graphic file (type png)
 <use media/1d3_3.png>
 Package pdftex.def Info: media/1d3_3.png  used on input line 396.
@@ -1173,7 +1173,7 @@ Package pdftex.def Info: media/1d3_3.png  used on input line 396.
 [10
 
  <./media/1d3_3.png>]
-<media/1d4_1.png, id=199, 443.6575pt x 285.065pt>
+<media/1d4_1.png, id=200, 443.6575pt x 285.065pt>
 File: media/1d4_1.png Graphic file (type png)
 <use media/1d4_1.png>
 Package pdftex.def Info: media/1d4_1.png  used on input line 411.
@@ -1188,7 +1188,7 @@ Overfull \hbox (6.3122pt too wide) in paragraph at lines 411--411
 []  
  []
 
-<media/1d4_2.png, id=200, 399.4925pt x 650.43pt>
+<media/1d4_2.png, id=201, 399.4925pt x 650.43pt>
 File: media/1d4_2.png Graphic file (type png)
 <use media/1d4_2.png>
 Package pdftex.def Info: media/1d4_2.png  used on input line 411.
@@ -1196,7 +1196,7 @@ Package pdftex.def Info: media/1d4_2.png  used on input line 411.
 [11
 
  <./media/1d4_1.png> <./media/1d4_2.png>]
-<media/1d4_3.png, id=213, 419.5675pt x 407.5225pt>
+<media/1d4_3.png, id=214, 419.5675pt x 407.5225pt>
 File: media/1d4_3.png Graphic file (type png)
 <use media/1d4_3.png>
 Package pdftex.def Info: media/1d4_3.png  used on input line 433.
@@ -1236,33 +1236,29 @@ l.487 \end{frame}
 ] [23
 
 ]
-<media/angle.png, id=379, 199.74625pt x 157.58875pt>
+<media/angle.png, id=380, 199.74625pt x 157.58875pt>
 File: media/angle.png Graphic file (type png)
 <use media/angle.png>
-Package pdftex.def Info: media/angle.png  used on input line 620.
+Package pdftex.def Info: media/angle.png  used on input line 608.
 (pdftex.def)             Requested size: 83.89284pt x 66.18681pt.
  [24
 
  <./media/angle.png>]
-File: media/angle.png Graphic file (type png)
-<use media/angle.png>
-Package pdftex.def Info: media/angle.png  used on input line 649.
-(pdftex.def)             Requested size: 83.89284pt x 66.18681pt.
-<media/solidangle.png, id=391, 172.645pt x 151.56625pt>
+<media/solidangle.png, id=392, 172.645pt x 151.56625pt>
 File: media/solidangle.png Graphic file (type png)
 <use media/solidangle.png>
-Package pdftex.def Info: media/solidangle.png  used on input line 649.
+Package pdftex.def Info: media/solidangle.png  used on input line 623.
 (pdftex.def)             Requested size: 72.51039pt x 63.65738pt.
  [25
 
  <./media/solidangle.png>]
-<media/drink-coffee.png, id=402, 16.8383pt x 11.61842pt>
+<media/drink-coffee.png, id=403, 16.8383pt x 11.61842pt>
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 667.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 641.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
 
-Overfull \vbox (3.1857pt too high) detected at line 667
+Overfull \vbox (3.1857pt too high) detected at line 641
  []
 
 [26
@@ -1270,10 +1266,10 @@ Overfull \vbox (3.1857pt too high) detected at line 667
  <./media/drink-coffee.png>] [27
 
 ]
-<media/intensity.png, id=423, 414.54875pt x 180.675pt>
+<media/intensity.png, id=424, 414.54875pt x 180.675pt>
 File: media/intensity.png Graphic file (type png)
 <use media/intensity.png>
-Package pdftex.def Info: media/intensity.png  used on input line 693.
+Package pdftex.def Info: media/intensity.png  used on input line 667.
 (pdftex.def)             Requested size: 290.18214pt x 126.47162pt.
  [28
 
@@ -1295,48 +1291,48 @@ Package pdftex.def Info: media/intensity.png  used on input line 693.
 ] [36
 
 ]
-<media/blambda.png, id=524, 407.5225pt x 303.1325pt>
+<media/blambda.png, id=525, 407.5225pt x 303.1325pt>
 File: media/blambda.png Graphic file (type png)
 <use media/blambda.png>
-Package pdftex.def Info: media/blambda.png  used on input line 806.
+Package pdftex.def Info: media/blambda.png  used on input line 782.
 (pdftex.def)             Requested size: 203.76074pt x 151.56587pt.
  [37
 
  <./media/blambda.png>]
-Overfull \hbox (15.86006pt too wide) in paragraph at lines 819--819
+Overfull \hbox (15.86006pt too wide) in paragraph at lines 795--795
 [][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/1d1.png, id=538, 434.62375pt x 471.7625pt>
+<media/1d1.png, id=539, 434.62375pt x 471.7625pt>
 File: media/1d1.png Graphic file (type png)
 <use media/1d1.png>
-Package pdftex.def Info: media/1d1.png  used on input line 819.
+Package pdftex.def Info: media/1d1.png  used on input line 795.
 (pdftex.def)             Requested size: 195.57887pt x 212.29115pt.
 [38
 
  <./media/1d1.png>]
 File: media/drink-coffee.png Graphic file (type png)
 <use media/drink-coffee.png>
-Package pdftex.def Info: media/drink-coffee.png  used on input line 836.
+Package pdftex.def Info: media/drink-coffee.png  used on input line 812.
 (pdftex.def)             Requested size: 67.35297pt x 46.47351pt.
  [39
 
 ]
-Overfull \hbox (16.59007pt too wide) in paragraph at lines 847--847
+Overfull \hbox (16.59007pt too wide) in paragraph at lines 823--823
 [][][][][][][][][][]  
  []
 
 [40
 
 ]
-Overfull \hbox (52.97566pt too wide) in paragraph at lines 862--862
+Overfull \hbox (52.97566pt too wide) in paragraph at lines 838--838
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [41
 
 ]
-Overfull \hbox (52.97566pt too wide) in paragraph at lines 877--877
+Overfull \hbox (52.97566pt too wide) in paragraph at lines 853--853
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -1344,32 +1340,32 @@ pdfTeX warning (ext4): destination with the same identifier (name{info}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.877 \end{frame}
+l.853 \end{frame}
                   [42
 
 ]
-Overfull \hbox (52.97566pt too wide) in paragraph at lines 886--886
+Overfull \hbox (52.97566pt too wide) in paragraph at lines 862--862
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [43
 
 ]
-Overfull \hbox (52.97566pt too wide) in paragraph at lines 896--896
+Overfull \hbox (52.97566pt too wide) in paragraph at lines 872--872
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [44
 
 ]
-Overfull \hbox (52.97566pt too wide) in paragraph at lines 906--906
+Overfull \hbox (52.97566pt too wide) in paragraph at lines 882--882
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [45
 
 ]
-Overfull \hbox (52.97566pt too wide) in paragraph at lines 923--923
+Overfull \hbox (52.97566pt too wide) in paragraph at lines 899--899
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -1378,47 +1374,47 @@ Overfull \hbox (52.97566pt too wide) in paragraph at lines 923--923
 ] [47
 
 ]
-Overfull \hbox (24.17pt too wide) in paragraph at lines 945--945
+Overfull \hbox (24.17pt too wide) in paragraph at lines 921--921
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [48
 
 ]
-Overfull \hbox (24.17pt too wide) in paragraph at lines 956--956
+Overfull \hbox (24.17pt too wide) in paragraph at lines 932--932
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/bremss.png, id=709, 557.08125pt x 682.55pt>
+<media/bremss.png, id=704, 557.08125pt x 682.55pt>
 File: media/bremss.png Graphic file (type png)
 <use media/bremss.png>
-Package pdftex.def Info: media/bremss.png  used on input line 956.
+Package pdftex.def Info: media/bremss.png  used on input line 932.
 (pdftex.def)             Requested size: 83.55858pt x 102.37808pt.
 [49
 
  <./media/bremss.png>]
-Overfull \hbox (24.17pt too wide) in paragraph at lines 965--965
+Overfull \hbox (24.17pt too wide) in paragraph at lines 941--941
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [50
 
 ]
-Overfull \hbox (24.17pt too wide) in paragraph at lines 974--974
+Overfull \hbox (24.17pt too wide) in paragraph at lines 950--950
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [51
 
 ]
-Overfull \hbox (24.17pt too wide) in paragraph at lines 982--982
+Overfull \hbox (24.17pt too wide) in paragraph at lines 958--958
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-<media/21cm.png, id=778, 751.80875pt x 685.56125pt>
+<media/21cm.png, id=773, 751.80875pt x 685.56125pt>
 File: media/21cm.png Graphic file (type png)
 <use media/21cm.png>
-Package pdftex.def Info: media/21cm.png  used on input line 982.
+Package pdftex.def Info: media/21cm.png  used on input line 958.
 (pdftex.def)             Requested size: 225.54436pt x 205.66995pt.
 [52
 
@@ -1444,13 +1440,13 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_1D_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25951 strings out of 478994
- 511972 string characters out of 5858185
- 844578 words of memory out of 5000000
- 42692 multiletter control sequences out of 15000+600000
+ 25948 strings out of 478994
+ 511717 string characters out of 5858185
+ 844821 words of memory out of 5000000
+ 42688 multiletter control sequences out of 15000+600000
  421285 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,12n,132p,1002b,1207s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,12n,132p,1004b,1207s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{front} has been referenced but does not exist, re
 placed by a fixed one
 
@@ -1472,10 +1468,10 @@ ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2021/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
 Output written on interaktive_forelesningsnotater_1D_del1_av_2.pdf (53 pages, 3
-313339 bytes).
+311093 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 679 compressed objects within 7 object streams
+ 882 PDF objects out of 1000 (max. 8388607)
+ 676 compressed objects within 7 object streams
  166 named destinations out of 1000 (max. 500000)
- 676 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 664 words of extra memory for PDF output out of 10000 (max. 10000000)
 

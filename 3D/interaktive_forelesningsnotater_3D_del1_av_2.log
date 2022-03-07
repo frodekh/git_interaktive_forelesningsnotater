@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  15 OCT 2021 09:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.1)  18 FEB 2022 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -753,7 +753,7 @@ y
 \beamer@dimb=\dimen283
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.st
-y))) (./usercommands.tex)
+y))) (../usercommands_pdf.tex)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.st
@@ -1136,24 +1136,34 @@ thkerncmss.
 ] [6
 
 ]
-<media/fig_11-3.pdf, id=113, 593.00177pt x 349.2733pt>
-File: media/fig_11-3.pdf Graphic file (type pdf)
-<use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 408.
-(pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
+<media/fig_11-3.png, id=113, 1050.92625pt x 621.32124pt>
+File: media/fig_11-3.png Graphic file (type png)
+<use media/fig_11-3.png>
+Package pdftex.def Info: media/fig_11-3.png  used on input line 408.
+(pdftex.def)             Requested size: 420.36307pt x 248.5241pt.
 
-Overfull \vbox (7.24687pt too high) detected at line 408
+Overfull \hbox (78.06776pt too wide) in paragraph at lines 408--408
+[][]  
+ []
+
+
+Overfull \vbox (116.06413pt too high) detected at line 408
  []
 
 [7
 
- <./media/fig_11-3.pdf>]
-File: media/fig_11-3.pdf Graphic file (type pdf)
-<use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 414.
-(pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
+ <./media/fig_11-3.png>]
+File: media/fig_11-3.png Graphic file (type png)
+<use media/fig_11-3.png>
+Package pdftex.def Info: media/fig_11-3.png  used on input line 414.
+(pdftex.def)             Requested size: 420.36307pt x 248.5241pt.
 
-Overfull \vbox (6.33435pt too high) detected at line 414
+Overfull \hbox (78.06776pt too wide) in paragraph at lines 414--414
+[][]  
+ []
+
+
+Overfull \vbox (115.15161pt too high) detected at line 414
  []
 
 [8
@@ -1165,35 +1175,40 @@ Overfull \vbox (6.33435pt too high) detected at line 414
 ] [11
 
 ]
-File: media/fig_11-3.pdf Graphic file (type pdf)
-<use media/fig_11-3.pdf>
-Package pdftex.def Info: media/fig_11-3.pdf  used on input line 434.
-(pdftex.def)             Requested size: 237.1965pt x 139.70683pt.
+File: media/fig_11-3.png Graphic file (type png)
+<use media/fig_11-3.png>
+Package pdftex.def Info: media/fig_11-3.png  used on input line 434.
+(pdftex.def)             Requested size: 420.36307pt x 248.5241pt.
 
-Overfull \vbox (19.32603pt too high) detected at line 434
+Overfull \hbox (78.06776pt too wide) in paragraph at lines 434--434
+[][]  
+ []
+
+
+Overfull \vbox (128.1433pt too high) detected at line 434
  []
 
 [12
 
 ]
-<media/HR_diagram.pdf, id=566, 983.675pt x 1161.33875pt>
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 448.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+<media/HR_diagram.png, id=182, 869.2475pt x 1028.84375pt>
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 448.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
+ [13
 
-Overfull \vbox (9.65247pt too high) detected at line 448
- []
+ <./media/HR_diagram.png>]
 
-[13
+LaTeX Warning: Reference `hslinje' on page 14 undefined on input line 462.
 
- <./media/HR_diagram.pdf>] [14
+[14
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 477.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 477.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
  [15
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{fargeindeks}
@@ -1202,10 +1217,10 @@ Package pdftex.def Info: media/HR_diagram.pdf  used on input line 477.
                    \relax 
 l.491 }{SIDE 8/14/29}
                      
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 491.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 491.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
  [16
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{fargeindeks}
@@ -1214,76 +1229,72 @@ Package pdftex.def Info: media/HR_diagram.pdf  used on input line 491.
                    \relax 
 l.505 }{SIDE 8/14/29}
                      
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 505.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 505.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
  [17
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 516.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 517.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
 
-Overfull \vbox (23.39706pt too high) detected at line 516
+Overfull \vbox (36.99707pt too high) detected at line 517
  []
 
 [18
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 527.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 528.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
 
-Overfull \vbox (11.6619pt too high) detected at line 527
+Overfull \vbox (27.20634pt too high) detected at line 528
  []
 
 [19
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 538.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 540.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
 
-Overfull \vbox (26.05495pt too high) detected at line 538
+Overfull \vbox (31.31047pt too high) detected at line 540
  []
 
 [20
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 549.
-(pdftex.def)             Requested size: 167.22253pt x 197.42497pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 552.
+(pdftex.def)             Requested size: 147.77011pt x 174.90112pt.
 
-Overfull \vbox (14.1619pt too high) detected at line 549
+Overfull \vbox (20.3559pt too high) detected at line 552
  []
 
 [21
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 565.
-(pdftex.def)             Requested size: 147.54488pt x 174.1933pt.
-
-Overfull \vbox (11.33376pt too high) detected at line 565
- []
-
-[22
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 568.
+(pdftex.def)             Requested size: 130.3815pt x 154.3199pt.
+ [22
 
 ] [23
 
 ] [24
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 602.
-(pdftex.def)             Requested size: 147.54488pt x 174.1933pt.
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 605.
+(pdftex.def)             Requested size: 130.3815pt x 154.3199pt.
  [25
 
 ] [26
@@ -1293,15 +1304,11 @@ Package pdftex.def Info: media/HR_diagram.pdf  used on input line 602.
 ] [28
 
 ]
-File: media/HR_diagram.pdf Graphic file (type pdf)
-<use media/HR_diagram.pdf>
-Package pdftex.def Info: media/HR_diagram.pdf  used on input line 644.
-(pdftex.def)             Requested size: 118.0359pt x 139.35463pt.
-
-Overfull \vbox (0.33955pt too high) detected at line 644
- []
-
-[29
+File: media/HR_diagram.png Graphic file (type png)
+<use media/HR_diagram.png>
+Package pdftex.def Info: media/HR_diagram.png  used on input line 647.
+(pdftex.def)             Requested size: 104.30519pt x 123.45592pt.
+ [29
 
 ] [30
 
@@ -1314,24 +1321,34 @@ Overfull \vbox (0.33955pt too high) detected at line 644
 ] [34
 
 ]
-<media/fig_13-2.pdf, id=814, 438.63875pt x 583.17876pt>
-File: media/fig_13-2.pdf Graphic file (type pdf)
-<use media/fig_13-2.pdf>
-Package pdftex.def Info: media/fig_13-2.pdf  used on input line 729.
-(pdftex.def)             Requested size: 131.59264pt x 174.95497pt.
+<media/fig_13-2.png, id=425, 795.97375pt x 1060.96375pt>
+File: media/fig_13-2.png Graphic file (type png)
+<use media/fig_13-2.png>
+Package pdftex.def Info: media/fig_13-2.png  used on input line 732.
+(pdftex.def)             Requested size: 238.79396pt x 318.29158pt.
 
-Overfull \vbox (2.43445pt too high) detected at line 729
+Overfull \hbox (67.64632pt too wide) in paragraph at lines 732--732
+[][]  
+ []
+
+
+Overfull \vbox (143.67647pt too high) detected at line 732
  []
 
 [35
 
- <./media/fig_13-2.pdf>]
-File: media/fig_13-2.pdf Graphic file (type pdf)
-<use media/fig_13-2.pdf>
-Package pdftex.def Info: media/fig_13-2.pdf  used on input line 739.
-(pdftex.def)             Requested size: 131.59264pt x 174.95497pt.
+ <./media/fig_13-2.png>]
+File: media/fig_13-2.png Graphic file (type png)
+<use media/fig_13-2.png>
+Package pdftex.def Info: media/fig_13-2.png  used on input line 742.
+(pdftex.def)             Requested size: 238.79396pt x 318.29158pt.
 
-Overfull \vbox (6.82343pt too high) detected at line 739
+Overfull \hbox (67.64632pt too wide) in paragraph at lines 742--742
+[][]  
+ []
+
+
+Overfull \vbox (125.0612pt too high) detected at line 742
  []
 
 [36
@@ -1375,6 +1392,9 @@ Overfull \vbox (6.82343pt too high) detected at line 739
 
 (./interaktive_forelesningsnotater_3D_del1_av_2.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `interaktive_forelesningsnotater_3D_del1_av_2
@@ -1382,11 +1402,11 @@ Package rerunfilecheck Info: File `interaktive_forelesningsnotater_3D_del1_av_2
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25806 strings out of 478994
- 507792 string characters out of 5858185
- 844113 words of memory out of 5000000
- 42569 multiletter control sequences out of 15000+600000
- 425429 words of font info for 105 fonts, out of 8000000 for 9000
+ 25811 strings out of 478994
+ 507787 string characters out of 5858185
+ 843381 words of memory out of 5000000
+ 42572 multiletter control sequences out of 15000+600000
+ 425723 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,11n,132p,1002b,1275s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -1405,11 +1425,11 @@ l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on interaktive_forelesningsnotater_3D_del1_av_2.pdf (49 pages, 1
-669331 bytes).
+Output written on interaktive_forelesningsnotater_3D_del1_av_2.pdf (49 pages, 6
+822456 bytes).
 PDF statistics:
- 1065 PDF objects out of 1200 (max. 8388607)
- 957 compressed objects within 10 object streams
+ 673 PDF objects out of 1000 (max. 8388607)
+ 572 compressed objects within 6 object streams
  151 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -104,7 +104,7 @@
 \newcommand{\dlastpagebuttoncr}[1]{\hyperlink{#1}{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\dnextpage\\\headlinebutton{\headline}\forumbutton\\}
 
 \newcommand{\nytemaside}[1]{
-\centerline{\Huge\textcolor{yellow}{Nytt tema:}}\\
+\centerline{\Huge\textcolor{yellow}{\htmlcom{large}{Nytt tema:}}}\\
 \vspace*{1cm}
 \centerline{\Large\bf\textcolor{yellow}{\headline}}
 \vspace*{2cm}
@@ -342,7 +342,7 @@
 
 \begin{frame}
 \label{tableofcontents}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
 \begin{itemize}
 \item \hyperlink{blue_nytema1}{\headlinebutton{Levetid på hovedserien}}
@@ -351,7 +351,7 @@ Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et
 \item \hyperlink{blue_nytema2}{\headlinebutton{Farvel hovedserie!}}
 \end{itemize}
 Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
-\hyperlink{feil_intro}{\choicebutton{Neste side}}
+\hyperlink{feil_intro}{\choicebutton{Neste side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}
 \end{frame}
 
 %%%%% intro
@@ -361,7 +361,7 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 \label{feil_intro}
 \begin{columns}
 \column{0.5\textwidth}
-\hyperlink{front3}{\pagebutton{Forrige side}}\\
+\hyperlink{front3}{\pagebutton{Forrige side}}\ \ \ \ \hyperlink{scroll}{\pagebutton{Scroll gjennom hele dokumentet for å finne side}}\\
 \includegraphics[scale=0.15]{media/main_sequence_stars.jpg}
 \column{0.5\textwidth}
 {\small
@@ -374,9 +374,9 @@ Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z a
 
 \fullframe{msx1}{feil_intro}{riktig_ms1}{0}{
 \huge
-{\bf HUSK:} som vi sa i slutten av forrige forelesning, så trenger denne forelesningen {\bf forberedelse}: Du må lese og lære så godt du kan underavsnitt 3 om ``From the main sequence to the giant stage'' i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D}.\\
+\htmlcom{large}{{\bf HUSK:} som vi sa i slutten av forrige forelesning, så trenger denne forelesningen {\bf forberedelse}: Du må lese og lære så godt du kan underavsnitt 3 om ``From the main sequence to the giant stage'' i} \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D}.\\
 \vspace*{1cm}
-\textcolor{red}{Hvor var vi igjen i siste forelesning? La oss begynne med siste side av forrige forelesning...}
+\textcolor{red}{\htmlcom{large}{Hvor var vi igjen i siste forelesning? La oss begynne med siste side av forrige forelesning...}}
 }{SIDE 1/6/57}
 
 \colfullframe{riktig_ms1}{msx1}{ms2}{0}{yellow}{
@@ -389,13 +389,15 @@ Her {\bf øker} jo $\mu$ ettersom vi få mer og mer helium. Husk at $\mu$ er et 
 
 
 \fullframenotxt{ms2}{riktig_ms1}{ms3}{0}{
-  Vi skal på de neste sidene gjøre {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.} \hyperlink{ms2_b}{\pagebutton{\small Den må du lenger ut på landet med!}}
-  \textcolor{white}{
+Vi skal på de neste sidene gjøre {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.}\\
+\hyperlink{ms2_b}{\pagebutton{\small Den må du lenger ut på landet med!}}
+\textcolor{white}{
 Vel, mange av dere kommer til å jobbe med {\bf modellering} av komplekse systemer, det kan være veldig forskjellige systemer fra modellering av trafikken på veiene eller modellering av fisk og småkryp i en elv (eksempler på jobber som tidligere masterstudenter i astronomi faktisk gjør). Modellering av komplekse systemer kan være svært vanskelig hvis du ikke først finner noen virkelig kraftige men likevel ikke helt gale antakelser...}
 }{SIDE 3/6/57}
 
 \fullframe{ms2_b}{riktig_ms1}{ms3}{0}{
-Vi skal på de neste sidene gjøre {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.} {\pagebutton{\small Den må du lenger ut på landet med!}}
+Vi skal på de neste sidene gjøre {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.}\\
+{\pagebuttonolink{\small Den må du lenger ut på landet med!}}
 Vel, mange av dere kommer til å jobbe med {\bf modellering} av komplekse systemer, det kan være veldig forskjellige systemer fra modellering av trafikken på veiene eller modellering av fisk og småkryp i en elv (eksempler på jobber som tidligere masterstudenter i astronomi faktisk gjør). Modellering av komplekse systemer kan være svært vanskelig hvis du ikke først finner noen virkelig kraftige men likevel ikke helt gale antakelser...
 }{SIDE 3/6/57}
 
@@ -405,7 +407,8 @@ Vel, mange av dere kommer til å jobbe med {\bf modellering} av komplekse system
 
 
 \fullframenotxt{ms3}{ms2}{ms4}{1}{
-...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!} \hyperlink{ms3_b}{\pagebutton{Ok, men hva skal man med en slik forenklet modell da?}} \textcolor{white}{Når du har funnet en slik sterkt forenklet modell, kan du\\
+...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!}\\
+\hyperlink{ms3_b}{\pagebutton{Ok, men hva skal man med en slik forenklet modell da?}} \textcolor{white}{Når du har funnet en slik sterkt forenklet modell, kan du\\
 begynne å finne enkle sammenhenger som gjør at du får litt fysisk intuisjon for systemet ditt\\
 bruke denne som grunnlag for en langt mer kompleks og realistisk modell/simulering\\
 bruke denne til å teste den mer kompliserte modellen i enkle tilfeller\\
@@ -413,7 +416,8 @@ bruke denne til å teste den mer kompliserte modellen i enkle tilfeller\\
 }{SIDE 4/6/57}
 
 \fullframe{ms3_b}{ms2}{ms4}{1}{
-...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!} {\pagebutton{Ok, men hva skal man med en slik forenklet modell da?}} Når du har funnet en slik sterkt forenklet modell, kan du
+...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!}\\
+{\pagebuttonolink{Ok, men hva skal man med en slik forenklet modell da?}} Når du har funnet en slik sterkt forenklet modell, kan du
 \begin{itemize}
 \item begynne å finne enkle sammenhenger som gjør at du får litt fysisk intuisjon for systemet ditt
 \item bruke denne som grunnlag for en langt mer kompleks og realistisk modell/simulering
@@ -456,7 +460,7 @@ Ok, da mangler vi ``bare'' luminositeten $L$ for å finne levetida. Men det er i
 }{SIDE 7/45/57}
 
 \fullframe{ms5_b}{ms4b}{red_ms6}{0}{
-La oss begynne med et enkelt spørsmål først. Anta at du kjenner massem $M$ til gasskula (aka stjerna), at fusjonsreaksjoner kun foregår i kjernen som utgjør en andel $p$ av massen til kula. Anta videre at vi kjenner luminositeten $L$. Kan du finne et uttrykk for hvor lenge denne stjerna kommer til å produsere energi ved at hydrogen fusjonener til helium?{\pagebutton{Jeg har skrevet ned et forslag}}
+La oss begynne med et enkelt spørsmål først. Anta at du kjenner massem $M$ til gasskula (aka stjerna), at fusjonsreaksjoner kun foregår i kjernen som utgjør en andel $p$ av massen til kula. Anta videre at vi kjenner luminositeten $L$. Kan du finne et uttrykk for hvor lenge denne stjerna kommer til å produsere energi ved at hydrogen fusjonener til helium?{\pagebuttonolink{Jeg har skrevet ned et forslag}}
 Så total masse som blir fusjonert er $pM$. Masse går over til energi via uttrykket $E=mc^2$ der $c$ er lysfarten, så total energi som blir produsert i løpet av hele stjerna (unnskyld, gasskula) sin levetid må være $E=pMc^2$. Og energien som produseres per tid er $L$. Da må vel levetiden bli
 \[
 t_\mathrm{life}=\frac{pMc^2}{L}
@@ -472,20 +476,20 @@ Ok, da mangler vi ``bare'' luminositeten $L$ for å finne levetida. Men det er i
 
 \colfullframe{red_ms6}{ms5}{red_ms7}{1}{red}{
 \textcolor{yellow}{\Huge
-For hvordan kan du lage et overslag for luminositeten til en fusjonerende gasskule? Du kan anta at du kjenner massen og radien. Du kjenner ikke levetida. Hvor begynner du? Si at du kan anta de aller villeste forenklinger, kan du da komme på noen forslag?
+\htmlcom{large}{For hvordan kan du lage et overslag for luminositeten til en fusjonerende gasskule? Du kan anta at du kjenner massen og radien. Du kjenner ikke levetida. Hvor begynner du? Si at du kan anta de aller villeste forenklinger, kan du da komme på noen forslag?}
 }
 }{SIDE 8/45/57}
 
 \colfullframe{red_ms7}{red_ms6}{red_ms7b}{0}{red}{
 \textcolor{yellow}{\Huge
-Har du fått ned noen ideer på papiret? Du kan jo ikke få sparken allerede før du har begynt! {\bf Noe, må du kunne vise frem for at firmaet enda skal ha tiltro til deg.}
+\htmlcom{large}{Har du fått ned noen ideer på papiret? Du kan jo ikke få sparken allerede før du har begynt! {\bf Noe, må du kunne vise frem for at firmaet enda skal ha tiltro til deg.}}
 }
 }{SIDE 9/45/57}
 
 
 \colfullframe{red_ms7b}{red_ms7}{ms8}{0}{red}{
 \textcolor{yellow}{\Huge
-Ta ihvertall 5-10 minutter, diskuter med medstudenter og skriv ned i det minste noen konsepter eller bruddstykker av ideer og ting som du kanskje kunne bruke på en eller annen måte. {\bf NOE må du få ned på papiret}. Det står om karrieren din!
+\htmlcom{large}{Ta ihvertall 5-10 minutter, diskuter med medstudenter og skriv ned i det minste noen konsepter eller bruddstykker av ideer og ting som du kanskje kunne bruke på en eller annen måte. {\bf NOE må du få ned på papiret}. Det står om karrieren din!}
 }
 }{SIDE 10/45/57}
 
@@ -511,12 +515,12 @@ Før vi kan se noe nærmere på det, må vi nesten se hvordan energien transport
 \fullframe{ms10}{ms9}{red_ms11}{0}{\small
 I {\bf stjerner} er det hovedsaklig energitransport ved {\bf stråling og/eller ved konveksjon}. Energien kan transporteres fra kjernen via fotoner eller via gassmasser som beveger seg oppover i stjerna akkurat som kokeboblene. I sola så foregår energitransport ved stråling opp til ca. $0.7R_\odot$ og deretter ved konveksjon opp til overflaten. Her ser du bilde av konveksjonscellene (kokeboblene) på solas overflate:\\
 \centerline{\includegraphics[scale=0.22]{media/convection.png}}
-Du kan se tilsvarende \href{https://www.nasa.gov/sites/default/files/thumbnails/image/convectivecells.gif}{video} her. (Credits: NASA/JAXA/Hinode)
+Du kan se tilsvarende \href{https://www.nasa.gov/sites/default/files/thumbnails/image/convectivecells.gif}{video} her. (\htmlcom{footnotesize}{Credits: NASA/JAXA/Hinode)}
 }{SIDE 13/45/57}
 
 \colfullframe{red_ms11}{ms10}{ms12}{0}{red}{
 \textcolor{yellow}{\Huge
-En av antakelsene våre skal være at all transport skjer med stråling. Det er lettere å ha kontroll på fotoner som beveger seg utover enn store gassmasser. Da er vi klare her til å prøve å finne hvor stor energi $\Delta E$ som trenger tid $\Delta t$ på å komme seg ut av sola. Og derav finne Luminositeten...}
+\htmlcom{large}{En av antakelsene våre skal være at all transport skjer med stråling. Det er lettere å ha kontroll på fotoner som beveger seg utover enn store gassmasser. Da er vi klare her til å prøve å finne hvor stor energi $\Delta E$ som trenger tid $\Delta t$ på å komme seg ut av sola. Og derav finne Luminositeten...}}
 }{SIDE 14/45/57}
 
 
@@ -534,13 +538,13 @@ Ved så høy temperatur blir det så mange fotoner i de sentrale delene av en st
 
 \colfullframe{red_ms13}{ms12b}{red_ms14}{0}{red}{
 \textcolor{yellow}{\Huge
-Hvis vi antar at kjernen til stjerna har en radius $R_c$, har du nå kommet noe nærmere hvordan du kan gå frem for å finne luminositeten?? Hva kan vi bruke som denne energi $\Delta E$ som skal slippe ut i løpet av tiden $\Delta t$?
+\htmlcom{large}{Hvis vi antar at kjernen til stjerna har en radius $R_c$, har du nå kommet noe nærmere hvordan du kan gå frem for å finne luminositeten?? Hva kan vi bruke som denne energi $\Delta E$ som skal slippe ut i løpet av tiden $\Delta t$?}
 }
 }{SIDE 17/45/57}
 
 \colfullframe{red_ms14}{red_ms13}{ms15}{0}{red}{
 \textcolor{yellow}{\Huge
-Hvis du ikke nå har kommet {\bf noe} nærmere løsningen. Anta at vi nå skrur av alle kjernereaksjoner i sola. Hvor mye energi $\Delta E$ kommer den til å stråle ut før den slukner?
+\htmlcom{large}{Hvis du ikke nå har kommet {\bf noe} nærmere løsningen. Anta at vi nå skrur av alle kjernereaksjoner i sola. Hvor mye energi $\Delta E$ kommer den til å stråle ut før den slukner?}
 }
 }{SIDE 18/45/57}
 
@@ -558,7 +562,7 @@ Med energitetther $\rho_E=aT_c^4$ og kjerneradius $R_c$ så får vi vel at den t
 \[
 E=\frac{4}{3}\pi R_c^3aT_c^4
 \]
-{\bf Her har vi allerede gjort en stor antakelse, kan du se hvilken?}{\pagebutton{Tjaaaaa....}} \textcolor{red}{Tror du virkelig temperaturen og dermed energitettheten er den samme gjennom hele kjernen? Det er vel en ganske grov antakelse?}\\
+{\bf Her har vi allerede gjort en stor antakelse, kan du se hvilken?}{\pagebuttonolink{Tjaaaaa....}} \textcolor{red}{Tror du virkelig temperaturen og dermed energitettheten er den samme gjennom hele kjernen? Det er vel en ganske grov antakelse?}\\
 {\bf OK, her er planen:} Slår vi av kjernereaksjoner, så er det energien $\Delta E$ i alle disse fotonene som er igjen å stråle ut av sola. Det store spørsmålet hvor lang tid $\Delta t$ denne energien, altså alle disse fotonene trenger for å komme frem til solas overflate? Har vi det, har vi luminositeten $L=\Delta E/\Delta t$. {\Large\bf Noen forslag til hvor vi kan starte for å finne ut hvor lang tid fotonene trenger for å komme seg ut?}
 }{SIDE 19/45/57}
 
@@ -582,11 +586,12 @@ der $c$ er lyshastigheten til å komme seg opp til overflaten?
 
 \colfullframe{red_ms16b}{ms16}{red_ms16b2}{0}{red}{
 \textcolor{yellow}{\Huge
-Har du gjort et skikkelig forsøk og kommet et stykke på vei? Hvis ikke, gå tilbake og prøv igjen, {\bf noe må du få til} for a betrygge arbeidsgiveren din her om at du jobber med saken!}
+\htmlcom{large}{Har du gjort et skikkelig forsøk og kommet et stykke på vei? Hvis ikke, gå tilbake og prøv igjen, {\bf noe må du få til} for a betrygge arbeidsgiveren din her om at du jobber med saken!}}
 }{SIDE 21/45/57}
 
-\fullframe{red_ms16b2}{red_ms16b}{ms16c}{0}{{\Huge
-Hjelper denne figuren deg???
+\fullframe{red_ms16b2}{red_ms16b}{ms16c}{0}{
+{\Huge
+\htmlcom{large}{Hjelper denne figuren deg???}
 \centerline{\includegraphics[scale=0.7]{media/fig_20-2.png}}}
 }{SIDE 22/45/57}
 
@@ -650,11 +655,11 @@ Det ble nok ikke rett! Har du tegnet opp partiklene? Har du prøvd med en ny teg
 
 
 \colfullframe{riktig_ms20c}{ms20}{pause}{-1}{yellow}{\Huge
-Det er helt riktig! Hvis du enda er usikker, ta en titt på  \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_3.mp4}{denne videoen}. Kan du nå vise at
+\htmlcom{large}{Det er helt riktig! Hvis du enda er usikker, ta en titt på  \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_3.mp4}{denne videoen}. Kan du nå vise at
 \[
 L\propto\frac{R^4T_c^4}{M}
 \]
-??? Det bør du få til nå, hvis ikke, spør foreleser!
+??? Det bør du få til nå, hvis ikke, spør foreleser!}
 }{SIDE 29/45/57}
 
 {
@@ -663,7 +668,7 @@ L\propto\frac{R^4T_c^4}{M}
 \label{pause}
 \hyperlink{riktig_ms20c}{\pagebutton{\small Forrige side}}
 {\large
-\centerline{{Eeeeeeendlig kaffe!}}
+\centerline{{\htmlcom{large}{Eeeeeeendlig kaffe!}}}
 \centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
 {med mye sukker! Og jammen bør du ta en tur bortom kantina eller kiosken og se om de har en sjokoladebit eller kakebit? Det har du fortjent nå. {\bf Ihvertfall bør du ta turen om du så ikke kjøper noe, en luftetur er påkrevet før du fortsetter!}
 \vspace*{0.5cm}
@@ -685,7 +690,7 @@ for luminositeten som funksjon av massen og radien til stjerna i tillegg til kje
 
 \fullframe{ms20e}{ms20d}{ms21}{0}{
 \textcolor{red}{Men det er vital informasjon som vi ikke har brukt! \bf Og her kommer et annet viktig punkt når det kommer til fysikk-overslagsregning: du må få med all informasjonen du har om systemet!}\\
- {\Huge Kan du tenke deg noen sammenhenger som vi kjenner til men enda ikke har benyttet? Det er flere enn en!} Ikke gå videre før du har skrevet ned minst en ting til som du vet om dette systemet og som kan være bruklig for å komme frem til en enda enklere sammenheng for luminositeten!
+ {\Huge \htmlcom{large}{Kan du tenke deg noen sammenhenger som vi kjenner til men enda ikke har benyttet? Det er flere enn en!}} Ikke gå videre før du har skrevet ned minst en ting til som du vet om dette systemet og som kan være bruklig for å komme frem til en enda enklere sammenheng for luminositeten!
 }{SIDE 31/45/57}
 
 
@@ -719,7 +724,8 @@ som altså er veldig fristende å bruke for å kvitte oss med $T_c$ i uttryket f
 
 
 
-\colfullframetxt{red_ms22}{ms21b}{ms23}{0}{red}{Jeg har kommet et stykke på vei ihvertfall}{\textcolor{yellow}{\Large
+\colfullframetxt{red_ms22}{ms21b}{ms23}{0}{red}{Jeg har kommet et stykke på vei ihvertfall}{
+\textcolor{yellow}{\Large
 Tilbake til proporsjonaliteten for $P$ som du skal finne fra hydrostatisk likevekt...
 Fikk du det til? Det er ikke lov å gå videre uten å ha noe forslag, selv om du ikke kommer helt frem. Nå er vi nesten fremme ved det endelige uttrykket her. Firmaet vi jobber for begynner å blir riktig så fornøyd, dette ser lovende ut, vi har nesten gjort jobben vår som en god fysiker! Du kan ikke skuffe dem nå?}
 }{SIDE 34/45/57}
@@ -737,12 +743,13 @@ gir oss...ja hva gir det...
 }{SIDE 35/45/57}
 
 
-\fullframe{ms24}{ms23}{ms25}{0}{\huge
+\fullframe{ms24}{ms23}{ms25}{0}{
+\huge\htmlcom{large}{
 Lo and behold, det gir oss
 \[
 L\propto M^3
 \]
-Så vanvittig enkelt? Et så komplekst system og en så enkel relasjon? Men hva sier de store avanserte datamodellene da? De som kjører på 1000-vis av prosessorer i flere måneder?
+Så vanvittig enkelt? Et så komplekst system og en så enkel relasjon? Men hva sier de store avanserte datamodellene da? De som kjører på 1000-vis av prosessorer i flere måneder?}
 }{SIDE 36/45/57}
 
 
@@ -783,7 +790,7 @@ Så hva sier denne sammenhengen oss:
 L\propto M^4
 \]
 (som er den varianten som vi skal bruke siden den passer på langt flere stjerner enn $L\propto M^3$ som vi kom frem til med alle forenklingene våre)\\
-En stjerne som er dobbelt så massiv som sola, hvor stor luminositet har den?{\pagebutton{Jeg har det, jeg har det!}}
+En stjerne som er dobbelt så massiv som sola, hvor stor luminositet har den?{\pagebuttonolink{Jeg har det, jeg har det!}}
 Nettopp, ja 16 ganger mer energi per sekund enn sola. Og bare dobbel masse! {\bf Dette er jo vital informasjon} for arbeidsgiveren vår som skal bygge en fusjonsreaktor som er en stor gasskule! Jobben fullført! Ihvertfall den innledende fasen. Hvis behovet for energi er stort, så ha stor masse. {\bf Men det var en problemstilling til som vi begynte med, var det ikke? Hvor lenge lever en slik stjerne?}
 }{SIDE 39/45/57}
 
@@ -838,7 +845,7 @@ Det er helt riktig! Kan du nå vise at
 \[
 t_\mathrm{life}\propto\frac{1}{M^3}
 \]
-Altså en stjerne som er dobbelt så massiv som solen vil leve i ...\pagebutton{Shit! Strek i regningen!}
+Altså en stjerne som er dobbelt så massiv som solen vil leve i ...\pagebuttonolink{Shit! Strek i regningen!}
 Bare 1/8 av solas levetid? Tuller du? Da faller jo ideen i grus her, med stor masse får vi masse energi ut, men så blir fusjonsreaktoren ``brukt opp'' i løpet av en mye kortere tid!
 }{SIDE 42/45/57}
 
@@ -897,7 +904,7 @@ t_\mathrm{life}\propto \frac{1}{M^3}
 T_\mathrm{overflate}\propto\sqrt{M}
 \]
 \end{block}
-Men disse er bare proporsjonaliteter. Vi kan ikke bruke de til å finne tall, {\bf eller?}.{\pagebutton{Joda, fordi...}}
+Men disse er bare proporsjonaliteter. Vi kan ikke bruke de til å finne tall, {\bf eller?}.{\pagebuttonolink{Joda, fordi...}}
 ...naturen har allerede laget en prototyp av denne fusjonsreaktoren for oss. Den heter sola (egentlig har den laget en tilnærmet uendelig mengde av slike prototyper). \textcolor{red}{\bf Ser du at ved å bruke de kjente tallene for $M$, $L$, $t_\mathrm{life}$ (10 milliarder år for sola) og $T_\mathrm{overflate}$, så har vi alt vi trenger for å finne proporsjonalitetskonstantene i deiise relasjonene? Og da kan du regne ut tall!}
 }{SIDE 44/45/57}
 
@@ -930,12 +937,14 @@ Det viktigste vi lærte her var selve fremgangsmåten! Tro meg, denne tenkemåte
 }
 
 
-\fullframe{se1}{ms29c}{se1b}{0}{\label{farvel}
+\fullframe{se1}{ms29c}{se1b}{0}{
+\label{farvel}
 {\large
 Da har vi sett hvor lenge en stjerne lever på hovedserien. {\bf Nå skal vi følge en stjerne inn i alderdommen, bort fra hovedserien og frem til den grufulle død som vi skal omtale nærmere i del 3E.} \textcolor{red}{Omtalen av en stjernes utvikling fra hovedserie til død er basert på store og kompliserte datasimuleringer.} Vi skal beskrive de fysiske prosessene som skjer og fører til endringer i stjernene.}
 }{SIDE 46/57/57}
 
-\fullframe{se1b}{se1}{se2}{0}{{
+\fullframe{se1b}{se1}{se2}{0}{
+{
 \large
 Merk at de fysiske prosessene som brukes som årsaksforklaringer til endringer i stjernen (som du skulle ha lest om før forelesningen) kan i teorien gi opphav til helt andre endringer enn det som beskrives. {\bf Men vi vet utfallet på grunn av datasimuleringer.} Dette er likevel en svært interessant øvelse i å bruke fysisk intuisjon, hvordan kan forskjellige fysiske størrelser påvirke hverandre og hva blir konsekvensene av endringer. Som fysiker trenger man normalt ikke å pugge så mye, det aller viktigste er forståelsen. Men akkurat som med gangetabellen, så er det mye som går lettere hvis man også husker enkelte ting. {\bf En stjernes utvikling og de fysiske prosessene som styrer denne er en slik ting som man bør ha i hodet og som man kan bli testet i til eksamen!} Store deler av astrofysikken baserer seg på stjerners egenskaper. Vi skal se et eksempel her mot slutten.}
 }{SIDE 47/57/57}
@@ -1068,4 +1077,768 @@ Gratulerer, del 3D er overstått. Du bør nå:
 
 
 
+\begin{frame}
+\label{scroll}
+\htmlcom{huge}{Her kan du scrolle gjennom hele forelesningsnotatet men merk at dette kun er for å {
+\bf finne frem til en side}, en del tekst mangler og formatteringen er ofte rar så det er {\bf ikke meningen at man skal bruke denne scrollen til læring.} \textcolor{red}{Ved å klikke på SIDE-linken på den gitte siden under vil du gå rett inn på det stedet du ønsker i forelesningsnotatene og begynne/fortsette læringen der.}}
+{
+
+\center{\Large \textcolor{darkscarlet}{\bf AST2000 Del 3D\\Interaktive forelesningsnotater: forelesning 2 av 2}}\\
+\begin{block}{\center{\bf VIKTIG}}
+\textcolor{yellow}{Dette er et alternativ til forelesningen i emnet.} \textcolor{blue}{Har du gått skikkelig gjennom disse interaktive forelesningsnotatene så trenger du ikke å lese \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/lecture_notes/part3d.pdf}{de fulle forelesningsnotatene} (med unntak av oppgavene bak)}. All informasjonen du trenger, får du her. Du kommer til å få mange grublespørsmål og diskusjonsoppgaver, det er meningen at disse skal gjøres i grupper av minst 2, maks 4 studenter. {\bf Det er defor sterkt anbefalt at dere sitter sammen i grupper når dere går gjennom disse interaktive forelesningsnotatene, du vil få betydelig mer utbytte av dem på den måten}. {\bf Hvis du har kommentarer ris/ros til disse forelesningsnotatene eller til emnet, trykk på \href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}\ knappen som du finner på alle sider.}
+\end{block}
+%\setbeamercolor{button}{bg=black,fg=yellow}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\Large
+\begin{itemize}
+\item HUSK at du får mer ut av de interaktive forelesningsnotatene når du gjør de sammen med noen. Diskusjonene med andre er svært viktige.
+\item Det er mange spørsmål/grubliser underveis, sett dere selv en tidsgrense, 1 minutt på de korte, maks 4-5 minutter på de lenger. Ha en alarm ved siden av, ellers kommer dere til å bruke alt for langt tid. Har dere ikke fått det til etter kort tid, gå videre, se svaret og lær!
+\item Er du i det minste tvil om noe, så finnes det en \forumbutton knapp, trykk det og still spørsmål med en gang mens du enda husker spørsmålet!
+\end{itemize}
+}
+{\pagebutton{Trykk denne knappen for å begynne}}
+}
+
+{
+
+{\pagebutton{Forrige side}}\\
+Hvis du allerede har begynt på denne forelesningen og vil hoppe rett inn til et annet kapittel, kan du trykke her:
+\begin{itemize}
+\item {\headlinebutton{Levetid på hovedserien}}
+\item {\headlinebutton{Kaffepausen}}
+\item {\headlinebutton{Hovedserien: oppsummering og tolkning}}
+\item {\headlinebutton{Farvel hovedserie!}}
+\end{itemize}
+Merk at sidene er merket med sidenummer på denne måten: SIDE X/Y/Z. Her er Z antall sider totalt, Y er sidenummeret til siste side i avsnittet du holder på med og X er sidenummeret til siden du er på.\\
+{\choicebutton{Neste side}}
+}
+
+%%%%% intro
+{
+\setbeamercolor{background canvas}{bg=black}
+{
+
+\begin{columns}
+\column{0.5\textwidth}
+{\pagebutton{Forrige side}}\\
+\includegraphics[scale=0.15]{media/main_sequence_stars.jpg}
+\column{0.5\textwidth}
+{\small
+\textcolor{yellow}{\bf Velkommen til forelesning 2 av 2 for del 3D! I den første forelesningen så vi litt på stjernenes plasser i HR-diagrammet og hva det innenbærer at stjernene er på hovedserien. Nå skal vi se hva som skjer i alderdommen.{\large \textcolor{red}{Den første forelesningen i del 3D tar normalt ca. 1 time i den fysiske forelesningen, dvs. halvparten av en dobbelttime. Den andre delen av del 3D er lenger og tar normalt en hel dobbeltime.}}}\\
+\textcolor{yellow}{(Illustrasjon: Solen observert med Solar Dynamics Observatory (Image: NASA/SDO))}}
+{\pagebutton{Neste side}}
+\end{columns}
+}
+}
+
+{
+\huge
+\htmlcom{large}{{\bf HUSK:} som vi sa i slutten av forrige forelesning, så trenger denne forelesningen {\bf forberedelse}: Du må lese og lære så godt du kan underavsnitt 3 om ``From the main sequence to the giant stage'' i} \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D}.\\
+\vspace*{1cm}
+\textcolor{red}{\htmlcom{large}{Hvor var vi igjen i siste forelesning? La oss begynne med siste side av forrige forelesning...}}
+\hyperlink{msx1}{\pagebutton{SIDE 1/6/57}}}
+
+{
+Det er {\bf helt riktig!}.
+\[
+P=\frac{\rho kT}{\mu m_H}
+\]
+Her {\bf øker} jo $\mu$ ettersom vi få mer og mer helium. Husk at $\mu$ er et mål på midlere masse til atomkjernene, hvis vi får mer helium som er tyngre og mindre hydrogen etter kjernereaksjoner så må $\mu$ øke! Fra tilstandslikningen ser vi at {\bf hvis $\mu$ øker, så må trykket minke.} Og hvis trykke blir mindre, {\bf så vinner gravitasjon litt!} Og hvis gravitasjons da klarer å presse stjernen litt mer sammen så vil {\bf radien med tiden bli litt mindre.}. Stjernen krymper litt på hovedserien, men på meget sakte tidsskala. \textcolor{red}{Men hvor lenge holder den på med dette da? Hvor lenge lever stjernen på hovedserien? Det må vel være til den har brukt opp alt hydrogenet i de sentrale delene av stjernen der fusjonsreaksjonene foregår, men {\bf hvor lang tid} tar dette?}
+\hyperlink{riktig_ms1}{\pagebutton{SIDE 2/6/57}}}
+
+
+{
+Vi skal på de neste sidene gjøre {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.}\\
+{\pagebutton{\small Den må du lenger ut på landet med!}}
+\textcolor{white}{
+Vel, mange av dere kommer til å jobbe med {\bf modellering} av komplekse systemer, det kan være veldig forskjellige systemer fra modellering av trafikken på veiene eller modellering av fisk og småkryp i en elv (eksempler på jobber som tidligere masterstudenter i astronomi faktisk gjør). Modellering av komplekse systemer kan være svært vanskelig hvis du ikke først finner noen virkelig kraftige men likevel ikke helt gale antakelser...}
+\hyperlink{ms2}{\pagebutton{SIDE 3/6/57}}}
+
+{
+Vi skal på de neste sidene gjøre {\bf overslagsregning} for å finne ut hvor lenge en stjerne lever på hovedserien. Vi skal mikse samen masse forskjellige uttrykk og bruke de {\bf villeste antakelser} for å gjøre det lett å regne og {\bf kommer frem til sammenhenger som stemmer ganske godt med det man finner i avanserte datasimuleringer} av stjerner og med det man observerer! \textcolor{red}{Hvis du ikke har planer om å gjøre karriere som forsker i astrofysikk, så tenker du kanskje at dette er helt irrelevant for deg?} {\bf Da tar du grundig feil. For mange av dere som skal ut i ``vanlige'' jobber, så er det som vi gjør på de neste sidene sannsynligvis noe av det mest arbeidslivsrelevante dere gjør i bacheloren.}\\
+{{\small Den må du lenger ut på landet med!}}
+Vel, mange av dere kommer til å jobbe med {\bf modellering} av komplekse systemer, det kan være veldig forskjellige systemer fra modellering av trafikken på veiene eller modellering av fisk og småkryp i en elv (eksempler på jobber som tidligere masterstudenter i astronomi faktisk gjør). Modellering av komplekse systemer kan være svært vanskelig hvis du ikke først finner noen virkelig kraftige men likevel ikke helt gale antakelser...
+\hyperlink{ms2_b}{\pagebutton{SIDE 3/6/57}}}
+
+
+
+
+
+
+{
+...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!}\\
+{\pagebutton{Ok, men hva skal man med en slik forenklet modell da?}} \textcolor{white}{Når du har funnet en slik sterkt forenklet modell, kan du\\
+begynne å finne enkle sammenhenger som gjør at du får litt fysisk intuisjon for systemet ditt\\
+bruke denne som grunnlag for en langt mer kompleks og realistisk modell/simulering\\
+bruke denne til å teste den mer kompliserte modellen i enkle tilfeller\\
+}
+\hyperlink{ms3}{\pagebutton{SIDE 4/6/57}}}
+
+{
+...og du må ofte kombinere forskjellige grener av fysikken eller også helt andre fagfelt for dermed å komme frem til en sterkt forenkelt modell. {\bf Dette er snakk om teft, det å ha gjort det mange ganger på mange forskjellige systemer!}\\
+{{Ok, men hva skal man med en slik forenklet modell da?}} Når du har funnet en slik sterkt forenklet modell, kan du
+\begin{itemize}
+\item begynne å finne enkle sammenhenger som gjør at du får litt fysisk intuisjon for systemet ditt
+\item bruke denne som grunnlag for en langt mer kompleks og realistisk modell/simulering
+\item bruke denne til å teste den mer kompliserte modellen i enkle tilfeller
+\end{itemize}
+\hyperlink{ms3_b}{\pagebutton{SIDE 4/6/57}}}
+
+
+
+
+{
+Med master i fysikk/astrofysikk blir du ofte ansatt nettopp for at du har erfaring med en slik prosess, ikke bare fordi du kan programmere for å løse problemer med datamaskin. Til det siste ansetter de like gjerne en informatiker. {\bf Det en fysiker har å tilby i tillegg er nettopp denne forståelsen av store og komplekse systemer, det å kunne bruke fysisk forståelse til å finne gode forenklinger, antakelser og sammenhenger som gjør at du kan forstå og beskrive systemet på en enkel måte.} \textcolor{red}{{\bf Det er akkurat det vi skal gjøre nå på de neste sidene...}}
+\hyperlink{ms4}{\pagebutton{SIDE 5/6/57}}}
+
+{
+\textcolor{red}{... så følg godt med og prøv å tenke deg at du har blitt ansatt av et firma som har en utmerket ide: å lage en kjempestor gasskule der hydrogenfusjon brukes til å lage energi. Før milliarder av kroner brukes på å konstruere denne gasskula, skal du bruke det du kan om fysikk til å gjøre overslag for å finne ut f.eks. hvor mye energi vi kan få og hvor lang levetid en slik fusjonsreaktor vil kunne ha. Og spesielt hvor stor masse bør en slik kule ha for å optimalisere energien vi utvinner? Hva er sammenhengen mellom massen og energien vi får?}
+\hyperlink{ms4b}{\pagebutton{SIDE 6/6/57}}}
+
+\renewcommand{\headline}{Levetid på hovedserien}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{farvel}
+\textcolor{yellow}{Du får nå en laaaaaaaang utledning. Har du en kaffemaskin i nærheten? Har du sovet godt? Er hjernen klar? {\bf Hvis svaret er nei på noen av disse spørsmålene, bør du vente med dette til du er klar!} Men frykt ikke, vi skal ta en pause omtrent midtveis, men ta gjerne flere på eget initiativ.}
+{\pagebutton{OK, jeg trekker pusten godt nå og er klar...}}
+}
+}
+
+
+{
+La oss begynne med et enkelt spørsmål først. Anta at du kjenner massem $M$ til gasskula (aka stjerna), at fusjonsreaksjoner kun foregår i kjernen som utgjør en andel $p$ av massen til kula. Anta videre at vi kjenner luminositeten $L$. Kan du finne et uttrykk for hvor lenge denne stjerna kommer til å produsere energi ved at hydrogen fusjonener til helium?{\pagebutton{Jeg har skrevet ned et forslag}}
+\textcolor{white}{
+Så total masse som blir fusjonert er $pM$. Masse går over til energi via uttrykket $E=mc^2$ der $c$ er lysfarten, så total energi som blir produsert i løpet av hele stjerna (unnskyld, gasskula) sin levetid må være $E=pMc^2$. Og energien som produseres per tid er $L$. Da må vel levetiden bli
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}
+\]
+Ok, da mangler vi ``bare'' luminositeten $L$ for å finne levetida. Men det er ikke bare-bare...}
+\hyperlink{ms5}{\pagebutton{SIDE 7/45/57}}}
+
+{
+La oss begynne med et enkelt spørsmål først. Anta at du kjenner massem $M$ til gasskula (aka stjerna), at fusjonsreaksjoner kun foregår i kjernen som utgjør en andel $p$ av massen til kula. Anta videre at vi kjenner luminositeten $L$. Kan du finne et uttrykk for hvor lenge denne stjerna kommer til å produsere energi ved at hydrogen fusjonener til helium?{{Jeg har skrevet ned et forslag}}
+Så total masse som blir fusjonert er $pM$. Masse går over til energi via uttrykket $E=mc^2$ der $c$ er lysfarten, så total energi som blir produsert i løpet av hele stjerna (unnskyld, gasskula) sin levetid må være $E=pMc^2$. Og energien som produseres per tid er $L$. Da må vel levetiden bli
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}
+\]
+Ok, da mangler vi ``bare'' luminositeten $L$ for å finne levetida. Men det er ikke bare-bare...
+\hyperlink{ms5_b}{\pagebutton{SIDE 7/45/57}}}
+
+
+
+
+
+
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{For hvordan kan du lage et overslag for luminositeten til en fusjonerende gasskule? Du kan anta at du kjenner massen og radien. Du kjenner ikke levetida. Hvor begynner du? Si at du kan anta de aller villeste forenklinger, kan du da komme på noen forslag?}
+}
+\hyperlink{red_ms6}{\pagebutton{SIDE 8/45/57}}}
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{Har du fått ned noen ideer på papiret? Du kan jo ikke få sparken allerede før du har begynt! {\bf Noe, må du kunne vise frem for at firmaet enda skal ha tiltro til deg.}}
+}
+\hyperlink{red_ms7}{\pagebutton{SIDE 9/45/57}}}
+
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{Ta ihvertall 5-10 minutter, diskuter med medstudenter og skriv ned i det minste noen konsepter eller bruddstykker av ideer og ting som du kanskje kunne bruke på en eller annen måte. {\bf NOE må du få ned på papiret}. Det står om karrieren din!}
+}
+\hyperlink{red_ms7b}{\pagebutton{SIDE 10/45/57}}}
+
+
+{
+Allright, la oss prøve å dele opp problemet litt, det pleier å være et godt startpunkt. Vi vet at luminositet er definert som
+\[
+L=\frac{\Delta E}{\Delta t}
+\]
+La oss tenke oss at vi kan slå av og på kjernereaksjonene i sola, ok? Vi slår de på et kort lite øyeblikk og får produsert en energi $\Delta E$ i løpet av dette øyeblikket. Og så {\bf venter vi!}. Vi venter til all denne energien har kommet frem til overflaten av sola og blitt strålt ut. Det tar langt tid, husk at radien til sola er 800.000 km!. Anta at vi finner tiden $\Delta t$. Da kan vi putte inn i formelen over her for å finne luminositeten. En energi $\Delta E$ som ble {\bf strålt ut} i løpet tiden $\Delta t$. Og slik holder vel sola egentlig på hele tida? I hvert lite øyeblikk lager den energi $\Delta E$ som trenger tiden $\Delta t$ på å komme ut. Hvis vi finner $\Delta E$ og $\Delta t$, så har vi luminositeten!
+\hyperlink{ms8}{\pagebutton{SIDE 11/45/57}}}
+
+
+{
+Før vi kan se noe nærmere på det, må vi nesten se hvordan energien transporteres fra sentrum av en stjerne og opp til overflaten. Det finnes 3 hovedprosesser for energitransport gjennom et medium:
+\begin{itemize}
+\item {\bf Energitransport ved stråling:} Her er det rett og slett fotoner som beveger seg utover og tar med seg energien. Tenk deg en glødende varmeovn, varmestrålingen treffer deg og avgir energien. Energien transporteres gjennom lufta til deg.
+\item {\bf Energitransport ved konveksjon:} Konveksjon er når varm gass/væske beveger seg opp til områder der gassen/væsken er kaldere og avgir energi. Tenk deg en kokeplate: vannet i bunnen av kjelen varmes opp, den flyter opp (kokebobler!) til de kaldere områdene og avgir varme. Energien transporteres oppover i kjelen
+\item {\bf Energitransport ved konduksjon:} Tilbake til kjelen over: anta at du setter den på kokeplata uten vann i. Da transporteres varmen gjennom metallet, gjennom en kjedereaksjon av kollisjoner mellom atomer i metallet. Dermed blir også de øvre delene av kjelen som ikke er i kontakt med plata varm. Energien transporteres gjennom metallet i kjelen.
+\end{itemize}
+\hyperlink{ms9}{\pagebutton{SIDE 12/45/57}}}
+
+{
+I {\bf stjerner} er det hovedsaklig energitransport ved {\bf stråling og/eller ved konveksjon}. Energien kan transporteres fra kjernen via fotoner eller via gassmasser som beveger seg oppover i stjerna akkurat som kokeboblene. I sola så foregår energitransport ved stråling opp til ca. $0.7R_\odot$ og deretter ved konveksjon opp til overflaten. Her ser du bilde av konveksjonscellene (kokeboblene) på solas overflate:\\
+\centerline{\includegraphics[scale=0.22]{media/convection.png}}
+Du kan se tilsvarende \href{https://www.nasa.gov/sites/default/files/thumbnails/image/convectivecells.gif}{video} her. (\htmlcom{footnotesize}{Credits: NASA/JAXA/Hinode)}
+\hyperlink{ms10}{\pagebutton{SIDE 13/45/57}}}
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{En av antakelsene våre skal være at all transport skjer med stråling. Det er lettere å ha kontroll på fotoner som beveger seg utover enn store gassmasser. Da er vi klare her til å prøve å finne hvor stor energi $\Delta E$ som trenger tid $\Delta t$ på å komme seg ut av sola. Og derav finne Luminositeten...}}
+\hyperlink{red_ms11}{\pagebutton{SIDE 14/45/57}}}
+
+
+
+
+
+{
+La oss begynne med energien $\Delta E$ som forlater stjerna. Den energien som frigjøres i fusjonsreaksjonene omgjøres til kinetisk energi for partiklene i kjernen av stjerna samt stråling. Det blir til slutt en likevekt mellom fotonene (strålingen) og gasspartiklene. Fusjonsreaksjonene varmer på den måten opp kjernen til en kjernetemperatur $T_c$ (``C'' for Core, kjernen er hele det sentrale området av stjerna der fusjon foregår). {\bf Vi ser på kjernen som et sort legeme som sender ut termisk stråling på temperatur $T_c$,  Planck-stråling!}. Ved så høy temperatur som vi har i kjernen av en stjerne så blir {\bf denne sorte strålingen intens} Bare prøv å tegne Plancks strålingskurve for en temperatur på flere milllioner grader, eller se på fluksen fra Stefan Boltzmann, eller Wiens forskyvningslov, hvilke bølgelenger får vi fra et sort legeme med så høy temperatur?
+\hyperlink{ms12}{\pagebutton{SIDE 15/45/57}}}
+
+{
+Ved så høy temperatur blir det så mange fotoner i de sentrale delene av en stjerne at vi snakker om en {\bf fotongass}. Rett og slett massevis av fotoner som svirrer rundt og kolliderer med gasspartikler. Fotonene oppfører seg dermed selv som gasspartikler og vi kan med rette bruke begrepet fotongass. En {\bf stjernes kjerne består dermed av varm hydrogen(++)gass blandet med denne fotongassen.} \textcolor{red}{Vi har altså hele tiden et energireservoar i stjernens kjerne i form av fotoner.} {\bf I termodynamikken kommer du til å lære at energitettheten $\rho_E$ (energi per $\mathrm{m}^3$) i en fotongass er gitt ved $\rho_E=aT^4$} der $a$ er strålingskonstanten (husker du fra \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 1E} at trykket i en fotongass er $P=\frac{1}{3}aT^4$?). (Og $T^4$ for et sort legeme kan du kanskje tippe hvor kommer fra?)
+\hyperlink{ms12b}{\pagebutton{SIDE 16/45/57}}}
+
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{Hvis vi antar at kjernen til stjerna har en radius $R_c$, har du nå kommet noe nærmere hvordan du kan gå frem for å finne luminositeten?? Hva kan vi bruke som denne energi $\Delta E$ som skal slippe ut i løpet av tiden $\Delta t$?}
+}
+\hyperlink{red_ms13}{\pagebutton{SIDE 17/45/57}}}
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{Hvis du ikke nå har kommet {\bf noe} nærmere løsningen. Anta at vi nå skrur av alle kjernereaksjoner i sola. Hvor mye energi $\Delta E$ kommer den til å stråle ut før den slukner?}
+}
+\hyperlink{red_ms14}{\pagebutton{SIDE 18/45/57}}}
+
+{
+Med energitetther $\rho_E=aT_c^4$ og kjerneradius $R_c$ så får vi vel at den totale energien i en stjernes kjerne i fotoner til enhver tid er gitt ved
+\[
+E=\frac{4}{3}\pi R_c^3aT_c^4
+\]
+{\bf Her har vi allerede gjort en stor antakelse, kan du se hvilken?}{\pagebutton{Tjaaaaa....}} \textcolor{white}{Tror du virkelig temperaturen og dermed energitettheten er den samme gjennom hele kjernen? Det er vel en ganske grov antakelse?\\
+{\bf OK, her er planen:} Slår vi av kjernereaksjoner, så er det energien $\Delta E$ i alle disse fotonene som er igjen å stråle ut av sola. Det store spørsmålet hvor lang tid $\Delta t$ denne energien, altså alle disse fotonene trenger for å komme frem til solas overflate? Har vi det, har vi luminositeten $L=\Delta E/\Delta t$. {\Large\bf Noen forslag til hvor vi kan starte for å finne ut hvor lang tid fotonene trenger for å komme seg ut?}}
+\hyperlink{ms15}{\pagebutton{SIDE 19/45/57}}}
+
+{
+Med energitetther $\rho_E=aT_c^4$ og kjerneradius $R_c$ så får vi vel at den totale energien i en stjernes kjerne i fotoner til enhver tid er gitt ved
+\[
+E=\frac{4}{3}\pi R_c^3aT_c^4
+\]
+{\bf Her har vi allerede gjort en stor antakelse, kan du se hvilken?}{{Tjaaaaa....}} \textcolor{red}{Tror du virkelig temperaturen og dermed energitettheten er den samme gjennom hele kjernen? Det er vel en ganske grov antakelse?}\\
+{\bf OK, her er planen:} Slår vi av kjernereaksjoner, så er det energien $\Delta E$ i alle disse fotonene som er igjen å stråle ut av sola. Det store spørsmålet hvor lang tid $\Delta t$ denne energien, altså alle disse fotonene trenger for å komme frem til solas overflate? Har vi det, har vi luminositeten $L=\Delta E/\Delta t$. {\Large\bf Noen forslag til hvor vi kan starte for å finne ut hvor lang tid fotonene trenger for å komme seg ut?}
+\hyperlink{ms15_b}{\pagebutton{SIDE 19/45/57}}}
+
+
+
+
+
+{
+{\bf Ikke det??} La oss ta det litt rolig her: Anta at et foton hele tiden kolliderer med gasspartikler og skifter retning. Den midlere veilengden som et foton går mellom hver kollisjon kaller vi $\ell$. Hvor mange kollisjoner $N$ får et foton før det når overflaten av stjerna? Klarer du å vise at det er
+\[
+N=\frac{R^2}{\ell^2}
+\]
+??? Og gitt dette, klarer du å vise at fotonet i gjennomsnitt trenger en tid
+\[
+\Delta t=\frac{R^2}{\ell c}
+\]
+der $c$ er lyshastigheten til å komme seg opp til overflaten?
+{\bf Her bør du sette av 5-10 minutter til å se om du klarer å komme i mål selv. Spesielt det siste uttrykket bør du får til, gitt at du kjenner det første. Det første uttrykket er noe mer tricky, men ikke mer enn at du ihvertfall bør kunne sette opp starten av utregningen (og en tegning av fotonets vei fra stjernas sentrum og ut vil hjelpe mye!}.
+\hyperlink{ms16}{\pagebutton{SIDE 20/45/57}}}
+
+
+{
+\textcolor{yellow}{\Huge
+\htmlcom{large}{Har du gjort et skikkelig forsøk og kommet et stykke på vei? Hvis ikke, gå tilbake og prøv igjen, {\bf noe må du få til} for a betrygge arbeidsgiveren din her om at du jobber med saken!}}
+\hyperlink{red_ms16b}{\pagebutton{SIDE 21/45/57}}}
+
+{
+{\Huge
+\htmlcom{large}{Hjelper denne figuren deg???}
+\centerline{\includegraphics[scale=0.7]{media/fig_20-2.png}}}
+\hyperlink{red_ms16b2}{\pagebutton{SIDE 22/45/57}}}
+
+
+{
+Se \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_1.mp4}{denne videoen} her for å sette sammen bitene og finne ut hvorfor
+\[
+N=\frac{R^2}{\ell^2}
+\]
+og
+\[
+\Delta t=\frac{R^2}{\ell c}
+\]
+Henger du med? Kan du nå skrive ut uttrykk for luminositeten $L$ ved hjelp av de størrelsene du har nå?
+\hyperlink{ms16c}{\pagebutton{SIDE 23/45/57}}}
+
+
+{
+\Large
+\textcolor{yellow}{Nå begynner moroa her! Nå skal du gjøre noe som man alltid må gjøre når man prøver å forstå et komplekst system.} {\bf Med alle tilnærmingene vi gjør og med den fulle kompleksiteten til systemet så har vi ingen sjans til å finne uttrykk med presise tallstørrelser.} \textcolor{yellow}{Det vi kan finne, og som kan være minst like interessant som tallstørrelser er {\bf proporsjonaliteter}.} {\bf Dvs. f.eks. hvordan endrer luminositeten eller stjernas levetid seg som funksjon av totalmassen? Altså hvis vi dobbler massen, hva skjer med luminositeten?} \textcolor{yellow}{Dette vil si oss veldig mye om effektiviteten til gasskula vår selv om vi ikke nødvendigvis får ut eksakte tall for luminositeten!}
+\hyperlink{red_ms17}{\pagebutton{SIDE 24/45/57}}}
+
+
+{
+\Large
+Denne typen fysikk-overslagsregning er ikke bare noe man driver med i arbeidslivet, det er også noe en forsker i fysikk driver med hele tiden, og du kommer til å bruke det i masteroppgaven. Dette er kanskje litt uvant da de første semesterne i fysikkstudiet ofte blir brukt til mye eksakt (men urealistisk) regning. {\bf Da var det jaggu på tide at du får prøve deg her!} Fra det vi har gjort så langt, vis at luminositeten til stjerna kan skrives med følgende proporsjonalitet (legg merke til $\propto$ tegnet for proporsjonalitet)
+\[
+L\propto RT_c^4\ell
+\]
+Hvis du tviler, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_2.mp4}{denne videoen}
+\hyperlink{ms18}{\pagebutton{SIDE 25/45/57}}}
+
+
+{
+Hva med den midlere veilengden $\ell$ for fotonet? Den avhenger at {\bf en} enkelt egenskap ved gassen. {\bf\Large Hvilken? Og hva er proporsjonaliteten??}. Prøv å tegne en boks med gasspartikler, fordel partiklene så jevnt utover i boksen som mulig. Tegn inn et foton et sted i midten. Hvilken egenskap ved gassen avgjør hvor langt fotonet i gjennomsnitt kan bevege seg før det kolliderer? Og hvordan kan du nå skrive proporsjonaliteten med denne egenskapen, altså
+\[
+\ell\propto??
+\]
+Ikke bla om før du har gjort et skikkelig forsøk.
+\hyperlink{ms19}{\pagebutton{SIDE 26/45/57}}}
+
+
+{
+Blir det
+{\choicebutton{$\ell\propto T^2$}}
+{\choicebutton{$\ell\propto P$}}
+{\choicebutton{$\ell\propto \rho^2$}}
+{\choicebutton{$\ell\propto \frac{1}{T}$}}
+{\choicebutton{$\ell\propto \frac{1}{P^2}$}}
+{\choicebutton{$\ell\propto \frac{1}{\rho}$}}
+{\choicebutton{$\ell\propto \frac{1}{\rho^3}$}}
+{\choicebutton{$\ell\propto T^4$}}
+der $P$, $T$ og $\rho$ er henholdsvis trykk, temperatur og massetetthet til gassen (ikke fotongassen men hydrogengassen)
+\hyperlink{ms20}{\pagebutton{SIDE 27/45/57}}}
+
+
+{
+\textcolor{yellow}{
+Det ble nok ikke rett! Har du tegnet opp partiklene? Har du prøvd med en ny tegning når du f.eks. har dobblet størrelsen på den egenskapen ved gassen som du tror er viktig her? Har du sett hvordan $\ell$ da bør endre seg? Hvis du har kommet hit for andre gang, se på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_3.mp4}{denne videoen}}
+\hyperlink{feil_ms20b}{\pagebutton{SIDE 28/45/57}}}
+
+
+{
+\htmlcom{large}{Det er helt riktig! Hvis du enda er usikker, ta en titt på  \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_3.mp4}{denne videoen}. Kan du nå vise at
+\[
+L\propto\frac{R^4T_c^4}{M}
+\]
+??? Det bør du få til nå, hvis ikke, spør foreleser!}
+\hyperlink{riktig_ms20c}{\pagebutton{SIDE 29/45/57}}}
+
+{
+\setbeamercolor{background canvas}{bg=cyan}
+{
+
+{\pagebutton{\small Forrige side}}
+{\large
+\centerline{{\htmlcom{large}{Eeeeeeendlig kaffe!}}}
+\centerline{\includegraphics[scale=4]{media/drink-coffee.png}}\\
+{med mye sukker! Og jammen bør du ta en tur bortom kantina eller kiosken og se om de har en sjokoladebit eller kakebit? Det har du fortjent nå. {\bf Ihvertfall bør du ta turen om du så ikke kjøper noe, en luftetur er påkrevet før du fortsetter!}
+\vspace*{0.5cm}
+Ikke lov å fortsette før du har tatt minst 15 min. pause!}
+}\\
+\vspace*{0.5cm}
+{\pagebutton{Allright, alltright, jeg tror jeg er klar for resten...}}
+}
+}
+
+{
+La du merke til hvilken vannvittig antakelse du brukte her?? Du antok at tettheten til stjerna er den samme gjennom hele stjerna, altså uniform tetthet! Det er ikke veldig realistisk, men tettheten vil jo være tettere enn dette i kjernen og tynnere enn dette mot overflaten, kanskje det blir ok i gjennomsnitt likevel?\\
+Vi har nå altså en proporsjonalitet
+\[
+L\propto\frac{R^4T_c^4}{M}
+\]
+for luminositeten som funksjon av massen og radien til stjerna i tillegg til kjernetemperaturen $T_c$.
+\hyperlink{ms20d}{\pagebutton{SIDE 30/45/57}}}
+
+{
+\textcolor{red}{Men det er vital informasjon som vi ikke har brukt! \bf Og her kommer et annet viktig punkt når det kommer til fysikk-overslagsregning: du må få med all informasjonen du har om systemet!}\\
+ {\Huge \htmlcom{large}{Kan du tenke deg noen sammenhenger som vi kjenner til men enda ikke har benyttet? Det er flere enn en!}} Ikke gå videre før du har skrevet ned minst en ting til som du vet om dette systemet og som kan være bruklig for å komme frem til en enda enklere sammenheng for luminositeten!
+\hyperlink{ms20e}{\pagebutton{SIDE 31/45/57}}}
+
+
+{
+{\Large Hadde du hydrostatisk likevekt på lista di?}
+Kan du vise at likningen for hydrostatisk likevekt kan gi deg en sammenheng alla
+\[
+P_c\propto\frac{M^2}{R^4}
+\]
+der $P_c$ er trykket i kjernen??? Du skal snart få tenke videre på denne, men la oss ta det litt videre først!
+Husk at det vi ønsker nå er å få proporsjonaliteten
+\[
+L\propto\frac{R^4T_c^4}{M}
+\]
+så enkel som mulig!
+\hyperlink{ms21}{\pagebutton{SIDE 32/45/57}}}
+
+{
+Tenk deg altså at du har fått
+\[
+P_c\propto\frac{M^2}{R^4}
+\]
+fra hydrostatisk likevekt. Men hva hjelper det oss for å få proporsjonaliteten for $L$ enklere? \textcolor{red}{Nå har vi jo fått inn en ny variabel her, trykket $P$, og da blir det jo ikke enklere men vanskeligere!} MEN så finnes det en sammenheng til for gassen som du bør kunne tenke deg. En sammenheng mellom blant annet trykk og temperatur slik at vi blir kvitt trykket i uttrykket her, får inn $T_c$ isteden, og dermed kvitter oss med $T_c$ i uttrykket på forrige side. Da snakker vi om forenklinger da! {\bf Kan du vise, ved å sette inn denne sammenhengen for $P$ at vi da får en sammenheng som sier}
+\[
+T_c\propto\frac{M}{R}
+\]
+som altså er veldig fristende å bruke for å kvitte oss med $T_c$ i uttryket for $L$ på forrige side.
+\hyperlink{ms21b}{\pagebutton{SIDE 33/45/57}}}
+
+
+
+
+
+{
+\textcolor{yellow}{\Large
+Tilbake til proporsjonaliteten for $P$ som du skal finne fra hydrostatisk likevekt...
+Fikk du det til? Det er ikke lov å gå videre uten å ha noe forslag, selv om du ikke kommer helt frem. Nå er vi nesten fremme ved det endelige uttrykket her. Firmaet vi jobber for begynner å blir riktig så fornøyd, dette ser lovende ut, vi har nesten gjort jobben vår som en god fysiker! Du kan ikke skuffe dem nå?}
+\hyperlink{red_ms22}{\pagebutton{SIDE 34/45/57}}}
+
+{
+I \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_4.mp4}{denne videoen} ser du hvordan man kan gjøre forenklingen med hydrostatisk likevekt og hva den andre kjente sammenhengen var som gjør at vi kommer frem til at
+\[
+T_c\propto\frac{M}{R}
+\]
+som innsatt i
+\[
+L\propto\frac{R^4T_c^4}{M}
+\]
+gir oss...ja hva gir det...
+\hyperlink{ms23}{\pagebutton{SIDE 35/45/57}}}
+
+
+{
+\huge\htmlcom{large}{
+Lo and behold, det gir oss
+\[
+L\propto M^3
+\]
+Så vanvittig enkelt? Et så komplekst system og en så enkel relasjon? Men hva sier de store avanserte datamodellene da? De som kjører på 1000-vis av prosessorer i flere måneder?}
+\hyperlink{ms24}{\pagebutton{SIDE 36/45/57}}}
+
+
+{
+De sier
+\[
+L\propto M^\beta
+\]
+hvor $\beta$ avhenger litt av massen til stjerna. For stjerner med veldig stor masse, titalls solmasser, så passer $\beta=3$ slik vi fant ganske godt! Merk at slike stjerner har energitransport med stråling gjennom hele stjerna, akkurat slik som vi antok. \textcolor{red}{For stjerner med mindre masse slik som sola så er $\beta=4$ en bedre tilnærmelse. Den gjelder for flere stjerner, så vi skal bruke den i dette kurset.} {\Large\bf Men er det ikke helt utrolig at vi kom frem til nesten det samme med en utrolig enkel utledning med store og grove antakelser?}
+\hyperlink{ms25}{\pagebutton{SIDE 37/45/57}}}
+
+{
+Hvilke antakelser var det vi gjorde igjen?
+\begin{itemize}
+\item energitransport med stråling gjennom hele stjerna (er sant for veldig massive stjerner)
+\item uniform temperatur i hele stjernens kjerne (der det foregår kjernereaksjoner)
+\item uniform tetthet gjennom hele stjerna
+\item at trykket går som $P(r)\propto r^n$ gjennom hele stjerna
+\item ideel gass
+\end{itemize}
+Pluss en del mer subtile antakelser som vi ikke nevner. Flere av disse antakelsene er ikke spesielt gode, men det at vi ser på et stort system, midler over størrelser som f.eks. både høyere og lavere tetthet enn den uniforme tettheten som vi antar, så kommer vi likevel frem til noe som stemmer godt med virkeligeheten.
+\hyperlink{ms26}{\pagebutton{SIDE 38/45/57}}}
+
+{
+Så hva sier denne sammenhengen oss:
+\[
+L\propto M^4
+\]
+(som er den varianten som vi skal bruke siden den passer på langt flere stjerner enn $L\propto M^3$ som vi kom frem til med alle forenklingene våre)\\
+En stjerne som er dobbelt så massiv som sola, hvor stor luminositet har den?{\pagebutton{Jeg har det, jeg har det!}}
+\textcolor{white}{
+Nettopp, ja 16 ganger mer energi per sekund enn sola. Og bare dobbel masse! {\bf Dette er jo vital informasjon} for arbeidsgiveren vår som skal bygge en fusjonsreaktor som er en stor gasskule! Jobben fullført! Ihvertfall den innledende fasen. Hvis behovet for energi er stort, så ha stor masse. {\bf Men det var en problemstilling til som vi begynte med, var det ikke? Hvor lenge lever en slik stjerne?}}
+\hyperlink{ms26b}{\pagebutton{SIDE 39/45/57}}}
+
+{
+Så hva sier denne sammenhengen oss:
+\[
+L\propto M^4
+\]
+(som er den varianten som vi skal bruke siden den passer på langt flere stjerner enn $L\propto M^3$ som vi kom frem til med alle forenklingene våre)\\
+En stjerne som er dobbelt så massiv som sola, hvor stor luminositet har den?{{Jeg har det, jeg har det!}}
+Nettopp, ja 16 ganger mer energi per sekund enn sola. Og bare dobbel masse! {\bf Dette er jo vital informasjon} for arbeidsgiveren vår som skal bygge en fusjonsreaktor som er en stor gasskule! Jobben fullført! Ihvertfall den innledende fasen. Hvis behovet for energi er stort, så ha stor masse. {\bf Men det var en problemstilling til som vi begynte med, var det ikke? Hvor lenge lever en slik stjerne?}
+\hyperlink{ms26b_b}{\pagebutton{SIDE 39/45/57}}}
+
+
+
+
+
+{
+Vi fant for en god del sider siden at
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}
+\]
+Hvis vi igjen bare er interessert i proporsjonalitet, så tar vi denne videre:
+\[
+t_\mathrm{life}\propto???
+\]
+Ja, hvordan blir det?
+{\choicebutton{$t_\mathrm{life}\propto M$}}
+{\choicebutton{$t_\mathrm{life}\propto M^2$}}
+{\choicebutton{$t_\mathrm{life}\propto M^3$}}
+{\choicebutton{$t_\mathrm{life}\propto M^4$}}
+{\choicebutton{$t_\mathrm{life}\propto 1/M$}}
+{\choicebutton{$t_\mathrm{life}\propto 1/M^2$}}
+{\choicebutton{$t_\mathrm{life}\propto 1/M^3$}}
+{\choicebutton{$t_\mathrm{life}\propto 1/M^4$}}
+\hyperlink{ms27}{\pagebutton{SIDE 40/45/57}}}
+
+
+{
+\textcolor{yellow}{
+Nei, det ble ikke rett! Er du enig i at
+\[
+t_\mathrm{life}=\frac{pMc^2}{L}\propto\frac{M}{L}
+\]
+Og hvis $L\propto M^4$, ja da bør du komme frem til ... gå tilbake og prøv igjen.
+}
+\hyperlink{feil_ms27b}{\pagebutton{SIDE 41/45/57}}}
+
+
+{
+Det er helt riktig! Kan du nå vise at
+\[
+t_\mathrm{life}\propto\frac{1}{M^3}
+\]
+Altså en stjerne som er dobbelt så massiv som solen vil leve i ...{\pagebutton{Shit! Strek i regningen!}}
+\textcolor{yellow}{
+Bare 1/8 av solas levetid? Tuller du? Da faller jo ideen i grus her, med stor masse får vi masse energi ut, men så blir fusjonsreaktoren ``brukt opp'' i løpet av en mye kortere tid!}
+\hyperlink{riktig_ms27c}{\pagebutton{SIDE 42/45/57}}}
+
+{
+Det er helt riktig! Kan du nå vise at
+\[
+t_\mathrm{life}\propto\frac{1}{M^3}
+\]
+Altså en stjerne som er dobbelt så massiv som solen vil leve i ...{Shit! Strek i regningen!}
+Bare 1/8 av solas levetid? Tuller du? Da faller jo ideen i grus her, med stor masse får vi masse energi ut, men så blir fusjonsreaktoren ``brukt opp'' i løpet av en mye kortere tid!
+\hyperlink{riktig_ms27c_b}{\pagebutton{SIDE 42/45/57}}}
+
+
+
+
+
+{
+Når vi først er igang, så la oss gjøre et overslag til. Kan vi si noe om {\bf overflatetemperaturen} på denne gasskula? Jeg mener, hvis vi skal ha denne fusjonsreaktoren i nærheten av oss, da bør den vel ikke være for varm på overflaten! Dette skal du få finne ut av selv, men et hint: kjernetemperaturen som skal til for å starte fusjon er jo en felles faktor her, det er derfor liten variasjon i kjernetemperaturen i hovedseriestjerner. Vi skal anta at kjernetemperaturen $T_c$ er konstant. Og du fant tidligere en proporsjonalitetsrelasjon for denne. Kombiner det med noe du vet om sammenheng mellom luminositet og fluks og sånt. Og vips så fant du...\\
+{\bf En proporsjonalitetsrelasjon mellom overflatetemperaturen $T$ på en stjerne og massen $M$!} Når du har funnet den kan du gå til...
+\hyperlink{ms28}{\pagebutton{SIDE 43/45/57}}}
+
+
+{
+Fikk du det ikke til, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_5.mp4}{denne videoen}.
+\begin{block}{Vi har altså kommet til følgende relasjoner...}
+\[
+L\propto M^4
+\]
+\[
+t_\mathrm{life}\propto \frac{1}{M^3}
+\]
+\[
+T_\mathrm{overflate}\propto\sqrt{M}
+\]
+\end{block}
+\hyperlink{ms29_0}{\pagebutton{SIDE 44a/45/57}}}
+
+{
+\begin{block}{Vi har altså kommet til følgende relasjoner...}
+\[
+L\propto M^4
+\]
+\[
+t_\mathrm{life}\propto \frac{1}{M^3}
+\]
+\[
+T_\mathrm{overflate}\propto\sqrt{M}
+\]
+\end{block}
+Men disse er bare proporsjonaliteter. Vi kan ikke bruke de til å finne tall, {\bf eller?}.{\pagebutton{Joda, fordi...}}
+\textcolor{white}{
+...naturen har allerede laget en prototyp av denne fusjonsreaktoren for oss. Den heter sola (egentlig har den laget en tilnærmet uendelig mengde av slike prototyper). \textcolor{white}{\bf Ser du at ved å bruke de kjente tallene for $M$, $L$, $t_\mathrm{life}$ (10 milliarder år for sola) og $T_\mathrm{overflate}$, så har vi alt vi trenger for å finne proporsjonalitetskonstantene i deiise relasjonene? Og da kan du regne ut tall!}}
+\hyperlink{ms29}{\pagebutton{SIDE 44/45/57}}}
+
+
+{
+\begin{block}{Vi har altså kommet til følgende relasjoner...}
+\[
+L\propto M^4
+\]
+\[
+t_\mathrm{life}\propto \frac{1}{M^3}
+\]
+\[
+T_\mathrm{overflate}\propto\sqrt{M}
+\]
+\end{block}
+Men disse er bare proporsjonaliteter. Vi kan ikke bruke de til å finne tall, {\bf eller?}.{{Joda, fordi...}}
+...naturen har allerede laget en prototyp av denne fusjonsreaktoren for oss. Den heter sola (egentlig har den laget en tilnærmet uendelig mengde av slike prototyper). \textcolor{red}{\bf Ser du at ved å bruke de kjente tallene for $M$, $L$, $t_\mathrm{life}$ (10 milliarder år for sola) og $T_\mathrm{overflate}$, så har vi alt vi trenger for å finne proporsjonalitetskonstantene i deiise relasjonene? Og da kan du regne ut tall!}
+\hyperlink{ms29_b}{\pagebutton{SIDE 44/45/57}}}
+
+
+
+
+
+
+{
+Det viktigste vi lærte her var selve fremgangsmåten! Tro meg, denne tenkemåten kommer du til å få bruk for i masteren og veldig mange av dere i arbeidslivet etterpå. Det er slike ting en fysiker holder på med. Men som astrofysiker med interesse for å forstå universet, så lærte vi også noe annet:
+\begin{itemize}
+\item At luminositeten til stjerner er {\bf sterkt} masseavhenig. Selv små endringer i masse har mye å si for hvor mye lys stjerna sender ut. En stjerne med halvparten så stor masse som sola er svært vanskelig å observere (bare 1/16 av luminositeten)
+\item At levetiden til stjerner er sterkt masseavhengig. Stjerner som er noen ganger mer massiv en sola lever bare noen millioner år i motsetning til sola som er forventet å leve i totalt 10 milliarder år på hovedserien.
+\item {\bf At vi ved å observere en stjernes overflatetemperatur kan finne en stjernes masse. Dette har du implisitt brukt flere ganger i kurset. Kan du huske når?}
+\end{itemize}
+\hyperlink{ms29c}{\pagebutton{SIDE 45/45/57}}}
+
+
+\renewcommand{\headline}{Farvel hovedserie!}
+{
+\setbeamercolor{background canvas}{bg=blue}
+{
+
+{\pagebutton{\small Forrige side}}
+\nytemaside{0}
+\textcolor{yellow}{Var det forresten noe igjen av den sjokoladebiten fra ista?}\\
+\textcolor{yellow}{Og en strekk på bena!}\\
+{\pagebutton{Alderdommen begynner...}}
+}
+}
+
+
+{
+
+{\large
+Da har vi sett hvor lenge en stjerne lever på hovedserien. {\bf Nå skal vi følge en stjerne inn i alderdommen, bort fra hovedserien og frem til den grufulle død som vi skal omtale nærmere i del 3E.} \textcolor{red}{Omtalen av en stjernes utvikling fra hovedserie til død er basert på store og kompliserte datasimuleringer.} Vi skal beskrive de fysiske prosessene som skjer og fører til endringer i stjernene.}
+\hyperlink{se1}{\pagebutton{SIDE 46/57/57}}}
+
+{
+{
+\large
+Merk at de fysiske prosessene som brukes som årsaksforklaringer til endringer i stjernen (som du skulle ha lest om før forelesningen) kan i teorien gi opphav til helt andre endringer enn det som beskrives. {\bf Men vi vet utfallet på grunn av datasimuleringer.} Dette er likevel en svært interessant øvelse i å bruke fysisk intuisjon, hvordan kan forskjellige fysiske størrelser påvirke hverandre og hva blir konsekvensene av endringer. Som fysiker trenger man normalt ikke å pugge så mye, det aller viktigste er forståelsen. Men akkurat som med gangetabellen, så er det mye som går lettere hvis man også husker enkelte ting. {\bf En stjernes utvikling og de fysiske prosessene som styrer denne er en slik ting som man bør ha i hodet og som man kan bli testet i til eksamen!} Store deler av astrofysikken baserer seg på stjerners egenskaper. Vi skal se et eksempel her mot slutten.}
+\hyperlink{se1b}{\pagebutton{SIDE 47/57/57}}}
+
+
+{
+Er du klar? Tiden har kommet for litt god gammeldags {\bf pugging!}. Men det blir lettere hvis du prøver å forstå de fysiske prosessene, da er det på en måte en logisk oppbyggning. Det som skal pugges er underavsnitt 3 om ``From the main sequence to the giant stage'' i \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/lecture_notes/part3d.pdf}{del 3D}. \textcolor{red}{\Large\bf Hvis du ikke gjorde dette før denne forelesningen, les dette underavsnittet nøye nå, helt til du føler at du kan gjenfortelle hovedtrekkene}. Når du er klar så skal du få gå gjennom en test som samtidig skal hjelpe deg å systematisere det som du har lært...
+\hyperlink{se2}{\pagebutton{SIDE 48/57/57}}}
+
+
+{
+Vi skal i det følgende gå gjennom de forskjellige fasene i en stjernes liv etter hovedserien. For å hjelpe deg å huske skal du nå gjøre dette på stikkordsform. For hver overgang i HR-diagrammet, skal du prøve å finne ut (og deretter huske):
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+Merk deg også i hver overgang om det er noen forskjell mellom de mer eller mindre massive stjernene.
+\hyperlink{se3}{\pagebutton{SIDE 49/57/57}}}
+
+
+{
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra hovedserien til ``sub giant''}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+\hyperlink{se4}{\pagebutton{SIDE 50/57/57}}}
+
+{
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra ``sub giant'' til rød kjempestjerne}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+\hyperlink{se5}{\pagebutton{SIDE 51/57/57}}}
+
+{
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra rød kjempestjerne til horisontalgrenkjempe}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+\hyperlink{se6}{\pagebutton{SIDE 52/57/57}}}
+
+{
+\begin{alertblock}{Første overgang:}
+{\Large\bf Horisontalgrenkjempen beveger seg rett venstre i HR-diagram }\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+\hyperlink{se7}{\pagebutton{SIDE 53/57/57}}}
+
+{
+\begin{alertblock}{Første overgang:}
+{\Large\bf Horisontalgrenkjempen beveger seg rett høyre i HR-diagram}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+\hyperlink{se7b}{\pagebutton{SIDE 54/57/57}}}
+
+{
+\begin{alertblock}{Første overgang:}
+{\Large\bf Fra horisontalgrenkjempen til asymptotisk kjempe}\\
+Hva er
+\begin{enumerate}
+\item årsaken til overgangen
+\item hvilken effekt denne overgangen hadde på temperaturen (og hvorfor)
+\item hvilken effekt denne overgangen hadde på luminositeten (og hvorfor)
+\end{enumerate}
+\end{alertblock}
+{\bf Skriv det ned på et ark i stikkordsform.}
+\hyperlink{se8}{\pagebutton{SIDE 55/57/57}}}
+
+{
+Oversikten du nå har skrevet i stikkordsform skulle være nok til å huske hele prosessen. Hvis du var usikker på noen av disse overgangene, spør på forumet! Så over til et (av mange) tilfeller der vi kan se nytten av å kunne litt stjerneutvikling.
+}
+{\textcolor{red}{\bf Oppg.6, avsl. eksamen 2011:}
+\hspace*{-0.4cm}\includegraphics[scale=0.3]{media/eksamen_2011_oppg6.png}
+\hyperlink{se9}{\pagebutton{SIDE 56/57/57}}}
+
+{
+Du trenger å kombinere nesten alt det du har lært i del 3D for å løse denne oppgaven. Når du har tenkt nøye gjennom hvordan denne oppgaven kan løses, og hvis du ikke ser det, ta en titt på \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h20/undervisningsmateriell/interaktive-forelesningsnotater/3d/videoer/video3d_6.mp4}{denne videoen}.
+}
+{\textcolor{red}{\bf Oppg.6, avsl. eksamen 2011:}
+\hspace*{-0.4cm}\includegraphics[scale=0.3]{media/eksamen_2011_oppg6.png}
+\hyperlink{se10}{\pagebutton{SIDE 57/57/57}}}
+
+{
+
+{\pagebutton{\small Forrige side}}\href{https://nettskjema.no/a/167471}{\Changey[1][yellow]{2} \Changey[1][yellow]{-2}}
+Gratulerer, del 3D er overstått. Du bør nå:
+\begin{itemize}
+\item  Vite hvilke størrelser og enheter man kan ha på aksene i et HR-diagram
+\item  Vite hvorfor hovedserien er en skrå linje i HR-diagrammet
+\item  Vite hvilke masser og radier stjerner kan ha og hvorfor
+\item  Kunne gjøre overslagsregning med fysiske problemstillinger
+\item  Kunne hovedtrekkene i hvordan vi finner tilnærmede sammenhenger mellom luminositet, levetid og overflatetemperatur på en stjerne og denne stjernens masse.
+\item Kunne bruke proporsjonalitetsrelasjonene for stjerner
+\item Kunne skissere de forskjellige overgangene som aldrende stjerner går gjennom på sin vei fra hovedserie til død, og kunne forstå årsakene til overgangene samt skissere og forklare hvordan de beveger seg i HR-diagrammet.
+\end{itemize}
+\textcolor{red}{Flott hvis du nå kan klikke på smilefjesene over og fortelle hva du synes om dette interaktive forelesningsnotatet. Hva var bra og nøyaktig hva kan forbedres? All ris og ros mottaes med takk!}
+{\bf Det anbefales nå at du sjekker \href{https://www.uio.no/studier/emner/matnat/astro/AST2000/h21/undervisningsmateriell/kortsvarsoppgaver/del3d.pdf}{kortsvarsoppgavene} til del 3D for å kontrollere at du har forstått stoffet. Kan du svare på disse, blir det lettere å bruke kunnskapen din i oppgavene/prosjektet. Noen av disse kommer på eksamen.}
+}
+
+
+
+\end{frame}
 \end{document}
