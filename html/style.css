@@ -303,27 +303,37 @@ color: var(--blue);
 background-color: rgb(175, 188, 231);
 }
 .alertblock{
-position: relative;
-display: inline-block;
-background-color: var(--alert);
-padding: 0 10px;
-margin-top: 10px;
-margin-bottom: 10px;
-border-radius: 0 0 10px 10px;
-box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 3px 0px;
-}
-.alertblock::before{
-content: "VIKTIG";
-position: absolute;
-color: white;
-background-color: var(--alert-blue);
-border-radius: 10px 10px 0 0;
-width: 100%;
-left: 0;
-text-align: center;
-top: -30px;
-font-weight: bold;
-}
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  background-color: var(--alert);
+  border-radius: 0 0 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 3px 0px;
+  color: var(black);
+  }
+  .alertblock p {
+  width: 100%;
+  }
+  .alertblock p > span:first-child{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  width: calc(100% + 20px);
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  margin-right: -10px;
+  margin-left: -10px;
+  font-weight: bold;
+  background-color: var(--alert-blue);
+  }
+
 .block{
 display: flex;
 flex-direction: column;

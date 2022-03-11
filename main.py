@@ -499,7 +499,7 @@ def main():
             html_substitutions += size_subs
             html_substitutions += [(r'@pagebutton(.*?)@', f'<span class="pagebtn-inactive">\\1</span>')]
 
-            image_subs = [(fr'@{size}\s*(<img.*?)\/>', f'\\1 style="max-width:{width}px;height:100%;"') for size, width in IMG_SIZES.items()]
+            image_subs = [(fr'@{size}\s*(<img.*?)(>)', f'\\1 style="max-width:{width}px;height:100%;"\\2') for size, width in IMG_SIZES.items()]
             html_substitutions += image_subs
 
             for subpair in html_substitutions:
