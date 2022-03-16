@@ -33,9 +33,10 @@ FONT_SIZES = {
 }
 
 IMG_SIZES = {
-    "small" : 200,
-    "large" : 500,
-    "huge": 800,
+    "small" : 25,
+    "normal": 50,
+    "large" : 75,
+    "huge": 100,
 }
 
 
@@ -499,8 +500,12 @@ def main():
             html_substitutions += size_subs
             html_substitutions += [(r'@pagebutton(.*?)@', f'<span class="pagebtn-inactive">\\1</span>')]
 
-            image_subs = [(fr'@{size}\s*(<img.*?)(>)', f'\\1 style="max-width:{width}px;height:100%;"\\2') for size, width in IMG_SIZES.items()]
-            html_substitutions += image_subs
+            for size, width in IMG_SIZES.items():
+                if width >= 75:
+                    image_subs = (fr'@{size}\s*(<img.*?)(>)', f'\\1 style="max-width:{width}%;height:100%;width:100%;float:none;margin:auto;"\\2')
+                else:
+                    image_subs = (fr'@{size}\s*(<img.*?)(>)', f'\\1 style="max-width:{width}%;height:100%;width:100%;"\\2')
+                html_substitutions += [image_subs]
 
             for subpair in html_substitutions:
                 frame = re.sub(subpair[0], subpair[1], frame)
